@@ -9,11 +9,11 @@ const { s } = Astro.props;
 const total = s.quiz.sections.reduce((n, x) => n + x.questions.length, 0);
 ---
 <Base title={`Practice questions · ${s.name}`} back={{ href: `/${s.slug}/`, label: s.name }} image={s.og} description={`Test yourself on ${s.name}: ${total} practice questions with instant answers and explanations.`}>
-<main class="wrap quiz" data-subject={s.name}>
+<main class="wrap quiz" data-subject={s.name} data-color={s.color}>
   <header class="head">
     <div class="kicker">Practice</div>
     <h1>{total} practice questions</h1>
-    <p class="lede">Pick an answer to see whether it is right and why. Your score is only for you and is not saved.</p>
+    <p class="lede">Pick an answer to see whether it is right and why. Your score stays on your device. At the end you can share it, if you like.</p>
   </header>
 
   <div class="sets" role="group" aria-label="Question set" id="sets"></div>
@@ -94,15 +94,87 @@ const total = s.quiz.sections.reduce((n, x) => n + x.questions.length, 0);
     var again = el('button', 'next', 'Try this set again'); again.type = 'button';
     again.addEventListener('click', function () { i = 0; score = 0; show(); });
     card.appendChild(again);
-    var url = location.origin + location.pathname;
-    var subject = document.querySelector('.quiz').dataset.subject;
-    var msg = 'I scored ' + score + '/' + cur.questions.length + ' (' + pct + '%) on ' + subject + ' practice questions at EPBM Library. Can you beat it?';
-    var row = el('div', 'share'); row.appendChild(el('span', 'share-l', 'Challenge a batchmate'));
-    var wa = el('a', 'share-b', 'WhatsApp'); wa.href = 'https://wa.me/?text=' + encodeURIComponent(msg + ' ' + url); wa.target = '_blank'; wa.rel = 'noopener'; row.appendChild(wa);
-    var li = el('a', 'share-b', 'LinkedIn'); li.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url); li.target = '_blank'; li.rel = 'noopener'; row.appendChild(li);
-    var cp = el('button', 'share-b', 'Copy score and link'); cp.type = 'button';
-    cp.addEventListener('click', function () { if (navigator.clipboard) navigator.clipboard.writeText(msg + ' ' + url).then(function () { cp.textContent = 'Copied'; setTimeout(function () { cp.textContent = 'Copy score and link'; }, 1800); }); });
-    row.appendChild(cp); card.appendChild(row);
+    shareBlock(pct);
+  }
+
+  function shareBlock(pct) {
+    var main = document.querySelector('.quiz');
+    var subject = main.dataset.subject, color = main.dataset.color || '#1F4E5F';
+    var total = cur.questions.length, setName = cur.name;
+    var base = location.origin + location.pathname;
+    var link = function (src) { return base + '?utm_source=' + src + '&utm_medium=score-share'; };
+    var nameKey = 'epbm-name', name = '';
+    try { name = localStorage.getItem(nameKey) || ''; } catch (e) {}
+
+    var box = el('section', 'sharebox');
+    box.appendChild(el('h3', 'sb-h', 'Share your score'));
+    box.appendChild(el('p', 'sb-p', 'Add your name to put it on your score card. It stays on this device and is never sent anywhere.'));
+    var lab = el('label', 'sb-lab'); lab.appendChild(el('span', null, 'Your name (optional)'));
+    var inp = el('input'); inp.type = 'text'; inp.maxLength = 40; inp.autocomplete = 'name'; inp.value = name; inp.placeholder = 'For example, Priya Sharma';
+    lab.appendChild(inp); box.appendChild(lab);
+
+    var cv = document.createElement('canvas'); cv.width = 1200; cv.height = 630;
+    var img = el('img', 'sb-card'); img.alt = 'Score card'; img.width = 1200; img.height = 630;
+    box.appendChild(img);
+
+    function msg() {
+      var who = name.trim() ? name.trim() + ' scored ' : 'I scored ';
+      return who + score + '/' + total + ' (' + pct + '%) on the ' + subject + ' practice questions in EPBM Library, the EPBM-32 class notes, free to read. Can you beat it?';
+    }
+
+    function fit(ctx, text, max, size, weight, family) {
+      do { ctx.font = weight + ' ' + size + 'px ' + family; size -= 2; } while (ctx.measureText(text).width > max && size > 20);
+    }
+    function draw() {
+      var ctx = cv.getContext('2d'), W = 1200, H = 630, serif = 'Literata, Georgia, serif', sans = 'Inter, system-ui, sans-serif';
+      ctx.fillStyle = color; ctx.fillRect(0, 0, W, H);
+      ctx.fillStyle = 'rgba(255,255,255,0.08)'; ctx.beginPath(); ctx.arc(W - 40, -40, 360, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = '#fff'; ctx.textBaseline = 'alphabetic';
+      ctx.font = '600 30px ' + serif; ctx.fillText('EPBM Library', 72, 100);
+      ctx.fillStyle = 'rgba(255,255,255,0.75)'; ctx.font = '500 24px ' + sans; ctx.fillText('Practice score', 72, 150);
+      ctx.fillStyle = '#fff'; fit(ctx, subject, 1056, 52, '500', serif); ctx.fillText(subject, 72, 222);
+      if (setName !== 'All questions') { ctx.fillStyle = 'rgba(255,255,255,0.75)'; fit(ctx, setName, 1056, 26, '500', sans); ctx.fillText(setName, 72, 266); }
+      ctx.fillStyle = '#fff'; ctx.font = '600 150px ' + serif; var sc = score + '/' + total; ctx.fillText(sc, 72, 440);
+      var sw = ctx.measureText(sc).width; ctx.font = '600 56px ' + sans; ctx.fillText(pct + '%', 72 + sw + 36, 432);
+      if (name.trim()) { fit(ctx, name.trim(), 1056, 40, '600', sans); ctx.fillText(name.trim(), 72, 512); }
+      ctx.fillStyle = 'rgba(255,255,255,0.8)'; ctx.font = '500 24px ' + sans;
+      ctx.fillText('library.girder.in  ·  EPBM-32 class notes, free to read', 72, 578);
+      img.src = cv.toDataURL('image/png');
+    }
+    var t; inp.addEventListener('input', function () { name = inp.value; try { localStorage.setItem(nameKey, name); } catch (e) {} clearTimeout(t); t = setTimeout(draw, 150); });
+    (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(draw);
+
+    var row = el('div', 'share');
+    function fileName() { return 'epbm-score-' + main.dataset.subject.toLowerCase().replace(/[^a-z]+/g, '-') + '.png'; }
+    function blob(cb) { cv.toBlob(cb, 'image/png'); }
+    if (navigator.canShare && window.File) {
+      var sh = el('button', 'share-b primary', 'Share score card'); sh.type = 'button';
+      sh.addEventListener('click', function () {
+        blob(function (b) {
+          var file = new File([b], fileName(), { type: 'image/png' });
+          var payload = { files: [file], text: msg() + ' ' + link('share') };
+          if (navigator.canShare(payload)) navigator.share(payload).catch(function () {});
+          else navigator.share({ text: msg(), url: link('share') }).catch(function () {});
+        });
+      });
+      row.appendChild(sh);
+    }
+    var dl = el('button', 'share-b', 'Download score card'); dl.type = 'button';
+    dl.addEventListener('click', function () { blob(function (b) { var a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = fileName(); document.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500); }); });
+    row.appendChild(dl);
+    var wa = el('a', 'share-b', 'WhatsApp'); wa.target = '_blank'; wa.rel = 'noopener';
+    wa.addEventListener('click', function () { wa.href = 'https://wa.me/?text=' + encodeURIComponent(msg() + ' ' + link('whatsapp')); });
+    wa.href = 'https://wa.me/?text=' + encodeURIComponent(msg() + ' ' + link('whatsapp')); row.appendChild(wa);
+    var li = el('a', 'share-b', 'LinkedIn'); li.target = '_blank'; li.rel = 'noopener';
+    var liHref = function () { return 'https://www.linkedin.com/feed/?shareActive=true&text=' + encodeURIComponent(msg() + ' ' + link('linkedin')); };
+    li.href = liHref(); li.addEventListener('click', function () { li.href = liHref(); }); row.appendChild(li);
+    var cp = el('button', 'share-b', 'Copy message'); cp.type = 'button';
+    cp.addEventListener('click', function () { if (navigator.clipboard) navigator.clipboard.writeText(msg() + ' ' + link('copy')).then(function () { cp.textContent = 'Copied'; setTimeout(function () { cp.textContent = 'Copy message'; }, 1800); }); });
+    row.appendChild(cp);
+    inp.addEventListener('input', function () { wa.href = 'https://wa.me/?text=' + encodeURIComponent(msg() + ' ' + link('whatsapp')); li.href = liHref(); });
+    box.appendChild(row);
+    box.appendChild(el('p', 'sb-tip', 'Posting on LinkedIn? Download the score card first, then add it to your post as an image.'));
+    card.appendChild(box);
   }
 
   start(0);
@@ -141,6 +213,16 @@ const total = s.quiz.sections.reduce((n, x) => n + x.questions.length, 0);
 .share-l{font-size:14px;font-weight:600;color:var(--muted);margin-right:6px}
 .share-b{display:inline-flex;align-items:center;min-height:40px;padding:0 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:600 14px var(--sans);text-decoration:none;cursor:pointer}
 .share-b:hover{border-color:var(--accent);color:var(--accent)}
+.share-b.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.sharebox{margin-top:36px;padding-top:28px;border-top:1px solid var(--line);font-family:var(--sans)}
+.sb-h{margin:0;font:600 20px var(--display);color:var(--ink)}
+.sb-p{margin:6px 0 18px;font-size:15px;color:var(--muted)}
+.sb-lab{display:flex;flex-direction:column;gap:6px;max-width:360px;font-size:14px;font-weight:600;color:var(--body)}
+.sb-lab input{min-height:44px;padding:0 14px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:400 16px var(--sans)}
+.sb-lab input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.sb-card{display:block;width:100%;height:auto;margin:20px 0 0;border-radius:10px;box-shadow:0 1px 0 var(--line)}
+.sharebox .share{margin-top:18px}
+.sb-tip{margin:14px 0 0;font-size:14px;color:var(--muted)}
 .next{margin-top:20px;min-height:48px;padding:0 22px;border:0;border-radius:8px;background:var(--accent);color:var(--on-accent);font:600 15px var(--sans);cursor:pointer}
 </style>
 </Base>
