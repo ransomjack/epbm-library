@@ -27,6 +27,7 @@ jobs = [
  ('default', page('Study notes, made readable.', 'Plain-English notes, diagrams and practice quizzes for EPBM-32. Free to read.')),
  ('global-political-economy', page('Global Political Economy', 'Stakeholders and trust · FDI and PEST · Geopolitical risk · 96 practice MCQs', 'Global Political Economy', small=True)),
  ('financial-reporting-cost-accounting', page('Financial Reporting &amp; Cost Accounting', 'Statements · Depreciation and cash flow · Break-even · Ratios · 315 practice questions', 'Finance & Accounting', small=True)),
+ ('leadership-people-skills', page('Leadership and People Skills', 'Motivation · Groups and teams · Structure · Leading change · 350 practice questions', 'Leadership', small=True)),
 ]
 out = sys.argv[1]
 with sync_playwright() as p:

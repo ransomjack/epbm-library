@@ -1,0 +1,15 @@
+---
+// 4,096 front-line workers organised with a span of 4 versus a span of 8.
+const build = (span) => { const r = []; let n = 4096; while (n > 1) { n = n / span; r.unshift(n); } return r; };
+const cases = [4, 8].map((s) => { const m = build(s); return { s, m, total: m.reduce((a, b) => a + b, 0) }; });
+const w = (n) => Math.max(4, Math.sqrt(n / 4096) * 100);
+---
+<div class="span">
+  {cases.map((c) => (
+    <div class="span-col">
+      <p class="span-h"><b>Span of {c.s}</b><span>{c.m.length} levels of management · {c.total.toLocaleString('en-IN')} managers</span></p>
+      {c.m.map((n, i) => <div class="span-row"><i style={`--w:${w(n)}%`}></i><span>Level {i + 1}: {n.toLocaleString('en-IN')}</span></div>)}
+      <div class="span-row ops"><i style="--w:100%"></i><span>Front line: 4,096</span></div>
+    </div>
+  ))}
+</div>

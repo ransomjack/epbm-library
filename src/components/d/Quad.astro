@@ -1,0 +1,17 @@
+---
+// 2×2 matrix. cols/rows: two labels each; cells: TL, TR, BL, BR as { tag?, t, b, tone?: 'best'|'bad' }
+const { cols, rows, cells, colTitle, rowTitle } = Astro.props;
+---
+<div class="quad">
+  {colTitle && <span class="q-axis q-cx">{colTitle}</span>}
+  <span></span><span class="h">{cols[0]}</span><span class="h">{cols[1]}</span>
+  {[0, 1].map((r) => (
+    <>
+      <span class="h rh">{rowTitle ? `${rows[r]} ${rowTitle}` : rows[r]}</span>
+      {[0, 1].map((c) => {
+        const x = cells[r * 2 + c];
+        return <div class:list={['cell', x.tone]}>{x.tag && <i>{x.tag}</i>}<b>{x.t}</b><span>{x.b}</span></div>;
+      })}
+    </>
+  ))}
+</div>

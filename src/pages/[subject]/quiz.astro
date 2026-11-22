@@ -28,7 +28,7 @@ const total = s.quiz.sections.reduce((n, x) => n + x.questions.length, 0);
   var data = JSON.parse(document.getElementById('quiz-data').textContent);
   var sets = [{ name: 'All questions', questions: [].concat.apply([], data.sections.map(function (s) { return s.questions; })) }]
     .concat(data.sections);
-  var tagText = { PPT: 'From the slides', READING: 'From the reading', NEW: 'Extra question', CROSS: 'Cross-topic', TF: 'True or false', MCQ: 'Multiple choice', BANK: 'Question bank' };
+  var tagText = { PPT: 'From the slides', READING: 'From the reading', NEW: 'Extra question', CROSS: 'Cross-topic', TF: 'True or false', MCQ: 'Multiple choice', BANK: 'Question bank', CLASS: 'From class discussion' };
   var setsEl = document.getElementById('sets'), card = document.getElementById('card');
   var cur, i, score, answered;
 

@@ -1,0 +1,4230 @@
+{
+ "title": "Practice questions",
+ "sections": [
+  {
+   "name": "Session 1: Motivation",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "Motivation is best defined as the processes accounting for an individual’s …",
+     "options": [
+      "Intelligence, skill and training",
+      "Personality, perception and attitude",
+      "Pay, perks and promotion",
+      "Intensity, direction and persistence of effort"
+     ],
+     "answer": 3,
+     "why": "Motivation is intensity (how hard), direction (toward what) and persistence (for how long)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the motivation definition, ‘direction’ refers to …",
+     "options": [
+      "Where the effort is channelled",
+      "How long effort is sustained",
+      "How hard a person tries",
+      "How clever the person is"
+     ],
+     "answer": 0,
+     "why": "Direction is where effort points; high intensity aimed wrongly wastes everything."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which discipline pairing are the parents of Micro OB?",
+     "options": [
+      "Political science and law",
+      "Psychology and social psychology",
+      "Economics and anthropology",
+      "Sociology and economics"
+     ],
+     "answer": 1,
+     "why": "Micro OB (individual + group, incl. motivation) draws on psychology and social psychology."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Macro OB (organisation theory) is chiefly concerned with …",
+     "options": [
+      "Perception and learning",
+      "Individual personality",
+      "Motivation and emotion",
+      "Structures, systems and processes"
+     ],
+     "answer": 3,
+     "why": "Macro OB studies the whole organisation in its context; its parents are sociology, economics, political science."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In Maslow’s hierarchy, which need is satisfied internally rather than externally?",
+     "options": [
+      "Self-actualisation",
+      "Security",
+      "Safety",
+      "Physiological"
+     ],
+     "answer": 0,
+     "why": "Lower needs are satisfied externally (pay, security); higher needs (esteem, self-actualisation) internally."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The correct ascending order of Maslow’s needs is …",
+     "options": [
+      "Safety, physiological, esteem, social, self-actualisation",
+      "Physiological, safety, social, esteem, self-actualisation",
+      "Physiological, social, safety, esteem, self-actualisation",
+      "Social, physiological, safety, self-actualisation, esteem"
+     ],
+     "answer": 1,
+     "why": "Physiological → safety → social-belongingness → esteem → self-actualisation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Prof. Jha’s ‘fast-forward advantage’ describes Maslow as …",
+     "options": [
+      "Strongly supported by research",
+      "A contemporary theory",
+      "Famous and quick to explain but thin on evidence",
+      "Useless to managers"
+     ],
+     "answer": 2,
+     "why": "Maslow is intuitively loved but poorly supported; needs don’t queue in a neat order."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In Herzberg’s theory, pay and working conditions are …",
+     "options": [
+      "Motivators",
+      "Achievement needs",
+      "Growth needs",
+      "Hygiene factors"
+     ],
+     "answer": 3,
+     "why": "Pay, policy, supervision and conditions are extrinsic hygiene factors; they only prevent dissatisfaction."
+    },
+    {
+     "tag": "MCQ",
+     "q": "According to Herzberg, the opposite of ‘dissatisfaction’ is …",
+     "options": [
+      "No dissatisfaction",
+      "Satisfaction",
+      "Engagement",
+      "Motivation"
+     ],
+     "answer": 0,
+     "why": "Satisfaction and dissatisfaction run on separate scales; removing a hygiene problem yields only ‘no dissatisfaction.’"
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is a Herzberg motivator (intrinsic)?",
+     "options": [
+      "Responsibility and advancement",
+      "Job security",
+      "Salary",
+      "Company policy"
+     ],
+     "answer": 0,
+     "why": "Motivators are about the work itself: achievement, recognition, responsibility, advancement, growth."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A common methodological criticism of Herzberg’s study is that people …",
+     "options": [
+      "Credit themselves for good times and blame surroundings for bad ones",
+      "Lied about their pay",
+      "Were all managers",
+      "Could not remember their jobs"
+     ],
+     "answer": 0,
+     "why": "Self-serving attribution biases the two lists, a classic critique of the method."
+    },
+    {
+     "tag": "MCQ",
+     "q": "High need-for-achievement individuals prefer goals with …",
+     "options": [
+      "Near-impossible odds",
+      "No measurable standard",
+      "Roughly 50–50 odds",
+      "Guaranteed success"
+     ],
+     "answer": 2,
+     "why": "They want to stretch, not gamble; easy wins give no satisfaction, impossible ones no challenge."
+    },
+    {
+     "tag": "MCQ",
+     "q": "McClelland found the best managers tend to be …",
+     "options": [
+      "Low on all three",
+      "High nAff, low nPow",
+      "High nPow, lower nAff",
+      "High nAch only"
+     ],
+     "answer": 2,
+     "why": "Effective managers tend to be high on need for power and lower on need for affiliation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Alderfer’s ERG collapses Maslow’s five needs into …",
+     "options": [
+      "Economic, Relational, Group",
+      "Esteem, Relatedness, Goals",
+      "Existence, Relatedness, Growth",
+      "Effort, Reward, Goal"
+     ],
+     "answer": 2,
+     "why": "ERG = Existence (physio+safety), Relatedness (social), Growth (esteem+self-actualisation)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "ERG’s ‘frustration-regression’ principle says …",
+     "options": [
+      "Growth needs never regress",
+      "Blocked lower needs raise higher ones",
+      "Needs must be satisfied in order",
+      "A blocked higher need increases demand for a lower one"
+     ],
+     "answer": 3,
+     "why": "Block relatedness and the person compensates by demanding more existence (e.g. higher pay)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Offshore rigs pay a premium mainly because …",
+     "options": [
+      "Safety needs dominate",
+      "Frustrated relatedness regresses to existence demands",
+      "The work is physically heavier",
+      "Growth needs are fully met"
+     ],
+     "answer": 1,
+     "why": "Isolation frustrates relatedness, which regresses to ‘at least pay me more’ — the ERG mechanism."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Self-Determination Theory’s three psychological needs are …",
+     "options": [
+      "Intensity, direction, persistence",
+      "Power, achievement, affiliation",
+      "Existence, relatedness, growth",
+      "Autonomy, competence, relatedness"
+     ],
+     "answer": 3,
+     "why": "SDT: autonomy (control), competence (mastery) and relatedness (connection)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Cognitive evaluation theory predicts that paying someone for a task they already enjoy will …",
+     "options": [
+      "Always increase effort",
+      "Raise their self-efficacy",
+      "Have no effect",
+      "Reduce the intrinsic interest"
+     ],
+     "answer": 3,
+     "why": "Extrinsic reward can crowd out intrinsic motivation — the Marcia/animal-shelter example."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Locke’s goal-setting theory says the most effective goals are …",
+     "options": [
+      "Vague and easy",
+      "Self-set and easy",
+      "Specific and difficult, with feedback",
+      "Assigned and vague"
+     ],
+     "answer": 2,
+     "why": "Specific + difficult (once accepted) + feedback drives the highest performance."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is NOT one of the three factors shaping whether goals work?",
+     "options": [
+      "Pay grade",
+      "Task characteristics",
+      "National culture",
+      "Goal commitment"
+     ],
+     "answer": 0,
+     "why": "The three are goal commitment, task characteristics and national culture."
+    },
+    {
+     "tag": "MCQ",
+     "q": "MBO operationalises goal-setting by …",
+     "options": [
+      "Cascading specific, verifiable, time-bound goals through every level",
+      "Paying only bonuses",
+      "Removing all targets",
+      "Letting employees set any goal they like"
+     ],
+     "answer": 0,
+     "why": "Management by Objectives cascades org-wide goals down, set participatively."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Wells Fargo fake-accounts scandal illustrates that goals …",
+     "options": [
+      "Should always be vague",
+      "Reduce performance",
+      "Never work",
+      "Have a dark side when unrealistic and tied to rewards"
+     ],
+     "answer": 3,
+     "why": "Aggressive goals tied to rewards invited cheating — ‘dose carefully.’"
+    },
+    {
+     "tag": "MCQ",
+     "q": "The single strongest source of self-efficacy (Bandura) is …",
+     "options": [
+      "Verbal persuasion",
+      "Enactive mastery",
+      "Vicarious modelling",
+      "Arousal"
+     ],
+     "answer": 1,
+     "why": "Actually doing the task successfully builds belief most powerfully."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Vicarious modelling works best when the model is …",
+     "options": [
+      "Your manager",
+      "Someone similar to you",
+      "A celebrity",
+      "A world-class expert"
+     ],
+     "answer": 1,
+     "why": "Watching a peer with a similar handicap helps; watching Tiger Woods does not."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Pygmalion effect is a …",
+     "options": [
+      "Hygiene factor",
+      "Form of equity",
+      "Self-fulfilling prophecy where expectation creates the result",
+      "Type of variable pay"
+     ],
+     "answer": 2,
+     "why": "Believing in someone (e.g. a hard goal) raises their self-efficacy and real performance."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Reinforcement theory differs from goal-setting because it …",
+     "options": [
+      "Is a needs theory",
+      "Is about fairness",
+      "Focuses on inner intentions",
+      "Ignores inner state and looks only at consequences"
+     ],
+     "answer": 3,
+     "why": "Reinforcement is behaviourist; behaviour is a function of its consequences."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Social-learning theory adds to operant conditioning the idea that we also learn by …",
+     "options": [
+      "Observing others",
+      "Being paid",
+      "Reading rules",
+      "Trial and error only"
+     ],
+     "answer": 0,
+     "why": "We learn vicariously by observing models, not only by direct experience."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The four processes in social-learning theory are attention, retention, motor reproduction and …",
+     "options": [
+      "Reinforcement",
+      "Relatedness",
+      "Regression",
+      "Recognition"
+     ],
+     "answer": 0,
+     "why": "Attention → retention → motor reproduction → reinforcement decide a model’s influence."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In expectancy theory, ‘instrumentality’ is the link between …",
+     "options": [
+      "Effort and performance",
+      "Reward and personal goals",
+      "Performance and reward",
+      "Goal and feedback"
+     ],
+     "answer": 2,
+     "why": "Instrumentality = Performance → Reward: ‘if I perform, will I be rewarded?’"
+    },
+    {
+     "tag": "MCQ",
+     "q": "‘Valence’ in expectancy theory asks …",
+     "options": [
+      "Will good performance be rewarded?",
+      "Can I perform if I try?",
+      "Is the reward something I actually want?",
+      "Is the process fair?"
+     ],
+     "answer": 2,
+     "why": "Valence is the value of the reward to the person; a promotion is worthless to one who wanted cash."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why does a zero on any one expectancy link collapse motivation?",
+     "options": [
+      "Because the three are multiplied together",
+      "Because valence dominates",
+      "Because effort is fixed",
+      "Because the links are added"
+     ],
+     "answer": 0,
+     "why": "Motivation = Expectancy × Instrumentality × Valence; a zero anywhere zeroes the product."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Cafeteria-style rewards are designed to fix a problem of …",
+     "options": [
+      "Low valence",
+      "Low instrumentality",
+      "Inequity",
+      "Low expectancy"
+     ],
+     "answer": 0,
+     "why": "Letting people choose their reward raises valence — the photo-with-CEO example."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Equity theory says satisfaction depends on …",
+     "options": [
+      "Absolute pay",
+      "Seniority",
+      "The ratio of one’s outcomes to inputs versus a referent",
+      "The motivator–hygiene mix"
+     ],
+     "answer": 2,
+     "why": "We compare our outcome/input ratio to a referent; mismatch produces felt inequity."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Biprajeet (₹40k) is less satisfied than Aneesha (₹20k) because …",
+     "options": [
+      "Pay is a hygiene factor",
+      "His referent is higher-paid managers elsewhere",
+      "His inputs are lower",
+      "He works harder"
+     ],
+     "answer": 1,
+     "why": "Changing the referent changed the felt ratio — higher pay, lower satisfaction."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is NOT one of the six responses to felt inequity?",
+     "options": [
+      "Leave the field",
+      "Change inputs",
+      "Distort perceptions of others",
+      "Increase the referent’s pay"
+     ],
+     "answer": 3,
+     "why": "The six are: change inputs, change outcomes, distort self, distort others, change referent, or leave."
+    },
+    {
+     "tag": "MCQ",
+     "q": "‘Were we given truthful explanations for the decision?’ is which kind of justice?",
+     "options": [
+      "Procedural",
+      "Distributive",
+      "Interpersonal",
+      "Informational"
+     ],
+     "answer": 3,
+     "why": "Informational justice concerns honest explanations; interpersonal concerns dignity and respect."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Treating people with dignity and respect is which justice type?",
+     "options": [
+      "Procedural",
+      "Distributive",
+      "Informational",
+      "Interpersonal"
+     ],
+     "answer": 3,
+     "why": "Interpersonal justice is about respectful treatment of individuals."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Job engagement is best described as …",
+     "options": [
+      "Attendance",
+      "Liking your salary",
+      "Tenure",
+      "Investing physical, cognitive and emotional energy in the work"
+     ],
+     "answer": 3,
+     "why": "Engagement is deeper than satisfaction — full investment of self in the work."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A noted ‘dark side’ of very high engagement is …",
+     "options": [
+      "Reduced autonomy",
+      "Higher pay demands",
+      "Lower task identity",
+      "Work–family conflict and burnout"
+     ],
+     "answer": 3,
+     "why": "Over-engagement can spill into burnout — ‘too much of a good thing.’"
+    },
+    {
+     "tag": "MCQ",
+     "q": "The integrated model of motivation is built on the spine of which theory?",
+     "options": [
+      "Expectancy",
+      "Reinforcement",
+      "Equity",
+      "Maslow"
+     ],
+     "answer": 0,
+     "why": "Effort → Performance → Rewards → Personal goals is the expectancy spine, with other theories slotted in."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the JCM, which three dimensions build ‘experienced meaningfulness’?",
+     "options": [
+      "Skill variety, task identity, task significance",
+      "Task identity, autonomy, feedback",
+      "Autonomy, feedback, skill variety",
+      "Feedback, significance, autonomy"
+     ],
+     "answer": 0,
+     "why": "Variety + identity + significance build meaningfulness; autonomy builds responsibility; feedback builds knowledge of results."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the MPS formula, which two dimensions are multipliers (so zero in either zeroes the score)?",
+     "options": [
+      "Task significance and feedback",
+      "Identity and significance",
+      "Autonomy and feedback",
+      "Skill variety and task identity"
+     ],
+     "answer": 2,
+     "why": "MPS = [(SV+TI+TS)/3] × Autonomy × Feedback; autonomy and feedback multiply."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Task significance is highest for which job?",
+     "options": [
+      "ICU nurse",
+      "Sweeping a floor",
+      "Turning table legs",
+      "Data entry"
+     ],
+     "answer": 0,
+     "why": "Task significance is how much the work affects others’ lives; an ICU nurse scores high."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Job enrichment (vs rotation) means …",
+     "options": [
+      "Rotating between similar tasks",
+      "Outsourcing the job",
+      "Adding higher-level responsibility and meaning (vertical depth)",
+      "Reducing hours"
+     ],
+     "answer": 2,
+     "why": "Enrichment adds depth and purpose, rooted in Herzberg’s motivators; rotation adds variety horizontally."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The fundraiser-meets-scholarship-student study showed relational job design can …",
+     "options": [
+      "Reduce engagement",
+      "Eliminate feedback",
+      "Cut pay",
+      "Raise persistence ~42% and money raised"
+     ],
+     "answer": 3,
+     "why": "Seeing the beneficiary raised persistence by 42% and nearly doubled funds raised."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Telecommuting’s ‘out of sight, out of mind’ risk mainly costs remote workers …",
+     "options": [
+      "Their autonomy",
+      "Their salary",
+      "Raises and promotions",
+      "Their equipment"
+     ],
+     "answer": 2,
+     "why": "Invisibility can quietly cost remote workers advancement despite good performance."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Works councils and board representatives are forms of …",
+     "options": [
+      "Participative management",
+      "Job rotation",
+      "Piece-rate pay",
+      "Representative participation"
+     ],
+     "answer": 3,
+     "why": "Representative participation; its motivational effect is weaker than direct participation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "‘We talk, but they don’t listen’ warns that EIP …",
+     "options": [
+      "Replaces pay",
+      "Always works",
+      "Reduces justice",
+      "Is worse than not asking if input is ignored"
+     ],
+     "answer": 3,
+     "why": "Soliciting input then ignoring it damages procedural justice more than not asking."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Pay structure balances internal equity (job evaluation) against …",
+     "options": [
+      "Recognition",
+      "Variable pay",
+      "External equity via pay surveys",
+      "Profit-sharing"
+     ],
+     "answer": 2,
+     "why": "Internal equity = worth to the org; external equity = market competitiveness via surveys."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which variable-pay type is most tempted toward ‘quantity over quality’?",
+     "options": [
+      "ESOP",
+      "Merit pay",
+      "Profit-sharing",
+      "Piece-rate"
+     ],
+     "answer": 3,
+     "why": "Piece-rate pays per unit, which can sacrifice quality for volume."
+    },
+    {
+     "tag": "MCQ",
+     "q": "ESOPs lift performance only when employees …",
+     "options": [
+      "Receive bonuses",
+      "Psychologically feel ownership and have a real say",
+      "Work remotely",
+      "Are paid hourly"
+     ],
+     "answer": 1,
+     "why": "Stock ownership motivates only with genuine felt ownership and voice."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Flexible (cafeteria) benefits are the concrete expression of which expectancy concept?",
+     "options": [
+      "Valence",
+      "Instrumentality",
+      "Expectancy",
+      "Equity"
+     ],
+     "answer": 0,
+     "why": "Different people value different benefits — tailoring raises valence."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The great advantage of recognition programmes is that praise is …",
+     "options": [
+      "Tax-free",
+      "A hygiene factor",
+      "Always objective",
+      "Essentially free yet powerfully motivating"
+     ],
+     "answer": 3,
+     "why": "Recognition costs little but strongly affects self-esteem and self-efficacy."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Costco paying above its rivals and getting higher productivity illustrates …",
+     "options": [
+      "Piece-rate",
+      "Gainsharing",
+      "Lagging the market",
+      "A leading pay strategy that pays for itself"
+     ],
+     "answer": 3,
+     "why": "Leading the market can yield higher productivity and lower turnover."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Gainsharing’s biggest design risk is …",
+     "options": [
+      "Low autonomy",
+      "Too little pay",
+      "No feedback",
+      "An unfair distribution formula"
+     ],
+     "answer": 3,
+     "why": "The fairness of how gains are split is everything; it can also raise stress."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the Shivani case, the drivers’ dominant motivation level is …",
+     "options": [
+      "Growth",
+      "Self-actualisation",
+      "Existence",
+      "Esteem"
+     ],
+     "answer": 2,
+     "why": "Cash to feed the family dominates; relatedness and esteem go largely unmet."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Shivani incentive scheme combined goal-setting with which other theory?",
+     "options": [
+      "ERG only",
+      "Expectancy",
+      "Equity only",
+      "Reinforcement only"
+     ],
+     "answer": 1,
+     "why": "A specific accepted target plus a reward tied to hitting it is expectancy in action."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Capping the Shivani incentive after drivers raised output is a textbook case of …",
+     "options": [
+      "Good gainsharing",
+      "Flextime",
+      "Job enrichment",
+      "A variable-pay demotivator / broken instrumentality"
+     ],
+     "answer": 3,
+     "why": "Clawing back a promised reward breaks the Performance→Reward link and feels unjust."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A high-nAch person in the integrated model is notable because they …",
+     "options": [
+      "Only respond to pay",
+      "Need close supervision",
+      "Avoid feedback",
+      "Jump straight from effort to personal goals, internally driven"
+     ],
+     "answer": 3,
+     "why": "High achievers are internally driven and bypass the organisation’s extrinsic rewards."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Self-concordance refers to …",
+     "options": [
+      "How well goal reasons fit one’s own values",
+      "Pay matching the market",
+      "Feedback frequency",
+      "Group agreement"
+     ],
+     "answer": 0,
+     "why": "Goals pursued for intrinsic, value-aligned reasons make people happier and fit better."
+    },
+    {
+     "tag": "CLASS",
+     "q": "Prof. Jha’s Mowgli example (child raised by animals) illustrates the … view.",
+     "options": [
+      "Nature",
+      "Equity",
+      "Expectancy",
+      "Nurture"
+     ],
+     "answer": 3,
+     "why": "Mowgli shows you are a product of your surroundings — the nurture side."
+    },
+    {
+     "tag": "CLASS",
+     "q": "Phrenology (reading head-shape to predict criminality) was used to illustrate the … view.",
+     "options": [
+      "Hygiene",
+      "Valence",
+      "Nature",
+      "Nurture"
+     ],
+     "answer": 2,
+     "why": "It stands for ‘you are born who you are’ — the discredited nature extreme."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Herzberg’s theory, despite method criticism, is noted as widely used in …",
+     "options": [
+      "Nowhere now",
+      "Asian settings including Japan and India",
+      "Only the US",
+      "Only Europe"
+     ],
+     "answer": 1,
+     "why": "It remains hugely influential, including across Asia."
+    },
+    {
+     "tag": "CLASS",
+     "q": "Frank quitting a $24/hr Jeep line for a $15/hr print shop (‘brain turning to JELL-O’) motivates which tool?",
+     "options": [
+      "Profit-sharing",
+      "Job redesign",
+      "Flextime",
+      "ESOP"
+     ],
+     "answer": 1,
+     "why": "Monotony on the line is exactly what rotation/enrichment exist to fix."
+    },
+    {
+     "tag": "CLASS",
+     "q": "In Shivani Carriers, FTL (Full Truck Load) differs from PTL/LTL in that FTL means …",
+     "options": [
+      "No fixed route",
+      "Only partial loads",
+      "One client’s goods fill one truck to one destination",
+      "Many customers share a trailer"
+     ],
+     "answer": 2,
+     "why": "FTL = one client, one truck, one destination; PTL/LTL shares a trailer and handles goods repeatedly."
+    }
+   ]
+  },
+  {
+   "name": "Session 2: Groups and teams",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "A group, in OB terms, is two or more people who …",
+     "options": [
+      "Interact, are interdependent, and pursue a shared objective",
+      "Report to one boss",
+      "Share an office",
+      "Have the same job title"
+     ],
+     "answer": 0,
+     "why": "The defining trio is interaction, interdependence and a shared objective."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An informal group is often more influential than a formal one because it …",
+     "options": [
+      "Is larger",
+      "Has an org chart",
+      "Runs on trust and genuine interest, not authority",
+      "Sets the pay"
+     ],
+     "answer": 2,
+     "why": "Informal groups draw power from trust rather than organisational mandate."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Feeling proud when your team wins a contract you weren’t part of is …",
+     "options": [
+      "Groupthink",
+      "Social identity theory",
+      "Social loafing",
+      "Role conflict"
+     ],
+     "answer": 1,
+     "why": "You internalise the group, so its success becomes your success."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Ingroup favouritism is dangerous for a manager because it …",
+     "options": [
+      "Only affects pay",
+      "Develops unconsciously even with good intentions",
+      "Is illegal",
+      "Requires an org chart"
+     ],
+     "answer": 1,
+     "why": "Spending more informal time with one sub-team breeds favouritism without anyone intending it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Nick’s “not competent” remark is an example of …",
+     "options": [
+      "Role ambiguity",
+      "Distributive injustice",
+      "Groupshift",
+      "Social identity threat"
+     ],
+     "answer": 3,
+     "why": "Challenging a group’s competence damages self-esteem and harms later performance."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The punctuated-equilibrium model applies to …",
+     "options": [
+      "All work groups",
+      "Permanent groups only",
+      "Virtual teams only",
+      "Temporary groups with a fixed deadline"
+     ],
+     "answer": 3,
+     "why": "It describes deadline-driven temporary groups, not permanent ones."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In punctuated equilibrium, major change happens at …",
+     "options": [
+      "The very end",
+      "The first meeting",
+      "Random intervals",
+      "The exact midpoint"
+     ],
+     "answer": 3,
+     "why": "The midpoint transition is the crisis of awareness that triggers recalibration."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Your own understanding of how you should behave in a role is …",
+     "options": [
+      "Role expectation",
+      "Psychological contract",
+      "Role perception",
+      "Role conflict"
+     ],
+     "answer": 2,
+     "why": "Role perception is self-understanding; role expectations are how others think you should behave."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The unwritten agreement of mutual obligations between employee and organisation is the …",
+     "options": [
+      "Service-level agreement",
+      "Norm",
+      "Employment contract",
+      "Psychological contract"
+     ],
+     "answer": 3,
+     "why": "Violating the psychological contract sharply reduces motivation and performance."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The UAE team needing slow relationship-building while Sun demanded speed illustrates …",
+     "options": [
+      "Role ambiguity",
+      "Status inequity",
+      "Social loafing",
+      "Role conflict"
+     ],
+     "answer": 3,
+     "why": "Two legitimate but incompatible role demands at once is role conflict."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Stanford Prison Experiment’s main lesson is that people …",
+     "options": [
+      "Hate authority",
+      "Resist all rules",
+      "Prefer teams",
+      "Don’t just perform roles — they become them"
+     ],
+     "answer": 3,
+     "why": "Random role assignment produced such immersion the study was stopped after six days."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Norms form through all of these EXCEPT …",
+     "options": [
+      "Critical events",
+      "Primacy",
+      "Early behaviours",
+      "The annual report"
+     ],
+     "answer": 3,
+     "why": "Norms form via early behaviours, critical events, leader statements and primacy."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Asch’s line experiments demonstrated …",
+     "options": [
+      "The Hawthorne effect",
+      "Social loafing",
+      "Groupshift",
+      "Conformity to obviously wrong group answers"
+     ],
+     "answer": 3,
+     "why": "About 75% eventually matched a clearly wrong group answer at least once."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Hawthorne effect showed productivity rose because workers …",
+     "options": [
+      "Knew they were observed and felt special",
+      "Worked shorter hours",
+      "Got more light",
+      "Were paid more"
+     ],
+     "answer": 0,
+     "why": "Social recognition and group membership mattered more than physical conditions."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Gossip can be functional when it …",
+     "options": [
+      "Spreads rumours about pay",
+      "Warns the group about free-riders",
+      "Undermines leaders",
+      "Reinforces negative norms"
+     ],
+     "answer": 1,
+     "why": "Protective gossip about cheaters can actually increase cooperation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Sabotage and theft fall under which category of deviant workplace behaviour?",
+     "options": [
+      "Production",
+      "Political",
+      "Personal aggression",
+      "Property"
+     ],
+     "answer": 3,
+     "why": "Property deviance = sabotage and stealing; political = rumours/favouritism."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Status, per status characteristics theory, derives from all EXCEPT …",
+     "options": [
+      "Valued personal characteristics",
+      "Contribution ability",
+      "Power over others",
+      "Length of commute"
+     ],
+     "answer": 3,
+     "why": "The three sources are power, contribution ability and group-valued personal characteristics."
+    },
+    {
+     "tag": "MCQ",
+     "q": "High-status group members tend to …",
+     "options": [
+      "Feel more pressure",
+      "Participate less",
+      "Speak more and deviate from norms more freely",
+      "Conform more"
+     ],
+     "answer": 2,
+     "why": "Status buys airtime and latitude to bend norms; low-status members conform more."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Social loafing increases when …",
+     "options": [
+      "Individual contribution is identifiable",
+      "Individual contribution cannot be identified",
+      "The group is small",
+      "Rewards are individual"
+     ],
+     "answer": 1,
+     "why": "Lost accountability is the driver; the effect grows with group size."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Compared with the West, social loafing in collectivist cultures (China, Japan, India) is …",
+     "options": [
+      "About the same",
+      "Non-existent in the West",
+      "Stronger",
+      "Significantly lower"
+     ],
+     "answer": 3,
+     "why": "Collectivist members feel more responsible to the group, reducing loafing."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The most dangerous cohesiveness quadrant is …",
+     "options": [
+      "High cohesion + low performance norms",
+      "High cohesion + high norms",
+      "Low cohesion + low norms",
+      "Low cohesion + high norms"
+     ],
+     "answer": 0,
+     "why": "A tight team that coheres around disengagement or deviance is the worst outcome."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is NOT a way to build cohesiveness?",
+     "options": [
+      "Physically isolate the group",
+      "Make the group smaller",
+      "Stimulate competition with other groups",
+      "Reward individuals rather than the group"
+     ],
+     "answer": 3,
+     "why": "Group rewards (not individual) build cohesion; the rest are valid methods."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Differences in values and work norms that emerge over time are …",
+     "options": [
+      "Deep-level diversity",
+      "Faultlines",
+      "Stigma by association",
+      "Surface-level diversity"
+     ],
+     "answer": 0,
+     "why": "Deep-level diversity drives real conflict and reveals itself through interaction."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A faultline is best described as …",
+     "options": [
+      "A personality clash",
+      "An invisible crack-line where aligned attributes split a group",
+      "A type of reward",
+      "A decision technique"
+     ],
+     "answer": 1,
+     "why": "Like a geological fault, it’s where the group breaks when pressure comes."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Groupthink is …",
+     "options": [
+      "More information from diversity",
+      "Groups becoming riskier",
+      "Independent ranking of ideas",
+      "Harmony pressure overriding realistic appraisal"
+     ],
+     "answer": 3,
+     "why": "The drive for unanimity suppresses dissent and critical evaluation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Groups amplifying members’ pre-existing leanings is …",
+     "options": [
+      "Reflexivity",
+      "Conformity",
+      "Group polarisation (groupshift)",
+      "Groupthink"
+     ],
+     "answer": 2,
+     "why": "Cautious groups get more cautious, risky groups riskier — discussion produces extremity."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which decision technique produces the highest-quality ideas?",
+     "options": [
+      "Brainstorming",
+      "Coin toss",
+      "Interacting groups",
+      "Nominal Group Technique"
+     ],
+     "answer": 3,
+     "why": "NGT’s silent idea-writing removes social pressure, yielding most and best ideas."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A way to PREVENT groupthink is to …",
+     "options": [
+      "Let the leader state their view first",
+      "Appoint a devil’s advocate",
+      "Keep groups above 15",
+      "Discuss gains before risks"
+     ],
+     "answer": 1,
+     "why": "A formal devil’s advocate, small size and leader-withholding-opinion all reduce groupthink."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The key difference between a work group and a work team is …",
+     "options": [
+      "Synergy: a team produces output exceeding the sum of inputs",
+      "Size",
+      "Pay",
+      "Location"
+     ],
+     "answer": 0,
+     "why": "Teams generate positive synergy and mutual accountability; groups don’t."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Roughly what share of employees actually prefer working in teams?",
+     "options": [
+      "75%",
+      "25%",
+      "95%",
+      "50%"
+     ],
+     "answer": 1,
+     "why": "Only ~25% prefer teamwork even though ~95% say teams matter."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Problem-solving teams’ key limitation is that they …",
+     "options": [
+      "Are too large",
+      "Lack skills",
+      "Recommend but rarely have authority to implement",
+      "Never meet"
+     ],
+     "answer": 2,
+     "why": "Their value is diagnosis and suggestion, not execution."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Self-managed teams critically depend on …",
+     "options": [
+      "Stack ranking",
+      "Piece-rate pay",
+      "Psychological safety",
+      "A devil’s advocate"
+     ],
+     "answer": 2,
+     "why": "Members must feel safe to speak up and create productive conflict."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The four conditions for effective virtual teams include all EXCEPT …",
+     "options": [
+      "Members never meet",
+      "Efforts publicised",
+      "Progress monitored",
+      "Trust before pressure"
+     ],
+     "answer": 0,
+     "why": "The fourth condition is that the team is NOT made invisible to decision-makers."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Greg James’s 45-person team was effectively a …",
+     "options": [
+      "Self-managed team",
+      "Problem-solving team",
+      "Simple structure",
+      "Multiteam system"
+     ],
+     "answer": 3,
+     "why": "Four interdependent sub-teams with a shared goal — managed wrongly as one big group."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Across the team-effectiveness model, trust is …",
+     "options": [
+      "Irrelevant",
+      "Only about pay",
+      "The single most important climate variable",
+      "Fixed once set"
+     ],
+     "answer": 2,
+     "why": "Trust lets members coordinate without monitoring; it’s fragile and must be maintained."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which Big Five trait matters most for team performance?",
+     "options": [
+      "Conscientiousness",
+      "Openness",
+      "Neuroticism",
+      "Extraversion"
+     ],
+     "answer": 0,
+     "why": "Conscientious members back up teammates and follow through."
+    },
+    {
+     "tag": "MCQ",
+     "q": "With 40 high- and 40 low-conscientiousness people, research suggests …",
+     "options": [
+      "Mix them evenly across teams",
+      "Randomise",
+      "Build pure clusters (all-high and all-low)",
+      "Use only the high ones"
+     ],
+     "answer": 2,
+     "why": "Pure clusters yield higher overall performance than even mixing."
+    },
+    {
+     "tag": "MCQ",
+     "q": "James’s team notably lacked which two of the nine team roles?",
+     "options": [
+      "Producer and organiser",
+      "Creator and promoter",
+      "Adviser and assessor",
+      "Linker and controller"
+     ],
+     "answer": 3,
+     "why": "No linker (coordinator) and no controller (quality/rules enforcer)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Bezos’s “two-pizza rule” supports an optimal team size of about …",
+     "options": [
+      "10–15",
+      "5–9",
+      "20+",
+      "2–3"
+     ],
+     "answer": 1,
+     "why": "Research confirms 5–9 members is optimal; above 10 loafing and complexity rise."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A team’s capacity to self-correct its plan is called …",
+     "options": [
+      "Transactive memory",
+      "Efficacy",
+      "Reflexivity",
+      "Cohesion"
+     ],
+     "answer": 2,
+     "why": "Reflexivity is adapting the plan when conditions demand."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Knowing who on the team is best at what, and routing tasks accordingly, is …",
+     "options": [
+      "Transactive memory",
+      "Role conflict",
+      "Groupshift",
+      "Team efficacy"
+     ],
+     "answer": 0,
+     "why": "Transactive memory is part of a shared mental model."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which conflict type can IMPROVE outcomes when moderate?",
+     "options": [
+      "Relationship conflict",
+      "Political deviance",
+      "Personal aggression",
+      "Task conflict"
+     ],
+     "answer": 3,
+     "why": "Moderate task conflict forces critical evaluation; relationship conflict almost always harms."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Across 52 studies, one of the strongest predictors of team performance is …",
+     "options": [
+      "Office location",
+      "Team size",
+      "Prior performance history",
+      "Team trust"
+     ],
+     "answer": 3,
+     "why": "Trust outweighed even prior performance history as a predictor."
+    },
+    {
+     "tag": "MCQ",
+     "q": "To turn individuals into team players, the SELECT lever means …",
+     "options": [
+      "Reward only individuals",
+      "Train conflict resolution",
+      "Assess interpersonal skills and team-orientation",
+      "Hire the best individual performer"
+     ],
+     "answer": 2,
+     "why": "The best individual performer is often not the best team member."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Hallmark and Whole Foods illustrate which lever?",
+     "options": [
+      "Select",
+      "Reward (hybrid/team-weighted)",
+      "Train",
+      "Isolate"
+     ],
+     "answer": 1,
+     "why": "They added group/team-weighted rewards to signal valued behaviour."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A team is appropriate only if the work passes which three tests?",
+     "options": [
+      "Cost, speed, scale",
+      "Size, status, structure",
+      "Complexity, common purpose, interdependency",
+      "Trust, norms, roles"
+     ],
+     "answer": 2,
+     "why": "Use a team when the work is complex, genuinely collective, and interdependent."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Swimming relay scoring (each races alone, scores added) illustrates …",
+     "options": [
+      "Low interdependency — a team may not be needed",
+      "Reflexivity",
+      "High interdependency",
+      "Common purpose"
+     ],
+     "answer": 0,
+     "why": "Pooled, additive output signals low interdependency, unlike soccer."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The central lesson of the Greg James case is that he …",
+     "options": [
+      "Was incompetent",
+      "Had too few people",
+      "Applied co-located habits to a distributed team",
+      "Lacked technical skill"
+     ],
+     "answer": 2,
+     "why": "Distributed teams require deliberately designed coordination he never built."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Every failure in the HS Holdings crisis traces most directly to …",
+     "options": [
+      "Too much pay",
+      "Bad luck",
+      "Divergent mental models",
+      "Excess formalisation"
+     ],
+     "answer": 2,
+     "why": "People held different beliefs about who owned which responsibility."
+    },
+    {
+     "tag": "MCQ",
+     "q": "“Out of sight, out of mind” making non-US teams invisible reflects a failure of which virtual-team condition?",
+     "options": [
+      "Adequate resources",
+      "Trust before pressure",
+      "Monitoring progress",
+      "Not becoming invisible to decision-makers"
+     ],
+     "answer": 3,
+     "why": "Publicising efforts and staying visible to decision-makers is a core virtual-team condition."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A firm announcing ‘we’re reorganising into teams’ without changing coordination, rewards or accountability has …",
+     "options": [
+      "Improved synergy",
+      "Merely renamed its groups",
+      "Created real teams",
+      "Removed hierarchy"
+     ],
+     "answer": 1,
+     "why": "Without earned synergy and mutual accountability, it’s a relabel, not a team."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Starbucks’ Via instant-coffee launch (production + PR + comms + marketing) is an example of a … team.",
+     "options": [
+      "Virtual",
+      "Problem-solving",
+      "Self-managed",
+      "Cross-functional"
+     ],
+     "answer": 3,
+     "why": "Same-level members from different departments on one task is cross-functional."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Mann Gulch fire (1949) is used to show that …",
+     "options": [
+      "Crises test teams hardest when structure breaks under pressure",
+      "Smaller teams always win",
+      "Teams never work in crises",
+      "Trust is irrelevant"
+     ],
+     "answer": 0,
+     "why": "It illustrates structural breakdown under extreme pressure."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Social categorisation means we tend to see …",
+     "options": [
+      "Everyone as an individual",
+      "Only ourselves clearly",
+      "No group differences",
+      "The outgroup as all alike while keeping the ingroup as individuals"
+     ],
+     "answer": 3,
+     "why": "‘They’ become one flat category; ‘we’ keep our distinct personalities."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The India team lumping Americans and British together as one ‘Anglo’ category shows …",
+     "options": [
+      "Groupthink",
+      "Social loafing",
+      "Accurate perception",
+      "Social categorisation flattening the outgroup"
+     ],
+     "answer": 3,
+     "why": "Outgroup members lose internal distinction, even across different nationalities."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The term ‘groupthink’ came from analysis of …",
+     "options": [
+      "Asch’s lines",
+      "The Mann Gulch fire",
+      "The Hawthorne studies",
+      "US foreign-policy fiascos such as the Bay of Pigs invasion"
+     ],
+     "answer": 3,
+     "why": "Irving Janis coined the term in 1972, studying decisions like the Bay of Pigs invasion, where advisers stayed silent rather than seem disloyal."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Groupthink is best summarised as …",
+     "options": [
+      "Too much diversity",
+      "Cohesiveness (staying as one) overriding effectiveness (deciding well)",
+      "Too much conflict",
+      "Effectiveness over cohesiveness"
+     ],
+     "answer": 1,
+     "why": "Harmony pressure beats realistic appraisal; 12 Angry Men is the antidote."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Disagreement about the work itself, which can be healthy, is …",
+     "options": [
+      "Affective conflict",
+      "Relationship conflict",
+      "Process loss",
+      "Task conflict"
+     ],
+     "answer": 3,
+     "why": "Task conflict surfaces more ways to see a problem; the danger is it turning emotional."
+    },
+    {
+     "tag": "MCQ",
+     "q": "When task conflict curdles into ‘this person is out to get me,’ it has become …",
+     "options": [
+      "Affective / relationship conflict (toxic)",
+      "Groupshift",
+      "Reflexivity",
+      "Healthy debate"
+     ],
+     "answer": 0,
+     "why": "Emotional/relationship conflict is almost always destructive, as with Nick–Praveen."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Face-to-face is called ‘rich media’ because …",
+     "options": [
+      "It is always text-based",
+      "It carries more cues (expression, gesture, tone), so conflict resolves OR escalates fast",
+      "It removes all conflict",
+      "It is expensive"
+     ],
+     "answer": 1,
+     "why": "Lean virtual media makes misunderstanding likelier and conflict fester longer."
+    },
+    {
+     "tag": "CLASS",
+     "q": "‘Follow the sun’ 24/7 support exists primarily because …",
+     "options": [
+      "Humans work best in daylight",
+      "It is cheaper",
+      "It is a premium product clients pay extra for",
+      "Time zones are fun"
+     ],
+     "answer": 2,
+     "why": "Always-on support is a sellable moat; a 9-to-5 competitor loses the deal."
+    },
+    {
+     "tag": "CLASS",
+     "q": "Offshoring (vs onshoring) means support delivered …",
+     "options": [
+      "From the client’s own location",
+      "From a cheaper distant location, e.g. India for a US client",
+      "By the client themselves",
+      "Only on weekends"
+     ],
+     "answer": 1,
+     "why": "Offshore = cheaper but distant; onshore = costlier but local, faster, same culture."
+    },
+    {
+     "tag": "CLASS",
+     "q": "US staff doing client-facing work while India did back-end work was driven mainly by …",
+     "options": [
+      "Client trust and cultural familiarity (accent, small talk)",
+      "Skill gaps",
+      "Time zones",
+      "Cost alone"
+     ],
+     "answer": 0,
+     "why": "Clients warm to shared accent and references, creating the status split that bred resentment."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Hofstede’s work showed that …",
+     "options": [
+      "Culture doesn’t affect work",
+      "India has no work culture",
+      "Only individuals matter",
+      "National cultures differ on measurable dimensions (e.g. power distance)"
+     ],
+     "answer": 3,
+     "why": "His IBM-subsidiary study mapped dimensions like power distance and individualism-collectivism."
+    },
+    {
+     "tag": "MCQ",
+     "q": "‘Power distance’ refers to a culture’s …",
+     "options": [
+      "Attitude to hierarchy and authority",
+      "Electricity grid",
+      "Salary range",
+      "Geographic spread"
+     ],
+     "answer": 0,
+     "why": "High power distance = deference to hierarchy; the Colonel said it ‘always works’ in his field."
+    },
+    {
+     "tag": "CLASS",
+     "q": "In the SPLIT diagnostic for distributed teams, the letters stand for …",
+     "options": [
+      "Speed, Pay, Logic, Input, Time",
+      "Status, People, Location, IT, Trust",
+      "Structure, Process, Language, Identity, Technology",
+      "Strategy, Plan, Lead, Iterate, Test"
+     ],
+     "answer": 2,
+     "why": "SPLIT buckets every fix: Structure, Process, Language, Identity, Technology."
+    },
+    {
+     "tag": "CLASS",
+     "q": "Rotating who gets the inconvenient meeting slot is an application of …",
+     "options": [
+      "Groupthink",
+      "Reinforcement",
+      "Equity theory",
+      "Goal-setting"
+     ],
+     "answer": 2,
+     "why": "‘If I’m inconvenienced, others should be too’ — shared fairness over one team always suffering."
+    },
+    {
+     "tag": "CLASS",
+     "q": "The professor’s leadership test contrasted ‘keeping tabs’ with …",
+     "options": [
+      "Holding weekly calls",
+      "Sending emails",
+      "Cutting costs",
+      "Opening doors (‘what can I do so you perform better?’)"
+     ],
+     "answer": 3,
+     "why": "James only monitored; a leader removes barriers and enables performance."
+    },
+    {
+     "tag": "CLASS",
+     "q": "When the right answer is clear but the organisation resists, the framework offered was …",
+     "options": [
+      "Exit, Voice, Loyalty",
+      "SWOT",
+      "Five Forces",
+      "BCG matrix"
+     ],
+     "answer": 0,
+     "why": "Exit (leave), Voice (stay and push for change), or Loyalty (stay and accept)."
+    },
+    {
+     "tag": "CLASS",
+     "q": "Most people, faced with a frustrating organisation, default to …",
+     "options": [
+      "Voice",
+      "Exit",
+      "Silent Loyalty",
+      "Sabotage"
+     ],
+     "answer": 2,
+     "why": "Voice feels risky and exit drastic, so silent loyalty is the common default, though voice is often the responsible path."
+    }
+   ]
+  },
+  {
+   "name": "Session 3: Organisation structure",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "Organisational structure defines how job tasks are …",
+     "options": [
+      "Audited",
+      "Paid and promoted",
+      "Formally divided, grouped and coordinated",
+      "Advertised and sold"
+     ],
+     "answer": 2,
+     "why": "Those three verbs — divide, group, coordinate — are the core definition."
+    },
+    {
+     "tag": "MCQ",
+     "q": "How narrow each person’s job is reflects which element?",
+     "options": [
+      "Centralisation",
+      "Formalisation",
+      "Span of control",
+      "Work specialisation"
+     ],
+     "answer": 3,
+     "why": "Specialisation is the degree to which activities are divided into distinct jobs."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Grouping all engineers together and all accountants together is …",
+     "options": [
+      "Customer departmentalisation",
+      "Geographic departmentalisation",
+      "Functional departmentalisation",
+      "Divisional departmentalisation"
+     ],
+     "answer": 2,
+     "why": "Functional groups similar specialists; Acme and Jones’s kitchen use it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Unity of command means each employee …",
+     "options": [
+      "Reports to exactly one superior",
+      "Has many bosses",
+      "Sets their own goals",
+      "Works alone"
+     ],
+     "answer": 0,
+     "why": "One boss prevents conflicting instructions and paralysis."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A wide span of control produces an organisation that is …",
+     "options": [
+      "Flatter, with fewer managers",
+      "Taller, with more managers",
+      "More formalised",
+      "More centralised"
+     ],
+     "answer": 0,
+     "why": "Wide spans mean fewer managers and flatter hierarchies — cheaper and faster, if work is routine."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Concentrating decision-making at the top is …",
+     "options": [
+      "Centralisation",
+      "Specialisation",
+      "Decentralisation",
+      "Formalisation"
+     ],
+     "answer": 0,
+     "why": "Centralisation = decisions at the top; Acme is the case example."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The degree to which jobs are governed by written rules and procedures is …",
+     "options": [
+      "Formalisation",
+      "Span of control",
+      "Chain of command",
+      "Departmentalisation"
+     ],
+     "answer": 0,
+     "why": "Formalisation is standardisation through rules, descriptions and policies."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Ford’s moving assembly line cutting Model T chassis assembly from about 12.5 hours to about 1.5 hours illustrates …",
+     "options": [
+      "Early gains from work specialisation",
+      "Downsizing",
+      "Decentralisation",
+      "Boundary spanning"
+     ],
+     "answer": 0,
+     "why": "Narrow specialised tasks raised productivity sharply — the rising part of the curve."
+    },
+    {
+     "tag": "MCQ",
+     "q": "‘Human diseconomies’ of specialisation include all EXCEPT …",
+     "options": [
+      "Higher error rates",
+      "Faster mastery",
+      "Boredom",
+      "Absenteeism"
+     ],
+     "answer": 1,
+     "why": "Faster mastery is a gain; the diseconomies are boredom, absenteeism, errors, turnover."
+    },
+    {
+     "tag": "MCQ",
+     "q": "For complex, knowledge-based work, the optimal specialisation point moves …",
+     "options": [
+      "Left (less specialisation)",
+      "To zero",
+      "Off the chart",
+      "Right (more specialisation)"
+     ],
+     "answer": 0,
+     "why": "Complex/creative work turns negative sooner, so the optimum is lower (left)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Kitchen → runner → pantry → floor is which departmentalisation?",
+     "options": [
+      "Geographic",
+      "Customer",
+      "Process",
+      "Functional"
+     ],
+     "answer": 2,
+     "why": "Grouping around workflow stages is process departmentalisation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "HDFC’s retail/corporate/private-wealth split is which departmentalisation?",
+     "options": [
+      "Functional",
+      "Process",
+      "Customer",
+      "Divisional by product"
+     ],
+     "answer": 2,
+     "why": "Grouping by type of customer served is customer departmentalisation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "With 4,096 workers, widening the span from 4 to 8 mainly …",
+     "options": [
+      "Reduces managers and levels",
+      "Adds levels",
+      "Increases formalisation",
+      "Centralises power"
+     ],
+     "answer": 0,
+     "why": "Span 8 needs 585 managers over 4 levels vs 1,365 over 6 with span 4: flatter and cheaper."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Amul’s structure is best described as …",
+     "options": [
+      "A matrix",
+      "Highly centralised",
+      "Structurally decentralised",
+      "A virtual structure"
+     ],
+     "answer": 2,
+     "why": "Farmers and local cooperatives decide locally; the federation handles processing/distribution."
+    },
+    {
+     "tag": "MCQ",
+     "q": "ISRO’s Chandrayaan-3 mission control exemplifies …",
+     "options": [
+      "Low formalisation",
+      "A circular structure",
+      "An organic structure",
+      "Near-maximum formalisation"
+     ],
+     "answer": 3,
+     "why": "Every command rehearsed and documented — you can’t ‘wing it’ landing on the Moon."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Communicating across formal group boundaries is …",
+     "options": [
+      "Boundary spanning",
+      "Groupthink",
+      "Centralisation",
+      "Role conflict"
+     ],
+     "answer": 0,
+     "why": "Boundary spanning raises knowledge transfer and innovation; Omega’s engineer does it by design."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A Simple Structure’s biggest weakness is …",
+     "options": [
+      "One-person dependency; cannot scale",
+      "High overhead",
+      "Slow decisions",
+      "Too many rules"
+     ],
+     "answer": 0,
+     "why": "Flat and centralised is fast but fragile and unscalable."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Indian Railways and a passport office best illustrate a …",
+     "options": [
+      "Virtual structure",
+      "Team structure",
+      "Bureaucracy",
+      "Matrix"
+     ],
+     "answer": 2,
+     "why": "Highly standardised, rule-bound, high-volume routine work is bureaucracy."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The functional structure’s classic weakness is …",
+     "options": [
+      "No career paths",
+      "Too much flexibility",
+      "No specialists",
+      "Silo mentality / poor cross-functional coordination"
+     ],
+     "answer": 3,
+     "why": "Deep silos and a ‘not my job’ culture across functions."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A divisional structure’s typical downside is …",
+     "options": [
+      "Slow decisions only at the top",
+      "Resource duplication and inter-division competition",
+      "No accountability",
+      "No market focus"
+     ],
+     "answer": 1,
+     "why": "Each division duplicates resources and may compete with the others."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which structure violates unity of command by design?",
+     "options": [
+      "Simple",
+      "Matrix",
+      "Functional",
+      "Bureaucracy"
+     ],
+     "answer": 1,
+     "why": "Matrix gives employees two bosses (functional + project) simultaneously."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Zomato/Swiggy core tech and early Airbnb illustrate a …",
+     "options": [
+      "Virtual structure",
+      "Circular structure",
+      "Divisional structure",
+      "Bureaucracy"
+     ],
+     "answer": 0,
+     "why": "A small core outsourcing major functions to external partners is a virtual structure."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The matrix’s most dangerous feature is …",
+     "options": [
+      "No formalisation",
+      "Too few managers",
+      "The dual reporting line creating role conflict",
+      "No specialists"
+     ],
+     "answer": 2,
+     "why": "Two legitimate authorities pulling on one person is organisational-level role conflict."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In a mechanistic model, information flow is …",
+     "options": [
+      "Multi-directional",
+      "Top-down and filtered through hierarchy",
+      "Absent",
+      "Customer-led"
+     ],
+     "answer": 1,
+     "why": "Mechanistic = top-down filtered flow; organic = anyone-to-anyone."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Organic structures are best suited to …",
+     "options": [
+      "Cost-minimisation only",
+      "High-volume manufacturing",
+      "Stable environments and routine work",
+      "Dynamic environments, innovation and novel problems"
+     ],
+     "answer": 3,
+     "why": "Fluidity and decentralisation fit change and innovation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Acme is the case example of a … structure; Omega of a … one.",
+     "options": [
+      "Mechanistic; organic",
+      "Organic; mechanistic",
+      "Matrix; virtual",
+      "Virtual; team"
+     ],
+     "answer": 0,
+     "why": "Acme = mechanistic (rules, hierarchy); Omega = organic (fluid, collective)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The four contingency factors are strategy, size, technology and …",
+     "options": [
+      "Pay",
+      "Culture",
+      "Environment",
+      "Tenure"
+     ],
+     "answer": 2,
+     "why": "Strategy, organisation size, technology and environment determine the right design."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An innovation strategy calls for which structure?",
+     "options": [
+      "Mechanistic",
+      "Organic",
+      "Bureaucratic",
+      "Functional silos"
+     ],
+     "answer": 1,
+     "why": "Innovation needs flexibility and experimentation — organic."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A cost-minimisation strategy calls for which structure?",
+     "options": [
+      "Virtual",
+      "Mechanistic",
+      "Organic",
+      "Circular"
+     ],
+     "answer": 1,
+     "why": "Efficiency and volume favour tight, standardised mechanistic design."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An imitation strategy is best served by …",
+     "options": [
+      "Pure organic",
+      "Pure mechanistic",
+      "A mix of both",
+      "No structure"
+     ],
+     "answer": 2,
+     "why": "Mechanistic for proven products, selective organic for adaptation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Larger organisation size pushes structure toward …",
+     "options": [
+      "Pure organic",
+      "No hierarchy",
+      "More formalisation and specialisation",
+      "Less formalisation"
+     ],
+     "answer": 2,
+     "why": "Coordinating many people requires rules and hierarchy small firms don’t need."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Routine technology pushes toward …",
+     "options": [
+      "Mechanistic",
+      "Matrix",
+      "Circular",
+      "Organic"
+     ],
+     "answer": 0,
+     "why": "Same inputs → same outputs (assembly line) suits mechanistic design."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A stable environment pushes toward …",
+     "options": [
+      "Team-based",
+      "Organic",
+      "Virtual",
+      "Mechanistic"
+     ],
+     "answer": 3,
+     "why": "Predictable conditions allow long planning horizons and tight structure."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Downsizing is best defined as …",
+     "options": [
+      "A temporary pay cut",
+      "Outsourcing only",
+      "A systematic, permanent workforce reduction as redesign",
+      "Hiring freeze"
+     ],
+     "answer": 2,
+     "why": "It is an architectural decision, not a short-term cost measure."
+    },
+    {
+     "tag": "MCQ",
+     "q": "‘Survivor syndrome’ appears when firms …",
+     "options": [
+      "Decentralise",
+      "Hire more staff",
+      "Cut payroll without redesigning the work",
+      "Redesign work thoughtfully"
+     ],
+     "answer": 2,
+     "why": "Remaining staff carry more burden, morale drops, knowledge leaves."
+    },
+    {
+     "tag": "MCQ",
+     "q": "High formalisation tends to …",
+     "options": [
+      "Have no behavioural effect",
+      "Reduce errors in routine work but cut initiative in novel ones",
+      "Increase turnover always",
+      "Raise initiative in novel situations"
+     ],
+     "answer": 1,
+     "why": "Rules cut routine errors but suppress going-beyond-the-role."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Decentralisation is associated with higher satisfaction and commitment, but only when employees …",
+     "options": [
+      "Work remotely",
+      "Feel genuinely capable of the responsibility",
+      "Are paid hourly",
+      "Have one boss"
+     ],
+     "answer": 1,
+     "why": "Autonomy motivates only if people feel able to handle it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "High need-for-clarity individuals perform best in …",
+     "options": [
+      "Organic structures",
+      "Virtual structures",
+      "Matrix structures",
+      "Mechanistic structures"
+     ],
+     "answer": 3,
+     "why": "They prefer defined roles and rules; high need-for-autonomy people prefer organic."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In The Restaurant, Stage 1 (three people do everything) is a …",
+     "options": [
+      "Matrix",
+      "Simple Structure",
+      "Divisional structure",
+      "Bureaucracy"
+     ],
+     "answer": 1,
+     "why": "Flat, centralised, low-formalisation — like a kirana store."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Jones’s span of control was first exceeded around …",
+     "options": [
+      "Never",
+      "Stage 1",
+      "Between Stage 2 and Stage 3",
+      "Stage 4 only"
+     ],
+     "answer": 2,
+     "why": "Growth meant he could no longer supervise everyone, forcing the first management layer."
+    },
+    {
+     "tag": "MCQ",
+     "q": "At Stage 3 Jones’s hardest new requirement was supervisors with …",
+     "options": [
+      "Technical skill",
+      "More tenure",
+      "Human-relations skill (hard to measure)",
+      "Lower pay"
+     ],
+     "answer": 2,
+     "why": "Technical skill is testable; the ability to motivate and manage conflict is much harder to assess."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Jones’s central Stage 4 dilemma is …",
+     "options": [
+      "How to advertise",
+      "Whether to franchise",
+      "Where to buy food",
+      "Standardisation vs morale/culture"
+     ],
+     "answer": 3,
+     "why": "Gaining the benefits of formalisation without losing the warmth that built loyalty."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The recommended Operations Manager role mainly provides …",
+     "options": [
+      "Lower payroll",
+      "Customer departmentalisation",
+      "A formal cross-functional coordination bridge",
+      "More specialisation"
+     ],
+     "answer": 2,
+     "why": "It owns the kitchen-to-customer handoff and resolves cross-departmental disputes."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A new problem the recommended restaurant structure can create is …",
+     "options": [
+      "No training",
+      "No coordination",
+      "Single point of failure",
+      "Bureaucracy creep / silo formation"
+     ],
+     "answer": 3,
+     "why": "Rules can become ends in themselves and departments can blame each other."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Acme and Omega differ most fundamentally in their …",
+     "options": [
+      "City",
+      "Product",
+      "Market",
+      "Structural philosophy (mechanistic vs organic)"
+     ],
+     "answer": 3,
+     "why": "Same parent/product/market/city — opposite structures, by deliberate choice."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Rawls bans written memos at Omega because he believes …",
+     "options": [
+      "Org charts and memos build artificial barriers between specialists",
+      "Email is expensive",
+      "Memos are illegal",
+      "Staff can’t write"
+     ],
+     "answer": 0,
+     "why": "He wants people to walk over and talk, dissolving departmental boundaries."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Acme’s ‘one-man band’ problem is a downside of …",
+     "options": [
+      "High centralisation",
+      "Low formalisation",
+      "Wide spans",
+      "Decentralisation"
+     ],
+     "answer": 0,
+     "why": "Concentrated decisions create a bottleneck and starve managers of information."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The honest verdict on ‘which structure is better, Acme or Omega?’ is …",
+     "options": [
+      "Acme always",
+      "Omega always",
+      "It depends on the environment/contingencies",
+      "Neither works"
+     ],
+     "answer": 2,
+     "why": "Mechanistic wins in stable settings; organic wins when the environment changes."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Omega’s most valuable organisational asset is …",
+     "options": [
+      "Cross-functional understanding and adaptability",
+      "Higher profit",
+      "Strict rules",
+      "A clear org chart"
+     ],
+     "answer": 0,
+     "why": "Breadth and distributed knowledge make it more adaptable, if less profitable now."
+    },
+    {
+     "tag": "MCQ",
+     "q": "‘Structure is strategy made visible’ means …",
+     "options": [
+      "Reporting lines and rules are leadership choices shaping what the org can do",
+      "Strategy is irrelevant",
+      "Structure never changes",
+      "Charts are decoration"
+     ],
+     "answer": 0,
+     "why": "Design decisions determine capability, speed and who wants to work there."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Udupi-franchise analogy (every outlet identical, idli always the same) describes …",
+     "options": [
+      "Omega’s organic structure",
+      "A virtual structure",
+      "Acme’s mechanistic structure",
+      "A matrix"
+     ],
+     "answer": 2,
+     "why": "Fixed, documented, identical process is mechanistic — Acme."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The ‘Zerodha/Razorpay in their first fifty people’ analogy describes …",
+     "options": [
+      "Acme’s mechanistic structure",
+      "A bureaucracy",
+      "Indian Railways",
+      "Omega’s organic structure"
+     ],
+     "answer": 3,
+     "why": "Blurred roles, everyone talking to everyone, fast rearrangement is organic — Omega."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the professor’s three-dimension map, ‘complexity’ is made up of horizontal differentiation, spatial differentiation and …",
+     "options": [
+      "Centralisation",
+      "Socialisation",
+      "Formalisation",
+      "Vertical differentiation (number of layers)"
+     ],
+     "answer": 3,
+     "why": "Complexity = horizontal (division of labour) + vertical (layers) + spatial (locations)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "‘Horizontal differentiation’ is the professor’s term for …",
+     "options": [
+      "Decision location",
+      "Geographic spread",
+      "Number of hierarchy layers",
+      "Division of labour / specialisation across jobs"
+     ],
+     "answer": 3,
+     "why": "Horizontal = specialisation across jobs; vertical = layers; spatial = geography."
+    },
+    {
+     "tag": "CLASS",
+     "q": "The Strategic Constituencies model says an organisation structures itself around …",
+     "options": [
+      "Government rules only",
+      "The largest department",
+      "Whoever is most critical to its survival",
+      "Its oldest employees"
+     ],
+     "answer": 2,
+     "why": "Regulated US airlines elevated lawyers because winning routes was the survival issue."
+    },
+    {
+     "tag": "CLASS",
+     "q": "US airlines once being run by lawyers illustrates that …",
+     "options": [
+      "The survival-critical function rises to the top (strategic constituencies)",
+      "Airlines avoid regulation",
+      "Structure doesn’t matter",
+      "Lawyers make the best CEOs"
+     ],
+     "answer": 0,
+     "why": "When route rights decided success, legal expertise became the constituency that ran the firm."
+    },
+    {
+     "tag": "CLASS",
+     "q": "A key point about effectiveness measures is that they …",
+     "options": [
+      "Don’t matter to structure",
+      "Often pull in different directions across stakeholders",
+      "Are the same for all firms",
+      "Always move in the same direction"
+     ],
+     "answer": 1,
+     "why": "Employee, customer, shareholder and compliance goals frequently conflict."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The learning curve behind specialisation shows that performance gains …",
+     "options": [
+      "Never rise",
+      "Rise then taper off (diminishing returns)",
+      "Rise forever",
+      "Fall immediately"
+     ],
+     "answer": 1,
+     "why": "Early effort yields fast gains, then performance flattens, the basis for specialisation’s ceiling."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Job enlargement differs from job enrichment/enhancement in that enlargement …",
+     "options": [
+      "Adds more tasks of the same level (which may not motivate)",
+      "Removes tasks",
+      "Cuts pay",
+      "Gives part of the boss’s job"
+     ],
+     "answer": 0,
+     "why": "Enlargement = more same-level tasks; enrichment/enhancement adds higher-level responsibility."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Parliament Street post office single-window experiment showed that reducing strict specialisation …",
+     "options": [
+      "Raised both throughput and employee satisfaction",
+      "Only helped customers",
+      "Cut satisfaction",
+      "Had no effect"
+     ],
+     "answer": 0,
+     "why": "Single-window cut queues and raised satisfaction, task variety helped employees too."
+    },
+    {
+     "tag": "CLASS",
+     "q": "The professor argued the dying justification for supervision is …",
+     "options": [
+      "Control",
+      "Mentoring",
+      "Quality",
+      "Coordination"
+     ],
+     "answer": 0,
+     "why": "Control (keeping tabs) is increasingly hard to justify; coordination still adds value."
+    },
+    {
+     "tag": "CLASS",
+     "q": "‘In-process quality control’ means …",
+     "options": [
+      "Each next step checks the previous step’s quality",
+      "No quality checks",
+      "Only the manager checks",
+      "A separate inspector at the end of the line"
+     ],
+     "answer": 0,
+     "why": "It replaces end-of-line inspection, so fewer dedicated controllers are needed."
+    },
+    {
+     "tag": "CLASS",
+     "q": "The KFC vs ‘Kasma Fried Chicken’ example makes the point that …",
+     "options": [
+      "Branding wins",
+      "Hierarchy costs money, so each layer must add value",
+      "Franchises always lose",
+      "Food quality is irrelevant"
+     ],
+     "answer": 1,
+     "why": "Extra managerial layers raise overheads, letting a leaner rival undercut on price."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A narrow span of control produces a … hierarchy; a wide span a … one.",
+     "options": [
+      "Virtual; team",
+      "Flat; tall",
+      "Circular; matrix",
+      "Tall; flat"
+     ],
+     "answer": 3,
+     "why": "Fewer reports per manager means more layers (tall); more reports means fewer layers (flat)."
+    },
+    {
+     "tag": "CLASS",
+     "q": "In the fly-in-the-soup example, ‘controlling the premises of the decision’ means …",
+     "options": [
+      "The manager decides every case",
+      "Escalating every complaint",
+      "Letting waiters comp up to 5 soups freely, then reviewing",
+      "Banning free soup"
+     ],
+     "answer": 2,
+     "why": "It is decentralised and bounded at once, autonomy within a tracked limit."
+    },
+    {
+     "tag": "CLASS",
+     "q": "Karl Weick’s idea of ‘enactment’ holds that …",
+     "options": [
+      "Only data matters",
+      "Managers ignore the environment",
+      "The environment is objective and fixed",
+      "There is no single objective environment; we see what we’re trained and motivated to see"
+     ],
+     "answer": 3,
+     "why": "Training and self-interest shape perception, so firms read the same facts differently."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Boundary spanning is primarily about the boundary between …",
+     "options": [
+      "The organisation and its environment",
+      "Two soups",
+      "HR and payroll",
+      "Two employees"
+     ],
+     "answer": 0,
+     "why": "Boundary spanners (HR, sales, top management) read and interpret the outside world."
+    },
+    {
+     "tag": "CLASS",
+     "q": "The three routes to standardisation the professor gave are formalisation, professional socialisation and …",
+     "options": [
+      "Coercion",
+      "Downsizing",
+      "Socialisation (values-led induction)",
+      "Centralisation"
+     ],
+     "answer": 2,
+     "why": "Socialisation (e.g. MindTree, Four Seasons, Udupi) builds consistency through culture, not rules."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Structural inertia explains why …",
+     "options": [
+      "Rules accumulate over time because adding is easier than deleting",
+      "Structure has no downside",
+      "Organisations never change",
+      "Rules are easy to remove"
+     ],
+     "answer": 0,
+     "why": "Stability brings resistance; old rules linger as new ones are added, breeding bureaucracy."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Theory Y (McGregor) assumes that …",
+     "options": [
+      "People will work if the work is fulfilling",
+      "People dislike work and must be controlled",
+      "Only money motivates",
+      "Supervision must increase"
+     ],
+     "answer": 0,
+     "why": "Theory Y underpins self-managed teams; poor effort signals bad job design, not laziness."
+    },
+    {
+     "tag": "CLASS",
+     "q": "Toyota’s Jidoka (andon cord) illustrates …",
+     "options": [
+      "Maximum supervision",
+      "Centralised decisions",
+      "Authority pushed to the front line (any operator can stop the line)",
+      "End-of-line inspection"
+     ],
+     "answer": 2,
+     "why": "Trusting the operator to halt production shows decentralised authority and quality ownership."
+    },
+    {
+     "tag": "CLASS",
+     "q": "Theory Z / the Japanese value order cited (country>company>family>individual) helped explain …",
+     "options": [
+      "Weak quality",
+      "Matrix conflict",
+      "Low supervision costs and high performance",
+      "High supervision costs"
+     ],
+     "answer": 2,
+     "why": "People worked without being watched, cutting the need for supervision."
+    },
+    {
+     "tag": "CLASS",
+     "q": "‘Weaponised incompetence’ means …",
+     "options": [
+      "Genuine lack of skill",
+      "Cross-training",
+      "Pretending you can’t do a task so you’re never asked to",
+      "Advanced expertise"
+     ],
+     "answer": 2,
+     "why": "It is turf protection; the professor stressed most skills can in fact be learned."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Differentiation must be balanced by integration, where integration includes …",
+     "options": [
+      "Fewer meetings",
+      "Cross-functional teams and superordinate goals",
+      "More silos",
+      "More rules only"
+     ],
+     "answer": 1,
+     "why": "Integration (teams, all-hands, shared goals) pulls specialised units back together."
+    },
+    {
+     "tag": "MCQ",
+     "q": "‘Casualisation’ and the resulting ‘precarity’ refer to …",
+     "options": [
+      "More permanent jobs",
+      "The shift to switch-on/switch-off gig labour and the insecurity it creates",
+      "Stronger unions",
+      "Higher pay"
+     ],
+     "answer": 1,
+     "why": "Casualisation drives the gig economy; precarity is its social cost (e.g. delayed families)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "‘Exploitation’ (vs exploration) means an organisation is good at …",
+     "options": [
+      "Doing known work cheaper, better, faster",
+      "Avoiding all structure",
+      "Ignoring customers",
+      "Inventing brand-new things"
+     ],
+     "answer": 0,
+     "why": "Exploitation = refining the known (Acme); exploration = inventing the new (Omega)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the photocopier contract, Omega delivered on time with zero defects mainly because …",
+     "options": [
+      "It had lower bids",
+      "It had more staff",
+      "Department heads decided together and everyone owned the whole product",
+      "It ignored quality"
+     ],
+     "answer": 2,
+     "why": "Organic collaboration caught the cable error and solved the missing-part problem fast."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Acme shipped late with defects largely because …",
+     "options": [
+      "It had no deadline",
+      "Its staff were unskilled",
+      "Everything routed through Tyler and people stayed in their silos",
+      "Omega sabotaged it"
+     ],
+     "answer": 2,
+     "why": "Centralised, siloed working created bottlenecks and turf wars under time pressure."
+    },
+    {
+     "tag": "MCQ",
+     "q": "‘Ambidexterity’ in organisation design means being able to …",
+     "options": [
+      "Avoid mergers",
+      "Do both exploitation and exploration at once",
+      "Only cut costs",
+      "Centralise fully"
+     ],
+     "answer": 1,
+     "why": "Modern firms must exploit the known and explore the new simultaneously."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Toyota’s reduction of setup/changeover time helped create …",
+     "options": [
+      "Mass customisation (variety AND low cost)",
+      "Pure cost leadership only",
+      "Higher defects",
+      "Craft customisation"
+     ],
+     "answer": 0,
+     "why": "Cutting changeover time broke the old customised-costly vs standardised-cheap trade-off."
+    },
+    {
+     "tag": "CLASS",
+     "q": "‘It’s lonely at the top’ (the John Tyler / Roman Catholic Church point) means …",
+     "options": [
+      "Centralisation makes the org expect the boss to know everything, which no one can",
+      "Top jobs pay less",
+      "Bosses are introverts",
+      "Hierarchy is illegal"
+     ],
+     "answer": 0,
+     "why": "God-like omniscience is projected onto the hierarchical superior, an impossible expectation."
+    },
+    {
+     "tag": "CLASS",
+     "q": "The investor-vs-employee paradox (Friedman’s Walmart test, CMC Limited) shows that …",
+     "options": [
+      "Money never matters",
+      "Employees and investors always agree",
+      "Investors fund Omega",
+      "We prefer to WORK at Omega but INVEST in Acme, so the world drifts toward Acme"
+     ],
+     "answer": 3,
+     "why": "When the two expectations conflict, the investor usually wins, eroding work-life balance."
+    },
+    {
+     "tag": "CLASS",
+     "q": "Most mergers (e.g. a hypothetical Acme + Omega) fail because of …",
+     "options": [
+      "Government rules",
+      "Too few customers",
+      "Cultural mismatch between the two organisations",
+      "Lack of capital"
+     ],
+     "answer": 2,
+     "why": "Complementary skills on paper are undone by clashing cultures; shareholder value often falls."
+    },
+    {
+     "tag": "CLASS",
+     "q": "Why does ambidexterity stay hard in practice?",
+     "options": [
+      "No one wants to innovate",
+      "Exploitation is unprofitable",
+      "Exploration is illegal",
+      "Best people, career paths and rewards all gravitate to exploitation (the known, revenue-earning work)"
+     ],
+     "answer": 3,
+     "why": "The future (exploration) is starved because incentives and talent flow to the present."
+    },
+    {
+     "tag": "CLASS",
+     "q": "‘Delegation’ differs from ‘relegation’ in that delegation …",
+     "options": [
+      "Avoids giving work",
+      "Just dumps work on someone",
+      "Centralises decisions",
+      "Prepares people, gives resources, praises and corrects"
+     ],
+     "answer": 3,
+     "why": "Relegation is offloading the monkey; delegation is genuine empowerment with support."
+    }
+   ]
+  },
+  {
+   "name": "Session 4: Change and stress",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "The kirana owner keeping his notebook despite a better billing app shows that change management is really about …",
+     "options": [
+      "Managing the loss of the old (habit, mastery, identity)",
+      "Proving the new tool is better",
+      "Hiring younger staff",
+      "Buying better software"
+     ],
+     "answer": 0,
+     "why": "People mourn the old thing; the resistance isn’t about the tool’s merits."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is NOT one of the six forces for change?",
+     "options": [
+      "Technology",
+      "Changing workforce",
+      "Economic shocks",
+      "Stable suppliers"
+     ],
+     "answer": 3,
+     "why": "The six are workforce, technology, economic shocks, competition, social trends, world politics."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Demonetisation hitting cash businesses overnight is an example of which force?",
+     "options": [
+      "Economic shock",
+      "Competition",
+      "Social trends",
+      "Technology"
+     ],
+     "answer": 0,
+     "why": "An unpredicted event that instantly forces new ways of working is an economic shock."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Planned change is best defined as change that is …",
+     "options": [
+      "Intentional and goal-oriented",
+      "Purely technological",
+      "Forced by regulators",
+      "Accidental"
+     ],
+     "answer": 0,
+     "why": "Planned change is deliberate, aiming to improve adaptability and alter behaviour."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An organisation has truly changed only when …",
+     "options": [
+      "Software is installed",
+      "The CEO announces it",
+      "A new strategy is written",
+      "Its people start behaving differently"
+     ],
+     "answer": 3,
+     "why": "Behaviour change, not documents, is the real test of change."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Boards often hire outsiders as change agents because outsiders …",
+     "options": [
+      "Know the firm better",
+      "Aren’t trapped by old loyalties",
+      "Are cheaper",
+      "Need less data"
+     ],
+     "answer": 1,
+     "why": "An outsider has no investment in the status quo — Jess Westerly fits this exactly."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A little resistance to change is actually healthy because it …",
+     "options": [
+      "Brings stability and surfaces genuine flaws",
+      "Hides problems",
+      "Slows everything down",
+      "Eliminates debate"
+     ],
+     "answer": 0,
+     "why": "Functional conflict can improve the plan; the danger is resistance going underground."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The most dangerous form of resistance is …",
+     "options": [
+      "Silent, deferred resistance",
+      "Written objections",
+      "Loud, immediate complaints",
+      "Questions in the townhall"
+     ],
+     "answer": 0,
+     "why": "Quiet, deferred resistance is invisible until adoption collapses months later."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A townhall where everyone nods and no one objects is best read as …",
+     "options": [
+      "Irrelevant",
+      "Genuine agreement",
+      "Proof of success",
+      "Possibly resistance going underground"
+     ],
+     "answer": 3,
+     "why": "Silence can be the resistance; treat it as data, not consent."
+    },
+    {
+     "tag": "MCQ",
+     "q": "‘I prefer a familiar problem to an unfamiliar promise’ captures which source of resistance?",
+     "options": [
+      "Habit",
+      "Selective hearing",
+      "Fear of the unknown",
+      "Economic fear"
+     ],
+     "answer": 2,
+     "why": "Fear of the unknown keeps people in situations they dislike."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Reading the slide that says your region is safe and skipping the one that says the model is dying is …",
+     "options": [
+      "Structural inertia",
+      "Group inertia",
+      "Habit",
+      "Selective information processing"
+     ],
+     "answer": 3,
+     "why": "We filter information to protect the world we’ve already built."
+    },
+    {
+     "tag": "MCQ",
+     "q": "‘The same audit trails that create stability defend the old way like antibodies’ describes …",
+     "options": [
+      "Structural inertia",
+      "Threat to power",
+      "Group inertia",
+      "Habit"
+     ],
+     "answer": 0,
+     "why": "Structural inertia: built-in mechanisms producing sameness resist change."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Changing one subsystem while the rest pulls it back is …",
+     "options": [
+      "Coercion",
+      "Selective hearing",
+      "Limited focus of change",
+      "Threat to expertise"
+     ],
+     "answer": 2,
+     "why": "Interconnected subsystems (the baby’s mobile) snap a half-change back."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Your strongest specialists sometimes resist hardest because of …",
+     "options": [
+      "Economic fear",
+      "Habit",
+      "Group inertia",
+      "Threat to established expertise"
+     ],
+     "answer": 3,
+     "why": "A change that elevates a new skill devalues masters of the old one."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The deepest engine of resistance in the Jess Westerly case is …",
+     "options": [
+      "Fear of unknown",
+      "Threat to established power relationships",
+      "Habit",
+      "Threat to expertise"
+     ],
+     "answer": 1,
+     "why": "Call patterns were the consultants’ decision; taking it threatened their power."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Among the eight tactics, communication mainly cures resistance caused by …",
+     "options": [
+      "Power loss",
+      "Misunderstanding / poor information",
+      "Economic fear",
+      "Habit"
+     ],
+     "answer": 1,
+     "why": "If people understand and still lose something, more talking won’t help."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why does participation reduce resistance?",
+     "options": [
+      "It’s hard to fight a decision you helped make",
+      "It avoids training",
+      "It uses coercion",
+      "It’s faster"
+     ],
+     "answer": 0,
+     "why": "Co-creation turns fingerprints into commitment — but you must mean it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Trust as a buffer for change is described as …",
+     "options": [
+      "Built during the crisis",
+      "Only about pay",
+      "A bank account that must be full before the announcement",
+      "Irrelevant"
+     ],
+     "answer": 2,
+     "why": "A change is a big withdrawal; the account is filled in normal times."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which tactic clearly ‘crosses the ethical line’?",
+     "options": [
+      "Communication",
+      "Manipulation and cooptation",
+      "Participation",
+      "Fair implementation"
+     ],
+     "answer": 1,
+     "why": "Covert influence and fake roles detonate when discovered, destroying credibility."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Honest cooptation (vs manipulation) means giving a critic …",
+     "options": [
+      "A transfer",
+      "A pay rise",
+      "A fake title",
+      "A real design role with power to change the plan"
+     ],
+     "answer": 3,
+     "why": "The difference is whether you’re genuinely willing to be changed by them."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Coercion is characterised as …",
+     "options": [
+      "The best first option",
+      "Slowest, lowest resentment",
+      "Always unethical and illegal",
+      "Fastest, but highest later resentment and underground disengagement"
+     ],
+     "answer": 3,
+     "why": "Direct threats get surface compliance fast and quiet disengagement later."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Lewin’s three steps, in order, are …",
+     "options": [
+      "Unfreeze, move, refreeze",
+      "Refreeze, move, unfreeze",
+      "Diagnose, act, evaluate",
+      "Move, unfreeze, refreeze"
+     ],
+     "answer": 0,
+     "why": "Melt the status quo, move to the new state, then refreeze so it sticks."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In force-field analysis, the smarter and cheaper move is usually to …",
+     "options": [
+      "Send more emails",
+      "Press the accelerator harder",
+      "Release the restraining forces (the brake)",
+      "Add more targets"
+     ],
+     "answer": 2,
+     "why": "Reducing restraining forces beats piling on driving forces."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The strongest single restraining force is often …",
+     "options": [
+      "Past success",
+      "Lack of money",
+      "New technology",
+      "Young employees"
+     ],
+     "answer": 0,
+     "why": "‘Why fix what isn’t broken?’ is loudest in winning organisations."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In Kotter’s model, steps 1–4 correspond to which Lewin phase?",
+     "options": [
+      "Unfreeze",
+      "Move",
+      "Evaluate",
+      "Refreeze"
+     ],
+     "answer": 0,
+     "why": "Steps 1–4 unfreeze, 5–7 move, 8 refreezes."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Kotter’s step 1 is …",
+     "options": [
+      "Create urgency",
+      "Create a vision",
+      "Anchor the culture",
+      "Form a coalition"
+     ],
+     "answer": 0,
+     "why": "Make ‘why now’ vivid enough that standing still feels riskier."
+    },
+    {
+     "tag": "MCQ",
+     "q": "‘Declaring victory too soon’ violates which Kotter step?",
+     "options": [
+      "Communicate the vision",
+      "Consolidate gains and keep moving",
+      "Form a coalition",
+      "Create urgency"
+     ],
+     "answer": 1,
+     "why": "Step 7 warns the old culture flows back if you stop early."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The key insight about Kotter is that …",
+     "options": [
+      "Most failures skip steps 5–8",
+      "Only the CEO matters",
+      "More than half happens before anything visibly changes",
+      "Vision is optional"
+     ],
+     "answer": 2,
+     "why": "Most failed change skipped the unfreezing steps 1–4."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Satya Nadella’s Microsoft turnaround is used to illustrate …",
+     "options": [
+      "Piece-rate pay",
+      "Coercion",
+      "Survivor syndrome",
+      "Kotter’s eight steps in action"
+     ],
+     "answer": 3,
+     "why": "Honest urgency, rebuilt coalition, clear vision, publicised wins, anchored growth mindset."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The five steps of action research are diagnosis, analysis, feedback, action and …",
+     "options": [
+      "Evaluation",
+      "Refreezing",
+      "Selection",
+      "Coercion"
+     ],
+     "answer": 0,
+     "why": "It runs change like the scientific method and ends by measuring against baseline data."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Action research lowers resistance mainly because …",
+     "options": [
+      "It uses incentives",
+      "It avoids data",
+      "It’s fast",
+      "People participate from diagnosis onward"
+     ],
+     "answer": 3,
+     "why": "It is problem-focused and participative, so buy-in builds before change starts."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Two groups each writing how they see themselves and the other is which OD tool?",
+     "options": [
+      "Survey feedback",
+      "Sensitivity training",
+      "Process consultation",
+      "Intergroup development"
+     ],
+     "answer": 3,
+     "why": "Intergroup development surfaces that most of the conflict is stereotype."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Appreciative inquiry differs from other OD tools because it starts from …",
+     "options": [
+      "The org chart",
+      "The balance sheet",
+      "What’s broken",
+      "When we were at our best"
+     ],
+     "answer": 3,
+     "why": "Its 4-D cycle (Discovery, Dreaming, Design, Destiny) builds on strengths."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Process consultation’s distinctive value is that …",
+     "options": [
+      "It’s purely survey-based",
+      "The manager learns to diagnose their own issues",
+      "The consultant solves it for you",
+      "It needs no manager"
+     ],
+     "answer": 1,
+     "why": "The diagnostic skill stays with the manager after the consultant leaves."
+    },
+    {
+     "tag": "MCQ",
+     "q": "‘Managing paradox’ in change-ready firms means …",
+     "options": [
+      "Holding tensions that never fully resolve (like a moving bicycle)",
+      "Choosing stability always",
+      "Avoiding innovation",
+      "Removing all tension"
+     ],
+     "answer": 0,
+     "why": "Balance exists only with forward momentum; tensions are held, not solved."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is NOT one of the four conditions that stimulate innovation?",
+     "options": [
+      "Organic structures",
+      "Maximum formalisation",
+      "Slack resources",
+      "Rewards tied to innovation"
+     ],
+     "answer": 1,
+     "why": "The four are organic structures, innovation rewards, slack resources and cross-boundary communication."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An ‘idea champion’ is someone who …",
+     "options": [
+      "Writes the budget",
+      "Audits compliance",
+      "Runs payroll",
+      "Actively fights an innovation through resistance"
+     ],
+     "answer": 3,
+     "why": "Champions provide the energy and political push to get ideas adopted."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A learning organisation is characterised by …",
+     "options": [
+      "Reactiveness",
+      "Continuous capacity to adapt; systems thinking and shared vision",
+      "Rigid routines",
+      "Internal competition"
+     ],
+     "answer": 1,
+     "why": "It discards old routines, thinks in systems and subordinates personal agendas."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Stress is defined as a condition where an outcome is both …",
+     "options": [
+      "Uncertain and important",
+      "Distant and minor",
+      "Cheap and quick",
+      "Easy and pleasant"
+     ],
+     "answer": 0,
+     "why": "Stress lives in the gap between demands and resources when stakes are high."
+    },
+    {
+     "tag": "MCQ",
+     "q": "High demands with high resources are experienced as …; high demands with low resources as drowning.",
+     "options": [
+      "Apathy",
+      "A hindrance",
+      "A challenge",
+      "Boredom"
+     ],
+     "answer": 2,
+     "why": "Resources convert a heavy load into an energising challenge."
+    },
+    {
+     "tag": "MCQ",
+     "q": "That a trivial last request can trigger a huge reaction shows stressors are …",
+     "options": [
+      "Independent",
+      "Additive (they stack)",
+      "Self-cancelling",
+      "Subtractive"
+     ],
+     "answer": 1,
+     "why": "Each stressor adds to the pile; the small one is just the last straw."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Red tape, office politics and unclear responsibilities are …",
+     "options": [
+      "Buffers",
+      "Resources",
+      "Hindrance stressors",
+      "Challenge stressors"
+     ],
+     "answer": 2,
+     "why": "Hindrance stressors block goals and only corrode; challenge stressors can energise."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A leader’s job regarding stress is best described as …",
+     "options": [
+      "Add more deadlines",
+      "Strip out hindrance stress so challenge remains",
+      "Remove all pressure",
+      "Ignore it"
+     ],
+     "answer": 1,
+     "why": "Keep the energising challenge, kill the corrosive hindrance."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which stress symptoms form a leader’s most usable ‘dashboard’?",
+     "options": [
+      "Psychological only",
+      "None are visible",
+      "Behavioural (productivity, absence, attrition)",
+      "Physiological (blood pressure)"
+     ],
+     "answer": 2,
+     "why": "You can’t see blood pressure, but you can see absences and output."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The cumulative ‘wear and tear’ from constant adjustment is …",
+     "options": [
+      "Inverted-U",
+      "Groupshift",
+      "Allostatic load",
+      "Reflexivity"
+     ],
+     "answer": 2,
+     "why": "Allostasis is the adjusting; allostatic load is the accumulated cost."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The inverted-U stress model should be used cautiously because it is …",
+     "options": [
+      "Strongly proven",
+      "Popular but weakly supported empirically",
+      "A type of OD",
+      "Illegal"
+     ],
+     "answer": 1,
+     "why": "Intuitive but not well backed by evidence."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The best-documented buffer against stress is …",
+     "options": [
+      "Caffeine",
+      "Social support",
+      "Longer hours",
+      "High pay"
+     ],
+     "answer": 1,
+     "why": "Collegial and social support is the most reliable moderator of stress."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Even high earners reporting money troubles reflects that overextension …",
+     "options": [
+      "Falls with income",
+      "Only affects the poor",
+      "Is imaginary",
+      "Tends to scale with income"
+     ],
+     "answer": 3,
+     "why": "Lifestyle and commitments often rise with earnings; it’s a personal-life stressor."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The cheapest organisational stressor for a leader to fix is usually …",
+     "options": [
+      "The economy",
+      "Role ambiguity (unclear ownership)",
+      "Pay",
+      "Personality"
+     ],
+     "answer": 1,
+     "why": "Clarifying who owns what costs little and is largely within the leader’s signature."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The single thing Jess Westerly must NOT do next is …",
+     "options": [
+      "Spend time in the field",
+      "Send another mass directive memo",
+      "Pilot with volunteers",
+      "Build a coalition"
+     ],
+     "answer": 1,
+     "why": "Repeating the original mistake — or leading with cash — would deepen the failure."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Kauflauf’s field consultants are notable because they rank money … among motivators.",
+     "options": [
+      "First",
+      "They only want money",
+      "Last",
+      "Second"
+     ],
+     "answer": 2,
+     "why": "This sales force runs on pride and storytelling, so cash is the wrong first lever."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Jess’s analysis (35% of time on 85%-revenue clients) being excellent yet failing shows …",
+     "options": [
+      "Data is useless",
+      "She had bad data",
+      "Being right wins approval up, but relationships/systems win adoption down",
+      "Change is impossible"
+     ],
+     "answer": 2,
+     "why": "Correct diagnosis is the entry ticket, not the victory."
+    },
+    {
+     "tag": "MCQ",
+     "q": "‘Karoshi’, the anchor story of the stress section, refers to …",
+     "options": [
+      "A wellness programme",
+      "A type of sabbatical",
+      "Death from overwork (Japanese term)",
+      "A relaxation technique"
+     ],
+     "answer": 2,
+     "why": "Naoya Nishigaki’s death from overwork frames stress as a leadership responsibility."
+    },
+    {
+     "tag": "MCQ",
+     "q": "One study found that being treated unfairly measurably raised employees’ …",
+     "options": [
+      "Job satisfaction",
+      "Cortisol (the stress hormone)",
+      "Dopamine",
+      "Productivity"
+     ],
+     "answer": 1,
+     "why": "Unfair treatment is a physiological event, not just bad manners."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The most underrated organisational stressor, per the notes, is …",
+     "options": [
+      "Pay",
+      "Office noise only",
+      "Role demands (conflict, overload, ambiguity)",
+      "Commute"
+     ],
+     "answer": 2,
+     "why": "Role conflict, overload and especially ambiguity are highlighted as underrated."
+    },
+    {
+     "tag": "MCQ",
+     "q": "On culture and stress, the study cited found US employees stressed by lack of control while Chinese employees were stressed by …",
+     "options": [
+      "Too much pay",
+      "Job evaluations and lack of training",
+      "Team rewards",
+      "Short hours"
+     ],
+     "answer": 1,
+     "why": "The stressors and their meaning differ across cultures."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The best-documented buffer against stress in the whole literature is …",
+     "options": [
+      "An enriched job",
+      "Social support",
+      "High pay",
+      "A bonus"
+     ],
+     "answer": 1,
+     "why": "Social support is repeatedly the strongest moderator."
+    },
+    {
+     "tag": "CLASS",
+     "q": "The professor’s three questions for any change are content, process and …",
+     "options": [
+      "Context (where it is being changed)",
+      "Culture",
+      "Compliance",
+      "Cost"
+     ],
+     "answer": 0,
+     "why": "Content = what changes; process = how; context = where. Jess ignored context."
+    },
+    {
+     "tag": "CLASS",
+     "q": "Jess Westerly’s core misjudgement was assuming …",
+     "options": [
+      "The firm was failing",
+      "Her data was wrong",
+      "What worked at her last company would work here (ignoring context)",
+      "Money motivates the FCs"
+     ],
+     "answer": 2,
+     "why": "Same tool, different context, the classic expert’s error."
+    },
+    {
+     "tag": "CLASS",
+     "q": "Edgar Schein’s ‘process consultation’ holds that …",
+     "options": [
+      "The consultant is the expert with all answers",
+      "Change needs no help",
+      "The client system knows its work best; the consultant helps it ask the right questions",
+      "Consultants should avoid clients"
+     ],
+     "answer": 2,
+     "why": "It dissolves us-vs-them by letting the organisation diagnose itself."
+    },
+    {
+     "tag": "CLASS",
+     "q": "Arriving as ‘the expert’ (as Jess did) tends to …",
+     "options": [
+      "Remove resistance",
+      "Guarantee success",
+      "Build instant trust",
+      "Invite everyone to prove you wrong"
+     ],
+     "answer": 3,
+     "why": "Expert mode fits only when the outsider truly holds knowledge insiders lack."
+    },
+    {
+     "tag": "CLASS",
+     "q": "Kurt Lewin developed his change model partly out of his lifelong concern with …",
+     "options": [
+      "Tax policy",
+      "Supply chains",
+      "Changing attitudes toward race and prejudice (he fled Nazi Germany)",
+      "Profit maximisation"
+     ],
+     "answer": 2,
+     "why": "The German-Jewish refugee studied how to shift deeply held attitudes."
+    },
+    {
+     "tag": "MCQ",
+     "q": "‘Creating a burning platform’ corresponds to which Lewin stage?",
+     "options": [
+      "Refreeze",
+      "Move",
+      "Evaluate",
+      "Unfreeze (create the need for change)"
+     ],
+     "answer": 3,
+     "why": "Kotter’s phrase for unfreezing; Jess skipped it entirely."
+    },
+    {
+     "tag": "CLASS",
+     "q": "The professor’s claim about change models is that …",
+     "options": [
+      "Every model is a reworking/expansion of Lewin’s unfreeze-move-refreeze",
+      "Only Kotter matters",
+      "They are all completely different",
+      "Models are useless"
+     ],
+     "answer": 0,
+     "why": "Branded X-Y-Z models all trace back to Lewin; Kotter’s 8 steps map onto the 3 stages."
+    },
+    {
+     "tag": "CLASS",
+     "q": "On who sees vs who knows the need for change: an outsider tends to …",
+     "options": [
+      "Know best what will work",
+      "See the need more readily but risk throwing the baby out with the bathwater",
+      "Never notice problems",
+      "Always succeed"
+     ],
+     "answer": 1,
+     "why": "Pair outsider diagnosis with insider knowledge of what actually works."
+    },
+    {
+     "tag": "CLASS",
+     "q": "The ‘doing well vs doing badly’ paradox of change is that …",
+     "options": [
+      "Failing firms change easily",
+      "Change is always easy",
+      "Only money matters",
+      "A winning firm has high capability but low felt need; a losing firm the reverse"
+     ],
+     "answer": 3,
+     "why": "The sweet spot is to change while still strong, which is why unfreezing winners is hard."
+    },
+    {
+     "tag": "CLASS",
+     "q": "In a ‘downward spiral’, each failed fix tends to …",
+     "options": [
+      "Improve decisions",
+      "Guarantee recovery",
+      "Reduce decision-making ability as blame paralyses people",
+      "Raise morale"
+     ],
+     "answer": 2,
+     "why": "Repeated failure can spin an organisation down toward dissolution (e.g. Kodak)."
+    },
+    {
+     "tag": "CLASS",
+     "q": "The directive failing under Jess’s own name and ID meant that …",
+     "options": [
+      "Her boss took the blame",
+      "It succeeded",
+      "She, not her boss, absorbed all the blame",
+      "No one noticed"
+     ],
+     "answer": 2,
+     "why": "The wrong messenger destroyed her credibility when it failed."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Self-set goals generally command more commitment than assigned goals, which is why …",
+     "options": [
+      "Targets should always be imposed",
+      "Goals don’t matter",
+      "Removing the consultants’ own control over call patterns bred resistance",
+      "Money is the only lever"
+     ],
+     "answer": 2,
+     "why": "Imposing a target stripped ownership the field force previously held."
+    },
+    {
+     "tag": "CLASS",
+     "q": "Kauflauf’s change was pushed mainly by …",
+     "options": [
+      "The founders alone",
+      "A market crisis",
+      "The professional ‘grown-ups’ brought in to bring order, not a felt market need",
+      "Customers"
+     ],
+     "answer": 2,
+     "why": "The firm was winning; the push came from incoming managers, so the field saw no need."
+    }
+   ]
+  },
+  {
+   "name": "Mixed: all four sessions",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "Motivation’s three dials are intensity, persistence and …",
+     "options": [
+      "Equity",
+      "Direction",
+      "Ability",
+      "Intelligence"
+     ],
+     "answer": 1,
+     "why": "Intensity (how hard), direction (toward what), persistence (how long)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Removing a hygiene problem (Herzberg) produces …",
+     "options": [
+      "No dissatisfaction",
+      "Satisfaction",
+      "Engagement",
+      "Motivation"
+     ],
+     "answer": 0,
+     "why": "Satisfaction and dissatisfaction are separate scales."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In expectancy theory a zero on any link collapses motivation because the links are …",
+     "options": [
+      "Added",
+      "Ignored",
+      "Multiplied",
+      "Averaged"
+     ],
+     "answer": 2,
+     "why": "Motivation = Expectancy × Instrumentality × Valence."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Cafeteria-style rewards directly address low …",
+     "options": [
+      "Equity",
+      "Valence",
+      "Expectancy",
+      "Instrumentality"
+     ],
+     "answer": 1,
+     "why": "Letting people choose the reward raises its personal value."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Biprajeet earning more but feeling less satisfied is explained by …",
+     "options": [
+      "A higher-paid referent in equity theory",
+      "Reinforcement",
+      "Goal-setting",
+      "Self-efficacy"
+     ],
+     "answer": 0,
+     "why": "Fairness is a ratio against a referent, not an absolute number."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the MPS formula, the two multiplier dimensions are …",
+     "options": [
+      "Variety and identity",
+      "Autonomy and feedback",
+      "Significance and feedback",
+      "Identity and autonomy"
+     ],
+     "answer": 1,
+     "why": "Zero autonomy or zero feedback zeroes motivating potential."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The strongest source of self-efficacy is …",
+     "options": [
+      "Verbal persuasion",
+      "Enactive mastery",
+      "Vicarious modelling",
+      "Arousal"
+     ],
+     "answer": 1,
+     "why": "Actually succeeding at the task builds belief most."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Wells Fargo scandal shows goals …",
+     "options": [
+      "Reduce effort",
+      "Have a dark side when unrealistic and reward-linked",
+      "Must be vague",
+      "Never work"
+     ],
+     "answer": 1,
+     "why": "Aggressive reward-linked goals invited mass cheating."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The fundraiser-meets-student study illustrates …",
+     "options": [
+      "Piece-rate pay",
+      "Flextime",
+      "Job rotation",
+      "Relational job design"
+     ],
+     "answer": 3,
+     "why": "Seeing the beneficiary raised persistence and funds raised."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A high-nAch person in the integrated model …",
+     "options": [
+      "Jumps from effort straight to personal goals",
+      "Avoids challenge",
+      "Needs tight supervision",
+      "Only wants pay"
+     ],
+     "answer": 0,
+     "why": "They’re internally driven and bypass extrinsic rewards."
+    },
+    {
+     "tag": "MCQ",
+     "q": "ESOPs raise performance only when employees …",
+     "options": [
+      "Psychologically feel ownership and have a say",
+      "Get bonuses",
+      "Are paid hourly",
+      "Work remotely"
+     ],
+     "answer": 0,
+     "why": "Felt ownership and voice are required."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Marcia losing her joy once paid for shelter work illustrates …",
+     "options": [
+      "Goal-setting",
+      "Reinforcement",
+      "Equity theory",
+      "Cognitive evaluation theory"
+     ],
+     "answer": 3,
+     "why": "Extrinsic reward can crowd out intrinsic interest."
+    },
+    {
+     "tag": "MCQ",
+     "q": "ERG’s frustration-regression explains offshore pay premiums because …",
+     "options": [
+      "Work is heavier",
+      "Safety dominates",
+      "Frustrated relatedness regresses to existence demands",
+      "Growth is satisfied"
+     ],
+     "answer": 2,
+     "why": "Blocked relatedness becomes ‘then pay me more.’"
+    },
+    {
+     "tag": "MCQ",
+     "q": "Job enrichment is rooted in which theory?",
+     "options": [
+      "Expectancy",
+      "Reinforcement",
+      "Equity",
+      "Herzberg’s motivators"
+     ],
+     "answer": 3,
+     "why": "Enrichment adds motivators — responsibility, growth, achievement."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Self-determination theory’s three needs are autonomy, competence and …",
+     "options": [
+      "Power",
+      "Relatedness",
+      "Security",
+      "Achievement"
+     ],
+     "answer": 1,
+     "why": "Autonomy, competence, relatedness."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The punctuated-equilibrium model applies only to …",
+     "options": [
+      "Permanent groups",
+      "Virtual teams",
+      "Large groups",
+      "Temporary deadline-driven groups"
+     ],
+     "answer": 3,
+     "why": "Major change occurs at the midpoint of a fixed-deadline group."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Asch’s experiments demonstrated …",
+     "options": [
+      "Groupshift",
+      "Social loafing",
+      "Conformity",
+      "The Hawthorne effect"
+     ],
+     "answer": 2,
+     "why": "~75% matched an obviously wrong group answer at least once."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Social loafing in collectivist cultures is … than in the West.",
+     "options": [
+      "Stronger",
+      "Lower",
+      "About equal",
+      "Absent"
+     ],
+     "answer": 1,
+     "why": "Collectivist members feel more responsible to the group."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The most dangerous cohesiveness combination is …",
+     "options": [
+      "High cohesion + high norms",
+      "Low + low",
+      "High cohesion + low performance norms",
+      "Low cohesion + high norms"
+     ],
+     "answer": 2,
+     "why": "A tight team coheres around disengagement."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A faultline is …",
+     "options": [
+      "A personality clash",
+      "A reward system",
+      "A decision rule",
+      "An invisible split where aligned attributes divide a group"
+     ],
+     "answer": 3,
+     "why": "It’s where the group breaks when pressure comes."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which decision technique yields the highest-quality ideas?",
+     "options": [
+      "Interacting",
+      "Voting",
+      "Brainstorming",
+      "Nominal Group Technique"
+     ],
+     "answer": 3,
+     "why": "Silent idea-writing removes social pressure."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The defining difference between a work group and a team is …",
+     "options": [
+      "Size",
+      "Location",
+      "Positive synergy and mutual accountability",
+      "Pay"
+     ],
+     "answer": 2,
+     "why": "Teams produce more than the sum of inputs; groups don’t."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Roughly what fraction of employees actually prefer teamwork?",
+     "options": [
+      "50%",
+      "95%",
+      "75%",
+      "25%"
+     ],
+     "answer": 3,
+     "why": "Teams are admired in the abstract, avoided in practice."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Knowing who is best at what on a team is …",
+     "options": [
+      "Reflexivity",
+      "Cohesion",
+      "Transactive memory",
+      "Efficacy"
+     ],
+     "answer": 2,
+     "why": "Part of a shared mental model."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Big Five trait most important for teams is …",
+     "options": [
+      "Openness",
+      "Agreeableness",
+      "Extraversion",
+      "Conscientiousness"
+     ],
+     "answer": 3,
+     "why": "Conscientious members follow through and back up teammates."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Optimal team size per research and the ‘two-pizza rule’ is about …",
+     "options": [
+      "5–9",
+      "20+",
+      "10–15",
+      "2–3"
+     ],
+     "answer": 0,
+     "why": "Above ~10, loafing and coordination cost rise."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which conflict type can help a team when moderate?",
+     "options": [
+      "Political",
+      "Personal",
+      "Task",
+      "Relationship"
+     ],
+     "answer": 2,
+     "why": "Moderate task conflict sharpens evaluation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The central lesson of Greg James is that he …",
+     "options": [
+      "Applied co-located habits to a distributed team",
+      "Lacked skill",
+      "Had too few staff",
+      "Was overpaid"
+     ],
+     "answer": 0,
+     "why": "Distributed coordination must be deliberately designed."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Nick’s ‘not competent’ remark is …",
+     "options": [
+      "Groupthink",
+      "Status equity",
+      "Role conflict",
+      "Social identity threat"
+     ],
+     "answer": 3,
+     "why": "It damaged self-esteem and had direct operational fallout."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A team is appropriate only if work passes complexity, common purpose and …",
+     "options": [
+      "Speed",
+      "Size",
+      "Interdependency",
+      "Cost"
+     ],
+     "answer": 2,
+     "why": "Like soccer (interdependent), not swimming (additive)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "How rule-bound a job is reflects …",
+     "options": [
+      "Specialisation",
+      "Formalisation",
+      "Centralisation",
+      "Span of control"
+     ],
+     "answer": 1,
+     "why": "Formalisation = standardisation through written rules."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A wide span of control produces a … organisation.",
+     "options": [
+      "More formal",
+      "More centralised",
+      "Flatter",
+      "Taller"
+     ],
+     "answer": 2,
+     "why": "Fewer managers, flatter hierarchy — if work is routine."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which structure violates unity of command by design?",
+     "options": [
+      "Simple",
+      "Matrix",
+      "Functional",
+      "Divisional"
+     ],
+     "answer": 1,
+     "why": "Matrix gives two bosses (functional + project)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Acme is mechanistic; Omega is …",
+     "options": [
+      "Virtual",
+      "Also mechanistic",
+      "Matrix",
+      "Organic"
+     ],
+     "answer": 3,
+     "why": "Fluid roles, no memos, collective decisions."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An innovation strategy calls for a … structure.",
+     "options": [
+      "Mechanistic",
+      "Bureaucratic",
+      "Functional",
+      "Organic"
+     ],
+     "answer": 3,
+     "why": "Innovation needs flexibility and experimentation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Routine technology pushes structure toward …",
+     "options": [
+      "Organic",
+      "Circular",
+      "Team-based",
+      "Mechanistic"
+     ],
+     "answer": 3,
+     "why": "Same inputs/outputs suit standardised design."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Cutting payroll without redesigning the work produces …",
+     "options": [
+      "Decentralisation",
+      "Higher morale",
+      "More innovation",
+      "Survivor syndrome"
+     ],
+     "answer": 3,
+     "why": "Remaining staff overloaded, morale down, knowledge lost."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In The Restaurant, Stage 1 is a … structure.",
+     "options": [
+      "Divisional",
+      "Matrix",
+      "Simple",
+      "Bureaucracy"
+     ],
+     "answer": 2,
+     "why": "Flat, centralised, low formalisation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Jones’s Stage 4 dilemma is balancing standardisation against …",
+     "options": [
+      "Cost",
+      "Menu size",
+      "Morale and warmth",
+      "Location"
+     ],
+     "answer": 2,
+     "why": "Formalisation’s benefits vs the culture that built loyalty."
+    },
+    {
+     "tag": "MCQ",
+     "q": "‘Profitable in what environment?’ warns that Acme’s edge depends on a … market.",
+     "options": [
+      "Stable",
+      "Dynamic",
+      "Global",
+      "Shrinking"
+     ],
+     "answer": 0,
+     "why": "Mechanistic wins when the environment is stable."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Boundary spanning increases …",
+     "options": [
+      "Formalisation",
+      "Silos",
+      "Centralisation",
+      "Knowledge transfer and innovation"
+     ],
+     "answer": 3,
+     "why": "Communicating across group lines spreads knowledge."
+    },
+    {
+     "tag": "MCQ",
+     "q": "High need-for-autonomy employees thrive in … structures.",
+     "options": [
+      "Mechanistic",
+      "Bureaucratic",
+      "Organic",
+      "Functional"
+     ],
+     "answer": 2,
+     "why": "They prefer discretion; need-for-clarity people prefer mechanistic."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Amul is structurally …",
+     "options": [
+      "A matrix",
+      "Centralised",
+      "Virtual",
+      "Decentralised"
+     ],
+     "answer": 3,
+     "why": "Local cooperatives decide locally; the federation coordinates."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The matrix’s most dangerous feature is …",
+     "options": [
+      "No specialists",
+      "No rules",
+      "The dual reporting line creating role conflict",
+      "Too few managers"
+     ],
+     "answer": 2,
+     "why": "Two authorities pulling on one person."
+    },
+    {
+     "tag": "MCQ",
+     "q": "‘Structure is strategy made visible’ means design choices …",
+     "options": [
+      "Don’t matter",
+      "Never change",
+      "Determine what the org can do and who wants to work there",
+      "Are decoration"
+     ],
+     "answer": 2,
+     "why": "Reporting lines and rules are consequential leadership choices."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Change management is really about managing …",
+     "options": [
+      "Software",
+      "Org charts",
+      "The loss of the old (habit, status, identity)",
+      "Budgets"
+     ],
+     "answer": 2,
+     "why": "People mourn what change threatens, not the new tool’s merits."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The most dangerous resistance is …",
+     "options": [
+      "Townhall questions",
+      "Written objections",
+      "Loud complaints",
+      "Silent, deferred resistance"
+     ],
+     "answer": 3,
+     "why": "Invisible until adoption quietly collapses."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Lewin’s steps in order are …",
+     "options": [
+      "Unfreeze, move, refreeze",
+      "Refreeze, move, unfreeze",
+      "Move, unfreeze, refreeze",
+      "Diagnose, act, evaluate"
+     ],
+     "answer": 0,
+     "why": "Melt, mould, freeze."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The strongest restraining force in force-field analysis is often …",
+     "options": [
+      "Past success",
+      "Young staff",
+      "New tech",
+      "Lack of cash"
+     ],
+     "answer": 0,
+     "why": "‘Why fix what isn’t broken?’ in winning firms."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Kotter steps 1–4 map to which Lewin phase?",
+     "options": [
+      "Refreeze",
+      "Evaluate",
+      "Unfreeze",
+      "Move"
+     ],
+     "answer": 2,
+     "why": "Most failed change skips the unfreezing steps."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which tactic crosses the ethical line?",
+     "options": [
+      "Communication",
+      "Fair implementation",
+      "Participation",
+      "Manipulation and cooptation"
+     ],
+     "answer": 3,
+     "why": "Covert influence and fake roles destroy credibility when found out."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Coercion is …",
+     "options": [
+      "Cost-free",
+      "Slow but durable",
+      "Fast but breeds later resentment and disengagement",
+      "Always best"
+     ],
+     "answer": 2,
+     "why": "Surface compliance now, underground disengagement later."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Action research’s five steps are diagnosis, analysis, feedback, action and …",
+     "options": [
+      "Selection",
+      "Coercion",
+      "Evaluation",
+      "Refreezing"
+     ],
+     "answer": 2,
+     "why": "It ends by measuring against the baseline data."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Appreciative inquiry starts from …",
+     "options": [
+      "When we were at our best",
+      "What’s broken",
+      "The budget",
+      "The org chart"
+     ],
+     "answer": 0,
+     "why": "Its 4-D cycle builds on strengths, not deficits."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Red tape and office politics are … stressors.",
+     "options": [
+      "Hindrance",
+      "Resource",
+      "Buffer",
+      "Challenge"
+     ],
+     "answer": 0,
+     "why": "They block goals and only corrode."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The best-documented buffer against stress is …",
+     "options": [
+      "Caffeine",
+      "Social support",
+      "Overtime",
+      "High pay"
+     ],
+     "answer": 1,
+     "why": "Social support is the most reliable moderator."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The cheapest organisational stressor a leader can fix is …",
+     "options": [
+      "Personality",
+      "Pay",
+      "The economy",
+      "Role ambiguity"
+     ],
+     "answer": 3,
+     "why": "Clarifying ownership costs little and is within the leader’s control."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Kauflauf’s consultants rank money … among motivators.",
+     "options": [
+      "Last",
+      "Only money",
+      "First",
+      "Second"
+     ],
+     "answer": 0,
+     "why": "Pride and storytelling motivate them, not cash."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Jess Westerly’s deepest resistance engine was …",
+     "options": [
+      "Threat to expertise",
+      "Threat to power (who decides call patterns)",
+      "Fear of unknown",
+      "Habit"
+     ],
+     "answer": 1,
+     "why": "Taking a decision that was theirs threatened their power."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Being right about the data, for a change agent, is …",
+     "options": [
+      "The victory",
+      "Irrelevant",
+      "Enough alone",
+      "The entry ticket, not the victory"
+     ],
+     "answer": 3,
+     "why": "Data wins approval up; relationships and systems win adoption down."
+    }
+   ]
+  }
+ ]
+}

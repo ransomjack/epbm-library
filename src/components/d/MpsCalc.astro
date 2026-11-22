@@ -1,0 +1,39 @@
+---
+// Job Characteristics Model: Motivating Potential Score with live sliders (1–7).
+const dims = [
+  { id: 'sv', t: 'Skill variety', v: 5 },
+  { id: 'ti', t: 'Task identity', v: 4 },
+  { id: 'ts', t: 'Task significance', v: 6 },
+  { id: 'au', t: 'Autonomy', v: 3, mult: true },
+  { id: 'fb', t: 'Feedback', v: 4, mult: true },
+];
+---
+<div class="mps" data-mps>
+  <div class="mps-grid">
+    {dims.map((d) => (
+      <label class:list={['mps-row', { mult: d.mult }]}>
+        <span class="mps-t">{d.t}{d.mult && <em>multiplier</em>}</span>
+        <input type="range" min="1" max="7" step="1" value={d.v} data-k={d.id} aria-label={d.t} />
+        <output data-o={d.id}>{d.v}</output>
+      </label>
+    ))}
+  </div>
+  <div class="mps-out">
+    <span>MPS = [(SV + TI + TS) ÷ 3] × Autonomy × Feedback</span>
+    <b data-mps-val>60</b>
+    <span class="mps-scale">out of a possible 343</span>
+  </div>
+</div>
+<script>
+  document.querySelectorAll('[data-mps]').forEach((root) => {
+    const inputs = root.querySelectorAll('input');
+    const val = (k) => Number(root.querySelector(`input[data-k="${k}"]`).value);
+    const run = () => {
+      inputs.forEach((i) => { root.querySelector(`[data-o="${i.dataset.k}"]`).textContent = i.value; });
+      const mps = ((val('sv') + val('ti') + val('ts')) / 3) * val('au') * val('fb');
+      root.querySelector('[data-mps-val]').textContent = Math.round(mps * 10) / 10;
+    };
+    inputs.forEach((i) => i.addEventListener('input', run));
+    run();
+  });
+</script>

@@ -1,0 +1,28 @@
+---
+// Maslow's five levels with Alderfer's ERG grouping alongside.
+const levels = [
+  { t: 'Self-actualisation', s: 'Becoming all you can be', erg: 'G' },
+  { t: 'Esteem', s: 'Self-respect, status, recognition', erg: 'G' },
+  { t: 'Social', s: 'Belonging, friendship, acceptance', erg: 'R' },
+  { t: 'Safety', s: 'Protection from harm, security', erg: 'E' },
+  { t: 'Physiological', s: 'Food, water, shelter', erg: 'E' },
+];
+const erg = [
+  { k: 'G', t: 'Growth', rows: 2 },
+  { k: 'R', t: 'Relatedness', rows: 1 },
+  { k: 'E', t: 'Existence', rows: 2 },
+];
+---
+<div class="pyr">
+  <div class="pyr-stack">
+    {levels.map((l, i) => (
+      <div class="pyr-row" style={`--w:${44 + i * 14}%`}>
+        <b>{l.t}</b><span>{l.s}</span>
+      </div>
+    ))}
+  </div>
+  <div class="pyr-erg">
+    {erg.map((g) => <div class={`pyr-g g-${g.k}`} style={`--rows:${g.rows}`}><b>{g.t}</b></div>)}
+  </div>
+  <div class="pyr-side" aria-hidden="true"><span>Satisfied internally</span><span>Satisfied externally</span></div>
+</div>

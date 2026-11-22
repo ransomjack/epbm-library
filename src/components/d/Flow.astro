@@ -1,0 +1,14 @@
+---
+// A left-to-right chain of boxes joined by labelled arrows. Stacks on narrow screens.
+// items: [{ t, s? , hl? }], links: [string] (one fewer than items), note?: string
+const { items, links = [], note } = Astro.props;
+---
+<div class="flow">
+  {items.map((it, i) => (
+    <>
+      <div class:list={['fl-box', { hl: it.hl }]}><b>{it.t}</b>{it.s && <span>{it.s}</span>}</div>
+      {i < items.length - 1 && <div class:list={['fl-arrow', { nolab: !links[i] }]}><span>{links[i] || ''}</span><i aria-hidden="true"></i></div>}
+    </>
+  ))}
+</div>
+{note && <p class="fl-note">{note}</p>}

@@ -1,0 +1,278 @@
+---
+title: Groups and Teams
+kicker: Session 2
+order: 2
+source: "Session by Prof. Vidyanand Jha · Robbins, Judge & Vohra, Chapters 9 and 10 · Case: Greg James at Sun Microsystems"
+description: "How groups behave (roles, norms, status, size, cohesiveness, diversity and decision-making), what turns a group into a team, the five team types, what makes teams effective, and how to run a distributed team. Session 2 of Leadership and People Skills."
+takeaways:
+  - "Calling a group a team doesn't make it one. Teams need positive synergy, mutual accountability and complementary skills."
+  - "Cohesion amplifies whatever the group's norms are. High cohesion with low performance norms is the most dangerous combination."
+  - "Task conflict can help; relationship conflict almost never does."
+  - "In a distributed team, nothing happens by proximity. Norms, identity and ownership must be designed."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Steps from '../../components/d/Steps.astro';
+import Quad from '../../components/d/Quad.astro';
+import PunctEq from '../../components/d/PunctEq.astro';
+
+## From one person to a group
+
+Session 1 ended with a motivated individual. The catch is that they almost never work alone. Put that person in a group and a second layer of forces switches on: roles they never signed up for, norms nobody wrote down, a status order nobody announced. Those forces can make five people achieve far more than five, or less than one.
+
+The class case ran through the whole session. Greg James, an award-winning manager at Sun Microsystems, ran a 45-person support team spread across Mumbai, the UAE, Paris and Santa Clara, working "follow the sun". When a major client's system went down, the call went unanswered for two hours, and James discovered that every sub-team had been quietly unhappy for months. Almost every concept below appears in that story.
+
+## What a group is
+
+A **group** is two or more people who interact, depend on each other and come together to achieve a shared objective.
+
+<Cards min={240} items={[
+  { title: 'Formal group', body: 'Created by the organisation, with assigned roles and management-set goals. James’s team is one; so is an EPBM batch.' },
+  { title: 'Informal group', body: 'Forms on its own from social needs: no org chart, no mandate. Often more influential than formal groups, because it runs on trust rather than authority.' },
+]} />
+
+### Groups become part of who we are
+
+**Social identity theory** says people don't just join groups; they absorb them. Your team's win feels like your win even if you only watched; criticism of your team feels personal. Two consequences matter for managers:
+
+- **Ingroup favouritism.** We see our own group as more capable and trustworthy than outsiders. A manager who spends more informal time with one sub-team will favour it, even with good intentions.
+- **Social identity threat.** Challenging a group's competence damages members' self-esteem and can measurably lower their performance on the next task.
+
+**Social categorisation** was the idea Prof. Jha built the case discussion around. The moment we sort people into groups, two things happen at once: we see "them" as all alike, and we keep "us" as distinct individuals. "Americans are all the same", but we know exactly how each of our own colleagues differs. In the case, the India team even lumped Americans and the British into one "Anglo" category, a textbook example of the outgroup losing all internal distinction.
+
+## How temporary groups develop: punctuated equilibrium
+
+Groups with a deadline don't progress smoothly. They follow a recognisable pattern.
+
+<Fig title="Punctuated-equilibrium model" caption="Applies to temporary groups with a fixed deadline, such as project teams, task forces and committees. It does not describe permanent work groups.">
+  <PunctEq />
+</Fig>
+
+| Phase | What happens | What a manager should do |
+|---|---|---|
+| **Phase 1: inertia** | The first meeting sets direction and assumptions, which then hold for the first half | Get the first meeting right; early norms are hard to shift |
+| **Midpoint transition** | Halfway through: "this isn't working and we're running out of time." Major change | Treat the midpoint crisis as the natural point to recalibrate |
+| **Phase 2: renewed inertia** | The new plan is carried out with energy | Protect this phase; it is often the most productive |
+| **Final burst** | An intense push before the deadline | Use deadlines deliberately |
+
+<div class="callout beyond">
+<p class="callout-title">Beyond the notes: Tuckman's five stages</p>
+
+You may also meet Tuckman's model: forming, storming, norming, performing and adjourning. It describes how relationships in a group mature. Punctuated equilibrium describes how *work* actually gets done against a deadline. They answer different questions, and the research on deadline-driven groups supports punctuated equilibrium better.
+
+</div>
+
+## Six properties that shape every group
+
+### 1. Roles
+
+Every position carries a set of expected behaviours that are almost never written down. Coordination fails when people's views of a role diverge, not from incompetence but because nobody aligned them.
+
+<Cards min={200} items={[
+  { title: 'Role perception', body: 'How you think you should behave in your role.' },
+  { title: 'Role expectations', body: 'How others think you should behave.' },
+  { title: 'Psychological contract', body: 'The unwritten deal between employee and employer. Breaking it hits motivation hard.' },
+  { title: 'Role conflict', body: 'Two roles demanding incompatible things at the same time.' },
+]} />
+
+The Stanford Prison Experiment (Zimbardo, 1971) showed how strong roles are: students randomly assigned as "guards" or "prisoners" became so absorbed that the study was stopped after six days. People don't just perform roles; they become them.
+
+### 2. Norms
+
+**Norms** are the rules nobody voted on but everyone enforces, often more powerful than written policy. They form through early behaviour, critical events, explicit statements by leaders, and whoever set the tone first.
+
+- **Conformity.** In Asch's line experiments (1951), about three-quarters of participants gave an obviously wrong answer at least once to match the group.
+- **The Hawthorne effect.** In the Western Electric studies (1924–32), output rose because workers knew they were being studied and felt special. Social recognition mattered more than lighting or breaks.
+- **Deviant workplace behaviour** comes in four kinds (production, property, political and personal aggression) and spreads once it starts.
+
+James's team had no shared norms for weekend escalation, client data or emergencies. Five people held five different assumptions about a Sunday-night crisis. Missing norms are invisible until they aren't.
+
+### 3. Status
+
+Status is not formal rank. According to **status characteristics theory**, an informal pecking order forms from three sources: **power** over others, **ability to contribute** to the group's goals, and **personal characteristics** the group values. High-status members speak more and bend norms more freely; low-status members conform. When the order feels unjust (**status inequity**), people disengage or leave.
+
+### 4. Size and social loafing
+
+**Social loafing** is putting in less effort in a group than alone, because your individual contribution can't be seen. It grows with group size. Prevent it with clear group goals, competition with other groups, peer evaluation, selecting people who like group work, and rewarding identifiable individual contributions.
+
+<div class="callout trap">
+<p class="callout-title">Common mix-up</p>
+
+Social loafing has a Western bias. It shows up reliably in individualist cultures such as the US and Western Europe, but is noticeably weaker in collectivist cultures such as China, Japan and India, where people feel more responsible to the group.
+
+</div>
+
+### 5. Cohesiveness
+
+**Cohesiveness** is how strongly members are attached to each other and to the group. Whether it helps depends entirely on the group's performance norms.
+
+<Fig title="Cohesiveness amplifies norms">
+  <Quad cols={['High performance norms', 'Low performance norms']} rows={['High cohesion', 'Low cohesion']} cells={[
+    { tag: 'Best outcome', t: 'High productivity', b: 'A tight group committed to high standards.', tone: 'best' },
+    { tag: 'Most dangerous', t: 'Low productivity', b: 'The group sticks together around doing as little as possible.', tone: 'bad' },
+    { t: 'Moderate productivity', b: 'Good standards, loose bonds.' },
+    { t: 'Moderate to low', b: 'A drifting group with no shared standard.' },
+  ]} />
+</Fig>
+
+To build cohesion: make the group smaller, agree shared goals, increase time together, raise the group's status and make it harder to join, create competition with other groups, reward the group rather than individuals, and give it its own space.
+
+### 6. Diversity and faultlines
+
+**Surface-level diversity** (nationality, gender, age) is visible. **Deep-level diversity** (values, communication styles, work habits) reveals itself over time and drives most real conflict. **Faultlines** are hidden crack lines that appear when several differences line up on the same split. Like a geological fault, they don't cause the earthquake, but they are exactly where the group breaks.
+
+Prof. Jha framed diversity as a genuine trade-off. Similar people agree faster but produce fewer, less novel ideas and drift into groupthink. Different people bring variety, but friction rises because their language and assumptions differ ("an accountant doesn't speak the same language as an engineer"). What decides the outcome is the kind of conflict:
+
+<Cards min={240} items={[
+  { title: 'Task conflict', body: 'Disagreement about the work itself. In moderate doses it surfaces more ways of seeing the problem.', pill: 'Can help', pillOk: true },
+  { title: 'Relationship conflict', body: '“This person is out to get me.” Personal, emotional, and almost always destructive.', pill: 'Toxic' },
+]} />
+
+<div class="callout">
+<p class="callout-title">Rich media and lean media</p>
+
+Face-to-face contact is *rich*: you read expressions, gestures and tone, so a misunderstanding can be cleared in seconds. Virtual contact is *lean*: fewer cues, so misunderstandings are more likely and, once started, conflict festers (think of the arguments one careless line starts in a WhatsApp group). James's team lived almost entirely on lean media, with one weekly call, which is why a single slight ("not competent") was never repaired and exploded under pressure.
+
+</div>
+
+## How groups decide
+
+Groups are generally more accurate than the *average* member but less accurate than the *best* member. They are slower, produce more information and can be more creative. They have two specific failure modes.
+
+<Cards min={240} items={[
+  { title: 'Groupthink', body: 'The pressure for harmony overrides a realistic look at alternatives. Symptoms: an illusion of unanimity, pressure on dissenters, shared rationalisations, overconfidence.' },
+  { title: 'Groupshift (polarisation)', body: 'Discussion pushes a group further in the direction it already leaned. Cautious groups get more cautious; risky groups take bigger risks.' },
+]} />
+
+Irving Janis coined "groupthink" studying US foreign-policy fiascos, most famously the Bay of Pigs invasion of Cuba in 1961. Kennedy's advisers later admitted they had private doubts but stayed silent because speaking up felt disloyal: **cohesiveness overrode effectiveness**. Kennedy then changed how his team deliberated, and the Cuban Missile Crisis a year later is often cited as the counter-example. The film *12 Angry Men* (in Hindi, *Ek Ruka Hua Faisla*) shows the antidote: one juror, through patient reasoning, turns the whole room.
+
+| Technique | How it works | Idea quality |
+|---|---|---|
+| **Interacting group** | Ordinary face-to-face discussion | Moderate, but builds commitment to the decision |
+| **Brainstorming** | 6–12 people; every idea welcome, no criticism while generating | Moderate to high |
+| **Nominal group technique** | Write ideas silently → each person presents one → discuss → rank silently | Highest |
+
+The nominal group technique wins because the silent writing step removes social pressure: your thinking arrives before the most confident voice in the room has shaped it. To prevent groupthink, keep groups under ten, have the leader hold back their view at the start, appoint a devil's advocate, and discuss risks before benefits.
+
+## Groups versus teams
+
+Calling a group a team is free; the synergy has to be earned. A firm that announces "we're reorganising into teams" without changing how people coordinate, how they're rewarded or how they're held mutually accountable has simply renamed its groups.
+
+| | Work group | Work team |
+|---|---|---|
+| Goal | Share information; decide individually | Collective performance |
+| Synergy | Neutral, sometimes negative | Positive: output exceeds the sum of inputs |
+| Accountability | Individual only | Individual and mutual |
+| Skills | Random and varied | Deliberately complementary |
+
+Teams are admired more than they are wanted: about 95% of employees say teams serve an important purpose, but only about a quarter actually prefer working in one.
+
+## Five types of team
+
+<Cards min={210} items={[
+  { title: 'Problem-solving', body: '5–12 people from one department meeting regularly on quality or process.', foot: 'Limit: they recommend but rarely have authority to act' },
+  { title: 'Self-managed', body: '10–15 people who take on their supervisor’s tasks: planning, scheduling, even hiring.', foot: 'Needs psychological safety to speak up' },
+  { title: 'Cross-functional', body: 'Same level, different departments, one task. Starbucks used one to launch its Via instant coffee.', foot: 'Trust across expertise takes time' },
+  { title: 'Virtual', body: 'Members linked by technology across locations.', foot: 'Needs trust early, monitored progress, publicised effort, visibility' },
+  { title: 'Multiteam system', body: 'A “team of teams” sharing one goal, used when one team would be too big.', foot: 'James’s 45 people were really this' },
+]} />
+
+## What makes a team effective
+
+The model has three parts, and getting one or two right isn't enough.
+
+<Fig title="Team effectiveness model">
+<Cards min={220} items={[
+  { k: '1', title: 'Context', body: 'Adequate resources · leadership and clear structure · a climate of trust · a reward system that recognises the team, not only individuals.', foot: 'The environment around the team' },
+  { k: '2', title: 'Composition', body: 'Ability · personality (conscientiousness matters most) · a balance of team roles · size of about 5–9 · members who want to be there.', foot: 'Who is on the team' },
+  { k: '3', title: 'Process', body: 'A common purpose · specific goals · belief the team can succeed · shared mental models · managed conflict · trust.', foot: 'How the team works together' },
+]} />
+</Fig>
+
+A few findings are worth remembering:
+
+- **Trust** is the most important climate variable. Across 52 studies, team trust was one of the strongest predictors of team performance, outweighing how the team had performed before.
+- **Conscientiousness:** with 40 highly conscientious people and 40 less conscientious ones, research suggests building teams of all-high and all-low rather than mixing them.
+- **Team roles:** a team needs people who link, create, promote, assess, organise, produce, control, maintain and advise. James's team had no linker and no controller.
+- **Size:** Jeff Bezos's "two-pizza rule" (a team small enough to be fed by two pizzas) fits the research, which puts the optimum at about five to nine.
+- **Shared mental models** include knowing who is best at what (*transactive memory*). Every technical failure in the James case, the wrong queue, the stale phone number, the wrong escalation, came from people holding different beliefs about who owned what.
+
+<div class="callout beyond">
+<p class="callout-title">Beyond the notes: psychological safety</p>
+
+Amy Edmondson's research, later confirmed by Google's internal study of its own teams (Project Aristotle), found that the single strongest predictor of team effectiveness was **psychological safety**: members believe they won't be punished or humiliated for raising a concern, a question or a mistake. It is the condition that lets task conflict stay healthy. In the James case, nobody raised the broken queue or the dead phone number on the weekly call; that silence is what a low-safety team looks like.
+
+</div>
+
+### Turning individuals into team players
+
+<Steps items={[
+  { title: 'Select', body: 'Assess team orientation and interpersonal skill, not just technical ability.' },
+  { title: 'Train', body: 'Communication, negotiation and conflict resolution are learnable.' },
+  { title: 'Reward', body: 'Move from purely individual rewards to a mix that recognises both individual contribution and team results.' },
+]} />
+
+### When not to use a team
+
+The most disciplined question isn't "how do I make this team work?" but "should this be a team at all?" Use a team only if the work passes three tests:
+
+1. **Complexity:** it genuinely needs several perspectives.
+2. **Common purpose:** the output only makes sense when contributions are combined.
+3. **Interdependence:** each person's success depends on the others. Football passes; a swimming relay, where each swimmer races alone and the times are added, doesn't.
+
+## Running a distributed team
+
+Prof. Jha spent the first half of the session on the business reality behind the case. None of it is in the textbook, but it explains why the team was built the way it was.
+
+**Why "follow the sun" exists.** Not because people work best in daylight. Round-the-clock support is a premium product that clients pay more for. If your service is critical and always-on, 24/7 support is the moat; if you can't provide it, a competitor will.
+
+**Onshore versus offshore.** Onshore support, from the client's own country, is faster, can visit the site and shares the client's culture and accent, but costs more. Offshore support is far cheaper but brings distance, time-zone and culture gaps. In the case, US staff did the client-facing work and India the back-end work. The uncomfortable reason is trust and familiarity: clients warm to people who share their accent and small talk. That split by who faces the client became a status hierarchy, and resentment followed status.
+
+**National culture.** Geert Hofstede's study of IBM employees in over 40 countries showed that national cultures differ along measurable dimensions, including **power distance** (attitude to hierarchy), **individualism versus collectivism**, **masculinity versus femininity**, **uncertainty avoidance** and **long- versus short-term orientation**. The US team's comfort skipping levels, the UAE team's relationship-first pace and the India team's deference all trace back to these differences.
+
+<Fig title="Fixing a distributed team: SPLIT" caption="Prof. Jha's diagnostic. Almost every remedy the class proposed fits under one of the five letters.">
+<Cards min={160} items={[
+  { k: 'S', title: 'Structure', body: 'Sub-team leads, reporting lines, an escalation protocol.' },
+  { k: 'P', title: 'Process', body: 'How work and feedback actually flow between sites.' },
+  { k: 'L', title: 'Language', body: 'Shared vocabulary; both time zones in every invite.' },
+  { k: 'I', title: 'Identity', body: 'Make four sub-teams feel like one team.' },
+  { k: 'T', title: 'Technology', body: 'The tools that connect them, used for rich contact.' },
+]} />
+</Fig>
+
+## The case as a map of the session
+
+| Concept | How it appears in the Greg James case |
+|---|---|
+| Social identity threat | A US manager called the India team "not competent"; during the crisis, India didn't phone him |
+| Ingroup favouritism | Only the US team, sitting with James, got informal water-cooler time and early say in decisions |
+| Missing norms | No shared protocol for weekend escalation, client data or emergencies |
+| Status inequity | Meeting times favoured California; India had the skills but not the creative work |
+| Faultlines | US vs non-US (location, pay and access lined up); creative vs maintenance work; India vs UAE |
+| Groupthink | Nobody raised the queue problem, the dead phone number or the India–UAE tension on the weekly call |
+| Group, not team | Under pressure, the sub-teams coordinated worse than if they had acted alone |
+| Equity | India always took the 11 pm call. The fix: rotate the inconvenient slot so everyone takes a turn |
+| Relationship conflict | The unresolved clash between two leads directly caused the two-hour gap |
+
+James didn't fail because he was incompetent. He failed because he used the habits of a co-located team in a distributed one. Sitting together creates coordination automatically; spread across four countries, everything (norms, identity, protocols, accountability) has to be designed.
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: open doors, don't just keep tabs</p>
+
+Prof. Jha's test of leadership: a manager who only *keeps tabs* tracks deadlines and status. A leader *opens doors*: "what can I do so you can perform better?" James did the first and not the second. For any team you run remotely, schedule rich contact (video, site visits, skip-level calls) before a crisis rather than after, rotate the inconvenience fairly, and make sure every sub-team is visible to the people who decide their future.
+
+</div>
+
+<div class="callout beyond">
+<p class="callout-title">Exit, Voice, Loyalty</p>
+
+A student asked what to do when the right answer is clear but the organisation resists. Prof. Jha's answer drew on the economist Albert Hirschman: in any dissatisfying situation you can **Exit** (leave), use **Voice** (stay and push for change) or settle into **Loyalty** (stay and accept). Most people default to silent loyalty because voice feels risky and exit drastic, but voice is usually the responsible middle path. Changing a resistant system, done well, is the subject of Session 4.
+
+</div>
+
+<div class="callout">
+<p class="callout-title">Where this leads</p>
+
+James's real gap wasn't warmth; it was *structure*: no protocols, no defined ownership, no reporting lines built for a team across four countries. If groups need structure to work, what is structure, and how do you design it on purpose? That is Session 3.
+
+</div>

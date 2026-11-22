@@ -1,0 +1,28 @@
+---
+// Punctuated-equilibrium model: work accomplished over a temporary group's life.
+const W = 640, H = 260, L = 50, R = 20, T = 20, B = 46;
+const x = (f) => L + f * (W - L - R);
+const y = (f) => H - B - f * (H - T - B);
+const pts = [[0, 0.02], [0.08, 0.05], [0.48, 0.17], [0.52, 0.27], [0.9, 0.7], [1, 0.96]];
+const d = pts.map(([a, b], i) => `${i ? 'L' : 'M'}${x(a).toFixed(1)},${y(b).toFixed(1)}`).join(' ');
+const lab = 'fill:var(--muted);font:500 12px var(--sans)';
+---
+<svg class="pe" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Line chart: slow progress in phase 1, a jump at the midpoint, faster progress in phase 2, and a final burst before the deadline.">
+  <line x1={x(0)} y1={y(0)} x2={x(1)} y2={y(0)} style="stroke:var(--line)" />
+  <line x1={x(0)} y1={y(0)} x2={x(0)} y2={y(1)} style="stroke:var(--line)" />
+  <rect x={x(0)} y={y(1)} width={x(0.5) - x(0)} height={y(0) - y(1)} style="fill:var(--surface)" />
+  <line x1={x(0.5)} y1={y(0)} x2={x(0.5)} y2={y(1)} style="stroke:var(--accent);stroke-dasharray:4 4" />
+  <path d={d} style="fill:none;stroke:var(--accent);stroke-width:2.5;stroke-linejoin:round" />
+  <circle cx={x(0.5)} cy={y(0.22)} r="5" style="fill:var(--accent)" />
+  <circle cx={x(0)} cy={y(0.02)} r="4" style="fill:var(--ink)" />
+  <text x={x(0.25)} y={y(0.9)} text-anchor="middle" style="fill:var(--ink);font:600 13px var(--sans)">Phase 1: inertia</text>
+  <text x={x(0.25)} y={y(0.9) + 17} text-anchor="middle" style={lab}>first meeting sets the course</text>
+  <text x={x(0.5) + 8} y={y(0.08)} style="fill:var(--accent);font:600 13px var(--sans)">Midpoint transition</text>
+  <text x={x(0.73)} y={y(0.9)} text-anchor="middle" style="fill:var(--ink);font:600 13px var(--sans)">Phase 2: new plan</text>
+  <text x={x(0.98)} y={y(0.96) + 4} text-anchor="end" style={lab}>final burst ↗</text>
+  <text x={x(0)} y={H - 22} style={lab}>First meeting</text>
+  <text x={x(0.5)} y={H - 22} text-anchor="middle" style={lab}>Halfway</text>
+  <text x={x(1)} y={H - 22} text-anchor="end" style={lab}>Deadline</text>
+  <text x={x(0.5)} y={H - 4} text-anchor="middle" style={lab}>Time →</text>
+  <text x="14" y={y(0.5)} transform={`rotate(-90 14 ${y(0.5)})`} text-anchor="middle" style={lab}>Work done →</text>
+</svg>

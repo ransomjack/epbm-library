@@ -1,0 +1,15 @@
+---
+// Lewin's force field: driving forces push for change, restraining forces hold the status quo.
+const { driving, restraining } = Astro.props;
+---
+<div class="ff">
+  <div class="ff-col drive">
+    <p class="ff-h">Driving forces →</p>
+    {driving.map((t) => <div class="ff-arrow"><span>{t}</span></div>)}
+  </div>
+  <div class="ff-line"><span>Status quo</span></div>
+  <div class="ff-col hold">
+    <p class="ff-h">← Restraining forces</p>
+    {restraining.map((t) => <div class="ff-arrow"><span>{t}</span></div>)}
+  </div>
+</div>

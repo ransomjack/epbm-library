@@ -1,0 +1,22 @@
+---
+// Eight tactics for overcoming resistance, split into "with people" and "to people".
+const top = [
+  ['Communication', 'Explain the logic honestly, before and during.'],
+  ['Participation', 'People rarely fight a decision they helped shape.'],
+  ['Build support', 'Training and counselling turn “I can’t” into “I can”.'],
+  ['Positive relationships', 'People accept change from leaders they already trust.'],
+  ['Implement fairly', 'Same rules for everyone; one visible exception undoes it.'],
+];
+const bottom = [
+  ['Manipulation & cooptation', 'Covert influence or a token seat. Collapses once people see it.'],
+  ['Select adaptable people', 'Helps future changes, not the one in front of you.'],
+  ['Coercion', 'Fastest. Surface compliance, buried resentment.'],
+];
+---
+<div class="lad">
+  <p class="lad-tag ok">Change done <b>with</b> people</p>
+  {top.map(([t, b], i) => <div class="lad-r"><i>{i + 1}</i><b>{t}</b><span>{b}</span></div>)}
+  <p class="lad-line"><span>Below this line: faster, but it poisons the next change</span></p>
+  {bottom.map(([t, b], i) => <div class="lad-r low"><i>{i + 6}</i><b>{t}</b><span>{b}</span></div>)}
+  <p class="lad-tag bad">Change done <b>to</b> people</p>
+</div>

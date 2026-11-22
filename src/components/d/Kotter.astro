@@ -1,0 +1,19 @@
+---
+// Kotter's eight steps grouped under Lewin's three stages.
+const groups = [
+  { lewin: 'Unfreeze', steps: [['Create urgency', 'Make standing still feel riskier than moving.'], ['Build a guiding coalition', 'Formal bosses and informal influencers.'], ['Form a vision', 'One picture simple enough to repeat anywhere.'], ['Communicate it', 'Everywhere, two-way, and in what leaders do.']] },
+  { lewin: 'Move', steps: [['Remove barriers', 'Fix appraisals, budgets and approvals that punish the new way.'], ['Create short-term wins', 'Engineer early victories and publicise them.'], ['Consolidate', 'Don’t declare victory too soon.']] },
+  { lewin: 'Refreeze', steps: [['Anchor it in the culture', 'Link the new behaviour to success until it is simply “how we work”.']] },
+];
+let n = 0;
+---
+<div class="kot">
+  {groups.map((g) => (
+    <div class="kot-g" style={`--n:${g.steps.length}`}>
+      <p class="kot-h">Lewin: {g.lewin}</p>
+      <div class="kot-steps">
+        {g.steps.map(([t, b]) => { n += 1; return <div class="kot-s"><i>{n}</i><b>{t}</b><span>{b}</span></div>; })}
+      </div>
+    </div>
+  ))}
+</div>
