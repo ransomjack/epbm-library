@@ -5,7 +5,7 @@ import Base from '../layouts/Base.astro';
 <main class="wrap ed">
   <div class="kicker">Editor</div>
   <header class="profile">
-    <img src="/img/editor.jpg?v=3" alt="Abhinav Roy" width="200" height="200">
+    <img src="/img/editor.jpg?v=3" alt="Abhinav Roy" width="240" height="240">
     <div>
       <h1>Abhinav Roy</h1>
       <p class="lede">Writer and editor of EPBM Library, the notes from his Executive Programme in Business Management at IIM Calcutta. An OT/ICS security leader with ten years in cybersecurity.</p>
@@ -52,12 +52,12 @@ import Base from '../layouts/Base.astro';
 .ed{max-width:860px;padding-top:48px}
 .kicker{font:600 15px var(--sans);color:var(--accent);margin-bottom:18px}
 .profile{display:flex;align-items:center;gap:40px;padding-bottom:36px;border-bottom:1px solid var(--line);margin-bottom:32px}
-.profile img{flex:none;width:200px;height:200px;border-radius:16px;object-fit:contain;background:var(--surface)}
+.profile img{flex:none;width:240px;height:240px;border-radius:50%;object-fit:cover;background:var(--surface)}
 h1{margin:0;font-weight:500;font-size:clamp(36px,5vw,52px);line-height:1.1}
 .lede{margin:14px 0 0;font:18px/1.6 var(--sans);color:var(--muted)}
 .links{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 0}
 .btn{font:600 15px var(--sans);color:var(--ink);text-decoration:none;padding:10px 16px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
 .btn:hover{border-color:var(--accent);color:var(--accent)}
-@media (max-width:640px){.profile{flex-direction:column;align-items:flex-start;gap:24px}.profile img{width:180px;height:180px}}
+@media (max-width:640px){.profile{flex-direction:column;align-items:flex-start;gap:24px}.profile img{width:200px;height:200px}}
 </style>
 </Base>
