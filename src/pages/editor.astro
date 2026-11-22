@@ -1,0 +1,58 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Editor">
+<main class="wrap ed">
+  <header class="profile">
+    <img src="https://brief.girder.in/assets/editor.jpg" alt="Abhinav Roy" width="132" height="132" loading="lazy">
+    <div>
+      <div class="kicker">Editor</div>
+      <h1>Abhinav Roy</h1>
+      <p class="links"><a href="https://www.linkedin.com/in/abhinavroy07/">LinkedIn</a> · <a href="https://x.com/fiasco_07">X</a> · <a href="mailto:abhinav@girder.in">abhinav@girder.in</a></p>
+    </div>
+  </header>
+
+  <div class="prose">
+    <p>Abhinav wrote and edits the notes in EPBM Library. He is a participant in EPBM-32, the Executive Programme in Business Management at IIM Calcutta, and wrote these notes session by session during the programme, then merged each subject into a single set of master notes for the batch.</p>
+
+    <h2>In brief</h2>
+    <ul>
+      <li>Based in Bangalore, India.</li>
+      <li>An OT/ICS security leader with ten years in cybersecurity, the last four in industrial security.</li>
+      <li>Leads global managed security services for industrial customers in energy, manufacturing and utilities.</li>
+      <li>Also edits <a href="https://brief.girder.in/">Industrial Cyber Brief</a>, a daily industrial cyber security briefing from Girder.</li>
+    </ul>
+
+    <h2>Why this library exists</h2>
+    <p>The notes began as study material shared with batchmates after each class. They are written in plain English, with the frameworks, numbers and exam traps pulled out, so that someone who missed a session can catch up and someone revising can find what they need quickly. The library puts them in one place to read on any device, with the original PDF to download and practice questions to test yourself.</p>
+
+    <h2>Talks and recognition</h2>
+    <ul>
+      <li>Speaker (upcoming): Cyber AI Risk Summit, Kuala Lumpur, January 2027</li>
+      <li>Podcast guest: “OT security and AI”, Prabh Nair's cybersecurity podcast, 2026</li>
+      <li>Panellist: “AI Meets OT”, c0c0n 2026, Kochi</li>
+      <li>Panellist: “Governing the Algorithm: AI and the Future of Work in India”, Observer Research Foundation, 2026</li>
+      <li>Enterprise Security Champion, The Economic Times Enterprise Security Awards 2026</li>
+      <li>Security Transformation Leader of the Year, Future Tech Summit &amp; Awards 2026</li>
+      <li>c0c0n Speaker Award, c0c0n 2026</li>
+    </ul>
+
+    <h2>Get in touch</h2>
+    <p>Found an error in a note, or want something added? Email <a href="mailto:abhinav@girder.in">abhinav@girder.in</a> or message on <a href="https://www.linkedin.com/in/abhinavroy07/">LinkedIn</a>.</p>
+
+    <div class="callout">
+      <p class="callout-title">Please note</p>
+      <p>EPBM Library is an independent, student-run project. It is not affiliated with, reviewed by, or speaking for IIM Calcutta, its faculty, or any employer. The notes are a personal study aid and may contain mistakes, so check anything important against your own course material. Case studies, slides and readings belong to their publishers and are not hosted here.</p>
+    </div>
+  </div>
+</main>
+
+<style>
+.ed{max-width:760px;padding-top:56px}
+.profile{display:flex;flex-wrap:wrap;align-items:center;gap:28px;padding-bottom:32px;border-bottom:1px solid var(--line);margin-bottom:32px}
+.profile img{width:132px;height:132px;border-radius:50%;object-fit:cover;background:var(--surface)}
+.kicker{font-size:14px;font-weight:600;color:var(--accent)}
+h1{margin:6px 0 0;font-weight:500;font-size:clamp(34px,5vw,48px);line-height:1.1}
+.links{margin:12px 0 0;font-size:15px;color:var(--muted)}
+</style>
+</Base>
