@@ -1,8 +1,0 @@
-// Cloudflare deploy settings: serve the built static site from ./dist
-{
-  "name": "epbm-library",
-  "compatibility_date": "2025-10-01",
-  "assets": {
-    "directory": "./dist"
-  }
-}
