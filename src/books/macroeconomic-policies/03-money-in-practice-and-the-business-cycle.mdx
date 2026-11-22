@@ -1,0 +1,226 @@
+---
+title: Money in Practice, and the Business Cycle
+kicker: Session 2, part 1
+order: 3
+source: "Sessions by Prof. Ankit Kumar · Market Economies & Macroeconomic Policies"
+description: "M = m × B and India's COVID lesson, tokenised money and stablecoins, how to read the new GDP numbers, business cycles and the output gap, what drives potential GDP, and technology, AI and jobs. Session 2 of Market Economies & Macroeconomic Policies."
+takeaways:
+  - "The RBI controls the monetary base. The multiplier is in the hands of banks, borrowers and savers."
+  - "A stablecoin issuer holds 100% reserves and does not lend, so it creates no money. It is closer to a money market fund than a bank."
+  - "Compare growth figures only on the same series and method. The GDP deflator is not the CPI."
+  - "Potential GDP comes from capital, labour and technology. Policy manages the gap, not the trend."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Steps from '../../components/d/Steps.astro';
+import Bars from '../../components/d/Bars.astro';
+import Sort from '../../components/d/Sort.astro';
+import Decide from '../../components/d/Decide.astro';
+
+## Two layers of money: M = m × B
+
+Session 1 ended with a single Rs. 100 deposit turning into Rs. 1,000 as banks lent it on. Session 2 began with the question that follows: if money is made in two places, at the RBI and inside banks, who is really in charge of how much there is?
+
+<Cards min={260} items={[
+  { title: 'Layer 1: base money (B)', body: 'Currency notes plus the reserves banks keep with the RBI. Created by the RBI, and directly in its control.', foot: 'In the classroom example: Rs. 100' },
+  { title: 'Layer 2: total money (M)', body: 'Currency plus all bank deposits: the money people actually spend. Created by banks each time they lend. Nobody controls it directly.', foot: 'Rs. 1,000 at a 10% reserve ratio' },
+]} />
+
+**M = m × B.** Total money equals the multiplier times the base. Think of the RBI as a dairy and banks as tea stalls. The dairy decides how many litres of milk go out each morning. The stalls decide how many cups each litre becomes. The town drinks tea, not milk, and the number of cups depends on both.
+
+To show what the multiplier really is, run the cascade with an absurd reserve requirement of 90%. You deposit Rs. 100. The bank keeps Rs. 90 and lends Rs. 10. That Rs. 10 is deposited; Rs. 9 is kept and Rs. 1 lent. Total deposits: Rs. 111. At 10% it was Rs. 1,000. In both cases the reserves add up to exactly 100. The base doesn't grow or shrink as it passes through banks; it only gets locked up, a little each round. The lower the ratio, the more rounds the chain runs.
+
+| What moves | Works on | Who decides |
+|---|---|---|
+| Bond purchases and sales, QE and QT | B, the base | The RBI |
+| The cash reserve ratio | The ceiling on m | The RBI |
+| The repo rate | The price of reserves, and so the appetite to lend | The RBI |
+| Willingness to lend | The actual m | Banks |
+| Willingness to borrow | The actual m | Firms and families |
+| Cash kept in wallets | The actual m | The public |
+
+When the RBI cut the CRR from 4% to 3% during 2025, it created not one new rupee. Every bank simply had to lock up a little less of each deposit. A CRR cut works on m, not on B.
+
+## When the multiplier stalls: India in 2020
+
+The formula hides an assumption: that when the RBI adds to the base, banks obligingly multiply it. In 2020 India ran the experiment at full scale.
+
+The government needed to spend far more than it collected, so it issued bonds. Institutions bought them. The RBI then bought bonds from such holders and paid with newly created reserves. Suppose Rs. 1 lakh crore arrives in banks this way. You expect them to lend it and start the chain.
+
+"But suppose the bankers are hell-bent that they will not lend." They had reasons. They were still carrying bad loans from the previous decade. In a locked-down economy few borrowers looked safe. And an Indian banker carries a particular fear: that a loan which goes bad years later will bring investigators asking how he cleared the file. A banker who doesn't lend is never asked.
+
+So the cash went to the one place that takes any amount without question: the RBI's own deposit window.
+
+> The RBI was printing money and giving it to the banks. The banks were putting the same money back with the RBI, and the Governor had to pay interest on it. He was paying interest on his own money.
+
+<Fig title="Bank credit to businesses and households, 2019 to 2020" caption="Per cent of GDP, from the table shown in class. India's was back near 52% a year later, lower than before the pandemic.">
+  <Bars unit="% of GDP" rows={[
+    { label: 'Emerging economies, before', value: 113, note: '2019' },
+    { label: 'Emerging economies, COVID year', value: 136, note: 'up about 22 points', mark: true },
+    { label: 'India, before', value: 54, note: '2019' },
+    { label: 'India, COVID year', value: 58, note: 'up under 5 points' },
+  ]} />
+</Fig>
+
+<div class="callout">
+<p class="callout-title">The multiplier is in the hands of the banks</p>
+
+A bigger base does not guarantee more money. Banks can absorb a push of liquidity by not lending it. The RBI controls B. It does not control m. Two former RBI economists gave a paper on this the title "Liquidity, Liquidity Everywhere, Not a Drop to Use".
+
+</div>
+
+| A question from class | The answer |
+|---|---|
+| Is a large balance parked at the RBI bad? | It is a symptom. It tells you money meant to become loans is sitting idle |
+| What did the government do? | It finally removed the bankers' fear directly: lend to small businesses and I will stand guarantor. Credit-guarantee schemes were the result |
+| Why does it matter after COVID? | India is a bank-driven economy, and banks can slow the central bank's push. That is one reason for building a deeper corporate bond market |
+
+<Decide q="The RBI says policy is easy and the system has record surplus liquidity. Your dealers are being refused inventory loans. Which do you plan around?" options={[
+  { label: 'The policy statement.', why: 'It describes the banks’ position, not yours.' },
+  { label: 'What is reaching your dealers.', good: true, why: 'Liquidity in the system is not liquidity in your account. Keep a second source of funds, and when the government offers a guarantee scheme, move quickly: it exists because banks won’t lend without it.' },
+]} />
+
+## Tokenised money: three roads
+
+Money has changed form before, from coins to paper to entries in a bank's computer. It is changing again.
+
+Remember the islanders of Yap, who kept track of who owned which stone in a record everyone accepted. A **blockchain** is that idea in software: a ledger shared across many computers, on which a token passes from A to B to C with every movement recorded and visible. No single book-keeper can be slow or closed for the weekend. The gain is speed: a large payment from India to the US takes a day or two through a chain of banks; as a token it arrives in minutes, at any hour.
+
+The first tokens were cryptocurrencies, and Session 1 showed why they fail as money. So the world asked a better question: why not send the money we already trust over the new rails? Someone has to turn it into tokens. Who?
+
+<Cards min={220} items={[
+  { title: 'The central bank itself', body: 'A central bank digital currency (CBDC): a claim on the central bank, a digital banknote.', foot: 'India (e-rupee pilot), China, the euro area' },
+  { title: 'The existing banks', body: 'Tokenised deposits: your ordinary bank balance, issued as a token by your bank.', foot: 'Favoured by the Bank of England' },
+  { title: 'New private issuers', body: 'Stablecoins: a token pegged one-to-one to the dollar, backed by safe assets.', foot: 'The United States, which passed the GENIUS Act in July 2025' },
+]} />
+
+The British worry explains the middle road: if people move money out of deposits into someone else's tokens, banks have less to lend. Tokenising the deposit keeps the money inside the banking system. The American view is the opposite: let the market decide who does the job best.
+
+Your UPI money is digital but not tokenised. It is still entries in the banks' own books, moved by messages between them.
+
+## Stablecoins: bank, fund or threat?
+
+A stablecoin is built to avoid Bitcoin's flaw: its value is pegged to a currency, almost always the dollar.
+
+<Steps items={[
+  { title: 'You hand the issuer 1 dollar', body: 'It now owes you 1 dollar: a liability.' },
+  { title: 'It gives you 1 stablecoin', body: 'You can send it to anyone, anywhere, in minutes.' },
+  { title: 'It buys short-term US government bonds', body: 'An asset earning, say, 4% a year.' },
+  { title: 'It pays you no interest', body: 'Whenever a coin comes back it pays out 1 dollar.' },
+]} />
+
+It earns on its assets and pays nothing on its liabilities. That is the RBI's seigniorage in private hands: an issuer with 100 billion dollars of coins and bills yielding 4% collects about 4 billion a year.
+
+US law now says only licensed issuers may issue; every coin must be backed by a dollar of cash or short-term Treasury bills; the issuer may not lend the money out or pay holders interest; holders have first claim on the reserves; and reserves are disclosed monthly.
+
+These firms take money from the public and promise it back on demand. Are they banks? The class found the two differences: a stablecoin issuer pays no interest and, more important, it does not lend.
+
+| | Bank | Stablecoin issuer | Money market fund |
+|---|---|---|---|
+| Takes money from the public | Yes | Yes | Yes |
+| Promises it back at face value | Yes, on demand | Yes: 1 coin for 1 dollar | No: at the day's market value |
+| Makes loans | Yes | No | No |
+| Creates money | Yes | No | No |
+| Kept in safe assets | A fraction | 100% | 100% |
+| Return to the customer | Interest | Nothing | Passes the interest on |
+| Protection if it fails | Deposit insurance | First claim on reserves | None |
+
+A bank with a 100% reserve requirement adds nothing to the money supply. The verdict: a stablecoin issuer is closest to a money market fund.
+
+**Why other countries are uneasy.** *Dollarisation*: a dollar token on every phone means savings leaving the rupee. If 10 crore people each kept 50 dollars in stablecoins, that is 5 billion dollars of new demand for the dollar. *Loss of control*: the repo rate and the CRR work on rupee money only. *Deposits leaving banks*: less to lend. And every stablecoin in a wallet is a real dollar parked in US government bonds, so more stablecoins mean more demand for dollars and more buyers for US debt, which is why Washington is enthusiastic.
+
+<div class="callout trap">
+<p class="callout-title">"Stable" is a promise, not a guarantee</p>
+
+A stablecoin is not a bank deposit. In March 2023 a leading dollar stablecoin briefly traded below one dollar because 3.3 billion dollars of its reserves sat in Silicon Valley Bank the weekend that bank failed.
+
+</div>
+
+If your company earns from moving money, this is a threat. If it pays to move money, it is an opening.
+
+## The GDP debate: one ruler, not two
+
+In February 2026 the government released a new GDP series with 2022-23 as the base. Under it the economy came out smaller in rupees while growth stayed high. Critics cried foul. The professor took no side; he used the row to test whether Session 1 had sunk in.
+
+**Puzzle 1: how can a new base year change nominal GDP?** It can't. The base year matters only for real GDP. What changed alongside it was the method: **double deflation** replaced single deflation, the informal economy is estimated from fresh surveys, and new data such as GST returns are used.
+
+A biscuit maker sold biscuits worth Rs. 100 using flour worth Rs. 60: value added Rs. 40. This year it makes the same biscuits, but flour is 10% cheaper, so value added is Rs. 46. Did production grow? No. Single deflation divides Rs. 46 by the unchanged biscuit price and reports 15% growth. Double deflation values output and inputs separately at last year's prices: 100 minus 60 is 40. Growth of zero, which is the truth.
+
+**Puzzle 2: did the economy grow 10% or 2.6%?** For April to June 2025, nominal GDP was about Rs. 86 lakh crore on the old series and about Rs. 80 lakh crore on the new. For April to June 2026 it is Rs. 88.27 lakh crore, measured the new way.
+
+<Decide q="Which comparison is right?" options={[
+  { label: '88.27 against 86: growth of 2.6%.', why: 'That mixes a number measured with the new ruler and one measured with the old.' },
+  { label: '88.27 against 80: growth of 10.3%.', good: true, why: 'Put both years on the same footing first, then compare.' },
+]} />
+
+**Puzzle 3: is inflation really only 2%?** Nominal growth of 10.3% less real growth of 7.8% leaves about 2.5% for prices. Asked how many believed inflation was 2%, not one hand went up. The 2.5% is the GDP deflator. What people feel is the CPI, 4.8% that August. The deflator covers everything produced in India and leaves out imports; the CPI covers what households buy, wherever it was made. If the gap persists, one reading is imported inflation; another is that the new method understates price rise, and only more data will tell.
+
+Asked whether the numbers were being manufactured, the reply was firm: don't say that without proof. The method is published. And GDP has no "basket"; only a price index does.
+
+<div class="callout trap">
+<p class="callout-title">Four checks before you believe a growth number</p>
+
+1. Nominal or real? 2. Same series and method in both years? 3. Which price measure removed the inflation? 4. Is a low base flattering the percentage? A headline that fails one of these isn't wrong data. It is a wrong comparison.
+
+</div>
+
+## Business cycles and the output gap
+
+On a long highway drive your average may be 60 km an hour, yet you are almost never doing exactly 60. An economy is the same. **Business cycles** are fluctuations in which many activities expand and contract *together*, in a *recurring but not periodic* way: cycles keep coming, but not on a timetable.
+
+| Term | Meaning |
+|---|---|
+| Potential GDP | What the economy can produce with its capital, labour and technology |
+| Expansion and peak | Activity rising, then the turning point |
+| Contraction and trough | Activity falling, then the turning point |
+| Output gap | Actual output minus potential output |
+
+<Sort title="Try it: running hot or cold?" choices={['Positive gap: overheating', 'Negative gap: slack']} items={[
+  { text: 'Two job openings for every unemployed person.', answer: 'Positive gap: overheating', why: 'The US in 2022. Orders are easy, hiring is hard.' },
+  { text: 'Factories running one shift where they used to run two.', answer: 'Negative gap: slack', why: 'Hiring is easy, orders are hard.' },
+  { text: 'Actual GDP is 104 and potential is 100.', answer: 'Positive gap: overheating', why: 'A gap of plus 4. Policy tries to cool demand.' },
+  { text: 'India in April to June 2020.', answer: 'Negative gap: slack', why: 'Output fell more than a fifth below capacity in one quarter.' },
+]} />
+
+Two regularities hold almost everywhere. **Consumption is less volatile than GDP and investment is more**: a family in a bad patch still eats and pays rent; a company postpones the new factory. And unemployment rises in recessions. So if your product is somebody's investment, your sales swing more than the economy. Project work behaves like investment; recurring contracts behave like consumption.
+
+## What drives potential GDP
+
+Take the samosa seller. How many samosas can he fry in an hour? That depends on his kadhai and stove, his own hands and any helper, and his method. Handing his customers more money doesn't let him fry one more.
+
+| Ingredient | In an economy | How it grows |
+|---|---|---|
+| **Capital** | Factories, machines, roads, software | Through investment. Think of a tank: investment is the tap, depreciation the leak |
+| **Labour** | The number of people working, and their skills | Population, participation, education, health |
+| **Technology** | The recipe by which capital and labour combine | Research, innovation, and copying better methods |
+
+India's research spending is well under 1% of GDP, against roughly 3.5% in the US and over 2.5% in China.
+
+For capital you need investment, and for investment you need saving. A smaller pool of saving makes capital costlier. There is an optimal amount, the **Golden Rule**: the saving rate that gives the highest consumption a country can sustain. Save too little and there is too little capital; save too much and you give up consumption for no gain. If domestic saving falls short, other people's saving fills the gap as foreign investment, which is where the open economy begins.
+
+## Technology, AI and jobs
+
+Before the wheel, four men carried the king's palanquin. After it, one man and a chariot could. Every technology enters the world this way.
+
+| Measure | What it asks | What a new technology does |
+|---|---|---|
+| Average product of labour | How much does each worker produce? | Raises it |
+| Marginal product of labour | What does one more worker add? | Lowers it, for the tasks that already exist |
+
+Firms hire on the margin. A bank branch clears 400 cheques a day with 8 clerks: 50 each. Computers arrive and 2 clerks clear all 400: 200 each. Average productivity has quadrupled. A third clerk would add nothing.
+
+<Flow items={[
+  { t: 'The technology arrives', s: 'Each worker produces more' },
+  { t: 'Same tasks, fewer people', s: 'One more worker adds little; hiring slows' },
+  { t: 'New tasks appear', s: 'ATMs, cards, net banking, analytics: jobs that never existed', hl: true },
+]} />
+
+If the story ended at stage two, every invention since the wheel would have left fewer jobs. It doesn't. The pain of any technology depends on one thing: how fast new tasks are created. "All technologies penetrate the economy the same way." The honest uncertainty is speed: earlier transitions took decades, and people caught in stage two didn't always live to see stage three. If AI takes many jobs, profits still become income, but for fewer people, so the likely result is more inequality.
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: your job is to build stage three</p>
+
+In a business billed by headcount, tools that let one engineer do the work of three break the pricing model before they break the team. Price outcomes, not hours. A manager who only harvests the productivity gain is running stage two. The one who designs the new tasks is running stage three.
+
+</div>

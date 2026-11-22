@@ -15,15 +15,15 @@ const num = (n) => n.toLocaleString('en-IN');
 <main class="home">
   <section class="wrap hm-hero">
     <div class="hm-pitch">
-      <h1>EPBM notes you can play with.</h1>
-      <p class="hm-sub">Class notes from EPBM-32, written by a batchmate for the batch and rewritten in plain English. Short chapters, things to try as you read, and practice questions. Free to read, no sign-in.</p>
+      <h1>The EPBM-32 class notes, complete and interactive.</h1>
+      <p class="hm-sub">Every session of the programme, written up in plain English by a batchmate: the full classroom explanation, worked examples you can try for yourself, and practice questions for each subject. Free to read. No sign-in.</p>
       <form class="hm-search" role="search" onsubmit="return false">
         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
         <label class="sr" for="q">Search the library</label>
-        <input id="q" type="search" placeholder="Search a topic: break-even, motivation, queues" autocomplete="off">
+        <input id="q" type="search" placeholder="Search any topic, for example break-even or inflation" autocomplete="off">
       </form>
       <ul id="results" class="hm-results" aria-live="polite"></ul>
-      <p class="hm-count">{live.length} subjects, {chapters.length} chapters, {totalTools} things to try and {num(totalQ)} practice questions so far.</p>
+      <p class="hm-count">{live.length} subjects, {chapters.length} chapters, {totalTools} interactive exercises and {num(totalQ)} practice questions.</p>
     </div>
   </section>
 
@@ -39,7 +39,7 @@ const num = (n) => n.toLocaleString('en-IN');
     <div class="hm-way">
       <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h6a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4z"/><path d="M20 5h-6a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h6z"/></svg>
       <h2>Read</h2>
-      <p>Each subject is a short book. Chapters take about ten to twenty minutes and start with what you'll take away.</p>
+      <p>Each subject is a book that follows the sessions in the order they were taught, with the concepts, examples and cases from class. Every chapter opens with what you'll take away.</p>
     </div>
     <div class="hm-way">
       <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h10"/><path d="M18 7h2"/><circle cx="16" cy="7" r="2"/><path d="M4 17h3"/><path d="M11 17h9"/><circle cx="9" cy="17" r="2"/></svg>
@@ -55,7 +55,7 @@ const num = (n) => n.toLocaleString('en-IN');
 
   <section class="wrap hm-shelf">
     <h2 class="hm-h">Choose a subject</h2>
-    <p class="hm-hint">New here? Any book works on its own. {top[0]} and {top[1]} have the most to play with.</p>
+    <p class="hm-hint">Each book stands on its own, so start with whichever subject you need.</p>
     <div class="hm-books">
       {live.map((s) => (
         <a class="hm-book" href={`/${s.slug}/`} data-book={s.slug} data-n={s.chapters.length}>

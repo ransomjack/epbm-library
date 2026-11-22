@@ -1,0 +1,206 @@
+---
+title: Steering Demand
+kicker: Session 2, part 2
+order: 4
+source: "Sessions by Prof. Ankit Kumar · Market Economies & Macroeconomic Policies"
+description: "Money and inflation in the short and long run, hyperinflation, why deflation is feared, why markets do not self-correct, fiscal policy, deficits and debt, the Keynesian multiplier and aggregate demand. Session 2 of Market Economies & Macroeconomic Policies."
+takeaways:
+  - "In the short run prices are sticky and more money raises output. In the long run it raises only prices."
+  - "Falling prices are more dangerous than rising ones, because waiting to buy feeds on itself."
+  - "Government spending is productive if it raises the economy's capacity to produce in the future."
+  - "A rupee of government spending raises income by more than a rupee: 1 ÷ (1 − MPC)."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Steps from '../../components/d/Steps.astro';
+import Sort from '../../components/d/Sort.astro';
+import Decide from '../../components/d/Decide.astro';
+import Cascade from '../../components/d/Cascade.astro';
+
+## More money: output or prices?
+
+We know how money is created. What does more of it do? The answer depends on one thing only: whether prices are free to move. "Short run" and "long run" don't mean six months and ten years. They are defined by what prices are doing.
+
+| | Short run | Long run |
+|---|---|---|
+| Prices are | Sticky: stuck at a level set earlier | Flexible |
+| Output is decided by | Demand at those prices | Capacity: capital, labour, technology |
+| More money leads to | More output | Higher prices |
+
+| Why prices are sticky | Example |
+|---|---|
+| Menu costs: changing a price costs money and effort | A restaurant doesn't reprint its menu each time onions get costlier |
+| Fear of annoying customers | A salon that raises rates every month loses its regulars |
+| Staggered price setting: no one wants to move first | Each telecom company waits to see whether the others raise tariffs |
+| Pricing power: firms that set their own prices can hold them | A branded product with a printed MRP |
+
+### The water-bottle economy
+
+The professor built an economy on the spot. He is the only producer and makes one thing: a bottle of water. The central bank, a batchmate, gives every citizen Rs. 100. He holds up the bottle and asks for bids. Ten. Twenty. Fifty. Finally a hundred, and nobody can say more.
+
+<Cards min={260} items={[
+  { title: 'World 1: capacity is one bottle', body: 'The central bank doubles everyone’s money to Rs. 200. There is still one bottle. The bidding runs again and stops at 200.', foot: 'The long run: the price doubles, output doesn’t move' },
+  { title: 'World 2: a full warehouse, a fixed price tag', body: 'The price stays at Rs. 100. When money doubles, a buyer who wanted one bottle takes two.', foot: 'The short run: the price stays, output doubles' },
+]} />
+
+> Inflation is nothing but too much money chasing too few goods.
+
+As an equation it is the **quantity theory of money**, M = P × Y. One bottle: money of 100 gives a price of 100; money of 200 gives 200. Hold the price at 100 and money of 200 gives two bottles. One equation, two worlds.
+
+So the central bank has little say over the trend line. Its job is to keep the economy close to it. When Manmohan Singh quoted Keynes in the demonetisation debate, "In the long run we are all dead", the point was not that the long-run result is wrong. It is that people live, work and lose their jobs in the short run. Or as the professor put it: "You don't eat money, you eat bread."
+
+### When it goes out of control
+
+In Venezuela prices rose by more than a lakh per cent in a year. Zimbabwe printed a 100-trillion-dollar note. In Germany in 1923 prices doubled every few days. **Hyperinflation** doesn't start with the central bank. It starts with a government that wants to spend and has no money. It issues bonds; the central bank prints money to buy them. If the spending builds nothing, money keeps growing while output doesn't. This is why the RBI doesn't lend directly to the government, and why a central bank must be prudent and independent.
+
+## Why falling prices are worse
+
+Cheaper phones, cheaper cars, cheaper everything ought to be good. The class spent a surprising time on why it isn't.
+
+| Why falling prices hurt | In plain words |
+|---|---|
+| Buyers wait | If a car will be cheaper next month, why buy now? |
+| Margins and wages shrink | Price cuts reach salaries and jobs |
+| Capital loses its appeal | Little reason to build a factory whose product keeps getting cheaper |
+| Debts don't shrink | An EMI is fixed in rupees while salaries fall |
+
+> Prices going up is a nightmare. Prices coming down is a night terror.
+
+**Involution** is a price war nobody wins: firms cut prices for share, rivals match, margins and wages fall. In China, local governments nurtured whole industries (solar panels, batteries, electric cars) until supply far outran customers. The government is unhappy that prices are too *low*. A decade ago it simply ordered capacity cuts in state-run steel and coal. This time the firms are private. The escape routes are to flood foreign markets, where partners push back with tariffs, or to boost demand at home.
+
+**Why it doesn't cure itself.** The economist Pigou argued that when prices fall, the money in people's pockets buys more, they feel wealthier and spend. In the Great Depression it didn't happen. Why? People wait for prices to fall further. Both loops feed themselves: inflation raises expected inflation, wage demands, costs and prices; deflation makes buyers wait, demand fall, firms cut prices and then wages. Could the government fix prices by law? In 1971 the US froze wages and prices. When the controls came off, prices jumped.
+
+A price war is deflation in miniature: it trains customers to wait for the next sale and punishes whoever holds stock. Before joining one, ask how it ends.
+
+## Why markets don't correct themselves
+
+Picture a recession. The professor walks up and says: "I have the solution. Go and buy a car. If everyone does, the recession is over." You would tell him to keep his advice. People are losing jobs; you will hold on to your money.
+
+That is **precautionary saving**, and it is sensible for one household. But your spending is someone else's income. If everyone cuts spending to be safe, all incomes fall and nobody is safer: the **paradox of thrift**. Keynes was the first to say plainly that markets don't correct themselves. Someone who isn't frightened has to spend. That someone is the government.
+
+| | The central bank | The government |
+|---|---|---|
+| Economy too hot | Raise the repo rate; sell bonds; raise the CRR | Spend less; raise taxes |
+| Economy too cold | Cut the repo rate; buy bonds; cut the CRR | Spend more; cut taxes; transfer cash |
+
+The aim: prices should not rise too fast, and they should never start falling.
+
+### How India fought weak demand after COVID
+
+<Steps items={[
+  { title: 'Rural demand slows', body: 'The first sign was weak consumption in the villages.' },
+  { title: 'Companies respond', body: 'Not by cutting prices, which is the road to involution. They kept the Rs. 5 and Rs. 10 price points and made the pack smaller. Sticky prices in action.' },
+  { title: 'Government responds', body: 'More money for rural employment: cash for the hands most likely to spend it.' },
+  { title: 'Urban demand slows too', body: 'Company profits were growing strongly. Pay was not.' },
+  { title: 'Persuasion fails', body: 'A government cannot order private wages up.' },
+  { title: 'The remaining lever', body: 'Tax relief: income-tax cuts from April 2025 and lower GST rates in September 2025.' },
+]} />
+
+**Demand depends on real wages.** If your salary rises 10% and prices rise 10%, you can buy exactly as many apples as before.
+
+## Fiscal policy
+
+Fiscal policy has two moving parts: what the government spends (G) and what it collects (T).
+
+> Government never pays. You pay.
+
+| If | It is called | What it means |
+|---|---|---|
+| T is greater than G | A budget surplus | The government is saving: public saving |
+| T is less than G | A budget deficit | The gap is borrowed by issuing bonds |
+| T equals G | A balanced budget | Public saving is zero |
+
+**The productivity test.** Government spending is productive if it increases the economy's capacity to produce in the future. Then there will be more goods for the money to chase.
+
+<Sort title="Try it: does it pass the test?" choices={['Productive', 'Not productive']} items={[
+  { text: 'A port that lowers the cost of moving goods.', answer: 'Productive', why: 'It raises future capacity.' },
+  { text: 'A grand new official residence.', answer: 'Not productive', why: 'It adds nothing to what the economy can produce.' },
+  { text: 'A college that raises the skills of the workforce.', answer: 'Productive', why: 'Better labour is one of the three ingredients of potential GDP.' },
+  { text: 'An airport in a remote place, built because an influential politician comes from there.', answer: 'Not productive', why: 'An airport passes only where there is traffic to use it.' },
+  { text: 'A thousand crore spent advertising the government.', answer: 'Not productive', why: 'Money grows; output doesn’t.' },
+]} />
+
+**Why would a government tax more than it spends?** Germany did for years before 2020. It is a way of forcing the country to save: more saving, cheaper capital, more factories, more cars to export. China gets there by pushing households to save. In India neither happens: the government runs a deficit and household saving has been slipping, so foreign saving fills the gap. Under forced saving the household has lost the choice; the state has made it. (Germany has since changed course and now runs deficits.)
+
+**When should the deficit be bigger?** When people are gloomy and have stopped spending, the government can spend on their behalf and fill the hole later from the taxes on the recovery.
+
+**Deficit and debt.** A deficit is a flow: this year's gap. Debt is the stock: every past deficit added up. A deficit covered by selling bonds to savers moves existing money; it is money creation only if the central bank buys the bonds.
+
+| Government debt, % of GDP | 2019 | 2020 |
+|---|---|---|
+| World | 83.6 | 98.6 |
+| United States | 108.5 | 133.9 |
+| Japan | 235.4 | 254.1 |
+| Germany | 59.2 | 69.1 |
+| China | 57.1 | 66.3 |
+| India | 74.1 | 89.6 |
+
+A high number is not by itself a crisis: Japan borrows in its own currency from its own savers. What no government can do is let the ratio climb without limit.
+
+## The Keynesian multiplier
+
+A rupee the government spends raises income by more than a rupee. It buys potato chips worth Rs. 100 from one batchmate. He spends Rs. 80 on pots from a second. She spends Rs. 64 at a third's shop. The **marginal propensity to consume** (MPC) is the part of an extra rupee you spend.
+
+<Fig title="The Keynesian multiplier" caption="With an MPC of 0.8, Rs. 100 becomes Rs. 500. Switch to a tax cut: Rs. 20 is saved before the chain begins, so the multiplier is 4.">
+  <Cascade mode="spend" />
+</Fig>
+
+It has the same shape as the money multiplier. There the leak is reserves; here it is saving. Both are ceilings that depend on behaviour.
+
+A cut in a tax on goods must pass two gates. When GST rates fell in September 2025, a rating agency noted the effect would depend on how much was passed on and whether it led people to consume more.
+
+<Flow items={[
+  { t: 'Gate 1: pass-through', s: 'Do companies lower prices by the amount of the cut?' },
+  { t: 'Gate 2: the MPC', s: 'Do households spend the saving or bank it?' },
+  { t: 'New demand', s: 'An income-tax cut skips Gate 1.', hl: true },
+]} />
+
+Real multipliers are smaller than the textbook's, because taxes and imports drain each round: RBI economists put capital spending well above 2 and routine spending below 1. And a family on a tight budget spends almost all of an extra rupee.
+
+## Aggregate demand
+
+**Aggregate demand** is the total demand for the economy's output: in a closed economy, C + I + G. The curve relates the price level to output demanded.
+
+A participant said it slopes down because when prices fall, people have more income. Right slope, wrong reason. Your income hasn't changed. With Rs. 100 and a price of Rs. 5 you can buy 20 items; at Rs. 4 the same Rs. 100 buys 25. A lower price level raises the real value of money.
+
+<Sort title="Try it: a shift of the curve, or a move along it?" choices={['Shifts right', 'Shifts left', 'Move along the curve']} items={[
+  { text: 'The RBI cuts the repo rate.', answer: 'Shifts right', why: 'Expansionary monetary policy. Sellers of homes, vehicles and durables feel it first.' },
+  { text: 'The fiscal deficit is to be reduced.', answer: 'Shifts left', why: 'Contractionary fiscal policy. Suppliers to government feel it first.' },
+  { text: 'The price level falls.', answer: 'Move along the curve', why: 'Nothing has shifted. The same money simply buys more.' },
+  { text: 'Households turn optimistic and spend more.', answer: 'Shifts right', why: 'No policy changed. Confidence moved the curve.' },
+  { text: 'Government raises capital spending.', answer: 'Shifts right', why: 'Expansionary fiscal policy that also adds capacity.' },
+  { text: 'Cheap imports arrive from a country with surplus capacity.', answer: 'Move along the curve', why: 'Pressure on prices, not a shift in demand.' },
+]} />
+
+<div class="callout trap">
+<p class="callout-title">This is not the demand curve for a product</p>
+
+The demand curve for tea slopes down because cheaper tea makes people switch from coffee. Aggregate demand has nothing to switch to. It is about all goods at once.
+
+</div>
+
+## The session on a manager's desk
+
+| Idea | Product business | Service business |
+|---|---|---|
+| The multiplier is the banks' | Dealer and consumer finance decide whether an easier RBI reaches the showroom | Clients' working-capital limits decide how fast you are paid |
+| One ruler for data | Rebuild market-size models on the new series | Benchmark fee increases against the CPI, not the deflator |
+| The business cycle | Capital goods and vehicles swing more than GDP; staples less | Build the recurring share |
+| Potential output | At full utilisation a discount can't lift sales; a new line can | Tools are usually the cheapest ingredient to improve |
+| Sticky prices | With idle capacity, sell more at the same price. At capacity, raise the price or invest | Multi-year fixed rates are the stickiest of all. Build in indexation |
+| Real wages | Squeezed households defend the price point and accept a smaller pack | Your salary bill tracks expected inflation |
+| Fiscal policy | Government capital spending is an order book | Government clients pay late when the budget is tight |
+
+**Ten questions to take back to work**
+
+1. Is credit actually reaching my customers and dealers?
+2. If our main bank turned cautious tomorrow, what is our second source of funds?
+3. Are any overseas counterparties moving to tokenised payments?
+4. Are the numbers in our market models on the same series, year to year?
+5. Does what we sell behave like investment or daily consumption?
+6. Is the economy running hot or cold, and what follows?
+7. Are we at capacity, or below it?
+8. When automation lifts productivity, what new tasks will our people do?
+9. Are our customers' real incomes rising or falling? Our employees'?
+10. When a tax or interest rate changes, what will we decide about pass-through?
