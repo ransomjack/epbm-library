@@ -1,0 +1,82 @@
+---
+import Base from '../layouts/Base.astro';
+import { library, chapters } from '../lib/books.js';
+
+const index = chapters.map((c) => {
+  const s = library.find((x) => x.slug === c.subject);
+  return {
+    title: `${c.kicker}: ${c.title}`,
+    subject: s.name,
+    url: `/${c.subject}/${c.slug}/`,
+    text: [c.title, c.kicker, s.name, ...c.headings.map((h) => h.text)].join(' ').toLowerCase(),
+  };
+});
+---
+<Base>
+<main>
+  <section class="hero wrap">
+    <h1>What are you reading today?</h1>
+    <form class="search" role="search" onsubmit="return false">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <label class="sr" for="q">Search the library</label>
+      <input id="q" type="search" placeholder="Search a topic or a session" autocomplete="off">
+    </form>
+    <ul id="results" class="results" aria-live="polite"></ul>
+  </section>
+
+  <section class="wrap">
+    <h2 class="shelf-title">Subjects</h2>
+    <div class="shelf">
+      {library.map((s) => s.chapters.length ? (
+        <a class="book" href={`/${s.slug}/`}>
+          <span class="book-name">{s.name}</span>
+          <span class="book-meta">{s.blurb}</span>
+        </a>
+      ) : (
+        <div class="book soon">
+          <span class="book-name">{s.name}</span>
+          <span class="book-meta">Coming soon</span>
+        </div>
+      ))}
+    </div>
+  </section>
+</main>
+
+<script type="application/json" id="search-index" set:html={JSON.stringify(index)}></script>
+<script is:inline>
+(function () {
+  var data = JSON.parse(document.getElementById('search-index').textContent);
+  var q = document.getElementById('q'), out = document.getElementById('results');
+  q.addEventListener('input', function () {
+    var words = q.value.toLowerCase().split(/\s+/).filter(Boolean);
+    out.textContent = '';
+    if (!words.length) return;
+    var hits = data.filter(function (d) { return words.every(function (w) { return d.text.indexOf(w) !== -1; }); });
+    if (!hits.length) { var li = document.createElement('li'); li.className = 'none'; li.textContent = 'Nothing found. Try a different word.'; out.appendChild(li); return; }
+    hits.slice(0, 8).forEach(function (h) {
+      var li = document.createElement('li'), a = document.createElement('a'), s = document.createElement('span');
+      a.href = h.url; a.textContent = h.title; s.textContent = h.subject;
+      li.appendChild(a); li.appendChild(s); out.appendChild(li);
+    });
+  });
+})();
+</script>
+
+<style>
+.hero{max-width:760px;padding-top:88px;padding-bottom:64px;text-align:center}
+.hero h1{margin:0 0 28px;font-weight:500;font-size:clamp(38px,6vw,60px);line-height:1.08;letter-spacing:-0.01em}
+.search{display:flex;align-items:center;gap:10px;padding:6px 18px;border:1.5px solid var(--ink);border-radius:10px;color:var(--muted)}
+.search input{flex:1;min-width:0;min-height:48px;border:0;outline:0;background:transparent;font:inherit;font-size:17px;color:var(--ink)}
+.results{list-style:none;margin:12px 0 0;padding:0;text-align:left}
+.results li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;padding:12px 4px;border-bottom:1px solid var(--line);font-size:14px;color:var(--muted)}
+.results a{font-family:var(--serif);font-size:19px;font-weight:500;color:var(--ink);text-decoration:none}
+.results a:hover{color:var(--accent)}
+.shelf-title{margin:0 0 24px;font-weight:500;font-size:30px}
+.shelf{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.book{min-height:180px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;padding:22px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--ink)}
+a.book:hover{border-color:var(--ink);color:var(--ink)}
+.book-name{font-family:var(--serif);font-weight:500;font-size:23px;line-height:1.2}
+.book-meta{font-size:14px;line-height:1.45;color:var(--muted)}
+.book.soon .book-name{color:var(--muted)}
+</style>
+</Base>
