@@ -37,7 +37,22 @@ Every item here is covered in more depth in Sessions 1 to 5.
 | **Pooled SD** = √(SD₁² + SD₂² + 2r·SD₁·SD₂) | Noise after pooling | 3 and 4: r = −1 → 1; 0 → 5; +1 → 7 |
 | **Utilisation** ρ = λ ÷ μ | Arrival rate over service rate | 9 ÷ 10 = 90% |
 | **Queue size** L = ρ ÷ (1 − ρ) | Average number in the system | 90% → 9; 99% → 99 |
-| **Dumper cycle time** = larger of loading time and round trip ÷ n | Output with n vehicles | 3 dumpers → 8.5 min |
+| **Dumper cycle time** = larger of loading time and round trip ÷ n | Output with n vehicles | 3 dumpers → 8.5 min. Three minimise cost per load (about ₹369); four finish soonest |
+| **Reorder point** = demand × lead time | When to order | |
+| **Lowest yearly cost at the EOQ** = √(2DSH) | Ordering cost equals holding cost there | |
+
+## Ten lines that carry the module
+
+1. Every operations design takes its mandate from the differentiation strategy. Fit beats best practice.
+2. Being off the benchmarking curve is the crime. The level of value you choose is your own business.
+3. A disruption removes an accepted trade-off, at scale.
+4. Process moats (Zara, Toyota, Dell) outlast product moats (Apple, Nokia), because culture can't be copied.
+5. Efficiency is doing things right; effectiveness is doing the right things. Design for both.
+6. Inventory follows variability and the service level, not volume.
+7. Grade the fit of outsourcing to what you compete on, never the level. Outsource tasks, never capabilities.
+8. Pooling is a dial, not a doctrine, set by whatever your differentiation makes expensive.
+9. High utilisation under variability is a crime. Turning demand away kills sales, so add capacity.
+10. Buffers aren't waste when variability is real. Resilience is measured slack.
 
 ## Frameworks
 
@@ -73,7 +88,11 @@ Every item here is covered in more depth in Sessions 1 to 5.
 | Bottleneck | The limiting stage in a process. "Critical path" belongs to project management |
 | Assembly line | Any repetitive process, including sandwiches and surgery |
 | Which system has the longer lead time | Total: make-to-stock. Felt by the customer: make-to-order |
-| A items | Ordered often in small lots, but with the *most* safety stock |
+| A items | Ordered often in small lots, but with the *most* safety stock. C items: bulk, and forget |
+| "Make-to-order is better because inventory is zero" | It trades inventory for the customer's wait and for idle capacity. Make-to-stock serves about 95% of the market for a reason |
+| "Dell is flexible" or "Dell is rigid" | Dell is on the diagonal: a standard 70–80%, a customised final slice |
+| "Benchmark against the industry leader" | Only within your own diagonal |
+| "Cheaper AI units will shrink the AI bill" | The bill is cost × number of calls, and the number is exploding |
 | Shortage cost | Lost profit, invisible in the accounts |
 | "High demand needs high inventory" | False if demand is predictable. Variability drives stock |
 | Vertical integration | Neither good nor bad. It buys control; ask whether control is what you need |
@@ -82,6 +101,20 @@ Every item here is covered in more depth in Sessions 1 to 5.
 | Inventory turns | Reflect the business model. Compare only like with like |
 | High utilisation | Fine for predictable work; a recipe for queues when work is variable |
 | Lean | Not zero slack. Slack is what absorbs variability |
+
+## One toolkit, two worlds
+
+| Idea | In a product business | In a service business |
+|---|---|---|
+| Bottleneck and cycle time | The slowest machine on the packing line caps the plant | The one X-ray room caps the outpatient clinic; check-in capped the class's airport at 75 an hour |
+| Make-to-stock and make-to-order | Soap is made to stock; a ship or a wedding outfit is made to order | A buffet is made to stock; à la carte is made to order; managed IT services run a standard catalogue with project work on top |
+| Safety stock | A national oil reserve; thin buffers on predictable staples | Extra cross-trained nurses on weekend shifts; standby aircraft, which a low-cost airline chooses not to keep |
+| EOQ thinking | Lot sizes for flour at a kirana or components at a car plant | How often a cash machine is refilled: the cost of a visit against the cost of idle cash |
+| Newsvendor | Newspaper print runs, bakery output, fashion buys | Overbooking seats on a flight; staffing a call centre for an uncertain Monday |
+| Risk pooling | One regional warehouse replacing five city depots | One queue feeding all tellers; reallocating crews from a hub after a storm |
+| Product–process matrix | Ford far to the narrow side; a marketplace far to the wide side; Dell on the diagonal | A focused heart hospital on the narrow side; a multi-speciality hospital on the wide side |
+| Lean | Suppliers within a few kilometres, delivering three or four times a day | A coffee made in 40 seconds, not 60; online tax filing cutting the cost of collection |
+| The queueing law | Work piling up before a machine as utilisation nears 100% | An airline at 99% utilisation, where one rostering shock brings the system down |
 
 ## Which company illustrates what
 
@@ -110,3 +143,11 @@ Every item here is covered in more depth in Sessions 1 to 5.
 Firms don't fail for choosing cost, speed or variety. They fail for running an operations design that contradicts the promise they made to the customer.
 
 </div>
+
+## A closing word
+
+Take a second to notice what you now carry. You can read any business as a process and find its bottleneck in minutes. You can tell efficiency from effectiveness, and explain why the firms that design for both quietly out-earn the ones that squeeze. You know why the world makes to stock, what a ten-minute delivery really costs, and how to split any inventory into cyclic and safety stock. You can diagnose Intel and Boeing from opposite ends of the same mistake, run the DMart flywheel forwards and backwards, set the pooling dial, and see the arithmetic behind an airline's worst December.
+
+Every question about an operation is one of six moves: classify the process, name the clock, find the bottleneck, run a formula, grade a fit, or spot a flip. And keep the habit both professors kept pointing at: once a week, walk through a process and ask "is there some other way to do this?" That is where careers get made.
+
+> Be efficient and effective. Be good to everyone, and be happy.

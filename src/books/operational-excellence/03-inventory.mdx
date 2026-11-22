@@ -21,9 +21,13 @@ import Newsvendor from '../../components/d/Newsvendor.astro';
 
 ## Old theory, rarely used
 
-Prof. Avittathur opened with his own weekend. A trip to the airport that the map app put at under an hour and a half took well over two, because one major junction had been closed for flyover work and the app didn't know. One closed junction delayed almost every long journey in the city.
+Prof. Avittathur opened with a confession from his own Saturday. His son had an evening flight. At 2:30 pm the map app quoted 1 hour 26 minutes from campus to the airport, about 35 km, with no red anywhere. They left at 3:05 with a professor-of-operations buffer, on a Saturday when government offices and banks were shut, and reached after 5:30; the flight was saved only by the padding. The cause, discovered later: one major crossing had been closed from Friday evening to Monday morning to place three flyover beams, and the news hadn't reached even the map app. One closed junction delayed, by his estimate, every journey above ten kilometres in the city by an hour. Next morning, for his wife's flight, they left at 5:00 and arrived absurdly early, and gladly so.
 
-His point: everything in Session 2 has been in textbooks for half a century, and it is still thinly used, by firms and by cities. Amazon's edge wasn't new theory. It was old theory finally taken seriously and built into software. The gap between what operations theory knows and what organisations practise is the career opportunity.
+His point: everything in Session 2 has been in textbooks for fifty or sixty years, and it is still thinly used, by firms and by cities. He confessed he nearly retired the process-analysis lecture around 2013-14 as too obvious to teach. Then Amazon's rise, and later quick commerce, put cycle time, throughput time and bottleneck back into boardroom vocabulary: one firm, miles ahead, on the strength of simple operations arguments built into software.
+
+He sketched the longer arc. Into the early 1980s operations sat at the centre of the firm and everything else supported it. From the mid-80s the story was captured by marketing ("package it well and you can sell anything"), by strategy and its frameworks, and by finance, to the point where operations management fell out of several American MBA syllabuses. "Luckily, that did not happen in India." Walmart, Dell and Amazon dragged the subject back. His counsel: treat operations, statistics and operations research as career-critical equipment.
+
+Amazon's edge wasn't new theory. It was old theory finally taken seriously. The gap between what operations theory knows and what organisations practise is the career opportunity. Even the best navigation app is only a model of a process: one closure missing from the data and it fails city-wide. Your firm's planning system is no different. Someone has to own what is fed into it.
 
 ## Make-to-stock and make-to-order
 
@@ -39,20 +43,24 @@ His point: everything in Session 2 has been in textbooks for half a century, and
 | Aim | Balance inventory, capacity and service | Manage delivery lead time and capacity |
 | Main problems | Forecasting, production planning, inventory control | Promising delivery dates and keeping them |
 
-The class guessed that 90% of what we consume is made to stock. Prof. Avittathur's estimate is **95–97%**. The 1990s prediction that everything would move to make-to-order never came true.
+The class sorted examples quickly: car plants, make-to-stock; a ready-made coat, make-to-stock; fabric stitched for you, make-to-order. The professor's childhood school uniform had both in one purchase: the fabric came off the shelf at the school's designated shop, then a tailor sat on it for a month before stitching it, with a small boy's rising panic as reopening day approached. A custom-printed T-shirt is roughly 90% make-to-stock (the shirt) and 10% make-to-order (the print).
+
+One sweet-shop counter runs all three at once. The barfi in the display case is made to stock. The five-kilo wedding order prepared tonight is made to order. And the khoya base made every morning, flavoured only when you choose, is the hybrid.
+
+The class guessed that 90% of what we consume is made to stock. Prof. Avittathur's estimate is **95–97%**. The 1990s prediction that everything would move to make-to-order (revived by 3D printing, which has since gone quiet) never came true. If anything, old make-to-order work like uniform tailoring has moved to make-to-stock.
 
 <div class="callout trap">
 <p class="callout-title">Which lead time?</p>
 
-**Total** lead time, from source to consumption, is usually *longer* for make-to-stock: the chips you eat in June were made in April and sat in three warehouses. What make-to-stock shortens is the **customer's wait**, because the stock is already nearby. In make-to-order the clock starts when you order, so the customer feels all of it. Always say which clock you mean.
+**Total** lead time, from source to consumption, is usually *longer* for make-to-stock: the chips you eat in June were made in April and slept in three warehouses on the way. Only milk and bread escape this. What make-to-stock shortens is the **customer's wait**, because the stock is already nearby. In make-to-order the clock starts when you order, so the customer feels all of it. Always say which clock you mean.
 
 </div>
 
 ### Why make-to-order never took over
 
-Customisation is costly and customers won't wait. But the deeper reason is **capacity utilisation**. Capacity is an investment, and every investor watches one number: how busy is it? Make-to-stock lets a factory run near 100% against a forecast. A make-to-order system running near 100% makes customers queue for ever.
+Customisation is costly and customers won't wait. But the deeper reason is **capacity utilisation**. Capacity is an investment, and every investor watches one number: how busy is it? Make-to-stock lets a factory run near 100% against a forecast. Run a factory and your boss asks for your utilisation weekly, if not daily. A make-to-order system running near 100% makes customers queue for ever, so make-to-order can't give capital the busyness it demands.
 
-The proof is on your phone. Quick-commerce apps deliver in minutes only because their local stores keep riders standing by. Every pizza outlet has idle scooters at the kerb. That idleness isn't waste. It is the product.
+The proof is on your phone. Quick-commerce apps deliver in minutes only because their local stores keep riders standing by. Staff such a store for average demand and the ten-minute promise dies the same day. Every pizza outlet has idle scooters at the kerb, and on a slow Tuesday the riders lean on them. That idleness isn't waste. It is the product. You are consuming low utilisation as a service.
 
 <div class="callout">
 <p class="callout-title">Whenever a business promises speed, ask whose idleness is paying for it</p>
@@ -61,11 +69,30 @@ Make-to-order survives at the high-value fringe (luxury cars, luxury watches) as
 
 </div>
 
+The counter-current proves the rule. A low-cost airline squeezes its aircraft, flying them 13 to 14 hours of an 18-hour day with 20-minute turnarounds, but that is a standardised, make-to-stock style of service chasing utilisation, not customisation. Dell owned the make-to-order middle for about a decade from the mid-1990s; then the PC became a commodity and even that industry drifted back towards make-to-stock.
+
+He closed the point with the same obsession with scale loose in education: universities chasing enrolment while rigour thins. His barb, with the caveat that his own institute rides the same wave: "When an MBA programme throws out operations management, I have no hesitation saying the rigour is gone. You have become friendlier to the student, and you are selling an inferior product."
+
 ### Assemble-to-order: the best of both
 
-A paint company makes its white base and pigments by continuous flow, to stock, all the way to the dealer. The dealer's tinting machine then mixes your exact shade on demand. Thousands of shades are served in minutes from a handful of stocked components.
+A paint company makes its white base and pigments by continuous flow, to stock, all the way to the dealer. The dealer's tinting machine then mixes your exact shade on demand. Thousands of shades are served in minutes from a handful of stocked components: pink today, blue the day after, and they are ready for either. The scorecard: less inventory and faster service than pure make-to-order, at the price of some work-in-process stock.
 
-The design question is **where to put the customisation boundary**. Dell held it at the factory. Paint companies push it out to the retailer. Everything before the boundary enjoys scale and forecasting; everything after it responds to the individual customer.
+The design question is **where to put the customisation boundary**. Dell held it at the factory. Paint companies push it out to the retailer. Everything before the boundary enjoys scale and forecasting; everything after it responds to the individual customer. A juice corner stocks cut fruit on forecast and blends your glass on order. Half the street-food economy is assemble-to-order without ever hearing the term: the base is a bet, the finish is a response.
+
+### The quick-commerce debate
+
+Mid-session the professor polled the room: all things considered, has quick commerce made your life better? The obvious yes (rain outside, an uninvited guest, no milk at home) met his contrarian audit. Until 2020 his household ran on one weekly trip to one well-stocked store. Since then that single trip has splintered into five or six app orders a week, because no single app stocks everything. He mourned the older hub-and-spoke model, a city hub with nearly everything feeding the spokes. You buy 500 g of bhindi because that is the pack; the 200 g you wanted isn't an option.
+
+| For, from the batch | Against, from the batch |
+|---|---|
+| No planning needed; instant rescue when a guest arrives | Handling and delivery fees stack up |
+| You pick exactly what you want, without a cart of temptations | Flash offers manufacture impulse buys: "MRP 120 at 70, and you buy what you never needed" |
+| Easy comparison across brands | Vegetables you can't inspect; broken milk packets |
+| Returns that actually work | The promised slot slips; the monthly-ration discipline that once ran a household quietly dies |
+
+His sociology: penetration is still tiny; price-sensitive India hasn't converted, and the kirana is still crowded on Sunday evening. He even cheered the nudge that stopped "10 minutes" advertising: the delivery riders are smiling again, he said, and driving past such a store is safer.
+
+The kirana asks "usual?" and packs your month in one bag: that is a forecast. The app asks nothing and sells to you six times a week: that is a funnel. Convenience and control are different products.
 
 <div class="callout">
 <p class="callout-title">Quick commerce is make-to-stock at your doorstep</p>
@@ -76,7 +103,7 @@ It feels like on-demand service, but it is make-to-stock moved closer to you, wi
 
 ## ABC analysis: not every item deserves equal attention
 
-For every item you bought last year, work out its annual **consumption value** (annual demand × unit cost) and rank the list from highest to lowest. The same shape appears every time.
+For every item you bought last year, work out its annual **consumption value** (annual demand × unit cost) and rank the list from highest to lowest. The same shape appears every time. If your raw-material bill is ₹100 crore, roughly ₹70 crore rides on the top sliver.
 
 <Fig title="Share of items and share of annual spend" caption="A handful of items carry most of the money. Typical figures; the exact split varies by firm.">
   <Bars unit="% of spend" rows={[
@@ -89,15 +116,15 @@ For every item you bought last year, work out its annual **consumption value** (
 | Class | How to order | Safety stock | Suppliers |
 |---|---|---|---|
 | **A** | Small lots, very often (even daily, against an annual contract) | **Most** days of cover | Few, contracted, nearby, close relationships |
-| **B** | In between | Medium | In between |
+| **B** | In between, weekly or so | Medium | In between |
 | **C** | In bulk, rarely | Least | Many substitutes; location doesn't matter |
 
-The two halves of the A row trip people up. A items are ordered in small lots because holding them is expensive. But they carry **more** safety stock, not less, because of supply risk: an A item often has only one or two capable suppliers, while a C item such as nuts and bolts has a market full of substitutes.
+The two halves of the A row trip people up. A items are ordered in small lots because holding them is expensive: the cost of placing an order is about the same whatever the item, but holding cost grows with value. Salt for the whole year is bought in one go. But they carry **more** safety stock, not less, because of supply risk: an A item often has only one or two capable suppliers, while a C item such as nuts and bolts has a market full of substitutes. Hence long-term contracts, relationship-building and physical closeness for A suppliers (a large car maker's A-class vendors famously sit within an hour of the plant), while a C supplier can be anywhere.
 
 <div class="callout">
 <p class="callout-title">Two rules to anchor</p>
 
-**Lot size follows holding cost. Safety stock follows supply risk.** Your kitchen already runs ABC: fruit every few days, rice monthly, salt once a year.
+**Lot size follows holding cost. Safety stock follows supply risk.** Your kitchen already runs ABC: fruit every few days, rice monthly, salt once a year. A caterer guards his saffron (costly, one trusted supplier, an extra tin in reserve) very differently from his salt.
 
 </div>
 
@@ -116,6 +143,10 @@ The two halves of the A row trip people up. A items are ordered in small lots be
   ]} />
 </Fig>
 
+Which item wears which label keeps changing: the chip crunch of the pandemic years has become AI's. No formula rescues you. This, the professor said plainly, is where managers get to be stars or failures. Just beware hindsight: every bold inventory call looks like grand strategy only after it pays.
+
+**Contracts for A items.** Frequent small orders don't mean spot-market chaos. You lock a long-term contract for assurance, then transact daily against it. Without that commitment the supplier hedges elsewhere and stops taking you seriously.
+
 ## Three costs and two trade-offs
 
 Every inventory decision balances three costs.
@@ -126,23 +157,35 @@ Every inventory decision balances three costs.
   { title: 'Shortage cost', body: 'Not an expense at all: profit that never arrived because you had nothing to sell.' },
 ]} />
 
-They form only two trade-offs:
+The shop that doesn't have your milk loses the sale to the next shop. The mango-seller who stocked 50 against a likely demand of 100 gave up the margin on every customer he couldn't serve.
+
+They form only two trade-offs, not three, as a batchmate pointed out. Ordering and shortage barely touch.
 
 <Flow items={[
   { t: 'Ordering vs holding', s: 'How often should I buy? Answered by cyclic stock and the EOQ.' },
   { t: 'Holding vs shortage', s: 'How much cushion should I keep? Answered by safety stock.', hl: true },
 ]} links={['']} />
 
-Any inventory splits into those two parts. **Cyclic stock** averages half your order quantity (Q ÷ 2). Whatever you hold on average above that is **safety stock**. If you buy once every 30 days, your cyclic stock is 15 days of demand; if your average inventory is 25 days, your safety stock is 10 days.
+Any inventory splits into those two parts. **Cyclic stock** averages half your order quantity (Q ÷ 2). Whatever you hold on average above that is **safety stock**. If you buy once every 30 days, your cyclic stock is 15 days of demand; if your average inventory is 25 days, your safety stock is 10 days. Give him your order data, the professor offered, and he will split the two on the spot.
 
 <div class="callout trap">
 <p class="callout-title">You won't find "inventory cost" in the accounts</p>
 
-It hides in interest on working capital, warehouse rent, handling labour and write-offs, each owned by a different department. Shortage cost doesn't appear at all, which is why cost-cutting drives consistently underweight it, and why safety stock is the first thing a cost-cutter removes and the first thing a crisis exposes.
+Open any manufacturer's profit and loss account and look for the line called "inventory cost". It isn't there. The cost-of-goods arithmetic (opening 100 + purchases 500 − closing 150 = 450) is a flow, not a cost of holding. The true cost hides in interest on working capital, warehouse rent, preservation, security, handling labour and write-offs, each owned by a different department. "Like Vishnu, inventory has many incarnations." Many firms still can't state their true carrying cost. Shortage cost doesn't appear at all, which is why cost-cutting drives consistently underweight it, and why safety stock is the first thing a cost-cutter removes and the first thing a crisis exposes.
 
 </div>
 
-Safety stock exists at national scale too. Countries hold strategic petroleum reserves worth many billions of dollars that mostly sit unused. By any ordinary inventory measure that is wasteful, which is exactly why it is called strategic: it is the price of not being hostage to a supply shock.
+Even country league tables of logistics cost mislead: the same ₹5 of carrying cost is a fat percentage on ₹60 butter and a slim one on ₹150 butter, so low-price economies look inefficient by construction. He admitted he doesn't fully trust anyone's number, including his own.
+
+**Inventory changes form.** Once an engine sits inside a finished car, it is car inventory. Ask a plant how many engines it holds and the answer counts only the loose ones.
+
+### China's hundred days of oil
+
+Safety stock deserves respect at the scale of nations. The professor had recently written about China's strategic petroleum reserve: in his telling, more than a billion barrels, roughly a hundred days of consumption. When conflict threatened a major shipping strait and forecasts screamed of oil at $150 to $200, prices touched roughly $110 to $120 once and were back near $70 within about three months, partly, as he told it, because China simply stopped buying some three million barrels a day and lived off the reserve, flattening the spike for everyone.
+
+By any ordinary inventory measure, a hundred billion dollars sleeping in tanks is madness, which is exactly why such stock is called strategic. Safety stock is the price of the uncertainties you refuse to be hostage to.
+
+A wedding caterer holds extra paneer he will probably waste. The one night the guest list doubles, that "waste" saves his name. His account book records only the discarded trays; the saved reputation appears nowhere.
 
 ## The economic order quantity (EOQ)
 
@@ -162,20 +205,22 @@ Move "your order size" to find the lowest cost, then change the other sliders an
   <EoqCalc />
 </Fig>
 
-H sits under the square root, so **costly items get small lots and cheap items big ones**, which is the ABC ordering rule again. The model assumes a textbook world: steady demand, a fixed lead time, a fixed price, and all demand met. The reorder point is simply demand during the lead time.
+H sits under the square root, so **costly items get small lots and cheap items big ones**, which is the ABC ordering rule again. The model assumes a textbook world: steady demand, a fixed lead time, a fixed price, and all demand met. At the best order size, the lowest total cost is √(2DSH). The reorder point is simply demand during the lead time.
+
+Why does the chaiwala buy milk twice a day but sugar once a month? He has never seen the formula, but milk is his A item and sugar his C. And yet, the professor added with amusement, industry people still phone him asking how to compute Q, for mathematics that is a century old.
 
 <div class="callout">
 <p class="callout-title">One number, chosen with intent</p>
 
-In the 1980s and 1990s American firms typically assumed a carrying cost of about 20% a year. Dell, the class was told, used 30%. A bigger H gives a smaller Q, and tiny lots pushed Dell towards just-in-time and its assemble-to-order model. A parameter became a business model.
+In the 1980s and 1990s American firms typically assumed a carrying cost of about 20% a year. The rule of thumb put it at roughly double the financing cost. Dell, the class was told, declared 30%: not better measurement, but intent. A bigger H gives a smaller Q, and tiny lots pushed Dell towards just-in-time and its assemble-to-order model. A parameter became a business model.
 
 </div>
 
 ## The newsvendor: stocking for a one-shot day
 
-Some stock has to be ready before the selling period begins and can't be topped up during it. Nobody buys yesterday's newspaper. Stock too little and you lose profit; stock too much and the leftovers go at a loss.
+Some stock has to be ready before the selling period begins and can't be topped up during it. Nobody buys yesterday's newspaper, and milk and bread live under the same clock. Stock too little and you lose profit; stock too much and the leftovers go at a loss.
 
-**The problem.** Demand could be 10, 20, 30 … 90 units. Each is 10% likely, except 50, which is 20% likely; expected demand is 50. Each unit sold earns ₹7.50. Each unsold unit loses ₹2.50. How many should you stock?
+**The problem.** Demand could be 10, 20, 30 … 90 units. Each is 10% likely, except 50, which is 20% likely; expected demand is 50. Each unit sold, at ₹30, earns ₹7.50. Each unsold unit loses ₹2.50. Sales are the smaller of demand and stock. How many should you stock?
 
 Before reading on, find the answer yourself.
 
@@ -191,7 +236,7 @@ Before reading on, find the answer yourself.
 | 80 | 49 | 31 | ₹290 |
 | 90 | 50 | 40 | ₹275 |
 
-The best stock is 70, twenty more than expected demand. Those twenty units are the safety stock.
+The best stock is 70, twenty more than expected demand. Those twenty units are the safety stock. Why does the best answer sit in the middle? Each extra unit is less likely to be needed, so expected sales climb more and more slowly, while leftovers climb faster and faster. Too much cushion is as costly as too little.
 
 ### The shortcut: the critical ratio
 
@@ -206,7 +251,9 @@ Here the ratio is 7.5 ÷ 10 = **0.75**. Stock the smallest quantity for which th
 
 That cumulative probability has a familiar name: the **service level**, the share of periods in which you meet demand in full. In the calculator, raise the loss on unsold units and watch the best stock fall; raise the profit per unit and watch it climb.
 
-The model reaches well beyond newspapers. Airline seats and hotel rooms are priced with it. And it explains what Prof. Avittathur calls India's best-run supply chains, milk and bread: almost never out of stock, almost never stale, almost nothing thrown away. Perishability forced mastery.
+The model reaches well beyond newspapers. Airline seats and hotel rooms are priced with it: how many seats at one fare and how many at the next. And it explains what Prof. Avittathur calls India's best-run supply chains, milk and bread: almost never out of stock, almost never stale, almost nothing thrown away. Perishability forced mastery; supply chains without that whip tolerate sloppiness.
+
+The mirror image: aged wine or whisky is worth holding only while each year's rise in price beats that year's carrying cost. Sell the moment it doesn't.
 
 <div class="callout">
 <p class="callout-title">Manager takeaway: price the customer who walks away</p>
@@ -214,3 +261,13 @@ The model reaches well beyond newspapers. Airline seats and hotel rooms are pric
 A baker who makes 100 loaves when average demand is 80 looks wasteful, until you count the profit lost on each customer turned away. If a missed sale costs you much more than a leftover unit, stock well above the average. If leftovers are the expensive mistake, stock below it.
 
 </div>
+
+## How the session ended
+
+Prof. Avittathur compared his own teaching to an attacking opening batsman: storytelling with no control over the shots. He apologised to anyone who wanted a straighter lecture and defended the method: if a formula intimidates you, you drop the subject, and with it the opportunity. Management, he reflected, has served him better than engineering. It is the more philosophical degree, the one that refuses a single right answer, and a programme is wasted on anyone who absorbs only the 10% that looks useful today. He left the batch with the line that bookends both his sessions: be efficient and effective, be good to everyone, and be happy.
+
+**Six things to be able to do after his two sessions:** tell cycle time from throughput time and find a bottleneck; classify a process type; say which clock and which problems go with make-to-stock and make-to-order; apply ABC to ordering and to safety stock; work the EOQ and the cyclic stock; and use the critical ratio and the service level.
+
+## The session in one breath
+
+The world makes to stock, 95 to 97% of it, because capital demands utilisation and make-to-order can't deliver it. Speed is bought with someone's idle capacity. Assemble-to-order puts the customisation boundary where it serves the customer best. ABC says where attention goes: lot size follows holding cost and safety stock follows supply risk. Cyclic stock settles ordering against holding, through the EOQ; safety stock settles holding against shortage, through the critical ratio.
