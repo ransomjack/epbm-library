@@ -1,0 +1,172 @@
+---
+title: Data Architecture and Governance
+kicker: Part 3, continued
+order: 6
+source: "Sessions by Prof. Rahul Kumar · Digital Transformation"
+description: "Big bang versus grassroots, what each architecture gets right and what it costs, the hybrid with a data-product layer, data governance, and what the module could not fit. Part 3 of Digital Transformation."
+takeaways:
+  - "Grassroots is fast and close to the user but duplicates everything. Monolithic gives one truth but locks business users out."
+  - "The hybrid is a cut, not a compromise: keep the monolith up to the lakehouse, then give each function its own data product."
+  - "Data governance subsumes data quality. It also covers ownership, definitions, access and sharing."
+  - "Almost none of the failures in this module were technical. They were relationships that were never realigned."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Sort from '../../components/d/Sort.astro';
+import Decide from '../../components/d/Decide.astro';
+import Tabs from '../../components/d/Tabs.astro';
+
+## Grassroots or big bang
+
+The last stretch of the module went to data products. Two real companies got it wrong in opposite directions.
+
+| Approach | What they did | How it failed |
+|---|---|---|
+| **The big bang:** a large Asia-Pacific bank | One massive programme to extract all data, clean it and put it into a cloud data lake, without first aligning to any business use | Three years later only occasional analysts wanting historical data could use it. Real-time needs such as personalised offers were never in scope |
+| **The grassroots:** the opposite extreme | Every team assembles the data and technology it needs for the use in front of it | One-off pipelines that can't be reused, and a tangle of custom architectures that are expensive to maintain |
+
+**The base gravy.** The professor's kitchen version. The big bang is cooking every dish on the menu before anybody has ordered, then finding nobody wanted what you made. The grassroots is a fast-food kiosk chopping onions from scratch for every order. A good restaurant does neither. It makes one base gravy in the morning, and from that one base produces paneer butter masala and the rest of the menu.
+
+A car maker does the same: one standard base model, with different seats and trim for different buyers. One base, many users, improved over time.
+
+## Inside the grassroots architecture
+
+The class was split in two and asked to argue each structure.
+
+Picture sixteen sources: ERP, warehouse, inventory, customer and payroll systems, vehicle tracking, third-party feeds, social media, reviews. Three departments, each with its own rules, its own pipeline and its own dashboard. Nobody designed this. It is what an organisation becomes when an ERP arrives one year, a warehouse system two years later, and applications every year after, each wiring its own pipeline the week it goes live.
+
+**What it gets right.** The data is direct and close to on-ground reality, because it is few hops from source to screen. It is close to real time. Adoption is better, because whoever built it built it for that business owner. The feedback loop is instant. It is fast to build, cheap up front and simple to debug.
+
+| What it costs | In practice |
+|---|---|
+| Duplication | Customer verification data is pulled by three departments separately. Same cleaning done three times |
+| Redundancy | The same computing burned repeatedly for no new information: a running cost, not a one-off |
+| No standardisation | Business reports revenue in units, accounts in rupees, operations in tonnes. In the chief executive's room the first fifteen minutes go to reconciling one number |
+| No single source of truth | No one place the number comes from |
+| Scalability | Sixteen sources works. Years of applications and spreadsheets don't |
+| No complete customer view | The same customer transacts in three places and no department knows it is the same person |
+| Ungoverned flow | Sensitive data moves between departments with nothing governing it |
+
+## Inside the monolithic architecture
+
+Everything from every source is staged in one place. The professor's analogy: all flights coming into the same airport.
+
+<Flow items={[
+  { t: 'Sources', s: 'ERP, legacy, apps, third party, social, web' },
+  { t: 'Landing and staging', s: 'Everything is here: accessible, not yet usable' },
+  { t: 'Warehouse or lakehouse', s: 'Facts and dimensions, transformed and structured' },
+  { t: 'Dashboards, reporting, AI models', s: 'But can a vice president pull from here on their own? Mostly no.', hl: true },
+]} />
+
+Once everything is staged it is **accessible but not usable**. Text, sensor streams and half-structured feeds don't behave like your ERP. They must be transformed into facts (customer, product, supplier) and dimensions (attributes, location, age, value).
+
+Control buys you symmetry. It also installs guardrails. Pulling data straight off a server needs skills a business user doesn't have and access they usually aren't given. The flexibility the grassroots model had is now a barrier.
+
+**Gold at home, or gold in the bank locker.** A hundred households each keeping gold at home is easy pickings for a hundred small thefts. Moving it all into one bank locker is far more regulated. But the bank is now a single, very attractive target. Neither is safe by default. What changes is the shape of the risk.
+
+On the single point of failure the professor was relaxed. If the central store goes down for a few hours, the data-product layer acts as the backup. What suffers isn't availability but delay: twenty-minute-old data becomes two-hour-old data.
+
+## The hybrid, and the data product layer
+
+Asked which is better, the room converged on a hybrid. But the fusion has a precise shape. **It isn't a blend. It is a cut.**
+
+<Fig title="Three ways to organise a firm's data" caption="Keep the monolith up to the lakehouse, because that is where its single version of the truth comes from. Then give the freedom back.">
+  <Tabs tabs={[
+    { label: 'Grassroots', rows: [
+      ['How it works', 'Each department builds its own pipeline and dashboard from the sources it needs.'],
+      ['Single source of truth', 'No.'],
+      ['Duplication', 'Everywhere.'],
+      ['Governance and security', 'Hard: data is spread out.'],
+      ['Capital cost', 'Low.'],
+      ['Running cost', 'High: roughly nine people doing the same cleaning work in parallel.'],
+      ['Time to build', 'Days to weeks.'],
+      ['Business user can self-serve', 'Yes. That was the point.'],
+      ['If it fails', 'One pipeline breaks; the rest survive.'],
+    ], note: 'Nobody designs this. It accumulates.' },
+    { label: 'Monolithic', rows: [
+      ['How it works', 'Everything lands in one place, is transformed once, and feeds all reporting.'],
+      ['Single source of truth', 'Yes.'],
+      ['Duplication', 'Removed.'],
+      ['Governance and security', 'Easier: one place to control.'],
+      ['Capital cost', 'Heavy up front.'],
+      ['Running cost', 'Low: two skilled people run it.'],
+      ['Time to build', 'Three to five months at best; six to nine on a large estate.'],
+      ['Business user can self-serve', 'Not really. Skills and access are both missing.'],
+      ['If it fails', 'A single point of failure.'],
+    ], note: 'One route in, one transformation, one version of the truth, and guardrails on the way out.' },
+    { label: 'Hybrid', rows: [
+      ['How it works', 'Keep the monolith up to the lakehouse. Then insert data marts split by function: one clean, standard data set per department.'],
+      ['Single source of truth', 'Yes, from the central core.'],
+      ['Duplication', 'Removed.'],
+      ['Governance and security', 'Central rules, with credentialed access to each data product.'],
+      ['Capital cost', 'The core, plus a layer almost nobody builds.'],
+      ['Running cost', 'A central team maintains the core; functions use their own data products.'],
+      ['Business user can self-serve', 'Yes, from governed, ready-made data.'],
+      ['If it fails', 'The data products act as a buffer: older data, not no data.'],
+    ], note: 'This is the base gravy: one foundation, many dishes.' },
+  ]} />
+</Fig>
+
+Each department gets its own tables and files: comprehensive, clean, uniform, standardised, close to real time. Think of what a good public data set gives you. That is the standard a **data product** has to meet internally. A common pattern: the staging and lakehouse area sits on the firm's own servers, while the data products sit on cloud servers that users log into with credentials.
+
+**Why CSV and not a spreadsheet file.** Data products are shipped as CSV because it is lightweight, plainly machine-readable, supported by every reporting tool, and free of the row ceiling a spreadsheet format carries. If your format caps out at about a million rows and your user base grows, your product is obsolete.
+
+**What the layer unlocks:**
+
+- **Self-service without a business case.** A business user can build a model without justifying the return on a trial, because the data reached them at little or no cost.
+- **Future uses you haven't thought of yet.**
+- **Computation moves off the reporting tool**, which is cheaper and more comprehensive.
+- **Collaboration between departments becomes possible.** What they share is data products, and models built on several together are stronger than anything one department could build.
+
+Is data an asset or a product? A product, because it goes straight into value-creating activities.
+
+## Data governance
+
+Build that layer and questions arrive at once. What rules are you writing here? How is each field defined? Who monitors the quality checks? Who can access what, who can share it, and who can share it without removing names? Answer those and you have made cataloguing, description and lifecycle management easier, and security tighter. Together, that is **data governance**.
+
+<div class="callout trap">
+<p class="callout-title">Data governance is not data quality</p>
+
+Ask most clients about governance and you get an answer about data quality. Governance subsumes quality. Quality is one building block inside it, alongside ownership, rights, stewardship, classification, access and accountability. India's Digital Personal Data Protection Act is doing to Indian firms what GDPR did in Europe: forcing the conversation.
+
+</div>
+
+A footnote on names. The 2024 paper prints this ingredient as *digital governance*, because reviewers felt the construct wasn't yet mature. The professor's argument, then and now, is *data governance*. Quoting the paper, say digital governance. Building a blueprint, it is data governance.
+
+| Term | What it covers |
+|---|---|
+| **Data governance** | Ownership, definitions, quality, access and sharing |
+| **Data security** | Protecting the data itself |
+| **Cyber security** | Protecting the systems and applications |
+
+Data teams generally assume the technology team owns the third, which is exactly why reporting lines matter.
+
+**Why governance isn't paperwork.** Ungoverned data flowing between departments leads to unapproved tools appearing across the business: people using whatever gets the job done. That is the grassroots structure's real cost, in security terms. Governance is what makes one architecture safer than another.
+
+<Decide q="A client says: “Our data governance is fine. Our data quality scores are excellent.” What have they told you?" options={[
+  { label: 'That governance is in good shape.', why: 'Quality is only one part of governance.' },
+  { label: 'Only that one building block is in place.', good: true, why: 'You still need to ask who owns each data set, how fields are defined, who may access and share what, and who is accountable.' },
+]} />
+
+## What the module could not fit
+
+The professor named three subjects that three weekends couldn't cover.
+
+| Left open | Why it matters |
+|---|---|
+| Data governance in depth | A separate module, including building a data catalogue: stewardship, classification, access models, lifecycle rules |
+| Change management for digital transformation | Specifically about how relationships get realigned: how the data team works with the technology team, with business users and with processes, rebuilt in phases |
+| Responsible AI and AI governance | As models start deciding and not just advising, this stops being optional |
+
+The one you will meet first is change management. Look back at the failures in this module and count how many were technical: almost none. The card company's overrides, the retail group's inertia, the reconciliation queue at the logistics firm, General Electric's centralised programme in a decentralised company. Every one is a relationship that was never realigned. The technology was fine in all four.
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: four questions before any digital programme</p>
+
+1. **Need:** is this an opportunity outside or a shortcoming inside?
+2. **Way:** are we repairing lost value or building new value with partners?
+3. **Means:** which ingredient is weakest: culture, leadership, people, governance or technology?
+4. **End:** which outcome will move, and how will we measure it?
+
+</div>

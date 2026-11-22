@@ -1,0 +1,243 @@
+---
+title: How You Prove It Worked
+kicker: Part 2
+order: 3
+source: "Sessions by Prof. Rahul Kumar · Digital Transformation"
+description: "The five building blocks, what value realised looks like, two caselets, data, service and system quality, the IS Success Model, adoption versus usage, the workforce block, readiness assessment, survey craft and where the data team should report. Part 2 of Digital Transformation."
+takeaways:
+  - "Three qualities (data, service, system) drive use and satisfaction, which drive benefits. Break the chain anywhere and no value comes out."
+  - "Adoption is an attitude; usage is a behaviour. High usage numbers can hide a tool nobody acts on."
+  - "Measure readiness before you spend, and put the money into the weakest area."
+  - "There is no correct organisation chart. Know where yours leaks."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Steps from '../../components/d/Steps.astro';
+import Sort from '../../components/d/Sort.astro';
+import Decide from '../../components/d/Decide.astro';
+import IsCircuit from '../../components/d/IsCircuit.astro';
+import Radar from '../../components/d/Radar.astro';
+
+## The five building blocks
+
+Part 1 ended with a promise: value is only real if you can show what changed. This part makes good on it. You have a value proposition. How do you know whether it is actually being realised?
+
+The module is anchored on a reading that lists four building blocks of a data-driven organisation. The professor adds a fifth.
+
+<Cards min={200} items={[
+  { title: 'Leadership', body: 'Somebody senior owns the outcome, not just the budget. Walk the talk; set the example.' },
+  { title: 'Collaboration', body: 'Data crosses departmental walls instead of being hoarded.' },
+  { title: 'Data empowerment', body: 'People at the edge can get, trust and use data without asking permission.' },
+  { title: 'Value realisation', body: 'Being able to show what actually got better because of the spend.' },
+  { title: 'Workforce', body: 'Will people actually accept what the machine tells them?', foot: 'The professor’s addition', hl: true },
+]} />
+
+One correction he made early and repeated: **these blocks don't sit in silos.** Whether your departments share data is a culture question. Culture is set, raised or flattened by leadership. So a collaboration problem is very often a leadership problem wearing a different shirt. Diagnose them together, or you will fix the wrong one.
+
+And remember the grammar: enablement is the verb. The dashboard isn't the enablement. What people now do differently is.
+
+## What "value realised" looks like
+
+Value is only worth the name if it is aligned to the business strategy: you are a cost leader, or a differentiator, or you compete on being close to the customer.
+
+**Three shops on the same street.** The first survives on volume and the lowest price in the lane, so for that shop value means a rupee saved on every transaction. The second stocks something nobody else has, so value means a price nobody argues with. The third knows every regular by name and what their family eats, so value means the customer never walks past to the next lane. Same street, three completely different definitions of a good day. Ask which of the three your company is, and then ask whether your dashboard is measuring that one.
+
+Real companies rarely sit at a corner. Most sell a blend. That is fine. What isn't fine is not knowing which lever you are pulling.
+
+<Flow items={[
+  { t: 'A value proposition on paper', s: '' },
+  { t: 'Aligned to strategy', s: 'Cost, product or customer' },
+  { t: 'Flows into core activities', s: 'Operations, marketing, logistics' },
+  { t: 'The margin moves', s: 'Top line or bottom line', hl: true },
+]} />
+
+Efficiency, productivity, revenue and customer loyalty each have to land somewhere on the profit and loss statement. If one doesn't, it was an output, not an outcome. Value has potential only when it is flowing into core activities. Everything else is a slide.
+
+**Impact assessment isn't a post-mortem you run at the end.** It is the tool that tells a leader, mid-flight, whether the money already spent is turning into anything, and if not, exactly which link in the chain to go and repair.
+
+## Caselet one: the dashboard nobody trusts
+
+A real client of the professor's, anonymised: a global logistics provider handling freight across port, road and air. The engagement was to build a roadmap for better decision-making.
+
+A senior sales leader opens the dashboard. Three numbers, some spikes, some trends. And then something odd happens: they read it, but they don't decide from it. The number looks wrong. Wastage couldn't have been that high. Order volumes can't have moved like that, and if they have, more freight carriers need to be booked today, because an unloaded shipment is lost business.
+
+So the leader messages their own team. "This spike looks off, please check." The answer comes back in two days. Sometimes a week. On one request, a link between month and customer booking patterns to check for a seasonal effect, it had been two and a half months and the number still hadn't reached the dashboard. The team kept handing over patchwork figures pulled from here and there. Consumable, but not decidable.
+
+The same pattern turns up at Viacom later: waits of four, six, eight weeks. Two very different industries, one identical failure. That is your clue that this is structural, not a bad hire.
+
+## The three qualities: data, service, system
+
+The class produced three diagnoses for that one story, and the professor kept all three.
+
+<Cards min={220} items={[
+  { title: 'Data quality', body: 'Is the number right? Data arrives from vehicle tracking, the ERP, warehouse systems and more. Different owners, different versions, no single source of truth. So the manager doesn’t trust it and won’t act on it.' },
+  { title: 'Service quality', body: 'The manager who asks for a number is the data team’s customer. The checking, the re-pull, the explanation are a service. Two days when the decision needed two hours is a service failure, not a data problem.', foot: 'The one people miss' },
+  { title: 'System quality', body: 'The reporting environment as a thing. Fine at four in the afternoon. Monday at ten, when seventy people open it, two minutes to launch instead of two seconds.' },
+]} />
+
+**Service quality in one picture.** Think of the data team as an internal restaurant kitchen. The ingredients might be fine and the stove working. But if the order takes two days to arrive, the guest has already left and eaten somewhere else. Service quality is measured in responsiveness, not accuracy.
+
+**System quality from experience.** The professor once had to teach a session from two devices because his video software, tablet and laptop wouldn't behave together: a system misbehaving, not a support desk failing. And during his doctorate, his statistical session crashed on day three of writing a program, with the workspace unsaved.
+
+<div class="callout trap">
+<p class="callout-title">Don't collapse these three</p>
+
+Data quality is about the number. Service quality is about the humans who fix the number. System quality is about the software that displays the number. Three separate diagnoses, three different and differently priced fixes.
+
+</div>
+
+## The IS Success Model: the circuit
+
+Put those three qualities on the left and what they feed on the right, and you have the framework this part was walking towards: the **DeLone and McLean Information Systems Success Model** (1992; the 2003 revision adds service quality). It is popular because it isn't a scorecard. It is a diagnostic path from technology, through behaviour, to strategic outcome.
+
+<Fig title="The IS Success Model as a circuit" caption="Three qualities drive use and satisfaction. Those drive net benefits, which is another name for value realisation. Try the two caselets, then break boxes yourself.">
+  <IsCircuit />
+</Fig>
+
+| Box in the model | The question it asks | In the logistics caselet |
+|---|---|---|
+| Data quality | Is the number right, complete, timely? | Fragmented, so the spike is never believed |
+| Service quality | How responsive are the people who fix it? | Two days to a week for a re-pull; two and a half months for a new measure |
+| System quality | Does the tool load, respond, stay up? | Present, not acute |
+| Use | Do they open it? | They open it. That was never the problem |
+| Satisfaction | Do they trust it enough to act? | No. They read the dashboard and decide from a patchwork spreadsheet |
+| Net benefits | Did anything measurably improve? | No. Pricing and service decisions stayed on gut feel |
+
+Three inputs, two behaviours, one outcome. If any part of the circuit is broken, no value comes out the other end. That is why "let us buy a better reporting tool" is almost always the wrong first answer. It fixes one box out of six.
+
+## Caselet two: where everything worked
+
+Another real client, a large Indian card company. They had built a model to support the decision of whether an applicant should be given a card.
+
+Run the same checks. Data quality? Fine. Model accuracy? Proficient. Service quality? Yes. System quality? Nothing serious. Whatever the two or three commonest pain points are in Indian organisations, this case has none of them. And it still fails.
+
+The usage numbers are all green. Three hundred licences distributed. Two hundred and fifty people logging in. Frequency per day, time per session: healthy.
+
+The failure sits one box further right. **Roughly two-thirds of final decisions were being made on the officer's own judgement, with the model overridden.** And the reasons were never recorded anywhere. The purpose of the model was to prevent losses. That purpose wasn't being served.
+
+| | Logistics caselet | Card company caselet |
+|---|---|---|
+| Data quality | Broken | Fine |
+| Service quality | Broken | Fine |
+| System quality | Present, not acute | Fine |
+| Use | High | High |
+| Satisfaction | Broken | Broken: they use it and override it |
+| Value realised | No | No |
+
+Two organisations, two completely different broken boxes, one identical bottom line. This is why you don't start a diagnosis by guessing. You walk the chain.
+
+## Adoption is not usage
+
+Somebody answered the card-company question with "it is an adoption problem". It isn't, and the difference matters.
+
+A company has a home-grown ERP. Nobody has the source code any more, so the decision is taken to replace it. People hate the move. They keep going back to the old system, or a spreadsheet, or paper. That is an attitude problem: individual inertia, and it happens *before* anybody has used anything.
+
+<Cards min={240} items={[
+  { title: 'Adoption', body: 'Attitudinal. Before acceptance, still in the head. It rests on two beliefs: perceived ease of use (can I work it?) and perceived usefulness (will it benefit me?).', foot: 'Beliefs, not evidence' },
+  { title: 'Usage', body: 'Behavioural. After acceptance, observable and measurable.', foot: 'Shows up in the logs' },
+]} />
+
+Both beliefs are "perceived" because nobody has touched the system yet. This is the **Technology Acceptance Model** (Davis, 1989), which descends from the theory of reasoned action and has spawned variants, UTAUT being the best known. Training exists precisely to move perceived ease of use.
+
+The cleanest example of ease of use moving: seven years ago using a machine learning model meant writing code. Today it means typing a sentence in English. Nothing about the usefulness changed. The ease changed, and adoption followed.
+
+After usage begins you get *continued* intention to use, the same idea marketing calls repurchase intention, except here your employees are the customers.
+
+## Why usage metrics flatter you
+
+| Usage metric | What it proves | What it doesn't prove |
+|---|---|---|
+| Licences issued | Procurement happened | That anybody wanted them |
+| Registered and active users | The login works | That the tool influenced a decision |
+| Frequency per day | It is part of the routine | That the output is believed |
+| Time per session | They spent time in it | That the time produced anything |
+
+They are easy to collect, they are always high, and they tell you almost nothing about value.
+
+<div class="callout">
+<p class="callout-title">The sentence to use in a review meeting</p>
+
+"These are adoption numbers. What is the override rate?" Adoption numbers measure the tool. Override rate measures whether the tool changed a decision. Only the second is on the road to margin.
+
+</div>
+
+## The fix that cost nothing
+
+What did the card company do? No new model. No new platform. No retraining programme.
+
+<Decide q="Officers override the model two times in three. What is the cheapest effective fix?" options={[
+  { label: 'Build a more accurate model.', why: 'The model was already accurate. Accuracy wasn’t the broken box.' },
+  { label: 'Make the model’s recommendation compulsory.', why: 'That removes human judgement where it may be right.' },
+  { label: '“Override it if you want. But write down why.”', good: true, why: 'It makes the human’s reasoning visible, so the model can be improved by the very people rejecting it. It removes the effortlessness of the override. And it turns an invisible failure into a stream of data.' },
+  { label: 'Run more training sessions.', why: 'The officers knew how to use it. This was about willingness, not ability.' },
+]} />
+
+**The right challenge, from the room.** How do you know the shift is real? Maybe they accept the model only to avoid writing a justification. You can't tell from usage logs. A sharper check: how often was the system right on the occasions it was overridden? If the model was right and got overridden, the problem is behavioural. If it was wrong, the officers were doing their job.
+
+The professor pushed back on even that. Checking override accuracy is a project manager's move: correct, but small. Someone being trained for a senior seat has to ask the bigger question: is my workforce equipped for this at all, and if not, should I design the workflow around that reality instead of blaming individuals?
+
+## The fifth building block: workforce
+
+Where in the reading's four blocks does the card company fit? Nowhere. The reading has nothing about people's willingness to accept what the machine says. So the fifth block exists, and it decides whether the other four ever produce anything.
+
+**Psychological safety.** A participant raised the objection that matters. Why would somebody help build the automation that replaces them next year? They will contribute right up to the point where it reaches their own neck. No training fixes that. What fixes it is leadership giving credible comfort that this is an enabler, not a replacement, and then behaving consistently with that.
+
+It is the same reason a confident shop owner's staff will happily point out which items are slow-moving, and a nervous one's staff won't. People share information freely only when sharing it can't be used against them. Every data culture initiative eventually runs into this wall.
+
+## Readiness: the five buckets
+
+If workforce willingness decides everything, you have to measure it before you commit budget. Before building a model, find out whether your people will use one. The full instrument runs to about a hundred and fifty questions; the structure is five buckets and one combined readiness score.
+
+| Bucket | What it asks |
+|---|---|
+| Leadership readiness | Are the seniors championing this, aligning it, modelling it? |
+| Organisational readiness | Do structure and culture let this spread across departments? |
+| Data readiness | Is data unified, trusted, accessible? |
+| Current decision intelligence | What head start exists: dashboards, a reporting culture? |
+| Workforce readiness | Are people skilled, confident and comfortable with digital tools? |
+
+The professor ran a short version on the class. Forty-nine of about seventy-four people responded.
+
+<Fig title="Reading the spider chart" caption="The class's own scores. Further from the centre means more ready. A cohort, not a company, so treat it as a demonstration of the method. The ranking, not the second decimal, is what the diagnosis rests on.">
+  <Radar />
+</Fig>
+
+Working from the outside in:
+
+- **Decision intelligence is strongest.** The dashboard culture is doing fine. That is a real head start, and people throw it away when they declare the dashboards useless and demand self-service on day one.
+- **Leadership is comfortable.** Anything at 3.8 and above isn't bad. Above 4.2 is rare enough to be suspicious of.
+- **Workforce is outshining organisational readiness.** That gap is the finding. People are skilled and personally fine with these systems, so it isn't an ability problem. But when several people must run a workflow together, it stalls. That is cultural resistance, and it needs change management and leadership, not another training programme.
+- **Data readiness is the innermost**, which closes the loop: low data readiness is precisely why the number on the screen is mistrusted. The word is mistrust, not distrust. Distrust is a judgement you have formed. Mistrust is a doubt you can't resolve, which is what bad data leaves you with.
+
+<Decide q="With those scores, where should the next rupee go?" options={[
+  { label: 'Another reporting tool.', why: 'Decision intelligence is already the strongest area.' },
+  { label: 'Alignment workshops for leadership.', why: 'Leadership readiness is already comfortable.' },
+  { label: 'Data literacy training for staff.', why: 'Individuals are already capable. The gap is collective, not personal.' },
+  { label: 'Unifying the data, with organisational work alongside.', good: true, why: 'Everything routes through the innermost area. Every other rupee goes in vain until those two move.' },
+]} />
+
+## Survey craft: how many, and who asks
+
+**How many responses?** A scored survey needs numbers behind it. The rule of thumb from the standard reference on multivariate analysis is about ten responses per question (per question, not per bucket). With thirty-odd questions, forty-nine responses is thin but workable for a demonstration.
+
+Interviews and workshops play by different rules. You are hunting for pain points, not measuring a distribution, and you stop when the same problems start repeating. In the professor's experience that saturation shows up after seven or eight interviews. A real engagement runs both.
+
+**Symptom versus root cause.** A rating-scale survey gives you a temperature reading. It won't tell you whether the infection is viral or bacterial. That is what the open question "name your top three pain points" is for. Most people happily tick 4 or 5 all the way down and never volunteer the pain point unless asked.
+
+**Participation is a leadership problem.** In industry, 25% to 30% participation is considered good, and those who respond skew positive, so the silent majority may be the more important sample. A technology chief requesting participation lands differently from a chief executive requesting it. And one email lands differently from the same person holding three sessions on the same day with the same agenda.
+
+## Where should the data team report?
+
+If organisational readiness is the constraint, at some point you have to touch organisational design. Two stories from the session.
+
+**A large bank's capability centre.** The problem was siloing. Step one: pull the data engineers, architects and analysts out of the business departments into one central data function with its own chief. Step two, some years later: they noticed the data chief reported to the technology chief, who kept winning. Step three: the reporting line was moved to the chief executive. Read that as a signal. Data went from an enabling function to a value-creating one. But then, when a business department asked for four extra fields in the pipelines, the newly elevated data engineers were less willing to listen: we have our own value to create. The fix created its own problem.
+
+**A technology consultancy.** A senior leader there described the same restlessness: their organisation design has been changed twice in fourteen years. Not because either design was wrong, but because each solves something and breaks something else.
+
+<div class="callout">
+<p class="callout-title">There is no correct organisation chart</p>
+
+Ask for the right answer and you get seventy different structures for seventy people in the room. What a leader is accountable for isn't picking the perfect design. It is knowing where the current design is leaking, and whether that leak runs with or against the strategy.
+
+</div>

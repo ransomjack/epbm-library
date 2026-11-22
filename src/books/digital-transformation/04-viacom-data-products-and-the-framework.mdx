@@ -1,0 +1,144 @@
+---
+title: Viacom, Data as a Product, and the Framework
+kicker: Part 2, continued
+order: 4
+source: "Sessions by Prof. Rahul Kumar · Digital Transformation"
+description: "The information systems triangle, the Viacom case and what it fixed, three ways to earn from data, the scope, ways, means and ends framework with GE and Siemens, and where the quality ideas come from. Part 2 of Digital Transformation."
+takeaways:
+  - "Transactions feed pipelines; pipelines feed either a human decision or an automated one. Automation is earned, not assumed."
+  - "A transformation is approved on a financial case: Viacom's revenue fell about 10% while profit fell about 40%."
+  - "Treat data as another product line. If you pull the data out and the business stops, it is a product."
+  - "Scope, ways, means, ends: the technology ranks last because it is a hygiene factor."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Steps from '../../components/d/Steps.astro';
+import Bars from '../../components/d/Bars.astro';
+import Sort from '../../components/d/Sort.astro';
+import Decide from '../../components/d/Decide.astro';
+
+## The information systems triangle
+
+A structure worth committing to memory, because it is the whole of information systems on one page.
+
+<Flow items={[
+  { t: 'Transaction processing', s: 'ERP, warehouse, tracking, legacy apps. Every customer, supplier and auditor transaction leaves data behind.' },
+  { t: 'Data pipelines', s: 'Landing zone, lake, warehouse' },
+  { t: 'Decision', s: 'Support: a human reads it and decides. Or automated: the system decides and acts.', hl: true },
+]} />
+
+Every ERP, legacy system and small application is a **transaction processing system**. The data flows through pipelines and reaches people. From there the path forks. A **decision support system** hands the insight to a human. A **decision automated system** cuts the human out and executes. Nothing sits outside this triangle.
+
+**How automation is actually earned.** You don't start with an automated system. You keep a human deciding for two or three years, you track how often the model and the human disagree, and when the chance of the model going wrong is negligible you remove the human and redeploy them. The professor's name for that redeployment is capability building.
+
+<Sort title="Try it: decision support or decision automation?" choices={['Decision support', 'Decision automation']} items={[
+  { text: 'A model scores a card applicant and an officer makes the final call.', answer: 'Decision support', why: 'A person reads the output and then decides.' },
+  { text: 'A ride-hailing app sets the fare and assigns a car.', answer: 'Decision automation', why: 'The output triggers an action with nobody in between.' },
+  { text: 'A dashboard shows a regional sales dip to the sales head.', answer: 'Decision support', why: 'The human consumes the insight.' },
+  { text: 'A password reset is completed without any helpdesk agent.', answer: 'Decision automation', why: 'The system decides and acts.' },
+]} />
+
+Two different worlds, two different risk profiles. Ask who or what consumes the model's output.
+
+## The Viacom story: the need
+
+Viacom, the media group behind MTV, Comedy Central and Paramount, isn't an invented teaching case. Its digital transformation is a matter of public record, and it runs through the rest of the module.
+
+Start where the framework says to start: with the need. Why does a company embark on this at all? The room's first answers were operational. The data team was flooded. Requests took weeks. People couldn't get their own numbers. All true, and all insufficient, because a digital transformation isn't signed off by a technology chief. They lead it. The approval comes from the chief executive, so the justification has to be financial.
+
+| Financial years ended 30 September | 2014 | 2015 | 2016 |
+|---|---|---|---|
+| Revenue, US$ billion | 13.78 | 13.27 | 12.49 |
+| Change in revenue | flat | down 4% | down about 6% |
+| Adjusted net earnings, US$ billion | about 2.4 | | about 1.5 |
+
+<Fig title="Viacom, 2014 to 2016" caption="Roughly a ten per cent fall in the top line, and profit falling about four times as fast.">
+  <Bars unit="% fall" rows={[
+    { label: 'Revenue', value: 9, note: 'subscribers going elsewhere' },
+    { label: 'Earnings', value: 38, note: 'spending no longer converting into business', mark: true },
+  ]} />
+</Fig>
+
+That combination is the alarm. A shrinking top line means subscribers are going elsewhere. A bottom line eroding four times as fast means the processes in between have become wasteful.
+
+**The chain of reasoning that gets a chief executive's signature.** Promotional campaigns were running hard and subscriptions weren't following. Those campaigns weren't decided on gut feel; they were data-driven. So the data was pointing the wrong way. Customer expectations had shifted and the company couldn't see it. That isn't an IT problem escalated upwards. It is a business case, expressed in the only two lines a board reads.
+
+## What Viacom actually fixed
+
+**Self-service scales; analyst-driven reporting doesn't.** The scarce resource was never the technology. It was the analyst. The team was swamped, with people waiting four, six, eight weeks for insight. Read against the model, that is a service quality failure, identical in shape to the logistics caselet. Self-service was the answer because it removes the queue, not because it is fashionable. The idea was to bring requests that took days down to something immediate.
+
+**The workforce was never the problem.** The team was deeply skilled, comfortable with large-scale data and in each other's code. On the readiness chart their workforce score would have been high. What was broken was the culture and the plumbing around them: engineers receiving a request had to work out where the data would come from and in what format, ask around, and repeat that discovery every single time.
+
+**A human stayed in the loop.** Model output was combined with human judgement, not trusted blind: decision support first. Automation arrived later, once earned.
+
+**What "data culture" meant here.** Not posters and town halls. The professor's definition, and he is deliberate about not calling it data culture: data has to be treated as *another product line*. You already obsess over whether you are making a stylus, a bottle of water or electrical machinery. Data is one more product on that list, nurtured the same way. The consequence is that no business leader gets to look at it in their own private, fragmented way.
+
+## Data as a product, not a by-product
+
+If data is a product, it can be turned into money, and there are three known routes.
+
+<Cards min={210} items={[
+  { title: '1. Improve internal work', body: 'Plug leakage, decide faster. Work completes quicker; wasted time and cost overruns are plugged.', foot: 'Serves the cost leader · bottom line' },
+  { title: '2. Wrap the product', body: 'Data rides on what you already sell and makes it unique. For services, the extra you can charge a premium for.', foot: 'Serves the differentiator · top line' },
+  { title: '3. Sell the information', body: 'The data itself becomes the offering.', foot: 'New revenue' },
+]} />
+
+**Wrapping, in practice.** A company makes sensor-enabled industrial equipment and has a sensor-enabled assembly line of its own. Vast real-time data, and all they did with it was internal dashboards. The proposal: build the model internally and put it into the equipment they ship, so customers get real-time predictions with the hardware. Same product, same customers, now with foresight attached.
+
+**Selling, in practice.** Strategically you sell data when you want your data to become so useful inside competitors' businesses that you rule the category. A gentler version is common in supply chains. A large vehicle maker has five hundred parts suppliers. Today it raises an order, the supplier takes seven to nine days to produce, and the chain suffers. Now it builds a data product giving suppliers visibility of its assembly line and forward demand. Suppliers plan inventory instead of waiting, which frees working capital, and that is why a supplier would pay for it.
+
+Inside a company that doesn't sell data externally, only the first two routes apply, and they map onto the two levers from Part 1.
+
+<div class="callout">
+<p class="callout-title">Why a product and not an asset</p>
+
+Because it goes straight into value-creating activities, not support ones. The test: pull the data out, and does the business still run? Take data out of a cab-hailing app and no cab gets booked and no price gets set. When data stops being an enabler and becomes part of the core, it has become a product.
+
+</div>
+
+## Scope, ways, means and ends
+
+Everything so far has been individual building blocks. This is the frame they hang on, meant for leaders more than practitioners. It comes from Prof. Kumar's own research (Kumar and Thakurta, 2024) and was tested against two real cases, General Electric and Siemens, which is useful because one of them failed.
+
+<Steps items={[
+  { title: 'Scope: why, and how far', body: 'The need (a value deficiency: a lost market, a risk, a crisis) and the level (a process, a function, the firm, an industry).' },
+  { title: 'Ways: which path to value', body: 'Value co-creation (new offerings, markets, partners) or value re-creation (winning back lost ground). Unpacked in Part 3.' },
+  { title: 'Means: what it runs on', body: 'Organisational capabilities, digital talent, digital governance, big data analytics. Also Part 3.' },
+  { title: 'Ends: what shows up', body: 'Impact on costs, perceptions, offerings and markets. The “net benefits” box wearing a strategic hat.' },
+]} />
+
+"Ways" is the dimension this research adds to the older frame.
+
+**Why the technology ranks last.** In the ranking of how prominent each element is across the literature, big data analytics comes last of eight. The explanation is Herzberg's motivation-hygiene idea: analytics behaves like a **hygiene factor**. Having it earns you nothing; not having it stops everything. It is the vehicle, not the destination.
+
+| | General Electric: what went wrong | Siemens: what went right |
+|---|---|---|
+| Scope | No value assessment of the platform; existing shortcomings not considered | Clear goals from the outset, including cost reduction and customer loyalty targets |
+| Ways | No strategic emphasis; the digital unit and the business units wanted different things | Initiatives built to strengthen each division, anchored on customer closeness |
+| Means | A centralised programme dropped into a decentralised company; overconfident leadership; a culture that suppressed bad news | Divisions structured around customer groups, ownership pushed down, a committee of divisional heads overseeing it |
+| Ends | Short-term focus; customers didn't understand or value the proposition | Cost benefits realised, image consolidated, growth opportunities taken |
+
+## Where the quality ideas come from
+
+**SERVQUAL: the source of "service quality".** Its five criteria spell RATER: Reliability, Assurance, Tangibles, Empathy, Responsiveness. Read them against your own data team and you will find most complaints are about responsiveness and assurance, not accuracy.
+
+**Garvin's eight dimensions: the product parallel.** Performance, features, reliability, conformance, durability, serviceability, aesthetics and perceived quality. Useful when you need more than "it works".
+
+**The Balanced Scorecard: where the loose ends go.** Kaplan and Norton link four perspectives in a chain.
+
+| Perspective | What sits here | The scattered answers it absorbs |
+|---|---|---|
+| Learning and growth | People, skills, culture, knowledge | Training, patents, capability building |
+| Internal process | How the work gets done | Efficiency, productivity, cycle time |
+| Customer | How the outside world experiences you | Satisfaction, loyalty, brand, retention |
+| Financial | The scoreboard | Revenue, margin, working capital, shareholder value |
+
+Every answer the class gave about value has a home in one of the four, and each feeds the next. All roads lead to Rome, and your Rome is either a top line or a bottom line. That sentence is how you connect a soft benefit to a hard number in front of a board.
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: when results are flat, walk the chain</p>
+
+Don't start by buying a better tool. Check each link in order: is the data trusted, is the support fast, does the tool work, do people use it, do they act on it? Fix the first broken link you find.
+
+</div>
