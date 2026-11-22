@@ -1,14 +1,14 @@
 ---
-title: Measuring the Economy, and Money
-kicker: Session 1
+title: Measuring the Economy
+kicker: Session 1, part 1
 order: 1
 source: "Sessions by Prof. Ankit Kumar · Market Economies & Macroeconomic Policies"
-description: "GDP and its four buyers, value added, nominal versus real, how the CPI measures inflation, real interest rates, what money is, the RBI's two levers and how banks create money. Session 1 of Market Economies & Macroeconomic Policies."
+description: "Why managers study macroeconomics, GDP and what counts in it, the four buyers, value added, nominal versus real, the CPI, what India's new basket shows, and headline versus core inflation. Session 1 of Market Economies & Macroeconomic Policies."
 takeaways:
   - "GDP is the value of final goods and services produced inside a country. It is bought by four buyers: households, firms, the government and, net, the rest of the world."
   - "Real figures have prices taken out. Subtract inflation from growth, from an interest rate and from a pay rise before reacting to them."
-  - "Most money is created by commercial banks when they lend, not by the RBI. Banks create money, but not wealth."
-  - "The RBI has two levers: the quantity of money and its price, the repo rate."
+  - "A CPI basket is a photograph of how a country spends. India's new one shows food shrinking and services growing."
+  - "To guess the next rate decision, watch core inflation, not the headline."
 ---
 import Fig from '../../components/d/Fig.astro';
 import Cards from '../../components/d/Cards.astro';
@@ -18,22 +18,45 @@ import Bars from '../../components/d/Bars.astro';
 import Sort from '../../components/d/Sort.astro';
 import Decide from '../../components/d/Decide.astro';
 import CpiCalc from '../../components/d/CpiCalc.astro';
-import RealRate from '../../components/d/RealRate.astro';
-import Cascade from '../../components/d/Cascade.astro';
 
 ## Why a manager studies this
 
-No company sets the interest rate, the inflation rate or the exchange rate. Every company lives inside them. Macroeconomics is worth a manager's time for three reasons: to understand the boundary conditions a business operates within, to read the current state of the economy, and to follow what policymakers are signalling so that it can be built into decisions.
+Your company's strategy is something you choose. Your customer's budget, the EMI on your loan, the cost of your imported components and the speed at which your salary loses value are chosen for you, by the economy.
 
-The module answers four questions, one per session: how an economy is measured and what money is; how demand is steered; what limits that steering; and how exchange rates work.
+Think of a ship's captain. He doesn't control the weather, but he would be a fool to sail without reading it. Your firm is the ship. Macroeconomics is the weather: growth, inflation, interest rates and the rupee. The aim is not to turn managers into economists. It is to make the weather report stop sounding like a foreign language.
+
+| The reason | In plain words | On a manager's desk |
+|---|---|---|
+| **Analyse the boundary conditions** | The economy sets the limits every business plays within: how fast demand can grow, what money costs, what a rupee buys | A plan to grow 25% a year in an economy growing 6 to 7% means taking business from somebody. Budget for a fight, not a rising tide |
+| **Analyse the current condition** | Read where we are now, not where we were when the last plan was written | When to hire, when to lock in a loan, when to hold a price |
+| **Read policymakers' signals** | Central bankers and finance ministers speak in a code, and markets move on a single sentence | A rate hike announced today is a costlier loan and a more cautious customer a few months from now |
+
+### Decoding the signals
+
+Each of these is one sentence, and each moved money somewhere in the world.
+
+| The signal | What it says | What a manager does with it |
+|---|---|---|
+| "The chances of a soft landing are likely to diminish." US Fed chair, September 2022 | A soft landing is bringing inflation down without a recession. Rates would keep rising even at the cost of one | Dollars get costlier and American customers cautious. An Indian IT firm should expect slower deal closures |
+| "Stagflation concerns rise." A newspaper headline | Stagnation plus inflation: prices rise while growth and jobs weaken. The cure for one worsens the other | Demand falls while costs rise. Protect margins and stress-test the budget |
+| "...reserve losses and imported inflation." RBI Governor, 2022 | When the US raises rates, money leaves emerging markets, the rupee weakens and imports get costlier | An importer hedges. An exporter enjoys a tailwind |
+| "No targeted band, the market will decide." RBI Governor, December 2025 | The RBI won't defend any particular level of the rupee. It will only smooth violent moves | Don't build a budget on the belief that the RBI will hold a number for you |
+
+Two institutions stand behind all these sentences. The government decides taxes and public spending: **fiscal policy**. The central bank (the RBI in India, the Federal Reserve in the US) decides how much money there is and what it costs: **monetary policy**. The professor's label for the pair was "two benevolent dictators": each has enormous power and each believes it acts for the public good. When a president and a central bank chair quarrel in public, the quarrel is over the central bank's independence, and rates and currencies swing more.
+
+The first two and a half sessions stay inside the domestic economy. The rest open the borders. By the end, each sentence above should read like plain English.
 
 ## GDP: sizing an economy
 
-**Gross domestic product** is the market value of the final goods and services produced inside a country in a period. Each word does a job.
+Imagine an orchard that grows apples and oranges and runs a juice stall at the gate. How big was the business this year? You can't add 500 apples to 300 oranges to 2,000 glasses of juice. The only common unit is money: value everything at the price it sold for and add it up. Do the same for every farm, factory, shop, clinic and office in the country, and the total is **gross domestic product**: the market value of the final goods and services produced in a country during a given period. Change any one phrase and you are measuring something else.
 
-- **Final:** a tyre sold to a car maker is not counted separately. Its value is already inside the price of the car.
-- **Produced:** a second-hand flat, a share purchase or a cash transfer adds nothing, because nothing new was made. Only the broker's fee counts.
-- **Inside a country:** GDP follows geography, not ownership. A Korean company's phone factory in Noida is part of India's GDP. An Indian IT firm's office in Texas is part of America's.
+| Phrase | What it means | Example |
+|---|---|---|
+| **Market value** | Everything is converted into rupees at the price it sold for. Whatever is never sold is left out | A cook paid Rs. 8,000 a month is in GDP. The same meals cooked by a family member are not |
+| **Final** | Only what reaches its end user. Intermediate goods are skipped: their value is already inside the final price | Tyres sold to a car maker: intermediate. A tyre you buy to replace a worn one: final |
+| **Goods and services** | Things you can touch and things you can't | A phone, and the mobile plan that runs on it. Services are about half of what India produces |
+| **Produced within a country** | Geography, not nationality | Samsung's phone plant in Noida counts in India's GDP. An Infosys office in Texas counts in America's |
+| **In a given period** | Only what was produced in that quarter or year | A flat built in 2015 and resold today adds nothing, except the broker's fee |
 
 <Sort title="Try it: does it add to India's GDP this year?" choices={['Counts', 'Does not count']} items={[
   { text: 'A sweet maker’s Diwali stock, made in September and still unsold when the quarter ends.', answer: 'Counts', why: 'Unsold output is treated as bought by the firm itself: inventory investment.' },
@@ -43,6 +66,28 @@ The module answers four questions, one per session: how an economy is measured a
   { text: 'The government pays a pension.', answer: 'Does not count', why: 'A transfer: nothing is produced in exchange. It counts only when the pensioner spends it.' },
   { text: 'A household buys a newly built apartment from the builder.', answer: 'Counts', why: 'New housing is investment, the one large part of I that households buy.' },
 ]} />
+
+### More awkward cases from class
+
+| The case | In India's GDP? | Why |
+|---|---|---|
+| The case that comes with your new spectacles | Not separately | The optician built its cost into your bill |
+| India imports a phone and pays in rupees | No | GDP asks where a thing was produced, not which currency paid for it |
+| A firm imports parts worth Rs. 100, assembles them here and exports the product for Rs. 120 | Rs. 20 | Only the value added on Indian soil |
+| Tata Motors owns Jaguar Land Rover, which builds its cars in the UK | No | The cars are British GDP. The dividends sent home are part of India's national income, a different measure |
+| A cash transfer of Rs. 10,000 into each beneficiary's account | No | A transfer payment. It counts only when the recipient spends it on something newly produced |
+| A cab ride booked on an app | Yes, the whole fare | A final service: the driver's share and the platform's commission together |
+| A company that is making losses | Yes | GDP measures production, not profit. Sales of Rs. 100 crore with Rs. 60 crore of bought-in inputs add Rs. 40 crore of value |
+| Aliens from Mars open a factory in Pune | Yes | Who owns the factory doesn't matter. Where the production happens does |
+
+Three fine points. A machine bought by a factory is a final good: it is a capital good, counted in full as investment. **Gross national income** is GDP plus what Indians earn abroad minus what foreigners earn here. And a few unsold things are estimated and included, such as the food a farmer grows and eats, and the rent an owner would have paid on the house he lives in.
+
+<div class="callout trap">
+<p class="callout-title">GDP is not welfare, wealth or profit</p>
+
+Two economists out walking each pay the other Rs. 100 to do something thoroughly unpleasant. Neither is a rupee richer, and GDP has risen by Rs. 200. GDP counts priced production during a period. It is a flow, like a salary, not a stock like a bank balance. It counts whatever is paid for, useful or not: a traffic jam that burns fuel raises GDP; a parent's unpaid care adds nothing.
+
+</div>
 
 ## Who buys the output: Y = C + I + G + NX
 
@@ -66,6 +111,12 @@ Buying shares, bonds or a resale flat is financial investment: one asset swapped
 
 </div>
 
+| Part of investment | What it is | Example |
+|---|---|---|
+| Business fixed capital | Plant, machinery, buildings, software and R&D used for years | A new assembly line; a data centre |
+| Residential investment | Newly built homes | A new apartment tower. A resale flat is not new production |
+| Change in inventories | Goods produced this year but not yet sold | Diwali stock built in September. When it sells, inventories fall and consumption rises by the same amount |
+
 <Fig title="Who bought India's output" caption="Shares of GDP at current prices, 2016-17, from the official table used in class. The year is old; the proportions have changed little. Net exports were −1.4%.">
   <Bars unit="% of GDP" rows={[
     { label: 'Households (C)', value: 58.8, note: 'almost 59 paise of every rupee', mark: true },
@@ -74,7 +125,11 @@ Buying shares, bonds or a resale flat is financial investment: one asset swapped
   ]} />
 </Fig>
 
-India is consumption-driven. China is the mirror image: consumption under 40% of GDP, investment over 40%. A country that produces far more than its households consume has to sell the rest abroad, which is why China runs a trade surplus and India usually a deficit.
+G is only about 12% because it covers day-to-day purchases. The roads and railways the government builds are counted inside I, and its pensions and subsidies are transfers.
+
+India is consumption-driven: private consumption has stayed at 55% to 60% of GDP for two decades. China is the mirror image: consumption under 40%, investment over 40%. A country that produces far more than its households consume has to sell the rest abroad, which is why China runs a trade surplus and India usually a deficit.
+
+Two worries came up in class. India's investment share has slipped from its peak of about 40% around 2007 to 2011, with private companies slow to build new capacity. And household saving, the pool that funds investment, has been sliding as families borrow more. An economy can't keep investing more than it saves without borrowing from abroad.
 
 <Sort title="Try it: which buyer pays this company's bills?" choices={['C', 'I', 'G', 'NX']} items={[
   { text: 'An FMCG company selling biscuits.', answer: 'C', why: 'Watch household incomes, food inflation and EMIs.' },
@@ -85,7 +140,7 @@ India is consumption-driven. China is the mirror image: consumption under 40% of
 
 ## The value-added road to the same number
 
-Instead of standing at the final counter, walk down the supply chain and count only what each stop added. **Value added** is a firm's sales minus what it bought from other firms. Wages are not subtracted: the work of a firm's own people is exactly the value it adds.
+Instead of standing at the final counter, walk down the supply chain and count only what each stop added. The samosa seller outside your office buys potatoes, flour, oil and gas worth Rs. 6 and sells the samosa for Rs. 15. What he added is Rs. 9, which pays for his labour, his rent and his profit. **Value added** is a firm's sales minus what it bought from other firms. Wages are not subtracted: the work of a firm's own people is exactly the value it adds.
 
 | Stage | Sells for | Bought-in inputs | Value added |
 |---|---|---|---|
@@ -101,7 +156,15 @@ Rs. 6,500 changed hands. Only Rs. 3,000 of new value was created, and Rs. 3,000 
   { label: 'A 200-person software firm with revenue of Rs. 100 crore and bought-in inputs of Rs. 10 crore.', good: true, why: 'It adds Rs. 90 crore, more than four times as much. Size by revenue and size by contribution are different rankings.' },
 ]} />
 
-There is a third road too. Every rupee of value added lands in someone's pocket as wages, rent, interest or profit, so adding up all incomes gives the same number. That is why GDP per person is used as a rough measure of the average income.
+**Now you try.** A farmer sells wheat to a miller for 1 dollar. The miller sells flour to a baker for 3. The baker sells a loaf for 6. Value added is 1, then 2, then 3: GDP is 6, the price of the loaf.
+
+Adding value added sector by sector gives **gross value added** (GVA). Roughly, services produce over half of India's output, industry about a quarter and agriculture about 17%. The uncomfortable fact: agriculture produces about a sixth of the output but employs roughly 45% of the workers, so value added per worker on the farm is a fraction of what it is elsewhere. The normal route out is for workers to move into factories, which is why industry's stalled share is the real worry.
+
+GDP = GVA + taxes on products − subsidies on products. GVA is what producers received; GDP is what buyers paid. In April to June 2026 real GVA grew 8.2% and real GDP 7.8%.
+
+For a product company that assembles imported kits, value added may be 15 paise in the rupee, which is why "assembled in India" and "made in India" are different claims. Outsourcing doesn't create value; it moves it to someone else's books.
+
+There is a third road too. Every rupee of value added lands in someone's pocket as wages, rent, interest or profit, so adding up all incomes gives the same number. A biscuit factory that adds Rs. 100 of value might pay Rs. 60 in wages, Rs. 10 in rent, Rs. 10 in interest and keep Rs. 20 as profit. That is why GDP per person is used as a rough measure of the average income. India's total GDP is among the largest in the world and its GDP per person is far down the list. One answers how big the market is; the other, how rich the customer is.
 
 ## Nominal versus real
 
@@ -123,6 +186,12 @@ Nominal growth = real growth + inflation, approximately. In April to June 2026 I
 | Was my salary hike a raise? | Compare with inflation | 6% with prices up 5% is a 1% raise |
 | Are we better off than ten years ago? | Real, per person | Only quantities per head measure living standards |
 
+**The base year.** Real GDP needs a reference year whose prices are frozen. The statistics ministry chooses it and replaces it about once a decade: in February 2026 India moved to 2022-23 from 2011-12. Can a government pick a convenient year? Far less than people imagine. It has to be a normal year, with no drought or pandemic, for which large fresh surveys exist, and the method follows an international rulebook.
+
+**Decoding "India will grow at 10 per cent".** Targets such as a 5 trillion dollar economy, and the growth assumed in every Union Budget, are nominal: typically 6% to 6.5% real growth plus about 4% of price rise. Real growth of 6% to 7% is India's normal cruising speed; a quarter at 7.8% is above trend, not the new floor.
+
+**Convergence.** Why does the US celebrate 2% growth while India is disappointed with 6%? A poorer economy can copy technology that already exists; a rich one must invent the next thing. But watch the base: 10% growth on an income of Rs. 60,000 adds Rs. 6,000, while 6% on Rs. 2,80,000 adds Rs. 16,800. The poorer state grows faster and the gap in rupees still widens for years.
+
 Divide nominal GDP by real GDP and multiply by 100 and you get the **GDP deflator**: the average price of everything the country produces. In the apple economy it is 200.
 
 ## Measuring inflation
@@ -141,87 +210,77 @@ The CPI is built in three steps: survey households to fix the basket, price that
   <CpiCalc />
 </Fig>
 
-A **weight** is an item's share of total spending. Pizza takes Rs. 200 of the Rs. 350 basket, so a 10% rise in pizza lifts the index by 5.7%, while a 10% rise in CDs lifts it by only 4.3%. In India's CPI food carries the largest weight, which is why a bad tomato season moves the national number. As incomes rise, the share spent on food falls and the share spent on services grows. That pattern is called Engel's law.
+A **weight** is an item's share of total spending. Pizza takes Rs. 200 of the Rs. 350 basket, so a 10% rise in pizza lifts the index by 5.7%, while a 10% rise in CDs lifts it by only 4.3%. In India's CPI food carries the largest weight, which is why a bad tomato season moves the national number.
 
 <div class="callout trap">
 <p class="callout-title">Falling inflation is not falling prices</p>
 
-If inflation drops from 8.1% to 2.5%, prices are still rising, only more slowly. That is **disinflation**. Prices actually falling is **deflation**. **Core inflation** leaves out food and fuel to show whether price pressure is broad.
+If inflation drops from 8.1% to 2.5%, prices are still rising, only more slowly. That is **disinflation**. Prices actually falling is **deflation**.
 
 </div>
 
-## Interest rates: only the real one matters
-
-Finance is about moving purchasing power across time. A saver postpones consumption; a borrower brings it forward. Interest is the price paid for that: the rent on money.
-
-A man lends Rs. 1,000 for a year at 6% when an apple costs Rs. 200. He gives up five apples. A year later he gets Rs. 1,060, but apples now cost Rs. 220, so his money buys 4.82. In rupees he is up 6%. In apples he is down 3.6%.
-
-**Real rate = nominal rate − expected inflation** (the Fisher equation). The subtraction is a shortcut; the exact figure divides instead.
-
-<Fig title="What did the saver really earn?" caption="Every rate you are quoted is nominal. Subtract inflation, and tax, before you feel anything about it.">
-  <RealRate />
-</Fig>
-
-Unexpected inflation quietly moves wealth from lenders to borrowers, and the largest borrower in any country is its government. When real rates are low or negative there is more reason to borrow and build; when they are high, cash is valuable and projects must clear a higher bar. From May 2020 the RBI held its rate at 4% for two years while inflation ran near 6%: a real rate of about minus 2%, which sent savers into shares and property.
-
-## What money is, and what backs it
-
-Money is whatever does three jobs: a **medium of exchange**, a **store of value** and a **unit of account**. Today's money is **fiat**: a promise of the RBI, backed by government bonds, by the taxes that will repay them, and in the end by the economy and its institutions. The rupee is backed by trust.
-
-## The RBI's two levers
-
-Money has three prices: against time (the interest rate), against goods (the price level) and against other currencies (the exchange rate). The central bank manages them with two levers.
-
-<Cards min={260} items={[
-  { title: 'Quantity', body: 'Open market operations: buying bonds adds money, selling removes it. Done on a large scale and for long, buying is quantitative easing (QE) and selling is quantitative tightening (QT). The cash reserve ratio (CRR) sets how much banks must keep idle.' },
-  { title: 'Price', body: 'The repo rate: what the RBI charges banks for short-term money. It is the banks’ own cost of money at the margin, and they pass it on.' },
-]} />
-
-A **repo** is a gold loan in which the gold is a government bond, the borrower is a bank and the lender is the RBI. The bank sells a bond today and agrees to buy it back shortly at a slightly higher price. The difference is the interest. A **reverse repo** swaps the roles: a bank with spare cash parks it at the RBI. In practice banks now park cash at the Standing Deposit Facility (SDF), which is the floor of the rate corridor. The Marginal Standing Facility (MSF), for emergency borrowing, is the ceiling.
-
-<Flow items={[
-  { t: 'RBI cuts the repo rate', s: 'Banks borrow more cheaply' },
-  { t: 'Loan rates and EMIs fall', s: 'Firms and families borrow more' },
-  { t: 'More loans, more deposits', s: 'More money. Each link takes time.', hl: true },
-]} />
-
-| When | Repo rate | What was happening |
+| | CPI | GDP deflator |
 |---|---|---|
-| May 2020 | 4.00% | Emergency cuts as the pandemic shut the economy. Held for two years |
-| May 2022 to February 2023 | Raised to 6.50% | Inflation had crossed the 6% ceiling |
-| 2025 | Cut to 5.25% | Inflation had cooled |
-| 7 October 2026 | Raised to 5.50% | Inflation was rising again |
+| Machines and other capital goods | Left out: households don't buy them | Included: they are produced here |
+| Imported consumer goods | Included | Left out: not produced in India |
+| The basket | Fixed until the base year is revised | Changes every year with what the country produces |
 
-When the class met the repo rate was 5.25%, with the SDF at 5.00% and the MSF at 5.50%. Check the current figure before using it.
+Your customers feel CPI. Your purchase department feels something closer to WPI: steel, chemicals, fuel, packaging. When WPI runs ahead of CPI, a product company's costs are rising faster than the prices consumers will accept. Writing a published index into long contracts protects you without a negotiation every year.
 
-## How banks create money
+## What India buys: the new basket
 
-Most money was not created by the RBI. It was created by ordinary banks, every time they made a loan.
+A CPI basket is a photograph of how a country spends. In early 2026 India replaced its 2012 photograph with a 2024 one (base year 2024), using the household consumption survey of 2023-24 and the United Nations classification, which makes India's CPI comparable with others.
 
-Depositors don't all want their money on the same day, so a bank keeps a fraction as reserves and lends the rest: **fractional reserve banking**. Take Rs. 100 of currency. With no banks, money is Rs. 100. With banks that lock it all in a vault, still Rs. 100. With banks that keep 10% and lend Rs. 90, the depositor still has Rs. 100 in her account and the borrower has Rs. 90 in his hand: Rs. 190. Nobody printed anything.
-
-The borrower spends his Rs. 90, the shopkeeper deposits it in a second bank, which keeps 10% and lends the rest, and so on.
-
-<Fig title="One deposit, many loans" caption="Whatever the ratio, the reserves kept by all banks add up to exactly the original Rs. 100. Try 90%: the total is only Rs. 111.">
-  <Cascade mode="money" />
+<Fig title="How Rs. 100 of household spending is split" caption="All-India combined CPI weights, 2024 basket, with the change from the 2012 basket.">
+  <Bars unit="%" rows={[
+    { label: 'Food and beverages', value: 40.1, note: 'down 5.8 points', mark: true },
+    { label: 'Miscellaneous, mostly services', value: 33.2, note: 'up 4.8 points' },
+    { label: 'Housing', value: 11.9, note: 'up 1.8 points' },
+    { label: 'Clothing and footwear', value: 6.4, note: 'down 0.1' },
+    { label: 'Fuel and light', value: 5.5, note: 'down 1.4' },
+    { label: 'Pan, tobacco and intoxicants', value: 3.0, note: 'up 0.6' },
+  ]} />
 </Fig>
 
-<div class="callout trap">
-<p class="callout-title">Money is not wealth</p>
+- **Food's share has fallen sharply**: from 45.9 to 40.1 overall, and from 54.2 to 44.8 in rural India. Families aren't eating less. Incomes grew, and the extra rupees went elsewhere.
+- **The extra went to services**: health, education, transport, communication and personal care.
+- **Rural housing appears for the first time.** The old series compiled no rural housing index. Many places that are rural on paper are urban in every way that matters to a household budget.
+- **Transport is the biggest riser** in the finer breakdown (6.4 to 8.8). Rural India has caught up with urban India on mobility.
 
-The borrower who received Rs. 90 also took on a debt of Rs. 90. His spending power is higher; his net worth is unchanged. The economy is more liquid, not richer. Wealth comes from producing more.
+### Engel's law
 
-</div>
+Give a child Rs. 10 and all of it goes on toffees. Give the same child Rs. 100 and most of the extra goes on other things. Stomachs have limits; wants do not. As income rises, the share spent on food falls.
 
-With India's CRR at 3% the formula predicts a multiplier of about 33. The actual figure is about 6, because people keep part of their money as cash, and banks must also hold government bonds and don't lend every rupee they are allowed to.
+| Developing economies | Food share | Advanced economies | Food share |
+|---|---|---|---|
+| Indonesia | 53.0% | Japan | 14.7% |
+| India | 48.8% | Germany | 11.5% |
+| China | 36.7% | United Kingdom | 8.8% |
+| Malaysia | 28.0% | USA | 5.7% |
 
-In practice the order is reversed: when a bank approves your loan it simply credits your account, and finds the reserves afterwards at around the repo rate. Loans create deposits. The multiplier is best read as a ceiling on what banks can create, not a forecast.
+A shrinking share is not a shrinking market. Food spending in rupees still rises; it just grows more slowly than the customer's income. The new basket is a growth map: two-wheelers and fuel, personal care, appliances and phones are where the rural household's additional rupee is going.
 
-**Why banks are fragile.** A bank owes its depositors on demand what it has lent out for years. If everyone asks at once, no bank can pay, which is why bank runs happen and why deposits in India are insured up to Rs. 5 lakh per depositor per bank.
+## Headline and core inflation
+
+**Headline inflation** is the price change of the whole basket. **Core inflation** leaves out food and fuel, which jump around for reasons unrelated to the state of the economy.
+
+| Why food prices swing | Why fuel prices swing |
+|---|---|
+| The monsoon: a weak one cuts the crop | Imported crude: the price is set by world markets and wars |
+| The cobweb pattern: costly tomatoes this year mean everyone plants them, then a glut, then a spike again | The rupee: oil is paid for in dollars |
+| Vegetables can't be stored | |
+
+Between mid-2023 and mid-2024 food inflation ran near 8% while core inflation slid from about 5% to almost 3%. Anyone looking only at the headline thought prices were under pressure everywhere. The pressure was in the kitchen.
+
+<Decide q="Headline inflation is high only because of vegetable prices, and core inflation is low. What is the RBI likely to do?" options={[
+  { label: 'Raise rates at once.', why: 'A higher interest rate cannot grow one extra tomato.' },
+  { label: 'Look through it, and act only if core starts rising.', good: true, why: 'The RBI’s tool works on demand. When core rises, price pressure is broad and a hike becomes likely. To guess the next decision, watch core.' },
+  { label: 'Cut rates to help households.', why: 'That would add demand while prices are already rising.' },
+]} />
 
 <div class="callout">
 <p class="callout-title">Manager takeaway</p>
 
-Split every growth number into price and volume before praising anyone. A contract renewed at the same rupee price is a price cut in real terms. And watch bank credit growth the way you watch your own order book: when lenders pull back, sales on EMI fall and invoices get paid later, even though nobody's income has changed.
+GDP is the size of the pie your industry is cut from: a firm can outgrow it for years only by taking share or entering new categories, and its board should know which the plan assumes. Split every growth number into price and volume before praising anyone. A contract renewed at the same rupee price is a price cut in real terms.
 
 </div>

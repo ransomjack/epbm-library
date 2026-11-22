@@ -1,0 +1,284 @@
+---
+title: Money, the RBI and Banks
+kicker: Session 1, part 2
+order: 2
+source: "Sessions by Prof. Ankit Kumar · Market Economies & Macroeconomic Policies"
+description: "Real and nominal interest rates, what money is and how it evolved, what backs the rupee, the RBI's two levers, repo and the rate corridor, how banks create money and why they are fragile. Session 1 of Market Economies & Macroeconomic Policies."
+takeaways:
+  - "An interest rate is the price of money across time. Only the real rate, after inflation, says whether a saver gained."
+  - "Money is trust: the rupee is a promise of the RBI, backed in the end by the economy and its institutions."
+  - "The RBI has two levers: the quantity of money and its price, the repo rate."
+  - "Most money is created by banks when they lend. That creates money, not wealth, and makes every bank breakable."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Steps from '../../components/d/Steps.astro';
+import Bars from '../../components/d/Bars.astro';
+import Sort from '../../components/d/Sort.astro';
+import Decide from '../../components/d/Decide.astro';
+import RealRate from '../../components/d/RealRate.astro';
+import Cascade from '../../components/d/Cascade.astro';
+
+## Interest rates: the price of money across time
+
+So far everything has been measured at a point in time. Finance begins the moment time enters: someone has money today and wants it tomorrow, or needs it today and will have it only tomorrow.
+
+The professor's definition of the whole subject: **finance is about moving purchasing power across time.** A saver earns 100, consumes 80 and lends the spare 20. A borrower earns 80, consumes 100 and borrows the missing 20. A year later the 20 comes back with interest. Interest is the price the borrower pays, and the saver earns, for moving consumption across time. "Interest rate is nothing but the price of money."
+
+| Branch of finance | Who is moving money across time | Example |
+|---|---|---|
+| Household finance | Families | A home loan: live in the house now, pay over twenty years |
+| Corporate finance | Companies | Borrow today to build a plant; repay from the cash it earns |
+| Public finance | Governments | Issue bonds today; repay out of future taxes |
+| International finance | Countries | A country that imports more than it exports is borrowing from the world |
+
+Rent is the right picture. You rent a flat and pay the owner. You rent money and pay interest.
+
+### The apple loan
+
+A man lends Rs. 1,000 for a year at 6%. That day an apple costs Rs. 200, so he is giving up five apples. A year later he gets Rs. 1,060, but apples now cost Rs. 220. His money buys 4.82 apples. In rupees he is up 6%. In apples he is down 3.6%.
+
+| | Nominal interest rate | Real interest rate |
+|---|---|---|
+| What it measures | The growth of your money in rupees | The growth of your money in purchasing power |
+| In the apple loan | +6% | About −3.6% |
+| Where you see it | On every bank board and loan offer | Nowhere. You have to work it out |
+
+**The Fisher equation: real rate = nominal rate − expected inflation.** A one-year loan at 4% when you expect 6% inflation gives a real rate of −2%. The subtraction is a shortcut (for the apple loan it gives −4%; the exact figure is 1.06 ÷ 1.10 − 1 = −3.6%), and it is close enough for small numbers. The word *expected* matters: when a loan is signed nobody knows next year's inflation, which is why central banks work so hard to keep expectations steady.
+
+<Fig title="What did the saver really earn?" caption="A 7% deposit taxed at 30% leaves 4.9%, which against 5% inflation is a real return just below zero.">
+  <RealRate />
+</Fig>
+
+A second example. A borrows Rs. 10,000 from B at 5% while inflation is 10%. B gets back Rs. 10,500, but what Rs. 10,000 bought last year now costs Rs. 11,000. B has lost about 5% in real terms and A has gained. Unexpected inflation quietly moves wealth from lenders to borrowers, and the largest borrower in any country is its government.
+
+**What a low real rate does.** There is more reason to borrow and invest and less reason to save. In May 2020 the RBI cut its rate to 4% and held it for two years while inflation ran near 6%: a real rate of about minus 2%. A fixed deposit at 5% was losing purchasing power, home loans under 7% were the cheapest in a generation, and savers moved into shares, mutual funds and property.
+
+<div class="callout trap">
+<p class="callout-title">Every rate you are quoted is nominal</p>
+
+The 7% on a deposit, the 8.5% on a home loan, the 8% increment, the 12% sales growth in the review deck: all nominal. Subtract inflation before you feel anything about them. Credit given to customers is money lent at 0%: ninety days of free credit in an 8% world is a 2% discount nobody negotiated.
+
+</div>
+
+## What is money?
+
+We have valued everything in rupees without asking what a rupee is, and why a piece of printed paper buys lunch.
+
+Start without money. A barber wants rice. He must find a rice farmer who wants a haircut, today, of about the same value. This is the **double coincidence of wants**, and it is why barter economies stay small. Money breaks every trade into two halves.
+
+**Money is the stock of assets that can readily be used to make transactions.** That leaves out your income (a flow) and your wealth as a whole (you can't pay a restaurant bill with your house). It has three jobs:
+
+<Cards min={210} items={[
+  { title: 'Medium of exchange', body: 'We use it to buy things.', foot: 'Will the chai stall accept it?' },
+  { title: 'Store of value', body: 'It carries purchasing power into the future.', foot: 'Will it buy about the same next year?' },
+  { title: 'Unit of account', body: 'The yardstick for prices, salaries and debts.', foot: 'Are menu prices written in it?' },
+]} />
+
+<Sort title="Try it: is it money?" choices={['Money', 'Not money, or no longer']} items={[
+  { text: 'The rupee today.', answer: 'Money', why: 'It does all three jobs, losing 4% to 5% a year to inflation.' },
+  { text: 'Cigarettes in a prisoner-of-war camp.', answer: 'Money', why: 'Commodity money: accepted inside the camp, with prices quoted in cigarettes.' },
+  { text: 'Bitcoin.', answer: 'Not money, or no longer', why: 'An asset, not yet money: few sellers accept it, it can move 10% in a day, and its own price is quoted in dollars.' },
+  { text: 'A currency in hyperinflation.', answer: 'Not money, or no longer', why: 'It loses value by the day and price tags can’t keep up. Money that has stopped working.' },
+]} />
+
+**Legal tender** is a separate question: it is what the law says must be accepted to settle a debt. A law can declare something legal tender. Only people's behaviour can make it money.
+
+### From barter to fiat
+
+<Steps items={[
+  { title: 'Barter', body: 'Goods for goods. Needs a double coincidence of wants.' },
+  { title: 'Commodity money', body: 'Gold, silver, cowrie shells, cigarettes. The thing itself has value.' },
+  { title: 'Claims on a ledger', body: 'The stones of Yap. Who owns what is recorded; trust does the work.' },
+  { title: 'Fiat money', body: 'Paper and digital rupees. No value of their own; valued because all accept them.' },
+]} />
+
+On the Pacific island of Yap, money took the form of huge stone discs, some too heavy to move. So nobody moved them. When a stone changed owners, the community simply remembered. In the best-known account one stone sank to the sea floor on its way to the island, and everyone agreed its owner was just as rich as before. Money is the record, not the object. Your bank balance is a Yap stone: you have never seen it, yet a ledger says it is yours.
+
+Fiat means money by order of the state. A Yuan-dynasty banknote from around 1287 says it may circulate without an expiry date and that counterfeiters will be put to death. A Rs. 500 note costs a few rupees to print. UPI is only the pipe; the money moving through it is still fiat.
+
+> Everyone values fiat money because they expect everyone else to value it.
+
+Loyalty points, gift cards, airline miles and prepaid credits are private near-money. Devalue them once without warning and you will see a small version of what happens to a currency that loses trust: people rush to spend it, then stop wanting it.
+
+## What backs the rupee?
+
+Take out a note and read it: "I promise to pay the bearer the sum of five hundred rupees", signed by the Governor. Pay with what? Follow the promise down the chain.
+
+<Flow items={[
+  { t: 'The note in your pocket', s: 'A liability of the RBI: it owes you' },
+  { t: 'Government bonds', s: 'The RBI’s assets: India’s and foreign governments’ bonds, plus some gold' },
+  { t: 'Taxes', s: 'A government has no money of its own; it repays from taxes' },
+  { t: 'The economy', s: 'GDP, the rule of law and working institutions', hl: true },
+]} />
+
+The currency in your pocket is ultimately backed by the economy itself. It is not backed by gold: the law requires only a token holding, and the RBI holds its gold by choice, as one asset among many. In practice about three-quarters of its assets are foreign-currency assets and gold, and the rest mainly Government of India bonds. The logic doesn't change: a US Treasury bond is the US government's promise, backed by American taxpayers.
+
+**Why taxes make the rupee work.** You can pay a friend in dollars, but tax must be paid in rupees. That one rule creates a permanent demand for them. It also explains a power only a national government has: it borrows in rupees, which its own central bank issues, so it can always find the rupees to repay. A company can't. A country that has borrowed in dollars can't, which is how Sri Lanka defaulted in 2022.
+
+Why is the yuan not the world's reserve currency, when China's economy is enormous? Size isn't enough. People hold a currency in which they trust the rules: courts that enforce contracts against the state, and the freedom to take your money out.
+
+**Seigniorage.** The RBI pays no interest on the currency in everyone's pocket and earns interest on the bonds it holds. That profit from issuing money is seigniorage, and after expenses the surplus goes to the Government of India: Rs. 2.11 lakh crore for 2023-24 and Rs. 2.69 lakh crore for 2024-25. In recent years the larger part has come from foreign-exchange operations: dollars bought long ago at Rs. 60 or 70 and sold at Rs. 85 or 90.
+
+<div class="callout trap">
+<p class="callout-title">"Then why not just print more?"</p>
+
+Because the backing is the economy, and printing doesn't add to the economy. If money doubles while goods stay the same, prices rise until the extra money is absorbed. Inflation is a tax nobody voted for. A government that can always repay in its own currency can still destroy the value of what it repays.
+
+</div>
+
+## The central bank's two levers
+
+Money has three prices, depending on what you measure it against.
+
+| Money priced against | The price is called | Who feels it |
+|---|---|---|
+| Time | The interest rate | Every borrower and saver |
+| All goods and services | The price level, and its rate of change, inflation | Every household |
+| Other currencies | The exchange rate | Importers, exporters, anyone with a foreign loan |
+
+When there is more of anything, its price falls. When the money supply rises, the interest rate falls. So the central bank can work from either end: change the quantity and let the price adjust, or announce the price and supply whatever quantity holds it. Two handles on the same tap.
+
+First, one piece of plumbing. Every bank keeps an account with the RBI, and its balance is the bank's **reserves**. Reserves plus currency in circulation are the **monetary base**. This is the only money the RBI creates directly, and it creates it with a keystroke.
+
+### Lever one: quantity
+
+An **open market operation** (OMO) is the purchase or sale of government bonds by the central bank. When the RBI buys a bond from a bank it pays by adding to that bank's reserves: money that did not exist a moment earlier. To pull money out it sells bonds, and the reserves that pay for them vanish. This is where money is truly "printed": not at a press, but when the central bank buys an asset with reserves it has just created.
+
+**Quantitative easing** (QE) is the same operation on a huge, pre-announced scale. It was invented for a specific problem: once the interest rate is near zero the price lever is stuck, and only quantity is left. **Quantitative tightening** (QT) is the reverse: the central bank sells bonds or lets them mature, and the money disappears. The US Federal Reserve's balance sheet was under 1 trillion dollars before 2008, about 4.5 trillion by 2015, and near 9 trillion at its 2022 peak. The RBI never used the label, but in 2021 it committed in advance to buy stated amounts of bonds (G-SAP), and a pre-announced quantity is the hallmark of QE.
+
+| A question from class | The answer |
+|---|---|
+| Is a repo-rate hike the same as QT? | No. A hike raises the price of money; QT reduces its quantity |
+| Why doesn't the RBI buy bonds directly from the government? | That would be printing money to pay for government spending. It buys only in the secondary market. A direct purchase is a "public display of affection" a credible central bank doesn't indulge in |
+| When the government sells a bond, is that printing money? | No. It moves existing money from the buyer to the government. New money appears only when the central bank buys |
+| Can ordinary people buy the same bonds? | Yes, through the RBI's Retail Direct facility |
+
+India tied its own hands: automatic financing of the deficit by the RBI ended in April 1997, and since 2006 the law has barred the RBI from buying government bonds when they are first issued, except in emergencies.
+
+When central banks create money it has to go somewhere: share prices, property and start-up valuations rise, as in 2020-21. When they drain it, the tide goes out: the funding winter of 2022-23.
+
+### Lever two: price
+
+The lever you hear about every two months is the **repo rate**. Anyone who has seen a gold-loan shop understands it. You hand over your gold, you get cash, and later you return the cash with interest and take your gold back. A repo, short for repurchase agreement, is a gold loan in which the gold is a government bond, the borrower is a bank and the lender is the RBI.
+
+| | Repo | Reverse repo |
+|---|---|---|
+| The bank's situation | Short of cash | Has spare cash |
+| Who lends to whom | The RBI lends to the bank | The bank lends to the RBI |
+| Who earns the interest | The RBI | The bank |
+| Effect on the banking system | Adds money | Removes money |
+
+<Flow items={[
+  { t: 'RBI cuts the repo rate', s: 'Banks borrow more cheaply' },
+  { t: 'Loan rates and EMIs fall', s: 'Firms and families borrow more' },
+  { t: 'More loans, more deposits', s: 'More money. Each link takes time.', hl: true },
+]} />
+
+Even the price lever ends up changing the quantity of money.
+
+**The corridor.** Three rates work as a set, 25 basis points apart. A bank with spare cash can always park it at the **Standing Deposit Facility** (the floor), so it would never lend to another bank for less. A bank short of cash can always borrow at the **Marginal Standing Facility** (the ceiling), so it would never pay more. The overnight rate between banks stays inside the band, near the repo rate. When the RBI "cuts rates by 25 basis points", the whole corridor moves.
+
+| When | Repo rate | What was happening |
+|---|---|---|
+| Early 2020 | 5.15% | Before the pandemic |
+| May 2020 | 4.00% | Emergency cuts. Held for two years |
+| May 2022 to February 2023 | Raised to 6.50% | Inflation had crossed the 6% ceiling |
+| 2025 | Cut to 5.25% | Inflation had cooled |
+| 7 October 2026 | Raised to 5.50% | Inflation was rising again |
+
+When the class met the corridor was 5.00%, 5.25% and 5.50%. Check the current figure before using it.
+
+<div class="callout trap">
+<p class="callout-title">A liquidity auction is not QE</p>
+
+"RBI injects Rs. 1 lakh crore through a variable rate repo auction" sounds like money printing. It isn't. Those are short-term loans that reverse automatically. QE and OMO purchases are outright: the money stays out until the bond matures or is sold.
+
+</div>
+
+A one-point fall on a Rs. 50 lakh, 20-year home loan cuts the EMI by about Rs. 3,200 a month, and showrooms feel it. For a company whose customers buy on EMI, the repo rate is a demand forecast.
+
+## How banks create money
+
+Here is the fact that surprises almost everyone. Most money was not created by the RBI. It was created by ordinary banks, every time they made a loan.
+
+Depositors don't all want their money on the same day. So a bank keeps a fraction as reserves and lends the rest: **fractional reserve banking**. The **reserve ratio** is reserves divided by deposits. In India the minimum is the **cash reserve ratio** (CRR), 3%: cash kept with the RBI, earning nothing. Banks must separately hold 18% of deposits in government bonds (the **statutory liquidity ratio**, SLR).
+
+| The world | What happens to Rs. 100 of currency | Money supply |
+|---|---|---|
+| No banks | People hold it as cash | 100 |
+| Banks that keep 100% reserves | It sits in the vault. A locker service | 100 |
+| Fractional reserve banks, 10% | The bank keeps Rs. 10 and lends Rs. 90 | 190 |
+
+How did Rs. 100 become Rs. 190? Nobody printed anything. The depositor's balance is still Rs. 100 and she can spend it. The borrower has Rs. 90 and he can spend that too. "When banks make loans, they create money."
+
+The story doesn't stop at 190. The borrower spends his Rs. 90, the shopkeeper deposits it in a second bank, which keeps 10% and lends Rs. 81, and so on.
+
+<Fig title="One deposit, many loans" caption="Whatever the ratio, the reserves kept by all the banks add up to exactly the original Rs. 100. Try 90%: the total is only Rs. 111.">
+  <Cascade mode="money" />
+</Fig>
+
+This is why the CRR is a policy lever: when the RBI lowered it from 4% to 3% during 2025, about Rs. 2.5 lakh crore that banks had to keep idle became available to lend.
+
+<div class="callout trap">
+<p class="callout-title">Money is not wealth</p>
+
+A fractional reserve banking system creates money, but not wealth. The borrower who received Rs. 90 also took on a debt of Rs. 90. The economy is more liquid, not richer.
+
+</div>
+
+With a CRR of 3% the formula predicts a multiplier of about 33. The actual figure is about 6, because people keep part of their money as cash, and banks hold bonds and don't lend every rupee they may.
+
+In practice the order is reversed. A working bank doesn't wait for a deposit: when it approves your loan it credits your account, and finds the reserves afterwards at around the repo rate. **Loans create deposits.** The multiplier is a ceiling on what banks can create, not a forecast.
+
+## Why banks are fragile
+
+The same arrangement that lets banks create money makes every bank breakable. The bank above has promised its depositors Rs. 1,000 whenever they ask. It holds Rs. 100.
+
+A rumour spreads that the bank is in trouble. It may be false. It doesn't matter. Each depositor reasons: if others withdraw and I wait, nothing may be left; if I withdraw and the rumour is false, I've lost nothing. So everyone goes at once. The first Rs. 100 is paid out. After that the bank's assets are twenty-year home loans it can't call in this afternoon. A bank that was sound in the morning is insolvent by evening. A **bank run** is a self-fulfilling prophecy.
+
+Banks borrow short and lend long. This **maturity mismatch** is not a flaw in a badly run bank. It is what banking is. Banking runs on faith.
+
+In March 2023 Silicon Valley Bank had put depositors' money into long-dated bonds that lost value when rates rose. Word spread through founders' message groups. Depositors tried to pull about 42 billion dollars in a single day, with nobody standing in a queue. A run that once took weeks now takes hours.
+
+| Defence | How it works |
+|---|---|
+| Deposit insurance | Each depositor is insured up to Rs. 5 lakh per bank, so small depositors have no reason to run |
+| Lender of last resort | A sound bank facing a run can borrow from the central bank against good assets |
+| Reserve and liquidity rules | CRR and SLR force a cushion of cash and easily sold bonds |
+| Supervision and capital | Owners must keep enough of their own money at risk |
+
+**Can banks be "short of deposits"?** Every loan creates a deposit, so the system as a whole can't run out by lending. What one bank can run short of is the right kind: stable, low-cost money that stays put. The contest is for stable deposits, not for the total.
+
+<Decide q="Your company keeps all its cash, far above the insured limit, in one bank. What is that money?" options={[
+  { label: 'Safe, because banks are regulated.', why: 'Regulation lowers the risk; it doesn’t remove it.' },
+  { label: 'An unsecured loan to that bank.', good: true, why: 'Firms that kept everything in Silicon Valley Bank could not be sure of paying salaries that week. Spread balances across banks and write it into treasury policy.' },
+  { label: 'Guaranteed by the RBI.', why: 'Only the insured amount is protected.' },
+]} />
+
+## The session on a manager's desk
+
+| Idea | Product company | Service company |
+|---|---|---|
+| The four buyers | A paint maker sells mainly into C. Track household incomes and new housing | An IT exporter sells into NX. US and European growth and the rupee matter more than Indian consumption |
+| Value added | A phone assembler may book Rs. 10,000 a phone and add Rs. 1,500. Components and design raise the second number | Value added is most of the invoice, and most of it is salaries |
+| Nominal versus real | 9% sales growth with 5% price rises is about 4% in volume. Report both | A contract renewed at the same price is a real price cut. Build in escalation |
+| CPI, WPI and margins | Input costs rising faster than the prices buyers accept is a margin squeeze | The cost that matters is wage inflation. Link billing rates to an index |
+| The real interest rate | Compare a plant's return with the real cost of borrowing | Ninety days of credit is a loan at 0%. Price it in or shorten it |
+| Repo rate | EMI-driven demand follows it a quarter or two later | Felt in the cost of working capital |
+| QE, QT and funding | Raise long-term money when liquidity is plentiful | Clients' technology budgets widen and narrow with global liquidity |
+| Banks create money, and can break | Dealer finance drives sales: watch bank credit growth | Collections slow when clients' credit lines tighten |
+
+**A checklist for Monday morning**
+
+1. Ask "nominal or real?" of every growth number.
+2. Know which of C, I, G and NX pays your bills.
+3. Measure value added per employee, not turnover.
+4. Read core inflation, not only the headline.
+5. Subtract inflation from every return, salary hike and loan rate.
+6. Put an index in every long contract.
+7. Keep the monetary policy calendar: six dates a year.
+8. Watch liquidity and bank credit growth.
+9. Match the life of your money to the life of your assets. Short money for long assets is a bank run waiting to happen.
+10. Protect trust before you need it.
