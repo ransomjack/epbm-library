@@ -1,0 +1,396 @@
+---
+title: Understanding Financial Statements II
+kicker: Session 2
+order: 2
+source: "Session by Prof. Manju Jaiswall · Financial Reporting & Cost Accounting"
+description: "Depreciation in practice, reading a real balance sheet, the multi-step income statement, the Richie Advisors case and the cash flow statement. Session 2 of Financial Reporting & Cost Accounting."
+takeaways:
+  - "Revenue is recorded when the work is done, not when cash arrives. Advances are liabilities until then."
+  - "Read a balance sheet in 90 seconds: who funded it, is cash locked in CWIP, can it pay bills, has it acquired, how old are the assets."
+  - "Net profit alone can mislead. The path from operating profit to net profit tells the real story."
+  - "Profit is not cash. CFO, CFI and CFF explain where the cash actually went."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Steps from '../../components/d/Steps.astro';
+import Waterfall from '../../components/d/Waterfall.astro';
+
+## Where we left off
+
+> "If you can read one balance sheet, you can read all of them. The format is the same, the language is the same." Prof. Manju Jaiswall
+
+Session 1 built all three statements from scratch for an imaginary business. Session 2 accelerates: real balance sheets from Infosys, Nestlé, BEL and IOCL, and the story of **Richie Ranchordas**, a newly qualified financial planner who starts his firm the same week India reports its first Covid-19 case.
+
+One check carries over: the accounting equation is a statement about reality. If it ever fails to balance, something was recorded wrongly.
+
+## Depreciation in practice
+
+A Rs.20,000 office table used for five years, with no scrap value, is charged at Rs.4,000 a year. Charging all Rs.20,000 in year one would make this year look terrible and the next four look artificially good. Depreciation matches the cost to the years that benefit, and no cash moves when it is charged. You paid on day one.
+
+**What counts as cost:** everything spent to get the asset ready for use: purchase price, installation, transport. A machine bought for Rs.5,00,000 with Rs.50,000 installation and Rs.25,000 transport has a cost of **Rs.5,75,000**. Depreciable amount = cost − residual value.
+
+SLM, WDV and deferred tax are covered in full in [Session 1](../understanding-financial-statements-1/#depreciation). Session 2 adds four real-world issues, all exam favourites:
+
+<Cards min={220} items={[
+  { k: '1', title: 'Different useful lives', body: 'Two companies can assume different lives for the same asset. Both are right if the assumption reflects actual use.' },
+  { k: '2', title: 'Used beyond its life', body: 'Once book value reaches zero (or residual), stop charging depreciation. The asset keeps working for free.' },
+  { k: '3', title: 'Revising life mid-way', body: 'Apply it prospectively: spread the current book value over the revised remaining life. Never restate past statements.' },
+  { k: '4', title: 'Changing the method', body: 'Only with strong justification that the new method better reflects use, and it must be disclosed. Not a routine choice.' },
+]} />
+
+## Reading a real balance sheet
+
+> "Understand one balance sheet and you can read them all, because the format is mandated: Schedule III of the Companies Act." Prof. Manju Jaiswall
+
+### Assets
+
+| Type | Plain-English test | Examples |
+|---|---|---|
+| Current assets | Will it become cash, be sold or be used up within 12 months? | Inventory, debtors, cash, prepaid expenses |
+| Tangible fixed assets | Physical, used for more than a year; depreciated | Machinery, buildings, computers, vehicles |
+| Intangible fixed assets | Non-physical, used for more than a year; amortised | Software, patents, trademarks, licences, goodwill |
+| Investments | Money parked outside core operations | Shares, mutual funds, bonds, stakes in subsidiaries |
+| Capital work in progress (CWIP) | Assets being built, not yet ready for use | A factory 80% complete at year-end |
+
+<div class="callout">
+<p class="callout-title">Key insight: fixed assets must out-earn investments</p>
+
+If the money parked **outside** the business earns more than the fixed assets **inside** it, why run the business at all? You'd do better closing it and investing the money. Fixed assets are the reason the business exists; they must earn more.
+
+</div>
+
+**Where goodwill comes from.** Only **purchased** goodwill can appear on a balance sheet. It arises when one company buys another for **more than its book value**; the premium is recorded as goodwill. It is objective because a real arm's-length deal took place. Example: Tetley's book value is Rs.200 crore; Tata Tea pays Rs.250 crore; Rs.50 crore of goodwill appears on Tata Tea's balance sheet. Whenever you see goodwill, the company has made an acquisition above book value.
+
+### Liabilities
+
+| Type | Meaning | Examples |
+|---|---|---|
+| Current liabilities | Settled within the operating cycle, usually 12 months | Trade payables, accrued expenses, unearned revenue, short-term borrowings |
+| Secured long-term loans | Backed by collateral; lower interest | Mortgage loans, equipment-backed term loans |
+| Unsecured long-term loans | No collateral; higher interest | Unsecured debentures, clean term loans |
+
+**Net block = Gross block − Accumulated depreciation.** Gross block is what you paid; accumulated depreciation is everything charged since; net block is the book value today. Gross Rs.100 crore with Rs.60 crore accumulated depreciation gives a net block of Rs.40 crore.
+
+### Schedule III layout
+
+| Section | What goes here |
+|---|---|
+| Shareholders' funds | Share capital + reserves and surplus ("other equity" under Ind AS) |
+| Non-current liabilities | Long-term loans, secured and unsecured |
+| Current liabilities | Trade payables, accrued expenses, unearned revenue, short-term borrowings |
+| Non-current assets | Net block, CWIP, long-term investments, long-term loans and advances |
+| Current assets | Inventory, receivables, cash, short-term investments, prepaid expenses |
+
+Under Ind AS some labels changed: fixed assets became **property, plant and equipment**, reserves and surplus became **other equity**, and a **right-of-use asset** line appears for long leases. The structure is the same.
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: read a balance sheet in 90 seconds</p>
+
+Five questions give you about 80% of the insight:
+
+1. **Who funded it?** Owners' money vs total capital employed. Heavy borrowing means higher risk.
+2. **Is cash locked up?** High CWIP means money in construction that isn't earning yet.
+3. **Can it pay its bills now?** Current assets ÷ current liabilities. Below 1.0 is a red flag.
+4. **Has it acquired?** Goodwill is the premium paid. If the deal fails, expect a large write-off.
+5. **How old are the assets?** A net block near zero means a big replacement spend is coming.
+
+**Product example: a distributor wants Rs.1.5 crore of credit.** Current ratio 0.7, Rs.3 crore in CWIP for a new warehouse, Rs.2 crore of goodwill from an acquisition. Decision: offer Rs.30 lakh on 30-day terms, not Rs.1.5 crore on 90 days, and review when the warehouse is finished and the current ratio is back above 1.2.
+
+**Service example: a Rs.30 crore acquisition target.** No long-term debt, but Rs.12 crore (40% of assets) in mutual funds, zero CWIP, and a Rs.2 crore net block. You are paying about Rs.28 crore for people, clients and reputation. If the top three clients leave after the deal, that value disappears. Build it into the price.
+
+</div>
+
+## The income statement, unpacked
+
+Session 1 used five account heads. Session 2 adds two more: **gains** and **losses**.
+
+| Head | Comes from | Recognised | Example |
+|---|---|---|---|
+| Revenue | Core operations | Accrual: when earned | March advisory fee, even if paid in April |
+| Expense | Core operations | Accrual: when incurred | February rent, used in February, paid in March |
+| Gain | Investing (selling assets or investments) | Realisation: when the deal completes | Machine with book value Rs.5L sold for Rs.6L: Rs.1L gain |
+| Loss | Investing, or a one-off event | Realisation: when it happens | Machine with book value Rs.5L sold for Rs.4L: Rs.1L loss |
+
+<div class="callout trap">
+<p class="callout-title">Depreciation is an expense, not a loss</p>
+
+Depreciation comes from **using** the asset in operations, so it is an expense. Selling that asset for less than its book value is a **loss**, because it comes from an investing activity. This distinction is tested.
+
+</div>
+
+### The multi-step income statement
+
+| Step | Line | What it tells you |
+|---|---|---|
+| 1 | Net sales (top line) | Scale |
+| 2 | − Cost of goods sold | What it cost to make what was sold |
+| = | **Gross profit** | Pricing power |
+| 3 | − Operating expenses (admin + selling) | Cost of running and marketing the business |
+| = | **Operating profit (EBIT / PBIT)** | How well the core business runs, before financing decisions |
+| 4 | ± Other income, gains, losses | Non-operating and investing outcomes |
+| 5 | − Interest (finance cost) | A financing decision, not an operating one |
+| = | **Profit before tax** | |
+| 6 | − Tax | |
+| = | **Profit after tax** | What belongs to the owners |
+
+### The Misra Company: why net profit alone misleads
+
+Prof. Jaiswall showed a company whose net profit margin fell from **5% to 3.1%**. One participant called it a cause for concern. Another said: look at the multi-step journey first.
+
+The **entire** fall came from one line: a **loss on disposal of plant assets of 83.5**. That's an investing decision to get rid of old equipment, not a sign of how well the business ran that year. Add back the one-off loss and the margin is about **7.1%**, better than last year.
+
+> "Don't look at net profit as a magic number. How you got to net profit is what matters. The journey from operating profit to net profit tells the real story." Prof. Manju Jaiswall
+
+## Richie Advisors: February 2020
+
+On 30 January 2020 Richie Ranchordas graduates as a Chartered Financial Planner. The same day, India confirms its first Covid-19 case and markets fall. Richie's reasoning: when markets panic, investors need advice most. **Richie Advisors Private Limited** starts on 1 February 2020.
+
+### Four concepts first
+
+<Cards min={220} items={[
+  { title: 'Revenue recognition', body: 'Revenue is recorded when the service is performed. When the cash arrives is irrelevant.', foot: 'Babu pays in February for a March service: revenue in March' },
+  { title: 'Unearned revenue', body: 'Cash received before the work is done is a liability until the work is done.', foot: "Babu's Rs.4,000 sits as a liability in February" },
+  { title: 'Prepaid expense', body: 'Cash paid now for benefit over several periods. The unused part is an asset.', foot: 'Rs.6,000 magazine subscription: Rs.500 expense in Feb, Rs.5,500 prepaid' },
+  { title: 'Bad debt', body: 'When a debtor will never pay, remove the receivable and record a bad-debt expense. The original revenue is not reversed.', foot: 'Raghu: revenue in Feb, bad debt in March' },
+]} />
+
+### February transactions
+
+| # | What happened | How it is recorded |
+|---|---|---|
+| F1 | Owners invest Rs.10,00,000 for 1,00,000 shares of Rs.10 | Cash +10,00,000; share capital +10,00,000 (financing) |
+| F2 | Office: Rs.60,000 refundable deposit; rent Rs.20,000 a month, February's paid on 1 March | Deposit is an asset. February rent is an expense **now** (the office was used) and a liability (rent payable) |
+| F3 | Supplies bought for Rs.7,000; Rs.5,600 left at month-end. First employee at Rs.10,000/month | Rs.1,400 used = expense; Rs.5,600 = supplies on hand (asset) |
+| F4 | Hardware Rs.3,60,000 + software Rs.1,08,000 = Rs.4,68,000. Half paid, half due next month. Life 3 years, no residual | Fixed asset Rs.4,68,000; trade creditor Rs.2,34,000; depreciation Rs.13,000 a month (4,68,000 ÷ 36) |
+| F5 | Client pays Rs.13,000 for advice given | Revenue + cash |
+| F5 | Rs.2,000 mutual fund commission earned, paid next month | Revenue + commission receivable |
+| F5 | **Babu pays Rs.4,000 in advance for March** | **Unearned revenue (liability), not revenue** |
+| F5 | Raghu advised (Rs.5,000), will pay next month | Revenue + receivable |
+| F6 | Electricity 3,000, internet 4,000, cable 1,000, water 2,000, all paid; magazine Rs.6,000 for 12 months | Utilities expensed; magazine Rs.500 expense + Rs.5,500 prepaid |
+| F7 | Salaries: Richie Rs.40,000 + employee Rs.10,000, paid at month-end | Expense + cash out. Richie's 10% profit incentive is on the full year to March 2021, so nothing is accrued now. |
+
+<div class="callout trap">
+<p class="callout-title">The most common mistake</p>
+
+Babu's Rs.4,000 is **not** February revenue. Cash received is not revenue earned. Until the service is done, Richie owes Babu the work or a refund, so it is a liability.
+
+</div>
+
+**February income statement**
+
+| Line | Working | Rs. |
+|---|---|---|
+| Fee: individual client | Done and paid | 13,000 |
+| Commission | Earned; cash in March | 2,000 |
+| Fee: Raghu | Done; Raghu to pay in March | 5,000 |
+| Babu advance | Excluded: not yet earned | — |
+| **Total revenue** | | **20,000** |
+| Salaries | 40,000 + 10,000 | 50,000 |
+| Rent | Accrued | 20,000 |
+| Depreciation | 4,68,000 ÷ 36 | 13,000 |
+| Utilities | 3,000 + 4,000 + 1,000 + 2,000 | 10,000 |
+| Magazine | 6,000 × 1/12 | 500 |
+| Supplies used | 7,000 − 5,600 | 1,400 |
+| **Total expenses** | | **94,900** |
+| **Net loss** | | **(74,900)** |
+
+**February balance sheet (Rs.)**
+
+| Assets | | Liabilities + equity | |
+|---|---|---|---|
+| Net fixed assets (4,68,000 − 13,000) | 4,55,000 | Share capital | 10,00,000 |
+| Security deposit | 60,000 | Retained earnings (Feb loss) | (74,900) |
+| Prepaid magazine | 5,500 | **Owners' equity** | **9,25,100** |
+| Supplies on hand | 5,600 | Trade creditor (hardware) | 2,34,000 |
+| Commission receivable | 2,000 | Rent payable | 20,000 |
+| Raghu receivable | 5,000 | Unearned revenue (Babu) | 4,000 |
+| Cash | 6,50,000 | | |
+| **Total** | **11,83,100** | **Total** | **11,83,100** |
+
+**Should the investors worry?** No. Cash fell from Rs.10 lakh to Rs.6.5 lakh, but Rs.2.34 lakh went into computers and software that will earn for three years, and Rs.60,000 is a refundable deposit. The loss is almost entirely fixed costs (salaries, rent, depreciation) in a set-up month with little revenue.
+
+## Richie Advisors: March 2020
+
+March 2020: on 13 March Indian exchanges halted trading for the first time in 12 years; the Sensex fell 9.4% and the Nifty 10.07%. The volatility that scared investors brought them to Richie. March revenue: **Rs.2,24,000**, eleven times February.
+
+| # | What happened | How it is recorded |
+|---|---|---|
+| M1 | 1 March: pay February rent (20,000) and the hardware supplier (2,34,000) | Cash out; rent payable and trade creditor cleared. No expense: these were February's |
+| M2 | Second employee at Rs.15,000/month. Bank loan Rs.5,00,000 at 12% p.a., interest paid quarterly from 1 April | Cash + loan +5,00,000. March interest 5,00,000 × 12% × 1/12 = **Rs.5,000 expense, accrued** (not paid) |
+| M3 | Fees Rs.2,00,000 collected | Revenue + cash |
+| M3 | Babu's service delivered | Rs.4,000 moves from unearned revenue to revenue |
+| M3 | Rs.30,000 received in advance for April | New unearned revenue (liability) |
+| M3 | Rs.20,000 commission earned, paid in April; February's Rs.2,000 collected | Revenue + receivable; the 2,000 just turns a receivable into cash |
+| M4 | Raghu can't be traced | **Bad-debt expense Rs.5,000** in March; receivable removed. February's revenue stays. |
+| M5 | Electricity 6,000, internet 7,000, cable 1,000, water and beverages 5,000 paid; supplies used 4,400 (5,600 − 1,200); magazine 500; salaries 65,000; rent 20,000 accrued; depreciation 13,000 | Expenses for March |
+| M5 | Web-portal contract signed, portal not yet delivered | **No entry**: nothing has happened yet |
+
+<div class="callout trap">
+<p class="callout-title">Exam tip: Raghu over two months</p>
+
+February +Rs.5,000 revenue, March −Rs.5,000 bad debt: **zero** over the period. That's the right economic answer: Richie did the work and collected nothing.
+
+</div>
+
+**March income statement**
+
+| Line | Rs. |
+|---|---|
+| Fees collected | 2,00,000 |
+| Babu revenue recognised | 4,000 |
+| Commission | 20,000 |
+| April advance | Excluded |
+| **Total revenue** | **2,24,000** |
+| Salaries (40,000 + 10,000 + 15,000) | 65,000 |
+| Rent (accrued) | 20,000 |
+| Depreciation | 13,000 |
+| Bad debt (Raghu) | 5,000 |
+| Utilities (6,000 + 7,000 + 1,000 + 5,000) | 19,000 |
+| Magazine | 500 |
+| Supplies used | 4,400 |
+| Interest (accrued) | 5,000 |
+| **Total expenses** | **1,31,900** |
+| **Net income** | **92,100** |
+
+**March balance sheet (Rs.)**
+
+| Assets | | Liabilities + equity | |
+|---|---|---|---|
+| Net fixed assets (4,68,000 − 26,000) | 4,42,000 | Share capital | 10,00,000 |
+| Security deposit | 60,000 | Retained earnings (−74,900 + 92,100) | 17,200 |
+| Prepaid magazine | 5,000 | **Owners' equity** | **10,17,200** |
+| Supplies on hand | 1,200 | Bank loan | 5,00,000 |
+| Commission receivable | 20,000 | Rent payable | 20,000 |
+| Cash | 10,44,000 | Interest payable | 5,000 |
+| | | Unearned revenue (April) | 30,000 |
+| **Total** | **15,72,200** | **Total** | **15,72,200** |
+
+<Cards min={170} items={[
+  { title: '11×', body: 'Revenue growth, February to March (20,000 → 2,24,000)' },
+  { title: '−74,900 → +92,100', body: 'Loss in the set-up month, profit in month two' },
+  { title: '+17,200', body: 'Cumulative profit after two months' },
+  { title: '10,17,200', body: "Owners' equity: already above the Rs.10 lakh invested", hl: true },
+]} />
+
+The fixed cost base was set in February, so most of March's extra revenue fell straight to profit. The business model is validated.
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: what an early loss means</p>
+
+Use the Richie test on any new venture, division or launch that loses money at first:
+
+1. Is the loss from **fixed set-up costs** in early months, or from variable costs that will persist?
+2. Can break-even be reached with **reasonable** volume growth?
+3. Is there **enough cash** to last until break-even?
+
+</div>
+
+## The cash flow statement
+
+Can a profitable company go bankrupt? Yes, and more often than you'd think. Profit is an accrual number. A company can show healthy profit while its bank balance drains because customers aren't paying or because it is investing heavily.
+
+> "You need cash for everything: assets, expenses, liabilities, dividends, taxes, debt service. Even with good profits, if the cash isn't there, the business doesn't survive." Prof. Manju Jaiswall
+
+<Cards min={220} items={[
+  { title: 'CFO: operating', body: 'Cash from the core business: collections from customers, payments to suppliers and staff.', foot: 'The most important section. Persistently negative CFO = the business cannot sustain itself.', hl: true },
+  { title: 'CFI: investing', body: 'Cash spent on long-term assets, or received from selling them.', foot: 'Negative CFI usually means the business is growing.' },
+  { title: 'CFF: financing', body: 'Cash raised from or returned to owners and lenders.', foot: 'Share issues, loans, repayments, dividends, interest paid.' },
+]} />
+
+### Profit vs cash in real companies
+
+| Company | Net income | CFO | What it says |
+|---|---|---|---|
+| Tata Steel | Rs.7,316 cr | Rs.7,397 cr | Healthy: cash matches profit |
+| HUL | Rs.3,025 cr | Rs.2,028 cr | Slightly below: normal working-capital timing |
+| Reliance Industries | Rs.23,010 cr | Rs.17,427 cr | Capex-heavy; some lag expected |
+| Suzlon Energy | Rs.876 cr profit | **−Rs.267 cr** | **Red flag:** profitable on paper, burning cash |
+| HPCL | **−Rs.3,306 cr** loss | Rs.521 cr | **Turnaround signal:** loss driven by large non-cash charges, yet generating real cash |
+
+### Where each item goes
+
+The test: **will it benefit the business for longer than one operating cycle?** Yes → investing. No → operating. Raising or returning money → financing.
+
+| Item | Section | Why |
+|---|---|---|
+| Fees collected from clients | CFO | Core revenue |
+| Salaries, rent, stationery paid | CFO | Used up within the operating cycle |
+| Security deposit for the office | CFO (as treated in the course) | Short-notice refundable deposit, treated as near-current |
+| Computer hardware and software | CFI | Long-term asset, used for 3 years |
+| Bank loan received | CFF | Change in borrowings |
+| Interest **paid** on the loan | **CFF** | For non-financial companies, both AS 3 and Ind AS 7 put interest paid in financing |
+| Interest and dividends **received** | CFI | Same rule: investing, for non-financial companies |
+
+<div class="callout trap">
+<p class="callout-title">Interest paid: financing, not operating</p>
+
+For non-financial companies, **AS 3 (Indian GAAP) and Ind AS 7 both require interest paid to be shown under financing activities**, and interest and dividends received under investing. Only financial enterprises such as banks show them under operating. (International IFRS allows a choice; Indian standards don't.)
+
+</div>
+
+### Richie's actual cash flow, February–March
+
+Built from the transactions above. Opening cash was zero; closing cash is Rs.10,44,000.
+
+| | Rs. |
+|---|---|
+| Cash from clients (13,000 + 2,00,000) | 2,13,000 |
+| Advances received (Babu 4,000 + April 30,000) | 34,000 |
+| Commission collected | 2,000 |
+| Salaries paid (50,000 + 65,000) | (1,15,000) |
+| Utilities paid (10,000 + 19,000) | (29,000) |
+| February rent paid on 1 March | (20,000) |
+| Supplies and magazine | (13,000) |
+| Security deposit | (60,000) |
+| **CFO** | **12,000** |
+| Hardware and software (2,34,000 + 2,34,000) | (4,68,000) |
+| **CFI** | **(4,68,000)** |
+| Share capital + bank loan | 15,00,000 |
+| Interest paid | 0 (first payment due 1 April) |
+| **CFF** | **15,00,000** |
+| **Net change = closing cash** | **10,44,000** ✓ |
+
+<Fig title="Indirect method: from two-month profit to CFO, Rs." caption="Same Rs.12,000 as the direct method. Interest expense is added back here because, as a financing item, it will appear in CFF when paid.">
+  <Waterfall unit="Rs." steps={[
+    { label: 'Net income (Feb + Mar)', value: 17200, total: true },
+    { label: 'Add: depreciation (non-cash)', value: 26000 },
+    { label: 'Add: interest expense (financing)', value: 5000 },
+    { label: 'Less: commission receivable', value: -20000 },
+    { label: 'Less: prepaid and supplies', value: -6200 },
+    { label: 'Less: security deposit', value: -60000 },
+    { label: 'Add: rent payable', value: 20000 },
+    { label: 'Add: advances received (unearned)', value: 30000 },
+    { label: 'Cash from operations', value: 12000, total: true },
+  ]} />
+</Fig>
+
+<div class="callout beyond">
+<p class="callout-title">Beyond the notes</p>
+
+This statement is worked out from the case figures rather than taken from the class notes. It shows what the P&L hides: Richie's business made Rs.17,200 of profit and only Rs.12,000 of operating cash, while almost all the Rs.10.44 lakh in the bank came from the owners and the bank loan.
+
+</div>
+
+### Direct vs indirect method
+
+| Method | How it works | Who uses it |
+|---|---|---|
+| Direct | Lists each cash receipt and payment: from customers, to suppliers, to staff | Rarely used: hard to prepare from accounting records |
+| Indirect | Starts from net profit: adds back non-cash charges (depreciation, amortisation), removes investing gains and losses, adjusts for working capital (debtors up = cash not in yet; creditors up = not paid yet; inventory up = cash locked) | Every Indian annual report you'll read |
+
+## Key formulas
+
+| What | Formula |
+|---|---|
+| Accounting equation | Assets = Liabilities + Owners' equity |
+| SLM depreciation | (Cost − Residual) ÷ Useful life |
+| WDV rate | 1 − (Residual ÷ Cost)^(1/n) |
+| WDV depreciation | Opening NBV × WDV rate |
+| Monthly depreciation | Annual depreciation ÷ 12 |
+| Net block | Gross block − Accumulated depreciation |
+| Gross profit | Net sales − COGS |
+| Operating profit (EBIT) | Gross profit − Operating expenses |
+| Net profit (PAT) | EBIT − Interest − Tax |
+| Retained earnings | Opening RE + Net income − Dividends |
+| Supplies used | Opening stock + Purchases − Closing stock |
+| Cash flow | CFO + CFI + CFF = Net change in cash |

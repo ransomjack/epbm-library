@@ -1,0 +1,400 @@
+---
+title: Understanding Financial Statements I
+kicker: Session 1
+order: 1
+source: "Session by Prof. Manju Jaiswall · Financial Reporting & Cost Accounting"
+description: "The accounting equation, double entry, the three financial statements, depreciation and deferred tax, built step by step through the Six Friends example. Session 1 of Financial Reporting & Cost Accounting."
+takeaways:
+  - "Assets = Liabilities + Owners' Equity, always. Every transaction changes two things and keeps the two sides equal."
+  - "Prepare the statements in order: P&L first, then retained earnings, then the balance sheet."
+  - "Profit and cash are different numbers. Accruals, credit sales, funding and investment all sit between them."
+  - "Depreciation spreads an asset's cost over its life. SLM charges evenly; WDV charges more early. The total is the same; only the timing differs."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Steps from '../../components/d/Steps.astro';
+import SixFriends from '../../components/d/SixFriends.astro';
+import Balance from '../../components/d/Balance.astro';
+import Waterfall from '../../components/d/Waterfall.astro';
+import Bars from '../../components/d/Bars.astro';
+
+## Why every manager needs this
+
+Prof. Jaiswall opened with two questions. *How many of you made a decision worth more than Rs.5 crore last year? How many of you evaluated its return before recommending it?* Most hands went up for the first; far fewer for the second. These four sessions exist to close that gap.
+
+Financial numbers are early warning signs, like a fever before an illness turns serious. You don't need to be a chartered accountant. You need to read the language.
+
+> "Whatever function you are in, every decision has financial implications. You had better understand them before they become something that cannot be salvaged." Prof. Manju Jaiswall
+
+| Company | What went wrong | Consequence |
+|---|---|---|
+| IndusInd Bank (2025) | Rs.1,960 crore derivative accounting error | Stock fell 27% in one day; CEO resigned |
+| DHFL | Rs.30,000+ crore diverted through shell companies | Bankruptcy; equity almost wiped out |
+| Yes Bank | Bad loans under-reported for years | Stock fell about 90%; RBI rescue |
+| Gensol / BluSmart (2025) | Rs.262 crore alleged fund diversion | Operations disrupted; investor trust gone |
+| ABG Shipyard | India's largest bank fraud: fake contracts, misused loans of Rs.22,842 crore | Criminal case ongoing |
+
+Every one of these was visible in the numbers to people who knew how to read them. Financial literacy is a leadership responsibility, not just a finance-team skill.
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: read the warning signs</p>
+
+The managers who caught problems early did two things: they read the financials regularly, and they asked uncomfortable questions when the numbers didn't fit the story.
+
+- **Manufacturing:** inventory days climb from 45 to 90 over three quarters while sales stay flat. The easy move is to ignore it. The right move is to ask why. In several Indian cases, rising inventory has hidden rejected batches sitting on the books.
+- **IT services:** revenue grows 20% but cash from operations stays flat, and receivables or unbilled revenue keep growing. Either clients are struggling to pay, or revenue is being booked aggressively. Ask before it becomes a restatement.
+
+**The rule:** if a number moves sharply in a quarter and you can't explain it with a clear business reason, it needs an explanation before the next board meeting.
+
+</div>
+
+## The financial reporting system
+
+Think of it as a factory: raw material in, processing, finished product out.
+
+<Steps items={[
+  { title: 'Input: business activities', body: 'Raising funds, buying assets, selling goods, paying staff.' },
+  { title: 'Processing: accounting', body: 'Classify and record each activity using standard rules (double entry, trial balance, period-end adjustments).' },
+  { title: 'Output: financial statements', body: 'Balance Sheet, Income Statement (P&L), Cash Flow Statement.' },
+]} />
+
+**The test for what gets recorded:** does this activity affect the business's finances? If yes, it enters the system. If not, it's information, not a transaction.
+
+The same statements answer different questions for different readers:
+
+| Reader | Type | The question they're asking |
+|---|---|---|
+| HR manager | Internal | Can we afford a pay rise this year? |
+| Marketing head | Internal | Which product line is most profitable? How should we price? |
+| Finance team | Internal | Do we have the cash to pay a dividend? |
+| CEO / management | Internal | Are we performing to plan? What needs deciding? |
+| Investors | External | Are returns satisfactory? Buy, hold or sell? |
+| Banks / creditors | External | Can this company repay its debt on time? |
+| Tax authorities | External | Is it paying the right amount of tax? |
+
+## Three business activities
+
+Every transaction belongs to one of three activities, and they happen in a natural order. You can't invest money you haven't raised, and you can't operate without infrastructure.
+
+<Steps items={[
+  { title: 'Financing', body: 'Raise funds: equity from owners, debt from banks. Also repaying loans and returning capital.' },
+  { title: 'Investing', body: 'Put the funds into long-term assets: machinery, vehicles, buildings.' },
+  { title: 'Operating', body: 'Run the business with those assets: buy stock, sell, pay staff. Profit or loss is made here.' },
+]} />
+
+This sequence (finance → invest → operate) is frequently tested.
+
+## The accounting equation
+
+<div class="callout">
+<p class="callout-title">The equation</p>
+
+**Assets = Liabilities + Owners' Equity**
+
+Every resource the business has (assets) was paid for either by outsiders such as banks and suppliers (liabilities) or by the owners (equity). The two sides always balance.
+
+</div>
+
+<Cards min={200} items={[
+  { title: 'Asset', body: 'Anything that gives a future benefit.', foot: 'Cash, inventory, machinery, debtors, a refundable deposit' },
+  { title: 'Liability', body: 'A future sacrifice, usually cash, to settle an obligation you already have.', foot: 'Bank loan, suppliers to pay, salary owed' },
+  { title: "Owners' equity", body: 'What belongs to owners after all liabilities: Share Capital + Retained Earnings.', foot: 'Assets 89 − Liabilities 55.2 = Equity 33.8' },
+  { title: 'Revenue', body: 'Inflows from core operations. Increases retained earnings.', foot: 'FD interest is "other income" for a manufacturer, revenue for a bank' },
+  { title: 'Expense', body: 'Outflows from running core operations. Decreases retained earnings.', foot: 'COGS, salaries, rent, depreciation, interest. Dividends are not expenses.' },
+]} />
+
+**Retained earnings is the bridge.** Revenue raises it, expenses lower it, dividends take some out, and what's left stays in the business. It is how the P&L connects to the balance sheet.
+
+Two principles hold the system together:
+
+- **Separate entity.** The business and its owners are never mixed. A founder's car is not a business asset. Capital the owners put in is recorded as equity: money the business owes them.
+- **Double entry.** Every transaction has exactly two effects on the equation. Tip: if cash moved, record the cash side first, then find the other side.
+
+## The Six Friends: building the statements live
+
+Six friends start a consumer-durables trading company on 1 January 2026, putting in Rs.5 lakh each. Step through their first month's eight transactions and watch both sides stay equal. Figures are in Rs. lakh.
+
+<SixFriends />
+
+<div class="callout trap">
+<p class="callout-title">Asset or expense?</p>
+
+Pay for something with a **future benefit** (a deposit you get back, a machine you'll use for years): **asset**. Pay for something **used up this period** (this month's salary for work already done): **expense**. Accounting records what **has happened**, not what will happen.
+
+</div>
+
+> "When I sell inventory, the asset converts into an expense, Cost of Goods Sold. It had future benefit; once sold, that benefit is gone. Same logic as depreciation." Prof. Manju Jaiswall
+
+## The three statements
+
+### Prepare them in this order
+
+<Steps items={[
+  { title: 'Income Statement (P&L)', body: 'Works out net income. You can’t find closing retained earnings without it.' },
+  { title: 'Retained Earnings Statement', body: 'Opening RE + Net income − Dividends = Closing RE.' },
+  { title: 'Balance Sheet', body: 'Closing RE goes into equity. It can’t balance without it.' },
+]} />
+
+> "If you don't know your performance, how can you know your financial position? Position is a consequence of performance. P&L first. Always." Prof. Manju Jaiswall
+
+### Income Statement, month ending 31 January 2026
+
+| Line | Rs. lakh | What it tells you |
+|---|---|---|
+| Revenue from operations | 50.0 | The top line: everything sold |
+| Less: COGS | (40.0) | Cost of the inventory sold |
+| **Gross profit** | **10.0** | Pricing power, before overheads |
+| Less: Salaries | (2.0) | Accrued: work done this month |
+| Less: Advertising | (2.0) | Accrued |
+| Less: Rent | (1.0) | Accrued: space used this month |
+| **EBITDA** | **5.0** | Operating earnings before interest, tax, depreciation |
+| Less: Depreciation | 0.0 | Not yet charged (see below) |
+| Less: Interest | (0.2) | Cost of the bank loan |
+| **Profit before tax** | **4.8** | |
+| Less: Tax | 0.0 | Assumed nil in month one |
+| **Profit after tax** | **4.8** | The bottom line |
+
+### Balance Sheet, as at 31 January 2026
+
+<Fig title="Both sides equal Rs.89 lakh" caption="Shaded segments are owners' equity. Retained earnings of 3.8 is the 4.8 profit less the 1.0 dividend.">
+  <Balance unit="lakh" left={[
+    { label: 'Cash and bank', value: 39 },
+    { label: 'Trade receivables', value: 20 },
+    { label: 'Inventory', value: 20 },
+    { label: 'Security deposit', value: 5 },
+    { label: 'Furniture', value: 5 },
+  ]} right={[
+    { label: 'Trade payables', value: 30 },
+    { label: 'Expenses payable', value: 5.2 },
+    { label: 'Bank loan', value: 20 },
+    { label: 'Share capital', value: 30, equity: true },
+    { label: 'Retained earnings', value: 3.8, equity: true },
+  ]} />
+</Fig>
+
+Classification: furniture is a fixed asset; deposit, inventory, debtors and cash are current assets. The bank loan is non-current; payables and accrued expenses are current liabilities.
+
+### Cash Flow Statement: why cash is 39 when profit is 4.8
+
+| Activity | In | Out |
+|---|---|---|
+| Financing: equity from the six founders | 30.0 | |
+| Financing: bank loan | 20.0 | |
+| Financing: dividend | | (1.0) |
+| Investing: security deposit | | (5.0) |
+| Investing: furniture | | (5.0) |
+| Operating: cash from customers (30 of the 50 sold) | 30.0 | |
+| Operating: cash to supplier (30 of the 60 bought) | | (30.0) |
+| **Total** | **80.0** | **(41.0)** |
+| **Closing cash** | **39.0** | |
+
+The gap has four causes:
+
+1. Rs.20 lakh of sales **not yet collected** (sitting in debtors).
+2. Rs.5.2 lakh of expenses **accrued but unpaid**: that cash leaves next month.
+3. Rs.50 lakh came in from **financing**. That's funding, not income.
+4. Rs.10 lakh went into **investing** (furniture and deposit). That's deployment, not expense.
+
+<Fig title="From profit to cash, Rs. lakh" caption="Operating cash flow works out to exactly zero this month: the profit and the unpaid bills are cancelled out by money tied up in debtors and unsold stock. Every rupee of closing cash came from funding.">
+  <Waterfall unit="lakh" steps={[
+    { label: 'Profit after tax', value: 4.8, total: true },
+    { label: 'Add: expenses not yet paid', value: 5.2 },
+    { label: 'Add: supplier credit (payables)', value: 30 },
+    { label: 'Less: sales not yet collected', value: -20 },
+    { label: 'Less: stock still on hand', value: -20 },
+    { label: 'Cash from operations', value: 0, total: true },
+    { label: 'Investing (deposit, furniture)', value: -10 },
+    { label: 'Financing (equity + loan − dividend)', value: 49 },
+    { label: 'Closing cash', value: 39, total: true },
+  ]} />
+</Fig>
+
+<div class="callout beyond">
+<p class="callout-title">Beyond the notes</p>
+
+The chart above is the **indirect method** you meet in Session 2: start from profit, adjust for items that didn't move cash and for changes in working capital. Seeing CFO come out at zero here is a useful sanity check. A healthy month on paper can still generate no operating cash at all.
+
+</div>
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: profit and cash are two different numbers</p>
+
+The most dangerous sentence in a business review is "we are profitable". A company can show profit and still run out of money, and it is one of the most common reasons healthy-looking firms hit a cash crisis. Always ask for **both** the P&L and the cash position.
+
+- If cash from operations (CFO) is **consistently below** net income, customers aren't paying on time: a credit-management problem.
+- If CFO is **negative**, the business is burning cash to stay alive. That's more urgent than a net loss.
+
+</div>
+
+## Depreciation
+
+Inventory became an expense when it was sold. But the Rs.5 lakh of furniture will be used for years. Charging it all in month one would make January look terrible and the next 59 months look artificially good.
+
+<div class="callout">
+<p class="callout-title">Definition</p>
+
+**Depreciation** is the systematic allocation of an asset's cost to the periods that benefit from it. Furniture costing Rs.5 lakh that lasts 5 years: Rs.1 lakh a year. It is a **non-cash expense**: the cash left when you bought the asset, but profit falls each year.
+
+</div>
+
+Three decisions drive it:
+
+| Decision | Meaning | Example |
+|---|---|---|
+| Useful life | How long the asset will last. Management judgement; government guidance is not binding. | Showroom furniture: 5 years |
+| Residual (salvage) value | What it will sell for at the end. Depreciable amount = cost − residual. | Old furniture sold as scrap |
+| Method | How to spread the cost: SLM or WDV | SLM for a table; WDV for a computer |
+
+### Straight Line Method (SLM): the same charge every year
+
+**Annual depreciation = (Cost − Residual value) ÷ Useful life**
+
+Example: cost Rs.11,000 crore, residual Rs.1,000 crore, 10 years → Rs.1,000 crore a year.
+
+| Year | Gross book value | Annual charge | Accumulated | Net book value |
+|---|---|---|---|---|
+| 1 | 11,000 | 1,000 | 1,000 | 10,000 |
+| 2 | 11,000 | 1,000 | 2,000 | 9,000 |
+| 3 | 11,000 | 1,000 | 3,000 | 8,000 |
+| 5 | 11,000 | 1,000 | 5,000 | 6,000 |
+| 10 | 11,000 | 1,000 | 10,000 | 1,000 (= residual) |
+
+### Written Down Value (WDV): higher early, lower later
+
+**WDV rate = 1 − (Residual ÷ Cost)^(1/n)**, where n is useful life. Each year, apply the rate to the **net book value at the start of that year**, not to the original cost. Because the book value shrinks, so does the charge.
+
+Example: asset costs Rs.10,00,000, WDV rate 40%.
+
+| Year | Opening value | Charge (40%) | Accumulated | Closing NBV |
+|---|---|---|---|---|
+| 1 | 10,00,000 | 4,00,000 | 4,00,000 | 6,00,000 |
+| 2 | 6,00,000 | 2,40,000 | 6,40,000 | 3,60,000 |
+| 3 | 3,60,000 | 1,44,000 | 7,84,000 | 2,16,000 |
+| 4 | 2,16,000 | 86,400 | 8,70,400 | 1,29,600 |
+| 5 | 1,29,600 | 51,840 | 9,22,240 | 77,760 |
+
+<Fig title="WDV annual charge, Rs." caption="Same asset, five years: the Year 5 charge is about 13% of Year 1. This matches how many assets actually lose value, fast at first and slowly later.">
+  <Bars unit="Rs." rows={[
+    { label: 'Year 1', value: 400000, note: '40% of 10,00,000' },
+    { label: 'Year 2', value: 240000, note: '40% of 6,00,000' },
+    { label: 'Year 3', value: 144000, note: '40% of 3,60,000' },
+    { label: 'Year 4', value: 86400, note: '40% of 2,16,000' },
+    { label: 'Year 5', value: 51840, note: '40% of 1,29,600' },
+  ]} />
+</Fig>
+
+> "Straight line for a table is fine; you use it the same way every day. But a high-end computer used for coding? By year four better machines exist and you use it less. That is not straight-line usage." Prof. Manju Jaiswall
+
+| | SLM | WDV |
+|---|---|---|
+| Annual charge | Same every year | Highest in Year 1, falls every year |
+| Formula | (Cost − Residual) ÷ Life | Opening NBV × WDV rate |
+| P&L effect | Smooth, predictable | Front-loaded |
+| Companies Act (published accounts) | Permitted | Permitted |
+| Income Tax Act (tax return) | Not permitted | Required |
+| Best for | Assets used evenly: buildings, furniture | Assets that lose value fast: computers, tech |
+| Total over the asset's life | Same as WDV | Same as SLM |
+
+<div class="callout trap">
+<p class="callout-title">Same total, different timing</p>
+
+Over an asset's full life both methods charge the same total. Only the **timing** differs. Because WDV charges more early, profit and tax are lower in the early years, which is why the choice matters for tax planning.
+
+</div>
+
+### Deferred tax, in plain English
+
+Two rulebooks apply to the same asset. The Companies Act lets a company use SLM in its published accounts; the Income Tax Act requires WDV in the tax return. In early years WDV gives more depreciation, so taxable profit and tax are lower now. Over the asset's life the total tax is the same: the saving is **deferred, not forgiven**. The balance sheet records the future payment as a **Deferred Tax Liability (DTL)**.
+
+| Same Rs.1,00,000 laptop | Published accounts (SLM 20%) | Tax return (WDV 40%) | Effect |
+|---|---|---|---|
+| Year 1 depreciation | 20,000 | 40,000 | 20,000 gap |
+| Profit after depreciation | 80,000 | 60,000 | Book profit 20,000 higher |
+| Tax at 30% | 24,000 | 18,000 | 6,000 less tax paid now |
+| Deferred tax liability | | | 6,000 on the balance sheet, owed later |
+
+<div class="callout trap">
+<p class="callout-title">Exam tip: deferred tax in one line</p>
+
+**DTL** is tax saved this year (because WDV depreciation > SLM depreciation) that you **will** pay later, when WDV falls below SLM. Think of an EMI not yet started: benefit now, instalments later. A **Deferred Tax Asset (DTA)** is the mirror image: you pay **more** tax today than book profit implies (for example, because of a carried-forward loss), so a future saving is recorded as an asset.
+
+</div>
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: depreciation is a cash decision</p>
+
+WDV front-loads the expense, so taxable profit is lower, and cash tax savings are higher, exactly when a new investment needs cash most.
+
+- **Manufacturing:** replacing CNC machines for Rs.8 crore. WDV at 25%: Year 1 depreciation Rs.2 crore, tax saved at 30% = Rs.60 lakh. SLM over 10 years: Rs.80 lakh depreciation, Rs.24 lakh tax saved. WDV leaves **Rs.36 lakh more cash** in Year 1. Put this comparison in every capex approval note.
+- **SaaS:** a Rs.1.5 crore product module. SLM over 3 years: Rs.50 lakh a year. WDV at 40%: Rs.60 lakh, Rs.36 lakh, Rs.21.6 lakh. Year 1 saves Rs.3 lakh of tax (Rs.10 lakh × 30%), real runway for an early product. The case for SLM: if the module earns as much in Year 3 as in Year 1, SLM matches economic reality better.
+
+</div>
+
+## Four foundational assumptions
+
+These answer most "why is accounting done this way?" questions.
+
+<Cards min={220} items={[
+  { k: '1', title: 'Separate entity', body: 'The business and its owners are separate, financially, legally and in the books.', foot: "A founder's car isn't a business asset" },
+  { k: '2', title: 'Money measurement', body: 'Only what can be measured in money is recorded.', foot: 'Morale and brand loyalty are real but off the balance sheet. Exception: purchased goodwill.' },
+  { k: '3', title: 'Going concern', body: 'The business is assumed to carry on for the foreseeable future.', foot: 'Why assets are depreciated over their life, not valued at fire-sale prices' },
+  { k: '4', title: 'Accounting period', body: "The business's indefinite life is split into reporting periods.", foot: 'India: 1 April – 31 March. This is what creates the need for accruals.' },
+]} />
+
+## Reading real company financials
+
+> "They all follow the same Indian Companies Act. Understand the vocabulary and you can read anyone's financials: NTPC, Infosys, Nestlé, Asian Paints, HUL, RIL, IOCL." Prof. Manju Jaiswall
+
+Comparing capital employed with net worth shows how much a company relies on debt:
+
+| Company | Capital structure | Why it makes sense |
+|---|---|---|
+| Power Grid | Very debt-heavy: capital employed far above net worth; D/E about 2:1 | Huge upfront infrastructure; stable regulated returns make high leverage viable |
+| Oil India | Low debt: net worth close to capital employed | Strong internal cash from exploration; little need to borrow |
+| IOCL | Moderate debt, between the two | Large refinery capex, but strong trading revenue services moderate debt |
+| Airtel | High but managed debt | 5G spectrum costs tens of thousands of crores; Airtel's scale can service it |
+| Vodafone Idea | Extremely stressed, very high debt | Same spectrum costs with a shrinking subscriber base: debt working against it |
+| MTNL | No debt, but persistent large losses | Avoided the debt trap, and the investment needed to compete. Debt-free isn't automatically better. |
+
+## Class exercise: TTK Inc.
+
+**Problem.** Opening assets Rs.2,80,000 and liabilities Rs.1,20,000. Closing assets Rs.4,00,000 and liabilities Rs.1,40,000. During the year, new share capital of Rs.40,000 was issued and dividends of Rs.48,000 paid. Find net income.
+
+| Step | Working | Result |
+|---|---|---|
+| Opening equity | 2,80,000 − 1,20,000 | 1,60,000 |
+| Closing equity | 4,00,000 − 1,40,000 | 2,60,000 |
+| Change in equity | 2,60,000 − 1,60,000 | +1,00,000 |
+| Equation | Change = New capital + Net income − Dividends | 1,00,000 = 40,000 + NI − 48,000 |
+| **Net income** | 1,00,000 − 40,000 + 48,000 | **1,08,000** |
+
+<div class="callout trap">
+<p class="callout-title">The TTK trap</p>
+
+The change in equity includes **both** new capital and profit. Strip out the new capital and add back dividends: **Net income = (Closing equity − Opening equity) + Dividends − New capital.**
+
+</div>
+
+## Vocabulary
+
+| Term | Meaning | Where you find it |
+|---|---|---|
+| Net worth / Owners' equity | Share capital + retained earnings | Balance sheet |
+| Capital employed | Net worth + long-term debt: all long-term funds in the business | Worked out from the balance sheet |
+| Working capital | Current assets − current liabilities | Worked out from the balance sheet |
+| Gross block / Net block | Original cost of fixed assets / gross block − accumulated depreciation | Balance sheet, non-current assets |
+| EBITDA / PBIDT | Earnings before interest, tax, depreciation, amortisation | P&L |
+| EBIT / PBIT | Earnings before interest and tax | P&L |
+| PBT / EBT | Profit before tax | P&L |
+| PAT / EAT / Net income | Profit after tax: the bottom line | P&L |
+| Retained earnings | Opening RE + Net income − Dividends | P&L → balance sheet |
+| Trade receivables / Debtors | Owed by customers for credit sales | Current assets |
+| Trade payables / Creditors | Owed to suppliers | Current liabilities |
+| Accrued expenses | Incurred but not yet paid | Current liabilities |
+| COGS | Cost of the goods sold | P&L, first deduction |
+| Gross profit | Sales − COGS: pricing power | P&L |
+| EPS | PAT ÷ shares outstanding | Below the P&L |
+| Deferred tax (DTL / DTA) | Timing difference between book and taxable profit | Balance sheet |
+| CWIP | Capital work-in-progress: assets under construction, not yet depreciated | Non-current assets |
+| Exceptional items | One-off items shown separately to reveal normal performance | P&L, separate line |
+| OCI | Other comprehensive income, e.g. fair-value changes | Below PAT (Ind-AS) |

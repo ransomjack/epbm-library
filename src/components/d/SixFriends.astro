@@ -1,0 +1,58 @@
+---
+// Step-through of the Six Friends transactions (Rs. lakh). Without JS every step is shown.
+const steps = [
+  { t: 'Owners invest share capital', a: 'Financing', n: 'Six friends put in Rs.5L each. The business owes this to its owners (separate entity).',
+    imp: ['Cash +30', 'Share capital +30'], L: [['Cash', 30]], R: [['Share capital', 30]] },
+  { t: 'Bank loan raised', a: 'Financing', n: 'Cash rises, and so does what the firm owes. Both sources of funds sit on the right.',
+    imp: ['Cash +20', 'Bank loan +20'], L: [['Cash', 50]], R: [['Bank loan', 20], ['Share capital', 30]] },
+  { t: 'Refundable showroom deposit', a: 'Operating set-up', n: 'The deposit comes back at the end of the lease, so it is an asset, not rent. No rent yet: the space has not been used.',
+    imp: ['Cash −5', 'Security deposit +5'], L: [['Cash', 45], ['Security deposit', 5]], R: [['Bank loan', 20], ['Share capital', 30]] },
+  { t: 'Furniture bought for cash', a: 'Investing', n: 'One asset turns into another. Both changes are on the left, so the totals do not move.',
+    imp: ['Cash −5', 'Furniture +5'], L: [['Cash', 40], ['Security deposit', 5], ['Furniture', 5]], R: [['Bank loan', 20], ['Share capital', 30]] },
+  { t: 'Inventory: half cash, half on 60-day credit', a: 'Operating', n: 'Three accounts move at once. The unpaid half becomes Trade Payables.',
+    imp: ['Inventory +60', 'Cash −30', 'Trade payables +30'], L: [['Cash', 10], ['Inventory', 60], ['Security deposit', 5], ['Furniture', 5]], R: [['Trade payables', 30], ['Bank loan', 20], ['Share capital', 30]] },
+  { t: 'Goods costing 40 sold for 50', a: 'Operating', n: 'Revenue is recorded when earned, even the 20 still owed by customers. The inventory sold becomes an expense (COGS).',
+    imp: ['Cash +30', 'Debtors +20', 'Inventory −40', 'Revenue +50 → RE', 'COGS −40 → RE'], L: [['Cash', 40], ['Debtors', 20], ['Inventory', 20], ['Security deposit', 5], ['Furniture', 5]], R: [['Trade payables', 30], ['Bank loan', 20], ['Share capital', 30], ['Retained earnings', 10]] },
+  { t: 'Month-end expenses incurred, not paid', a: 'Operating · accrual', n: 'Salaries 2, advertising 2, rent 1, interest 0.2. The work was done, so the expense is recorded now; the unpaid amount is a liability. No cash moves.',
+    imp: ['Expenses −5.2 → RE', 'Expenses payable +5.2'], L: [['Cash', 40], ['Debtors', 20], ['Inventory', 20], ['Security deposit', 5], ['Furniture', 5]], R: [['Trade payables', 30], ['Expenses payable', 5.2], ['Bank loan', 20], ['Share capital', 30], ['Retained earnings', 4.8]] },
+  { t: 'Dividend paid', a: 'Financing', n: 'A dividend is not an expense and never touches the P&L. It reduces retained earnings directly.',
+    imp: ['Cash −1', 'Retained earnings −1'], L: [['Cash', 39], ['Debtors', 20], ['Inventory', 20], ['Security deposit', 5], ['Furniture', 5]], R: [['Trade payables', 30], ['Expenses payable', 5.2], ['Bank loan', 20], ['Share capital', 30], ['Retained earnings', 3.8]] },
+];
+const fmt = (v) => (Math.round(v * 10) / 10).toString();
+const sum = (xs) => xs.reduce((a, [, v]) => a + v, 0);
+---
+<div class="sf" data-sf>
+  <div class="sf-nav" role="group" aria-label="Choose a transaction">
+    {steps.map((s, i) => <button type="button" data-go={i} aria-pressed={i === 0 ? 'true' : 'false'} aria-label={`Transaction ${i + 1}: ${s.t}`}>{i + 1}</button>)}
+  </div>
+  {steps.map((s, i) => (
+    <section class="sf-step" data-step={i}>
+      <div class="sf-head"><span class="sf-k">Transaction {i + 1} · {s.a}</span><b>{s.t}</b><p>{s.n}</p></div>
+      <div class="sf-imp">{s.imp.map((x) => <span>{x}</span>)}</div>
+      <div class="sf-bs">
+        <div><span class="sf-cap">Assets</span>{s.L.map(([k, v]) => <div class="sf-row"><span>{k}</span><span>{fmt(v)}</span></div>)}<div class="sf-row sf-tot"><span>Total</span><span>{fmt(sum(s.L))}</span></div></div>
+        <div><span class="sf-cap">Liabilities + Owners' equity</span>{s.R.map(([k, v]) => <div class="sf-row"><span>{k}</span><span>{fmt(v)}</span></div>)}<div class="sf-row sf-tot"><span>Total</span><span>{fmt(sum(s.R))}</span></div></div>
+      </div>
+    </section>
+  ))}
+  <div class="sf-ctrl"><button type="button" data-prev>← Previous</button><button type="button" data-next>Next →</button></div>
+</div>
+<script is:inline>
+(function () {
+  document.querySelectorAll('[data-sf]').forEach(function (root) {
+    if (root.dataset.ready) return; root.dataset.ready = '1'; root.classList.add('js');
+    var steps = root.querySelectorAll('.sf-step'), btns = root.querySelectorAll('[data-go]'), i = 0;
+    function show(n) {
+      i = Math.max(0, Math.min(steps.length - 1, n));
+      steps.forEach(function (s, k) { s.hidden = k !== i; });
+      btns.forEach(function (b, k) { b.setAttribute('aria-pressed', String(k === i)); });
+      root.querySelector('[data-prev]').disabled = i === 0;
+      root.querySelector('[data-next]').disabled = i === steps.length - 1;
+    }
+    btns.forEach(function (b) { b.addEventListener('click', function () { show(+b.dataset.go); }); });
+    root.querySelector('[data-prev]').addEventListener('click', function () { show(i - 1); });
+    root.querySelector('[data-next]').addEventListener('click', function () { show(i + 1); });
+    show(0);
+  });
+})();
+</script>

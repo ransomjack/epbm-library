@@ -1,0 +1,6 @@
+---
+// Nested boxes, outermost first. items: [[label, description], ...]
+const { items } = Astro.props;
+const [[label, desc], ...rest] = items;
+---
+<div class="nest"><div class="lab"><b>{label}</b>{desc && <span>{desc}</span>}</div>{rest.length > 0 && <Astro.self items={rest} />}</div>

@@ -1,0 +1,27 @@
+---
+// CVP chart for the Yule surfboard example: P=500, V=300, F=80,000. Units 0..800.
+const P = 500, V = 300, F = 80000, maxQ = 800, maxY = 400000;
+const W = 640, H = 340, l = 64, r = 20, t = 20, b = 44;
+const x = (q) => l + (q / maxQ) * (W - l - r);
+const y = (v) => t + (1 - v / maxY) * (H - t - b);
+const be = F / (P - V);
+const xt = [0, 200, 400, 600, 800];
+const yt = [0, 100000, 200000, 300000, 400000];
+const k = (v) => (v === 0 ? '0' : `$${v / 1000}k`);
+---
+<div class="be"><svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Break-even chart: revenue line crosses total cost line at 400 boards and $200,000 of sales. Below 400 boards the business makes a loss; above it, a profit." style="width:100%;height:auto;display:block">
+  <polygon points={`${x(0)},${y(0)} ${x(be)},${y(be * P)} ${x(0)},${y(F)}`} style="fill:var(--bad);opacity:.12" />
+  <polygon points={`${x(be)},${y(be * P)} ${x(maxQ)},${y(maxQ * P)} ${x(maxQ)},${y(F + V * maxQ)}`} style="fill:var(--good);opacity:.14" />
+  {yt.map((v) => <><line x1={l} x2={W - r} y1={y(v)} y2={y(v)} style="stroke:var(--line)" stroke-width="1" /><text x={l - 8} y={y(v) + 4} text-anchor="end" style="fill:var(--muted);font:12px var(--sans)">{k(v)}</text></>)}
+  {xt.map((q) => <text x={x(q)} y={H - b + 20} text-anchor="middle" style="fill:var(--muted);font:12px var(--sans)">{q}</text>)}
+  <text x={(l + W - r) / 2} y={H - 6} text-anchor="middle" style="fill:var(--muted);font:12px var(--sans)">Surfboards sold per month</text>
+  <line x1={x(0)} y1={y(F)} x2={x(maxQ)} y2={y(F)} style="stroke:var(--muted)" stroke-width="2" stroke-dasharray="5 4" />
+  <line x1={x(0)} y1={y(F)} x2={x(maxQ)} y2={y(F + V * maxQ)} style="stroke:var(--ink)" stroke-width="2" />
+  <line x1={x(0)} y1={y(0)} x2={x(maxQ)} y2={y(P * maxQ)} style="stroke:var(--accent)" stroke-width="2.5" />
+  <line x1={x(be)} y1={y(be * P)} x2={x(be)} y2={y(0)} style="stroke:var(--muted)" stroke-width="1" stroke-dasharray="3 3" />
+  <circle cx={x(be)} cy={y(be * P)} r="6" style="fill:var(--accent);stroke:var(--bg)" stroke-width="2" />
+  <text x={x(be) - 12} y={y(250000)} text-anchor="end" style="fill:var(--ink);font:600 14px var(--sans)">Break-even: 400 boards, $200k ↘</text>
+  <text x={x(90)} y={y(70000)} style="fill:var(--bad);font:600 14px var(--sans)">Loss</text>
+  <text x={x(720)} y={y(318000)} text-anchor="middle" style="fill:var(--good);font:600 14px var(--sans)">Profit</text>
+</svg>
+<div class="be-key" aria-hidden="true"><span><i class="k-rev"></i>Revenue ($500 a board)</span><span><i class="k-cost"></i>Total cost</span><span><i class="k-fix"></i>Fixed cost ($80,000)</span></div></div>

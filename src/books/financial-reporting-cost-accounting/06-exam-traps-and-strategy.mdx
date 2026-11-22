@@ -1,0 +1,70 @@
+---
+title: Exam Traps and Strategy
+kicker: Revision
+order: 6
+source: "The twelve traps Prof. Jaiswall flagged, and how to approach each MCQ"
+description: "The twelve most common Financial Reporting & Cost Accounting exam traps, a six-step method for any MCQ, and a three-day revision plan."
+takeaways:
+  - "The exam rewards understanding why accounting works the way it does, not memorised formulas."
+  - "Twelve traps account for most lost marks. Each is shown here as the wrong answer next to the right one."
+  - "No negative marking: never leave a question blank."
+---
+import Steps from '../../components/d/Steps.astro';
+import Traps from '../../components/d/Traps.astro';
+
+## The format
+
+| | |
+|---|---|
+| Format | Multiple-choice questions |
+| Negative marking | **None.** Attempt every question; a guess beats a blank. |
+| Calculator | Available in the online exam interface |
+| Coverage | All four sessions: foundations, real statements, cost management, financial analysis |
+| Style | Understanding in context plus some calculation, not pure formula recall |
+
+## The twelve traps
+
+<Traps items={[
+  { wrong: "Babu's advance is February revenue", right: 'Cash received in advance is a liability until the work is done', note: 'The single most commonly missed question.' },
+  { wrong: 'Depreciation is cash going out', right: 'Depreciation is a non-cash book entry', note: 'Cash left on the day the asset was bought.' },
+  { wrong: 'Dividends are an expense', right: 'Dividends reduce retained earnings directly', note: 'Never on the P&L; a financing outflow in the cash flow statement.' },
+  { wrong: 'A security deposit is rent', right: 'A refundable deposit is an asset', note: 'Rent is an expense only when the space is used.' },
+  { wrong: 'A higher current ratio is always better', right: 'Too much liquidity is idle, low-return capital', note: 'HUL runs negative working capital and thrives.' },
+  { wrong: 'A P&L loss means shut it down', right: 'Compare revenue lost with costs actually avoided', note: 'Relevant-cost analysis can give the opposite answer.' },
+  { wrong: 'A bonus issue creates value', right: "Owners' equity is unchanged by a bonus", note: 'Capital up, reserves down by the same amount. Any premium is sentiment.' },
+  { wrong: 'Keep DPO low: pay suppliers fast', right: 'Stretch payables to the full agreed term', note: 'Supplier credit is free funding.' },
+  { wrong: 'A bad-debt write-off reverses the revenue', right: 'It is a new expense in the period it is confirmed', note: 'The original revenue was correctly recorded.' },
+  { wrong: 'WDV gives more total depreciation than SLM', right: 'Same total over the life; only the timing differs', note: 'Income Tax Act: WDV. Companies Act: either.' },
+  { wrong: 'Interest paid is income', right: 'Interest paid is a finance cost (expense)', note: 'Interest earned on deposits is income.' },
+  { wrong: 'Fixed cost per unit is constant', right: 'Fixed total is constant; fixed per unit falls with volume', note: 'Variable per unit is constant; variable total rises.' },
+]} />
+
+## Six steps for any MCQ
+
+<Steps items={[
+  { title: 'Read it twice', body: 'Is it a concept, a calculation or a classification question?' },
+  { title: 'Concept?', body: 'Name the principle (accrual, going concern, relevant cost, contribution, leverage) and apply it.' },
+  { title: 'Calculation?', body: 'Write the formula down first, then plug in numbers. Never do it in your head.' },
+  { title: 'Classification?', body: 'Ask the test: will the benefit last beyond one operating cycle? Yes = non-current / investing.' },
+  { title: 'Eliminate', body: 'Two options are usually clearly wrong. Choose between the rest on the principle.' },
+  { title: 'Always answer', body: 'No negative marking: a 50% guess beats a blank.' },
+]} />
+
+## A three-day revision plan
+
+| When | What | Why |
+|---|---|---|
+| Day 1 evening (2 hrs) | Read the opening of each session chapter | Reconnect with the story, don't memorise |
+| Day 1 evening (1.5 hrs) | Do the full question bank in the quiz, marking every unsure answer | Find weak spots while there is time to fix them |
+| Day 1 evening (30 min) | For every wrong answer, understand **why** | A wrong answer you don't understand repeats on exam day |
+| Day 2 morning (1 hr) | All the True/False checks in the quiz | Fast concept checks build confidence |
+| Day 2 afternoon (1 hr) | The twelve traps above, each with an example from the notes | Traps are the difference between 70% and 90% |
+| Day 2 evening (45 min) | The [Formula Sheet](../formula-sheet/); trace any shaky formula back to its derivation | Formulas stick when you know why |
+| Exam morning (30 min) | Session openings, the twelve traps, the six steps | Light activation, not cramming |
+
+<div class="callout">
+<p class="callout-title">The one idea to carry in</p>
+
+Prof. Jaiswall was consistent across all four sessions: the exam rewards people who understand **why** accounting works the way it does. When a question looks unfamiliar, ask which principle sits underneath it (accrual, going concern, relevant cost, contribution behaviour, leverage), and the answer usually follows.
+
+</div>

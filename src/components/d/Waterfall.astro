@@ -1,0 +1,23 @@
+---
+// steps: [{ label, value, total? }]  total=true draws a bar from 0 to the running total.
+const { steps, unit = '' } = Astro.props;
+let run = 0; const rows = steps.map((s) => {
+  if (s.total) { const r = { ...s, from: 0, to: s.value }; run = s.value; return r; }
+  const r = { ...s, from: run, to: run + s.value }; run += s.value; return r;
+});
+const lo = Math.min(0, ...rows.flatMap((r) => [r.from, r.to])), hi = Math.max(...rows.flatMap((r) => [r.from, r.to]));
+const pct = (v) => (100 * (v - lo) / (hi - lo));
+const f = (v) => (Number.isInteger(v) ? v.toLocaleString('en-IN') : (Math.round(v * 10) / 10).toString());
+---
+<div class="wf" role="img" aria-label={rows.map((r) => `${r.label}: ${r.total ? '' : r.value >= 0 ? 'plus ' : 'minus '}${Math.abs(r.value)} ${unit}`).join('; ')}>
+  {rows.map((r) => {
+    const a = Math.min(r.from, r.to), b = Math.max(r.from, r.to);
+    return (
+      <div class:list={['wf-row', { tot: r.total, neg: !r.total && r.value < 0 }]}>
+        <span class="wf-lb">{r.label}</span>
+        <span class="wf-track"><span class="wf-bar" style={`left:${pct(a)}%;width:${Math.max(pct(b) - pct(a), 0.6)}%`}></span></span>
+        <span class="wf-v">{r.total ? f(r.value) : (r.value >= 0 ? '+' : '−') + f(Math.abs(r.value))}</span>
+      </div>
+    );
+  })}
+</div>

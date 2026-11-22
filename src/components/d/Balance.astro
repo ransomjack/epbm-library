@@ -1,0 +1,20 @@
+---
+// Two stacked columns showing that both sides of the balance sheet are equal. left/right: [{label, value}]
+const { left, right, unit = '', leftTitle = 'Assets', rightTitle = "Liabilities + Owners' equity", scale = 3 } = Astro.props;
+const tot = (xs) => xs.reduce((a, x) => a + x.value, 0);
+const f = (v) => (Math.round(v * 10) / 10).toString();
+---
+<div class="bal">
+  {[[leftTitle, left], [rightTitle, right]].map(([title, xs]) => (
+    <div class="bal-col">
+      <span class="bal-cap">{title} · {f(tot(xs))}{unit && ` ${unit}`}</span>
+      <div class="bal-stack" style={`height:${Math.round(tot(xs) * scale)}px`}>
+        {xs.map((x) => (
+          <div class:list={['bal-seg', { eq: x.equity }]} style={`flex:${x.value} 1 0;min-height:28px`} title={`${x.label}: ${f(x.value)}${unit ? ' ' + unit : ''}`}>
+            <span>{x.label}</span><b>{f(x.value)}</b>
+          </div>
+        ))}
+      </div>
+    </div>
+  ))}
+</div>

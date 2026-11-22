@@ -39,7 +39,7 @@ const { Content } = c;
 
     <nav class="pager" aria-label="Chapters">
       {prev ? <a href={`/${s.slug}/${prev.slug}/`}>Previous: {prev.title}</a> : <a href={`/${s.slug}/`}>Back to the subject</a>}
-      {next ? <a href={`/${s.slug}/${next.slug}/`}>Next: {next.title}</a> : s.quiz && <a href={`/${s.slug}/quiz/`}>Next: Practice MCQs</a>}
+      {next ? <a href={`/${s.slug}/${next.slug}/`}>Next: {next.title}</a> : s.quiz && <a href={`/${s.slug}/quiz/`}>Next: Practice questions</a>}
     </nav>
   </article>
 </main>

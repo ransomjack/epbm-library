@@ -2,13 +2,14 @@
 // rows: [{ label, value, note, mark? }] ; unit e.g. 'USD bn'
 const { rows, unit = '' } = Astro.props;
 const max = Math.max(...rows.map((r) => r.value));
+const f = (v) => v.toLocaleString('en-IN');
 ---
-<div class="bars" role="img" aria-label={rows.map((r) => `${r.label}: ${r.value} ${unit}, ${r.note}`).join('; ')}>
+<div class="bars" role="img" aria-label={rows.map((r) => `${r.label}: ${f(r.value)} ${unit}, ${r.note}`).join('; ')}>
   {rows.map((r) => (
-    <div class:list={['br', { mark: r.mark }]} title={`${r.label}: ${r.value} ${unit} (${r.note})`}>
+    <div class:list={['br', { mark: r.mark }]} title={`${r.label}: ${f(r.value)} ${unit} (${r.note})`}>
       <span class="lb">{r.label}</span>
       <span class="track"><span class="fill" style={`display:block;width:${(100 * r.value / max).toFixed(1)}%`}></span></span>
-      <span class="val">{r.value}</span>
+      <span class="val">{f(r.value)}</span>
       <span class="gr">{r.note}</span>
     </div>
   ))}

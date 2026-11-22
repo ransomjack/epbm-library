@@ -1,0 +1,27 @@
+---
+// Cash conversion cycle timeline. rows: [{ name, dio, dso, dpo }]
+const { rows, max = 45 } = Astro.props;
+const p = (d) => (100 * d) / max;
+---
+<div class="ccc">
+  {rows.map((r) => {
+    const ccc = r.dio + r.dso - r.dpo;
+    return (
+      <div class="ccc-row">
+        <div class="ccc-h"><b>{r.name}</b><span>Cash cycle: <strong>{ccc} days</strong></span></div>
+        <div class="ccc-track" aria-hidden="true">
+          <span class="ccc-seg inv" style={`left:0;width:${p(r.dio)}%`}>{r.dio}d</span>
+          <span class="ccc-seg rec" style={`left:${p(r.dio)}%;width:${p(r.dso)}%`}>{r.dso}d</span>
+        </div>
+        <div class="ccc-track" aria-hidden="true">
+          <span class="ccc-seg pay" style={`left:0;width:${p(r.dpo)}%`}>{r.dpo}d</span>
+          {ccc > 0
+            ? <span class="ccc-gap" style={`left:${p(r.dpo)}%;width:${p(ccc)}%`}>{ccc}d</span>
+            : <span class="ccc-gap neg" style={`left:${p(r.dio + r.dso)}%;width:${p(-ccc)}%`}>{ccc}d</span>}
+        </div>
+        <p class="sr">{r.name}: inventory {r.dio} days plus receivables {r.dso} days minus payables {r.dpo} days equals {ccc} days.</p>
+      </div>
+    );
+  })}
+  <div class="be-key" aria-hidden="true"><span><i class="ck inv"></i>Inventory days</span><span><i class="ck rec"></i>Receivable days</span><span><i class="ck pay"></i>Supplier credit days</span><span><i class="ck gap"></i>Cash tied up</span><span><i class="ck neg"></i>Funded by suppliers</span></div>
+</div>

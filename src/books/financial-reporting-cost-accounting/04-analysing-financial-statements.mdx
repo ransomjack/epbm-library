@@ -1,0 +1,247 @@
+---
+title: Analysing Financial Statements
+kicker: Session 4
+order: 4
+source: "Session by Prof. Manju Jaiswall · Financial Reporting & Cost Accounting"
+description: "Bonus shares, splits and buybacks; horizontal, trend and vertical analysis; and the four-window ratio framework: liquidity, efficiency, profitability and leverage. Session 4 of Financial Reporting & Cost Accounting."
+takeaways:
+  - "A bonus issue or split leaves owners' equity unchanged; a buyback reduces it and raises the remaining holders' stake."
+  - "Horizontal and trend analysis compare across time; vertical (common-size) analysis removes size so companies can be compared."
+  - "Read ratios through four windows: liquidity, efficiency, profitability, leverage."
+  - "Debt raises ROE only while the return on assets beats the cost of debt."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Bars from '../../components/d/Bars.astro';
+import CCC from '../../components/d/CCC.astro';
+import Nest from '../../components/d/Nest.astro';
+
+## From reading to deciding
+
+Sessions 1 and 2 taught you to read the statements. Session 4 asks the harder question: what are they telling you about whether to **invest, lend, promote or restructure**?
+
+> "You have understood the absolute numbers. But just reading them is not enough for a decision-maker. You need to go beyond." Prof. Manju Jaiswall
+
+There are four ways to compare a company's numbers, each answering a different question:
+
+<Cards min={180} items={[
+  { k: '1', title: 'Its own past', body: 'Is it improving over time?' },
+  { k: '2', title: 'Competitors', body: 'Is it ahead of or behind its peers?' },
+  { k: '3', title: 'Industry or economy', body: 'How does it compare with the benchmark?' },
+  { k: '4', title: 'Its own budget', body: 'Did it deliver the plan? Why not?' },
+]} />
+
+## Share capital: bonus shares, splits and buybacks
+
+### Four layers of share capital
+
+<Fig caption="Each layer sits inside the one above. For established listed companies, issued, subscribed and paid-up are usually the same.">
+  <Nest items={[
+    ['Authorised', 'The maximum the company is allowed to issue, registered with the Registrar of Companies'],
+    ['Issued', 'What it actually offered to investors'],
+    ['Subscribed', 'What investors agreed to take'],
+    ['Paid-up', 'What was actually received in cash'],
+  ]} />
+</Fig>
+
+### Bonus shares
+
+A bonus issue **capitalises reserves**: share capital goes up and reserves go down by the same amount. Owners' equity doesn't change and no cash moves.
+
+| 1:1 bonus | Before | After | Change |
+|---|---|---|---|
+| Share capital | Rs.250 cr | Rs.500 cr | Doubled |
+| Reserves and surplus | Rs.750 cr | Rs.500 cr | Down by the same 250 |
+| **Owners' equity** | **Rs.1,000 cr** | **Rs.1,000 cr** | **Unchanged** |
+| Shares | 25 cr | 50 cr | Doubled |
+| Book value per share | Rs.40 | Rs.20 | Halved |
+| Market price (typical) | Rs.100 | Rs.70, not Rs.50 | Falls, but less than the maths says |
+
+**Why Rs.70, not Rs.50?** Declaring a bonus signals that the majority shareholders are confident enough to lock up reserves permanently as capital. The market reads the confidence, demand rises, and the price settles above the arithmetic. This is called **unlocking shareholder wealth**. Govind held 100 shares at Rs.100 (Rs.10,000); after the bonus he holds 200 at Rs.70 (Rs.14,000). He's Rs.4,000 richer, without any change in the business.
+
+<div class="callout trap">
+<p class="callout-title">Bonus euphoria</p>
+
+The premium is driven by **sentiment**, which is temporary. The price could settle at Rs.70, Rs.65 or Rs.55. A bonus creates no lasting value on its own; the business hasn't changed. Treat it as a signal to analyse, not a reason to chase the stock.
+
+</div>
+
+### Stock splits and buybacks
+
+<Cards min={240} items={[
+  { title: 'Stock split', body: 'Face value is cut (a Rs.10 share becomes two Rs.5 shares). Share capital, reserves and equity are all unchanged.', foot: 'Purpose: liquidity. At Rs.10,000 a share, someone investing Rs.8,000 a month is priced out.' },
+  { title: 'Buyback', body: 'The company uses its own cash to buy back shares and cancel them. Cash, share capital and reserves (for the premium over face value) all fall, so equity falls.', foot: 'Right reason: management thinks the shares are undervalued.' },
+]} />
+
+After a buyback, everyone who didn't sell owns more of the company without investing anything. If 20 of 100 shares are cancelled, a holder of 5 shares goes from 5% to **6.25%** (5 ÷ 80).
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: read the signal behind the announcement</p>
+
+Three questions before reacting to any corporate action: Is the underlying business actually improving? For a buyback, is the price sensible against intrinsic value? What happens to EPS and ROE afterwards?
+
+- **FMCG bonus issue:** a 1:2 bonus and the stock jumps 12% in two days. Check the three-year EBITDA margin trend. Expanding margins mean the confidence is backed by operations; flat or falling margins mean reserves were reshuffled but the business hasn't improved.
+- **Infosys buyback (2022):** about Rs.9,300 crore of shares bought back, while the company held large cash reserves, generated strong free cash flow and had no big capex in sight. Returning surplus cash at a price below intrinsic value benefits the shareholders who stay. The test: would management buy at that price with its own money?
+
+Sentiment without fundamentals tends to reverse within months.
+
+</div>
+
+## Three tools of analysis
+
+### Horizontal analysis: across two periods
+
+**% change = (Change ÷ Base-year amount) × 100**, line by line, reading across the rows.
+
+**Starbucks, from class:** revenue grew **20.9%** but cost of sales grew **25.8%**, faster than revenue, so gross profit grew only **17.5%**. The company sold more, but production costs rose faster than what it earned. The tool raises the question (poor purchasing? storage losses? input quality?); the manager has to find the answer and fix accountability.
+
+### Trend analysis: across many years
+
+Horizontal analysis stretched over five or more years. Set every **Year 1** figure to 100 and express later years as an index: (value ÷ base-year value) × 100.
+
+<Fig title="Starbucks, Year 1 = 100" caption="Operating income grew faster than revenue: costs were kept in check and each rupee of sales became more profitable.">
+  <Bars rows={[
+    { label: 'Revenue, Year 5', value: 230.9, note: 'Index' },
+    { label: 'Operating income, Year 5', value: 244.9, note: 'Index: pulling ahead of revenue', mark: true },
+  ]} />
+</Fig>
+
+<div class="callout trap">
+<p class="callout-title">Trend analysis rules</p>
+
+The base is **always Year 1**; any other choice loses data. Key check: is the operating income index pulling **ahead** of the revenue index (improving profitability) or falling **behind** (cost pressure)?
+
+</div>
+
+### Vertical (common-size) analysis: removing size
+
+Set an anchor to 100% and express everything else as a share of it: **net sales** for the P&L, **total assets** for the balance sheet. Company X (sales Rs.15 crore, COGS Rs.12 crore) and Company Y (sales Rs.8 crore, COGS Rs.4.8 crore) can't be compared directly. Common-sized, X spends **80%** of sales on COGS and Y **60%**: Y is more efficient.
+
+**The industry DNA test.** In class, two anonymised balance sheets were common-sized:
+
+| Feature (% of total assets) | Company A | Company B | What it means |
+|---|---|---|---|
+| Inventory | ~17.7% | ~0.15% | A holds physical stock; B doesn't |
+| Net block | High | Very low | A is capital-intensive |
+| Long-term debt | Material | Near zero | B doesn't need debt to fund assets |
+| Investments outside the core | Moderate | High | B has surplus cash parked outside |
+| **Verdict** | **Manufacturer** | **IT services** | |
+
+IT companies carry almost no long-term debt because their main asset is people, which isn't debt-financed. A bank couldn't be Company B, since its customer deposits **are** its liabilities. Common-sizing reveals the industry without the company's name.
+
+## The four-window approach to ratios
+
+<Cards min={160} items={[
+  { k: '1', title: 'Liquidity', body: 'Can it meet short-term obligations and survive the next 12 months?' },
+  { k: '2', title: 'Efficiency', body: 'How hard are its assets working to generate sales?' },
+  { k: '3', title: 'Profitability', body: 'How much profit per rupee of sales, and per rupee of capital?' },
+  { k: '4', title: 'Leverage', body: 'Is the debt–equity mix working for the owners or against them?' },
+]} />
+
+### Window 1: liquidity
+
+| Ratio | Formula | What it tells you |
+|---|---|---|
+| Current ratio | Current assets ÷ Current liabilities | Can current assets cover short-term obligations? Aim for adequate, not too high or low. |
+| Quick ratio (acid test) | (Current assets − Inventory) ÷ Current liabilities | Stricter: inventory may not sell quickly in a downturn. Above 1.0 is comfortable. |
+| Financial slack | Cash and bank ÷ Total assets × 100 | Ready cash for emergencies |
+
+<div class="callout trap">
+<p class="callout-title">More liquidity isn't always better</p>
+
+Cash, receivables and inventory earn little or nothing; plant and technology earn the high returns. A very high current ratio means money is idle in low-return assets: the company is **over-liquid**. HUL runs **negative** working capital (current liabilities exceed current assets) because it collects from retailers before paying suppliers. That's market power and operational strength, not stress.
+
+</div>
+
+### Window 2: efficiency
+
+| Ratio | Formula | Better when |
+|---|---|---|
+| Total asset turnover | Sales ÷ Total assets | Higher |
+| Fixed asset turnover | Sales ÷ Net block (the session version adds CWIP) | Higher: plant is working hard |
+| Inventory turnover | **COGS** (not sales) ÷ Average inventory | Higher: stock sells faster |
+| Debtors turnover | Credit sales ÷ Average debtors | Higher: customers pay faster |
+| Creditors turnover | Credit purchases ÷ Average creditors | **Lower**: you use your full credit period |
+
+**Cash conversion cycle (CCC) = DIO + DSO − DPO**: the number of days cash is tied up in working capital. DIO = 365 ÷ inventory turnover; DSO = 365 ÷ debtors turnover; DPO = 365 ÷ creditors turnover.
+
+<Fig title="Same business, different supplier terms" caption="HUL- and Amazon-type businesses go further: low inventory and receivable days, very long payable days, and a strongly negative cycle.">
+  <CCC rows={[
+    { name: 'Typical business', dio: 20, dso: 15, dpo: 10 },
+    { name: 'Strong negotiator', dio: 20, dso: 15, dpo: 40 },
+  ]} />
+</Fig>
+
+> "Shareholder wealth maximisation is the objective. Supplier wealth maximisation is not. Stretching payables to the maximum allowed term is exactly what a well-run business should do." Prof. Manju Jaiswall
+
+### Window 3: profitability
+
+| Ratio | Formula | What it measures |
+|---|---|---|
+| Gross margin | Gross profit ÷ Sales × 100 | Pricing power and production efficiency |
+| Operating margin | Operating profit ÷ Sales × 100 | After all operating costs |
+| Net margin | PAT ÷ Sales × 100 | What the business keeps per rupee |
+| ROTA | PBIAT ÷ Total assets × 100, where PBIAT = PAT + Interest × (1 − tax rate) | What the assets earn, regardless of how they're funded |
+| ROCE / ROI | Operating profit ÷ Capital employed × 100 | Return on all permanent capital (equity + long-term debt) |
+| ROE / RONW | PAT ÷ Net worth × 100 | The shareholders' return |
+| EPS | (PAT − Preference dividends) ÷ Weighted average shares | Profit per share |
+| Payout ratio | Dividend ÷ PAT × 100 | How much is paid out vs reinvested |
+
+**Worked ROTA:** PAT Rs.20L, interest Rs.5L, tax 30%. PBIAT = 20 + 5 × 0.7 = **Rs.23.5L**. With total assets of Rs.200L, ROTA = **11.75%**.
+
+<Fig title="Same profit, shrinking denominator" caption="Total assets ⊃ capital employed ⊃ equity. When leverage works, ROE > ROCE > ROTA.">
+  <Nest items={[
+    ['Total assets', '→ ROTA'],
+    ['Capital employed', 'equity + long-term debt → ROCE'],
+    ["Owners' equity", '→ ROE, the smallest base and so the highest return'],
+  ]} />
+</Fig>
+
+### Window 4: leverage
+
+The class voted unanimously to take on debt. Then Prof. Jaiswall asked: *so why do TV channels celebrate debt-free companies?*
+
+**Why debt is cheaper than equity:**
+
+1. Equity investors stand last in line and are guaranteed nothing, so they demand more. If a bank charges 11%, equity investors want 14–18%.
+2. Interest is **tax-deductible**; dividends come out of post-tax profit.
+
+<Fig title="ROE as debt rises (assets Rs.100, EBIT Rs.15, interest 11%)" caption="Profit is shown before tax for simplicity. All-equity: 15 ÷ 100. 50% debt: (15 − 5.5) ÷ 50. 70% debt: (15 − 7.7) ÷ 30.">
+  <Bars rows={[
+    { label: 'All equity', value: 15, note: 'ROE %' },
+    { label: '50% debt', value: 19, note: 'ROE %' },
+    { label: '70% debt', value: 24.3, note: 'ROE %', mark: true },
+  ]} />
+</Fig>
+
+<div class="callout trap">
+<p class="callout-title">Leverage only works when ROTA beats the cost of debt</p>
+
+If assets earn 8% and debt costs 11%, every rupee of debt **destroys** equity value: negative leverage. Being debt-free gives up an advantage; borrowing beyond what earnings can carry is far worse. The right structure balances the boost to returns against solvency risk.
+
+</div>
+
+| Ratio | Formula | What it monitors |
+|---|---|---|
+| Debt–equity | Long-term debt ÷ Equity | Debt per rupee of equity; the right level depends on the business |
+| Interest coverage | (PBT + Interest) ÷ Interest | How many times EBIT covers interest. Near 1.0 = distress; above 2.0 = comfortable |
+| DSCR | Operating cash flow after tax ÷ (Interest + Principal) | Can operating cash cover full debt service? Above 1.0 = obligations met |
+| Debt ratio | LT debt ÷ (LT debt + Equity) × 100 | Debt as a share of permanent capital |
+
+### Putting the windows together
+
+**Liquidity** keeps the business alive in the short run; **efficiency** makes every asset work; **profitability** turns those sales into profit; **leverage** turns profit into the best possible return for owners. A very profitable company with poor liquidity can default before the profit arrives. A liquid company with poor efficiency is wasting capital. Ratio analysis tells you **which window** needs attention.
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: ratios as your scoreboard</p>
+
+Run the four-window check on your own unit every quarter, not just when the accountants present the annual numbers.
+
+- **Manufacturing:** current ratio below 1.2 for two quarters = cash stress. Inventory turnover below 4× (90+ days) = investigate now: finished goods piling up is a demand problem; raw material overstock is a procurement problem. Gross margin falling while operating margin holds = input costs being absorbed; ask how long that can last. If ROTA is below the cost of debt, stop borrowing and fix asset productivity first.
+- **IT services / SaaS:** watch DSO. Under 45 days is healthy; over 75 means unhappy clients or a broken billing process. For SaaS, track gross margin separately from EBITDA; below 60% gross margin is a unit-economics problem. For asset-light services, ROCE should comfortably beat 15–18%. If ROCE is below a bank FD rate, the business destroys value and should return capital rather than reinvest.
+
+</div>
+
+## Exam format
+
+Prof. Jaiswall confirmed the exam is **MCQ-based**, drawn entirely from class discussion across the four sessions, with **no negative marking** and a calculator available in the online interface. It tests understanding in context, not formulas in isolation. The full ratio list is in the [Formula Sheet](../formula-sheet/).

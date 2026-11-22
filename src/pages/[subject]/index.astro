@@ -34,7 +34,7 @@ const { s } = Astro.props;
         <li>
           <a href={`/${s.slug}/quiz/`}>
             <span class="kicker">Practice</span>
-            <span class="ch-title">{s.quiz.sections.reduce((n, x) => n + x.questions.length, 0)} practice MCQs</span>
+            <span class="ch-title">{s.quiz.sections.reduce((n, x) => n + x.questions.length, 0)} practice questions</span>
           </a>
         </li>
       )}

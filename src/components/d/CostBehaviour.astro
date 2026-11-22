@@ -1,0 +1,23 @@
+---
+// Four small panels: fixed vs variable, total vs per unit. Shapes are illustrative.
+const panels = [
+  { t: 'Fixed cost: total', b: 'Stays the same at any volume', d: 'M10 30 L150 30' },
+  { t: 'Fixed cost: per unit', b: 'Falls as volume rises', d: 'M14 8 Q30 52 60 58 T150 64' },
+  { t: 'Variable cost: total', b: 'Rises in step with volume', d: 'M10 66 L150 10' },
+  { t: 'Variable cost: per unit', b: 'Stays the same per unit', d: 'M10 40 L150 40' },
+];
+---
+<div class="bounce">
+  {panels.map((p) => (
+    <div class="card">
+      <span class="t">{p.t}</span>
+      <svg viewBox="0 0 160 76" role="img" aria-label={`${p.t}: ${p.b}`}>
+        <line x1="10" y1="70" x2="154" y2="70" style="stroke:var(--muted)" stroke-width="1" />
+        <line x1="10" y1="4" x2="10" y2="70" style="stroke:var(--muted)" stroke-width="1" />
+        <path d={p.d} fill="none" style="stroke:var(--accent)" stroke-width="2.5" stroke-linecap="round" />
+        <text x="154" y="74" text-anchor="end" style="fill:var(--muted);font:10px var(--sans)">volume →</text>
+      </svg>
+      <span class="b">{p.b}</span>
+    </div>
+  ))}
+</div>

@@ -1,0 +1,3690 @@
+{
+ "title": "Practice questions",
+ "sections": [
+  {
+   "name": "Session 1: Financial Statements I",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "Which of the following is NOT an asset?",
+     "options": [
+      "Cash in hand",
+      "Inventory waiting to be sold",
+      "Salary payable to employees",
+      "Money owed by customers"
+     ],
+     "answer": 2,
+     "why": "Salary payable is a liability -- a future sacrifice. Cash, inventory and debtors all have future benefit = assets."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The accounting equation is:",
+     "options": [
+      "Assets = Revenue minus Expenses",
+      "Assets = Liabilities + Owners Equity",
+      "Assets = Liabilities minus Owners Equity",
+      "Revenue = Assets + Liabilities"
+     ],
+     "answer": 1,
+     "why": "The fundamental equation: every resource (assets) was funded by outsiders (liabilities) or owners (equity). Both sides must always balance."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A company buys a machine for Rs.10L cash. What is the double-entry impact?",
+     "options": [
+      "Machine +10L, Cash +10L",
+      "Machine +10L, Cash -10L",
+      "Machine +10L, Equity +10L",
+      "Cash -10L, Liability +10L"
+     ],
+     "answer": 1,
+     "why": "One asset (cash) converts to another asset (machine). Both impacts on the left side -- net change = zero. Equation stays balanced."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Retained Earnings is part of:",
+     "options": [
+      "Liabilities",
+      "Assets",
+      "Owners Equity",
+      "Revenue"
+     ],
+     "answer": 2,
+     "why": "RE is the second component of Owners Equity (first = Share Capital). It represents accumulated profits kept in the business."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which statement shows performance OVER A PERIOD?",
+     "options": [
+      "Balance Sheet",
+      "Income Statement (P&L)",
+      "Both A and B",
+      "Neither"
+     ],
+     "answer": 1,
+     "why": "The Income Statement covers a period ('for the year ended'). The Balance Sheet is a point-in-time snapshot ('as at'). Frequently tested distinction."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A refundable security deposit for a rented showroom is recorded as:",
+     "options": [
+      "Rent expense",
+      "An asset -- security deposit",
+      "A liability",
+      "Owners equity"
+     ],
+     "answer": 1,
+     "why": "The deposit will be returned -- future benefit = Asset. Rent expense is only recorded when the space is actually used (Accrual Concept)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is a financing activity?",
+     "options": [
+      "Buying machinery",
+      "Selling goods to customers",
+      "Taking a bank loan",
+      "Paying salaries"
+     ],
+     "answer": 2,
+     "why": "Taking a loan = raising funds = financing. Buying machinery = investing. Selling goods and paying salaries = operating."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Under the Accrual Concept, expenses are recorded when:",
+     "options": [
+      "Cash is paid",
+      "They are incurred -- benefit received",
+      "The financial year ends",
+      "The auditor approves"
+     ],
+     "answer": 1,
+     "why": "Record when incurred (benefit received), not when cash moves."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Capital Employed equals:",
+     "options": [
+      "Share Capital only",
+      "Net Worth only",
+      "Net Worth + Long-term Debt",
+      "Current Assets minus Current Liabilities"
+     ],
+     "answer": 2,
+     "why": "Capital Employed = Net Worth + Long-term Debt. Total funds deployed in the business."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Working Capital is:",
+     "options": [
+      "Total Assets minus Total Liabilities",
+      "Current Assets minus Current Liabilities",
+      "Fixed Assets minus Long-term Debt",
+      "Revenue minus Expenses"
+     ],
+     "answer": 1,
+     "why": "Working Capital = Current Assets minus Current Liabilities. Measures short-term liquidity."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Dividends paid appear in the financial statements as:",
+     "options": [
+      "An expense in the Income Statement",
+      "A reduction of Retained Earnings in the Balance Sheet",
+      "An asset in the Balance Sheet",
+      "They do not appear anywhere"
+     ],
+     "answer": 1,
+     "why": "Dividends are not an expense -- not in the P&L.; They reduce Retained Earnings on the Balance Sheet and appear under Financing in the Cash Flow Statement."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Under Going Concern, assets are recorded at:",
+     "options": [
+      "Liquidation value",
+      "Current market value",
+      "Historical cost, depreciated over useful life",
+      "Replacement cost"
+     ],
+     "answer": 2,
+     "why": "Going Concern assumes the business will continue -- assets recorded at cost and depreciated over useful life, not at fire-sale value."
+    },
+    {
+     "tag": "MCQ",
+     "q": "COGS stands for:",
+     "options": [
+      "Cost Of Gross Sales",
+      "Cost Of Goods Sold",
+      "Cash Or Goods Settlement",
+      "Cost Of General Supplies"
+     ],
+     "answer": 1,
+     "why": "COGS = Cost of Goods Sold. Revenue minus COGS = Gross Profit."
+    },
+    {
+     "tag": "MCQ",
+     "q": "EBITDA stands for:",
+     "options": [
+      "Earnings Before Interest, Tax, Depreciation, Amortisation",
+      "Earnings Before Income Tax, Dividends and Assets",
+      "Equity-Based Interest Tax, Dividends and Allowances",
+      "None of the above"
+     ],
+     "answer": 0,
+     "why": "EBITDA strips out non-cash charges and financing costs -- useful proxy for operating cash generation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Correct sequence for preparing financial statements:",
+     "options": [
+      "Balance Sheet, P&L, Cash Flow",
+      "Cash Flow, P&L, Balance Sheet",
+      "P&L, Retained Earnings, Balance Sheet",
+      "Any order works"
+     ],
+     "answer": 2,
+     "why": "P&L first (Net Income), then RE Statement (closing RE), then Balance Sheet (closing RE flows in). Each feeds the next."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Under Straight Line Method, the annual depreciation charge is:",
+     "options": [
+      "Higher in early years",
+      "Same every year",
+      "Based on actual usage",
+      "On current market value"
+     ],
+     "answer": 1,
+     "why": "SLM: (Cost minus Residual) / Useful Life = same charge every year. WDV gives higher early, lower later."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Deferred Tax arises due to:",
+     "options": [
+      "Late payment of taxes",
+      "Timing differences between book and taxable profit",
+      "Non-payment of dividends",
+      "Foreign currency transactions"
+     ],
+     "answer": 1,
+     "why": "Timing differences -- typically from different depreciation methods for Companies Act (SLM) vs Income Tax Act (WDV only)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Trade Receivables / Debtors are classified as:",
+     "options": [
+      "Non-current assets",
+      "Current liabilities",
+      "Current assets",
+      "Owners equity"
+     ],
+     "answer": 2,
+     "why": "Money owed by customers for credit sales -- expected within the operating cycle = Current Assets."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Separate Entity Concept means:",
+     "options": [
+      "Each product line is a separate business",
+      "Business and owners are financially separate",
+      "Each department has its own accounts",
+      "International subsidiaries are independent"
+     ],
+     "answer": 1,
+     "why": "Business is a separate legal and financial entity. Owner's personal transactions never mix with business transactions."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is an investing activity?",
+     "options": [
+      "Issuing new shares",
+      "Buying a delivery vehicle for business",
+      "Paying supplier invoices",
+      "Receiving customer payments"
+     ],
+     "answer": 1,
+     "why": "Buying a long-term asset = investing. Issuing shares = financing. Paying suppliers and collecting from customers = operating."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Net Worth equals:",
+     "options": [
+      "Total Assets",
+      "Share Capital + Retained Earnings",
+      "Total Assets minus Current Liabilities",
+      "Revenue minus Expenses"
+     ],
+     "answer": 1,
+     "why": "Net Worth = Share Capital + Retained Earnings = Owners Equity. The owners' total stake in the business."
+    },
+    {
+     "tag": "MCQ",
+     "q": "CWIP stands for:",
+     "options": [
+      "Cash Withdrawn In Previous years",
+      "Capital Work-In-Progress",
+      "Current Working Investment Pool",
+      "Cost of Wages Including Provident fund"
+     ],
+     "answer": 1,
+     "why": "Assets under construction -- not yet ready for use. Once commissioned, they move to Fixed Assets and depreciation begins."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Money Measurement Concept means:",
+     "options": [
+      "All transactions in USD",
+      "Only monetary transactions are recorded",
+      "Money counted physically each month",
+      "Profits measured in real terms"
+     ],
+     "answer": 1,
+     "why": "Only what can be expressed in money terms goes into the accounting books."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Revenue Rs.100L, COGS Rs.60L. Gross Profit is:",
+     "options": [
+      "Rs.160L",
+      "Rs.60L",
+      "Rs.40L",
+      "Rs.100L"
+     ],
+     "answer": 2,
+     "why": "Gross Profit = Revenue minus COGS = Rs.100L minus Rs.60L = Rs.40L."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Total Assets Rs.500L, Total Liabilities Rs.320L. Owners Equity is:",
+     "options": [
+      "Rs.820L",
+      "Rs.320L",
+      "Rs.500L",
+      "Rs.180L"
+     ],
+     "answer": 3,
+     "why": "OE = Assets minus Liabilities = Rs.500L minus Rs.320L = Rs.180L."
+    },
+    {
+     "tag": "MCQ",
+     "q": "PBT stands for:",
+     "options": [
+      "Profit Before Transfers",
+      "Profit Before Tax",
+      "Prior Balance of Trade",
+      "Provisional Book Total"
+     ],
+     "answer": 1,
+     "why": "PBT = Profit Before Tax. After interest, before income tax. Also called EBT."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which concept divides business life into reporting periods?",
+     "options": [
+      "Going Concern",
+      "Separate Entity",
+      "Accounting Period",
+      "Money Measurement"
+     ],
+     "answer": 2,
+     "why": "The Accounting Period Concept -- creates the need for accrual-based accounting."
+    },
+    {
+     "tag": "MCQ",
+     "q": "EPS is calculated as:",
+     "options": [
+      "EBITDA / Total Shares",
+      "PAT / Number of Shares Outstanding",
+      "Revenue / Share Price",
+      "Net Worth / Number of Shares"
+     ],
+     "answer": 1,
+     "why": "EPS = PAT / Shares outstanding. Measures profit earned per share."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Under WDV, depreciation in early years is:",
+     "options": [
+      "Lower than SLM",
+      "Same as SLM",
+      "Higher than SLM",
+      "Zero in first year"
+     ],
+     "answer": 2,
+     "why": "WDV front-loads depreciation. Total over the asset's life is the same as SLM -- only timing differs."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Cash Flow Statement has which three sections?",
+     "options": [
+      "Revenue, Expenses, Profit",
+      "Assets, Liabilities, Equity",
+      "Operating, Investing, Financing",
+      "Short-term, Medium-term, Long-term"
+     ],
+     "answer": 2,
+     "why": "Exactly the three business activities: Operating (CFO), Investing (CFI), Financing (CFF)."
+    }
+   ]
+  },
+  {
+   "name": "Session 2: Financial Statements II",
+   "questions": [
+    {
+     "tag": "TF",
+     "q": "Machinery is a fictitious asset.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Machinery is a tangible FIXED ASSET -- real, physical, depreciable."
+    },
+    {
+     "tag": "TF",
+     "q": "Creditors (trade payables) represent a long-term liability.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Suppliers are paid within the operating cycle (typically 60-90 days) -- CURRENT LIABILITY."
+    },
+    {
+     "tag": "TF",
+     "q": "Investment in a 5-year government bond is always a current asset.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Depends on maturity: current if matures within 12 months; non-current otherwise."
+    },
+    {
+     "tag": "TF",
+     "q": "Salary payable to employees is both an expense and a current liability.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 0,
+     "why": "Expense (reduces OE) when incurred. Current liability (obligation to pay) if unpaid at period end."
+    },
+    {
+     "tag": "TF",
+     "q": "Interest on a loan taken is income.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Interest PAID on debt taken = finance cost (EXPENSE). Interest EARNED on deposits/investments = income."
+    },
+    {
+     "tag": "TF",
+     "q": "Share capital is an asset.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Share capital is Owners Equity -- a SOURCE of funds on the right side. Not an asset."
+    },
+    {
+     "tag": "TF",
+     "q": "Interest earned on a mutual fund is an expense.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "It is INCOME -- other income from an investing activity."
+    },
+    {
+     "tag": "TF",
+     "q": "Inventory is a non-current asset.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Inventory is held for sale within the operating cycle -- CURRENT ASSET."
+    },
+    {
+     "tag": "TF",
+     "q": "SLM and WDV produce the same TOTAL depreciation over the full life.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 0,
+     "why": "Total depreciable amount (Cost - Residual) is fixed. Only the ANNUAL ALLOCATION differs."
+    },
+    {
+     "tag": "TF",
+     "q": "A company can freely switch between SLM and WDV whenever it chooses.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Requires strong justification and disclosure to shareholders. Not a routine practice."
+    },
+    {
+     "tag": "TF",
+     "q": "If Net Book Value reaches zero, the asset must be disposed of.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "NBV = zero means fully depreciated in books. Physical asset can still be in use -- just stop recording depreciation."
+    },
+    {
+     "tag": "TF",
+     "q": "Unearned Revenue is a liability.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 0,
+     "why": "Cash received before service is performed = obligation to perform or refund = LIABILITY until the service is done."
+    },
+    {
+     "tag": "TF",
+     "q": "A bad debt write-off reverses the original revenue.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Original revenue STANDS -- correctly recognised when service was performed. Write-off = new separate expense in the period of write-off."
+    },
+    {
+     "tag": "TF",
+     "q": "Goodwill on a balance sheet always means the company has done an M&A transaction.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 0,
+     "why": "Only PURCHASED goodwill is permitted. Arises only when a premium is paid above book value in an actual acquisition."
+    },
+    {
+     "tag": "TF",
+     "q": "CFO should ideally be higher than Net Income for a healthy business.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 0,
+     "why": "Depreciation (non-cash) adds back to cash; good collections mean cash comes in faster than accrual revenue."
+    },
+    {
+     "tag": "TF",
+     "q": "Depreciation is a cash outflow.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Non-cash book entry. Cash left when the asset was PURCHASED. Depreciation just spreads that historical cost."
+    },
+    {
+     "tag": "TF",
+     "q": "A profitable company can go bankrupt.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 0,
+     "why": "Profit is on accrual. If cash is not collected, a business can run out of money despite reporting paper profits."
+    },
+    {
+     "tag": "TF",
+     "q": "The Income Tax Act allows both SLM and WDV.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Income Tax Act allows ONLY WDV. Companies Act allows both."
+    },
+    {
+     "tag": "TF",
+     "q": "A change in depreciation estimate (useful life) requires restating prior financial statements.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Changes in accounting ESTIMATES are applied PROSPECTIVELY only. No restatement of prior periods."
+    },
+    {
+     "tag": "TF",
+     "q": "Babu's advance payment to Richie in February should be recorded as February revenue.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Cash received does not equal revenue earned. Service not yet done = Unearned Revenue = LIABILITY."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Asset costs Rs.11,000 cr, residual Rs.1,000 cr, life 10 years, using SLM. Annual depreciation is:",
+     "options": [
+      "Rs.1,100 cr",
+      "Rs.1,000 cr",
+      "Rs.900 cr",
+      "Rs.500 cr"
+     ],
+     "answer": 1,
+     "why": "SLM = (Cost - Residual) / Useful Life = (11,000 - 1,000) / 10 = Rs.1,000 cr per year."
+    },
+    {
+     "tag": "MCQ",
+     "q": "After 6 years of SLM depreciation (Q1 above), Net Book Value is:",
+     "options": [
+      "Rs.5,000 cr",
+      "Rs.6,000 cr",
+      "Rs.4,000 cr",
+      "Rs.1,000 cr"
+     ],
+     "answer": 0,
+     "why": "NBV = Gross Block - Accumulated Dep = 11,000 - (1,000 x 6) = 11,000 - 6,000 = Rs.5,000 cr."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Under WDV, compared to SLM, profit in the EARLY YEARS will be:",
+     "options": [
+      "Higher",
+      "Lower",
+      "The same",
+      "It depends on the asset type"
+     ],
+     "answer": 1,
+     "why": "WDV front-loads depreciation. Higher depreciation early = lower profit early. Tax benefit in early years is why companies use WDV for tax."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Richie computer: cost Rs.4,68,000, life 36 months, zero residual. Monthly depreciation is:",
+     "options": [
+      "Rs.15,600",
+      "Rs.13,000",
+      "Rs.9,360",
+      "Rs.10,400"
+     ],
+     "answer": 1,
+     "why": "Monthly depreciation = (4,68,000 - 0) / 36 = Rs.13,000."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Richie pays Rs.60,000 security deposit for his office. This is recorded as:",
+     "options": [
+      "Rent Expense Rs.60,000",
+      "Security Deposit (Asset) Rs.60,000",
+      "Prepaid Rent Rs.60,000",
+      "Cash Loss Rs.60,000"
+     ],
+     "answer": 1,
+     "why": "Refundable deposit = future benefit = ASSET called Security Deposit. Not rent expense."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A client pays Rs.4,000 in February for advisory work to be done in March. In February, record:",
+     "options": [
+      "Revenue Rs.4,000 + Cash Rs.4,000",
+      "Unearned Revenue (Liability) Rs.4,000 + Cash Rs.4,000",
+      "Prepaid Expense Rs.4,000 + Cash Rs.4,000",
+      "No entry until March"
+     ],
+     "answer": 1,
+     "why": "Cash DOES come in = Cash UP. But service not done = Unearned Revenue (LIABILITY). Revenue only when service is performed in March."
+    },
+    {
+     "tag": "MCQ",
+     "q": "When the advisory work is done in March (Q6 above), the entry is:",
+     "options": [
+      "Revenue +4,000; Cash +4,000",
+      "Unearned Revenue -4,000; Revenue +4,000",
+      "Revenue +4,000; Debtors +4,000",
+      "Prepaid Expense -4,000; Revenue +4,000"
+     ],
+     "answer": 1,
+     "why": "The liability (Unearned Revenue) is now discharged because the service is done. Revenue is finally recognised. Cash is not involved (it came in February)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Magazine subscription Rs.6,000 for 12 months. After 4 months, Prepaid Expense on balance sheet is:",
+     "options": [
+      "Rs.6,000",
+      "Rs.4,000",
+      "Rs.2,000",
+      "Rs.0"
+     ],
+     "answer": 1,
+     "why": "4 months consumed = Rs.2,000 expense. 8 months remaining = Rs.4,000 Prepaid Expense (asset)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Richie performs work for Raghu (Rs.5,000) in February. Raghu vanishes in March. Two-month combined P&L effect is:",
+     "options": [
+      "+Rs.5,000 net (revenue only, no expense)",
+      "Zero (revenue in Feb cancels expense in Mar)",
+      "-Rs.5,000 net (net loss)",
+      "+Rs.10,000 (double count)"
+     ],
+     "answer": 1,
+     "why": "Feb: +Rs.5,000 revenue. Mar: -Rs.5,000 bad debt expense. Net = zero. Correct economic outcome -- did the work, collected nothing."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Richie's February revenue is Rs.20,000. This EXCLUDES:",
+     "options": [
+      "Rs.13,000 individual client cash payment",
+      "Rs.2,000 commission (accrual)",
+      "Rs.5,000 Raghu (accrual)",
+      "Rs.4,000 Babu advance"
+     ],
+     "answer": 3,
+     "why": "Babu's Rs.4,000 is EXCLUDED from revenue because the service is not done yet. It is Unearned Revenue (liability). The other three ARE revenue in February."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Richie's February Net Loss is Rs.74,900. The PRIMARY reason is:",
+     "options": [
+      "Very high variable costs",
+      "Large one-time investment losses",
+      "Fixed costs (salaries, rent, depreciation) with only Rs.20,000 revenue in a startup month",
+      "Poor pricing strategy"
+     ],
+     "answer": 2,
+     "why": "February was setup month. Fixed costs (salaries Rs.50k, rent Rs.20k, depreciation Rs.13k) alone = Rs.83,000 against revenue of only Rs.20,000. Classic startup pattern."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In March, Babu's Rs.4,000 converts from Unearned Revenue to Revenue because:",
+     "options": [
+      "Richie received additional payment from Babu",
+      "The advisory service was actually performed in March",
+      "30 days passed since the advance",
+      "Babu confirmed satisfaction"
+     ],
+     "answer": 1,
+     "why": "Revenue recognition: ONLY when service is PERFORMED. The time lapse or confirmation does not matter -- performance matters."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Richie raises a Rs.5,00,000 bank loan at 12% p.a. in March. March interest expense is:",
+     "options": [
+      "Rs.60,000",
+      "Rs.15,000",
+      "Rs.5,000",
+      "Rs.12,000"
+     ],
+     "answer": 2,
+     "why": "Monthly interest = 5,00,000 x 12% / 12 = Rs.5,000. It is ACCRUED in March (payable April 1st) but recorded as March expense."
+    },
+    {
+     "tag": "MCQ",
+     "q": "March interest is not paid until April 1st. The March balance sheet shows:",
+     "options": [
+      "No interest entry",
+      "Interest Expense reduces OE + Interest Payable (liability)",
+      "Prepaid Interest as asset",
+      "Interest reduces cash"
+     ],
+     "answer": 1,
+     "why": "Accrual concept: interest is INCURRED in March (used the money in March) so recorded as expense and matching liability (Interest Payable) until paid."
+    },
+    {
+     "tag": "MCQ",
+     "q": "March revenues grew 11x from February. This proves:",
+     "options": [
+      "The business model is working; volatility brought clients to Richie",
+      "February's loss was a strategic error",
+      "Richie overcharged in March",
+      "The financial statements for February were incorrect"
+     ],
+     "answer": 0,
+     "why": "Richie's thesis was correct: market panic = high advisory demand. February was setup cost. March validated the model."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Richie's equipment cost Rs.4,68,000. Half was paid cash, half as Trade Creditor. Cash Flow Statement classification:",
+     "options": [
+      "Full Rs.4,68,000 in CFO",
+      "Rs.2,34,000 in CFI (investing), Rs.2,34,000 in CFF",
+      "Rs.2,34,000 in CFI (cash paid for asset). Creditor portion = non-cash, not in CFS",
+      "Full Rs.4,68,000 in CFI"
+     ],
+     "answer": 2,
+     "why": "Only actual cash movements appear in the Cash Flow Statement. Rs.2,34,000 paid = CFI outflow. The Rs.2,34,000 on credit = non-cash transaction, shown as supplementary disclosure."
+    },
+    {
+     "tag": "MCQ",
+     "q": "HPCL shows accounting losses but positive CFO. This is BEST described as:",
+     "options": [
+      "The accountants made an error",
+      "A turnaround signal -- generating real cash despite accounting losses",
+      "Proof the business is failing",
+      "Normal for all oil companies"
+     ],
+     "answer": 1,
+     "why": "Positive CFO despite accounting loss often means business is operationally sound; accounting loss may be from non-cash charges (large depreciation) or accounting timing differences."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Goodwill Rs.200 crore appears on Tata Tea's balance sheet after acquiring Tetley. Tetley's book value was Rs.150 crore. Tata Tea paid:",
+     "options": [
+      "Rs.150 crore",
+      "Rs.200 crore",
+      "Rs.350 crore",
+      "Rs.50 crore"
+     ],
+     "answer": 2,
+     "why": "Goodwill = Purchase Price - Book Value. So Purchase Price = Goodwill + Book Value = 200 + 150 = Rs.350 crore."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of the following is a CURRENT LIABILITY?",
+     "options": [
+      "10-year debenture issued 2 years ago",
+      "Mortgage loan secured against factory",
+      "Advance received from customer for delivery next month",
+      "Unsecured term loan payable in 2030"
+     ],
+     "answer": 2,
+     "why": "Advance from customer = Unearned Revenue = obligation to perform or refund within the next cycle = CURRENT LIABILITY. All others are non-current (long-term)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Indirect Method of computing CFO starts with:",
+     "options": [
+      "Cash received from customers",
+      "Net Profit After Tax",
+      "Total Revenue",
+      "EBITDA"
+     ],
+     "answer": 1,
+     "why": "Indirect Method: Start with PAT, add back non-cash charges (depreciation), adjust for changes in working capital. Most Indian annual reports use this method."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Richie's April services advance of Rs.30,000 received in March is recorded as:",
+     "options": [
+      "Revenue Rs.30,000 in March",
+      "Unearned Revenue (Liability) Rs.30,000 in March",
+      "Deferred Tax Asset",
+      "Capital Receipt"
+     ],
+     "answer": 1,
+     "why": "Cash received in March but service in April = Unearned Revenue (liability) in March. Revenue only in April when service is performed."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A company's Gross Block is Rs.200 crore, Accumulated Depreciation is Rs.75 crore. Net Block is:",
+     "options": [
+      "Rs.275 crore",
+      "Rs.200 crore",
+      "Rs.125 crore",
+      "Rs.75 crore"
+     ],
+     "answer": 2,
+     "why": "Net Block = Gross Block - Accumulated Depreciation = 200 - 75 = Rs.125 crore."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of the following best indicates a company generating strong cash quality?",
+     "options": [
+      "CFO much lower than Net Income",
+      "CFO roughly equal to or higher than Net Income",
+      "Large negative CFI",
+      "Large positive CFF"
+     ],
+     "answer": 1,
+     "why": "CFO >= Net Income signals that reported profits are converting to real cash (good collections, depreciation add-back). CFO much lower than NI = profit quality concern."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Company A: Net Income Rs.50L, Depreciation Rs.10L, Debtors decreased Rs.5L. Approximate CFO is:",
+     "options": [
+      "Rs.35L",
+      "Rs.50L",
+      "Rs.65L",
+      "Rs.55L"
+     ],
+     "answer": 2,
+     "why": "CFO = NI + Dep + Decrease in Debtors = 50 + 10 + 5 = Rs.65L. Debtors decreasing means cash was collected (adds to cash)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Misra Company's net profit margin fell from 5% to 3.1%. After reviewing the multi-step P&L, the correct decision is:",
+     "options": [
+      "Immediately reduce headcount",
+      "Investigate operating cost structure",
+      "Identify whether the fall is from a one-time non-recurring item before drawing conclusions",
+      "Raise prices immediately"
+     ],
+     "answer": 2,
+     "why": "Multi-step P&L revealed the entire fall was one-time loss on asset disposal (investing decision). Always decompose the journey from operating profit to net profit before concluding."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is TRUE about changing a depreciation method?",
+     "options": [
+      "Companies can change freely every year to reduce tax",
+      "Requires strong justification and disclosure; not allowed as a routine practice",
+      "Must be approved by the government",
+      "Changes must be applied retrospectively (restate all prior years)"
+     ],
+     "answer": 1,
+     "why": "Strong justification + disclosure required. Changes in accounting ESTIMATES (like useful life) apply prospectively. Not a routine practice."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A company uses SLM for its published accounts but WDV for its tax return. In early years, this creates:",
+     "options": [
+      "Higher published profit, lower taxable profit -- and a Deferred Tax Liability",
+      "Lower published profit, higher taxable profit",
+      "Identical profits in both",
+      "A legal compliance violation"
+     ],
+     "answer": 0,
+     "why": "WDV gives higher depreciation early = lower taxable profit = less tax now. SLM gives lower depreciation early = higher published profit. Tax saved today will reverse later = Deferred Tax Liability (DTL)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Assets remaining useful beyond their fully depreciated NBV should be:",
+     "options": [
+      "Immediately written off",
+      "Sold immediately at scrap value",
+      "Continued in use with no further depreciation charge",
+      "Revalued to current market value"
+     ],
+     "answer": 2,
+     "why": "When NBV reaches zero (or residual value), simply STOP recording depreciation. Asset continues in use. It is \"free\" in accounting terms."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Richie's February balance sheet shows Cash Rs.6,50,000. Which transaction contributed Rs.4,000 to this cash that students often miss?",
+     "options": [
+      "Commission receivable",
+      "Raghu's receivable",
+      "Babu's advance (cash came in despite being Unearned Revenue)",
+      "Security deposit refund"
+     ],
+     "answer": 2,
+     "why": "Babu's Rs.4,000 IS a cash inflow in February -- it physically arrives in the bank. But it is classified as Unearned Revenue (LIABILITY) because the service is not done. Cash in = yes. Revenue = no."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Two companies with identical revenues. Company A has COGS 80% of sales, Company B has COGS 55%. Who has more pricing power?",
+     "options": [
+      "Company A -- higher costs mean higher quality",
+      "Company B -- retains more per rupee of sales after direct costs",
+      "Both the same -- revenue is equal",
+      "Cannot determine without knowing absolute profit"
+     ],
+     "answer": 1,
+     "why": "Gross margin: A = 20%, B = 45%. B retains significantly more after direct costs -- better pricing, lower input costs, or more efficient production."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A machine is purchased for Rs.5,00,000. Installation cost Rs.50,000. Transport Rs.25,000. The COST for depreciation purposes is:",
+     "options": [
+      "Rs.5,00,000 only",
+      "Rs.5,50,000",
+      "Rs.5,75,000",
+      "Rs.5,25,000"
+     ],
+     "answer": 2,
+     "why": "Cost = ALL expenditure to get the asset ready for use: purchase + installation + transport = 5,00,000 + 50,000 + 25,000 = Rs.5,75,000."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which statement about the Balance Sheet is FALSE?",
+     "options": [
+      "It is prepared at a specific point in time",
+      "Total Assets always equal Total Liabilities plus Owners Equity",
+      "It shows how much profit was earned during the year",
+      "It shows what the company owns and what it owes"
+     ],
+     "answer": 2,
+     "why": "Profit earned DURING the year is shown on the INCOME STATEMENT. The balance sheet shows the financial POSITION at a specific DATE -- a snapshot, not a movie."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Richie's March cumulative net income over two months is Rs.17,200. This means shareholders who invested Rs.10,00,000:",
+     "options": [
+      "Have lost money",
+      "Have broken even",
+      "Have owners equity of Rs.10,17,200 -- slightly ahead of their investment",
+      "Will receive Rs.17,200 as dividends"
+     ],
+     "answer": 2,
+     "why": "Owners equity = Share Capital (Rs.10,00,000) + Retained Earnings (Rs.17,200) = Rs.10,17,200. Higher than invested. Business model validated in 2 months."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which goes in CFI (Investing activities) in Richie's Cash Flow Statement?",
+     "options": [
+      "Salaries paid Rs.50,000",
+      "Computer hardware purchased Rs.2,34,000 cash",
+      "Rent paid Rs.20,000",
+      "Commission collected Rs.2,000"
+     ],
+     "answer": 1,
+     "why": "Computer hardware = long-term asset (3+ years) = INVESTING activity. All others = operating."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Interest paid by Richie on his bank loan is classified under which section in Indian GAAP (AS 3)?",
+     "options": [
+      "CFI -- Investing activities",
+      "CFO -- Operating activities",
+      "CFF -- Financing activities",
+      "Not classified -- it is a non-cash expense"
+     ],
+     "answer": 2,
+     "why": "For a non-financial company, both AS 3 (Indian GAAP) and Ind AS 7 classify interest paid under financing activities (CFF); interest and dividends received go under investing. Only financial enterprises such as banks show them under operating. (Corrected from the original notes, which said CFO.)"
+    }
+   ]
+  },
+  {
+   "name": "Session 3: Managing Cost",
+   "questions": [
+    {
+     "tag": "TF",
+     "q": "Total fixed cost stays constant regardless of production volume.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 0,
+     "why": "By definition. Same Rs.50,000 rent whether 100 or 1,000 units are produced."
+    },
+    {
+     "tag": "TF",
+     "q": "Fixed cost per unit stays constant as volume rises.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Fixed TOTAL is constant. Per-unit fixed cost FALLS as more units spread the same fixed total."
+    },
+    {
+     "tag": "TF",
+     "q": "Variable cost per unit rises as you produce more.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Variable cost PER UNIT is CONSTANT. Only the total rises proportionally with volume."
+    },
+    {
+     "tag": "TF",
+     "q": "Management accounting is regulated by ICAI like financial accounting.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "No regulation, no standard format. For internal use only."
+    },
+    {
+     "tag": "TF",
+     "q": "A cost object must always be a physical product.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "A cost object can be a product, batch, programme, department, project, or customer."
+    },
+    {
+     "tag": "TF",
+     "q": "Direct costs always need a cost driver to be allocated.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Direct costs are TRACED, not allocated. Only INDIRECT costs need a driver."
+    },
+    {
+     "tag": "TF",
+     "q": "Contribution margin is Revenue minus all Fixed Costs.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Contribution = Revenue minus all VARIABLE COSTS. Fixed costs come after contribution."
+    },
+    {
+     "tag": "TF",
+     "q": "A business can have positive contribution margin and still make a net loss.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 0,
+     "why": "If total fixed costs exceed total contribution, the business is below break-even -- loss despite positive CM."
+    },
+    {
+     "tag": "TF",
+     "q": "Beyond break-even, each extra unit contributes its full selling price to profit.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Beyond BEP, each unit contributes its CONTRIBUTION MARGIN (price minus variable cost), not full price."
+    },
+    {
+     "tag": "TF",
+     "q": "CS Ratio = 40% means 40 paise of every rupee of sales is contribution.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 0,
+     "why": "CS Ratio = Contribution / Sales. Exactly what it means."
+    },
+    {
+     "tag": "TF",
+     "q": "Margin of safety = current sales minus TARGET sales.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "MOS = Current Sales minus BREAK-EVEN Sales. Target is not involved."
+    },
+    {
+     "tag": "TF",
+     "q": "A product with a LOWER margin of safety ratio is LESS risky.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Lower MOS = closer to break-even = MORE risky, not less."
+    },
+    {
+     "tag": "TF",
+     "q": "For multi-product BEP, use a simple average of all product contributions.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Use a WEIGHTED AVERAGE with sales mix proportions. Simple average ignores relative volumes."
+    },
+    {
+     "tag": "TF",
+     "q": "The high-low method assumes a linear cost-volume relationship.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 0,
+     "why": "It draws a straight line between two data points. Non-linear behaviour produces only an approximation."
+    },
+    {
+     "tag": "TF",
+     "q": "Depreciation is a relevant cost when deciding to shut down a subsidiary.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Depreciation is non-cash. Equipment already bought. Closing saves nothing on depreciation. IRRELEVANT."
+    },
+    {
+     "tag": "TF",
+     "q": "A non-cancelable lease is irrelevant to the shutdown decision.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 0,
+     "why": "Paid regardless -- same cost in every scenario. Irrelevant to the shutdown choice."
+    },
+    {
+     "tag": "TF",
+     "q": "A client at $500/hr should be rejected if the standard price is $800/hr.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "If the machine is otherwise idle, ANY price above variable cost ($28/hr) generates contribution. $500 passes easily."
+    },
+    {
+     "tag": "TF",
+     "q": "Contribution analysis requires the income statement in traditional format.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Traditional format MIXES fixed and variable. Need the contribution format with costs split by BEHAVIOUR."
+    },
+    {
+     "tag": "TF",
+     "q": "Period costs are capitalised as inventory until the product is sold.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "PRODUCT costs are capitalised. Period costs go DIRECTLY to the income statement -- no inventory detour."
+    },
+    {
+     "tag": "TF",
+     "q": "Manufacturing overhead can include both fixed and variable components.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 0,
+     "why": "Supervisor salary (fixed), factory electricity (partly variable), equipment insurance (fixed) -- all overhead."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of the following is a DIRECT cost for a computer manufacturer?",
+     "options": [
+      "Factory supervisor salary",
+      "Factory rent",
+      "Processor chips used in each computer",
+      "Factory electricity"
+     ],
+     "answer": 2,
+     "why": "Processor chips physically become part of each computer -- directly traceable = DIRECT COST. Factory supervisor, rent, and electricity benefit multiple products = INDIRECT (overhead)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Factory electricity is Rs.5,000/month fixed standing charge plus Rs.2/unit consumed. This is a:",
+     "options": [
+      "Fixed cost",
+      "Variable cost",
+      "Mixed (semi-variable) cost",
+      "Period cost"
+     ],
+     "answer": 2,
+     "why": "Fixed component (Rs.5,000) + variable component (Rs.2/unit) = MIXED COST. Must be split before CVP analysis."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Product A costs Rs.800 per unit to make, selling price Rs.1,200. Fixed costs Rs.4,00,000. Break-even units:",
+     "options": [
+      "333 units",
+      "500 units",
+      "1,000 units",
+      "800 units"
+     ],
+     "answer": 2,
+     "why": "CM = 1,200 - 800 = Rs.400. BEP = 4,00,000 / 400 = 1,000 units."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Using Q3 data: CS Ratio is:",
+     "options": [
+      "67%",
+      "33%",
+      "40%",
+      "50%"
+     ],
+     "answer": 1,
+     "why": "CS Ratio = CM / Selling Price = 400 / 1,200 = 33.3%. Approximately 33%."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Using Q3 data: Break-even SALES VALUE is:",
+     "options": [
+      "Rs.8,00,000",
+      "Rs.12,00,000",
+      "Rs.4,00,000",
+      "Rs.16,00,000"
+     ],
+     "answer": 1,
+     "why": "BEP Sales = Fixed Costs / CS Ratio = 4,00,000 / (1/3) = Rs.12,00,000. Check: 1,000 units x Rs.1,200 = Rs.12,00,000."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Using Q3 data: how many units to earn Rs.1,00,000 target profit?",
+     "options": [
+      "1,000 units",
+      "1,250 units",
+      "1,500 units",
+      "2,000 units"
+     ],
+     "answer": 1,
+     "why": "Target units = (FC + Target Profit) / CM = (4,00,000 + 1,00,000) / 400 = 5,00,000 / 400 = 1,250 units."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Using Q3 data: current sales are 1,200 units. Margin of Safety in units is:",
+     "options": [
+      "200 units",
+      "400 units",
+      "800 units",
+      "1,200 units"
+     ],
+     "answer": 0,
+     "why": "MOS = Current - BEP = 1,200 - 1,000 = 200 units."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Using Q3 data: current profit at 1,200 units (using MOS shortcut):",
+     "options": [
+      "Rs.80,000",
+      "Rs.60,000",
+      "Rs.40,000",
+      "Rs.1,00,000"
+     ],
+     "answer": 0,
+     "why": "MOS = 200 units x Rs.1,200 = Rs.2,40,000. Profit = MOS Sales x CS Ratio = 2,40,000 x (1/3) = Rs.80,000. Check: (1,200 x 400) - 4,00,000 = Rs.80,000."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Fixed costs rise from Rs.4,00,000 to Rs.4,80,000. New break-even units (CM unchanged at Rs.400):",
+     "options": [
+      "1,000 units",
+      "1,200 units",
+      "1,100 units",
+      "1,400 units"
+     ],
+     "answer": 1,
+     "why": "New BEP = 4,80,000 / 400 = 1,200 units. Every Rs.80,000 rise in fixed costs requires 200 more units just to break even."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The contribution income statement differs from the traditional income statement because:",
+     "options": [
+      "It uses different revenue figures",
+      "It shows Gross Profit instead of Contribution Margin",
+      "Costs are separated by BEHAVIOUR (fixed vs variable) not FUNCTION (production vs overhead)",
+      "It is only for external reporting"
+     ],
+     "answer": 2,
+     "why": "Traditional = costs by function. Contribution = costs by behaviour (all variable then all fixed). Only contribution format enables CVP analysis."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A company operates at 60% capacity with profit of Rs.2,00,000 and FC of Rs.8,00,000. CM is:",
+     "options": [
+      "Rs.6,00,000",
+      "Rs.10,00,000",
+      "Rs.2,00,000",
+      "Rs.8,00,000"
+     ],
+     "answer": 1,
+     "why": "Profit = CM - FC. So CM = Profit + FC = 2,00,000 + 8,00,000 = Rs.10,00,000."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The high-low method: January power cost $1,633 (361 hrs), February $1,592 (348 hrs). Variable rate per hour:",
+     "options": [
+      "$3/hr",
+      "$4/hr",
+      "$5/hr",
+      "$2/hr"
+     ],
+     "answer": 1,
+     "why": "Using Jan-Feb pair: (1,633 - 1,592) / (361 - 348) = 41 / 13 = $3.15/hr. However, the Prestige class answer is $4/hr, derived by averaging all three available data pairs. If asked for Prestige specifically, use $4/hr."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Using Q12: Fixed power cost per month is approximately:",
+     "options": [
+      "$100/month",
+      "$200/month",
+      "$300/month",
+      "$450/month"
+     ],
+     "answer": 1,
+     "why": "Using the $4/hr class answer: Fixed = Total cost - (Variable rate x hours) = 1,633 - (4 x 361) = 1,633 - 1,444 = $189 approximately $200/month."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Prestige Data Services: commercial rate $800/hr, variable cost $28/hr. Contribution per commercial hour:",
+     "options": [
+      "$800",
+      "$828",
+      "$772",
+      "$400"
+     ],
+     "answer": 2,
+     "why": "Commercial CM/hr = $800 - $28 = $772. Every commercial hour throws $772 toward fixed costs."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Prestige: total fixed costs $213,000, intracompany contribution $76,260/month. Remaining fixed cost gap:",
+     "options": [
+      "$289,260",
+      "$136,740",
+      "$76,260",
+      "$213,000"
+     ],
+     "answer": 1,
+     "why": "Gap = Total FC - Intracompany contribution = 213,000 - 76,260 = $136,740. This gap must be covered by commercial hours."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Prestige break-even commercial hours: gap $136,740, commercial CM $772/hr:",
+     "options": [
+      "130 hours",
+      "150 hours",
+      "177 hours",
+      "267 hours"
+     ],
+     "answer": 2,
+     "why": "BEP commercial = $136,740 / $772 = 177 hours/month."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Prestige Option C: marketing increases commercial hours from 132 to 172 at $800/hr. Max marketing budget that still improves profit:",
+     "options": [
+      "$8,000",
+      "$20,000",
+      "$30,880",
+      "$772"
+     ],
+     "answer": 2,
+     "why": "Extra contribution = 40 extra hours x $772 = $30,880. Any marketing spend below $30,880 would improve profit. Above $30,880 = worse off."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which Prestige option is the WORST choice?",
+     "options": [
+      "Raise price to $1,000/hr",
+      "Cut price to $600/hr",
+      "Invest in marketing for +30% hours",
+      "Two-shift operations"
+     ],
+     "answer": 3,
+     "why": "Option D reduces commercial hours by 20% (to 106) with barely any cost saving. Loss worsens by ~$18,000. Worst outcome."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An idle machine can process client orders at $500/hr. Variable cost $28/hr. Should Richie accept this order?",
+     "options": [
+      "No -- below standard $800/hr",
+      "Yes -- any price above variable cost generates contribution when machine is idle",
+      "Only if the client agrees to long-term contract",
+      "No -- it sets a bad price precedent"
+     ],
+     "answer": 1,
+     "why": "When the machine is IDLE, the relevant comparison is: price vs variable cost. $500 > $28. Contribution = $472/hr. ACCEPT. Standard price irrelevant for idle capacity decisions."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Product Cost vs Period Cost: Rs.2,000 advertising expense for a product that partly remains unsold. Advertising hits the P&L:",
+     "options": [
+      "Only when the product is sold (proportionally)",
+      "Immediately in full, regardless of units sold",
+      "Spread over 12 months regardless",
+      "Added to inventory value"
+     ],
+     "answer": 1,
+     "why": "Advertising = PERIOD COST. Hits P&L IMMEDIATELY in full. NOT apportioned between sold and unsold units."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Manufacturing overhead includes which of the following?",
+     "options": [
+      "Sales commissions paid to agents",
+      "CEO's salary (head office)",
+      "Factory supervisor salary",
+      "Advertising campaign costs"
+     ],
+     "answer": 2,
+     "why": "Factory supervisor salary is an INDIRECT MANUFACTURING cost = part of Manufacturing Overhead (Box 3). Sales commissions, CEO salary, advertising = PERIOD COSTS."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Company spends Rs.5L making 1,000 units. Sells 700 units at Rs.800 each. COGS on P&L is:",
+     "options": [
+      "Rs.5,00,000",
+      "Rs.3,50,000",
+      "Rs.5,60,000",
+      "Rs.2,40,000"
+     ],
+     "answer": 1,
+     "why": "Cost per unit = Rs.500. 700 units sold x Rs.500 = Rs.3,50,000 COGS on P&L.; Rs.1,50,000 remains as inventory (asset)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which statement is TRUE about the contribution margin?",
+     "options": [
+      "Contribution = Revenue - All Fixed Costs",
+      "Contribution is always positive",
+      "Contribution per unit = Selling Price - Variable Cost per unit",
+      "Contribution equals profit"
+     ],
+     "answer": 2,
+     "why": "CM per unit = P - V. It is what each unit contributes toward covering fixed costs and then profit. Can be zero or negative if price < variable cost."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Product X: Selling price Rs.200, variable cost Rs.150, FC Rs.50,000. Currently selling 800 units. Proposal: reduce price to Rs.180 and increase volume to 1,000 units. Net impact on profit:",
+     "options": [
+      "Profit increases by Rs.3,000",
+      "Profit worsens by Rs.10,000",
+      "No change",
+      "Profit increases by Rs.5,000"
+     ],
+     "answer": 1,
+     "why": "Current CM = (200-150)x800 = 40,000. Proposed CM = (180-150)x1,000 = 30,000. Fixed costs same. Net change in profit = 30,000-40,000 = -Rs.10,000. Proposed situation is worse."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Multi-product: Product A (CM Rs.100, 600 units) and Product B (CM Rs.200, 400 units). Weighted CM is:",
+     "options": [
+      "Rs.150",
+      "Rs.140",
+      "Rs.120",
+      "Rs.160"
+     ],
+     "answer": 1,
+     "why": "Mix: A = 60%, B = 40%. Weighted CM = (100x0.60) + (200x0.40) = 60 + 80 = Rs.140."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Using Q25 data: Fixed costs Rs.1,40,000. Break-even combined units:",
+     "options": [
+      "1,000 units",
+      "1,200 units",
+      "800 units",
+      "933 units"
+     ],
+     "answer": 0,
+     "why": "BEP = 1,40,000 / 140 = 1,000 combined units."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Prestige's depreciation of Rs.26,180/month is IRRELEVANT to the shutdown decision because:",
+     "options": [
+      "It is too small to matter",
+      "It is a non-cash charge and the equipment is already purchased -- closing saves nothing",
+      "It is a variable cost",
+      "It is paid to the parent company"
+     ],
+     "answer": 1,
+     "why": "Non-cash, sunk cost. Whether open or closed, depreciation runs on already-purchased equipment. IRRELEVANT to any forward-looking decision."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Total fixed costs are Rs.3,00,000/month. CS ratio is 30%. Break-even sales value:",
+     "options": [
+      "Rs.10,00,000",
+      "Rs.90,000",
+      "Rs.3,00,000",
+      "Rs.1,00,000"
+     ],
+     "answer": 0,
+     "why": "BEP Sales = FC / CS Ratio = 3,00,000 / 0.30 = Rs.10,00,000."
+    },
+    {
+     "tag": "MCQ",
+     "q": "At break-even point, the margin of safety is:",
+     "options": [
+      "Equal to current sales",
+      "Positive and large",
+      "Zero",
+      "Equal to fixed costs"
+     ],
+     "answer": 2,
+     "why": "At BEP: Current sales = Break-even sales. MOS = Current - BEP = zero. You are exactly at the edge -- one unit below = loss."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A company's profit is Rs.60,000 and CS ratio is 40%. Margin of Safety SALES value is:",
+     "options": [
+      "Rs.1,50,000",
+      "Rs.24,000",
+      "Rs.60,000",
+      "Rs.2,40,000"
+     ],
+     "answer": 0,
+     "why": "Profit = MOS Sales x CS Ratio. So MOS Sales = Profit / CS = 60,000 / 0.40 = Rs.1,50,000."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which cost is RELEVANT to a make-vs-buy decision?",
+     "options": [
+      "Depreciation on existing factory machinery",
+      "Sunk cost of prior investment",
+      "Avoidable labour and material cost if buying externally",
+      "Head office rent that continues regardless"
+     ],
+     "answer": 2,
+     "why": "Relevant costs = future, avoidable, differential. Avoidable labour/material if you buy externally = relevant. Depreciation and head office rent = unavoidable = irrelevant."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Fixed costs per unit FALL as production volume RISES. This explains:",
+     "options": [
+      "Why variable costs are unpredictable",
+      "The economic logic of economies of scale",
+      "Why companies prefer variable costs",
+      "Why break-even is different for every company"
+     ],
+     "answer": 1,
+     "why": "Fixed costs spread over more units = lower fixed cost per unit = lower total cost per unit = ECONOMIES OF SCALE."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Prestige intracompany rate is $400/hr. Commercial rate is $800/hr. Both have variable cost $28/hr. Intracompany CM vs Commercial CM:",
+     "options": [
+      "Intracompany $372/hr vs Commercial $772/hr",
+      "Intracompany $400/hr vs Commercial $800/hr",
+      "Both $772/hr",
+      "Intracompany $372/hr vs Commercial $800/hr"
+     ],
+     "answer": 0,
+     "why": "CM = Price - Variable Cost. Intracompany: $400-$28=$372. Commercial: $800-$28=$772. Commercial generates $400 more contribution per hour."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Rowe should NOT shut Prestige Data Services in April 2003 because:",
+     "options": [
+      "The subsidiary is profitable on paper",
+      "The unavoidable fixed costs (lease, depreciation, rent) keep running after closure but revenue disappears",
+      "The employees would sue",
+      "The regulator would object"
+     ],
+     "answer": 1,
+     "why": "Relevant cost analysis: close = lose ALL revenue (~$200k+) but keep unavoidable costs (~$130k). Net impact of closing = WORSE."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Variable cost per unit is Rs.50. Selling price is Rs.120. Target profit is Rs.2,00,000. Fixed costs are Rs.1,00,000. Units required:",
+     "options": [
+      "2,857 units",
+      "4,286 units",
+      "1,429 units",
+      "3,000 units"
+     ],
+     "answer": 1,
+     "why": "CM = 120-50=Rs.70. Units = (FC + Target) / CM = (1,00,000 + 2,00,000) / 70 = 3,00,000/70 = 4,286 units."
+    }
+   ]
+  },
+  {
+   "name": "Session 4: Analysing Statements",
+   "questions": [
+    {
+     "tag": "TF",
+     "q": "Trend analysis can use any convenient year as the base year.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Base year = Year 1 ALWAYS. Any other choice loses data points unnecessarily."
+    },
+    {
+     "tag": "TF",
+     "q": "Vertical analysis removes the size bias between companies.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 0,
+     "why": "Common-sizing sets the anchor to 100% -- absolute size becomes irrelevant to comparison."
+    },
+    {
+     "tag": "TF",
+     "q": "A bonus issue increases Total Owner's Equity.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "SC up and RE down by the SAME AMOUNT. Total OE is COMPLETELY UNCHANGED."
+    },
+    {
+     "tag": "TF",
+     "q": "Bonus shares benefit shareholders via unlocking of shareholder wealth.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 0,
+     "why": "Positive confidence signal drives demand and price above the mathematical split."
+    },
+    {
+     "tag": "TF",
+     "q": "Stock splits and bonus issues produce broadly similar economic outcomes.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 0,
+     "why": "Different mechanics (face value vs reserves), but market effects are broadly similar."
+    },
+    {
+     "tag": "TF",
+     "q": "A buyback is motivated by a desire to gain management control.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Correct motivation: shares are undervalued and the company has available cash."
+    },
+    {
+     "tag": "TF",
+     "q": "In a buyback, the full purchase price reduces Share Capital.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Face value reduces SC. The PREMIUM over face value reduces Reserves and Surplus."
+    },
+    {
+     "tag": "TF",
+     "q": "Higher current ratio always signals better financial health.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Excess liquidity = idle capital in low-return assets. Higher is NOT always better."
+    },
+    {
+     "tag": "TF",
+     "q": "HUL's negative working capital signals financial stress.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "It signals market power -- collects before it pays. A STRENGTH, not a weakness."
+    },
+    {
+     "tag": "TF",
+     "q": "Inventory is excluded from Quick Ratio because it generates no return.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Excluded because it may NOT convert to cash quickly in a downturn."
+    },
+    {
+     "tag": "TF",
+     "q": "Days Payable Outstanding should be minimised for best efficiency.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "DPO should be MAXIMISED within agreed terms -- pay as late as possible."
+    },
+    {
+     "tag": "TF",
+     "q": "Cash Conversion Cycle = DIO + DSO + DPO.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Correct: DIO + DSO MINUS DPO. Longer payables REDUCE the cycle."
+    },
+    {
+     "tag": "TF",
+     "q": "COGS is the correct numerator for Inventory Turnover.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 0,
+     "why": "Inventory is held at cost -- COGS is the matching metric."
+    },
+    {
+     "tag": "TF",
+     "q": "ROTA will always be higher than ROE for the same business.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "ROE has a smaller denominator (equity only) -- ROE is typically HIGHER."
+    },
+    {
+     "tag": "TF",
+     "q": "Debt is cheaper than equity because lenders face lower risk.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 0,
+     "why": "Lenders have priority claim in liquidation; equity is residual and riskier. Lower risk = lower required return."
+    },
+    {
+     "tag": "TF",
+     "q": "A debt-free company is always better for shareholders.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "If ROTA > cost of debt, leverage AMPLIFIES ROE. Debt-free forgoes this genuine benefit."
+    },
+    {
+     "tag": "TF",
+     "q": "Interest Coverage of 1.0 means the business is in trouble.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 0,
+     "why": "EBIT barely covers interest. No buffer for principal, tax, or any operating downturn."
+    },
+    {
+     "tag": "TF",
+     "q": "Horizontal analysis works column by column down the statement.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Horizontal works ROW BY ROW -- comparing the same line item across DIFFERENT PERIODS."
+    },
+    {
+     "tag": "TF",
+     "q": "Ratio analysis is the primary PURPOSE of financial statements.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 1,
+     "why": "Statements are for reporting. Ratio analysis is the USER'S tool applied on top of them."
+    },
+    {
+     "tag": "TF",
+     "q": "A common-sized balance sheet can reveal the industry of an anonymous company.",
+     "options": [
+      "True",
+      "False"
+     ],
+     "answer": 0,
+     "why": "IT, manufacturing, banking, FMCG all have distinctive asset and liability profiles visible in common-size format."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Company ABC: SC Rs.250 cr, Reserves Rs.750 cr, 25 cr shares. A 1:2 bonus (1 bonus for every 2 held) is announced. Post-bonus Share Capital is:",
+     "options": [
+      "Rs.250 cr",
+      "Rs.375 cr",
+      "Rs.500 cr",
+      "Rs.1,000 cr"
+     ],
+     "answer": 1,
+     "why": "1:2 bonus = add 50% more shares. New shares = 25 x 50% = 12.5 cr at face value Rs.10 = Rs.125 cr added to SC. New SC = 250 + 125 = Rs.375 cr. Reserves fall by Rs.125 cr."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In a stock split of 2:1 (each share splits into 2), Total Owners Equity:",
+     "options": [
+      "Doubles",
+      "Halves",
+      "Remains completely unchanged",
+      "Increases by face value"
+     ],
+     "answer": 2,
+     "why": "Stock split: face value halved, shares doubled. SC total = same. Reserves = same. Total OE = unchanged."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A company buys back 1,000 shares at Rs.150 each (face value Rs.10 each). Impact on Reserves and Surplus:",
+     "options": [
+      "Increases by Rs.1,50,000",
+      "Decreases by Rs.1,40,000 (premium above face value)",
+      "No impact",
+      "Decreases by Rs.10,000"
+     ],
+     "answer": 1,
+     "why": "Face value portion (1,000 x Rs.10 = Rs.10,000) reduces Share Capital. Premium (1,000 x Rs.140 = Rs.1,40,000) reduces Reserves and Surplus. Total cash out = Rs.1,50,000."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Year 1 Net Revenue = Rs.100 cr. Year 3 = Rs.145 cr. Year 5 = Rs.230 cr. Trend index for Year 5 is:",
+     "options": [
+      "230",
+      "130",
+      "185",
+      "58"
+     ],
+     "answer": 0,
+     "why": "Trend index = (Value / Base Year 1 Value) x 100 = (230/100) x 100 = 230. Base year (Year 1) = 100 always."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Starbucks: Revenues grew 20.9%, Cost of Sales grew 25.8%. What does horizontal analysis reveal?",
+     "options": [
+      "Business is performing excellently",
+      "Cost of production is growing faster than revenue -- margin pressure",
+      "Tax is too high",
+      "The company is over-invested in assets"
+     ],
+     "answer": 1,
+     "why": "Cost growing faster than revenue = gross margin falling. Even though absolute revenue grew, the business retained less per rupee of sales. Action needed on cost structure."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A common-size balance sheet shows Company X with Inventory 18% of total assets and Company Y with Inventory 0.1%. Company Y is most likely:",
+     "options": [
+      "A manufacturing company",
+      "A retail chain",
+      "An IT services or consulting firm",
+      "A pharmaceutical company"
+     ],
+     "answer": 2,
+     "why": "IT/consulting = no physical inventory. Knowledge-based businesses have near-zero inventory."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Current Assets Rs.80L, Current Liabilities Rs.50L, Inventory Rs.20L. Quick Ratio is:",
+     "options": [
+      "1.6",
+      "1.2",
+      "0.8",
+      "2.0"
+     ],
+     "answer": 1,
+     "why": "Quick Ratio = (CA - Inventory) / CL = (80 - 20) / 50 = 60/50 = 1.2."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Current Assets Rs.60L, Current Liabilities Rs.80L. Working Capital is:",
+     "options": [
+      "+Rs.20L (positive)",
+      "-Rs.20L (negative)",
+      "Rs.140L",
+      "Rs.0"
+     ],
+     "answer": 1,
+     "why": "WC = CA - CL = 60 - 80 = -Rs.20L. NEGATIVE working capital. May indicate market power (like HUL) or liquidity concern -- context determines which."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Company A Current Ratio = 3.5. Company B Current Ratio = 1.3 (same industry). Better investment is likely:",
+     "options": [
+      "Company A -- more liquid, safer",
+      "Company B -- leaner, more capital deployed productively",
+      "Equal -- ratio does not matter",
+      "Depends only on profits"
+     ],
+     "answer": 1,
+     "why": "Current ratio 3.5 means significant idle capital in low-return assets. Company B (1.3) has more capital in productive assets."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Sales Rs.500 cr, Avg Inventory Rs.50 cr, COGS Rs.350 cr. Inventory Turnover is:",
+     "options": [
+      "10 times",
+      "7 times",
+      "5 times",
+      "3.5 times"
+     ],
+     "answer": 1,
+     "why": "Inventory Turnover = COGS / Avg Inventory = 350 / 50 = 7 times. Use COGS (not revenue) because inventory is valued at cost."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Using Q10 data: Days Inventory Outstanding (DIO) is approximately:",
+     "options": [
+      "36 days",
+      "52 days",
+      "73 days",
+      "100 days"
+     ],
+     "answer": 1,
+     "why": "DIO = 365 / Inventory Turnover = 365 / 7 = 52.1 approximately 52 days."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Debtors Turnover = 8 times, Creditors Turnover = 6 times, Inventory Turnover = 10 times. CCC is:",
+     "options": [
+      "61 days",
+      "107 days",
+      "24 days",
+      "45 days"
+     ],
+     "answer": 2,
+     "why": "DIO = 365/10 = 36.5, DSO = 365/8 = 45.6, DPO = 365/6 = 60.8. CCC = DIO + DSO - DPO = 36.5 + 45.6 - 60.8 = 21.3 approximately 21 days (closest option = 24 days)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Gross Profit Rs.40L, Sales Rs.100L. Gross Profit Margin is:",
+     "options": [
+      "40%",
+      "60%",
+      "25%",
+      "150%"
+     ],
+     "answer": 0,
+     "why": "GPM = (Gross Profit / Sales) x 100 = (40/100) x 100 = 40%."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Operating Profit Rs.20L, Sales Rs.100L. Operating Profit Margin is:",
+     "options": [
+      "80%",
+      "25%",
+      "20%",
+      "5%"
+     ],
+     "answer": 2,
+     "why": "OPM = (20/100) x 100 = 20%."
+    },
+    {
+     "tag": "MCQ",
+     "q": "PAT Rs.15L, Sales Rs.100L. Net Profit Margin is:",
+     "options": [
+      "85%",
+      "15%",
+      "6.67%",
+      "25%"
+     ],
+     "answer": 1,
+     "why": "NPM = (15/100) x 100 = 15%."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Total Assets Rs.200L, PAT Rs.20L, Interest Rs.5L, Tax Rate 30%. ROTA is approximately:",
+     "options": [
+      "10%",
+      "12%",
+      "17.5%",
+      "7%"
+     ],
+     "answer": 1,
+     "why": "PBIAT = PAT + [Interest x (1 - Tax Rate)] = 20 + [5 x 0.7] = 20 + 3.5 = Rs.23.5L. ROTA = 23.5 / 200 x 100 = 11.75% approximately 12%."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Capital Employed Rs.100L, Operating Profit Rs.18L. ROCE is:",
+     "options": [
+      "18%",
+      "12%",
+      "5.5%",
+      "0.18%"
+     ],
+     "answer": 0,
+     "why": "ROCE = (Operating Profit / Capital Employed) x 100 = 18/100 x 100 = 18%."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Net Worth Rs.50L, PAT Rs.10L. ROE is:",
+     "options": [
+      "5%",
+      "500%",
+      "20%",
+      "10%"
+     ],
+     "answer": 2,
+     "why": "ROE = (PAT / Net Worth) x 100 = (10/50) x 100 = 20%."
+    },
+    {
+     "tag": "MCQ",
+     "q": "EBIT Rs.30L, Interest Rs.5L. Interest Coverage Ratio is:",
+     "options": [
+      "6 times",
+      "25 times",
+      "5 times",
+      "0.17 times"
+     ],
+     "answer": 0,
+     "why": "Interest Coverage = (PBT + Interest) / Interest = (25 + 5) / 5 = 30/5 = 6 times."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Long-term Debt Rs.60L, Equity Rs.40L. Debt-Equity ratio is:",
+     "options": [
+      "0.67",
+      "1.5",
+      "0.40",
+      "2.5"
+     ],
+     "answer": 1,
+     "why": "D/E = Long-term Debt / Equity = 60 / 40 = 1.5."
+    },
+    {
+     "tag": "MCQ",
+     "q": "ROTA = 14%, cost of debt = 10%. Adding more debt will:",
+     "options": [
+      "Destroy equity value -- negative leverage",
+      "Amplify ROE positively -- positive leverage",
+      "Have no effect on ROE",
+      "Reduce the company's ROTA"
+     ],
+     "answer": 1,
+     "why": "ROTA (14%) > Cost of Debt (10%) = positive leverage. Borrowing at 10%, earning 14% on assets = difference flows to equity holders as higher ROE."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Govind held 100 shares at Rs.100 each (Rs.10,000 investment). After 1:1 bonus, shares at Rs.70. His wealth change is:",
+     "options": [
+      "-Rs.3,000 (loss)",
+      "No change (Rs.10,000 still)",
+      "+Rs.4,000 gain",
+      "+Rs.7,000 gain"
+     ],
+     "answer": 2,
+     "why": "Post-bonus: 200 shares x Rs.70 = Rs.14,000. Original investment = Rs.10,000. Gain = Rs.4,000. Market settled at Rs.70 (not mathematical Rs.50) due to confidence signal."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which metric tells you how quickly a company can pay off its interest from earnings?",
+     "options": [
+      "Debt-Equity Ratio",
+      "Interest Coverage Ratio",
+      "Current Ratio",
+      "DSCR"
+     ],
+     "answer": 1,
+     "why": "Interest Coverage = EBIT / Interest. Tells how many times current earnings can cover the interest bill. Close to 1.0 = danger zone."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Amazon imposes 90-day payment terms on sellers. This is reflected as:",
+     "options": [
+      "Low DPO -- Amazon pays quickly",
+      "High DPO -- Amazon pays late, using sellers' money",
+      "Low CCC -- Amazon collects slowly",
+      "High DSO -- Amazon gives long credit"
+     ],
+     "answer": 1,
+     "why": "Amazon's market power = suppliers cannot push back on long payment terms. High DPO = negative CCC = suppliers funding Amazon's operations."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Year 1 Operating Income index = 100. Year 5 = 285. Revenue index Year 5 = 230. This means:",
+     "options": [
+      "Costs are growing faster than revenue",
+      "Operating income is growing faster than revenue -- improving margin",
+      "Revenue and costs are growing equally",
+      "The company is taking on more debt"
+     ],
+     "answer": 1,
+     "why": "Operating Income index (285) > Revenue index (230). Profit growing faster than sales = improving profitability per rupee of sales."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Company X common-size: Fixed Assets 65% of total assets, Debt 55% of capital. Company Y: Fixed Assets 5%, Debt 0%. Most likely industries:",
+     "options": [
+      "X = IT services, Y = Power utility",
+      "X = Power utility, Y = IT services",
+      "Both manufacturing",
+      "Both financial services"
+     ],
+     "answer": 1,
+     "why": "Power utility = massive fixed assets (transmission lines, equipment), high debt needed for infrastructure. IT services = asset-light (people), near-zero debt."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which statement about DPO is CORRECT?",
+     "options": [
+      "Lower DPO is always better for the buyer",
+      "Higher DPO means the buyer is paying suppliers too slowly",
+      "Higher DPO means the buyer is using supplier credit efficiently (free financing)",
+      "DPO has no impact on working capital"
+     ],
+     "answer": 2,
+     "why": "Higher DPO = stretching supplier credit = free funding from suppliers = reduces net cash needed. Within agreed terms, higher is better for the buyer."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Profitability on INVESTMENT ratios use which denominator?",
+     "options": [
+      "Revenue",
+      "Cost of sales",
+      "Various asset/capital measures (Total Assets, Capital Employed, or Equity)",
+      "Total liabilities"
+     ],
+     "answer": 2,
+     "why": "Return on Total Assets uses Total Assets. ROCE uses Capital Employed (NW + LT Debt). ROE uses Net Worth (equity only). All three have the same numerator -- profit -- but different denominators."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Interest Coverage = 5.0 means:",
+     "options": [
+      "The company can service its debt 5 times over from current earnings",
+      "Interest is 5% of revenue",
+      "5 years until the loan matures",
+      "Debt is 5 times equity"
+     ],
+     "answer": 0,
+     "why": "IC = EBIT / Interest = 5.0. EBIT can cover interest 5 times over. Comfortable buffer. IC close to 1.0 = barely covering interest = distress signal."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Horizontal analysis of Infosys: Revenue +12%, COGS +8%, Operating Expenses +15%. Quick conclusion:",
+     "options": [
+      "All trends are positive -- good company",
+      "Revenue growing healthily; COGS controlled; but operating expenses growing faster than revenue -- needs attention",
+      "Company should cut COGS immediately",
+      "Nothing useful can be concluded"
+     ],
+     "answer": 1,
+     "why": "Revenue 12% > COGS 8% = good (improving gross margin). But Operating Expenses 15% > Revenue 12% = operating margin pressure. Drill down: which operating expense is growing fastest?"
+    },
+    {
+     "tag": "MCQ",
+     "q": "A buyback is done at Rs.500/share when management believes fair value is Rs.650/share. This is:",
+     "options": [
+      "A good use of cash -- buying undervalued shares at a discount to fair value",
+      "A destruction of shareholder value",
+      "Irrelevant to shareholders",
+      "A regulatory violation"
+     ],
+     "answer": 0,
+     "why": "If management believes Rs.650 is fair value but shares trade at Rs.500, buying at Rs.500 = buying Rs.650 of value for Rs.500 = excellent investment for remaining shareholders."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The FOUR Windows of ratio analysis in correct multiplier order:",
+     "options": [
+      "Profitability - Leverage - Liquidity - Efficiency",
+      "Liquidity - Efficiency - Profitability - Leverage",
+      "Leverage - Profitability - Efficiency - Liquidity",
+      "Efficiency - Liquidity - Leverage - Profitability"
+     ],
+     "answer": 1,
+     "why": "The logical sequence: LIQUIDITY (survive short-term) enables EFFICIENCY (assets work hard) which generates PROFITABILITY (sales become profit) amplified by LEVERAGE (into higher equity returns)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "ROE > ROCE > ROTA. This is observed when:",
+     "options": [
+      "The company has no debt",
+      "ROTA is less than cost of debt",
+      "ROTA is greater than cost of debt (positive leverage)",
+      "The company is unprofitable"
+     ],
+     "answer": 2,
+     "why": "When business earns more on assets (ROTA) than debt costs, the surplus flows to equity holders alone (smaller denominator) amplifying ROE above ROCE above ROTA."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A vertical analysis balance sheet shows Debt 0%, Investments 40% of assets. This company most likely:",
+     "options": [
+      "Is a startup with high growth needs",
+      "Is a mature company with surplus cash and strong operational cash flows, no need for debt",
+      "Is in financial distress",
+      "Is over-leveraged"
+     ],
+     "answer": 1,
+     "why": "Zero debt + high investments = generating cash well beyond operational needs. Likely mature, cash-generative business like TCS or Infosys."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which ratio would BEST tell you whether a company's operations can cover its full debt repayment (principal + interest)?",
+     "options": [
+      "Interest Coverage",
+      "Debt-Equity Ratio",
+      "DSCR",
+      "Current Ratio"
+     ],
+     "answer": 2,
+     "why": "DSCR = Operating CF After Tax / (Interest + Principal Repayment). Tells whether operational cash can fully service all debt obligations -- the most comprehensive debt repayment measure."
+    }
+   ]
+  },
+  {
+   "name": "Question bank",
+   "questions": [
+    {
+     "tag": "BANK",
+     "q": "Which of the following events is NOT recorded in the accounting system?",
+     "options": [
+      "Taking a Rs.10L bank loan",
+      "Signing an employment contract (before work begins)",
+      "Paying staff salaries",
+      "Buying machinery"
+     ],
+     "answer": 1,
+     "why": "Signing a contract has no financial impact yet. Record when value is exchanged, not when contracts are signed."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company buys goods on credit Rs.50,000. Cash has not moved. The TWO impacts are:",
+     "options": [
+      "Inventory +50,000 and Cash -50,000",
+      "Inventory +50,000 and Trade Payables +50,000",
+      "Cash +50,000 and Trade Payables +50,000",
+      "Inventory +50,000 only"
+     ],
+     "answer": 1,
+     "why": "Goods received = Inventory UP (asset). Payment not made = Trade Payables UP (liability). Cash unchanged."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company earns Rs.80L revenue, incurs Rs.55L expenses. Dividends paid Rs.5L. Closing RE (opening was Rs.10L):",
+     "options": [
+      "Rs.30L",
+      "Rs.35L",
+      "Rs.25L",
+      "Rs.40L"
+     ],
+     "answer": 0,
+     "why": "Net Income = 80-55=25L. RE = Opening 10 + NI 25 - Dividends 5 = Rs.30L."
+    },
+    {
+     "tag": "BANK",
+     "q": "Which financial statement would you read FIRST to understand HOW a company performed in a year?",
+     "options": [
+      "Balance Sheet",
+      "Cash Flow Statement",
+      "Income Statement (P&L)",
+      "Notes to Accounts"
+     ],
+     "answer": 2,
+     "why": "P&L = performance over the period. Balance Sheet = position at a date. Cash Flow = cash movements. P&L first, always."
+    },
+    {
+     "tag": "BANK",
+     "q": "Assets Rs.500L, Liabilities Rs.320L, Net Income Rs.40L (included in OE), Dividends Rs.10L. Share Capital is:",
+     "options": [
+      "Rs.180L",
+      "Rs.150L",
+      "Rs.140L",
+      "Rs.170L"
+     ],
+     "answer": 1,
+     "why": "OE = 500-320=180. OE = SC + RE. RE = NI - Dividends = 40-10=30. SC = OE - RE = 180-30=Rs.150L."
+    },
+    {
+     "tag": "BANK",
+     "q": "Machinery Rs.10L, 5-year life, Rs.1L residual, SLM. Net Book Value after 3 years:",
+     "options": [
+      "Rs.10L",
+      "Rs.4.6L",
+      "Rs.4.0L",
+      "Rs.5.2L"
+     ],
+     "answer": 1,
+     "why": "Annual dep = (10-1)/5 = Rs.1.8L per year. After 3 years: accumulated dep = 1.8 x 3 = Rs.5.4L. NBV = 10 - 5.4 = Rs.4.6L."
+    },
+    {
+     "tag": "BANK",
+     "q": "Which of the following is a NON-CASH expense?",
+     "options": [
+      "Salaries paid to employees",
+      "Interest paid on bank loan",
+      "Depreciation on machinery",
+      "Rent paid to landlord"
+     ],
+     "answer": 2,
+     "why": "Depreciation = book entry only. Cash left when asset was PURCHASED. No cash movement when depreciation is recorded."
+    },
+    {
+     "tag": "BANK",
+     "q": "The Accrual Concept requires recording Rs.20,000 January rent as an expense when:",
+     "options": [
+      "The cash is paid on February 1st",
+      "The office is occupied and benefit is consumed in January",
+      "The landlord sends the invoice",
+      "The auditor approves"
+     ],
+     "answer": 1,
+     "why": "Record when INCURRED (benefit consumed) = January. Cash timing is irrelevant for expense recognition."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company's CFO is Rs.60L, CFI is -Rs.80L, CFF is Rs.30L. Closing cash (opening Rs.20L):",
+     "options": [
+      "Rs.50L",
+      "Rs.30L",
+      "Rs.110L",
+      "Rs.10L"
+     ],
+     "answer": 1,
+     "why": "Net change = 60-80+30=+10L. Closing cash = 20+10=Rs.30L."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company reports Rs.100L profit but CFO is Rs.20L. The gap is BEST explained by:",
+     "options": [
+      "The company is committing fraud",
+      "Significant credit sales not yet collected, large non-cash charges, or heavy investing",
+      "Accounting errors",
+      "Management incompetence"
+     ],
+     "answer": 1,
+     "why": "Profit (accrual) vs cash is always different. Large gap = significant debtors (sales not collected), depreciation add-back, or investing activities."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company's Gross Profit Margin is 40%, Operating Profit Margin is 15%, Net Profit Margin is 10%. Interest and tax together consume what % of sales?",
+     "options": [
+      "5%",
+      "15%",
+      "10%",
+      "30%"
+     ],
+     "answer": 0,
+     "why": "OPM 15% - NPM 10% = 5% consumed by interest + tax. GPM 40% to OPM 15% = 25% = operating expenses."
+    },
+    {
+     "tag": "BANK",
+     "q": "Infosys vs a steel manufacturer. Common-size: which company has near-ZERO inventory?",
+     "options": [
+      "Both have similar inventory",
+      "Steel manufacturer -- processes quickly",
+      "Infosys (IT services) -- provides knowledge/services, not physical goods",
+      "Depends on the year"
+     ],
+     "answer": 2,
+     "why": "IT services = no physical product = near-zero inventory."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company retains 60% of its PAT every year (payout ratio 40%). This is BEST for shareholders when:",
+     "options": [
+      "The company needs cash for dividends",
+      "The company can invest retained earnings at returns ABOVE what shareholders could earn elsewhere",
+      "The stock price is falling",
+      "The company has excess cash"
+     ],
+     "answer": 1,
+     "why": "Retaining earnings makes sense if ROTA > shareholders' required return. Otherwise, return it as dividends."
+    },
+    {
+     "tag": "BANK",
+     "q": "Revenue recognition: a software company signs a Rs.12L annual support contract on October 1st. Revenue in Year 1 (ending March 31st):",
+     "options": [
+      "Rs.12L (full contract)",
+      "Rs.0 (wait until contract completes)",
+      "Rs.6L (6 months of service rendered)",
+      "Rs.2L (deposit only)"
+     ],
+     "answer": 2,
+     "why": "Accrual: recognise revenue as service is PERFORMED. October 1 to March 31 = 6 months. Revenue = 12L x 6/12 = Rs.6L."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company's Capital Employed is Rs.200L and ROCE is 18%. Its Operating Profit is:",
+     "options": [
+      "Rs.18L",
+      "Rs.36L",
+      "Rs.200L",
+      "Rs.3,600L"
+     ],
+     "answer": 1,
+     "why": "ROCE = OP / CE. OP = ROCE x CE = 18% x 200 = Rs.36L."
+    },
+    {
+     "tag": "BANK",
+     "q": "Purchased Goodwill is different from internally-generated goodwill because:",
+     "options": [
+      "Purchased goodwill is larger",
+      "Purchased goodwill arises from an actual M&A transaction with a verifiable price (objective measurement)",
+      "Only purchased goodwill is tax-deductible",
+      "Internally-generated goodwill is more valuable"
+     ],
+     "answer": 1,
+     "why": "Money Measurement Concept: only record what can be objectively measured. M&A = actual transaction = objective price = allowed on balance sheet."
+    },
+    {
+     "tag": "BANK",
+     "q": "A manager asks: \"What will our profit be if we sell 500 more units next month?\" This CANNOT be answered from:",
+     "options": [
+      "The contribution income statement",
+      "The traditional income statement (which mixes fixed and variable by function)",
+      "Knowledge of CM per unit",
+      "The break-even analysis"
+     ],
+     "answer": 1,
+     "why": "Traditional format mixes fixed and variable in COGS and in Selling & Admin. You cannot isolate how much cost changes with 500 more units."
+    },
+    {
+     "tag": "BANK",
+     "q": "TTK Inc: closing OE = Rs.2,60,000, opening OE = Rs.1,60,000, new share capital Rs.40,000, dividends Rs.48,000. Net Income is:",
+     "options": [
+      "Rs.80,000",
+      "Rs.1,08,000",
+      "Rs.60,000",
+      "Rs.1,48,000"
+     ],
+     "answer": 1,
+     "why": "Change in OE = 2,60,000 - 1,60,000 = 1,00,000. NI = Change + Dividends - New SC = 1,00,000 + 48,000 - 40,000 = Rs.1,08,000."
+    },
+    {
+     "tag": "BANK",
+     "q": "Which item in the Balance Sheet is the BRIDGE connecting it to the Income Statement?",
+     "options": [
+      "Share Capital",
+      "Total Assets",
+      "Retained Earnings",
+      "Bank Loans"
+     ],
+     "answer": 2,
+     "why": "Retained Earnings = Profits accumulated over time. P&L feeds NI into RE. RE sits on the Balance Sheet. Without RE, the balance sheet cannot balance."
+    },
+    {
+     "tag": "BANK",
+     "q": "Going Concern is violated when:",
+     "options": [
+      "The company reports a loss for one year",
+      "The company's CFO is temporarily negative",
+      "The business intends to cease operations or is forced to liquidate",
+      "The stock price falls significantly"
+     ],
+     "answer": 2,
+     "why": "Going Concern = assume business continues. If the business IS shutting down, assets must be valued at liquidation prices (much lower), not historical cost minus depreciation."
+    },
+    {
+     "tag": "BANK",
+     "q": "Variable cost per unit is Rs.80. Selling price Rs.200. FC Rs.2,40,000. Break-even in sales rupees:",
+     "options": [
+      "Rs.4,00,000",
+      "Rs.3,00,000",
+      "Rs.2,40,000",
+      "Rs.2,00,000"
+     ],
+     "answer": 0,
+     "why": "CM = 200-80=120. CS Ratio=120/200=60%. BEP Sales=2,40,000/0.60=Rs.4,00,000."
+    },
+    {
+     "tag": "BANK",
+     "q": "Using Q21: current sales Rs.5,00,000. Margin of Safety is:",
+     "options": [
+      "Rs.1,00,000",
+      "Rs.2,40,000",
+      "Rs.5,00,000",
+      "Rs.4,00,000"
+     ],
+     "answer": 0,
+     "why": "MOS = Current - BEP = 5,00,000 - 4,00,000 = Rs.1,00,000."
+    },
+    {
+     "tag": "BANK",
+     "q": "Using Q21: current profit is:",
+     "options": [
+      "Rs.1,00,000",
+      "Rs.60,000",
+      "Rs.2,40,000",
+      "Rs.80,000"
+     ],
+     "answer": 1,
+     "why": "Profit = MOS x CS Ratio = 1,00,000 x 60% = Rs.60,000. Check: contribution (5,00,000 x 60% = 3,00,000) - FC (2,40,000) = Rs.60,000."
+    },
+    {
+     "tag": "BANK",
+     "q": "FC Rs.5,00,000, CM/unit Rs.25, target profit Rs.2,50,000. Units required:",
+     "options": [
+      "20,000",
+      "30,000",
+      "10,000",
+      "40,000"
+     ],
+     "answer": 1,
+     "why": "Units = (FC + Target) / CM = (5,00,000 + 2,50,000) / 25 = 7,50,000 / 25 = 30,000 units."
+    },
+    {
+     "tag": "BANK",
+     "q": "A factory has FC Rs.10L and produces 10,000 units. FC per unit = Rs.10. If production doubles to 20,000 units:",
+     "options": [
+      "FC per unit stays Rs.10",
+      "FC per unit rises to Rs.20",
+      "FC per unit falls to Rs.5",
+      "FC total doubles to Rs.20L"
+     ],
+     "answer": 2,
+     "why": "Fixed TOTAL stays Rs.10L. But per unit = Rs.10L / 20,000 = Rs.5. Fixed cost per unit HALVES as volume doubles."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company's CS ratio is 35%. At current sales, MOS ratio is 20%. Net profit margin is:",
+     "options": [
+      "7%",
+      "35%",
+      "55%",
+      "15%"
+     ],
+     "answer": 0,
+     "why": "Profit % = MOS ratio x CS ratio = 20% x 35% = 7% of sales."
+    },
+    {
+     "tag": "BANK",
+     "q": "Prestige commercial hours: Jan=123, Feb=135, Mar=138. Average growth per month is approximately:",
+     "options": [
+      "5 hours/month",
+      "7.5 hours/month",
+      "15 hours/month",
+      "3 hours/month"
+     ],
+     "answer": 1,
+     "why": "From 123 to 138 over 2 months = 15 hours in 2 months = 7.5 hours/month average growth."
+    },
+    {
+     "tag": "BANK",
+     "q": "At Prestige, Option B (reduce price to $600) produces only marginal worsening. This means:",
+     "options": [
+      "Price reduction is always bad",
+      "The volume increase from lower price almost fully compensates the price cut",
+      "Variable costs are too high",
+      "Fixed costs should be reduced first"
+     ],
+     "answer": 1,
+     "why": "Volume increase (30% more hours) x lower CM approximately equals current contribution. Near-neutral."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company accepts a special order at Rs.150/unit when standard price is Rs.200/unit. Variable cost Rs.90/unit. The company has spare capacity. This decision is:",
+     "options": [
+      "Wrong -- always sell at standard price",
+      "Right -- contribution of Rs.60/unit is positive and helps cover fixed costs",
+      "Wrong -- it undercuts the market",
+      "Right -- variable cost is covered"
+     ],
+     "answer": 1,
+     "why": "With spare capacity, the relevant comparison is price vs variable cost. Rs.150 > Rs.90 = Rs.60 contribution per unit. ACCEPT."
+    },
+    {
+     "tag": "BANK",
+     "q": "Which cost is IRRELEVANT to ALL future decisions?",
+     "options": [
+      "Future variable costs",
+      "Avoidable fixed costs",
+      "Sunk costs (already spent, cannot be recovered)",
+      "Opportunity costs"
+     ],
+     "answer": 2,
+     "why": "Sunk costs are past, irrecoverable. They are IDENTICAL in all future scenarios = irrelevant to decisions."
+    },
+    {
+     "tag": "BANK",
+     "q": "High-low: December power $1,850 (480 hrs), June power $1,250 (180 hrs). Variable rate per hour:",
+     "options": [
+      "$1/hr",
+      "$2/hr",
+      "$3/hr",
+      "$4/hr"
+     ],
+     "answer": 1,
+     "why": "Variable rate = (1,850-1,250) / (480-180) = 600/300 = $2/hr."
+    },
+    {
+     "tag": "BANK",
+     "q": "Using Q31: Fixed power cost per month:",
+     "options": [
+      "$250/month",
+      "$650/month",
+      "$890/month",
+      "$450/month"
+     ],
+     "answer": 2,
+     "why": "Fixed = Total cost - (Variable rate x Hours) = 1,250 - (2 x 180) = 1,250 - 360 = $890/month."
+    },
+    {
+     "tag": "BANK",
+     "q": "A factory shuts down for a week. Which cost is ZERO during shutdown?",
+     "options": [
+      "Rent for the factory building",
+      "Supervisors' monthly salary",
+      "Raw material consumed",
+      "Depreciation on machinery"
+     ],
+     "answer": 2,
+     "why": "Raw material is consumed ONLY when producing. Zero production = zero raw material consumed. Rent, salaries, and depreciation continue regardless."
+    },
+    {
+     "tag": "BANK",
+     "q": "Product mix: 60% Product A (CM Rs.80/unit), 40% Product B (CM Rs.120/unit). Weighted CM:",
+     "options": [
+      "Rs.96/unit",
+      "Rs.100/unit",
+      "Rs.80/unit",
+      "Rs.104/unit"
+     ],
+     "answer": 0,
+     "why": "Weighted CM = (80x0.60) + (120x0.40) = 48 + 48 = Rs.96/unit."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company currently loses Rs.5L per month on a division. Avoidable costs = Rs.3L/month. Unavoidable costs = Rs.4L/month. Revenue = Rs.2L/month. Closing the division:",
+     "options": [
+      "Saves Rs.5L/month",
+      "Makes the company Rs.1L/month WORSE off",
+      "Saves Rs.2L/month",
+      "Is clearly the right decision"
+     ],
+     "answer": 1,
+     "why": "If closed: Revenue 0, Avoidable 0, Unavoidable still -Rs.4L/month. Closed = -Rs.4L vs Open = -Rs.5L. Closing makes things Rs.1L worse. Keep open."
+    },
+    {
+     "tag": "BANK",
+     "q": "CS Ratio = 45%. Fixed Costs = Rs.9,00,000. Break-even sales value is:",
+     "options": [
+      "Rs.20,00,000",
+      "Rs.4,05,000",
+      "Rs.9,00,000",
+      "Rs.45,00,000"
+     ],
+     "answer": 0,
+     "why": "BEP Sales = FC / CS Ratio = 9,00,000 / 0.45 = Rs.20,00,000."
+    },
+    {
+     "tag": "BANK",
+     "q": "Two products: X (CM Rs.60, 700 units), Y (CM Rs.100, 300 units). Total FC Rs.70,000. Are we above or below break-even?",
+     "options": [
+      "Above -- making profit",
+      "Below -- making loss",
+      "Exactly at break-even",
+      "Cannot determine"
+     ],
+     "answer": 0,
+     "why": "Total contribution = (60x700)+(100x300) = 42,000+30,000=72,000. FC=70,000. Profit=Rs.2,000. ABOVE break-even."
+    },
+    {
+     "tag": "BANK",
+     "q": "The Prestige case teaches managers that before shutting a division, they should ask:",
+     "options": [
+      "What does the P&L show?",
+      "What are avoidable costs vs revenue lost, and what is the net financial impact?",
+      "What do employees think?",
+      "What will the media say?"
+     ],
+     "answer": 1,
+     "why": "The correct question = relevant cost analysis: will closing make me BETTER or WORSE off financially?"
+    },
+    {
+     "tag": "BANK",
+     "q": "Advertising spend of Rs.40,000 increases contribution by Rs.55,000. Net impact on profit:",
+     "options": [
+      "-Rs.15,000",
+      "+Rs.55,000",
+      "+Rs.15,000",
+      "Rs.40,000"
+     ],
+     "answer": 2,
+     "why": "Net = Incremental Contribution - Incremental Cost = 55,000 - 40,000 = +Rs.15,000. ACCEPT."
+    },
+    {
+     "tag": "BANK",
+     "q": "If a company's CS ratio is 30% and it wants to earn Rs.90,000 profit with FC of Rs.2,10,000, required sales are:",
+     "options": [
+      "Rs.7,00,000",
+      "Rs.3,00,000",
+      "Rs.10,00,000",
+      "Rs.70,000"
+     ],
+     "answer": 2,
+     "why": "Required sales = (FC + Target) / CS Ratio = (2,10,000 + 90,000) / 0.30 = 3,00,000 / 0.30 = Rs.10,00,000."
+    },
+    {
+     "tag": "BANK",
+     "q": "Sales Rs.300L, COGS Rs.180L, Operating Exp Rs.60L, Interest Rs.15L, Tax Rs.15L. Gross Profit Margin:",
+     "options": [
+      "40%",
+      "50%",
+      "30%",
+      "60%"
+     ],
+     "answer": 0,
+     "why": "GP = 300-180=120. GPM = 120/300 = 40%."
+    },
+    {
+     "tag": "BANK",
+     "q": "Using Q41: Operating Profit Margin:",
+     "options": [
+      "40%",
+      "20%",
+      "15%",
+      "30%"
+     ],
+     "answer": 1,
+     "why": "OP = GP - OpEx = 120-60=60. OPM = 60/300 = 20%."
+    },
+    {
+     "tag": "BANK",
+     "q": "Using Q41: Net Profit Margin:",
+     "options": [
+      "20%",
+      "15%",
+      "10%",
+      "5%"
+     ],
+     "answer": 2,
+     "why": "PAT = OP - Interest - Tax = 60-15-15=30. NPM = 30/300 = 10%."
+    },
+    {
+     "tag": "BANK",
+     "q": "Total Assets Rs.400L, PAT Rs.30L. ROTA (using PAT as approximate, no interest/tax data given):",
+     "options": [
+      "15%",
+      "7.5%",
+      "10%",
+      "12%"
+     ],
+     "answer": 1,
+     "why": "ROTA = PAT / Total Assets = 30/400 = 7.5%. (Note: strictly ROTA uses PBIAT. When interest and tax data are not given, PAT/Total Assets is used as an approximation.)"
+    },
+    {
+     "tag": "BANK",
+     "q": "Capital Employed Rs.300L (Equity Rs.200L + LT Debt Rs.100L), PAT Rs.30L. ROE is:",
+     "options": [
+      "10%",
+      "15%",
+      "20%",
+      "7.5%"
+     ],
+     "answer": 1,
+     "why": "ROE = PAT / Equity = 30/200 = 15%. Note: ROE (15%) > ROTA (7.5%) demonstrates positive leverage effect."
+    },
+    {
+     "tag": "BANK",
+     "q": "ROE = PAT / Net Worth = 30/200 = 15%. ROTA = PAT / Total Assets = 30/400 = 7.5%. The pattern ROE > ROTA shows:",
+     "options": [
+      "Negative leverage",
+      "Positive leverage -- debt is amplifying returns to equity holders",
+      "No leverage effect",
+      "The company is unprofitable"
+     ],
+     "answer": 1,
+     "why": "ROE (15%) > ROTA (7.5%). The debt in the capital structure is working in favour of equity holders."
+    },
+    {
+     "tag": "BANK",
+     "q": "Days Inventory Outstanding: 40 days. Days Sales Outstanding: 30 days. Days Payable Outstanding: 60 days. CCC:",
+     "options": [
+      "130 days",
+      "10 days",
+      "70 days",
+      "-10 days"
+     ],
+     "answer": 1,
+     "why": "CCC = DIO + DSO - DPO = 40 + 30 - 60 = 10 days."
+    },
+    {
+     "tag": "BANK",
+     "q": "Company A: CCC = -15 days. Company B: CCC = +45 days. Who manages working capital better?",
+     "options": [
+      "Company B -- more positive is safer",
+      "Company A -- negative CCC means suppliers fund operations",
+      "Equal -- both above zero",
+      "Cannot compare"
+     ],
+     "answer": 1,
+     "why": "Negative CCC = collect cash before paying suppliers = free funding = excellent working capital management."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company's ROTA = 12% and interest rate on new debt = 9%. Should it take more debt?",
+     "options": [
+      "No -- debt always increases risk",
+      "Yes -- ROTA > cost of debt creates positive leverage, amplifying ROE",
+      "Only if revenue is growing",
+      "Only if current ratio is above 2.0"
+     ],
+     "answer": 1,
+     "why": "ROTA (12%) > Debt Cost (9%) = positive leverage. Extra returns go to equity holders."
+    },
+    {
+     "tag": "BANK",
+     "q": "Horizontal analysis: Year 1 COGS Rs.50L, Year 2 Rs.65L. Revenue Year 1 Rs.100L, Year 2 Rs.120L. Key insight:",
+     "options": [
+      "Both COGS and Revenue grew -- good news",
+      "COGS grew 30% but Revenue grew only 20% -- gross margin is shrinking",
+      "Revenue growth was too slow",
+      "COGS growth is acceptable"
+     ],
+     "answer": 1,
+     "why": "COGS growth (30%) > Revenue growth (20%) = gross margin declining. Need to investigate cost of production."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company's bond (long-term debt) matures in 8 months. On the balance sheet, it should appear as:",
+     "options": [
+      "Non-current liability",
+      "Current liability (matures within 12 months)",
+      "Owners equity",
+      "Non-current asset"
+     ],
+     "answer": 1,
+     "why": "When long-term debt falls within 12 months of maturity, it is RECLASSIFIED as a current liability."
+    },
+    {
+     "tag": "BANK",
+     "q": "An IT company acquires a manufacturing company for Rs.200 cr (book value Rs.150 cr). Post-acquisition Goodwill is:",
+     "options": [
+      "Rs.200 cr",
+      "Rs.150 cr",
+      "Rs.50 cr",
+      "Rs.350 cr"
+     ],
+     "answer": 2,
+     "why": "Goodwill = Purchase Price - Book Value = 200 - 150 = Rs.50 cr."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company's common-size P&L shows: COGS 55%, Operating Expenses 25%, Interest 5%, Tax 3%. Net Profit Margin:",
+     "options": [
+      "17%",
+      "12%",
+      "15%",
+      "20%"
+     ],
+     "answer": 1,
+     "why": "Net PM = 100 - 55 - 25 - 5 - 3 = 12%. All items expressed as % of sales."
+    },
+    {
+     "tag": "BANK",
+     "q": "Interest Coverage falls from 8x to 2.5x over 3 years. This trend suggests:",
+     "options": [
+      "The company is improving",
+      "Rising debt or falling EBIT -- increasing financial risk",
+      "Tax rates are rising",
+      "Working capital is improving"
+     ],
+     "answer": 1,
+     "why": "IC falling sharply = EBIT declining relative to interest, or interest rising faster than EBIT. Financial risk increasing."
+    },
+    {
+     "tag": "BANK",
+     "q": "Company X has Debt-Equity ratio of 0.8. Company Y has 2.5 (same industry). Which carries MORE financial risk?",
+     "options": [
+      "Company X",
+      "Company Y",
+      "Equal",
+      "Depends on the interest rate"
+     ],
+     "answer": 1,
+     "why": "Higher D/E = more debt relative to equity = more financial obligation = higher solvency risk."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company announces a bonus issue. Before investing based on the price increase, you should:",
+     "options": [
+      "Buy immediately -- bonus always means good news",
+      "Check whether the price premium reflects genuine operational improvement or just sentiment",
+      "Short the stock",
+      "Wait for the next quarterly results"
+     ],
+     "answer": 1,
+     "why": "Prof. Jaiswall's lesson: bonus is a SIGNAL, not a fundamental value creation event. The premium above mathematical split is sentiment-driven and transient."
+    },
+    {
+     "tag": "BANK",
+     "q": "HUL's current ratio is less than 1.0. As an analyst, you should:",
+     "options": [
+      "Immediately flag as high risk of default",
+      "First understand HUL's cash conversion cycle -- negative CCC means it collects before it pays, indicating market power",
+      "Recommend selling the stock",
+      "Contact the company for clarification"
+     ],
+     "answer": 1,
+     "why": "Context first. HUL's negative WC = collects from retailers before paying suppliers. Negative CCC = market power. This is a STRENGTH."
+    },
+    {
+     "tag": "BANK",
+     "q": "Which company would typically have the HIGHEST gross profit margin?",
+     "options": [
+      "A commodity steel manufacturer",
+      "A software company selling proprietary enterprise solutions",
+      "A grocery retailer",
+      "A raw material trading company"
+     ],
+     "answer": 1,
+     "why": "Software = near-zero variable cost per sale. Margins 60-80%+ typical. Steel, grocery, trading = commodity/low-margin businesses."
+    },
+    {
+     "tag": "BANK",
+     "q": "ROE is 25%, ROCE is 18%, ROTA is 12%. What does this pattern tell you?",
+     "options": [
+      "The company has no debt",
+      "Positive leverage -- ROTA > cost of debt, so debt is amplifying equity returns",
+      "The company is losing money",
+      "Liquidity is a concern"
+     ],
+     "answer": 1,
+     "why": "ROE (25%) > ROCE (18%) > ROTA (12%) = classic positive leverage pyramid. Debt is working FOR the shareholders."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company improves its DPO from 30 days to 50 days (within supplier terms). CCC impact:",
+     "options": [
+      "CCC increases by 20 days",
+      "CCC decreases by 20 days",
+      "CCC is unchanged",
+      "Cannot determine without DIO and DSO"
+     ],
+     "answer": 1,
+     "why": "CCC = DIO + DSO - DPO. DPO increases by 20 days. Since DPO is SUBTRACTED, higher DPO = lower CCC. CCC falls by 20 days."
+    },
+    {
+     "tag": "BANK",
+     "q": "A manager says: \"We should close the loss-making product line immediately.\" As a finance-literate colleague, your FIRST response is:",
+     "options": [
+      "Agree -- P&L loss is clear evidence",
+      "Ask: what are the avoidable costs vs fixed costs allocated? Will closing actually improve overall profit?",
+      "Disagree -- never close any product",
+      "Refer to the auditor"
+     ],
+     "answer": 1,
+     "why": "Relevant cost thinking: the P&L shows allocated costs. The shutdown decision needs AVOIDABLE vs UNAVOIDABLE analysis."
+    },
+    {
+     "tag": "BANK",
+     "q": "A startup shows a Net Loss of Rs.2L in Month 1 but positive CFO of Rs.0.5L. This MOST LIKELY means:",
+     "options": [
+      "The company is in trouble despite positive cash",
+      "High non-cash charges (depreciation) and good collections make cash better than profit",
+      "The accounts are incorrect",
+      "Revenue is overstated"
+     ],
+     "answer": 1,
+     "why": "Positive CFO despite loss = non-cash charges (large depreciation) being added back. The business is operationally generating cash."
+    },
+    {
+     "tag": "BANK",
+     "q": "Richie Advisors: In February, Babu pays Rs.4,000 in advance. In March, Richie does the work. Across both months, total revenue recognised from Babu:",
+     "options": [
+      "Rs.8,000 (Rs.4,000 each month)",
+      "Rs.4,000 (in March only)",
+      "Rs.4,000 (in February only)",
+      "Rs.0 (advance payments are not revenue)"
+     ],
+     "answer": 1,
+     "why": "Revenue recognised ONCE in March when service is performed. February = Unearned Revenue (liability). Total = Rs.4,000 recognised."
+    },
+    {
+     "tag": "BANK",
+     "q": "Using the contribution format, a company reports: Sales Rs.10L, Variable Costs Rs.6L, Fixed Costs Rs.3L. If sales rise by Rs.1L (all variable costs increase proportionally), new profit is:",
+     "options": [
+      "Rs.1.4L",
+      "Rs.2L",
+      "Rs.1.6L",
+      "Rs.3L"
+     ],
+     "answer": 0,
+     "why": "Current CM = 4L, Profit = 1L. CS ratio = 40%. Extra contribution from Rs.1L extra sales = 1L x 40% = Rs.0.4L. New profit = 1 + 0.4 = Rs.1.4L."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company has zero goodwill on its balance sheet. This means:",
+     "options": [
+      "The company has no brand value",
+      "The company has not done an M&A where it paid above book value",
+      "The company's brand is worthless",
+      "The company's assets are understated"
+     ],
+     "answer": 1,
+     "why": "Goodwill on balance sheet = PURCHASED goodwill only. Zero goodwill = no qualifying M&A done. Says nothing about brand value."
+    },
+    {
+     "tag": "BANK",
+     "q": "Which of the following would INCREASE Retained Earnings?",
+     "options": [
+      "Paying a dividend",
+      "Reporting a net loss",
+      "Reporting net income",
+      "Issuing new shares"
+     ],
+     "answer": 2,
+     "why": "RE = Opening RE + Net Income - Dividends. Net income INCREASES RE. Loss decreases it. Dividends decrease it. New shares increase Share Capital, not RE."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company has very HIGH inventory days (DIO = 120 days). This might indicate:",
+     "options": [
+      "Excellent sales -- products moving fast",
+      "Slow-moving or obsolete inventory, or over-purchasing",
+      "Efficient production management",
+      "Low cost of goods"
+     ],
+     "answer": 1,
+     "why": "High DIO = inventory sitting for long time = potential obsolescence, poor demand forecasting, or over-purchasing."
+    },
+    {
+     "tag": "BANK",
+     "q": "Which of the following would NOT appear on a company's income statement?",
+     "options": [
+      "Depreciation expense",
+      "Interest on bank loan",
+      "Dividend paid to shareholders",
+      "Bad debt expense"
+     ],
+     "answer": 2,
+     "why": "Dividends are NOT an expense -- they do not go through the P&L.; They reduce Retained Earnings on the Balance Sheet."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company's 5-year revenue trend is: 100, 108, 118, 130, 145. Operating income trend: 100, 105, 115, 125, 150. Which trend is accelerating relative to the other?",
+     "options": [
+      "Revenue growing faster",
+      "Operating income growing faster (especially in Year 5)",
+      "They are growing at the same rate",
+      "Cannot tell"
+     ],
+     "answer": 1,
+     "why": "Year 5: Revenue index 145, Operating income index 150. Operating income growing faster = improving profitability per rupee of sales."
+    },
+    {
+     "tag": "BANK",
+     "q": "Fixed costs Rs.2,00,000, Variable Cost per unit Rs.30, Selling Price Rs.80, actual sales 6,000 units. Margin of Safety ratio is:",
+     "options": [
+      "33%",
+      "50%",
+      "40%",
+      "25%"
+     ],
+     "answer": 0,
+     "why": "CM = 80-30=50. BEP = 2,00,000/50=4,000 units. Actual=6,000. MOS=2,000 units. MOS ratio=2,000/6,000=33.3%."
+    },
+    {
+     "tag": "BANK",
+     "q": "Richie's February net loss is Rs.74,900 on initial capital of Rs.10L. As a shareholder, should you panic?",
+     "options": [
+      "Yes -- a Rs.74,900 loss is catastrophic",
+      "No -- February was a setup month. March showed 11x revenue growth. Owners equity still Rs.9.25L.",
+      "Yes -- the loss means the business model is broken",
+      "Only if the second month also shows a loss"
+     ],
+     "answer": 1,
+     "why": "Context: Rs.74,900 loss on Rs.10L capital = 7.5% in Month 1. February costs were almost entirely fixed startup costs. March validated the business model completely."
+    },
+    {
+     "tag": "BANK",
+     "q": "A lender evaluating whether to give a 5-year loan would MOST focus on:",
+     "options": [
+      "Current ratio",
+      "Gross profit margin",
+      "Interest Coverage and DSCR (long-term debt serviceability)",
+      "Dividend payout ratio"
+     ],
+     "answer": 2,
+     "why": "Lender's concern: will I get my principal and interest back? Long-term: DSCR and Interest Coverage."
+    },
+    {
+     "tag": "BANK",
+     "q": "Which statement about the Cash Flow Statement is TRUE?",
+     "options": [
+      "It is easier to manipulate than the P&L",
+      "It shows only non-cash transactions",
+      "Cash in the bank is a fact -- it is harder to manipulate than accrual profit",
+      "CFO should always be negative for a growing company"
+     ],
+     "answer": 2,
+     "why": "Cash is a fact. Accrual accounting involves judgment. This is why cash flow is crucial for fraud detection."
+    },
+    {
+     "tag": "BANK",
+     "q": "Company A's trend: current ratio rising, inventory days rising, debtors days rising. This is:",
+     "options": [
+      "Purely positive",
+      "Concerning -- rising liquidity ratio driven by deteriorating asset quality (slow moving stock, slow collecting)",
+      "No signal either way",
+      "A sign of rapid growth"
+     ],
+     "answer": 1,
+     "why": "Higher current ratio driven by higher inventory days (slow-moving stock) and higher debtors days (slow collections) = quality of current assets is deteriorating."
+    },
+    {
+     "tag": "BANK",
+     "q": "A product's CS ratio is 60%. If fixed costs increase by Rs.1,20,000, the break-even sales increase by:",
+     "options": [
+      "Rs.72,000",
+      "Rs.2,00,000",
+      "Rs.1,20,000",
+      "Rs.48,000"
+     ],
+     "answer": 1,
+     "why": "BEP Sales = FC / CS Ratio. Increase in BEP Sales = 1,20,000 / 0.60 = Rs.2,00,000."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company's debt-equity ratio is 2.0. For every Rs.100 of equity, total assets funded by debt are:",
+     "options": [
+      "Rs.100",
+      "Rs.200",
+      "Rs.300",
+      "Rs.50"
+     ],
+     "answer": 1,
+     "why": "D/E = 2.0 means Rs.200 debt per Rs.100 equity. Total capital = 200+100=300. Debt = Rs.200."
+    },
+    {
+     "tag": "BANK",
+     "q": "Prestige Data Services idle hours fell from 223 (Jan) to 143 (Mar). Commercial hours rose from 123 to 138. The BEST conclusion for Daniel Rowe is:",
+     "options": [
+      "Shut down -- still losing money",
+      "Continue -- trend is clearly positive; need only 45 more commercial hours/month to break even",
+      "Raise commercial price to $1,000",
+      "Cut staff immediately"
+     ],
+     "answer": 1,
+     "why": "Direction: losses narrowing, commercial hours rising, idle hours falling. Gap to break-even = 45 hours/month. Specific, achievable target."
+    },
+    {
+     "tag": "BANK",
+     "q": "Which ratio measures \"for every rupee of equity invested, how much profit did equity holders earn\"?",
+     "options": [
+      "ROTA",
+      "ROCE",
+      "ROE / RONW",
+      "EPS"
+     ],
+     "answer": 2,
+     "why": "ROE = PAT / Net Worth (Equity). Directly measures return on equity holders' investment."
+    },
+    {
+     "tag": "BANK",
+     "q": "In year 1: Profit Rs.50L, Depreciation Rs.15L, Capex Rs.80L. In year 5: same profit, depreciation Rs.25L, Capex Rs.20L. Which year has BETTER cash quality?",
+     "options": [
+      "Year 1 -- higher profit",
+      "Year 5 -- same profit but lower capex and higher depreciation add-back = higher free cash flow",
+      "Equal",
+      "Cannot determine"
+     ],
+     "answer": 1,
+     "why": "Year 5: CFO approx 50+25=75L. Capex Rs.20L. Free cash flow approx Rs.55L. Year 1: CFO approx 65L, Capex Rs.80L. Negative free cash flow. Year 5 = far better cash quality."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company earns Rs.1,000 revenue. COGS Rs.600. Selling expenses Rs.100. Admin expenses Rs.80. Interest Rs.30. Tax rate 30%. PAT is:",
+     "options": [
+      "Rs.133",
+      "Rs.190",
+      "Rs.270",
+      "Rs.100"
+     ],
+     "answer": 0,
+     "why": "GP=400. OP=400-100-80=220. EBT=220-30=190. PAT=190x0.70=133."
+    },
+    {
+     "tag": "BANK",
+     "q": "A trading company pays Rs.5 lakhs as a refundable security deposit. Impact on the accounting equation:",
+     "options": [
+      "Total assets decrease Rs.5L; OE decreases Rs.5L",
+      "Cash decreases Rs.5L; Security Deposit (asset) increases Rs.5L -- total assets unchanged",
+      "Total liabilities increase Rs.5L; total assets increase Rs.5L",
+      "OE decreases and liabilities increase, both by Rs.5L"
+     ],
+     "answer": 1,
+     "why": "The deposit is REFUNDABLE -- future benefit = Asset. Cash (asset) OUT, Security Deposit (asset) IN. Both on the LEFT side. Net change to the equation = zero."
+    },
+    {
+     "tag": "BANK",
+     "q": "Which accounting principle governs recording salary payable of Rs.2 lakhs not yet paid in cash?",
+     "options": [
+      "Going Concern",
+      "Money Measurement",
+      "Accrual Concept / Matching Principle",
+      "Historical Cost"
+     ],
+     "answer": 2,
+     "why": "Accrual Concept: record the expense when the obligation is INCURRED (employees worked this month), not when cash is paid."
+    },
+    {
+     "tag": "BANK",
+     "q": "A company earns net profit Rs.4.8L and pays dividends Rs.1L. How does this flow across statements?",
+     "options": [
+      "Net profit appears in CFO; dividends reduce balance sheet asset",
+      "Net profit feeds into Retained Earnings on the balance sheet; dividends reduce Retained Earnings",
+      "Net profit reduces liabilities; dividends increase OE",
+      "Net profit increases cash directly; dividends are income in P&L"
+     ],
+     "answer": 1,
+     "why": "Sequence: P&L Net Profit INCREASES Retained Earnings (Owners Equity on BS). Dividends DECREASE Retained Earnings directly. They are NOT an expense on the P&L.;"
+    },
+    {
+     "tag": "BANK",
+     "q": "Which is correctly classified on a balance sheet?",
+     "options": [
+      "A 5-year bond purchased 3 months ago is non-current",
+      "Salary payable is a long-term liability",
+      "Creditors for goods on 60-day credit are current liabilities",
+      "Share capital is an asset"
+     ],
+     "answer": 2,
+     "why": "Trade creditors on 60-day terms = settled within the operating cycle = CURRENT LIABILITY. Share capital = Owners Equity, not an asset."
+    },
+    {
+     "tag": "BANK",
+     "q": "Company A depreciates machinery over 3 years (SLM); Company B over 5 years (SLM). Same cost, zero residual. In Year 2, Company A vs Company B:",
+     "options": [
+      "Higher net profit and higher net asset value",
+      "Lower net profit AND lower net asset value",
+      "Lower net profit but identical net asset value",
+      "Higher net profit but lower net asset value"
+     ],
+     "answer": 1,
+     "why": "A: dep = 10/3 = Rs.3.33L/yr. B: dep = 10/5 = Rs.2L/yr. A charges MORE depreciation = LOWER profit. A has MORE accumulated dep = LOWER NBV. Both metrics worse for A in Year 2."
+    },
+    {
+     "tag": "BANK",
+     "q": "In the Six Friends case, closing cash is Rs.39L yet profit is only Rs.4.8L. PRIMARY reason:",
+     "options": [
+      "Company understated its expenses",
+      "Capital raised from equity (Rs.30L) and debt (Rs.20L) are in cash but NOT in profit",
+      "Credit sales counted twice",
+      "Depreciation incorrectly excluded"
+     ],
+     "answer": 1,
+     "why": "Rs.50L of FINANCING inflows (equity + loan) appear in the bank balance but never in the P&L.; Profit and cash measure completely different things."
+    },
+    {
+     "tag": "BANK",
+     "q": "Under WDV vs SLM, TOTAL depreciation over the full asset life is:",
+     "options": [
+      "Higher under WDV",
+      "The SAME total under both",
+      "Lower under WDV",
+      "Indeterminate"
+     ],
+     "answer": 1,
+     "why": "Both methods depreciate (Cost minus Residual Value) in total. The only difference is TIMING -- WDV front-loads it, SLM spreads it equally."
+    },
+    {
+     "tag": "BANK",
+     "q": "TTK Inc. Opening Assets $280K, Liabilities $120K. New capital $40K, dividends $48K. Closing Assets $400K, Liabilities $140K. Net income is:",
+     "options": [
+      "$68,000",
+      "$88,000",
+      "$108,000",
+      "$128,000"
+     ],
+     "answer": 2,
+     "why": "Opening OE = 160K. Closing OE = 260K. Change = +100K. NI = 100K + 48K - 40K = $108,000. Must strip out new capital and add back dividends."
+    },
+    {
+     "tag": "BANK",
+     "q": "NTPC: net profit fell 19% despite operating margin expanding to 26.6%. Best explanation:",
+     "options": [
+      "Higher interest, depreciation, and lower other income compressed profit below the EBIT level",
+      "Lower sales reduced gross profit",
+      "Higher tax rates offset gross margin improvement",
+      "A one-time gain inflated prior year profit"
+     ],
+     "answer": 0,
+     "why": "Operating margin UP = better core business. But BELOW EBIT: interest, depreciation, and lower other income drag net profit down. Classic multi-step income statement divergence."
+    },
+    {
+     "tag": "BANK",
+     "q": "Which item would NOT be included in \"Operating Expenses\" for a manufacturing company?",
+     "options": [
+      "Selling and marketing expenses",
+      "General and administrative expenses",
+      "Interest expense on term loans",
+      "R&D costs"
+     ],
+     "answer": 2,
+     "why": "Interest expense is a FINANCING decision, not an operational one. It sits BELOW Operating Profit (EBIT) in the multi-step format. That is why EBIT = Earnings Before INTEREST and Tax."
+    },
+    {
+     "tag": "BANK",
+     "q": "Infosys: \"Profit for the period\" Rs.14,702 cr vs \"Total Comprehensive Income\" Rs.14,781 cr. The Rs.79 cr difference is:",
+     "options": [
+      "Dividends paid",
+      "OCI -- fair value changes and remeasurements not routed through P&L",
+      "Prior period error",
+      "Deferred tax adjustments"
+     ],
+     "answer": 1,
+     "why": "OCI (Other Comprehensive Income) captures items that bypass the regular P&L -- fair value changes, actuarial gains/losses. Total Comprehensive Income = PAT + OCI."
+    },
+    {
+     "tag": "BANK",
+     "q": "For HDFC Bank, which is \"Revenue from Operations\" (core operating income)?",
+     "options": [
+      "Profit on sale of branch building",
+      "Interest income from loans advanced to customers",
+      "Dividend from equity investments",
+      "FX gain on treasury"
+     ],
+     "answer": 1,
+     "why": "For a bank, LENDING is the core business. Interest income on loans = Revenue from Operations. The others are gains, other income, or treasury activity."
+    },
+    {
+     "tag": "BANK",
+     "q": "Under Schedule III (Indian GAAP), \"Capital Work in Progress\" is classified as:",
+     "options": [
+      "Current Asset",
+      "Non-current Asset under Fixed Assets",
+      "Intangible Asset",
+      "Liability"
+     ],
+     "answer": 1,
+     "why": "CWIP is a fixed asset under construction -- it will become a productive asset once commissioned. Non-Current Asset. No depreciation until ready for use."
+    },
+    {
+     "tag": "BANK",
+     "q": "MTNL: Working Capital = -Rs.1,121 cr. Vodafone = +Rs.4,273 cr. Negative WC for MTNL signals:",
+     "options": [
+      "MTNL is highly profitable",
+      "Potential short-term liquidity stress -- CL exceed CA",
+      "MTNL efficiently deployed capital into long-term assets",
+      "Conservative accounting"
+     ],
+     "answer": 1,
+     "why": "Negative WC = current liabilities exceed current assets. For HUL or Amazon this is market power. For MTNL with declining revenues -- liquidity stress. Context is everything."
+    },
+    {
+     "tag": "BANK",
+     "q": "Infosys: Share Capital Rs.2,076 cr, Other Equity Rs.85,256 cr (ratio 1:41). Other Equity primarily represents:",
+     "options": [
+      "Loans from financial institutions",
+      "Accumulated retained earnings built over decades of profitable operations",
+      "Revaluation of fixed assets",
+      "Preference share capital"
+     ],
+     "answer": 1,
+     "why": "Infosys has been profitable since 1981. Decades of retained earnings compound into \"Other Equity.\" Share Capital stays at the par value of original issuance."
+    },
+    {
+     "tag": "BANK",
+     "q": "Company uses WDV for tax, SLM for financial statements. In EARLY years:",
+     "options": [
+      "Tax dep < Book dep → lower taxable income → Deferred Tax Asset",
+      "Tax dep > Book dep → lower taxable income → Deferred Tax Liability",
+      "Tax dep > Book dep → higher taxable income → Deferred Tax Asset",
+      "Tax and book depreciation always equal"
+     ],
+     "answer": 1,
+     "why": "WDV gives HIGHER depreciation in early years. Tax dep (WDV) > Book dep (SLM) → lower taxable income today → less tax paid today → Deferred Tax LIABILITY (future obligation)."
+    },
+    {
+     "tag": "BANK",
+     "q": "CASE: Fortis Healthcare -- Net sales Rs.512 cr, operating margin 9.1%, interest Rs.66 cr, depreciation Rs.83.8 cr, loss before tax Rs.90 cr. Structural issue:",
+     "options": [
+      "Revenue too low to be viable",
+      "Debt servicing and depreciation exceed operating profit -- over-leverage relative to revenue",
+      "Operating margin is negative",
+      "Tax provision is the cause"
+     ],
+     "answer": 1,
+     "why": "EBIT = 512 x 9.1% = Rs.46.6 cr. Interest alone = Rs.66 cr, which EXCEEDS EBIT. Even before depreciation, debt servicing kills the profit. Classic over-leveraged infrastructure acquisition."
+    },
+    {
+     "tag": "BANK",
+     "q": "CASE: Power Grid -- CFO Rs.6,402 cr, CFI -Rs.15,834 cr, D/E ratio 2.1. Strategic reading:",
+     "options": [
+      "Financial distress -- investing outflows far exceed operating inflows",
+      "Aggressive infrastructure expansion, funded through debt and operations -- consistent with a regulated utility",
+      "Should immediately stop all investments",
+      "D/E 2.1 means technically insolvent"
+     ],
+     "answer": 1,
+     "why": "Regulated utilities have GUARANTEED returns on infrastructure investment. High capex funded by stable CFO and debt = the business MODEL. Not distress -- disciplined expansion."
+    },
+    {
+     "tag": "BANK",
+     "q": "CASE: Six Friends -- buys Rs.60L inventory, sells Rs.40L worth (cost) for Rs.50L. Gross margin and closing inventory:",
+     "options": [
+      "10% margin; Rs.10L inventory",
+      "20% margin; Rs.20L inventory",
+      "25% margin; Rs.20L inventory",
+      "16.7% margin; Rs.20L inventory"
+     ],
+     "answer": 1,
+     "why": "Revenue Rs.50L. COGS = Rs.40L (cost of goods SOLD). GP = Rs.10L. Margin = 10/50 = 20%. Closing inventory = 60L bought - 40L sold at cost = Rs.20L."
+    },
+    {
+     "tag": "BANK",
+     "q": "CASE: IndusInd Bank Rs.1,960 cr derivative accounting error; 27% crash. Which principle was violated?",
+     "options": [
+      "Going Concern",
+      "Full Disclosure and Fair Presentation -- positions not properly valued or disclosed",
+      "Money Measurement",
+      "Separate Entity"
+     ],
+     "answer": 1,
+     "why": "Derivatives have measurable value (mark-to-market). The violation was NOT disclosing or properly valuing them. Financial statements must faithfully represent the true position."
+    },
+    {
+     "tag": "BANK",
+     "q": "CASE: Coal India EPS Rs.15.2, IPO price Rs.225. P/E = 14.8x vs sector average 12x. Implication:",
+     "options": [
+      "Stock is undervalued",
+      "Priced at PREMIUM to peers -- market expects higher growth or scarcity premium",
+      "Stock will definitely underperform",
+      "P/E above average always indicates manipulation"
+     ],
+     "answer": 1,
+     "why": "P/E > sector average = premium pricing. Reasons: Coal India is the only large investable coal company (scarcity), government backing, or expected earnings growth."
+    },
+    {
+     "tag": "BANK",
+     "q": "CASE: Acme Consulting -- Transaction 5 shows +$5,000 cash +$5,000 AR +$10,000 OE (Revenue). Student says profit = $10,000. Correct?",
+     "options": [
+      "Yes -- revenue equals profit",
+      "No -- salaries, rent, utilities must be deducted from revenue",
+      "No -- only cash revenue counts",
+      "Yes -- OE increased $10,000 so profit is $10,000"
+     ],
+     "answer": 1,
+     "why": "Revenue is the TOP LINE. Profit = Revenue MINUS ALL EXPENSES. One transaction cannot tell you profit. You need the full P&L for the period."
+    },
+    {
+     "tag": "BANK",
+     "q": "CASE: IOCL PBT fell 70% while revenue fell only 2.4%. Most likely reason:",
+     "options": [
+      "Revenue declined too sharply",
+      "Massive increase in cost of materials squeezed margins despite stable revenues",
+      "Extraordinary dividends",
+      "Deferred tax reversal inflated FY24"
+     ],
+     "answer": 1,
+     "why": "Revenue -2.4% but profit -70% = extreme margin compression. For a petroleum refiner, crude oil is 60-70% of revenue. Even a small input cost rise wipes out thin margins."
+    },
+    {
+     "tag": "BANK",
+     "q": "CASE: HUL Goodwill Rs.17,316 cr + Intangibles Rs.27,900 cr (exceeding current assets Rs.16,049 cr). Analyst risk:",
+     "options": [
+      "No risk -- intangibles are more valuable for FMCG",
+      "Goodwill and intangibles may be IMPAIRED if acquisitions underperform -- wiping out reported equity",
+      "Large intangibles mean dividends will always be higher",
+      "Intangibles eliminate business risk"
+     ],
+     "answer": 1,
+     "why": "Goodwill is tested for impairment annually. If acquired businesses underperform, write-down directly reduces Owners Equity. Analyst must ask: are the acquired brands actually performing?"
+    },
+    {
+     "tag": "BANK",
+     "q": "Company reports assets at historical cost despite market value appreciation. Justification:",
+     "options": [
+      "Going Concern",
+      "Historical Cost Convention",
+      "Conservatism",
+      "Separate Entity"
+     ],
+     "answer": 1,
+     "why": "Historical Cost: assets recorded at original cost, not revalued upward. Ensures objectivity and verifiability."
+    },
+    {
+     "tag": "BANK",
+     "q": "Asset life was 10 years (SLM). After 4 years, revised to 3 more years (not 6). Accounting impact:",
+     "options": [
+      "Prior years must be restated",
+      "Revised estimate applied PROSPECTIVELY -- higher annual dep going forward, no restatement",
+      "Must switch to WDV",
+      "No change -- only affects disposal entry"
+     ],
+     "answer": 1,
+     "why": "Changes in accounting ESTIMATES are PROSPECTIVE only. Take current NBV, spread over revised remaining life. No restatement of prior statements."
+    },
+    {
+     "tag": "BANK",
+     "q": "A credit rating agency evaluating debt downgrade needs which statement MOST?",
+     "options": [
+      "Income Statement -- revenue trends",
+      "Statement of Changes in Equity",
+      "Cash Flow Statement -- CFO and debt service coverage",
+      "Notes on Accounting Policies"
+     ],
+     "answer": 2,
+     "why": "Rating agencies care: can this company PAY ITS DEBT? That requires CASH, not just profit. CFO and DSCR (Debt Service Coverage Ratio) are the primary tests."
+    },
+    {
+     "tag": "BANK",
+     "q": "RIL issues equity Rs.5,000 cr and uses proceeds to acquire a competitor. CFS classification:",
+     "options": [
+      "Both Operating",
+      "Equity issuance = Financing; acquisition = Investing",
+      "Both Financing",
+      "Both Investing"
+     ],
+     "answer": 1,
+     "why": "Equity issuance = raising FUNDING = Financing Activity (CFF). Acquisition of a company = deploying into a long-term asset = Investing Activity (CFI)."
+    },
+    {
+     "tag": "BANK",
+     "q": "Net profit grew 30%, Cash from Operations fell 15%. Most concerning interpretation:",
+     "options": [
+      "Aggressive working capital investment -- positive",
+      "Possible earnings manipulation through aggressive revenue recognition or understated provisions",
+      "Depreciation declined boosting profit",
+      "More dividends paid"
+     ],
+     "answer": 1,
+     "why": "Profit up, cash down = widening accrual-cash gap. Red flag: revenue recognised before earned, or provisions understated. One of the earliest fraud signals."
+    },
+    {
+     "tag": "BANK",
+     "q": "Nestle income statement: \"Changes in Inventories: -Rs.627 cr.\" This means:",
+     "options": [
+      "Inventory decreased -- less cost charged",
+      "Inventory INCREASED -- excess cost deferred to balance sheet",
+      "Inventory destroyed",
+      "Raw material consumption less than purchases"
+     ],
+     "answer": 1,
+     "why": "When inventory INCREASES, company produced MORE than it sold. Unsold production cost is NOT charged to P&L -- deferred to balance sheet as inventory (asset). The -627 adjustment REDUCES cost charged this period."
+    },
+    {
+     "tag": "BANK",
+     "q": "Owner's equity is best described as:",
+     "options": [
+      "Total cash invested at incorporation",
+      "Market capitalisation",
+      "Residual interest in assets after deducting all liabilities",
+      "Sum of all dividends paid historically"
+     ],
+     "answer": 2,
+     "why": "OE = Assets minus Liabilities. The RESIDUAL belonging to owners after all outsiders (banks, suppliers) are paid. Includes Share Capital plus Retained Earnings."
+    },
+    {
+     "tag": "BANK",
+     "q": "Asian Paints: EBITDA Rs.7,855 cr, Revenue Rs.30,850 cr (25.5% margin), Raw materials Rs.13,418 cr. If raw materials rise 10%, new EBITDA margin is approximately:",
+     "options": [
+      "~21.2%",
+      "~23.0%",
+      "~25.5% (unchanged)",
+      "~19.5%"
+     ],
+     "answer": 0,
+     "why": "RM increase = 13,418 x 10% = Rs.1,342 cr. New EBITDA = 7,855 - 1,342 = Rs.6,513 cr. New margin = 6,513 / 30,850 = 21.1% ≈ 21.2%. A 10% raw material rise cuts margin by 4.4 percentage points."
+    },
+    {
+     "tag": "BANK",
+     "q": "Company records salary expense Rs.2L as payable (not yet paid in cash). Effect on accounting equation:",
+     "options": [
+      "Assets decrease Rs.2L; Liabilities increase Rs.2L",
+      "Assets unchanged; Liabilities increase Rs.2L; OE decreases Rs.2L",
+      "Assets decrease Rs.2L; OE decreases Rs.2L",
+      "Liabilities decrease Rs.2L; OE increases Rs.2L"
+     ],
+     "answer": 1,
+     "why": "No cash leaves (assets unchanged). Obligation arises (Salary Payable = Liability +Rs.2L). Expense reduces OE (Retained Earnings -Rs.2L). Equation: both sides of the right side move, netting to zero change."
+    },
+    {
+     "tag": "BANK",
+     "q": "RIL Non-Current Investments Rs.3,01,400 cr in standalone but largely disappear in consolidated. Why:",
+     "options": [
+      "Reclassified as current assets",
+      "Intercompany investments eliminated against subsidiaries' equity; actual assets and liabilities reported instead",
+      "Consolidated statements exclude financial assets",
+      "RIL writes off investments in acquisition year"
+     ],
+     "answer": 1,
+     "why": "Consolidation combines parent and subsidiaries as ONE entity. Parent's investment in subsidiary is eliminated against the subsidiary's equity. Actual assets, liabilities, revenues of ALL entities reported directly."
+    },
+    {
+     "tag": "BANK",
+     "q": "Kingfisher Airlines unable to pay debts. Auditor applying Going Concern should:",
+     "options": [
+      "Continue applying since all companies are assumed ongoing",
+      "DISCLOSE in audit report that going concern may not be appropriate; assets potentially at liquidation values",
+      "Switch to cash basis immediately",
+      "Ignore as temporary"
+     ],
+     "answer": 1,
+     "why": "Going Concern is an ASSUMPTION that can be violated. If doubtful, auditor MUST disclose prominently. Assets then valued at forced-sale (liquidation) prices, not cost minus depreciation."
+    },
+    {
+     "tag": "BANK",
+     "q": "NTPC income statement includes \"Exceptional Item\" Rs.1,363 cr reducing profit. Rationale:",
+     "options": [
+      "Exceptional items not subject to taxation",
+      "Separating unusual, non-recurring items allows better assessment of RECURRING business performance",
+      "Must always be presented below the tax line",
+      "Regulators require items above Rs.1,000 cr to be exceptional"
+     ],
+     "answer": 1,
+     "why": "Transparency: if a one-time charge is mixed into operating expenses, users overestimate the structural cost base. Separating it lets investors judge recurring profit correctly."
+    },
+    {
+     "tag": "BANK",
+     "q": "Company X: Net Profit Rs.100 cr, Sales Rs.2,000 cr, Total Assets Rs.1,000 cr, Equity Rs.400 cr. ROE is:",
+     "options": [
+      "10%",
+      "15%",
+      "25%",
+      "5%"
+     ],
+     "answer": 2,
+     "why": "ROE = PAT / Net Worth = 100 / 400 = 25%. Note: Net Profit Margin is only 5% (100/2000). Leverage amplifies the equity return -- the business earns on Rs.1,000 cr total assets but only Rs.400 cr of equity holders bear that risk."
+    },
+    {
+     "tag": "BANK",
+     "q": "RIL (total assets ~Rs.9.6 lakh cr) does not separately disclose a Rs.50,000 stationery expense. Convention:",
+     "options": [
+      "Conservatism",
+      "MATERIALITY -- omission could not influence economic decisions of users",
+      "Historical Cost",
+      "Separate Entity"
+     ],
+     "answer": 1,
+     "why": "Materiality: disclose only information whose omission could affect a reasonable user's decisions. Rs.50,000 on Rs.9.6 lakh crore of assets = 0.000005%. Immaterial."
+    },
+    {
+     "tag": "BANK",
+     "q": "CASE: Tarech Corp -- Revenue $4,800, Expenses $2,450, Dividends $410. Cash $1,890, Other assets $1,000, Payables $450, Common Stock $500. Balance sheet total:",
+     "options": [
+      "$2,890 on each side, Retained Earnings $1,940",
+      "$2,890 on each side, Retained Earnings $2,350",
+      "$3,300 on each side, Retained Earnings $2,350",
+      "$2,890 on each side, Retained Earnings $410"
+     ],
+     "answer": 0,
+     "why": "NI = 4,800-2,450 = $2,350. RE = 2,350-410 = $1,940. Assets = 1,890+1,000 = $2,890. L+OE = 450+500+1,940 = $2,890. Both sides balance."
+    },
+    {
+     "tag": "BANK",
+     "q": "CASE: Startup CFO chooses between SLM and WDV for delivery vehicles (Rs.10 cr, 5-yr, residual Rs.1 cr) to attract equity investors. Strategically preferable:",
+     "options": [
+      "WDV -- higher early depreciation conserves cash",
+      "SLM for financial statements (higher reported profit attracts investors); WDV separately for IT filing (cash tax savings)",
+      "SLM -- always lower total depreciation",
+      "WDV -- produces same profit as SLM in all years"
+     ],
+     "answer": 1,
+     "why": "KEY INSIGHT: Indian companies can use DIFFERENT methods for financial statements (Companies Act) and tax returns (Income Tax Act). SLM in books = higher profit = better P&L for investors. WDV in IT return = lower taxable income = real cash tax savings. Best of both worlds."
+    }
+   ]
+  }
+ ]
+}

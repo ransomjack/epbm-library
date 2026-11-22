@@ -1,0 +1,305 @@
+---
+title: Understanding and Managing Cost
+kicker: Session 3
+order: 3
+source: "Session by Prof. Manju Jaiswall · Financial Reporting & Cost Accounting"
+description: "Cost objects, direct and indirect costs, fixed and variable behaviour, the contribution income statement, CVP and break-even, and the Prestige Telephone shutdown decision. Session 3 of Financial Reporting & Cost Accounting."
+takeaways:
+  - "Define the cost object first. Every classification follows from it."
+  - "Contribution = price − variable cost. Break-even units = fixed costs ÷ contribution per unit."
+  - "The contribution income statement separates costs by behaviour, which is what decisions need."
+  - "Never shut a unit because its P&L shows a loss. Compare the revenue you lose with the costs you actually avoid."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Steps from '../../components/d/Steps.astro';
+import CostBehaviour from '../../components/d/CostBehaviour.astro';
+import BreakEven from '../../components/d/BreakEven.astro';
+import Bars from '../../components/d/Bars.astro';
+
+## A different lens: inside the business
+
+Sessions 1 and 2 read a company from the **outside**, as an investor, banker or regulator would. Session 3 turns the camera round. You are now **inside** the business, planning budgets, setting prices, deciding whether to launch a product, and deciding whether to close a division.
+
+| | Financial accounting (Sessions 1–2) | Management / cost accounting (Session 3) |
+|---|---|---|
+| Audience | Shareholders, banks, regulators | Managers inside the firm |
+| Format | Standardised by ICAI; no discretion | No fixed format; build what you need |
+| Safety net | Auditors catch errors | None. A wrong analysis costs the business. |
+| Time focus | Records what already happened | Helps you decide before you act |
+| Reports | Public, formal annual report | Private, flexible, purpose-built |
+
+> "The mother system is the same. But today we are looking at its other arm, and the audience is you: the internal decision-maker." Prof. Manju Jaiswall
+
+## Classifying cost
+
+### Start with the cost object
+
+Before you classify a single rupee, decide **what you are costing**: a product, a batch, a programme, a project, a customer, a department. That is the **cost object**, and everything else depends on it.
+
+> "Cost does not exist in a vacuum. It always exists in a context. Define the cost object first; everything else follows." Prof. Manju Jaiswall
+
+### Direct vs indirect
+
+| | Direct cost | Indirect cost (overhead) |
+|---|---|---|
+| Definition | Traced directly and conveniently to the cost object | Can't be traced easily; must be **allocated** |
+| Link to output | Clear and high | Indirect; needs a proxy |
+| Examples | Plastic in a computer; study material for EPBM-32 | Factory rent, supervisor salary, insurance, machine depreciation |
+| How assigned | Measured directly | Through a **cost driver**: units, machine hours, participants |
+
+**Why the driver choice matters more today.** Overhead used to be about 20% of total cost, so a poor driver barely mattered. Automation has cut direct labour, and overhead is now 40–50% of cost in many industries. A poor driver on that base produces large costing errors, which flow straight into wrong prices and wrong strategy.
+
+<Cards min={200} items={[
+  { k: '1', title: 'Direct material', body: 'Material that physically becomes the product.', foot: 'Plastic for computers; cloth for shirts. Traced directly.' },
+  { k: '2', title: 'Direct labour + direct expenses', body: 'Labour and costs tied directly to making it.', foot: 'Assembly workers; machine power. Traced directly.' },
+  { k: '3', title: 'Manufacturing overhead', body: 'All indirect manufacturing costs, pooled.', foot: 'Factory rent; supervisors; factory lighting. Allocated with a driver.' },
+]} />
+
+Box 1 + Box 2 + Box 3 = **total manufacturing cost**.
+
+### Product cost vs period cost
+
+| | Product cost | Period cost |
+|---|---|---|
+| Timing | Travels **with** the product through inventory | Hits the P&L in the period it is incurred |
+| Becomes an expense | Only when the product is **sold** (as COGS) | Immediately, in full |
+| Examples | Direct material, direct labour, manufacturing overhead | Advertising, sales commissions, head-office admin |
+| Numbers | Spend Rs.5L making 100 computers, sell 80: Rs.4L is COGS, Rs.1L stays as inventory | Rs.50,000 of advertising, 80 of 100 sold: the full Rs.50,000 hits the P&L |
+
+<div class="callout trap">
+<p class="callout-title">Product cost ≠ manufacturing cost</p>
+
+Manufacturing cost is what it costs to **make** the product. It becomes an expense (COGS) only when units are **sold**; until then it sits on the balance sheet as **inventory**, an asset. Period costs hit the P&L in full, even if nothing is sold.
+
+</div>
+
+## How costs behave as volume changes
+
+<Fig title="Fixed and variable cost, total and per unit" caption="All four statements are true and all four are tested.">
+  <CostBehaviour />
+</Fig>
+
+| Type | Total as volume rises | Per unit as volume rises | Example |
+|---|---|---|---|
+| Fixed | Constant | Falls | Factory rent Rs.50,000/month: Rs.500/unit at 100 units, Rs.250 at 200 |
+| Variable | Rises proportionally | Constant | Plastic at Rs.100/computer: Rs.10,000 for 100, Rs.20,000 for 200 |
+
+### Mixed costs: splitting fixed from variable
+
+Many real costs are part fixed, part variable. An electricity bill has a fixed standing charge plus a charge per unit used. For CVP every mixed cost must be split. The **high–low (simultaneous equation) method** uses two periods of data:
+
+| Month | Power cost | Chargeable hours | Equation |
+|---|---|---|---|
+| January | $1,633 | 361 (329 revenue + 32 service) | 1,633 = X + 361Y |
+| February | $1,592 | 348 (316 revenue + 32 service) | 1,592 = X + 348Y |
+| Subtract | $41 | 13 hours | Y = 41 ÷ 13 ≈ **$3.15 per hour** |
+| Substitute | | | X = 1,633 − 3.15 × 361 ≈ **$495 fixed per month** |
+
+<div class="callout trap">
+<p class="callout-title">Why the class answer is $4 an hour</p>
+
+The January–February pair alone gives about $3.15 an hour. In class, Prof. Jaiswall averaged **three** pairs (Jan–Feb, Feb–Mar, Jan–Mar), which comes to about **$4 an hour**. If a question gives you one pair, calculate from that pair. If it cites the Prestige class figure, use $4.
+
+</div>
+
+With power at about $4 and operations salaries at $24, Prestige's variable cost is about **$28 per revenue hour**, tiny next to its $800 commercial rate. Each commercial hour contributes **$772** towards fixed costs. Prestige's problem isn't its cost structure. It isn't selling enough hours.
+
+## The contribution income statement
+
+> "I could have just given you the CVP formulas. But once you understand the contribution income statement, the model falls out naturally." Prof. Manju Jaiswall
+
+| | Traditional format | Contribution format |
+|---|---|---|
+| Start | Sales | Sales |
+| First deduction | COGS (a mix of fixed and variable) | **All variable costs** (variable COGS + variable selling) |
+| Subtotal | Gross profit | **Contribution margin** |
+| Next deduction | Selling and admin (a mix) | **All fixed costs** |
+| Bottom line | Net profit | Net profit: **exactly the same number** |
+| Separates costs by | Function | Behaviour |
+| Can it answer "what if we sell 50 more?" | No | Yes: profit = contribution per unit × units − fixed costs |
+
+The contribution format is the **prerequisite** for CVP: no break-even or target-profit analysis without first splitting fixed from variable. Traditional format is for external reporting; contribution format is for internal decisions.
+
+## CVP: building the model from first principles
+
+<Steps items={[
+  { title: 'Start', body: 'Revenue − Cost = Profit' },
+  { title: 'Expand', body: '(P × Q) − (V × Q) − F = Profit. P price, Q units, V variable cost per unit, F fixed costs.' },
+  { title: 'Break-even', body: 'Set profit = 0, so Q = F ÷ (P − V).' },
+  { title: 'Target profit', body: 'Q = (F + Target profit) ÷ (P − V)' },
+]} />
+
+**Why it works.** P − V is the **contribution per unit**: how fast each unit fills the fixed-cost hole. F is the **size of the hole**. Hole size ÷ fill rate = units needed. Once you see it that way you never need to memorise the formula.
+
+**In sales value:** break-even sales = F ÷ CS ratio, where the **CS (contribution-to-sales) ratio** = contribution per unit ÷ price.
+
+### Worked example: Yule Inc. surfboards
+
+| Item | Value |
+|---|---|
+| Price (P) | $500 |
+| Variable cost (V) | $300 |
+| Contribution per board | $200 |
+| CS ratio | 200 ÷ 500 = **40%** |
+| Fixed costs per month (F) | $80,000 |
+| **Break-even** | 80,000 ÷ 200 = **400 boards**, or 80,000 ÷ 40% = **$200,000** of sales |
+| Current sales | 500 boards ($250,000) |
+| Current profit | 500 × 200 − 80,000 = **$20,000** |
+| Boards for $100,000 profit | (80,000 + 100,000) ÷ 200 = **900 boards** |
+
+<Fig caption="Below 400 boards every sale narrows the loss; above it, each board adds $200 of profit.">
+  <BreakEven />
+</Fig>
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: three numbers before any launch</p>
+
+Break-even is the first question before any investment, launch or expansion. You need three numbers: fixed cost, variable cost and price.
+
+- **Product launch:** a health snack with variable cost Rs.1,200, price Rs.2,000. Contribution Rs.800, CS ratio 40%, fixed overhead Rs.4,00,000 a month. Break-even = **500 units** or **Rs.10,00,000** a month. Ask sales: can we commit to 500 units a month by month four? If not, cut fixed overhead or raise the price before launch.
+- **New consulting line:** Rs.40,000 variable cost per engagement, Rs.1,00,000 price, Rs.60,000 contribution (CS 60%), Rs.4,80,000 fixed a month. Break-even = **8 engagements** a month. If winning 8 by Q2 is uncertain, start with a smaller fixed team.
+
+Never recommend a launch, expansion or new geography without computing break-even and stress-testing the volume assumption.
+
+</div>
+
+## CVP in action
+
+### Margin of safety
+
+**Margin of safety (MOS) = actual sales − break-even sales.** It is how far sales can fall before you start losing money; a small MOS means you are close to the edge.
+
+Yule: $250,000 − $200,000 = **$50,000** (100 boards).
+
+**Shortcut: Profit = MOS sales × CS ratio.** $50,000 × 40% = $20,000. Past break-even, every dollar of sales adds the CS ratio straight to profit.
+
+### What-if questions
+
+| Question | Working | Answer |
+|---|---|---|
+| Spend $10,000 more on advertising to lift sales from 500 to 540 boards? | Extra contribution 40 × $200 = $8,000 vs cost $10,000 | **Reject** (−$2,000). Any spend under $8,000 would add profit. |
+| Variable cost rises from $300 to $310. New break-even? | 80,000 ÷ 190 = 421.05 | **422 boards** (from 400). Cost inflation tightens break-even. |
+| Next year: 525 boards, $190 contribution, $90,000 fixed. Profit? | 525 × 190 − 90,000 | **$9,750** |
+
+### More than one product
+
+Use a **weighted-average contribution** based on the sales mix: find total break-even units, then split them by the mix.
+
+| Product | Price | Variable cost | Contribution | Units | Mix | Weighted |
+|---|---|---|---|---|---|---|
+| Surfboards | $500 | $300 | $200 | 500 | 62.5% | $125.00 |
+| Sailboards | $1,000 | $450 | $550 | 300 | 37.5% | $206.25 |
+| **Combined** | | | | 800 | 100% | **$331.25** |
+
+With fixed costs of $170,000: 170,000 ÷ 331.25 = 513.2, so **514 units**: **321 surfboards** and **193 sailboards**.
+
+<div class="callout trap">
+<p class="callout-title">Always round break-even up</p>
+
+At 513 units contribution is 513 × $331.25 = $169,931, still $69 short. Break-even means **fully** covered, so round up, never to the nearest whole number.
+
+</div>
+
+## Prestige Telephone: the shutdown decision
+
+Prestige Telephone is a regulated utility in 1999 whose prices the government controls. President **Daniel Rowe** noticed that the mainframe running telephone operations sat idle much of the day, so he set up **Prestige Data Services** to sell those hours: **$800/hour** to outside businesses, **$400/hour** to the parent. Three years on, it has never had a profitable month. It is April 2003. Should Rowe shut it down?
+
+| Hours | January | February | March | What to notice |
+|---|---|---|---|---|
+| Intracompany | 206 | 181 | 223 | Recovering, strong in March |
+| Commercial | 123 | 135 | 138 | Rising slowly |
+| Service / maintenance | 32 | 32 | 40 | Unavoidable upkeep |
+| **Idle** | **223** | **164** | **143** | **Falling fast: the key positive signal** |
+
+### Q1. Close it? Avoidable vs unavoidable costs
+
+The P&L shows a loss and instinct says close. That answers the wrong question. The right one: **is Rowe better off with the subsidiary open or closed?**
+
+| Cost | Monthly | Goes away if closed? | Why |
+|---|---|---|---|
+| Computer lease | $95,000 | No | Non-cancellable, four years left |
+| Rent + custodial | $9,240 | No | Paid to the parent; the money stays in the group |
+| Depreciation | $26,180 | No | Non-cash; the equipment is already paid for |
+| Corporate services (allocated parent staff) | ~$15,300 | Largely no | Parent staff stay employed anyway |
+| Subsidiary staff salaries | ~$62,000 | **Yes** | Hired for this business; they leave if it closes |
+| Maintenance, power, materials | ~$17,000 | **Yes** | Only used when the machine runs |
+| Sales and marketing | ~$7,700 | **Yes** | Discretionary; stops on closure |
+
+<Fig title="If Prestige Data Services closes (March 2003, $ per month)" caption="March revenue is worked out from the hours: 223 intracompany × $400 + 138 commercial × $800. Avoidable costs are from the course analysis.">
+  <Bars unit="$" rows={[
+    { label: 'Revenue lost', value: 199600, note: '89,200 intracompany + 1,10,400 commercial', mark: true },
+    { label: 'Costs avoided', value: 87000, note: 'Staff, maintenance and power, marketing' },
+    { label: 'Costs that continue', value: 130420, note: 'Lease, rent, depreciation keep running' },
+  ]} />
+</Fig>
+
+<div class="callout">
+<p class="callout-title">Verdict: do not shut down</p>
+
+Closing saves about **$87,000** a month but gives up about **$200,000** of revenue, while the lease, rent and depreciation (about **$130,000**) keep running either way. Rowe would be significantly **worse off** closing.
+
+</div>
+
+<div class="callout trap">
+<p class="callout-title">The P&L loss is the wrong number</p>
+
+March's accounting loss of **$21,438** is real, but it answers "how much did the subsidiary make?" Rowe's question is "am I better off with it or without it?" Only **relevant-cost analysis** answers that, and here the two give **opposite** answers. Never close a unit on a P&L loss alone.
+
+</div>
+
+### Q2. How many commercial hours to break even?
+
+| Step | Amount |
+|---|---|
+| Total monthly fixed costs (Q1 2003 average) | ~$213,000 |
+| Covered by intracompany hours (205 × $372 contribution) | ~$76,260 |
+| Gap for commercial hours to fill | ~$136,740 |
+| Contribution per commercial hour ($800 − $28) | $772 |
+| **Break-even commercial hours** (136,740 ÷ 772) | **~177 a month** |
+| Actual commercial hours (Q1 average) | ~132 a month |
+| **Gap** | **~45 hours a month** |
+
+This is not a cost problem. It is a **sales** problem with a specific, achievable target.
+
+### Q3. Four options
+
+<Cards min={220} items={[
+  { k: 'A', title: 'Raise price to $1,000/hr', body: 'Demand falls 30%: hours drop from 132 to 92. Lose 40 × $772 = $30,880; gain $200 × 92 = $18,400.', foot: 'Net: about $12,480 worse a month', pill: 'Reject' },
+  { k: 'B', title: 'Cut price to $600/hr', body: 'Demand rises 30% to 172 hours. The volume gain almost offsets the price cut.', foot: 'Marginally worse (about $600 a month)', pill: 'Study further' },
+  { k: 'C', title: 'Market harder at $800/hr', body: 'Hours rise to 172 at full price: 40 × $772 = $30,880 more contribution, enough to reach break-even for the first time even after $8,000–9,000 of extra marketing.', foot: 'Any spend below $30,880 beats doing nothing', pill: 'Best option', pillOk: true, hl: true },
+  { k: 'D', title: 'Two-shift operations', body: 'Commercial hours fall 20% to 106 while the lease stays fixed. Lose 26 × $772 = $20,072 with almost no saving.', foot: 'Loss worsens by about $18,000', pill: 'Worst option' },
+]} />
+
+### Q4. Six fixes to the management report
+
+| # | Change | Why |
+|---|---|---|
+| 1 | Rebuild as a **contribution** P&L | Shows strong contribution and that the loss comes from unavoidable fixed costs |
+| 2 | Label costs **avoidable vs unavoidable** | The $95,000 lease and the $7,700 of marketing look alike on paper; they aren't |
+| 3 | Split revenue by **customer type** | $800 commercial and $400 intracompany hours are very different contributors |
+| 4 | Put **idle hours** at the top | 223 idle hours in January = $178,400 of unsold capacity at the commercial rate |
+| 5 | Flag **internal transfers** | The $9,240 rent goes to the parent; no cash leaves the group |
+| 6 | Add a **break-even tracker** | "Break-even commercial hours 177, actual 132, gap 45": a target, not just a loss |
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: evaluating a loss-making unit</p>
+
+Close a unit only when the **costs you avoid** exceed the **contribution you lose**. Four words: relevant costs only.
+
+- **Specialty chemicals division:** revenue Rs.60 lakh a year; avoidable costs Rs.50 lakh (dedicated staff 30, materials 15, marketing 5); unavoidable Rs.55 lakh (allocated lease 40, shared R&D 15). Its P&L shows a Rs.45 lakh loss. Close it and you lose Rs.60 lakh of revenue to save Rs.50 lakh: **Rs.10 lakh worse. Keep it open.**
+- **IT managed-services practice:** revenue Rs.45 lakh; avoidable costs Rs.48 lakh (team 40, tools 8); unavoidable Rs.35 lakh. The practice doesn't even cover its own avoidable costs. Closing saves Rs.48 lakh and gives up Rs.45 lakh: **Rs.3 lakh better. Close it.** The Rs.35 lakh of shared overhead stays either way and has to be absorbed elsewhere.
+
+The decision is never about the P&L loss; it is about the cash impact of closing.
+
+</div>
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: make every report point to an action</p>
+
+- **Plant report:** revenue Rs.3.8 crore, cost Rs.4 crore, loss Rs.20 lakh. As a contribution P&L: contribution Rs.1.2 crore, fixed overhead Rs.1.4 crore. Contribution is healthy; the fixed base is the problem. Put machine utilisation at the top (62% vs a 78% target) and the conversation shifts from "we made a loss" to "lift utilisation by 16 points".
+- **SaaS product line:** revenue Rs.1 crore a year, variable costs Rs.15 lakh, fixed engineering Rs.1.15 crore, loss Rs.30 lakh. Contribution is Rs.85 lakh, an 85% margin: excellent unit economics. Break-even revenue = 1.15 crore ÷ 85% ≈ Rs.1.35 crore a year, or about **Rs.11.3 lakh of monthly recurring revenue against Rs.8.3 lakh today**. The team needs about Rs.3 lakh more MRR: an operational target.
+
+**Rule:** every management report should state the gap to break-even as a specific operational action.
+
+</div>

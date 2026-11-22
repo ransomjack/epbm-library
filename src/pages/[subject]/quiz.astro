@@ -8,11 +8,11 @@ export function getStaticPaths() {
 const { s } = Astro.props;
 const total = s.quiz.sections.reduce((n, x) => n + x.questions.length, 0);
 ---
-<Base title={`Practice MCQs · ${s.name}`} back={{ href: `/${s.slug}/`, label: s.name }} image={s.og} description={`Test yourself on ${s.name}: ${total} practice questions with instant answers and explanations.`}>
+<Base title={`Practice questions · ${s.name}`} back={{ href: `/${s.slug}/`, label: s.name }} image={s.og} description={`Test yourself on ${s.name}: ${total} practice questions with instant answers and explanations.`}>
 <main class="wrap quiz">
   <header class="head">
     <div class="kicker">Practice</div>
-    <h1>{total} practice MCQs</h1>
+    <h1>{total} practice questions</h1>
     <p class="lede">Pick an answer to see whether it is right and why. Your score is only for you and is not saved.</p>
   </header>
 
@@ -28,7 +28,7 @@ const total = s.quiz.sections.reduce((n, x) => n + x.questions.length, 0);
   var data = JSON.parse(document.getElementById('quiz-data').textContent);
   var sets = [{ name: 'All questions', questions: [].concat.apply([], data.sections.map(function (s) { return s.questions; })) }]
     .concat(data.sections);
-  var tagText = { PPT: 'From the slides', READING: 'From the reading', NEW: 'Extra question', CROSS: 'Cross-topic' };
+  var tagText = { PPT: 'From the slides', READING: 'From the reading', NEW: 'Extra question', CROSS: 'Cross-topic', TF: 'True or false', MCQ: 'Multiple choice', BANK: 'Question bank' };
   var setsEl = document.getElementById('sets'), card = document.getElementById('card');
   var cur, i, score, answered;
 

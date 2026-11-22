@@ -11,7 +11,7 @@ const index = chapters.map((c) => {
     text: [c.title, c.kicker, s.name, ...c.headings.map((h) => h.text)].join(' ').toLowerCase(),
   };
 });
-for (const s of library) if (s.quiz) index.push({ title: 'Practice MCQs', subject: s.name, url: `/${s.slug}/quiz/`, text: `practice mcqs quiz questions ${s.name}`.toLowerCase() });
+for (const s of library) if (s.quiz) index.push({ title: 'Practice questions', subject: s.name, url: `/${s.slug}/quiz/`, text: `practice mcqs quiz questions ${s.name}`.toLowerCase() });
 ---
 <Base>
 <main>
