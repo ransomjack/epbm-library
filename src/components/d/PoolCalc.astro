@@ -1,0 +1,32 @@
+---
+// Risk pooling: pooled SD = sqrt(a² + b² + 2rab).
+---
+<div class="calc" data-pool>
+  <div class="calc-in">
+    <label class="ctl"><span>Demand noise, North (SD)</span><input type="range" min="1" max="10" step="1" value="3" data-k="a" /><output data-o="a"></output></label>
+    <label class="ctl"><span>Demand noise, South (SD)</span><input type="range" min="1" max="10" step="1" value="4" data-k="b" /><output data-o="b"></output></label>
+    <label class="ctl hl"><span>Correlation between the two</span><input type="range" min="-1" max="1" step="0.1" value="0" data-k="r" /><output data-o="r"></output></label>
+    <div class="pool-bars">
+      <div><span>Two separate warehouses</span><i data-bar="sep"></i><em data-v="sep"></em></div>
+      <div><span>One pooled warehouse</span><i class="on" data-bar="pool"></i><em data-v="pool"></em></div>
+    </div>
+  </div>
+  <div class="calc-out"><span>Noise removed by pooling</span><b data-v="save"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-pool]').forEach((root) => {
+    const g = (k) => Number(root.querySelector(`input[data-k="${k}"]`).value);
+    const run = () => {
+      const a = g('a'), b = g('b'), r = g('r');
+      root.querySelector('[data-o="a"]').textContent = a; root.querySelector('[data-o="b"]').textContent = b;
+      root.querySelector('[data-o="r"]').textContent = (r > 0 ? '+' : '') + r.toFixed(1);
+      const sep = a + b, pool = Math.sqrt(Math.max(0, a * a + b * b + 2 * r * a * b));
+      root.querySelector('[data-bar="sep"]').style.width = '100%';
+      root.querySelector('[data-bar="pool"]').style.width = Math.max(1, 100 * pool / sep) + '%';
+      const set = (k, v) => { root.querySelector(`[data-v="${k}"]`).textContent = v; };
+      set('sep', sep.toFixed(1)); set('pool', pool.toFixed(1)); set('save', Math.round(100 * (1 - pool / sep)) + '%');
+      set('note', r >= 0.95 ? 'They move in lockstep, so pooling saves nothing. It never makes things worse.' : r <= -0.95 ? 'A perfect hedge: one rises when the other falls.' : r < 0 ? 'Negative correlation: the two demands partly cancel out.' : r === 0 ? 'Independent markets still pool well.' : 'The more alike the two markets, the less pooling helps.');
+    };
+    root.querySelectorAll('input').forEach((i) => i.addEventListener('input', run)); run();
+  });
+</script>

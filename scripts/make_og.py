@@ -28,6 +28,7 @@ jobs = [
  ('global-political-economy', page('Global Political Economy', 'Stakeholders and trust · FDI and PEST · Geopolitical risk · 96 practice MCQs', 'Global Political Economy', small=True)),
  ('financial-reporting-cost-accounting', page('Financial Reporting &amp; Cost Accounting', 'Statements · Depreciation and cash flow · Break-even · Ratios · 315 practice questions', 'Finance & Accounting', small=True)),
  ('leadership-people-skills', page('Leadership and People Skills', 'Motivation · Groups and teams · Structure · Leading change · 350 practice questions', 'Leadership', small=True)),
+ ('operational-excellence', page('Operational Excellence', 'Strategy · Process · Inventory · Supply chains · Lean · 200 practice questions', 'Operations', small=True)),
 ]
 out = sys.argv[1]
 with sync_playwright() as p:

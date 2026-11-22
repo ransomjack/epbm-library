@@ -25,7 +25,13 @@ export const subjects = [
     pdf: '/pdf/leadership-people-skills-master-notes.pdf',
     og: '/og/leadership-people-skills.png',
   },
-  { slug: 'operational-excellence', name: 'Operational Excellence' },
+  {
+    slug: 'operational-excellence',
+    name: 'Operational Excellence',
+    blurb: 'Operations strategy, process analysis, inventory, supply chains, lean and queues, with interactive calculators and 200 practice questions.',
+    pdf: '/pdf/operational-excellence-master-notes.pdf',
+    og: '/og/operational-excellence.png',
+  },
   { slug: 'digital-transformation', name: 'Digital Transformation' },
   { slug: 'ai-ml-business-analytics', name: 'AI/ML and Business Analytics' },
 ];

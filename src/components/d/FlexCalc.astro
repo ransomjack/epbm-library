@@ -1,0 +1,32 @@
+---
+// Two plants, capacity 100 each. Dedicated vs flexible.
+---
+<div class="calc" data-flex>
+  <div class="calc-in">
+    <label class="ctl"><span>Demand for product A</span><input type="range" min="60" max="140" step="5" value="110" data-k="a" /><output data-o="a"></output></label>
+    <label class="ctl"><span>Demand for product B</span><input type="range" min="60" max="140" step="5" value="90" data-k="b" /><output data-o="b"></output></label>
+    <div class="seg" role="group" aria-label="Plant design"><button type="button" data-m="ded" aria-pressed="true">Dedicated plants</button><button type="button" data-m="flex" aria-pressed="false">Flexible plants</button></div>
+    <div class="kv">
+      <div><span>Customers turned away</span><b data-v="lost"></b></div>
+      <div><span>Capacity left idle</span><b data-v="idle"></b></div>
+    </div>
+  </div>
+  <div class="calc-out"><span>Units sold</span><b data-v="sold"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-flex]').forEach((root) => {
+    let mode = 'ded';
+    const g = (k) => Number(root.querySelector(`input[data-k="${k}"]`).value);
+    const run = () => {
+      const a = g('a'), b = g('b');
+      root.querySelector('[data-o="a"]').textContent = a; root.querySelector('[data-o="b"]').textContent = b;
+      const ded = Math.min(a, 100) + Math.min(b, 100), flex = Math.min(a + b, 200), sold = mode === 'ded' ? ded : flex;
+      const set = (k, v) => { root.querySelector(`[data-v="${k}"]`).textContent = v; };
+      set('sold', sold); set('lost', a + b - sold); set('idle', 200 - sold);
+      set('note', mode === 'ded' ? (flex > ded ? `Each plant makes one product. Flexible plants would sell ${flex - ded} more.` : 'Each plant makes one product. Here flexibility would add nothing.') : (flex > ded ? `Either plant can make either product: ${flex - ded} more sold than with dedicated plants.` : 'Flexibility costs money and adds nothing at these demands.'));
+      root.querySelectorAll('[data-m]').forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.m === mode)));
+    };
+    root.querySelectorAll('[data-m]').forEach((x) => x.addEventListener('click', () => { mode = x.dataset.m; run(); }));
+    root.querySelectorAll('input').forEach((i) => i.addEventListener('input', run)); run();
+  });
+</script>

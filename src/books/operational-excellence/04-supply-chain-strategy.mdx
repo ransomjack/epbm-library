@@ -1,0 +1,204 @@
+---
+title: Supply Chain as Strategy
+kicker: Session 4
+order: 4
+source: "Session by Prof. Peeyush Mehta · Operational Excellence"
+description: "Operations strategy versus operations management, Intel's and Boeing's opposite sourcing mistakes, why DMart really wins, the product-process matrix, flexibility and the mathematics of risk pooling. Session 4 of Operational Excellence."
+takeaways:
+  - "Operations strategy designs the system; operations management runs it. Strategy mistakes can't be fixed in a quarter."
+  - "Don't judge how much a firm outsources. Judge whether what it outsources fits what it competes on."
+  - "Inventory is driven by how variable demand is, not by how large it is."
+  - "Variety must be paid for with flexibility. Pooling cuts risk but lengthens lead time."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Steps from '../../components/d/Steps.astro';
+import Quad from '../../components/d/Quad.astro';
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
+import FlexCalc from '../../components/d/FlexCalc.astro';
+import PoolCalc from '../../components/d/PoolCalc.astro';
+
+## Two levels of operations decisions
+
+Think of a kirana shop owner. Deciding whether to open a second shop near the bus stand, or to buy a delivery scooter, is **operations strategy**: designing the system. Deciding how much atta to order this week is **operations management**: running the system well. Sessions 2 and 3 were about running it. This session is about designing it.
+
+| Operations strategy (OS) | Operations management (OM) |
+|---|---|
+| Designs the system: "doing smart things" | Runs the system: "doing things smartly" |
+| How much capacity, what kind, when, where | Forecasting, inventory, scheduling, process flow |
+| Rare, board-level, very expensive | Continuous, managerial |
+| Hard to reverse | Correctable within months |
+
+<Sort title="Try it: strategy or management?" choices={['Strategy (OS)', 'Management (OM)']} items={[
+  { text: 'A cloud company decides how many data centres to build over five years.', answer: 'Strategy (OS)', why: 'Sizing and timing of capacity: expensive and hard to reverse.' },
+  { text: 'A retailer sets this week’s order quantities.', answer: 'Management (OM)', why: 'Running the existing system well.' },
+  { text: 'An aircraft maker decides to have suppliers design and build whole sections.', answer: 'Strategy (OS)', why: 'What to keep in-house is a design decision that shapes the firm for decades.' },
+  { text: 'A hospital reschedules its operating theatres to cut waiting.', answer: 'Management (OM)', why: 'Scheduling within the capacity it already has.' },
+]} />
+
+The rule from Session 1 still governs: operations takes its mandate from the business strategy. If the basis of competition is fuzzy, every decision below it wobbles.
+
+## Intel: too little outsourcing
+
+Imagine a shopkeeper who insists on growing his own wheat, milling his own flour and printing his own packets, while the shop next door simply buys the best flour on the market and sells more of it. For two decades Intel was the first shopkeeper.
+
+The chip industry creates value in three stages:
+
+<Flow items={[
+  { t: 'Design', s: 'Chip architecture and intellectual property. Nvidia, AMD, Qualcomm, Apple.' },
+  { t: 'Fabrication', s: 'Printing chips at a few nanometres. TSMC, using ASML’s machines.', hl: true },
+  { t: 'Assembly and test', s: 'Packaging and testing. Cost-driven, largely in Asia.' },
+]} />
+
+The industry **deliberately split itself up**. No single firm could fund every layer at the pace of innovation, so specialists emerged at each stage and fed one another: TSMC's fabrication turned Nvidia's designs into the hardware that runs modern AI. Outsourcing here was never a cost trick. It was the industry's engine of innovation.
+
+Intel kept design, fabrication and assembly all in-house: a control-first strategy in an industry where the next source of value had moved outside any one firm's walls. It ended up with large amounts of the wrong kind of capacity, and went through repeated changes of chief executive. Capacity decisions are strategy decisions, and strategy mistakes can't be fixed in a quarter.
+
+<div class="callout trap">
+<p class="callout-title">"So vertical integration is bad." No.</p>
+
+Vertical integration buys **control**. Intel's industry needed distributed innovation, not control. Zara's industry needs speed, and owning most of its chain is exactly how Zara delivers speed. Same tool, opposite verdicts. The context decides.
+
+</div>
+
+Keep one question on a loop: **where is the next source of value creation, and is it inside or outside my boundary?** Core stays in; non-core goes out; and what counts as core shifts over time.
+
+## Boeing: too much outsourcing
+
+Boeing made the opposite mistake. For the 787 Dreamliner it changed its whole supply chain.
+
+| | Earlier aircraft (737) | 787 Dreamliner |
+|---|---|---|
+| Share outsourced | 35–50% | About 70% |
+| Suppliers | Thousands, managed directly | About 50 "strategic partners"; little visibility beyond them |
+| Supplier's role | Built parts to Boeing's designs | Designed and built entire sections, and owned the know-how |
+| Contracts | Fixed price, with delay penalties | Risk-sharing: paid only when Boeing delivered the aircraft |
+| Final assembly | About 30 days | A planned 3-day snap-together of finished sections |
+
+**Why the clever contract backfired.** On paper, "nobody is paid until the aircraft is delivered" should make everyone hurry. In practice each supplier asked: why deliver early and tie up cash waiting for the slowest partner? A contract designed as a race became a slow race. The 787 arrived years late, and soon after entering service the whole fleet was grounded over battery problems.
+
+**The deeper problem.** Aircraft manufacturing competes on quality the way chip-making competes on innovation. Yet the Dreamliner chain was built to control cost, and Boeing separated design from manufacturing. The result today is "travelled work": jobs done out of sequence and unfinished aircraft pushed down the line, with a large share of effort going into rework. Boeing has since bought back the fuselage maker it had spun off to save money.
+
+| | Intel | Boeing |
+|---|---|---|
+| What the industry competes on | Innovation | Quality |
+| The strategy error | Too much vertical integration | Uncontrolled outsourcing |
+| What was lost | The outside innovation ecosystem | Control of process and quality |
+| The symptom | Idle capacity of the wrong kind | Rework, delays, groundings |
+| The root cause | Misread where value creation lived | Misread what the product demands |
+
+<div class="callout">
+<p class="callout-title">Opposite errors, the same root</p>
+
+Outsourcing didn't sink Boeing. Outsourcing the one thing its competitiveness depends on, control of quality, did. **Don't grade the level of outsourcing. Grade the fit between what is outsourced and what the firm competes on.**
+
+</div>
+
+### Three more lessons from the class debates
+
+- **Calibrated outsourcing.** Sometimes you outsource knowing the risk. Tesla built a huge plant in Shanghai knowing it would help China's electric-vehicle industry learn, because it needed China's scale and cost. The discipline is deciding what is core, which never leaves, and what isn't.
+- **Outsourcing as an innovation engine.** A contract manufacturer that pools every customer's volume can fund research no single customer could afford. That is the TSMC story.
+- **Being smartly late.** Several carmakers rushed to build electric-vehicle plants and then saw demand soften. Toyota stayed with hybrids, was criticised for years, and has so far been proved right. Waiting can be an operations strategy.
+
+## Why DMart really wins
+
+Everyone "knows" why DMart wins: it pays suppliers quickly, it is cash-rich, it owns its stores. Prof. Mehta's reply: you're telling me the patient has a fever; I asked what the infection is.
+
+<Decide q="Which of these is the root cause of DMart’s low costs?" title="Find the cause, not the symptom" options={[
+  { label: 'It pays suppliers within days and earns extra discounts.', why: 'True, but that is a result. Ask what gives it the cash to pay so fast.' },
+  { label: 'It owns its real estate instead of renting.', why: 'Helpful, but remove it and the model still works.' },
+  { label: 'It stocks a narrow, curated range of fast-selling items.', good: true, why: 'Fast-moving items have predictable demand. Predictable demand needs little safety stock. Low stock frees cash, and everything else follows.' },
+]} />
+
+The chain of reasoning, step by step:
+
+<Steps items={[
+  { title: 'Start from strategy', body: 'DMart’s strategy is one line: low-cost retail.' },
+  { title: 'Find the big cost', body: 'In retail it is holding inventory. A low-cost retailer needs high stock turnover.' },
+  { title: 'Ask what drives inventory', body: 'Not how much you sell, but how unpredictable sales are.' },
+  { title: 'See the real move', body: 'DMart carries only a fraction of a typical retailer’s range: fast movers, whose demand is steady.' },
+]} />
+
+<Fig title="The DMart flywheel" caption="Remove the curated, predictable range and the whole wheel stops. Fast payment and owned stores are the icing, not the cake.">
+  <Flow items={[
+    { t: 'Curated fast movers', s: 'Predictable demand', hl: true },
+    { t: 'Low inventory', s: 'Little cash tied up' },
+    { t: 'Pays suppliers fast', s: 'Days, not weeks' },
+    { t: 'Supplier discounts', s: 'Passed on as lower prices' },
+    { t: 'More volume', s: 'Stock moves even faster' },
+  ]} />
+</Fig>
+
+<div class="callout trap">
+<p class="callout-title">Inventory follows variability, not volume</p>
+
+"High demand needs high inventory" is false when demand is predictable. Safety stock grows with how **noisy** demand is and with the service level you promise. A large, steady seller needs almost no buffer. A small, erratic one can need a lot.
+
+</div>
+
+## The product–process matrix
+
+Put product variety on one axis and process flexibility on the other. Well-run firms sit on the diagonal.
+
+<Fig title="Variety must be matched by flexibility" caption="After Hayes and Wheelwright. Every step towards more variety has to be paid for with a step towards more flexibility.">
+  <Quad cols={['Low variety', 'High variety']} rows={['Flexible process', 'Rigid process']} cells={[
+    { tag: 'Off the diagonal', t: 'Paying for flexibility you don’t use', b: 'A flexible, costly process serving a narrow range. Pure waste.', tone: 'bad' },
+    { tag: 'On the diagonal', t: 'Variety, honestly paid for', b: 'Multi-speciality hospitals; large online marketplaces.', tone: 'best' },
+    { tag: 'On the diagonal', t: 'Focused and low-cost', b: 'Ford’s Model T; DMart; IndiGo; a specialist heart hospital.', tone: 'best' },
+    { tag: 'Off the diagonal', t: 'Promises the process can’t keep', b: 'High variety on a rigid process: delays, stock-outs, lost sales.', tone: 'bad' },
+  ]} />
+</Fig>
+
+Variety is complexity: more items mean harder forecasts, more suppliers, more skills and more stock. That complexity has to be absorbed by flexibility, and flexibility costs money.
+
+- **A focused heart hospital** applies Henry Ford's idea to surgery: one kind of work, smooth flow, high volume, low cost. As its founder put it, healthcare needs process innovation, not product innovation.
+- **A multi-speciality hospital** has unpredictable flows (the X-ray room is swamped today, the scanner tomorrow) and must buy flexibility: cross-trained staff, multi-purpose equipment, spare capacity.
+- **Dell** stayed on the diagonal cleverly: it mass-produced the standard 70–80% of every machine and let the customer's choices apply only to the final slice.
+
+## Flexibility
+
+Two plants can each make 100 units. Demand for product A turns out to be 110 and for product B, 90. Try both designs.
+
+<Fig title="Dedicated or flexible plants?" caption="Flexibility turns stranded capacity into sales. It isn't free: flexible equipment and cross-trained people cost more.">
+  <FlexCalc />
+</Fig>
+
+**Flexibility is the tool for absorbing shocks**: in demand, supply, processing time or lead time. What it looks like depends on the business: well-placed stock in retail, several routes in logistics, multi-product lines in a factory, cross-skilled people in services.
+
+## Risk pooling
+
+A company has a North and a South warehouse. For one product, demand in each market varies, and the company holds stock in proportion to that variation. What happens if it merges the two into one warehouse?
+
+**Pooled SD = √(SD₁² + SD₂² + 2 × r × SD₁ × SD₂)**
+
+where SD is the standard deviation of demand (the "noise") and r is the correlation between the two markets, from −1 to +1.
+
+<Fig title="Pooling two warehouses" caption="Try r = −1, 0 and +1. Pooled noise can never exceed the two added together, so pooling can only help or break even.">
+  <PoolCalc />
+</Fig>
+
+| Correlation (noise of 3 and 4; 7 if kept separate) | Pooled noise | Meaning |
+|---|---|---|
+| r = −1: one rises when the other falls | 1 | A huge saving: the perfect hedge |
+| r = 0: independent markets | 5 | A solid saving |
+| r = +1: they move together | 7 | No saving, but no worse |
+
+This is the argument for a diversified investment portfolio: spreading across assets that don't move together reduces total risk.
+
+<div class="callout trap">
+<p class="callout-title">Pooling is not a free lunch</p>
+
+If pooling is so good, why doesn't an online retailer run one giant national warehouse? Because **pooling trades inventory for lead time**: centralise and you hold less stock, but you move away from the customer. Where speed is the promise, that is fatal. Always state the saving and the trade-off together.
+
+</div>
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: three questions for any supply chain decision</p>
+
+1. What do we compete on, and does this decision serve it?
+2. Is what we are keeping or handing over core to that?
+3. What variability are we facing, and where will we absorb it: in stock, in spare capacity, or in the customer's waiting time?
+
+</div>

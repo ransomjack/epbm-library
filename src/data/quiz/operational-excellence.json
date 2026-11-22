@@ -1,0 +1,2435 @@
+{
+ "title": "Practice questions",
+ "sections": [
+  {
+   "name": "Session 1: Strategy and moats",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "The retailers' inventory-to-sales ratio is called a lagging indicator because:",
+     "options": [
+      "It measures demand, which always lags supply",
+      "Retail data is published late",
+      "It rises before a recession begins",
+      "It peaks only in the middle of a recession, after trouble has set in"
+     ],
+     "answer": 3,
+     "why": "Stock visibly piles up only after demand has already fallen - the dial confirms the recession from inside it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The key operations difference between the 2008 and 2020 recessions was:",
+     "options": [
+      "Both were supply-led",
+      "2008 was demand-led with stable supply; in 2020 supply collapsed too and could not restart as fast as demand returned",
+      "2008 was supply-led; 2020 was demand-led",
+      "2020 had no supply chain impact"
+     ],
+     "answer": 1,
+     "why": "2008: no demand for available supply. 2020: demand rebounded before supply was ready."
+    },
+    {
+     "tag": "MCQ",
+     "q": "China+1 - keeping China but adding a second manufacturing base in India or Vietnam - is an example of:",
+     "options": [
+      "Vertical integration",
+      "Decoupling",
+      "De-risking",
+      "Reshoring"
+     ],
+     "answer": 2,
+     "why": "De-risking = diversifying so no one geography holds you hostage; decoupling is rebuilding capability at home."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The US semiconductor push (CHIPS Act) discovered that the real constraint on decoupling is:",
+     "options": [
+      "Tariff levels",
+      "Consumer demand",
+      "Lost domestic capability",
+      "Capital"
+     ],
+     "answer": 2,
+     "why": "Money was never the bottleneck; decades of offshoring diluted the capability itself."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Rare-earth metals give China leverage primarily because of its dominance in:",
+     "options": [
+      "Deposits in the ground",
+      "Shipping routes",
+      "Mining labour cost",
+      "Refining capability"
+     ],
+     "answer": 3,
+     "why": "Rare earths are not rare; the chokepoint is refining, which China dominates."
+    },
+    {
+     "tag": "MCQ",
+     "q": "IndiGo's decision to compete on low cost belongs to which level of the strategy cascade?",
+     "options": [
+      "Business strategy",
+      "Corporate strategy",
+      "Operations strategy",
+      "Functional design"
+     ],
+     "answer": 0,
+     "why": "Business strategy answers 'how to play' - the basis of competition. Entering aviation at all was corporate."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The test of real differentiation, per the Harvard example, is:",
+     "options": [
+      "Brand recall among customers",
+      "What still stands once you strip away everything rivals can equally claim",
+      "Market share leadership",
+      "Price premium"
+     ],
+     "answer": 1,
+     "why": "Harvard's answer is the case-study method - something rivals cannot equally say."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Ford's 'any colour so long as it is black' is a deliberate position of:",
+     "options": [
+      "High variety, low cost",
+      "Low variety, low cost via mass production",
+      "Low variety, high cost",
+      "High variety, high cost"
+     ],
+     "answer": 1,
+     "why": "Ford surrendered variety to win on cost - a captured trade-off."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is NOT part of the cost cascade unlocked by IndiGo's single fleet type?",
+     "options": [
+      "One pilot / simulator training pipeline",
+      "Lower unit cost from large single-type orders",
+      "Substitutable spare parts",
+      "Premium pricing power on trunk routes"
+     ],
+     "answer": 3,
+     "why": "The single fleet unlocks cost, not pricing power - IndiGo competes on price, not premiums."
+    },
+    {
+     "tag": "MCQ",
+     "q": "IndiGo's engine groundings show that standardisation's hidden price is:",
+     "options": [
+      "Higher fuel cost",
+      "Slower turnarounds",
+      "Weaker brand",
+      "Concentrated exposure when the one common component fails"
+     ],
+     "answer": 3,
+     "why": "One dominant engine type means one fault hits the whole fleet - hence supplier-penalty revenue in its accounts."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A firm sits below the industry benchmarking curve. The correct board reading is:",
+     "options": [
+      "It chose too little value - raise the value target",
+      "It is the industry cost leader",
+      "It is operationally inefficient - the same value is achievable at lower cost",
+      "The curve does not apply to innovative industries"
+     ],
+     "answer": 2,
+     "why": "The value level is the firm's prerogative; delivering it above frontier cost is the crime."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In V = C x (A + P), the four questions carried by Assets are:",
+     "options": [
+      "Cost, quality, speed, variety",
+      "Sizing, timing, type, location",
+      "Supply, technology, demand, risk",
+      "Plan, organise, lead, control"
+     ],
+     "answer": 1,
+     "why": "Assets = sizing, timing, type, location; supply/technology/demand/innovation/risk sit under Processes."
+    },
+    {
+     "tag": "MCQ",
+     "q": "By producing in small lots, Zara deliberately trades:",
+     "options": [
+      "Inventory risk for shortage risk",
+      "Speed for variety",
+      "Quality risk for cost risk",
+      "Shortage risk for inventory risk"
+     ],
+     "answer": 0,
+     "why": "Small lots cut unsold-stock risk but invite stockouts - which Zara converts into scarcity marketing plus rapid replenishment."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The deepest lesson of GM's 2009 bankruptcy despite a 15-year Toyota partnership is:",
+     "options": [
+      "Toyota hid its methods",
+      "Culture is part of the process, and cannot be copied even from inside the same plant",
+      "Lean does not work outside Japan",
+      "GM lacked capital"
+     ],
+     "answer": 1,
+     "why": "The machines and checklists transferred; the culture did not - Toyota struggles to export it even to itself."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Per the first law of disruption, a disruptor must:",
+     "options": [
+      "Patent its process",
+      "Vertically integrate",
+      "Kill an accepted trade-off, at scale",
+      "Launch a superior product"
+     ],
+     "answer": 2,
+     "why": "Dell (variety at low cost) and Tesla (post-Gigafactory scale) both broke a trade-off at scale; niches are not disruptions."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Apple is classified as product-innovation-led chiefly because:",
+     "options": [
+      "It outsources design",
+      "Its supply chain is weak",
+      "Its manufacturing ecosystem is the industry's shared asset, not proprietary to Apple",
+      "It does no process improvement"
+     ],
+     "answer": 2,
+     "why": "Foxconn's ecosystem serves many customers; Apple's edge rests on the next launch - the fragile side of the moat."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Match the shock to its trigger, as taught in class:",
+     "options": [
+      "2008: biological; 2020: financial",
+      "Dot-com: political; 2008: biological; 2020: financial; tariffs: random natural events",
+      "All four were financially triggered",
+      "Dot-com: tech bust (~2000); 2008: financial; 2020: biological; tariff era: political - and far more random than the others"
+     ],
+     "answer": 3,
+     "why": "Each shock has a different trigger, but all landed first and hardest on operations - the function matching supply and demand."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why did supply recover so slowly in 2020, per the class?",
+     "options": [
+      "Demand never actually returned",
+      "Governments banned production",
+      "Decades of globalisation chasing labour arbitrage built a deeply connected world - efficient, but the connectivity became a transmission line for the shock",
+      "Factories were destroyed"
+     ],
+     "answer": 2,
+     "why": "India absorbed services, China manufacturing; the same links that made chains cheap made them fragile."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Wall Street's decades of applauding 'asset-light' balance sheets meant that when reshoring arrived, firms:",
+     "options": [
+      "Faced no difficulty at all",
+      "Had too much cash to deploy",
+      "Were asked to recreate capacity they no longer knew how to run - the bottleneck was capability, not cash",
+      "Could simply unplug supply chains from China and snap them into the US"
+     ],
+     "answer": 2,
+     "why": "Supply chains are not Lego bricks; owning few factories for decades dilutes the very capabilities reshoring needs."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Friend-shoring, as defined in class, is:",
+     "options": [
+      "Bringing production all the way home",
+      "Outsourcing to the cheapest bidder",
+      "Building factories near the home market",
+      "Sourcing from politically friendly countries - India buying Russian oil was the class framing"
+     ],
+     "answer": 3,
+     "why": "Reshoring = home; nearshoring = near the home market; friend-shoring = friendly geographies."
+    },
+    {
+     "tag": "MCQ",
+     "q": "NVIDIA being the most valuable firm on earth was cited to prove that:",
+     "options": [
+      "Access to 2-3 nanometre chips is decisive - without them there is no modern AI, and that capability is a slow sequential climb no latecomer can leapfrog",
+      "India should skip semiconductors",
+      "Chip assembly is the highest-value stage",
+      "Marketing beats operations"
+     ],
+     "answer": 0,
+     "why": "The frontier capability, not the brand, is the moat - which is exactly why India's fab push cannot jump the queue."
+    },
+    {
+     "tag": "MCQ",
+     "q": "L&T's differentiation, per the class, is:",
+     "options": [
+      "Fastest delivery",
+      "Complexity - infrastructure projects no rival will touch",
+      "Lowest cost",
+      "Widest variety"
+     ],
+     "answer": 1,
+     "why": "Differentiation is whatever would be missed if you vanished; for L&T that is the projects nobody else attempts."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A pharma firm competing on SPEED of new-molecule launches must accept that:",
+     "options": [
+      "Flexible, bring-any-science capacity sits partly idle - you buy agility with idle assets",
+      "It can run at 100% utilisation",
+      "Cost leadership comes automatically",
+      "Its lines must be rigidly specialised"
+     ],
+     "answer": 0,
+     "why": "The cost player builds one rigid line per molecule; the speed player pays for flexibility with idleness."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Tata's Jaguar plant at Solihull was retrofitted for flexibility because:",
+     "options": [
+      "The A321 failed",
+      "The strategy changed - stop putting all innovation into one product on one rigid platform",
+      "Regulators demanded it",
+      "Labour costs fell"
+     ],
+     "answer": 1,
+     "why": "Change the mandate above and the asset design below must change with it - the cascade in action."
+    },
+    {
+     "tag": "MCQ",
+     "q": "On fleet risk, the class distinguished:",
+     "options": [
+      "Neither ever happens",
+      "A whole configuration (like the A321) failing is the rarest of rare; component failure - like the P&W engines - is the real, live risk",
+      "Configuration failure is common; component failure is rare",
+      "Both are equally likely"
+     ],
+     "answer": 1,
+     "why": "Standardisation concentrates exposure at the component level - the exact failure IndiGo lived through."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Even the industry's LOWEST-COST producer can sit below the benchmarking curve because:",
+     "options": [
+      "Value cannot be measured",
+      "Low cost guarantees frontier position",
+      "The curve is drawn wrong",
+      "The frontier is defined by what is technologically possible, not by what today's best player achieves"
+     ],
+     "answer": 3,
+     "why": "Being today's best is not the same as being at the technological frontier - the subtlety he insisted on."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Gartner Supply Chain Top 25 was introduced WITH a caveat:",
+     "options": [
+      "It is biased toward conventional distribution-heavy chains and under-weights pure services",
+      "It excludes American firms",
+      "It ranks only manufacturers by revenue",
+      "It is a perfect ranking"
+     ],
+     "answer": 0,
+     "why": "Useful conversation starter, biased instrument - Schneider Electric, NVIDIA and Cisco topped the 2025 list."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Zara keeping cloth un-dyed until the last moment (postponement) exists to:",
+     "options": [
+      "Delay commitment until real demand information arrives - dye to whatever is selling",
+      "Slow the supply chain down",
+      "Comply with regulation",
+      "Save dye costs"
+     ],
+     "answer": 0,
+     "why": "Postponement converts forecasting risk into response speed - one of the levers serving the single objective: reduce lead time."
+    },
+    {
+     "tag": "MCQ",
+     "q": "'Culture eats strategy for breakfast, lunch and dinner' was used in class to explain:",
+     "options": [
+      "Why Toyota cannot fully replicate its own quality outside Japan - culture is part of the process",
+      "Why breakfast meetings are effective",
+      "Why GM's culture saved it",
+      "Why strategy documents matter most"
+     ],
+     "answer": 0,
+     "why": "Machines and suppliers transfer; the cultural ingredient of a process moat does not - which is also why rivals cannot copy it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "THE TELL for which innovation type dominates: Dell and Zara are 'doing the same thing' because:",
+     "options": [
+      "Both are vertically integrated in Spain",
+      "Both design unique products",
+      "In both, the value you consume is a product, but the innovation that delivers it lives in the process",
+      "Both compete on quality"
+     ],
+     "answer": 2,
+     "why": "Customised PC, fast fashion - the product is ordinary; the assembly model and supply chain are the moat."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Apple's surging services revenue was read in class as:",
+     "options": [
+      "Proof of process dominance",
+      "A supply chain failure",
+      "An attempt to diversify away from a saturating hardware product - the curse of product-led advantage",
+      "Evidence Apple is leaving China"
+     ],
+     "answer": 2,
+     "why": "When advantage rests on the next launch, you hedge the launch - services is that hedge."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Second-generation AirPods can be built in Vietnam but the third generation still needs China because:",
+     "options": [
+      "The manufacturing ecosystem took forty years to build and is the industry's shared asset - depth cannot be relocated quickly",
+      "Chinese tariffs are lower",
+      "Apple owns Chinese factories outright",
+      "Vietnam lacks electricity"
+     ],
+     "answer": 0,
+     "why": "Foxconn serves many customers; the ecosystem is world-class but not Apple's alone - and not portable on demand."
+    }
+   ]
+  },
+  {
+   "name": "Session 2: Efficiency and process",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "By the 100-percent-valid test, manpower is a resource and not an input because:",
+     "options": [
+      "It cannot be outsourced",
+      "It is paid monthly",
+      "After the transformation it is fully intact, while inputs no longer exist",
+      "It appears on the balance sheet"
+     ],
+     "answer": 2,
+     "why": "Iron ore vanishes into pig iron; the worker and furnace remain - the vanishing test settles every debate."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the cash-flow reading of a process:",
+     "options": [
+      "Inputs are inflows, outputs are outflows",
+      "Depreciation is an inflow",
+      "Inputs and resources are outflows; outputs are inflows",
+      "Only resources are outflows"
+     ],
+     "answer": 2,
+     "why": "A resource's outflow may be years old (depreciation), but it is an outflow all the same."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The course definition of efficiency is:",
+     "options": [
+      "For a given unit of output, minimising the inputs and resources required, in currency terms",
+      "Maximising customer surplus",
+      "Maximising output at any cost",
+      "Doing the right things for all stakeholders"
+     ],
+     "answer": 0,
+     "why": "Efficiency is cost minimisation in polite clothing - the operational route to profit maximisation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Patancheru's antibiotic-resistance story illustrates that:",
+     "options": [
+      "Cost-cutting deletes costs permanently",
+      "Aggressive efficiency relocates costs onto stakeholders outside your P&L",
+      "Regulation has no role in operations",
+      "Efficiency always improves quality"
+     ],
+     "answer": 1,
+     "why": "The saving showed as efficiency on the plant dashboard; the bill moved to the community's health."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Effectiveness is defined in this course as maximising the welfare of:",
+     "options": [
+      "Employees only",
+      "Customers only",
+      "All stakeholders including the owner",
+      "All stakeholders except the owner"
+     ],
+     "answer": 3,
+     "why": "Efficiency already serves the shareholder; effectiveness need not repeat the favour."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Customer welfare, precisely, equals:",
+     "options": [
+      "Quality minus defects",
+      "Revenue minus discount",
+      "Price minus cost",
+      "Value minus price"
+     ],
+     "answer": 3,
+     "why": "The Rs. 20 bottle worth Rs. 40 on a hot day gives Rs. 20 of welfare; on a rainy day, none - the value moved."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Income-tax e-filing was classified as:",
+     "options": [
+      "Pure effectiveness",
+      "Both - department cost fell from ~Rs. 3 to ~Rs. 0.5 per Rs. 100 collected while citizen filing collapsed to minutes",
+      "Neither",
+      "Pure efficiency"
+     ],
+     "answer": 1,
+     "why": "One redesign served the owner (cost) and the stakeholder (time) simultaneously."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Zara is MORE profitable than efficient rivals despite 15-20% costlier materials because:",
+     "options": [
+      "It advertises more",
+      "It pays suppliers late",
+      "Its revenue quality is higher - customers hunt novelty and scarcity, and nobody asks for a discount",
+      "It has lower rents"
+     ],
+     "answer": 2,
+     "why": "Higher costs, higher-quality revenue, better margins - effectiveness producing efficiency's prize."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Lemon Tree mechanism, articulated in hindsight, is:",
+     "options": [
+      "Lower wages reduced cost",
+      "Awards drove bookings",
+      "Disability hiring qualifies for tax breaks",
+      "A firm that visibly cares for its own people signals to guests that it will care for them"
+     ],
+     "answer": 3,
+     "why": "Care is read by customers as reliability - the 'extra' cost became extra revenue."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A layoff announcement lifting a share price is best described as:",
+     "options": [
+      "Operational excellence",
+      "Effectiveness",
+      "Efficiency as theatre - the market applauds the cost signal before any cost is saved",
+      "Process innovation"
+     ],
+     "answer": 2,
+     "why": "The signal, not the saving, moves the price - the opposite of the Lemon Tree design."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The single point of betrayal in the old MDP process was:",
+     "options": [
+      "High programme fees",
+      "Confirming every nomination instantly, then cancelling under-subscribed programmes after participants had booked travel",
+      "The PDF nomination form",
+      "Slow email replies"
+     ],
+     "answer": 1,
+     "why": "Sequencing, not paperwork, was the killer: faculty viability now precedes any participant confirmation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A hospital doing one hundred identical cataract surgeries a day is best classified as:",
+     "options": [
+      "Job shop",
+      "Project",
+      "Assembly line",
+      "Batch shop"
+     ],
+     "answer": 2,
+     "why": "Repetitive, near-identical processing is an assembly line - and quality is the product of that process, not its casualty."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Collate (2 min) then staple (1 min), one person each. Cycle time, throughput time and hourly output are:",
+     "options": [
+      "2 min, 3 min, 30 sets",
+      "2 min, 2 min, 30 sets",
+      "1 min, 3 min, 60 sets",
+      "3 min, 2 min, 20 sets"
+     ],
+     "answer": 0,
+     "why": "The slowest stage (collation) sets CT = 2; TP = 2 + 1 = 3; output = 60/2 = 30, while the stapler idles half the time."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An aircraft's 30-40 minutes at the gate (deplaning, cleaning, boarding) is:",
+     "options": [
+      "Operation time",
+      "Waiting time",
+      "Setup time",
+      "Throughput time"
+     ],
+     "answer": 2,
+     "why": "It is preparation for the next flight - like scrubbing the kadai between dishes. The runway queue is the waiting time."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An OPD has a 1-minute cycle time and a 1-hour visit. Average patients inside the system:",
+     "options": [
+      "30",
+      "60",
+      "3,600",
+      "1"
+     ],
+     "answer": 1,
+     "why": "Little's Law: WIP = throughput time x rate = 1 hour x 60/hour = 60."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Dumper problem (load 7.5, round trip 25.5, shovel Rs. 200/hr, dumper Rs. 800/hr): to minimise cost per load, hire:",
+     "options": [
+      "5 dumpers",
+      "4 dumpers (Rs. 425/load)",
+      "2 dumpers",
+      "3 dumpers (about Rs. 368/load)"
+     ],
+     "answer": 3,
+     "why": "Crossover n* = 25.5/7.5 = 3.4; three dumpers minimise cost per load, four merely finish fastest."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the departure terminal, the bottleneck and system capacity are:",
+     "options": [
+      "Security, 90/hour",
+      "Identity check, 120/hour",
+      "Baggage scanning, 60/hour",
+      "Check-in, 75 passengers/hour"
+     ],
+     "answer": 3,
+     "why": "Check-in: 5 counters x 15/hour = 75, the lowest stage capacity - the system's capacity."
+    },
+    {
+     "tag": "MCQ",
+     "q": "To lift that terminal to 120 passengers/hour you must:",
+     "options": [
+      "Add 1 identity entrance",
+      "Add 3 security counters only",
+      "Add 3 check-in counters and 1 security counter",
+      "Add 2 baggage scanners"
+     ],
+     "answer": 2,
+     "why": "Check-in needs 120/15 = 8 counters (+3); security 120/30 = 4 (+1); the other stages already stand at 120."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Negative electricity prices - buyers paid to consume - were cited to show:",
+     "options": [
+      "Electricity is not an output",
+      "Power firms are inefficient",
+      "Even the cleanest mapping (outputs = inflows) has exceptions when supply swamps demand",
+      "Outputs are always cash inflows, no exceptions"
+     ],
+     "answer": 2,
+     "why": "Rare, but a useful reminder: in spot markets, oversupply can flip the sign of the inflow."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Standing in Calcutta while needing to be in Delhi is, in the transformation lens:",
+     "options": [
+      "An output",
+      "An input - an unmet need qualifies; you rent the airline's resources to transform it",
+      "Waste",
+      "A resource"
+     ],
+     "answer": 1,
+     "why": "Inputs need not be physical; if we could all fly, airlines would have nothing to transform."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why does the word 'efficiency' survive in boardrooms while 'cost minimisation' draws resentment?",
+     "options": [
+      "Only 'efficiency' passes as pure virtue - nobody hears their own job inside it",
+      "Cost minimisation is illegal",
+      "Efficiency excludes labour costs",
+      "They mean different things"
+     ],
+     "answer": 0,
+     "why": "Test the three phrases: profit maximisation and cost minimisation sound like someone pays; efficiency sounds like everyone wins."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Sumit finishes in one hour what takes Biju three. Sumit's reward is:",
+     "options": [
+      "The next task - same salary, more output; the employer's resource cost per unit falls",
+      "Nothing changes",
+      "A share of the savings",
+      "Two hours off"
+     ],
+     "answer": 0,
+     "why": "That is exactly why it counts as efficiency: a paid resource's time per unit of output was minimised."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor's cheeky 'peace formula' for employees ground down by efficiency drives:",
+     "options": [
+      "Change jobs annually",
+      "Buy the company's shares - when the squeezing is high, the profits usually are too",
+      "Work less",
+      "File a complaint"
+     ],
+     "answer": 1,
+     "why": "He held his old employer's stock for decades - partly nostalgia, mostly returns."
+    },
+    {
+     "tag": "MCQ",
+     "q": "His Rs. 50,000 Google Pixel, privately valued above Rs. 60,000, illustrates:",
+     "options": [
+      "Welfare = value minus price: a surplus of Rs. 10,000-plus - and a sheepish thank-you to his son",
+      "Impulse buying",
+      "Phones are A items",
+      "Price equals value"
+     ],
+     "answer": 0,
+     "why": "You buy when your value exceeds the price; the gap is your welfare."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An employee valuing the job at Rs. 3 lakh while paid Rs. 2 lakh praises the firm - until a Rs. 2.5 lakh offer arrives. Lesson:",
+     "options": [
+      "Salary does not matter",
+      "Loyalty is permanent",
+      "Counter-offers always work",
+      "Employee welfare is the perceived value-minus-price gap, not the evening chocolates"
+     ],
+     "answer": 3,
+     "why": "Shrink the surplus below an outside option and twenty years of loyalty evaporates by lunchtime."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Selling only a single large pack size was classified as:",
+     "options": [
+      "Efficiency - it favours the producer's cost structure, not the customer's actual need",
+      "Neither",
+      "Both",
+      "Effectiveness - it serves customers"
+     ],
+     "answer": 0,
+     "why": "Flip it - smaller packs, more often - and the same product line moves toward effectiveness."
+    },
+    {
+     "tag": "MCQ",
+     "q": "One 100-seater bus every 30 minutes versus 25-seaters every 15 minutes:",
+     "options": [
+      "The first is efficiency (producer's cost per seat); the flip to smaller-more-frequent is effectiveness",
+      "Both are efficiency",
+      "The first is effectiveness",
+      "Bus size is irrelevant"
+     ],
+     "answer": 0,
+     "why": "Same route, same total seats - the design choice decides whose welfare is being optimised."
+    },
+    {
+     "tag": "MCQ",
+     "q": "'Design', in the effectiveness discussion, means:",
+     "options": [
+      "Product styling",
+      "Every stakeholder considered in every decision - the women-workforce safe commute is part of the plant's design, not the government's headache",
+      "Outsourcing HR",
+      "Annual CSR budgets"
+     ],
+     "answer": 1,
+     "why": "A design that optimises for a subset of stakeholders is an incomplete design."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Toyota spending 'extra' on employee and customer welfare is defended because:",
+     "options": [
+      "Toyota cannot control spending",
+      "An extra cost of 10 that returns more than 10 is not a cost at all",
+      "It reduces taxes",
+      "Regulation requires it"
+     ],
+     "answer": 1,
+     "why": "It wants the best employees and best customers - effectiveness quietly producing efficiency's prize."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The class evidence for process maps included all of these EXCEPT:",
+     "options": [
+      "Maps eliminating the need for any digitisation",
+      "Swim lanes ending months of cross-functional blame",
+      "ISO and SOC audits being documented process at bottom",
+      "An Oracle-to-SAP migration where the maps WERE the migration"
+     ],
+     "answer": 0,
+     "why": "Maps enable migration, accountability and audit; the MDP story still needed its Rs. 1.5 lakh portal."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor's two-hospitals story (his cataract vs his mother-in-law's) teaches:",
+     "options": [
+      "Process sheets are bureaucracy",
+      "Surgery quality depends on size",
+      "Reputation is not process - the small hospital ran like clockwork with a printed step-sheet; the reputed one ran on 'wait, we will tell you'",
+      "Famous hospitals have better processes"
+     ],
+     "answer": 2,
+     "why": "He still wonders how the second place became the famous one."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The MDP data upended intuition on programme length:",
+     "options": [
+      "Only 1-day events survived",
+      "5-6 day programmes ran 100% of the time; every 2-day was cancelled and more than half the 3-day ones died",
+      "Short programmes filled best",
+      "Length made no difference"
+     ],
+     "answer": 1,
+     "why": "He had assumed busy executives prefer short programmes; the data said the opposite - and higher price filled MORE reliably ('a strange industry')."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The MDP repair cost about Rs. 1.5 lakh because:",
+     "options": [
+      "The institute helped build the front end and the professor coded the back end himself - formal procurement would have taken a year or two",
+      "Software was pirated",
+      "Consultants were hired",
+      "Only stationery was needed"
+     ],
+     "answer": 0,
+     "why": "Sequencing + communication + digitisation - not budget, not headcount - bought ~44% growth a year."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor's half-joking weekly prescription:",
+     "options": [
+      "An hour more email",
+      "Memorise formulas",
+      "Swap an hour of Netflix for an hour of process-wandering - 'is there some other way to do this?'",
+      "Attend two more meetings"
+     ],
+     "answer": 2,
+     "why": "The day job is boring; process change is where the creativity lives - and how careers get made."
+    },
+    {
+     "tag": "MCQ",
+     "q": "If cataract procedures hypothetically differed for men and women, the hospital would run women's and men's batches with a changeover - because:",
+     "options": [
+      "The moment resource-sharing forces changeovers between dissimilar lots, you are batching",
+      "Projects require batches",
+      "Assembly lines forbid variety",
+      "Continuous flow demands it"
+     ],
+     "answer": 0,
+     "why": "That is the precise trigger separating a batch shop from a pure assembly line."
+    },
+    {
+     "tag": "MCQ",
+     "q": "His 4:30 am airport ride takes 45 minutes; the 4:30 pm ride takes two hours plus. The extra time decomposes into:",
+     "options": [
+      "Operation plus waiting - plus even a mid-ride switch of cabs, which is a setup inside the journey",
+      "Pure operation time",
+      "Setup only",
+      "Cycle time"
+     ],
+     "answer": 0,
+     "why": "Throughput time = setup + operation + waiting; the clock does not care which one is eating you."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Rain cutting an intersection from 100 to 80 vehicles a minute can freeze a corridor because:",
+     "options": [
+      "Drivers panic",
+      "Signals fail",
+      "Little's Law: with arrivals steady, a lower throughput rate makes the accumulating queue explode - the maths, not the traffic police, is the villain",
+      "Roads shrink in rain"
+     ],
+     "answer": 2,
+     "why": "One centimetre of rain can cripple Delhi or Bengaluru - queueing arithmetic at city scale."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Takt time (from the after-class exchange) is:",
+     "options": [
+      "The conveyor's pace that each station's cycle time must match - aligning the two is line balancing",
+      "The bottleneck's cycle time",
+      "Total throughput time",
+      "Setup time per batch"
+     ],
+     "answer": 0,
+     "why": "Car-industry vocabulary; his reading tip for that world was Arthur Hailey's novel Wheels."
+    },
+    {
+     "tag": "MCQ",
+     "q": "With four dumpers, each returning dumper waits 4.5 minutes while the fourth loads. The measures read:",
+     "options": [
+      "Shovel 100%, dumpers 85% - capacity 8 loads/hour, the fastest but not the cheapest configuration",
+      "Both at 100%",
+      "Shovel 88.2%, dumpers 100%",
+      "Shovel idle"
+     ],
+     "answer": 0,
+     "why": "Four maximises capacity (finish earliest); three minimises cost per load - the objectives disagree, which is the point."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Istanbul airport's walk-through security (nothing removed, no belts, no laptops out) shows:",
+     "options": [
+      "The deepest capacity lever is often process redesign - roughly doubling a lane's capacity without adding a counter",
+      "Bottlenecks cannot move",
+      "More counters is the only lever",
+      "Security must be slow"
+     ],
+     "answer": 0,
+     "why": "Before buying capacity, redesign the work the capacity does."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Zudio numbers that floored the professor:",
+     "options": [
+      "Zara-level prices in India",
+      "Roughly a 47-day inventory cover, barely any discounting, a fortnight's end-of-season sale - at a Rs. 1,500 price point far below Zara's",
+      "A fully transparent supply chain",
+      "300-day inventory and deep discounting"
+     ],
+     "answer": 1,
+     "why": "Not a copy-paste of Zara's economics, yet the fingerprints of small lots and frequent replenishment everywhere - with the chain kept deliberately opaque."
+    }
+   ]
+  },
+  {
+   "name": "Session 3: Inventory",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "The professor's estimate of how much of what we consume is make-to-stock:",
+     "options": [
+      "95-97%",
+      "70-75%",
+      "50-60%",
+      "80-85%"
+     ],
+     "answer": 0,
+     "why": "The MTO revolution never came; if anything, old MTO (uniform tailoring) migrated to MTS."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Total source-to-consumption lead time is usually longer in MTS because:",
+     "options": [
+      "MTS factories are slower",
+      "The product is made months ahead and sleeps in warehouses en route",
+      "MTO has no processing time",
+      "Customers order earlier in MTS"
+     ],
+     "answer": 1,
+     "why": "The June packet of chips was made in April. What MTS compresses is the customer's order-to-delivery clock."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The DEEP reason the make-to-order revolution never arrived:",
+     "options": [
+      "3D printing failed technically",
+      "Capital demands utilisation, and MTO structurally cannot run near 100% without endless queues",
+      "Customers dislike customisation",
+      "Governments favour mass production"
+     ],
+     "answer": 1,
+     "why": "MTS runs hot against a forecast; MTO running hot makes customers wait forever."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Quick commerce's 15-minute promise is paid for by:",
+     "options": [
+      "Higher rider salaries",
+      "Faster scooters",
+      "Deliberately low utilisation - idle riders and dark-store slack",
+      "AI routing alone"
+     ],
+     "answer": 2,
+     "why": "Staff a dark store to average demand and the promise dies the same day - you consume low utilisation as a service."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Asian Paints' base-plus-tint model places the customisation boundary:",
+     "options": [
+      "At the distributor's warehouse",
+      "At the customer's home",
+      "At the retailer's tinting machine",
+      "At the factory"
+     ],
+     "answer": 2,
+     "why": "Dell held the boundary at the factory; Asian Paints pushes it all the way to the dealer."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Quick commerce, classified correctly, is:",
+     "options": [
+      "Make-to-stock pushed to your doorstep",
+      "Make-to-order",
+      "A job shop",
+      "Assemble-to-order"
+     ],
+     "answer": 0,
+     "why": "Limited variety held near you, behind a ten-minute thrill - all of MTS's constraints intact."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In ABC analysis, A items are approximately:",
+     "options": [
+      "70% of items, 10% of consumption value",
+      "20% of items, 20% of value",
+      "50% of items, 50% of value",
+      "10% of items, 70% of consumption value"
+     ],
+     "answer": 3,
+     "why": "CV = annual demand x unit cost; Pareto's shape appears every time."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The correct ordering-and-safety-stock policy for A items:",
+     "options": [
+      "Small frequent lots, MORE days of safety stock",
+      "Big infrequent lots, more safety stock",
+      "Big infrequent lots, minimal safety stock",
+      "Small frequent lots, minimal safety stock"
+     ],
+     "answer": 0,
+     "why": "Lot size follows holding cost (small); safety stock follows supply risk (high - few irreplaceable suppliers)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A car chip - low value, but able to halt the industry - is, in the Kraljic view:",
+     "options": [
+      "A bottleneck item",
+      "A strategic item",
+      "A leverage item",
+      "A routine item"
+     ],
+     "answer": 0,
+     "why": "Low value crossed with high supply risk = bottleneck; crude oil (high value, high risk) is strategic."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Shortage cost is best described as:",
+     "options": [
+      "A warehouse expense",
+      "A depreciation charge",
+      "Lost profit - revenue that never arrived, invisible in the accounts",
+      "A transaction cost"
+     ],
+     "answer": 2,
+     "why": "It looks like a cost but no dashboard shows it - which is why efficiency metrics under-weigh it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The two (and only two) inventory trade-offs are resolved by:",
+     "options": [
+      "Ordering vs shortage and holding vs quality",
+      "Safety stock and buffer stock",
+      "Cyclic stock (ordering vs holding) and safety stock (holding vs shortage)",
+      "EOQ and ABC"
+     ],
+     "answer": 2,
+     "why": "There is no meaningful ordering-shortage trade-off; any inventory decomposes into Q/2 plus safety stock."
+    },
+    {
+     "tag": "MCQ",
+     "q": "D = 12,000/yr, S = Rs. 120/order, C = Rs. 10, I = 0.2. The EOQ is:",
+     "options": [
+      "600 units",
+      "2,400 units",
+      "1,000 units",
+      "1,200 units"
+     ],
+     "answer": 3,
+     "why": "H = I x C = 2; Q* = sqrt(2 x 12,000 x 120 / 2) = sqrt(1,440,000) = 1,200 - ten orders a year."
+    },
+    {
+     "tag": "MCQ",
+     "q": "At the EOQ, which relationship always holds?",
+     "options": [
+      "Annual ordering cost equals annual holding cost",
+      "Holding cost is zero",
+      "Ordering cost is double holding cost",
+      "Shortage cost equals holding cost"
+     ],
+     "answer": 0,
+     "why": "The U-curve's minimum sits exactly where the two annual costs cross."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Dell declaring a 30% holding rate (vs the ~20% thumb rule) was:",
+     "options": [
+      "Imposed by suppliers",
+      "A measurement error",
+      "A tax strategy",
+      "Deliberate: a bigger H drives Q down, pushing Dell into tiny lots, JIT and its made-to-order machine"
+     ],
+     "answer": 3,
+     "why": "One parameter, chosen with intent, became a business model."
+    },
+    {
+     "tag": "MCQ",
+     "q": "You order once every 30 days. Your cyclic stock, in days of demand:",
+     "options": [
+      "15 days",
+      "30 days",
+      "60 days",
+      "10 days"
+     ],
+     "answer": 0,
+     "why": "Cyclic stock = Q/2. If average inventory is 25 days and Q/2 is 15, safety stock = 10 days."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Newsvendor: profit Rs. 7.5 per unit sold, Rs. 2.5 loss per leftover. The critical ratio is:",
+     "options": [
+      "0.60",
+      "0.75",
+      "0.33",
+      "0.25"
+     ],
+     "answer": 1,
+     "why": "CR = Cu/(Cu+Co) = 7.5/10 = 0.75 - pick the smallest Q whose cumulative probability reaches it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "With cumulative probabilities 0.6 at 50, 0.7 at 60 and 0.8 at 70, the optimal stock at CR = 0.75 is:",
+     "options": [
+      "50",
+      "60",
+      "70",
+      "80"
+     ],
+     "answer": 2,
+     "why": "First cumulative at or above 0.75 is 0.8, at Q = 70 - matching the grid's Rs. 295 optimum."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Service level, precisely, is:",
+     "options": [
+      "The proportion of periods in which demand is met in full",
+      "The critical ratio's complement",
+      "Inventory turns",
+      "Average delivery speed"
+     ],
+     "answer": 0,
+     "why": "It is the cumulative probability you chose to satisfy - the newsvendor's dial."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Chingrighata Saturday (one crossing shut, every 10km-plus journey an hour late) opened the session to prove:",
+     "options": [
+      "Google Maps is unreliable",
+      "Operations theory has sat in textbooks for fifty-plus years, yet its usage - in firms and in cities - is still this thin",
+      "Flyovers should not be built",
+      "Airports should move closer"
+     ],
+     "answer": 1,
+     "why": "He nearly retired this lecture as too obvious around 2013-14; then Amazon's rise put cycle time back into boardrooms."
+    },
+    {
+     "tag": "MCQ",
+     "q": "From the mid-1980s, operations 'fell out of several American MBA syllabi' because:",
+     "options": [
+      "The narrative was captured by marketing, strategy (Porter, BCG) and finance - until Walmart, Dell and Amazon dragged it back",
+      "The subject was solved",
+      "Professors retired",
+      "India mandated its removal"
+     ],
+     "answer": 0,
+     "why": "'Luckily, that did not happen in India' - and the firms that won the next decades won on operations."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Match the MAIN operations problems to the system:",
+     "options": [
+      "MTS: delivery promises; MTO: forecasting",
+      "MTO: inventory control only",
+      "Both share identical problems",
+      "MTS: forecasting, production planning and inventory control; MTO: delivery promises and delivery time"
+     ],
+     "answer": 3,
+     "why": "MTS fights uncertainty before demand arrives; MTO fights the clock after it does."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor's childhood school uniform - designated-shop fabric, then a tailor sitting on it for a month - captured:",
+     "options": [
+      "Both in one purchase: make-to-stock fabric feeding a make-to-order tailor",
+      "Pure MTO",
+      "Continuous flow",
+      "Pure MTS"
+     ],
+     "answer": 0,
+     "why": "And that old MTO tailoring has since migrated to MTS readymades - the opposite of the 1990s prophecy."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which lead-time clock does the CUSTOMER feel in full under MTO?",
+     "options": [
+      "Neither",
+      "Order-to-delivery - the clock starts only when you order, and it is almost all processing",
+      "Source-to-consumption",
+      "Warehouse dwell time"
+     ],
+     "answer": 1,
+     "why": "MTS total lead time is longer (your June chips were made in April), but the customer-facing clock is short because stock sits nearby."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why can a pure MTO system never satisfy capital's demand for utilisation?",
+     "options": [
+      "Run MTO near 100% and customers queue forever - the busy-ness capital demands is structurally incompatible with responsiveness",
+      "MTO uses no capital",
+      "Machines break more often",
+      "Labour laws prevent it"
+     ],
+     "answer": 0,
+     "why": "MTS runs near 100% against a forecast; MTO must hold idle capacity to promise speed."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Southwest squeezing 13-14 flying hours from an 18-hour day with 20-minute turnarounds is:",
+     "options": [
+      "Assemble-to-order",
+      "A standardised, MTS-style service chasing utilisation - the counter-current that proves the rule, not customisation",
+      "A luxury niche",
+      "Proof MTO can chase utilisation"
+     ],
+     "answer": 1,
+     "why": "Utilisation obsession works when the service is standardised; it kills you when the promise is responsiveness."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Ferrari, Rolls-Royce and Rolex survive as pure MTO because they are:",
+     "options": [
+      "Secretly make-to-stock",
+      "Disruptors killing trade-offs at scale",
+      "Loss leaders",
+      "Profitable value-over-volume niches - which is exactly what disruption is NOT"
+     ],
+     "answer": 3,
+     "why": "A niche customising for the wealthy few existed a century ago; scale is what separates a niche from a disruption."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The ATO scorecard from the slide reads:",
+     "options": [
+      "Less inventory and faster service than pure MTO, at the price of some work-in-process inventory",
+      "Identical to pure MTS",
+      "Zero inventory of any kind",
+      "More inventory and slower than MTO"
+     ],
+     "answer": 0,
+     "why": "Measures that matter: speed of service, inventory levels, quality - and the design question is where the boundary sits."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor mourned Big Basket's old hub-and-spoke model because dark stores mean:",
+     "options": [
+      "Faster hubs",
+      "Variety is shrinking - a store close to you holds only so many items; you buy 500g of bhindi because that is the pack",
+      "More variety near you",
+      "Cheaper vegetables"
+     ],
+     "answer": 1,
+     "why": "His single weekly one-store trip has splintered into five or six app orders because no single app stocks everything."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Match the Kraljic quadrants:",
+     "options": [
+      "Leverage = high risk items",
+      "Bottleneck = low value but high supply risk; strategic = high value, high risk (crude oil); leverage = high value, low risk; the rest are non-critical",
+      "Non-critical = crude oil",
+      "Strategic = low value, low risk"
+     ],
+     "answer": 1,
+     "why": "ABC is the vanilla cut by value; Kraljic crosses value with supply risk - the chip that halts a car plant is a bottleneck item."
+    },
+    {
+     "tag": "MCQ",
+     "q": "'COVID's chip crunch has become AI's' was the warning that:",
+     "options": [
+      "Kraljic labels are permanent",
+      "AI eliminates shortages",
+      "Which item wears which label keeps rotating; no formula rescues you - this is where managers become stars or failures (beware hindsight)",
+      "Chips are now C items"
+     ],
+     "answer": 2,
+     "why": "Every bold inventory call looks like grand strategy only after it pays."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Open a manufacturer's P&L: where is 'inventory cost'?",
+     "options": [
+      "In the COGS line as a true cost",
+      "Inside revenue",
+      "Nowhere - it arrives in disguises (interest, rent, preservation, security, handling, depreciation): 'like Vishnu, inventory has many incarnations'",
+      "A clearly labelled line"
+     ],
+     "answer": 2,
+     "why": "COGS (opening + purchases - closing) is a flow computation, not the carrying cost - which is why silo owners each optimise a sliver."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is NOT an assumption of the basic EOQ model?",
+     "options": [
+      "All demand is met",
+      "Constant lead time and price",
+      "Constant, uniform demand",
+      "Demand uncertainty explicitly modelled"
+     ],
+     "answer": 3,
+     "why": "Uncertainty is precisely the NEXT model's job (the newsvendor); EOQ lives in the textbook world of constants."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The newsvendor's interior optimum at 70 exists because:",
+     "options": [
+      "Expected sales climb at a DECREASING rate while leftovers climb at an INCREASING rate - the good news flattens exactly as the bad news steepens",
+      "Profit rises forever with stock",
+      "Leftovers are free",
+      "Demand is certain"
+     ],
+     "answer": 0,
+     "why": "Peak at 70, falling away on both sides - too much cushion is as costly as too little."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The safety stock hiding inside the newsvendor solution (expected sales 47 at Q*=70):",
+     "options": [
+      "Zero",
+      "70 units",
+      "47 units",
+      "About 23 units above expected sales"
+     ],
+     "answer": 3,
+     "why": "Starting stock minus expected sales - the cushion the critical ratio decided you should pay for."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Milk and bread are 'India's best-run supply chains' because:",
+     "options": [
+      "Perishability forced mastery - near-zero stockouts, nothing stale sold, almost nothing thrown away; chains without that whip tolerate sloppiness",
+      "They are government-run",
+      "They use EOQ software",
+      "Demand never varies"
+     ],
+     "answer": 0,
+     "why": "In twenty-plus years he has almost never faced a stockout - the newsvendor clock, mastered."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Aged whisky is worth holding only while:",
+     "options": [
+      "Each year's price appreciation beats that year's carrying cost - sell the moment it does not",
+      "Demand is uncertain",
+      "Storage is free",
+      "Prices fall"
+     ],
+     "answer": 0,
+     "why": "The mirror image of perishability - and on gold as an investment he remains a confessed sceptic."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Once an engine sits inside a finished car, asking 'how many engines do you hold?' counts:",
+     "options": [
+      "Engines at suppliers",
+      "Fitted engines only",
+      "Only the loose ones - the fitted engine's identity is absorbed into car inventory (raw material, WIP, finished goods)",
+      "All engines ever bought"
+     ],
+     "answer": 2,
+     "why": "Inventory changes form as it flows - exactly as the accounting sessions taught."
+    }
+   ]
+  },
+  {
+   "name": "Session 4: Supply chain strategy",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "Deciding how many fulfilment centres to build is OS; deciding this week's ordering quantities is OM. The distinction is:",
+     "options": [
+      "OM is board-level",
+      "There is no real difference",
+      "OS is cheaper",
+      "OS designs the system (infrequent, capex-heavy, hard to reverse); OM runs it (continuous, correctable)"
+     ],
+     "answer": 3,
+     "why": "'Doing smart things' vs 'doing things smartly' - Intel executed OM brilliantly while its OS failed."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the semiconductor value chain, TSMC dominates:",
+     "options": [
+      "Lithography machines",
+      "Stage 3 - assembly and test",
+      "Stage 2 - fabrication",
+      "Stage 1 - design"
+     ],
+     "answer": 2,
+     "why": "Design is Nvidia/AMD/Qualcomm; fabrication is TSMC (enabled by ASML's lithography monopoly); assembly is China/Korea/Japan."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Intel's core error was:",
+     "options": [
+      "Underpricing its chips",
+      "Ignoring the PC market",
+      "Vertical integration in an industry whose next source of value creation had moved outside firm boundaries",
+      "Too much outsourcing"
+     ],
+     "answer": 2,
+     "why": "A control-first OS in a deliberately dis-integrated ecosystem - outsourcing there was the innovation engine."
+    },
+    {
+     "tag": "MCQ",
+     "q": "On the 787, Boeing's outsourcing share and supplier structure were approximately:",
+     "options": [
+      "35-50% with thousands of suppliers",
+      "90% with 10 partners",
+      "50% with full multi-tier visibility",
+      "70% with about 50 tier-1 partners and no visibility beyond tier 1"
+     ],
+     "answer": 3,
+     "why": "Versus the 737's 35-50% and thousands of directly managed suppliers building to Boeing's designs."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The risk-sharing contract (paid only when the airline pays Boeing) backfired in 2008 because:",
+     "options": [
+      "Boeing cancelled orders",
+      "Suppliers went on strike",
+      "Rational suppliers slowed down - why deliver early and lock working capital waiting for the slowest partner?",
+      "Fuel prices rose"
+     ],
+     "answer": 2,
+     "why": "A contract designed as a speed race became a slow race - model the incentives, not the intent."
+    },
+    {
+     "tag": "MCQ",
+     "q": "'Traveled work' at Boeing refers to:",
+     "options": [
+      "Global logistics",
+      "Jobs done out of sequence - unfinished planes pushed down the line, now 30-40% rework",
+      "Executive travel budgets",
+      "Outsourced flight testing"
+     ],
+     "answer": 1,
+     "why": "It is a culture metric wearing an operations costume."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The correct verdict on vertical integration, per the Intel-Zara contrast:",
+     "options": [
+      "Context decides: it buys CONTROL - right when your differentiator needs control (Zara's speed), wrong when value creation moved outside (Intel)",
+      "Always good",
+      "Always bad",
+      "Only for retailers"
+     ],
+     "answer": 0,
+     "why": "Same tool, opposite verdicts - never answer good or bad without naming the basis of competition."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The CAUSE (not symptom) of DMart's flywheel is:",
+     "options": [
+      "A curated assortment of fast movers - low variability that makes low inventory possible",
+      "Cash-rich promoters",
+      "Paying suppliers in 5-6 days",
+      "Owning its real estate"
+     ],
+     "answer": 0,
+     "why": "Fast payment, liquidity and discounts are downstream; remove the curation and the flywheel stops."
+    },
+    {
+     "tag": "MCQ",
+     "q": "What actually drives safety stock levels?",
+     "options": [
+      "Number of stores",
+      "Demand volume",
+      "Product price alone",
+      "Demand variability (noise) and the promised service level"
+     ],
+     "answer": 3,
+     "why": "Predictable high volume needs near-zero buffer; erratic low volume can need plenty - the classic trap."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A firm offering huge variety on a rigid, standardised process sits:",
+     "options": [
+      "On the diagonal",
+      "Outside the matrix",
+      "Below the diagonal - writing cheques its process cannot cash",
+      "Above the diagonal - paying for unused flexibility"
+     ],
+     "answer": 2,
+     "why": "High variety on low flexibility means infeasible promises and heavy opportunity costs."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Dell's position on the product-process matrix is:",
+     "options": [
+      "Below the diagonal",
+      "Far left, like Ford",
+      "Far right, like Amazon",
+      "ON the diagonal - mass-producing the standard 70-80% and customising only the final slice"
+     ],
+     "answer": 3,
+     "why": "Calling Dell rigid disserves its variety; calling it fully flexible disserves its cost - its genius is staying on the line."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Two plants (capacity 100 each) serve demands of 110 and 90. Dedicated vs flexible sales:",
+     "options": [
+      "190 vs 190",
+      "190 vs 200",
+      "200 vs 200",
+      "200 vs 190"
+     ],
+     "answer": 1,
+     "why": "Dedicated: 100 + 90 = 190 with stranded capacity; full flexibility serves all 200 - what the cross-links buy."
+    },
+    {
+     "tag": "MCQ",
+     "q": "SDN = 3, SDS = 4. Pooled SD at r = 0 and at r = -1:",
+     "options": [
+      "5 and 7",
+      "7 and 5",
+      "5 and 1",
+      "1 and 5"
+     ],
+     "answer": 2,
+     "why": "sqrt(9+16) = 5 at independence; sqrt(9+16-24) = 1 at perfect hedge; at r = +1 it is 7 - never worse than the sum."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The one trade-off you must ALWAYS name alongside pooling's inventory saving:",
+     "options": [
+      "Longer lead time - the pooled stock sits farther from the customer",
+      "Lower quality",
+      "More suppliers",
+      "Higher wages"
+     ],
+     "answer": 0,
+     "why": "It is why Amazon runs regional centres and quick commerce runs dark stores, not one national mega-hub."
+    },
+    {
+     "tag": "MCQ",
+     "q": "When comparing two firms' sourcing choices, judge:",
+     "options": [
+      "The level of outsourcing",
+      "The number of suppliers",
+      "The fit between WHAT is outsourced and the order winner (innovation, quality, speed, cost)",
+      "The contract length"
+     ],
+     "answer": 2,
+     "why": "The Intel-Boeing-Zara triangle in one line."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Hyperscaler data-centre counts, Nvidia's GPU commitments and Amazon's fulfilment square footage are all:",
+     "options": [
+      "Working-capital items",
+      "Live OS questions - sizing, timing, type and location of resources",
+      "Marketing budgets",
+      "OM decisions"
+     ],
+     "answer": 1,
+     "why": "Capacity means different things per industry, but the resource questions are the OS core everywhere."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The semiconductor industry deliberately dis-integrated because:",
+     "options": [
+      "No single firm could fund every layer at innovation speed - specialised giants at each stage cross-pollinated (ASML made TSMC possible; TSMC made Nvidia feasible)",
+      "Labour was cheaper in Taiwan",
+      "Intel demanded it",
+      "Regulators forced a break-up"
+     ],
+     "answer": 0,
+     "why": "Outsourcing here was never a cost trick; it was the industry's innovation engine - the fact Intel misread."
+    },
+    {
+     "tag": "MCQ",
+     "q": "ASML matters to the chip story because it is:",
+     "options": [
+      "Europe's most valuable firm and the only maker of the lithography machines cutting-edge fabs need",
+      "A Chinese assembler",
+      "Intel's design arm",
+      "A GPU designer"
+     ],
+     "answer": 0,
+     "why": "A one-firm chokepoint enabling stage 2 - which is why export controls target its machines."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Andy Grove irony:",
+     "options": [
+      "He founded TSMC",
+      "He designed the 787",
+      "He banned outsourcing",
+      "Intel's most celebrated CEO literally wrote 'Only the Paranoid Survive' - and Intel then performed the innovator's dilemma it preached against"
+     ],
+     "answer": 3,
+     "why": "Giants stop seeing innovation outside their walls - Intel taught the lesson twice, once in print and once in person."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Economist's 'curse of the top dog' data shows the most valuable S&P 500 firm:",
+     "options": [
+      "Massively outperforms BEFORE reaching the top and underperforms the index AFTER",
+      "Keeps outperforming after reaching the top",
+      "Always goes bankrupt",
+      "Never changes"
+     ],
+     "answer": 0,
+     "why": "Google's TPU response - refusing to accept Nvidia dependence - is the counter-example of a giant that kept looking outside."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Three Intel CEO changes in roughly three years (Gelsinger arrived in 2021 and was out by December 2024) show:",
+     "options": [
+      "Boards are impatient with OM",
+      "CEOs cause chip shortages",
+      "Capacity decisions are OS decisions, and OS mistakes cannot be fixed in a quarter",
+      "Turnarounds need no leadership"
+     ],
+     "answer": 2,
+     "why": "The scoreboard row Boeing shares: 3 CEOs in about 3 years - both firms paying for decade-old design calls."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The 787 was 'genuinely aspirational' because:",
+     "options": [
+      "It was the cheapest jet",
+      "It never had problems",
+      "It used no outsourcing",
+      "It promised the once-in-two-decades fuel-efficiency leap - which is why Air India ordered early and the Tata fleet is 787-heavy"
+     ],
+     "answer": 3,
+     "why": "Five years late, then the first fleet-wide grounding of a jet type since 1979 - aspiration executed through a broken chain."
+    },
+    {
+     "tag": "MCQ",
+     "q": "'A cost culture in a quality industry' refers to:",
+     "options": [
+      "Zara's fashion model",
+      "Toyota's supplier pricing",
+      "A finance-first board approving the Dreamliner chain only as a massively cost-controlled model - in an industry whose currency is quality",
+      "IndiGo's fleet choice"
+     ],
+     "answer": 2,
+     "why": "The deeper disease that deserves no hindsight-mercy; the culture drifted from ingenuity and quality to shareholder returns."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The corporate-politics coda of the Dreamliner design:",
+     "options": [
+      "The designer became Boeing CEO",
+      "The executive who designed the chain lost the CEO race and went on to run Ford; the finance-minded board member who demanded the cost model became CEO",
+      "The regulator chose the CEO",
+      "Both executives left aviation"
+     ],
+     "answer": 1,
+     "why": "Incentives and careers shaped the chain as much as engineering did."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Boeing slicing itself into separate verticals - even separate headquarters - was done partly to:",
+     "options": [
+      "Break unions and squeeze cost - destroying the intimacy between design and making that an aircraft demands",
+      "Speed up the 737",
+      "Satisfy the FAA",
+      "Improve design intimacy"
+     ],
+     "answer": 0,
+     "why": "Two decades of silos, then a new CEO finding 'about 30 percent of everybody's job is fixing something'."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Tesla handing China its EV playbook via the Shanghai Gigafactory was:",
+     "options": [
+      "An accident",
+      "Forced by regulators",
+      "A calculated trade-off: without China's scale, Tesla never escapes overpromise-and-underdeliver - and the same soil grew BYD",
+      "A licensing error"
+     ],
+     "answer": 2,
+     "why": "Calibrated outsourcing: define what is core (it never leaves the building) and pay knowingly for the rest."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The printed circuit board was pioneered by a contract manufacturer because:",
+     "options": [
+      "OEMs lacked interest",
+      "Patents were free",
+      "Bell Labs outsourced by law",
+      "Only a firm aggregating everyone's volumes had the scale to fund it - outsourcing as an R&D engine, the TSMC story two decades early"
+     ],
+     "answer": 3,
+     "why": "At scale, the outsourcer can out-innovate any single customer - Samsung even earned more from Apple components than its own handsets at one point."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Toyota's EV conservatism (world-class hybrids, slow on pure EVs) is now read as:",
+     "options": [
+      "Proof hybrids failed",
+      "Vindicated - rival CEOs publicly conceded Toyota read it right; EV softness is demand risk, not dead capacity, and being smartly late is also an operations strategy",
+      "A regulatory accident",
+      "A fatal error"
+     ],
+     "answer": 1,
+     "why": "Mocked for years, last laugh delivered - the sizing-and-timing boxes of V = C x (A+P) in action."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Variance squares deviations because:",
+     "options": [
+      "Negative numbers are illegal",
+      "Squaring is traditional",
+      "It makes numbers smaller",
+      "Overshoots and undershoots must not cancel (both are bad) and large misses deserve disproportionate punishment"
+     ],
+     "answer": 3,
+     "why": "The square root - standard deviation - is the noise; in finance the same quantity wears a suit and is called volatility."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Asked to analyse SpaceX, Uniqlo or 'my company', the professor's consistent answer was:",
+     "options": [
+      "Detailed brand-by-brand verdicts",
+      "Wait for more data",
+      "No standard script and no classroom consulting - take the first principles and do the heavy lifting on your own context",
+      "Read more case studies"
+     ],
+     "answer": 2,
+     "why": "'You are here at IIM Calcutta to learn to ask questions, not to solve questions.'"
+    }
+   ]
+  },
+  {
+   "name": "Session 5: Pooling, lean and queues",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "Apple's inventory turns (~70) vs Samsung's (~20) primarily reflect:",
+     "options": [
+      "Different business models - narrow curated range vs every-price-point variety",
+      "Apple's superior inventory managers",
+      "Currency effects",
+      "Samsung's factory inefficiency"
+     ],
+     "answer": 0,
+     "why": "Operations KPIs are strategy readouts; benchmarking across different diagonals is meaningless."
+    },
+    {
+     "tag": "MCQ",
+     "q": "When Amazon densifies its warehouse network (un-pooling), which cost FALLS?",
+     "options": [
+      "Inventory holding cost",
+      "Inbound logistics cost",
+      "Outbound delivery cost",
+      "All three"
+     ],
+     "answer": 2,
+     "why": "Inventory and inbound rise (correlation benefit surrendered, more supplier links); only outbound falls - the parcel starts closer."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Amazon's fulfilment cost percentage bending UP with scale is:",
+     "options": [
+      "A conscious trade - speed-driven sales growth dominates the cost growth",
+      "An accounting error",
+      "A drift it failed to notice",
+      "Proof that pooling always wins"
+     ],
+     "answer": 0,
+     "why": "Un-pooling is only a mistake when it is a drift instead of a decision."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A hub-and-spoke airline network is, in pooling terms:",
+     "options": [
+      "Un-pooled",
+      "Point-to-point",
+      "Neither",
+      "Pooled - one consolidated node serving many spokes"
+     ],
+     "answer": 3,
+     "why": "Hubs pool crew, aircraft and slack; point-to-point keeps city pairs independent."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Southwest's December 2022 meltdown (16,000+ cancellations, months to recover) happened because:",
+     "options": [
+      "It flies too few routes",
+      "Its aircraft were old",
+      "A system-wide storm demanded reallocation, and its point-to-point design had no pooled slack to reallocate",
+      "Fuel ran out"
+     ],
+     "answer": 2,
+     "why": "Hub carriers re-pooled their way out in days. Every design chooses which disaster it cannot absorb."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The FAIR criticism of IndiGo's December 2025 is:",
+     "options": [
+      "Its fares are too low",
+      "Weather planning failed",
+      "Management injected a fully plannable (deterministic) rostering change at short notice into a zero-slack system",
+      "It should carry spare aircraft everywhere"
+     ],
+     "answer": 2,
+     "why": "Weather is not their fault; a self-inflicted shock into a system with no absorbers is."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Netflix's REAL disruption was:",
+     "options": [
+      "Original content",
+      "Recommendation algorithms",
+      "Streaming (OTT)",
+      "DVD-by-mail on ~50 pooled warehouses - unlimited variety at low cost, killing a trade-off"
+     ],
+     "answer": 3,
+     "why": "OTT was a progression it surfed; the moat was the subscriber base the pooled mail model built."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The revenue-sharing contract fixed DVD rental's broken economics by:",
+     "options": [
+      "Selling DVDs to customers",
+      "Cutting wholesale to ~USD 10 and sharing roughly half of every rental with the distributor",
+      "Raising the wholesale price",
+      "Banning late fees"
+     ],
+     "answer": 1,
+     "why": "High wholesale plus uncertain demand caused under-ordering; sharing the upside made retailers stock fully."
+    },
+    {
+     "tag": "MCQ",
+     "q": "FedEx merged Ground and Express because B2B and B2C demand streams had turned:",
+     "options": [
+      "Perfectly correlated",
+      "Both flat",
+      "Seasonal",
+      "Negatively correlated - textbook pooling territory"
+     ],
+     "answer": 3,
+     "why": "One shrank as the other exploded; pooling is exactly the shock absorber for negatively correlated streams."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The 2020s' entry on the hundred-year variable-cost ladder is:",
+     "options": [
+      "Labour",
+      "Worker output",
+      "Cognition itself - agents billed per token, per task",
+      "Services"
+     ],
+     "answer": 2,
+     "why": "Taylor made output variable, the 90s labour, the 2000s services; agentic AI prices thinking."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Jevons paradox, token edition, warns that:",
+     "options": [
+      "Tokens will get costlier",
+      "As unit cost falls, use cases and agentic depth multiply - budget for C x N, not C",
+      "AI cannot do deep tasks",
+      "Cheaper tokens shrink the AI bill"
+     ],
+     "answer": 1,
+     "why": "Klarna wins at shallow depth (~USD 0.19/resolution); the Microsoft-Uber zone lies past the crossover."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Per the module, the correct stance on agentic AI is:",
+     "options": [
+      "Wait for regulation",
+      "Outsource nothing",
+      "Outsource tasks; never transfer capabilities - recovery cost can be infinite",
+      "Outsource everything"
+     ],
+     "answer": 2,
+     "why": "The Boeing-Spirit mistake at organisational scale: once the team is gone, nobody is left to redesign."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The andon cord's real function at Toyota is:",
+     "options": [
+      "Reducing electricity use",
+      "Signalling shift changes",
+      "Punishing slow workers",
+      "Surfacing quality problems - anyone can stop the line, and most stops being false alarms is the point"
+     ],
+     "answer": 3,
+     "why": "GM's checklist culture hid problems; Toyota's empowerment culture surfaces them - the difference that survived a 15-year partnership."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Toyota avoids cost-plus supplier pricing because:",
+     "options": [
+      "Suppliers refuse it",
+      "It is illegal",
+      "A guaranteed margin breeds lethargy and kills every incentive to innovate cost out",
+      "It complicates accounting"
+     ],
+     "answer": 2,
+     "why": "Relational contracts hand suppliers the design and the patents - and the incentive."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The hold-up problem arises when:",
+     "options": [
+      "Demand is stable",
+      "One party sinks capacity against another's unverifiable forecast, then faces dictated terms",
+      "Both parties share capex",
+      "Contracts are too short"
+     ],
+     "answer": 1,
+     "why": "Fixes: shared capex stakes (credible forecasts) and screening contract menus (the choice reveals private information)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "mu = 10, lambda = 9. Expected congestion L = rho/(1-rho) is:",
+     "options": [
+      "0.9",
+      "99",
+      "19",
+      "9"
+     ],
+     "answer": 3,
+     "why": "rho = 0.9, L = 0.9/0.1 = 9; at 95% it is 19 and at 99% it is 99 - a steep collapse, not linear degradation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "When Mumbai airport cuts peak flights to ease congestion, the module's critique is:",
+     "options": [
+      "Congestion is unrelated to flights",
+      "It should cut more",
+      "Utilisation should hit 100%",
+      "It is killing lambda - killing sales - when the better lever is raising mu (capacity or speed)"
+     ],
+     "answer": 3,
+     "why": "Too little utilisation is its own crime; the healthy zone (typically 70-90%) is set by YOUR variability, not a benchmark deck."
+    },
+    {
+     "tag": "MCQ",
+     "q": "On 'how much variety is right', the module's first correction was:",
+     "options": [
+      "Focus is NOT about quality - quality must be complied with at any variety level; a narrow range buys cost and simplicity, not a quality badge",
+      "Variety improves quality",
+      "Quality needs high variety",
+      "Focus improves quality"
+     ],
+     "answer": 0,
+     "why": "And there is no analytical optimum: the call is part OS, part marketing - functional strategies are concurrent."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Apple buying some chips from Intel (and Qualcomm) while unable to leave China buys it:",
+     "options": [
+      "Lower chip prices",
+      "Tariff escape and de-risking optics - sourcing American silicon without moving the ecosystem",
+      "Frontier 2nm capability",
+      "AI leadership"
+     ],
+     "answer": 1,
+     "why": "Capability-wise the China-India-Vietnam ecosystem stays; the sourcing line item moves - and Intel gets a windfall."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Amazon's post-pandemic build-out added:",
+     "options": [
+      "As much fulfilment capacity in three years as in its entire first twenty-five - the map's red circles drowned in blue",
+      "No new capacity",
+      "10% more capacity",
+      "Only international warehouses"
+     ],
+     "answer": 0,
+     "why": "Because e-commerce differentiation moved from category to speed - and speed demands a denser, un-pooled network."
+    },
+    {
+     "tag": "MCQ",
+     "q": "For same-day delivery, an order must be pick-packed and ready in about:",
+     "options": [
+      "45 minutes",
+      "2 hours",
+      "5 seconds",
+      "11 minutes"
+     ],
+     "answer": 3,
+     "why": "That number is what the blue circles - and the upward-bending cost curve - are buying."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Amazon tweaking search to rank locally-stocked items higher is:",
+     "options": [
+      "Random personalisation",
+      "Illegal tying",
+      "Advertising the speed it just bought - operations design surfacing in the customer interface",
+      "A bug"
+     ],
+     "answer": 2,
+     "why": "The network and the algorithm are one strategy: make the fast promise, then make the fast promise visible."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Minutes-level quick commerce 'stays an India story' because:",
+     "options": [
+      "Regulation bans it abroad",
+      "Dark stores need heat",
+      "The unit economics do not survive developed-market labour costs",
+      "Indians are impatient"
+     ],
+     "answer": 2,
+     "why": "Blinkit-style density prices out where riders cost ten times more - geography is an economics filter."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Southwest ended bags-fly-free after four decades partly because:",
+     "options": [
+      "Fuel prices fell",
+      "Rivals' bag fees became too big an opportunity loss - and belly-heavy aircraft were choking baggage handling",
+      "Customers stopped checking bags",
+      "Regulators banned it"
+     ],
+     "answer": 1,
+     "why": "Even a signature policy is a design choice with a shelf life; the relentless turnaround focus stayed."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Old DVD economics (wholesale ~USD 65-70, rental ~USD 3) caused:",
+     "options": [
+      "Studio bankruptcies",
+      "Over-ordering of every title",
+      "Systematic under-ordering - a title had to rent twenty-plus times to break even, so hits went out of stock and customers fumed",
+      "Free rentals"
+     ],
+     "answer": 2,
+     "why": "The revenue-sharing fix (wholesale ~10, split each rental) realigned incentives and killed the under-ordering."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Messi's Inter Miami deal was cited as revenue sharing because he:",
+     "options": [
+      "Took the highest fixed wage",
+      "Bought the club",
+      "Deferred all pay",
+      "Rejected a Saudi offer at some five times the wage for a modest base plus a share of new Apple TV subscriptions and Adidas sales"
+     ],
+     "answer": 3,
+     "why": "A closed-loop ecosystem contract - the DVD lesson wearing football boots."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Netflix customers receiving requests 3,1,2,4 instead of 1,2,3,4 was:",
+     "options": [
+      "A software bug",
+      "A pricing trick",
+      "Proof pooling failed",
+      "The one sacrifice that let ~50 pooled warehouses aggregate demand and run allocation algorithms on shared stock"
+     ],
+     "answer": 3,
+     "why": "Variety and price were the differentiators then, not speed - so pooling's lead-time cost did not bite; done expensively it would have been a 2 percent niche."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Match the hundred-year ladder of what became variable:",
+     "options": [
+      "1910s per-piece worker output (Taylor); 1990s labour via offshoring; 2000s services (BPO, SaaS); 2020s cognition per token",
+      "1910s offshoring; 1990s Taylor; 2020s BPO",
+      "1910s tokens",
+      "All in the 2020s"
+     ],
+     "answer": 0,
+     "why": "Each rung made a fixed cost variable; agentic AI just did it to managerial cognition itself."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Klarna's numbers on the shallow end of the cognition curve:",
+     "options": [
+      "About USD 0.19 a resolution, the work of some 700 full-time agents across 2.3 million conversations - roughly USD 40 million in profit improvement",
+      "USD 19 per resolution",
+      "1,000x token overruns",
+      "A failed pilot"
+     ],
+     "answer": 0,
+     "why": "Shallow depth: AI cheaper than humans. The Microsoft-Uber zone begins past the crossover."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Toyota handing suppliers performance characteristics instead of detailed drawings means:",
+     "options": [
+      "Suppliers cannot innovate",
+      "Contracts renew monthly",
+      "The design, creativity and even patents belong to the supplier - relational trust replacing blueprint control",
+      "Toyota owns all supplier patents"
+     ],
+     "answer": 2,
+     "why": "Paired with no cost-plus pricing: a guaranteed margin breeds lethargy and kills the incentive to innovate cost out."
+    }
+   ]
+  },
+  {
+   "name": "Mixed: across sessions",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "Intel and Boeing made opposite sourcing errors. Their common root cause was:",
+     "options": [
+      "Weak CEOs",
+      "Government interference",
+      "An operations strategy misaligned with the industry's basis of competition",
+      "Too little capital"
+     ],
+     "answer": 2,
+     "why": "Intel hoarded control in an innovation-ecosystem industry; Boeing gave away quality control in a quality industry. Fit, not level."
+    },
+    {
+     "tag": "MCQ",
+     "q": "DMart and IndiGo share the same left-of-matrix playbook. Its essence is:",
+     "options": [
+      "Premium pricing",
+      "Outsourcing everything",
+      "Maximum variety at any cost",
+      "Curated low variety on a standardised process, collapsing variability and cost"
+     ],
+     "answer": 3,
+     "why": "Curated fast-mover assortment / single fleet type - low noise, low inventory or spares, low training cost."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Read Zara through three module lenses. Which combination is correct?",
+     "options": [
+      "Vertical integration for speed (S1); small lots trading inventory risk for shortage risk (S1); roughly twice H&M's inventory turns (S4-S5)",
+      "Hub-and-spoke network; EOQ-driven; cost leadership",
+      "Fully outsourced; pooled; product-led",
+      "MTO player; high utilisation; product innovation moat"
+     ],
+     "answer": 0,
+     "why": "One firm, three sessions: integration serves speed, small lots swap risk types, and Little's Law shows up as turns."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Netflix (DVD era), Amazon (post-pandemic), FedEx (recently) and Southwest set the pooling dial at:",
+     "options": [
+      "High, low, raised, cannot turn",
+      "Low, high, lowered, maximum",
+      "All four maximise pooling",
+      "All four minimise pooling"
+     ],
+     "answer": 0,
+     "why": "Netflix pooled ~50 warehouses day one; Amazon un-pooled for speed; FedEx merged two networks; point-to-point cannot pool."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The single principle deciding the right pooling level is:",
+     "options": [
+      "Minimise warehouse count",
+      "Always centralise",
+      "Match the industry leader",
+      "Whatever your differentiation makes expensive - lead time, inventory, or shock recovery"
+     ],
+     "answer": 3,
+     "why": "Pooling is a dial, not a doctrine; the differentiator prices the trade-off."
+    },
+    {
+     "tag": "MCQ",
+     "q": "EOQ and the newsvendor solve different trade-offs. Match them correctly:",
+     "options": [
+      "EOQ: ordering cost vs cyclic holding cost; newsvendor: overage (leftover) vs underage (shortage)",
+      "Both solve ordering vs holding",
+      "Both solve overage vs underage",
+      "EOQ: overage vs underage; newsvendor: ordering vs holding"
+     ],
+     "answer": 0,
+     "why": "EOQ balances setup against carrying for repeat items; the newsvendor balances leftovers against lost profit for one-shot demand."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Safety stock levels should primarily follow:",
+     "options": [
+      "Demand volume",
+      "Demand/supply variability and target service level",
+      "Lot size",
+      "Item price"
+     ],
+     "answer": 1,
+     "why": "S3's ABC logic and S4's DMart chain agree: noise and promised service level set the buffer - volume does not."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A firm has daily sales of Rs. 1 million and average inventory of Rs. 5 million. By Little's Law:",
+     "options": [
+      "A rupee spends 5 days inside the system (turns = 1/T)",
+      "The data is insufficient",
+      "Throughput is 5 million/day",
+      "Inventory turns are 5 per day"
+     ],
+     "answer": 0,
+     "why": "I = R x T gives T = 5 days; turns = 1/T. The same law read Zara, DMart, Apple (~70) and Samsung (~20)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A bank replaces three separate teller lines with one single line feeding all counters. This is:",
+     "options": [
+      "Un-pooling",
+      "A bottleneck shift",
+      "Little's Law violation",
+      "Risk pooling applied to queues - one slow customer delays only one register"
+     ],
+     "answer": 3,
+     "why": "The single line pools arrival variability across servers - the S5 queue example and the S4 warehouse are the same mathematics."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Per the module's law of disruption, Netflix's DVD-by-mail qualified because it:",
+     "options": [
+      "Was first to stream",
+      "Used the internet",
+      "Had better films",
+      "Killed the variety-vs-cost trade-off at scale via pooled warehouses and flat fees"
+     ],
+     "answer": 3,
+     "why": "Unlimited variety at low cost, cheaply delivered - done expensively it would have been a 2% niche, not a disruption."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The agentic-AI make-vs-buy principle taught in Session 5 is:",
+     "options": [
+      "Outsource tasks, never capabilities",
+      "Never use AI agents",
+      "Outsource everything AI can do",
+      "Buy only the cheapest tokens"
+     ],
+     "answer": 0,
+     "why": "Klarna-style task outsourcing is classic unbundling; capability transfer is the Boeing-Spirit mistake at organisational scale."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Lemon Tree employing a large share of persons with disabilities (Session 2) worked because:",
+     "options": [
+      "It cut wages",
+      "It was a CSR compliance rule",
+      "Customers never noticed",
+      "Effectiveness (stakeholder value) was designed first, and efficiency followed from loyal, low-attrition, high-skill staff"
+     ],
+     "answer": 3,
+     "why": "Avittathur's point: design for effectiveness and efficiency often follows - the reverse rarely holds."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Apple turns inventory ~70 times a year; Samsung ~20. The correct inference is:",
+     "options": [
+      "Apple manages inventory better",
+      "Different diagonals of the product-process matrix - benchmark within a diagonal, never across",
+      "Samsung is inefficient",
+      "Samsung should copy Apple"
+     ],
+     "answer": 1,
+     "why": "Narrow curated range vs every-price-point variety: the KPI reads the business model, not the competence."
+    },
+    {
+     "tag": "MCQ",
+     "q": "'High utilisation under variability is a crime' because L = rho/(1-rho) implies:",
+     "options": [
+      "Utilisation cannot exceed 50%",
+      "Congestion grows linearly with utilisation",
+      "Congestion explodes as rho approaches 1 (rho 0.9 gives L=9; rho 0.99 gives L=99)",
+      "Queues vanish at high utilisation"
+     ],
+     "answer": 2,
+     "why": "The collapse is steep; a 99%-utilised system has congestion multiplier 99 - IndiGo's December arithmetic."
+    },
+    {
+     "tag": "MCQ",
+     "q": "When Mumbai airport caps peak flights to cut congestion, the module's critique is:",
+     "options": [
+      "It violates Little's Law",
+      "Correct - always curb demand",
+      "It raises utilisation",
+      "It kills lambda (sales); the better lever is raising mu (capacity or speed)"
+     ],
+     "answer": 3,
+     "why": "Curbing arrivals sacrifices revenue; adding service rate attacks congestion without killing sales."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which pair are PROCESS-innovation moats rather than product moats?",
+     "options": [
+      "Apple and Nokia",
+      "Nvidia and ASML",
+      "Zara's fast supply chain and Toyota's production system",
+      "Kodak and Intel"
+     ],
+     "answer": 2,
+     "why": "S1's core claim: process moats are messy, cultural and durable; product moats are visible and copyable."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The hold-up problem (Nvidia-supplier capacity game) is best solved by:",
+     "options": [
+      "Vertical integration always",
+      "Shared capex stakes and screening contract menus that make private information reveal itself",
+      "Longer legal contracts",
+      "Penalty clauses"
+     ],
+     "answer": 1,
+     "why": "Sharing the capex makes the forecast credible; Pfizer-Biocon style menus turn contract choice into a lie detector."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A quick-commerce dark store deliberately running riders at low utilisation illustrates:",
+     "options": [
+      "Poor scheduling",
+      "The EOQ formula",
+      "Slack purchased as the product itself - speed sold as the differentiator",
+      "Waste to eliminate"
+     ],
+     "answer": 2,
+     "why": "S3's tyranny of utilisation: idle capacity is the cost of the 10-minute promise; the buffer IS the business model."
+    },
+    {
+     "tag": "MCQ",
+     "q": "China holding roughly 100 days of crude oil imports is, in Kraljic terms, managing a:",
+     "options": [
+      "Routine item",
+      "Leverage item",
+      "Strategic item with massive safety stock",
+      "Bottleneck item only"
+     ],
+     "answer": 2,
+     "why": "High value, high supply risk - strategic quadrant; the buffer is national-scale safety stock against disruption."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The retailers' inventory-to-sales ratio peaking mid-recession teaches that inventory is:",
+     "options": [
+      "Uncorrelated with demand",
+      "A leading indicator",
+      "A cause of recessions",
+      "A lagging indicator - stock piles up only after demand has already fallen"
+     ],
+     "answer": 3,
+     "why": "S1's dial: by the time the pile is visible you are already deep inside the trouble."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Boeing buying back Spirit AeroSystems and America's struggle to re-shore manufacturing both show:",
+     "options": [
+      "Re-shoring is easy with subsidies",
+      "Once a capability leaves, recovery cost is enormous - sometimes infinite; money is not the constraint",
+      "Outsourcing always fails",
+      "IP law is weak"
+     ],
+     "answer": 1,
+     "why": "S1's CHIPS Act lesson and S5's tasks-vs-capabilities rule are the same: lost process capability cannot simply be bought back."
+    },
+    {
+     "tag": "MCQ",
+     "q": "GM went bankrupt beside its own teacher (a 15-year Toyota JV) because it:",
+     "options": [
+      "Over-invested in lean",
+      "Never saw the Toyota system",
+      "Paid workers too much",
+      "Copied the checklist but kept an arm's-length culture - lean parked in the OM box, never the boardroom"
+     ],
+     "answer": 3,
+     "why": "Andon empowerment, relational contracts, no cost-plus - the philosophy did not transfer; culture is part of the process."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Should a firm raise the service level for an item? The first questions to ask are:",
+     "options": [
+      "What is the EOQ?",
+      "What are the underage (shortage) and overage costs - and the critical ratio Cu/(Cu+Co)?",
+      "What is the brand budget?",
+      "What do rivals stock?"
+     ],
+     "answer": 1,
+     "why": "Service level is an economic choice: the newsvendor critical ratio prices exactly how much shortage risk to tolerate."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The one thread running through all five sessions is:",
+     "options": [
+      "Every operations design must take its mandate from the differentiation strategy - misalignment is the killer",
+      "Always integrate vertically",
+      "Minimise cost everywhere",
+      "Always pool"
+     ],
+     "answer": 0,
+     "why": "Intel, Boeing, GM and Southwest's worst week are the same failure; Zara, Toyota, DMart and Amazon are the same success."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Amazon un-pools; Southwest cannot pool. The key distinction is:",
+     "options": [
+      "Amazon's un-pooling is a priced DECISION serving a speed differentiation; Southwest's is a structural property of point-to-point that chose which disaster it cannot absorb",
+      "Both are identical failures",
+      "Networks cannot change",
+      "Pooling is always superior"
+     ],
+     "answer": 0,
+     "why": "Grade the fit and the consciousness of the trade-off, never the pooling level itself."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Klarna's USD 0.19 resolutions sit far below the human salary line. In Session 1's language, agentic AI at shallow depth has:",
+     "options": [
+      "Shifted the industry frontier itself - the same service value now achievable at radically lower cost, redefining what 'on the line' means",
+      "Raised everyone's costs",
+      "Eliminated the frontier",
+      "Left the industry unchanged"
+     ],
+     "answer": 0,
+     "why": "When technology moves the frontier, yesterday's efficient players wake up below the curve without changing anything."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The newsvendor's 23-unit cushion, a retailer's safety stock, and China's 100 days of crude are:",
+     "options": [
+      "The same logic at three scales: paying a known holding cost to escape being hostage to an uncertainty",
+      "All EOQ outputs",
+      "Unrelated policies",
+      "All shortage costs"
+     ],
+     "answer": 0,
+     "why": "Safety stock is the price of the uncertainties you refuse to be hostage to - from a paowala's tray to a superpower's tanks."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Zudio's ~47-day cover, DMart's curated fast movers and IndiGo's single fleet are one playbook:",
+     "options": [
+      "Right-of-matrix variety plays",
+      "Left-of-matrix designs - curate variety down, standardise the process, let low variability drive low inventory and cost leadership",
+      "Pooling failures",
+      "Premium differentiation"
+     ],
+     "answer": 1,
+     "why": "Three industries, one diagonal position - and in each case the advantage hides in a process outsiders cannot see."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The old MDP's instant confirmations and IndiGo's short-notice rostering change share a failure mode:",
+     "options": [
+      "Bad luck",
+      "Regulatory sabotage",
+      "Self-injected shocks: promising or changing before viability was confirmed, inside systems with no absorbers for the resulting variability",
+      "Under-pricing"
+     ],
+     "answer": 2,
+     "why": "If your design has no shock absorbers, your one duty is never to create the shock yourself - sequencing is a form of safety stock."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Lemon Tree's caring design, Toyota's relational contracts and the andon cord all monetise the same asset:",
+     "options": [
+      "Brand advertising",
+      "Government subsidy",
+      "Trust - designed into processes and contracts, it surfaces problems, retains people and converts 'extra' cost into extra revenue",
+      "Cheap capital"
+     ],
+     "answer": 2,
+     "why": "Effectiveness compounding as design: the through-line from Session 2's definition to Session 5's lean."
+    }
+   ]
+  }
+ ]
+}

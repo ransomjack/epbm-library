@@ -1,0 +1,112 @@
+---
+title: Quick Reference
+kicker: Reference
+order: 6
+source: "Every framework, formula and case from the five sessions, on one page"
+description: "Operational Excellence on one page: the strategy frameworks, process and inventory formulas, pooling and queueing, the distinctions that are easy to mix up, and which company illustrates what."
+takeaways:
+  - "One thread runs through the module: every operations choice takes its mandate from what the business competes on."
+  - "Every formula from the five sessions, with a worked number."
+---
+import Flow from '../../components/d/Flow.astro';
+
+Every item here is covered in more depth in Sessions 1 to 5.
+
+<Flow items={[
+  { t: 'Strategy', s: 'Session 1: where operations decisions come from' },
+  { t: 'Process', s: 'Session 2: reading any operation' },
+  { t: 'Inventory', s: 'Session 3: how much, and when' },
+  { t: 'Supply chain', s: 'Session 4: what to own, what variety to promise' },
+  { t: 'Practice', s: 'Session 5: pooling, lean and queues', hl: true },
+]} />
+
+## Formulas
+
+| Formula | What it gives | Worked number |
+|---|---|---|
+| **Cycle time** = time of the slowest stage | Gap between finished units | Collate 2 min, staple 1 min → 2 min |
+| **Capacity** = (60 ÷ minutes per unit) × servers | Units per hour at a stage | 4 min, 5 counters → 75 an hour |
+| **Throughput time** = operation + waiting | Time one unit spends inside | 2 + 1 = 3 min |
+| **Utilisation** = output ÷ capacity | How busy a resource is | 7.5 ÷ 8.5 = 88% |
+| **Little's Law**: inventory = rate × time | Units in the system | 60 an hour × 1 hour = 60 |
+| **Inventory turns** = sales ÷ average inventory | How fast stock moves | 1 ÷ 5 days |
+| **EOQ** = √(2DS ÷ H), with H = rate × unit cost | Best order size | √(2 × 12,000 × 120 ÷ 2) = 1,200 |
+| **Cyclic stock** = Q ÷ 2 | Average stock from ordering in lots | Buy every 30 days → 15 days |
+| **Safety stock** = average inventory − Q ÷ 2 | The cushion | 25 − 15 = 10 days |
+| **Critical ratio** = Cu ÷ (Cu + Co) | Target service level | 7.5 ÷ (7.5 + 2.5) = 0.75 → stock 70 |
+| **Pooled SD** = √(SD₁² + SD₂² + 2r·SD₁·SD₂) | Noise after pooling | 3 and 4: r = −1 → 1; 0 → 5; +1 → 7 |
+| **Utilisation** ρ = λ ÷ μ | Arrival rate over service rate | 9 ÷ 10 = 90% |
+| **Queue size** L = ρ ÷ (1 − ρ) | Average number in the system | 90% → 9; 99% → 99 |
+| **Dumper cycle time** = larger of loading time and round trip ÷ n | Output with n vehicles | 3 dumpers → 8.5 min |
+
+## Frameworks
+
+| Framework | In one line |
+|---|---|
+| **Strategy cascade** | Corporate (which game) → business (how to win) → functional (how to deliver) |
+| **De-risking vs decoupling** | Diversify supply vs rebuild capability at home |
+| **Benchmarking curve** | Below the frontier is waste: cut cost for the same value, or add value for the same cost |
+| **V = C × (A + P)** | Value = capabilities × (assets + processes). Assets: sizing, timing, type, location |
+| **Product vs process innovation** | Product advantages are visible and copied; process advantages last |
+| **Input vs resource** | After the transformation, the input is gone and the resource remains |
+| **Efficiency** | Minimum cost per unit of output; serves the owner |
+| **Effectiveness** | Maximum welfare (value minus price) for every other stakeholder |
+| **Operational excellence** | Efficiency + effectiveness, by design |
+| **Five process types** | Job shop, batch, assembly line, continuous flow, project |
+| **MTS, MTO, ATO** | Make to stock, make to order, or stock a base and finish to order |
+| **ABC analysis** | A: 10% of items, 70% of value. Small frequent lots, most safety stock |
+| **Kraljic matrix** | Value × supply risk: leverage, strategic, routine, bottleneck |
+| **Three costs, two trade-offs** | Ordering vs holding (cyclic stock); holding vs shortage (safety stock) |
+| **OS vs OM** | Design the system vs run the system |
+| **Make or buy** | Judge the fit with what you compete on, not the level of outsourcing |
+| **Product–process matrix** | Variety must be matched by flexibility; stay on the diagonal |
+| **Risk pooling** | Combining demands cuts noise, at the cost of lead time |
+| **Lean** | Remove waste; empower people; build long-term supplier trust |
+| **Hold-up problem** | Sunk investment plus unverifiable forecasts; fix with shared investment or contract menus |
+
+## Easy to confuse
+
+| If you see… | Remember… |
+|---|---|
+| Cycle time | The gap between finished units, not the time one unit spends inside |
+| Manpower | A resource, not an input |
+| Bottleneck | The limiting stage in a process. "Critical path" belongs to project management |
+| Assembly line | Any repetitive process, including sandwiches and surgery |
+| Which system has the longer lead time | Total: make-to-stock. Felt by the customer: make-to-order |
+| A items | Ordered often in small lots, but with the *most* safety stock |
+| Shortage cost | Lost profit, invisible in the accounts |
+| "High demand needs high inventory" | False if demand is predictable. Variability drives stock |
+| Vertical integration | Neither good nor bad. It buys control; ask whether control is what you need |
+| DMart | Fast payment is the symptom; the curated range is the cause |
+| Pooling | Can never increase risk, but always costs lead time |
+| Inventory turns | Reflect the business model. Compare only like with like |
+| High utilisation | Fine for predictable work; a recipe for queues when work is variable |
+| Lean | Not zero slack. Slack is what absorbs variability |
+
+## Which company illustrates what
+
+| Company | Use it for |
+|---|---|
+| **IndiGo** | One strategic choice shaping the whole design; standardisation concentrating risk; no slack for shocks |
+| **Zara** | Speed through an owned supply chain; small lots; effective rather than efficient |
+| **Toyota** | Lean; culture as part of the process; efficient *and* effective; patience on electric vehicles |
+| **Apple** | Product-led advantage; narrow range and high inventory turns |
+| **Dell** | Assemble-to-order; mass customisation on the diagonal |
+| **Lemon Tree** | Effectiveness that pays for itself |
+| **Aravind Eye Care / a focused heart hospital** | Assembly-line discipline producing quality at low cost |
+| **Asian Paints** | Customisation pushed out to the dealer |
+| **Intel** | Too much vertical integration when value moved outside |
+| **Boeing** | Outsourcing the thing it competes on: quality control |
+| **DMart** | Low variability → low inventory → the flywheel |
+| **Amazon** | Un-pooling on purpose to win on speed |
+| **Netflix** | Pooled warehouses removing a trade-off |
+| **FedEx** | Pooling two networks when their demands diverged |
+| **Southwest** | Point-to-point: strong against local shocks, slow to recover from large ones |
+| **GM** | Copying lean's checklist without its culture |
+
+<div class="callout">
+<p class="callout-title">The module in one sentence</p>
+
+Firms don't fail for choosing cost, speed or variety. They fail for running an operations design that contradicts the promise they made to the customer.
+
+</div>

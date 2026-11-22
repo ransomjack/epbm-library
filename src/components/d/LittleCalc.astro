@@ -1,0 +1,20 @@
+---
+// Little's Law: inventory = rate × time.
+---
+<div class="calc" data-little>
+  <div class="calc-in">
+    <label class="ctl"><span>Patients arriving per hour</span><input type="range" min="10" max="120" step="5" value="60" data-k="r" /><output data-o="r">60</output></label>
+    <label class="ctl"><span>Hours each visit takes</span><input type="range" min="0.25" max="3" step="0.25" value="1" data-k="t" /><output data-o="t">1</output></label>
+  </div>
+  <div class="calc-out"><span>People inside at any moment</span><b data-out>60</b><span class="calc-note">Inventory = rate × time</span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-little]').forEach((root) => {
+    const g = (k) => root.querySelector(`input[data-k="${k}"]`);
+    const run = () => {
+      ['r', 't'].forEach((k) => { root.querySelector(`[data-o="${k}"]`).textContent = g(k).value; });
+      root.querySelector('[data-out]').textContent = Math.round(Number(g('r').value) * Number(g('t').value));
+    };
+    root.querySelectorAll('input').forEach((i) => i.addEventListener('input', run)); run();
+  });
+</script>

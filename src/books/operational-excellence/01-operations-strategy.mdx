@@ -1,0 +1,169 @@
+---
+title: Operations in the Boardroom
+kicker: Session 1
+order: 1
+source: "Session by Prof. Peeyush Mehta · Operational Excellence"
+description: "Why operations became a board-level subject, how every operations choice flows from the business strategy, the benchmarking curve, and why advantages built into the process outlast advantages built into the product. Session 1 of Operational Excellence."
+takeaways:
+  - "Operations takes its mandate from the business strategy: the answer to \"on what basis do we compete?\""
+  - "Every basis of competition forces trade-offs. The design that makes you efficient also concentrates your risk."
+  - "Being below the industry frontier is waste, not a strategy choice."
+  - "Process advantages (Zara, Toyota) last longer than product advantages (Apple, Nokia), because rivals can't see how they work."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Frontier from '../../components/d/Frontier.astro';
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
+
+## The module in one picture
+
+Every business does the same thing: it takes an input, passes it through a process, and produces an output someone pays for. Operations is the discipline of designing and running that middle box well.
+
+<Flow items={[
+  { t: 'Input', s: 'Materials, orders, an unmet need' },
+  { t: 'Process', s: 'Everything between supplier and customer', hl: true },
+  { t: 'Output', s: 'What the customer pays for' },
+]} links={['', 'value added']} />
+
+For thirty years most firms treated that box as back-office plumbing whose only job was to be cheap. Then the shocks arrived, and boards discovered the plumbing was the building.
+
+A dosa cart that promises "hot, fast and ₹40" needs one batter, one tawa rhythm and no menu experiments. A fine-dining restaurant that promises "anything you can dream of" needs a big, flexible kitchen and must charge for it. Neither is wrong. The tragedy is the cart that adds a 40-item menu, or the fine-dining kitchen that tries to win on price. This module is about spotting that mismatch and designing its opposite.
+
+## Why operations moved upstairs
+
+Line up the big shocks of the last twenty-five years: the dot-com bust (around 2000), the 2008 financial crisis, COVID-19 in 2020, and the tariff era that followed. Each one landed first and hardest on operations, the function whose job is to keep supply and demand in balance.
+
+Prof. Mehta's favourite dial for reading an economy is the **retailers' inventory-to-sales ratio**. Sales stand for demand; inventory stands for supply decisions already made. When a shock hits, demand falls faster than firms can stop producing, unsold stock piles up and the ratio climbs. It peaks in the middle of a recession, which makes it a **lagging indicator**: by the time stock has visibly piled up, you are already inside the trouble.
+
+| | 2008 financial crisis | 2020 pandemic |
+|---|---|---|
+| Trigger | The financial system | A health emergency |
+| Supply | Stable: factories kept running | Collapsed, then couldn't restart fast enough |
+| Demand | Fell sharply | Fell, then rebounded faster than supply |
+| The mismatch | No demand for the available supply | Demand came back before supply was ready |
+
+Supply was slow to recover in 2020 because the preceding decades had spread supply chains across the world in search of cheap labour. The result was efficient but exposed: the same connections that lowered cost carried every shock around the globe.
+
+## From just-in-time to just-in-case
+
+For about thirty years, "operational excellence" meant cost minimisation: hold minimum inventory, squeeze every link, source wherever labour is cheapest. The shocks added a new word to the vocabulary: **risk**. The relentless pursuit of low cost had quietly bought a large, hidden bill.
+
+<Cards min={260} items={[
+  { title: 'De-risking: diversify', body: 'Spread the chain so no single geography can hold you hostage. The well-known version is "China+1": keep China, add India, Vietnam or Mexico.', foot: 'Relatively easy, and it works' },
+  { title: 'Decoupling: rebuild at home', body: 'Pull whole capabilities back into the domestic value chain, as the US and Europe are attempting in chips, batteries and pharma.', foot: 'Very hard: it is not plug-and-play' },
+]} />
+
+Related terms: **reshoring** (bring it home), **nearshoring** (build near the home market) and **friend-shoring** (source from politically friendly countries).
+
+Decoupling is hard because two or three decades of outsourcing dilute your own capability. Supply chains aren't Lego bricks you can unplug from one country and snap into another. The US passed the CHIPS Act and found that money was never the constraint. Firms praised for years for being "asset-light" are now asked to rebuild capacity they no longer know how to run.
+
+<div class="callout">
+<p class="callout-title">The bottleneck is capability, not cash</p>
+
+Rare-earth metals aren't rare in the ground. China's leverage comes from its dominance in **refining** them. A capability built over decades can't be bought back in a budget cycle.
+
+</div>
+
+## Where operations decisions come from
+
+Strategy arrives as a cascade of three levels. Operations sits at the bottom, as a consequence of the two above.
+
+<Flow items={[
+  { t: 'Corporate strategy', s: 'Which game do we play? The board decides which sectors and markets to be in.' },
+  { t: 'Business strategy', s: 'How do we win? Cost, quality, speed, variety, innovation. This is your differentiation.', hl: true },
+  { t: 'Functional strategy', s: 'How do we design and deliver it? Operations, marketing, finance and HR decide together.' },
+]} />
+
+The arrows run downward: you never design operations in a vacuum. Change the goal at the business level and the whole operations design must change with it.
+
+**What would the world miss if you disappeared tomorrow?** That question pins down a business strategy. IndiGo: low-cost air travel. Amazon: range and speed. Apple: innovation. L&T: complex projects rivals won't touch. Real differentiation is whatever still stands once you strip away everything rivals can equally claim.
+
+### Every choice forces a trade-off
+
+High variety usually means high cost; low cost usually means low variety. Henry Ford planted himself at low variety and low cost: one standardised car ("any colour so long as it is black"), enormous scale, low unit cost. He gave up variety on purpose.
+
+### IndiGo: one choice, the whole design
+
+An airline's biggest controllable costs are the aircraft and its maintenance. IndiGo's answer was essentially **one aircraft family at high scale**, and a whole cost advantage follows from that one choice:
+
+<Cards min={200} items={[
+  { title: 'Spares', body: 'One fleet type means interchangeable parts, simpler stocking and cheaper swaps.' },
+  { title: 'Training', body: 'One type of pilot, one type of simulator: a major industry cost, collapsed.' },
+  { title: 'Buying power', body: 'Large single-type orders bring lower unit and maintenance costs.' },
+  { title: 'Finance', body: 'A lean, standard model keeps working capital low and financing cheap.' },
+]} />
+
+Change the mandate and the design inverts. A pharma firm competing on speed of new launches needs flexible capacity that can make molecule A, B or C, and must accept that flexible capacity sits partly idle. A cost player builds large, dedicated lines and accepts rigidity.
+
+<div class="callout trap">
+<p class="callout-title">Trade-offs cut both ways</p>
+
+Because IndiGo runs one dominant fleet and engine type, a fault in that one component hits the whole fleet at once, as happened when a large number of its aircraft were grounded for engine problems. The standardisation that makes you efficient also concentrates your exposure.
+
+</div>
+
+## The benchmarking curve
+
+Plot the value you deliver against the cost of creating it. The curve is the **industry frontier**: the most value achievable at each level of cost.
+
+<Fig title="The benchmarking curve" caption="A firm below the curve has two ways to improve, and no excuse for doing neither.">
+  <Frontier />
+</Fig>
+
+<Decide q="A pharma firm competes on speed. A study shows it delivers the speed it promised, but sits below the industry frontier. Is that a problem?" options={[
+  { label: 'No. It chose how much speed to offer, and it delivers it.', why: 'The level of speed is its choice. But the curve shows the same speed is achievable at lower cost, so the gap is waste.' },
+  { label: 'Yes. The gap to the frontier is inefficiency, not strategy.', good: true, why: 'Nobody questions the value it chose to offer. But delivering it at a higher cost than necessary is waste inside the system. Or, read the other way: at that cost, it could be delivering more speed.' },
+  { label: 'Only if it is also the most expensive producer in the industry.', why: 'Even the lowest-cost producer can be below the frontier, because the frontier is set by what is possible, not by what today’s best firm achieves.' },
+]} />
+
+## A map of operations strategy
+
+Van Mieghem's framework organises every operations decision:
+
+**Value = Capabilities × (Assets + Processes)**
+
+<Cards min={220} items={[
+  { title: 'Capabilities', body: 'Set by the business strategy. Where should we excel? Where do we actually excel today?' },
+  { title: 'Assets', body: 'Four questions: how much capacity (sizing), when (timing), specialised or flexible (type), and where (location).' },
+  { title: 'Processes', body: 'How value flows: supply, technology, demand, innovation and risk management.' },
+]} />
+
+For a neighbourhood bakery: the capability is fresh bread every morning. The assets are how many ovens, when to buy the next one, what kind, and where to put the shop. The processes are buying flour, baking, guessing tomorrow's demand, trying recipes and coping when an oven breaks.
+
+## Masters of operations
+
+### Zara: speed as a moat
+
+Zara competes on fast fashion. Producing in **small lots** cuts the risk of unsold stock but creates the opposite risk, shortage. Zara turns that risk into an asset in two ways: customers learn that a style is here today and gone tomorrow, so they buy now; and stores are restocked as often as twice a week, so a disappointed customer returns to what is effectively a new store.
+
+Underneath is a fast, largely self-owned supply chain: much of its production close to home in and around Spain, time-sensitive items made in-house, dyeing postponed until it is clear which colours are selling, small batches, centralised distribution and frequent deliveries. Everything serves one aim: **shorter lead time**. The payoff is far less inventory than rivals and the fastest stock turnover in its industry. The designs are unremarkable. The supply chain is the moat.
+
+### Toyota: reliability as a moat
+
+After the war, short of land, labour and resources, Toyota's engineers studied Ford and GM and adapted what they saw to scarcity. What emerged was the Toyota Production System, which the world now calls **lean**. Just-in-time, kanban and kaizen all trace back to it.
+
+The puzzle that makes the point: from the 1980s GM ran a joint plant with Toyota for about twenty-five years, and still went bankrupt in 2009. Some operational advantages can't be copied even by a partner inside the same plant. Toyota itself finds it hard to reproduce its quality outside Japan, because the missing ingredient is culture, and culture is part of the process.
+
+## Product innovation or process innovation?
+
+Every firm uses both, but in any firm one dominates, and which one tells you how durable its advantage is.
+
+**A disruption happens only when someone removes a trade-off, at scale.** Dell broke the trade-off between variety and cost: a customised PC at low cost, by standardising everything up to the point the customer cares about and adding variety only at the end. Asian Paints does the same with paint: thousands of shades from a few bases, mixed at the dealer.
+
+<Sort title="Try it: where does the advantage live?" choices={['Product', 'Process']} items={[
+  { text: 'Zara', answer: 'Process', why: 'The designs are ordinary. The edge is getting them to stores faster, through the supply chain.' },
+  { text: 'Toyota', answer: 'Process', why: 'Rivals match its engineering. Toyota wins on its production system and culture.' },
+  { text: 'Dell (in its PC heyday)', answer: 'Process', why: 'It made no components of its own. The innovation was the assemble-to-order model.' },
+  { text: 'Apple', answer: 'Product', why: 'Its manufacturing partners serve the whole industry. The edge rests on launching new products, which rivals copy quickly.' },
+]} />
+
+**Why process is the stronger moat.** Product innovations are visible, and what is visible gets copied. Process innovations are messy, slow and cultural: so complex that even the owner may not fully understand why they work, which is exactly why they last.
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: build advantage into how you work</p>
+
+A clever feature gets copied within months. The way you run the place (fast, smooth, reliable, with a team that cares) is far harder to copy. But a strong process is no insurance against change: Nokia and Kodak didn't fail for lack of capability. They missed the signal to redesign, which comes from all functions reading the market together, never from operations alone.
+
+</div>

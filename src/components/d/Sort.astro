@@ -1,0 +1,34 @@
+---
+// Classify each item. items: [{ text, answer, why }], choices: [string]
+const { items, choices, title = 'Try it: sort these' } = Astro.props;
+---
+<div class="sortq" data-sort>
+  <p class="dc-k">{title}</p>
+  {items.map((it) => (
+    <div class="sq-row" data-answer={it.answer}>
+      <p class="sq-t">{it.text}</p>
+      <div class="sq-c">{choices.map((c) => <button type="button" data-c={c}>{c}</button>)}</div>
+      <p class="sq-w" hidden><b></b> {it.why}</p>
+    </div>
+  ))}
+  <p class="sq-score" aria-live="polite"></p>
+</div>
+<script>
+  document.querySelectorAll('[data-sort]').forEach((root) => {
+    const rows = root.querySelectorAll('.sq-row');
+    let done = 0, right = 0;
+    rows.forEach((row) => {
+      row.querySelectorAll('button').forEach((b) => {
+        b.addEventListener('click', () => {
+          if (row.dataset.done) return;
+          row.dataset.done = '1'; done += 1;
+          const ok = b.dataset.c === row.dataset.answer; if (ok) right += 1;
+          row.querySelectorAll('button').forEach((x) => { x.disabled = true; if (x.dataset.c === row.dataset.answer) x.classList.add('ok'); });
+          if (!ok) b.classList.add('no');
+          const w = row.querySelector('.sq-w'); w.querySelector('b').textContent = ok ? 'Correct.' : `It's ${row.dataset.answer}.`; w.hidden = false;
+          if (done === rows.length) root.querySelector('.sq-score').textContent = `You got ${right} of ${rows.length}.`;
+        });
+      });
+    });
+  });
+</script>

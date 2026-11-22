@@ -1,0 +1,25 @@
+---
+// "What would you do?" card. options: [{ label, good?: boolean, why }]
+const { q, options, title = 'What would you do?' } = Astro.props;
+---
+<div class="decide" data-decide>
+  <p class="dc-k">{title}</p>
+  <p class="dc-q">{q}</p>
+  <div class="dc-opts">
+    {options.map((o) => (
+      <button type="button" class="dc-o" data-good={o.good ? '1' : '0'}>
+        <span class="dc-l">{o.label}</span>
+        <span class="dc-w" hidden><b>{o.good ? 'Yes.' : 'Not quite.'}</b> {o.why}</span>
+      </button>
+    ))}
+  </div>
+</div>
+<script>
+  document.querySelectorAll('[data-decide] .dc-o').forEach((b) => {
+    b.addEventListener('click', () => {
+      b.classList.add(b.dataset.good === '1' ? 'ok' : 'no');
+      b.querySelector('.dc-w').hidden = false;
+      b.setAttribute('aria-expanded', 'true');
+    });
+  });
+</script>

@@ -1,0 +1,41 @@
+---
+// Single-period stocking. Demand is 10..90 (each 10% likely, 50 is 20% likely).
+---
+<div class="calc" data-nv>
+  <div class="calc-in">
+    <label class="ctl hl"><span>Units you stock</span><input type="range" min="10" max="90" step="10" value="50" data-k="q" /><output data-o="q"></output></label>
+    <label class="ctl"><span>Profit on each unit sold (Rs.)</span><input type="range" min="1" max="15" step="0.5" value="7.5" data-k="cu" /><output data-o="cu"></output></label>
+    <label class="ctl"><span>Loss on each unsold unit (Rs.)</span><input type="range" min="0.5" max="15" step="0.5" value="2.5" data-k="co" /><output data-o="co"></output></label>
+    <div class="minibars tall" data-bars aria-hidden="true"></div>
+    <p class="calc-cap">Expected profit for each stock level, 10 to 90. The outlined bar is the best.</p>
+    <div class="kv">
+      <div><span>Expected sales</span><b data-v="es"></b></div>
+      <div><span>Expected leftovers</span><b data-v="el"></b></div>
+      <div><span>Critical ratio</span><b data-v="cr"></b></div>
+      <div><span>Demand met in full</span><b data-v="sl"></b></div>
+    </div>
+  </div>
+  <div class="calc-out"><span>Expected profit</span><b data-v="p"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-nv]').forEach((root) => {
+    const D = [10, 20, 30, 40, 50, 60, 70, 80, 90], P = [0.1, 0.1, 0.1, 0.1, 0.2, 0.1, 0.1, 0.1, 0.1];
+    const g = (k) => Number(root.querySelector(`input[data-k="${k}"]`).value);
+    const bars = root.querySelector('[data-bars]');
+    D.forEach((q) => { const b = document.createElement('i'); b.dataset.q = q; bars.appendChild(b); });
+    const ev = (q, cu, co) => { let es = 0; D.forEach((d, i) => { es += P[i] * Math.min(d, q); }); return { es, el: q - es, p: es * cu - (q - es) * co }; };
+    const run = () => {
+      const q = g('q'), cu = g('cu'), co = g('co');
+      ['q', 'cu', 'co'].forEach((k) => { root.querySelector(`[data-o="${k}"]`).textContent = g(k); });
+      const all = D.map((x) => ev(x, cu, co).p), max = Math.max(...all), lo = Math.min(...all, 0), best = D[all.indexOf(max)];
+      bars.querySelectorAll('i').forEach((b, i) => { b.style.height = Math.max(4, 100 * (all[i] - lo) / (max - lo || 1)) + '%'; b.classList.toggle('on', D[i] === q); b.classList.toggle('best', D[i] === best); b.title = `${D[i]}: Rs.${all[i].toFixed(0)}`; });
+      const x = ev(q, cu, co), cr = cu / (cu + co);
+      let cum = 0; D.forEach((d, i) => { if (d <= q) cum += P[i]; });
+      const set = (k, v) => { root.querySelector(`[data-v="${k}"]`).textContent = v; };
+      set('es', x.es.toFixed(0)); set('el', x.el.toFixed(0)); set('cr', cr.toFixed(2)); set('sl', Math.round(100 * cum) + '% of days');
+      set('p', 'Rs.' + x.p.toFixed(0));
+      set('note', q === best ? 'This is the best stock level.' : q < best ? `Too little: you turn buyers away. Best is ${best}.` : `Too much: leftovers eat the profit. Best is ${best}.`);
+    };
+    root.querySelectorAll('input').forEach((i) => i.addEventListener('input', run)); run();
+  });
+</script>

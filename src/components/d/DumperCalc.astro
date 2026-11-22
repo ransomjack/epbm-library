@@ -1,0 +1,37 @@
+---
+// One shovel, n dumpers. Loading 7.5 min; round trip 25.5 min; shovel Rs.200/hr; dumper Rs.800/hr.
+---
+<div class="calc" data-dumper>
+  <div class="calc-in">
+    <label class="ctl"><span>Dumpers hired</span><input type="range" min="1" max="6" step="1" value="3" data-k="n" /><output data-o="n">3</output></label>
+    <div class="kv">
+      <div><span>Cycle time</span><b data-v="ct"></b></div>
+      <div><span>Shovel busy</span><b data-v="su"></b></div>
+      <div><span>Dumpers busy</span><b data-v="du"></b></div>
+      <div><span>Loads per hour</span><b data-v="cap"></b></div>
+    </div>
+    <div class="minibars" data-bars aria-hidden="true"></div>
+    <p class="calc-cap">Cost per load for 1 to 6 dumpers</p>
+  </div>
+  <div class="calc-out"><span>Cost per load</span><b data-v="cost"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-dumper]').forEach((root) => {
+    const load = 7.5, trip = 25.5;
+    const calc = (n) => { const ct = Math.max(load, trip / n); return { ct, su: load / ct, du: (trip / n) / ct, cap: 60 / ct, cost: (200 + 800 * n) / (60 / ct) }; };
+    const all = [1, 2, 3, 4, 5, 6].map(calc), best = Math.min(...all.map((x) => x.cost)), worst = Math.max(...all.map((x) => x.cost));
+    const bars = root.querySelector('[data-bars]');
+    all.forEach((x, i) => { const b = document.createElement('i'); b.style.height = (100 * x.cost / worst) + '%'; b.dataset.n = i + 1; b.title = `${i + 1}: Rs.${x.cost.toFixed(0)}`; bars.appendChild(b); });
+    const set = (k, v) => { root.querySelector(`[data-v="${k}"]`).textContent = v; };
+    const inp = root.querySelector('input');
+    const run = () => {
+      const n = Number(inp.value), x = calc(n);
+      root.querySelector('[data-o="n"]').textContent = n;
+      set('ct', x.ct.toFixed(1) + ' min'); set('su', Math.round(100 * x.su) + '%'); set('du', Math.round(100 * x.du) + '%'); set('cap', x.cap.toFixed(2));
+      set('cost', 'Rs.' + x.cost.toFixed(0));
+      set('note', x.cost === best ? 'Cheapest per load.' : x.cap >= 8 ? (n === 4 ? 'Fastest, but not the cheapest: the dumpers now queue.' : 'No faster than 4: the shovel is the limit, and extra dumpers just wait.') : 'The shovel stands idle part of the time.');
+      bars.querySelectorAll('i').forEach((b) => b.classList.toggle('on', Number(b.dataset.n) === n));
+    };
+    inp.addEventListener('input', run); run();
+  });
+</script>

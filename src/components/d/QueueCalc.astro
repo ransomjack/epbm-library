@@ -1,0 +1,33 @@
+---
+// Queue congestion: L = rho / (1 - rho).
+---
+<div class="calc" data-queue>
+  <div class="calc-in">
+    <label class="ctl hl"><span>Utilisation (how busy the system is)</span><input type="range" min="10" max="99" step="1" value="70" data-k="u" /><output data-o="u"></output></label>
+    <svg class="pe" viewBox="0 0 520 220" role="img" aria-label="Congestion rises slowly, then shoots up as utilisation nears 100%" data-svg></svg>
+  </div>
+  <div class="calc-out"><span>Average number in the system</span><b data-v="l"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-queue]').forEach((root) => {
+    const inp = root.querySelector('input'), svg = root.querySelector('[data-svg]');
+    const H = 220, L = 34, R = 14, T = 12, B = 30, YM = 30;
+    const f = (u) => (u / 100) / (1 - u / 100);
+    const run = () => {
+      const W = svg.clientWidth && svg.clientWidth < 420 ? 340 : 520; svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+      const x = (u) => L + (u - 0) / 100 * (W - L - R), y = (l) => H - B - Math.min(l, YM) / YM * (H - T - B);
+      let path = ''; for (let u = 0; u <= 96.8; u += 0.4) path += `${path ? 'L' : 'M'}${x(u).toFixed(1)},${y(f(u)).toFixed(1)} `;
+      const u = Number(inp.value), l = f(u);
+      root.querySelector('[data-o="u"]').textContent = u + '%';
+      svg.innerHTML = `<rect x="${x(90)}" y="${T}" width="${x(100) - x(90)}" height="${H - B - T}" style="fill:var(--trap-soft)"/>
+        <line x1="${L}" y1="${H - B}" x2="${W - R}" y2="${H - B}" style="stroke:var(--line)"/><line x1="${L}" y1="${T}" x2="${L}" y2="${H - B}" style="stroke:var(--line)"/>
+        ${[0, 10, 20, 30].map((v) => `<text x="${L - 6}" y="${y(v) + 4}" text-anchor="end" style="fill:var(--muted);font:500 11px var(--sans)">${v}${v === 30 ? '+' : ''}</text>`).join('')}
+        ${[0, 25, 50, 75, 100].map((v) => `<text x="${x(v)}" y="${H - 10}" text-anchor="middle" style="fill:var(--muted);font:500 11px var(--sans)">${v}%</text>`).join('')}
+        <path d="${path}" style="fill:none;stroke:var(--accent);stroke-width:2.5"/>
+        <circle cx="${x(u)}" cy="${y(l)}" r="6" style="fill:${u >= 90 ? 'var(--trap)' : 'var(--accent)'};stroke:var(--bg);stroke-width:2"/>`;
+      root.querySelector('[data-v="l"]').textContent = l < 10 ? l.toFixed(1) : Math.round(l);
+      root.querySelector('[data-v="note"]').textContent = u < 60 ? 'Plenty of slack. Fast service, but capacity sits idle.' : u < 85 ? 'Healthy zone for most systems with variable demand.' : u < 95 ? 'Getting risky: each extra point of utilisation now costs far more waiting.' : 'Collapse zone: one small disturbance and the queue runs away.';
+    };
+    inp.addEventListener('input', run); run();
+  });
+</script>

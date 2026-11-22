@@ -1,0 +1,214 @@
+---
+title: Efficiency, Effectiveness and Process
+kicker: Session 2
+order: 2
+source: "Session by Prof. Balram Avittathur · Operational Excellence"
+description: "Efficiency versus effectiveness, why excellence is designing for both, the five process types, and the numbers of process analysis: cycle time, bottleneck, throughput time and Little's Law, with two worked problems you can play with. Session 2 of Operational Excellence."
+takeaways:
+  - "Efficiency minimises cost per unit and serves the owner. Effectiveness maximises the welfare of every other stakeholder."
+  - "Operational excellence is efficiency and effectiveness together, achieved by design."
+  - "The bottleneck sets the output of the whole process. Capacity added anywhere else is wasted."
+  - "Cycle time is the gap between finished units. Throughput time is how long one unit spends inside."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Steps from '../../components/d/Steps.astro';
+import Sort from '../../components/d/Sort.astro';
+import Decide from '../../components/d/Decide.astro';
+import ProcessSim from '../../components/d/ProcessSim.astro';
+import DumperCalc from '../../components/d/DumperCalc.astro';
+import LittleCalc from '../../components/d/LittleCalc.astro';
+
+## Operations as transformation
+
+Operations converts **inputs** into **outputs** with the help of **resources**, adding value along the way. An input needn't be physical: being in Kolkata when you need to be in Delhi is an input, and you rent an airline's resources to transform it.
+
+People often call manpower an input. Prof. Avittathur's test settles it every time:
+
+<div class="callout">
+<p class="callout-title">Input or resource?</p>
+
+After the transformation, **the input no longer exists; the resource is still intact**. In a steel plant the iron ore has vanished into the steel. The worker and the furnace are still standing. Manpower is a resource, never an input.
+
+</div>
+
+Watch a tailor: the cloth disappears into the shirt, while the sewing machine and the tailor are ready for the next customer. In money terms, inputs and resources are cash going out; outputs are cash coming in.
+
+## Efficiency
+
+Peter Drucker's pairing is famous: efficiency is doing things right, effectiveness is doing the right things. From an operations point of view they are very different.
+
+Sumit finishes a report in one hour; Biju takes three. Sumit is "efficient" because a paid resource's time was minimised. He doesn't get two hours off; he gets the next task. The employer's cost per report has fallen.
+
+**Efficiency** is minimising the inputs and resources needed for a given unit of output, measured in money. Strip away the politeness and it is cost minimisation.
+
+The polite word survives for a reason. Say "profit maximisation" or "cost minimisation" in a meeting and people suspect it is at their expense. "Efficiency" sounds like pure virtue.
+
+### Who pays for pure efficiency
+
+Suppose the report really needed three hours and Sumit squeezed it into one under deadline pressure. Someone received a thinner report. The first casualty of squeezed inputs is usually quality, and poor quality always lands on somebody.
+
+A darker example from class: around a large cluster of antibiotic factories near Hyderabad, residents show markedly higher antibiotic resistance. Waste-disposal rules exist; under cost pressure they are followed "to the extent convenient". On the plant's dashboard this shows up as a lower cost per unit.
+
+<div class="callout trap">
+<p class="callout-title">Cost-cutting rarely removes a cost</p>
+
+It moves the cost onto stakeholders who don't appear in your accounts: customers, employees, suppliers, the local community. The bill is still paid, just not by you and not yet.
+
+</div>
+
+## Effectiveness
+
+Prof. Avittathur's definition is unusual and precise: **effectiveness is maximising the welfare of all stakeholders except the owner**. The owner is left out because efficiency already serves them.
+
+Economics gives "welfare" an exact meaning: **value minus price**. A ₹20 bottle of water on a cool, rainy afternoon may be worth ₹10 to you, so you don't buy. On a 37-degree day it is worth ₹40, and you buy at once. Same product, same price; your value moved. The gap between value and price is your welfare.
+
+Employees price their jobs the same way. If you feel your job is worth ₹3 lakh a month and you're paid ₹2 lakh, you praise the firm, until someone offers ₹2.5 lakh. Suppliers, partners and the community each have their own version of value minus price.
+
+<Sort title="Try it: efficiency, effectiveness or both?" choices={['Efficiency', 'Effectiveness', 'Both']} items={[
+  { text: 'A bank branch opens one more teller counter.', answer: 'Effectiveness', why: 'It costs more, and it cuts waiting for customers and stress for tellers.' },
+  { text: 'A food company sells only one large pack size.', answer: 'Efficiency', why: 'It suits the producer’s costs, not what each customer actually needs.' },
+  { text: 'Income-tax returns move to online e-filing.', answer: 'Both', why: 'The department’s cost of collection fell, and a citizen’s filing time fell to minutes.' },
+  { text: 'A route runs one 100-seat bus every 30 minutes instead of 25-seaters every 15.', answer: 'Efficiency', why: 'Fewer drivers and buses per passenger. Flip it to small, frequent buses and it becomes effectiveness.' },
+  { text: 'Zara pays more to produce close to home so it can restock quickly.', answer: 'Effectiveness', why: 'Its sourcing costs more than rivals who buy from far away. On paper, the opposite of efficient.' },
+]} />
+
+**Zara** breaks the expected pattern: effective, not efficient, and more profitable than its efficient rivals. The reason is the quality of its revenue. Shoppers go to a discount retailer hunting bargains; they go to Zara hunting what is new and scarce. Nobody asks Zara for a discount.
+
+**Toyota** dissolves the conflict altogether: lower cost than rivals *and* better for employees, suppliers and customers, for decades. Treating efficiency and effectiveness as a trade-off is a design failure.
+
+<div class="callout">
+<p class="callout-title">Operational excellence</p>
+
+**Operational excellence = efficiency + effectiveness.** Over the long run, firms that are both beat firms that are efficient only, on profitability itself. But effectiveness pays back slowly, and Prof. Avittathur's guess is that 95 firms in 100 run on efficiency alone.
+
+</div>
+
+## Excellence by design: Lemon Tree Hotels
+
+How does a firm get both? By design. Lemon Tree, a mid-market Indian hotel chain, first hired people with disabilities to comply with a government push. The founder then saw what the jobs meant to those employees and their families, and compliance became conviction: today a large share of its staff are people with disabilities or from disadvantaged backgrounds.
+
+Shareholders objected that this was charity at their expense. Profitability improved anyway. The mechanism became clear only afterwards: a hotel guest wants to be cared for, and a firm that visibly cares for its own people signals that it will care for you.
+
+"Design" means **every stakeholder is considered in every decision**. A factory with a largely female workforce on shifts ending at 10 pm: is their safe journey home the government's problem, or part of the plant's design? A design that works for only some stakeholders is incomplete. And an extra cost of 10 that returns more than 10 isn't a cost.
+
+## Why the details of a process matter
+
+Is it worth mapping a process down to "list the required parts" and "raise the order"? The class, mostly senior managers, said yes: system migrations depend on process maps, cross-team blame ends when the hand-offs are drawn and agreed, audits are documented process, and without documentation the same rare failure is solved from scratch every time.
+
+Reputation isn't process. Prof. Avittathur's own cataract operation, at a small hospital, came with a printed sheet listing every step in order, and the staff moved like clockwork. A relative's operation at a far more famous hospital was chaos: "wait, we'll tell you."
+
+### A turnaround that cost ₹1.5 lakh
+
+In 2016 Prof. Avittathur took charge of IIM Calcutta's short executive programmes, just as a major client wrote that it would never send anyone again. The process he inherited:
+
+<Flow items={[
+  { t: 'Nomination', s: 'Print a form, fill it by hand, scan it, email it' },
+  { t: 'Instant confirmation', s: 'Every nomination confirmed on receipt, to be "customer-friendly"' },
+  { t: 'Head count', s: '7–10 days before the start' },
+  { t: 'Cancellation', s: 'Under-filled programmes cancelled after participants had booked travel', hl: true },
+]} />
+
+The paperwork was painful, but the real damage was the **sequence**. Confirming first and checking viability later manufactured betrayal out of good intentions.
+
+The fix had three parts and almost no cost: confirm a programme's viability **before** confirming any participant; tell applicants the date by which they'll hear and ask them not to book travel until then; and replace the print-and-scan loop with a simple online portal, built in-house for about ₹1.5 lakh.
+
+| | 2015–16 (before) | 2017–18 (after) |
+|---|---|---|
+| Programmes offered | 52 | 56 |
+| Programmes actually held | 29 | 50 |
+| Participants | about 515 | over 1,000 |
+| Revenue | ₹331 lakh | about ₹700 lakh |
+
+Revenue roughly doubled in two years while the team's workload fell. The data also overturned assumptions: five- and six-day programmes always ran, while two-day ones were always cancelled.
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: watch the process, not just the outcome</p>
+
+Good intentions aren't good design. Most "service problems" are sequencing problems in disguise. Once a week, take an hour to walk through one of your processes and ask: is there another way to do this?
+
+</div>
+
+## Five ways to organise work
+
+<Cards min={200} items={[
+  { title: 'Job shop', body: 'Low volume, high variety. General-purpose equipment and skilled hands.', foot: 'A designer’s one-off outfit; a wedding tailor' },
+  { title: 'Batch', body: 'Bigger lots, less variety. Shared equipment, with a changeover between batches.', foot: 'A bakery switching from bread to biscuits' },
+  { title: 'Assembly line', body: 'Repetitive processing of near-identical units on specialised equipment.', foot: 'A sandwich counter; high-volume cataract surgery' },
+  { title: 'Continuous flow', body: 'One product, a dedicated plant running around the clock.', foot: 'A blast furnace; a flour mill' },
+  { title: 'Project', body: 'A defined sequence of activities done once. When they end, it ends.', foot: 'Building a ship or a metro station' },
+]} />
+
+"Assembly line" means any repetitive, near-identical process, not just a car plant, and it isn't an insult. Aravind Eye Care and other Indian hospitals turned process discipline into high-quality, affordable care at scale. Quality is the product of process, not its casualty.
+
+The types sit on one line, the **volume–variety trade-off**: a job shop makes one unit with enormous variety; continuous flow makes enormous volume with a variety of one. A continuous-flow plant for one-off products, or a job shop for a commodity, is a mismatch.
+
+One value chain can mix types. A paint company runs continuous flow at the factory and something close to a job shop at the dealer's tinting machine. Ready-made trousers come off an assembly line, and a tailor at the store hems them to your length.
+
+## The numbers of a process
+
+| Term | Meaning in this course |
+|---|---|
+| **Cycle time** | The interval between two consecutive finished units. Set by the slowest stage |
+| **Bottleneck** | The stage that governs the output of the whole process |
+| **Setup time** | Preparing a resource for the next item |
+| **Operation time** | Setup time plus run time |
+| **Waiting time** | Queuing for a resource, with nothing happening to the unit |
+| **Throughput time** | Operation time plus waiting time: how long one unit takes from start to finish |
+| **Capacity** | The most a system can produce in a period |
+| **Utilisation** | Actual output ÷ capacity |
+
+<div class="callout trap">
+<p class="callout-title">Cycle time is not throughput time</p>
+
+Cycle time is *not* how long one unit spends in the process. Stand at the end of the line: the gap between finished units appearing is the cycle time. How long each unit took to get there is the throughput time.
+
+</div>
+
+**Collate and staple.** One person collates a five-page set in 2 minutes; another staples it in 1 minute. Finished sets appear every 2 minutes, so the cycle time is 2 minutes, set by collating: the bottleneck. Throughput time is 3 minutes. Output is 30 sets an hour, although the stapler could do 60. The stapler is idle half the time.
+
+**An aircraft's day** shows the three kinds of time. The 30–40 minutes at the gate (unloading, cleaning, boarding) is setup. The taxi to the runway is operation. Sitting behind five other aircraft waiting to take off is waiting.
+
+### Try it: find the bottleneck
+
+A departure terminal has four stages. Only half the passengers have bags to scan. Add or remove counters and watch what happens to the terminal's capacity.
+
+<Fig title="Airport departure process" caption="As set up: check-in handles 5 × 15 = 75 passengers an hour and limits the whole terminal. To reach 120 an hour you need 8 check-in counters and 4 security counters; adding counters anywhere else does nothing.">
+  <ProcessSim />
+</Fig>
+
+The deepest capacity lever is often redesigning the process, not adding counters. A security lane where nothing has to be taken out of bags can handle far more people with the same staff.
+
+### Try it: how many dumpers?
+
+One shovel loads waste into dumpers. Loading takes 7.5 minutes; a dumper's trip to the dump and back takes another 18, a round trip of 25.5 minutes. The shovel costs ₹200 an hour and each dumper ₹800.
+
+<Fig title="The dumper problem" caption="Cycle time = the larger of the loading time (7.5 min) and the round trip divided by the number of dumpers. The two cross at 25.5 ÷ 7.5 = 3.4, so only three and four dumpers are worth comparing.">
+  <DumperCalc />
+</Fig>
+
+| | 1 dumper | 3 dumpers | 4 dumpers |
+|---|---|---|---|
+| Cycle time | 25.5 min | 8.5 min | 7.5 min |
+| Shovel busy | 29% | 88% | 100% |
+| Dumpers busy | 100% | 100% | 85% |
+| Loads per hour | 2.35 | 7.06 | 8.00 |
+| Cost per load | ₹425 | ₹368 | ₹425 |
+
+The two goals disagree, and that is the point of the problem. To **finish soonest**, hire four. To **minimise cost per load**, hire three.
+
+### Little's Law
+
+**Inventory = throughput rate × throughput time.** If 60 patients an hour flow through an eye clinic and each visit takes one hour, there are 60 patients inside at any moment. You don't need to trust the formula; you can count them.
+
+<Fig title="Little's Law">
+  <LittleCalc />
+</Fig>
+
+It also explains why queues explode when the rate drops. Rain that cuts a junction from 100 vehicles a minute to 80 can freeze a whole corridor: the same cars now take longer to clear, so more of them are on the road at once.
+
+<Decide q="Your team’s output is limited by one overloaded approval step. A vendor offers software that speeds up every other step by 30%. Do you buy it?" options={[
+  { label: 'Yes. Faster steps mean more output.', why: 'Output is set by the bottleneck. Speeding up the other steps only makes work pile up faster in front of the approval step.' },
+  { label: 'No. Fix the approval step first.', good: true, why: 'Capacity added anywhere except the bottleneck is wasted. Add approvers, simplify the approval or remove the need for it. Then find the next bottleneck.' },
+]} />

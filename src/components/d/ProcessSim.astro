@@ -1,0 +1,43 @@
+---
+// Airport departure process: change the number of counters at each stage and watch the bottleneck move.
+const stages = [
+  { id: 'id', t: 'Identity check', mins: 1, n: 2, share: 1 },
+  { id: 'bag', t: 'Baggage scan', mins: 3, n: 3, share: 0.5, note: 'half the passengers have bags' },
+  { id: 'chk', t: 'Check-in', mins: 4, n: 5, share: 1 },
+  { id: 'sec', t: 'Security', mins: 2, n: 3, share: 1 },
+];
+---
+<div class="calc psim" data-psim>
+  <div class="ps-rows">
+    {stages.map((s) => (
+      <div class="ps-row" data-mins={s.mins} data-share={s.share} data-n={s.n}>
+        <div class="ps-name"><b>{s.t}</b><span>{s.mins} min each{s.note ? ` · ${s.note}` : ''}</span></div>
+        <div class="ps-step"><button type="button" data-d="-1" aria-label={`Fewer counters at ${s.t}`}>−</button><output>{s.n}</output><button type="button" data-d="1" aria-label={`More counters at ${s.t}`}>+</button></div>
+        <div class="ps-bar"><i></i><em></em></div>
+      </div>
+    ))}
+  </div>
+  <div class="calc-out"><span>The terminal can handle</span><b data-out>75</b><span>passengers an hour</span><span class="calc-note" data-note></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-psim]').forEach((root) => {
+    const rows = [...root.querySelectorAll('.ps-row')];
+    const run = () => {
+      const caps = rows.map((r) => (60 / Number(r.dataset.mins)) * Number(r.dataset.n) / Number(r.dataset.share));
+      const min = Math.min(...caps), max = Math.max(...caps, 120);
+      rows.forEach((r, i) => {
+        r.querySelector('output').textContent = r.dataset.n;
+        r.querySelector('.ps-bar i').style.width = (100 * caps[i] / max) + '%';
+        r.querySelector('.ps-bar em').textContent = Math.round(caps[i]) + ' / hour';
+        r.classList.toggle('neck', caps[i] === min);
+      });
+      root.querySelector('[data-out]').textContent = Math.round(min);
+      const neck = rows.filter((r, i) => caps[i] === min).map((r) => r.querySelector('b').textContent).join(' and ');
+      root.querySelector('[data-note]').textContent = `Bottleneck: ${neck}. Adding counters anywhere else changes nothing.`;
+    };
+    rows.forEach((r) => r.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
+      r.dataset.n = Math.min(12, Math.max(1, Number(r.dataset.n) + Number(b.dataset.d))); run();
+    })));
+    run();
+  });
+</script>

@@ -1,0 +1,216 @@
+---
+title: Make-to-Stock, Make-to-Order and Inventory
+kicker: Session 3
+order: 3
+source: "Session by Prof. Balram Avittathur · Operational Excellence"
+description: "Why almost everything is made to stock, assemble-to-order, ABC analysis, the three inventory costs, the economic order quantity and the newsvendor model, with calculators for both formulas. Session 3 of Operational Excellence."
+takeaways:
+  - "Most of what we consume is made to stock, because capital demands high utilisation and make-to-order can't deliver it."
+  - "Every fast delivery is paid for with someone's deliberately idle capacity."
+  - "Cyclic stock answers how often to buy (EOQ). Safety stock answers how much cushion to hold (the critical ratio)."
+  - "Lot size follows holding cost. Safety stock follows supply risk."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Quad from '../../components/d/Quad.astro';
+import Bars from '../../components/d/Bars.astro';
+import Decide from '../../components/d/Decide.astro';
+import EoqCalc from '../../components/d/EoqCalc.astro';
+import Newsvendor from '../../components/d/Newsvendor.astro';
+
+## Old theory, rarely used
+
+Prof. Avittathur opened with his own weekend. A trip to the airport that the map app put at under an hour and a half took well over two, because one major junction had been closed for flyover work and the app didn't know. One closed junction delayed almost every long journey in the city.
+
+His point: everything in Session 2 has been in textbooks for half a century, and it is still thinly used, by firms and by cities. Amazon's edge wasn't new theory. It was old theory finally taken seriously and built into software. The gap between what operations theory knows and what organisations practise is the career opportunity.
+
+## Make-to-stock and make-to-order
+
+<Cards min={220} items={[
+  { title: 'Make-to-stock (MTS)', body: 'Standard products made ahead of demand and sold from inventory. The natural partner of the assembly line.', foot: 'A ready-made shirt; a packet of chips' },
+  { title: 'Make-to-order (MTO)', body: 'Production starts only when a real order arrives. The job shop’s world.', foot: 'A suit stitched from fabric you chose' },
+  { title: 'Assemble-to-order (ATO)', body: 'Make and stock a generic base; finish it only against an order.', foot: 'Paint tinted at the dealer; a custom-printed T-shirt' },
+]} />
+
+| | Make-to-stock | Make-to-order |
+|---|---|---|
+| Product | Specified by the producer; low variety; cheaper | Specified by the customer; high variety; costlier |
+| Aim | Balance inventory, capacity and service | Manage delivery lead time and capacity |
+| Main problems | Forecasting, production planning, inventory control | Promising delivery dates and keeping them |
+
+The class guessed that 90% of what we consume is made to stock. Prof. Avittathur's estimate is **95–97%**. The 1990s prediction that everything would move to make-to-order never came true.
+
+<div class="callout trap">
+<p class="callout-title">Which lead time?</p>
+
+**Total** lead time, from source to consumption, is usually *longer* for make-to-stock: the chips you eat in June were made in April and sat in three warehouses. What make-to-stock shortens is the **customer's wait**, because the stock is already nearby. In make-to-order the clock starts when you order, so the customer feels all of it. Always say which clock you mean.
+
+</div>
+
+### Why make-to-order never took over
+
+Customisation is costly and customers won't wait. But the deeper reason is **capacity utilisation**. Capacity is an investment, and every investor watches one number: how busy is it? Make-to-stock lets a factory run near 100% against a forecast. A make-to-order system running near 100% makes customers queue for ever.
+
+The proof is on your phone. Quick-commerce apps deliver in minutes only because their local stores keep riders standing by. Every pizza outlet has idle scooters at the kerb. That idleness isn't waste. It is the product.
+
+<div class="callout">
+<p class="callout-title">Whenever a business promises speed, ask whose idleness is paying for it</p>
+
+Make-to-order survives at the high-value fringe (luxury cars, luxury watches) as a profitable niche, not as a disruption.
+
+</div>
+
+### Assemble-to-order: the best of both
+
+A paint company makes its white base and pigments by continuous flow, to stock, all the way to the dealer. The dealer's tinting machine then mixes your exact shade on demand. Thousands of shades are served in minutes from a handful of stocked components.
+
+The design question is **where to put the customisation boundary**. Dell held it at the factory. Paint companies push it out to the retailer. Everything before the boundary enjoys scale and forecasting; everything after it responds to the individual customer.
+
+<div class="callout">
+<p class="callout-title">Quick commerce is make-to-stock at your doorstep</p>
+
+It feels like on-demand service, but it is make-to-stock moved closer to you, with make-to-stock's limit hidden behind the speed: a small local store can only hold so many items, so variety shrinks.
+
+</div>
+
+## ABC analysis: not every item deserves equal attention
+
+For every item you bought last year, work out its annual **consumption value** (annual demand × unit cost) and rank the list from highest to lowest. The same shape appears every time.
+
+<Fig title="Share of items and share of annual spend" caption="A handful of items carry most of the money. Typical figures; the exact split varies by firm.">
+  <Bars unit="% of spend" rows={[
+    { label: 'A items', value: 70, note: 'top 10% of items', mark: true },
+    { label: 'B items', value: 20, note: 'next 20% of items' },
+    { label: 'C items', value: 10, note: 'bottom 70% of items' },
+  ]} />
+</Fig>
+
+| Class | How to order | Safety stock | Suppliers |
+|---|---|---|---|
+| **A** | Small lots, very often (even daily, against an annual contract) | **Most** days of cover | Few, contracted, nearby, close relationships |
+| **B** | In between | Medium | In between |
+| **C** | In bulk, rarely | Least | Many substitutes; location doesn't matter |
+
+The two halves of the A row trip people up. A items are ordered in small lots because holding them is expensive. But they carry **more** safety stock, not less, because of supply risk: an A item often has only one or two capable suppliers, while a C item such as nuts and bolts has a market full of substitutes.
+
+<div class="callout">
+<p class="callout-title">Two rules to anchor</p>
+
+**Lot size follows holding cost. Safety stock follows supply risk.** Your kitchen already runs ABC: fruit every few days, rice monthly, salt once a year.
+
+</div>
+
+<Decide q="A cheap electronic chip is a C item by value. During a shortage, the lack of it stops a whole car plant. What does that tell you about ABC analysis?" options={[
+  { label: 'ABC analysis is wrong and should be dropped.', why: 'ABC is still the right first cut for where the money goes. It just doesn’t measure risk.' },
+  { label: 'ABC ranks by value only. You also need to rank by supply risk.', good: true, why: 'This is the Kraljic view: cross value with supply risk. A low-value, high-risk part is a “bottleneck” item and needs its own protection, such as a second source or extra stock.' },
+  { label: 'The chip should be reclassified as an A item.', why: 'Its value hasn’t changed. What matters is that it is hard to replace, which is a separate dimension.' },
+]} />
+
+<Fig title="Value and supply risk together (Kraljic)">
+  <Quad cols={['Low supply risk', 'High supply risk']} rows={['High value', 'Low value']} cells={[
+    { tag: 'Leverage', t: 'Use your buying power', b: 'Many suppliers want this business. Negotiate hard.' },
+    { tag: 'Strategic', t: 'Build partnerships', b: 'Costly and hard to replace. Long contracts, close relationships.', tone: 'best' },
+    { tag: 'Routine', t: 'Make buying simple', b: 'Cheap and easy to find. Order in bulk, automate.' },
+    { tag: 'Bottleneck', t: 'Secure supply', b: 'Cheap but can stop the plant. Second sources and safety stock.', tone: 'bad' },
+  ]} />
+</Fig>
+
+## Three costs and two trade-offs
+
+Every inventory decision balances three costs.
+
+<Cards min={200} items={[
+  { title: 'Ordering cost', body: 'The effort and expense of placing each order.' },
+  { title: 'Holding cost', body: 'Capital tied up, warehousing, insurance, spoilage.' },
+  { title: 'Shortage cost', body: 'Not an expense at all: profit that never arrived because you had nothing to sell.' },
+]} />
+
+They form only two trade-offs:
+
+<Flow items={[
+  { t: 'Ordering vs holding', s: 'How often should I buy? Answered by cyclic stock and the EOQ.' },
+  { t: 'Holding vs shortage', s: 'How much cushion should I keep? Answered by safety stock.', hl: true },
+]} links={['']} />
+
+Any inventory splits into those two parts. **Cyclic stock** averages half your order quantity (Q ÷ 2). Whatever you hold on average above that is **safety stock**. If you buy once every 30 days, your cyclic stock is 15 days of demand; if your average inventory is 25 days, your safety stock is 10 days.
+
+<div class="callout trap">
+<p class="callout-title">You won't find "inventory cost" in the accounts</p>
+
+It hides in interest on working capital, warehouse rent, handling labour and write-offs, each owned by a different department. Shortage cost doesn't appear at all, which is why cost-cutting drives consistently underweight it, and why safety stock is the first thing a cost-cutter removes and the first thing a crisis exposes.
+
+</div>
+
+Safety stock exists at national scale too. Countries hold strategic petroleum reserves worth many billions of dollars that mostly sit unused. By any ordinary inventory measure that is wasteful, which is exactly why it is called strategic: it is the price of not being hostage to a supply shock.
+
+## The economic order quantity (EOQ)
+
+Order Q units at a time and your average cyclic stock is Q ÷ 2. With annual demand D, you place D ÷ Q orders a year.
+
+**Total yearly cost = S × (D ÷ Q) + H × (Q ÷ 2)**
+
+where S is the cost of placing one order and H is the cost of holding one unit for a year (the carrying rate × the unit cost). Ordering cost falls as Q grows; holding cost rises in a straight line. Their sum is U-shaped, with its lowest point at:
+
+**EOQ = √(2DS ÷ H)**
+
+**Worked example.** Demand 12,000 units a year; ₹120 per order; unit cost ₹10 and a carrying rate of 20%, so H = ₹2. EOQ = √(2 × 12,000 × 120 ÷ 2) = √1,440,000 = **1,200 units**: ten orders a year and an average cyclic stock of 600.
+
+Move "your order size" to find the lowest cost, then change the other sliders and watch the best order size shift.
+
+<Fig title="Economic order quantity" caption="At the best order size, yearly ordering cost exactly equals yearly holding cost. The total-cost curve is flat near the minimum, so being roughly right costs little; being far off costs a lot.">
+  <EoqCalc />
+</Fig>
+
+H sits under the square root, so **costly items get small lots and cheap items big ones**, which is the ABC ordering rule again. The model assumes a textbook world: steady demand, a fixed lead time, a fixed price, and all demand met. The reorder point is simply demand during the lead time.
+
+<div class="callout">
+<p class="callout-title">One number, chosen with intent</p>
+
+In the 1980s and 1990s American firms typically assumed a carrying cost of about 20% a year. Dell, the class was told, used 30%. A bigger H gives a smaller Q, and tiny lots pushed Dell towards just-in-time and its assemble-to-order model. A parameter became a business model.
+
+</div>
+
+## The newsvendor: stocking for a one-shot day
+
+Some stock has to be ready before the selling period begins and can't be topped up during it. Nobody buys yesterday's newspaper. Stock too little and you lose profit; stock too much and the leftovers go at a loss.
+
+**The problem.** Demand could be 10, 20, 30 … 90 units. Each is 10% likely, except 50, which is 20% likely; expected demand is 50. Each unit sold earns ₹7.50. Each unsold unit loses ₹2.50. How many should you stock?
+
+Before reading on, find the answer yourself.
+
+<Fig title="The newsvendor problem" caption="Expected sales rise more and more slowly as you stock more, while leftovers rise faster and faster. Profit peaks where the two balance.">
+  <Newsvendor />
+</Fig>
+
+| Stock | Expected sales | Expected leftover | Expected profit |
+|---|---|---|---|
+| 50 | 40 | 10 | ₹275 |
+| 60 | 44 | 16 | ₹290 |
+| **70** | **47** | **23** | **₹295** |
+| 80 | 49 | 31 | ₹290 |
+| 90 | 50 | 40 | ₹275 |
+
+The best stock is 70, twenty more than expected demand. Those twenty units are the safety stock.
+
+### The shortcut: the critical ratio
+
+You don't need the whole table.
+
+**Critical ratio = Cu ÷ (Cu + Co)**
+
+- **Cu**, the cost of *under*stocking: the profit lost on a sale you couldn't make (₹7.50).
+- **Co**, the cost of *over*stocking: the loss on a unit left over (₹2.50).
+
+Here the ratio is 7.5 ÷ 10 = **0.75**. Stock the smallest quantity for which the chance that demand is at or below it reaches the ratio. The cumulative probabilities are 0.6 at 50, 0.7 at 60 and 0.8 at 70, so the answer is 70.
+
+That cumulative probability has a familiar name: the **service level**, the share of periods in which you meet demand in full. In the calculator, raise the loss on unsold units and watch the best stock fall; raise the profit per unit and watch it climb.
+
+The model reaches well beyond newspapers. Airline seats and hotel rooms are priced with it. And it explains what Prof. Avittathur calls India's best-run supply chains, milk and bread: almost never out of stock, almost never stale, almost nothing thrown away. Perishability forced mastery.
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: price the customer who walks away</p>
+
+A baker who makes 100 loaves when average demand is 80 looks wasteful, until you count the profit lost on each customer turned away. If a missed sale costs you much more than a leftover unit, stock well above the average. If leftovers are the expensive mistake, stock below it.
+
+</div>

@@ -1,0 +1,219 @@
+---
+title: Pooling in Practice, Lean and Queues
+kicker: Session 5
+order: 5
+source: "Session by Prof. Peeyush Mehta · Operational Excellence"
+description: "How Amazon, Netflix, FedEx and airlines set the pooling dial, AI and the make-or-buy question, lean as a philosophy rather than a checklist, and why queues explode near full utilisation. Session 5 of Operational Excellence."
+takeaways:
+  - "Pooling is a dial, set by what your differentiation makes expensive: lead time, inventory or recovery from shocks."
+  - "Operations numbers such as inventory turns reflect the business model. Compare like with like."
+  - "Outsource tasks, never capabilities. A lost capability can cost more to rebuild than it ever saved."
+  - "Lean is trust and empowerment, not a checklist. And high utilisation under variability guarantees long queues."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Steps from '../../components/d/Steps.astro';
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
+import CogCurve from '../../components/d/CogCurve.astro';
+import QueueCalc from '../../components/d/QueueCalc.astro';
+
+## One frame for the whole module
+
+The module's question was always: how does operations create value for a business? The answer sits in **Value = Capabilities × (Assets + Processes)**. Your differentiation decides the capabilities you need; the asset decisions (how much capacity, when, what type, where) and the processes deliver them.
+
+### Operations numbers are strategy readouts
+
+Apple sells a deliberately narrow range and turns its inventory far more often in a year than Samsung, which competes at every price point and must carry the variety, stock and suppliers that go with it. In class the figures quoted were roughly 70 turns against 20.
+
+Neither number is a score for competence. It is the business model showing up in an operations measure. **Compare firms on the same diagonal of the product–process matrix, never across it.**
+
+A narrow range buys cost and simplicity, not quality: quality has to be met at any level of variety. And there is no formula for the "right" amount of variety. It is a joint call between operations and marketing.
+
+## Amazon: un-pooling on purpose
+
+Session 4 ended with a warning: pooling costs lead time. Amazon looked at that trade-off and deliberately chose the expensive side.
+
+In online retail, everyone can list the same catalogue, so the competition has moved to **speed**: delivery promises have shrunk from a week to days to hours. To deliver faster, Amazon built many more warehouses closer to customers. Through Session 4's lens, a denser network is **un-pooling**:
+
+<Cards min={200} items={[
+  { title: 'Inventory cost rises', body: 'Stock is split across many more sites, so the pooling benefit is given up.' },
+  { title: 'Inbound cost rises', body: 'Many more supplier-to-warehouse links to run.' },
+  { title: 'Outbound cost falls', body: 'Each parcel starts closer to the customer.' },
+  { title: 'Sales rise', body: 'Faster delivery makes customers buy more, and more often.' },
+]} />
+
+<div class="callout trap">
+<p class="callout-title">"Cost as a share of sales always falls with scale"</p>
+
+Not here. Un-pooling pushes fulfilment cost up as the network grows, and the strategy still works because the extra sales that speed brings outrun the extra cost. Un-pooling is only a mistake when it is drift instead of a decision.
+
+</div>
+
+## Airlines: every design chooses its disaster
+
+**Southwest Airlines**, the original low-cost carrier and the model for IndiGo, went beyond a single aircraft type: fast turnarounds, cheaper secondary airports, and above all a **point-to-point** network of independent city pairs with no consolidating hubs. Most large carriers run **hub-and-spoke** networks instead.
+
+<Cards min={260} items={[
+  { title: 'Hub-and-spoke = pooled', body: 'Crews and aircraft are concentrated at hubs. A problem at the hub spreads through the network, but resources can be reallocated quickly afterwards.', foot: 'Weak against local shocks; recovers fast from big ones' },
+  { title: 'Point-to-point = un-pooled', body: 'Each route stands alone, so a local problem stays local. But there is no pooled slack to reallocate.', foot: 'Strong against local shocks; slow to recover from big ones' },
+]} />
+
+In December 2022 a winter storm hit most of the United States at once. Hub carriers rebuilt their schedules within days. Southwest, with nothing to reallocate, cancelled more than 16,000 flights over the holiday period and took months to recover fully. That doesn't make point-to-point wrong. **Every design chooses which disaster it can't absorb.**
+
+**IndiGo** sits far to the low-variety side: one fleet family, very high aircraft utilisation, lean crew ratios, no spare aircraft waiting around. Such a system isn't built to absorb variability, and that is what keeps fares low. So when weather disrupts it, blame is unfair. The fair criticism of its December 2025 disruption, in Prof. Mehta's reading, is that a change in pilot rostering rules was known well in advance and fully plannable.
+
+<div class="callout">
+<p class="callout-title">If your system has no shock absorbers</p>
+
+Your one duty is never to create the shock yourself.
+
+</div>
+
+## Netflix and FedEx: pooling as a playbook
+
+**What was Netflix's disruption?** Most people say streaming. The real disruption came a decade earlier, and it was a supply chain story.
+
+Video-rental shops had a broken model. They paid studios a high price for each tape or disc and earned only a few dollars per rental, so a title had to be rented many times just to break even, on demand as fickle as a film's popularity. Shops under-ordered, hits went out of stock, and customers were annoyed.
+
+1. **The industry's fix: a revenue-sharing contract.** The studio cut the upfront price sharply and took a share of every rental. Under-ordering disappeared. Revenue sharing remains one of the most widely used contracts in supply chains.
+2. **Netflix's fix: DVDs by post, risk-pooled.** A flat monthly fee, no late fees, and the whole country served from a few dozen shared warehouses rather than thousands of shops. The customer's only sacrifice was waiting for the post and sometimes receiving titles out of order, which is exactly what let Netflix pool demand across the country.
+
+At the time customers valued variety, convenience and price over speed, so pooling's lead-time cost didn't hurt. Unlimited choice at low cost removed a trade-off, and removed trade-offs are what disruptions are made of. The subscriber base built by post then became Netflix's head start when streaming arrived.
+
+**FedEx** ran two deliberately separate networks for decades: a ground network for cost-sensitive parcels and an air network for urgent ones. Then business documents went digital while online shopping boomed: two demand streams moving in opposite directions. The ground network was swamped while aircraft sat idle. FedEx has been merging the two into one. When demand streams become negatively correlated, pooling is exactly the shock absorber you want.
+
+<Sort title="Try it: which way did they turn the pooling dial?" choices={['Pooled', 'Un-pooled']} items={[
+  { text: 'Netflix in its DVD-by-post years', answer: 'Pooled', why: 'A few dozen shared warehouses for the whole country. Customers valued choice and price over speed.' },
+  { text: 'Amazon’s fulfilment network after the pandemic', answer: 'Un-pooled', why: 'Many more local warehouses, accepting higher inventory cost to win on speed.' },
+  { text: 'FedEx combining its air and ground networks', answer: 'Pooled', why: 'Its two demand streams moved in opposite directions, so one shared network absorbs both.' },
+  { text: 'Southwest’s point-to-point routes', answer: 'Un-pooled', why: 'Independent city pairs contain local problems but leave nothing to reallocate in a system-wide shock.' },
+]} />
+
+<div class="callout">
+<p class="callout-title">Pooling is a dial, not a doctrine</p>
+
+The right setting depends on one thing: what your differentiation makes expensive. If it is lead time, un-pool. If it is inventory, pool. If it is recovery from shocks, keep something you can reallocate.
+
+</div>
+
+## AI: when thinking becomes a variable cost
+
+Prof. Mehta called this new from an operations point of view: for the first time, **cognition is being priced as a variable cost**.
+
+<Flow items={[
+  { t: '1910s', s: 'Piece-rate pay makes factory output a variable cost' },
+  { t: '1990s', s: 'Offshoring makes labour itself variable' },
+  { t: '2000s', s: 'Outsourced services and software by subscription' },
+  { t: '2020s', s: 'AI agents make thinking variable: billed per task', hl: true },
+]} />
+
+**The Jevons paradox** applies. When steam engines began using coal more efficiently, coal consumption rose, because efficiency multiplied the uses. The cost of each unit of AI work keeps falling, but the number and depth of calls each task consumes keeps growing. The bill is cost per call × number of calls, and the number is winning.
+
+<Fig title="The cognition curve" caption="A sketch of the idea from class, not measured data. For simple, shallow tasks AI costs far less than a salaried person. Deep, multi-step agent loops consume so much computing that the cost per task can rise above the salary line.">
+  <CogCurve />
+</Fig>
+
+At the shallow end, the payment firm Klarna reported that its AI assistant handled about 2.3 million customer conversations in its first month, the work of roughly 700 full-time agents. At the deep end, long agent loops can use many times the computing of a simple question, and some firms have found their AI budgets running out early.
+
+**The supply chain reading is make-or-buy, again.**
+
+<Decide q="Your team could hand a whole function to AI agents and let the people who understand it go. What does this session suggest?" options={[
+  { label: 'Do it. The agents are cheaper per task.', why: 'Possibly cheaper today. But if the process later needs a change, a redesign or a fix, nobody is left who understands it.' },
+  { label: 'Automate the routine tasks, but keep the capability in-house.', good: true, why: 'Outsourcing tasks is what operations has always recommended. Outsourcing a capability is Boeing’s mistake: once it has gone, getting it back is slow, costly and sometimes impossible.' },
+  { label: 'Avoid AI for this function altogether.', why: 'That gives up the easy gains on routine work. The question isn’t whether to use it, but what you must not lose.' },
+]} />
+
+## Lean: a philosophy, not a checklist
+
+The textbook line: **anything that doesn't add value for the final customer is waste.**
+
+<Cards min={170} items={[
+  { title: 'Transport', body: 'Moving things further than needed.' },
+  { title: 'Inventory', body: 'Stock sitting and waiting.' },
+  { title: 'Motion', body: 'Needless movement at the workstation.' },
+  { title: 'Waiting', body: 'People or work standing idle.' },
+  { title: 'Defects', body: 'Errors and the rework they cause.' },
+]} />
+
+Maruti Suzuki designed waste out at the level of its network: suppliers located close to the plant deliver several times a day, removing both transport and inventory. In services, shaving seconds off making a coffee is lean where customers value speed.
+
+<div class="callout beyond">
+<p class="callout-title">Beyond the notes: the full list</p>
+
+Toyota's original list has seven wastes. Besides the five above, it includes **overproduction** (making more, or sooner, than needed, which Toyota's Taiichi Ohno considered the worst because it hides all the others) and **over-processing** (doing more work than the customer values). Many lists add an eighth: unused employee talent.
+
+</div>
+
+### Why GM couldn't copy Toyota
+
+GM had Toyota as a joint-venture partner for decades and still went bankrupt. It treated lean as an efficiency tool for the factory, never as a matter for the boardroom. The contrast is sharpest in three places:
+
+| | GM's approach | Toyota's approach |
+|---|---|---|
+| **Quality** | A checklist. Start there, end there | The checklist is where quality *starts*. Any worker can pull the andon cord and stop the line |
+| **Suppliers** | Short contracts, full drawings handed over, arm's length | Relationships lasting decades. Toyota specifies performance; the supplier owns the design |
+| **Pricing** | Cost plus a guaranteed margin | No guaranteed margin, which keeps suppliers looking for ways to take cost out |
+
+Most line stops are false alarms, and that is the point: the culture brings quality problems to the surface instead of hiding them.
+
+### Lean's hardest part: trust
+
+A large customer tells a supplier that a blockbuster product is coming and asks it to build a lot of capacity. The supplier's dilemma: build big and demand disappoints, and it is stuck with the investment; build small and demand booms, and it misses out. Worse, it can't tell whether the customer's forecast is honest. Once the supplier's money is sunk, the customer can dictate terms. Economists call this the **hold-up problem**.
+
+Two fixes:
+
+- **Share the investment.** If the customer pays part of the capacity cost, its forecast becomes believable.
+- **Offer a menu of contracts.** In a research partnership, a partner who chooses a high upfront fee with a low royalty is signalling low confidence; one who chooses a low fee with a high royalty is signalling belief. The choice reveals what the partner privately knows.
+
+<div class="callout">
+<p class="callout-title">What lean really is</p>
+
+Lean isn't a cost programme. It is trust and empowerment, extended beyond the factory gate into contracts. GM copied the checklist, kept the arm's-length culture, and went bankrupt beside its teacher.
+
+</div>
+
+## Queues and the utilisation myth
+
+Three counters, each with its own line, or three counters fed by one line? The single line wins: one slow customer holds up one counter instead of everyone behind them. That is risk pooling in miniature, and it is why banks and airports redesigned their queues.
+
+**Little's Law again: inventory = rate × time.** If sales are ₹1 million a day and inventory is ₹5 million, each rupee of stock spends 5 days in the system. Flip it and you get the familiar measure: **inventory turns = sales ÷ average inventory**. The longer stock lingers, the fewer the turns.
+
+### Why busy systems collapse
+
+Customers arrive at an average rate λ (lambda); the system can serve at an average rate μ (mu). **Utilisation ρ (rho) = λ ÷ μ.** For a simple single-server system where both arrivals and service times vary, the average number of customers in the system is:
+
+**L = ρ ÷ (1 − ρ)**
+
+Move the slider towards 99% and watch the queue.
+
+<Fig title="Congestion and utilisation" caption="For a single server with random arrivals and service times. The curve doesn't rise in a straight line: it shoots up as utilisation nears 100%.">
+  <QueueCalc />
+</Fig>
+
+| Utilisation | Average number in the system |
+|---|---|
+| 10% | 0.1 |
+| 70% | 2.3 |
+| 90% | 9 |
+| 95% | 19 |
+| 99% | 99 |
+
+<div class="callout trap">
+<p class="callout-title">High utilisation under variability is a crime</p>
+
+The more variable the demand, the earlier the collapse. A healthy range is often 70–90%, but your own variability sets the number. Standardised, predictable systems can and should run hotter.
+
+</div>
+
+Too little utilisation is its own failure. When a congested system responds by turning customers away, it is cutting λ, which means cutting sales. The better lever is usually to raise μ: add capacity or speed up service.
+
+This closes the module's loop. Buffers aren't waste when variability is real. **Resilience is measured slack**, and lean without it is fragile. A system running at 99% has no room for any shock, least of all one it creates itself.
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: design your slack on purpose</p>
+
+Ask of any team or system you run: how variable is the work arriving, and how busy are we? If the answer is "very" and "nearly 100%", long queues aren't bad luck. They are arithmetic. Either smooth the arrivals, add capacity, or pool work across people so that one person's backlog can be shared.
+
+</div>

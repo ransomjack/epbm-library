@@ -1,0 +1,46 @@
+---
+// Economic order quantity: ordering cost falls, holding cost rises, total is U-shaped.
+---
+<div class="calc" data-eoq>
+  <div class="calc-in">
+    <label class="ctl"><span>Annual demand (units)</span><input type="range" min="2000" max="30000" step="1000" value="12000" data-k="d" /><output data-o="d"></output></label>
+    <label class="ctl"><span>Cost per order (Rs.)</span><input type="range" min="40" max="300" step="10" value="120" data-k="s" /><output data-o="s"></output></label>
+    <label class="ctl"><span>Holding cost per unit a year (Rs.)</span><input type="range" min="1" max="6" step="0.5" value="2" data-k="h" /><output data-o="h"></output></label>
+    <label class="ctl hl"><span>Your order size</span><input type="range" min="200" max="6000" step="100" value="400" data-k="q" /><output data-o="q"></output></label>
+    <svg class="pe" viewBox="0 0 520 220" role="img" aria-label="Ordering, holding and total cost against order size" data-svg></svg>
+    <div class="be-key" aria-hidden="true"><span><i class="k-rev"></i>Total cost</span><span><i class="k-fix"></i>Ordering cost</span><span><i class="k-cost"></i>Holding cost</span></div>
+  </div>
+  <div class="calc-out"><span>Your yearly cost</span><b data-v="tc"></b><span class="calc-note" data-v="note"></span><span class="calc-sub">Best order size: <strong data-v="qs"></strong></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-eoq]').forEach((root) => {
+    const g = (k) => Number(root.querySelector(`input[data-k="${k}"]`).value);
+    const svg = root.querySelector('[data-svg]');
+    const fmt = (n) => Math.round(n).toLocaleString('en-IN');
+    const H = 220, L = 10, R = 10, T = 12, B = 26, X0 = 200, X1 = 6000;
+    const run = () => {
+      const W = svg.clientWidth && svg.clientWidth < 420 ? 340 : 520; svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+      const d = g('d'), s = g('s'), h = g('h'), q = g('q');
+      ['d', 's', 'q'].forEach((k) => { root.querySelector(`[data-o="${k}"]`).textContent = fmt(g(k)); });
+      root.querySelector('[data-o="h"]').textContent = h;
+      const ord = (x) => s * d / x, hold = (x) => h * x / 2, tc = (x) => ord(x) + hold(x);
+      const qs = Math.sqrt(2 * d * s / h), min = tc(qs), ymax = Math.min(tc(X0), 6 * min);
+      const x = (v) => L + (v - X0) / (X1 - X0) * (W - L - R), y = (v) => H - B - Math.min(v, ymax) / ymax * (H - T - B);
+      const path = (f) => { let p = ''; for (let v = X0; v <= X1; v += 50) p += `${p ? 'L' : 'M'}${x(v).toFixed(1)},${y(f(v)).toFixed(1)} `; return p; };
+      const cq = Math.min(qs, X1);
+      svg.innerHTML = `<line x1="${L}" y1="${H - B}" x2="${W - R}" y2="${H - B}" style="stroke:var(--line)"/>
+        <path d="${path(ord)}" style="fill:none;stroke:var(--muted);stroke-width:2;stroke-dasharray:5 4"/>
+        <path d="${path(hold)}" style="fill:none;stroke:var(--ink);stroke-width:2"/>
+        <path d="${path(tc)}" style="fill:none;stroke:var(--accent);stroke-width:2.5"/>
+        <line x1="${x(cq)}" y1="${T}" x2="${x(cq)}" y2="${H - B}" style="stroke:var(--accent);stroke-dasharray:3 4"/>
+        <text x="${x(cq)}" y="${H - 8}" text-anchor="middle" style="fill:var(--accent);font:600 12px var(--sans)">Best: ${fmt(qs)}</text>
+        <circle cx="${x(q)}" cy="${y(tc(q))}" r="6" style="fill:var(--accent);stroke:var(--bg);stroke-width:2"/>
+        <text x="${x(q)}" y="${Math.max(y(tc(q)) - 12, 12)}" text-anchor="${q > 5000 ? 'end' : q < 900 ? 'start' : 'middle'}" style="fill:var(--ink);font:600 12px var(--sans)">You</text>`;
+      const set = (k, v) => { root.querySelector(`[data-v="${k}"]`).textContent = v; };
+      set('tc', 'Rs.' + fmt(tc(q))); set('qs', fmt(qs) + ' units, ' + (d / qs).toFixed(1) + ' orders a year');
+      const extra = tc(q) - min;
+      set('note', extra < 0.01 * min ? 'You are at the minimum: ordering cost equals holding cost.' : `Rs.${fmt(extra)} more than the minimum. ${q < qs ? 'Too many small orders.' : 'Too much stock sitting on the shelf.'}`);
+    };
+    root.querySelectorAll('input').forEach((i) => i.addEventListener('input', run)); run();
+  });
+</script>
