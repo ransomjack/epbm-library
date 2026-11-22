@@ -1,0 +1,34 @@
+---
+// Thompson Lumber: large 200k / -180k, small 100k / -20k, none 0. Slider on P(favourable).
+---
+<div class="calc" data-lumber>
+  <div class="calc-in">
+    <label class="ctl hl"><span>Chance the market is favourable</span><input type="range" min="0" max="100" step="1" value="50" data-k="p" /><output data-o="p"></output></label>
+    <div class="pool-bars">
+      <div><span>Large plant: expected value</span><i data-bar="l"></i><em data-v="l"></em></div>
+      <div><span>Small plant: expected value</span><i data-bar="s"></i><em data-v="s"></em></div>
+      <div><span>Do nothing</span><i data-bar="n"></i><em data-v="n">0</em></div>
+    </div>
+    <div class="kv">
+      <div><span>Expected value with perfect information</span><b data-v="pi"></b></div>
+      <div><span>Most to pay for perfect information (EVPI)</span><b data-v="evpi"></b></div>
+    </div>
+  </div>
+  <div class="calc-out"><span>Best choice</span><b data-v="best"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-lumber]').forEach((root) => {
+    const inp = root.querySelector('input'), fmt = (n) => Math.round(n).toLocaleString('en-US');
+    const run = () => {
+      const p = Number(inp.value) / 100, l = 200000 * p - 180000 * (1 - p), s = 100000 * p - 20000 * (1 - p), best = Math.max(l, s, 0);
+      root.querySelector('[data-o="p"]').textContent = inp.value + '%';
+      const set = (k, v) => { root.querySelector(`[data-v="${k}"]`).textContent = v; };
+      set('l', fmt(l)); set('s', fmt(s));
+      [['l', l], ['s', s], ['n', 0]].forEach(([k, v]) => { const b = root.querySelector(`[data-bar="${k}"]`); b.style.width = Math.max(1, v / 2000) + '%'; b.classList.toggle('on', v === best); });
+      const pi = 200000 * p; set('pi', fmt(pi)); set('evpi', fmt(pi - best));
+      set('best', best === 0 && l <= 0 && s <= 0 ? 'Do nothing' : l > s ? 'Large plant' : 'Small plant');
+      set('note', p < 1 / 6 ? 'Below about 17% the market is too unlikely to justify any plant.' : p <= 0.615 ? 'Between about 17% and 62% the small plant is best. At 50% you are well inside that range.' : 'Above about 62% the large plant’s upside outweighs its risk.');
+    };
+    inp.addEventListener('input', run); run();
+  });
+</script>

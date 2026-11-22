@@ -1,0 +1,30 @@
+---
+// Final Pilgrim model: profit = 70.93 + 19.65·online + 25.60·age − 51.85·hasAge (age = 0, hasAge = 0 where missing).
+---
+<div class="calc" data-reg>
+  <div class="calc-in">
+    <div class="seg" role="group" aria-label="Channel"><button type="button" data-on="0" aria-pressed="true">Offline customer</button><button type="button" data-on="1" aria-pressed="false">Online customer</button></div>
+    <div class="seg" role="group" aria-label="Age on file"><button type="button" data-has="1" aria-pressed="true">Age on file</button><button type="button" data-has="0" aria-pressed="false">Age missing</button></div>
+    <label class="ctl"><span>Age category (1 = youngest, 7 = oldest)</span><input type="range" min="1" max="7" step="1" value="4" data-k="age" /><output data-o="age"></output></label>
+    <p class="reg-eq" data-v="eq"></p>
+  </div>
+  <div class="calc-out"><span>Predicted yearly profit</span><b data-v="p"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-reg]').forEach((root) => {
+    let on = 0, has = 1; const inp = root.querySelector('input');
+    const run = () => {
+      const age = Number(inp.value), p = 70.93 + 19.65 * on + (has ? 25.6 * age - 51.85 : 0);
+      root.querySelector('[data-o="age"]').textContent = has ? age : '–'; inp.disabled = !has;
+      const set = (k, v) => { root.querySelector(`[data-v="${k}"]`).textContent = v; };
+      set('eq', `70.93 + 19.65 × ${on}` + (has ? ` + 25.60 × ${age} − 51.85 × 1` : ' + 25.60 × 0 − 51.85 × 0'));
+      set('p', '$' + p.toFixed(2));
+      set('note', 'Switch between offline and online: the prediction always moves by $19.65, whatever the age.');
+      root.querySelectorAll('[data-on]').forEach((b) => b.setAttribute('aria-pressed', String(Number(b.dataset.on) === on)));
+      root.querySelectorAll('[data-has]').forEach((b) => b.setAttribute('aria-pressed', String(Number(b.dataset.has) === has)));
+    };
+    root.querySelectorAll('[data-on]').forEach((b) => b.addEventListener('click', () => { on = Number(b.dataset.on); run(); }));
+    root.querySelectorAll('[data-has]').forEach((b) => b.addEventListener('click', () => { has = Number(b.dataset.has); run(); }));
+    inp.addEventListener('input', run); run();
+  });
+</script>

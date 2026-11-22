@@ -1,0 +1,36 @@
+---
+// Plant size with no probabilities. Large: +100 / -40. Small: +40 / +10 (Rs. lakh).
+---
+<div class="calc" data-unc>
+  <div class="calc-in">
+    <div class="kv">
+      <div><span>Maximax (optimist)</span><b>Large plant</b></div>
+      <div><span>Maximin (pessimist)</span><b>Small plant</b></div>
+      <div><span>Minimax regret</span><b>Large plant</b></div>
+      <div><span>Laplace (equal chances)</span><b>Large plant</b></div>
+    </div>
+    <label class="ctl hl"><span>Hurwicz: how optimistic are you? (0 = expect the worst, 1 = expect the best)</span><input type="range" min="0" max="1" step="0.05" value="0.5" data-k="a" /><output data-o="a"></output></label>
+    <div class="pool-bars">
+      <div><span>Large plant score</span><i data-bar="l"></i><em data-v="l"></em></div>
+      <div><span>Small plant score</span><i data-bar="s"></i><em data-v="s"></em></div>
+    </div>
+  </div>
+  <div class="calc-out"><span>Hurwicz picks</span><b data-v="best"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-unc]').forEach((root) => {
+    const inp = root.querySelector('input');
+    const run = () => {
+      const a = Number(inp.value), l = a * 100 + (1 - a) * -40, s = a * 40 + (1 - a) * 10;
+      root.querySelector('[data-o="a"]').textContent = a.toFixed(2);
+      const set = (k, v) => { root.querySelector(`[data-v="${k}"]`).textContent = v; };
+      set('l', Math.round(l)); set('s', Math.round(s));
+      const bl = root.querySelector('[data-bar="l"]'), bs = root.querySelector('[data-bar="s"]');
+      bl.style.width = Math.max(1, l) + '%'; bs.style.width = Math.max(1, s) + '%';
+      bl.classList.toggle('on', l >= s); bs.classList.toggle('on', s > l);
+      set('best', l > s ? 'Large plant' : 'Small plant');
+      set('note', 'Score = optimism × best outcome + (1 − optimism) × worst outcome. The choice flips at an optimism of about 0.45.');
+    };
+    inp.addEventListener('input', run); run();
+  });
+</script>

@@ -1,0 +1,27 @@
+---
+// Number of possible routes and time to check them all at a billion a second.
+---
+<div class="calc" data-fact>
+  <div class="calc-in">
+    <label class="ctl hl"><span>Delivery stops on the route</span><input type="range" min="3" max="25" step="1" value="10" data-k="n" /><output data-o="n"></output></label>
+    <div class="kv"><div><span>Possible sequences</span><b data-v="seq"></b></div><div><span>Computer speed assumed</span><b>1 billion a second</b></div></div>
+  </div>
+  <div class="calc-out"><span>Time to check every route</span><b data-v="t"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-fact]').forEach((root) => {
+    const inp = root.querySelector('input');
+    const big = (x) => { if (x < 1e6) return Math.round(x).toLocaleString('en-IN'); const e = Math.floor(Math.log10(x)); const names = { 6: 'million', 9: 'billion', 12: 'trillion' }; const k = Math.floor(e / 3) * 3; return k <= 12 ? (x / Math.pow(10, k)).toFixed(1) + ' ' + names[k] : (x / Math.pow(10, e)).toFixed(1) + ' × 10^' + e; };
+    const run = () => {
+      const n = Number(inp.value); let f = 1; for (let i = 2; i <= n; i++) f *= i;
+      const s = f / 1e9;
+      root.querySelector('[data-o="n"]').textContent = n;
+      const set = (k, v) => { root.querySelector(`[data-v="${k}"]`).textContent = v; };
+      set('seq', big(f));
+      const t = s < 1 ? 'Under a second' : s < 60 ? Math.round(s) + ' seconds' : s < 3600 ? Math.round(s / 60) + ' minutes' : s < 86400 ? Math.round(s / 3600) + ' hours' : s < 31557600 ? Math.round(s / 86400) + ' days' : big(s / 31557600) + ' years';
+      set('t', t);
+      set('note', n <= 12 ? 'Easy to brute-force.' : n <= 16 ? 'Already slow, and each extra stop multiplies the work.' : 'Out of reach. This is why real routing software uses good-enough shortcuts instead of checking every route.');
+    };
+    inp.addEventListener('input', run); run();
+  });
+</script>

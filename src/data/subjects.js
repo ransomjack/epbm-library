@@ -9,7 +9,13 @@ export const subjects = [
     og: '/og/global-political-economy.png',
   },
   { slug: 'marketing-management', name: 'Marketing Management' },
-  { slug: 'business-decision-making', name: 'Business Decision Making' },
+  {
+    slug: 'business-decision-making',
+    name: 'Business Decision Making',
+    blurb: 'Decisions under certainty, risk and uncertainty, decision trees, sampling, confidence intervals, hypothesis tests and regression, with interactive calculators and 327 practice questions.',
+    pdf: '/pdf/business-decision-making-master-notes.pdf',
+    og: '/og/business-decision-making.png',
+  },
   { slug: 'macroeconomic-policies', name: 'Market Economies & Macroeconomic Policies' },
   {
     slug: 'financial-reporting-cost-accounting',

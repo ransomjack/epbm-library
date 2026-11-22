@@ -1,0 +1,233 @@
+---
+title: From Estimate to Decision
+kicker: Session 4
+order: 4
+source: "Session by Prof. Megha Sharma · Business Decision Making · Case: Pilgrim Bank (A)"
+description: "Hypothesis testing, Type I and Type II errors, the p-value, simple and multiple regression, reading regression output, hidden variables, missing data and imputation, and the final Pilgrim Bank decision. Session 4 of Business Decision Making."
+takeaways:
+  - "Put what you want to establish in the alternate hypothesis. Rejecting the null is the only conclusive result."
+  - "The p-value is the chance of seeing a sample like yours if the null were true. Below your tolerance, reject."
+  - "Raw averages mislead when groups have different mixes. Multiple regression compares like with like."
+  - "Don't delete rows with missing data without checking for bias. Fill the gap and add a flag."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Steps from '../../components/d/Steps.astro';
+import Quad from '../../components/d/Quad.astro';
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
+import MixCalc from '../../components/d/MixCalc.astro';
+import RegCalc from '../../components/d/RegCalc.astro';
+
+## Hypothesis testing: you already do it
+
+On a metro train, a woman in ragged clothes boards carrying a baby dressed for a festival, with what look like gold bangles. The usual glance from fellow passengers doesn't end. Everyone keeps looking, because it doesn't add up.
+
+Every passenger has just run a hypothesis test. Two statements are on the table: *the baby is hers* and *the baby is not hers*. Nobody knows the truth. Each compares what they see with a lifetime of experience and finds a mismatch.
+
+| Element | Definition | On the train |
+|---|---|---|
+| **Null hypothesis (H0)** | The statement the test is built around | The baby is hers |
+| **Alternate hypothesis (H1)** | The other statement | The baby is not hers |
+| **The sample** | The evidence you can see | A lifetime of seeing who carries which babies |
+| **The truth** | What you want to know and can't observe | Whose baby it is |
+
+The two statements must be **mutually exclusive** (they can't both be true) and **collectively exhaustive** (one of them must be).
+
+### Only two verdicts
+
+| Verdict | Meaning | What you may say |
+|---|---|---|
+| **Reject H0** | The sample is too unlike what H0 would produce | You accept H1. The only conclusive result |
+| **Do not reject H0** | The sample isn't strong enough evidence against H0 | Inconclusive. You do *not* accept H0 |
+
+<div class="callout trap">
+<p class="callout-title">"We didn't reject the null, so the null is true"</p>
+
+No. Failing to reject means the sample couldn't tell the two stories apart. Session 3's overlapping intervals didn't prove that online and offline customers are equally profitable. They showed we couldn't yet tell.
+
+</div>
+
+## Framing: what you want to prove goes in the alternate
+
+Because rejecting is the only conclusive verdict, which statement you call the null decides whether the test can ever help you.
+
+A company believes its new shampoo reduces hair fall.
+
+| | Frame 1 | Frame 2 |
+|---|---|---|
+| H0 | The shampoo reduces hair fall | The shampoo does not reduce hair fall |
+| H1 | It does not | It does |
+| If H0 is rejected | You've shown it doesn't work | You've shown it works. Advertise |
+| If H0 is not rejected | Inconclusive. You can't claim anything | Inconclusive. No claim yet |
+| Useful to | A rival wanting to disprove the claim | The company |
+
+<div class="callout">
+<p class="callout-title">The framing rule</p>
+
+**Whatever you want to establish, make it the alternate hypothesis. Its negation becomes the null.** Hypotheses are statements about what is true in the population ("online customers are more profitable"), never about the action you'll take ("charge a fee").
+
+</div>
+
+## Two ways to be wrong
+
+Back on the train. Report the woman, and she may be an innocent mother who saved for years for those bangles. Do nothing, and a kidnapper may walk away. Whatever you do, you won't know the truth. Every test decides from a sample, so both verdicts can be wrong.
+
+<Fig title="The four possible results of a test">
+  <Quad cols={['You reject H0', 'You do not reject H0']} rows={['H0 is true', 'H0 is false']} cells={[
+    { tag: 'Type I error', t: 'A false alarm', b: 'You reported an innocent mother. Its probability is kept within a limit you choose: alpha.', tone: 'bad' },
+    { t: 'Correct', b: 'You left an innocent mother alone.' },
+    { t: 'Correct', b: 'You reported a kidnapper.' },
+    { tag: 'Type II error', t: 'A miss', b: 'A kidnapper walked away. Reduced by a larger sample.', tone: 'bad' },
+  ]} />
+</Fig>
+
+**Alpha, the significance level**, is how much Type I error you'll tolerate.
+
+| Alpha | Use it when | Example |
+|---|---|---|
+| 10% | Being wrong costs little | A small promotion |
+| 5% | The usual default | Most market research |
+| 1% | Being wrong is expensive | Automating a plant on a vendor's claim |
+| 0.1% or less | Being wrong is catastrophic | Safety decisions in a nuclear plant |
+
+Push Type I error down and Type II error goes up. A legal system built on "innocent until proven guilty" makes innocence the null: it guards against convicting the innocent and accepts that some guilty people go free.
+
+## The p-value
+
+<div class="callout">
+<p class="callout-title">Definition</p>
+
+**The p-value is the probability of getting a sample like yours if the null hypothesis were true.**
+
+</div>
+
+If the baby really were hers, how likely is it that she'd be dressed so differently from it? Very unlikely. When the null would make your sample a near-miracle, you'd rather believe the null is wrong than that a miracle occurred.
+
+**The rule: if the p-value is below alpha, reject H0. Otherwise, do not reject.** Software calculates the p-value. You supply the hypotheses, the alpha and the judgement.
+
+<Sort title="Try it: what is the verdict at alpha = 5%?" choices={['Reject H0', 'Do not reject']} items={[
+  { text: 'p-value = 0.21', answer: 'Do not reject', why: '0.21 is above 0.05. A sample like this would turn up about one time in five even if the null were true.' },
+  { text: 'p-value = 0.011', answer: 'Reject H0', why: '0.011 is below 0.05.' },
+  { text: 'p-value = 8.6E-07', answer: 'Reject H0', why: 'E-07 means move the decimal point seven places left: 0.00000086. Far below 0.05.' },
+  { text: 'p-value = 0.05 exactly', answer: 'Do not reject', why: 'The rule is strictly below alpha.' },
+]} />
+
+## Regression: a line through the cloud
+
+Plot each customer's profit against some characteristic and you get a cloud of points. **Regression** finds the straight line that sits as close as possible to all of them:
+
+**y = intercept + slope × x**
+
+y is what you want to explain (profit). x is what might explain it. The **slope** says how much y changes when x rises by one.
+
+### First attempt: profit against online
+
+Online is a **dummy variable**: 1 for online customers, 0 for offline. With a dummy, the slope is simply the difference between the two groups.
+
+**Profit = 110.79 + 5.88 × Online**
+
+The intercept, $110.79, is the offline average. The slope, $5.88, is the extra for online customers: the same gap as in Session 3. Its p-value is **0.21**, far above 0.05. We can't reject the idea that the true difference is zero. Still inconclusive.
+
+## Is age hiding the effect?
+
+Session 3 ended on a hint: young customers are more likely to be online, and older customers are more profitable. Prof. Sharma made up some numbers to show what that can do.
+
+<Fig title="When the mix hides the truth" caption="At the starting settings, online is $50 better for young customers and $100 better for older ones, yet the offline group's average is $162 higher. Set the two age mixes equal and the distortion disappears.">
+  <MixCalc />
+</Fig>
+
+Statisticians call this **confounding**: a third variable, here age, tangled up with both the thing you are testing and the result. Comparing raw averages of groups with different mixes can point in exactly the wrong direction.
+
+### Multiple regression
+
+The fix is one equation with several explanatory variables. Each slope then shows the effect of its variable **with the others held constant**.
+
+**Profit = intercept + slope₁ × Online + slope₂ × Age**
+
+Regression can't handle blank cells, and 8,289 customers have no age on file. The first attempt simply dropped them, leaving 23,345:
+
+**Profit = 17.08 + 27.19 × Online + 25.86 × Age**
+
+Both p-values are tiny. Comparing customers in the same age band, online customers are $27.19 more profitable. The effect was there all along; age was hiding it.
+
+### How to read regression output
+
+Read it in this order, every time.
+
+<Steps items={[
+  { title: 'Significance F', body: 'Is the model as a whole any use? It must be below alpha.' },
+  { title: 'Each p-value', body: 'Is each slope different from zero? If one fails, fix the model before using it.' },
+  { title: 'R Square', body: 'What share of the variation in y do the x’s explain?' },
+  { title: 'Coefficients', body: 'Only now read the intercept and slopes.' },
+]} />
+
+**R Square** here is only about 2%: age and online status explain very little of why one customer is more profitable than another. That is fine. The question wasn't "can we predict each customer's profit?" but "are online customers more profitable?" Judge R Square against your question, not against a fixed bar.
+
+<div class="callout trap">
+<p class="callout-title">Two reading mistakes</p>
+
+**8.59E-07 is not 8.59.** It is 0.000000859. And **a slope isn't a correlation**: a slope's size depends on the units, while correlation always lies between −1 and +1.
+
+</div>
+
+## The missing-data trap
+
+Dropping 8,289 customers was convenient. Was it safe? That is testable. Create a dummy, HasAge (1 if the age is on file, 0 if not), and regress profit on it:
+
+**Profit = 72.96 + 52.22 × HasAge**
+
+The p-value is practically zero. Customers *with* an age on file are $52 more profitable than those without. The dropped customers were not a random slice. Deleting them left a sample of better-than-average customers, and the $27.19 was overstated.
+
+<Decide q="A quarter of your survey responses have a blank in one column. Your analyst deletes those rows so the model will run. What should you ask?" options={[
+  { label: 'Nothing. A model needs complete rows.', why: 'It does, but deleting rows is only safe if the people deleted are like the ones kept.' },
+  { label: 'Are the deleted rows different from the rest on the thing we’re measuring?', good: true, why: 'Test it: compare the outcome for rows with and without the blank. If they differ, deleting them biases the result, and you should fill the gap and flag it instead.' },
+  { label: 'Can we survey those people again?', why: 'Possibly, but that is slow and costly. First check whether the gap matters, using the data you already have.' },
+]} />
+
+### Imputation: keep every row, add a flag
+
+Rather than delete, **impute**: fill each blank with a constant (zero, or the average age), and include the HasAge flag in the model so it knows which values are real.
+
+**Profit = 70.93 + 19.65 × Online + 25.60 × Age − 51.85 × HasAge**
+
+(Where the age is missing, Age and HasAge are both 0.)
+
+All 31,634 customers are back in. Every p-value is practically zero. Try the model:
+
+<Fig title="The final Pilgrim Bank model" caption="Read the HasAge term together with the age term, not on its own: for a customer with an age on file, the two combine to 25.60 × age band − 51.85.">
+  <RegCalc />
+</Fig>
+
+Which constant you use for the blanks doesn't matter. Fill with the average age instead of zero and only the intercept and the HasAge coefficient change. The online and age slopes, and every prediction, stay the same.
+
+## The decision
+
+<Fig title="From deadlock to decision on one unchanged dataset" caption="Not one new customer was surveyed. The answer came from looking at the same data differently.">
+<Steps items={[
+  { title: 'Profit on online', body: '+$5.88, p = 0.21. Inconclusive.' },
+  { title: 'Add age', body: '+$27.19, but 8,289 customers dropped.' },
+  { title: 'Check for bias', body: 'Dropped customers are $52 less profitable. The sample was biased.' },
+  { title: 'Impute and flag', body: 'All 31,634 customers back in.' },
+  { title: 'Final model', body: 'Online customers are $19.65 more profitable, like for like.' },
+  { title: 'Decide', body: 'Offer a rebate, worth up to about $19 per online customer.' },
+]} />
+</Fig>
+
+| If the bank had stopped at… | It would have concluded | What was wrong |
+|---|---|---|
+| The two averages | Online is better by about $6 | As likely to be chance as not |
+| The model without missing-age customers | Online is better by $27 | A biased sample; a $27 rebate would overpay |
+| The model on everyone, with a flag | **Online is better by $19.65** | Nothing. This is the recommendation |
+
+The analysis doesn't just answer "fee or rebate". It sizes the answer: beyond about $19, the bank would be paying more than the online channel is worth.
+
+One caution from Session 3 still applies. The data is a snapshot of one year. It shows that online customers are more profitable than similar offline ones, not that moving a customer online *makes* them more profitable. Keep the verdict provisional and test it as new data arrives.
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: surface the assumption, then test it</p>
+
+Managers build beliefs about customers into the way a service is designed and then treat them as facts for years. Turn each belief into a statement you could test, test it on the data you already have, and update the design. And when a regression lands on your desk, ask for four things in order: Significance F, the p-values, R Square, then the coefficients.
+
+</div>

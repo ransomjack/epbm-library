@@ -1,0 +1,210 @@
+---
+title: From Data to an Estimate
+kicker: Session 3
+order: 3
+source: "Session by Prof. Megha Sharma · Business Decision Making · Case: Pilgrim Bank (A)"
+description: "The Pilgrim Bank case, customer profitability and the Pareto principle, populations and samples, mean and standard deviation, the normal curve, and confidence intervals, and why overlapping intervals leave a question open. Session 3 of Business Decision Making."
+takeaways:
+  - "Messy, incomplete data is normal. Not deciding is rarely one of the options."
+  - "A small share of customers brings most of the profit, and many lose money."
+  - "A sample is representative because of how it was chosen, not because of its mix."
+  - "Never report an average without its spread. If two confidence intervals overlap, the data hasn't settled the question."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Bars from '../../components/d/Bars.astro';
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
+import SkewCurve from '../../components/d/SkewCurve.astro';
+import Overlap from '../../components/d/Overlap.astro';
+import CiCalc from '../../components/d/CiCalc.astro';
+
+## The case: fee or rebate?
+
+Pilgrim Bank, a US retail bank, is deciding what to do about online banking: charge customers a fee for it, or pay them a rebate to adopt it. The answer turns on one question about the whole bank: **are online customers more profitable than offline customers?**
+
+The data is a sample of 31,634 customers from about five million, for one year.
+
+| Column | Meaning | Notes |
+|---|---|---|
+| Profit | Yearly profit from the customer, in dollars | From −221 to +2,071 |
+| Online | 1 if the customer banks online, 0 if not | 3,854 online (12.2%); 27,780 offline |
+| Age | Age band, 1 (youngest) to 7 (oldest) | Missing for 8,289 customers |
+| Income | Income band, 1 to 9 | Missing for 8,261 customers |
+| Tenure | Years as a customer | Complete |
+| District | One of three area codes | Complete |
+
+The first group to report said the data was too scattered and too incomplete to support a decision. Prof. Sharma agreed with the description and disagreed with the conclusion.
+
+<div class="callout">
+<p class="callout-title">Not deciding is usually not one of the options</p>
+
+Missing values are the normal condition of business data. And options expire: if a rival starts offering a rebate, "charge a fee" quietly stops being available. Waiting for clean data is itself a decision, and usually a poor one.
+
+</div>
+
+Two myths went first:
+
+- **"Retaining customers is the goal."** Retention is a means. Customers who come for a freebie leave for someone else's freebie. Loyalty comes from value delivered over time.
+- **"The customer is God."** Customers are the means of the company's success, which is exactly why some are worth keeping, some worth changing and some worth letting go.
+
+## The profitability skew
+
+Sort the customers from most to least profitable and add up their profit as you go.
+
+<Fig title="Share of profit against share of customers" caption="Total profit was about $3.5 million. Profitable customers earned about $4.3 million; loss-making customers lost about $0.76 million of it.">
+  <SkewCurve />
+</Fig>
+
+- The **top 10%** of customers bring **69%** of total profit; the top 20% bring 97%.
+- The curve climbs **above 100%**, to 121.6%, at 53% of customers, because the profitable customers earn more than the bank's total profit.
+- The remaining **46%** lose money and pull the total back down to 100%.
+- The average profit is $111.50 per customer, but the **median is $9**. The "average customer" hardly exists.
+
+<Decide q="How can the top half of customers account for 121% of the bank’s profit?" options={[
+  { label: 'It can’t. There must be an error in the data.', why: 'The figure is correct. Think about what the other half contributes.' },
+  { label: 'The profitable customers earn more than the total; the loss-makers then subtract from it.', good: true, why: 'Cumulative profit adds the profitable customers first. The loss-making tail brings the running total back down to 100%.' },
+  { label: 'Some customers are counted twice.', why: 'Each customer appears once. The curve rises above 100% because part of the total is negative.' },
+]} />
+
+### The Pareto principle
+
+This is Pareto's pattern: **a small share of causes accounts for most of the effect.** It appears with customers and profit, with defects and their causes, and with stock items and inventory value.
+
+### Letting customers go without saying so
+
+A bank can't refuse to serve someone. But it can treat customers differently, and it does:
+
+- **A fee that works as a filter.** A premium credit card with a high annual fee, waived above a spending threshold. The fee isn't there to earn money. It keeps unprofitable customers away, while profitable ones never pay it.
+- **A queue that sorts.** Prof. Sharma, an entry-tier airline member, was quoted a 27-minute wait on the helpline. Her husband, a top-tier member, rang the same number and was answered in under a minute.
+
+One rule for everyone, two very different effects. That is why a fee or a rebate for online banking is a real business decision and not just a pricing detail.
+
+## Population and sample
+
+The **population** is every element you care about: here, all five million customers. The **sample** is the part you actually observe. Every decision is about the population; the sample is how you learn about it.
+
+We use samples because measuring everyone is too slow or too costly, and sometimes because testing destroys the item. You can't find the life of every light bulb by running each until it fails.
+
+### What "representative" means
+
+A population has 5,000 men and 5,000 women. Must a sample of 100 have 50 of each? Most of the class said yes. In general, no.
+
+<div class="callout">
+<p class="callout-title">Representative is about the method, not the mix</p>
+
+**A sample is representative if it was chosen so that every element of the population had an equal chance of being included.** People have endless characteristics, and you can't balance a sample on all of them. Balance on a trait only when it is likely to change the answer.
+
+</div>
+
+<Cards min={200} items={[
+  { title: 'Simple random', body: 'Every name in a bowl, drawn blind. For five million customers, software does the drawing.', foot: 'The default' },
+  { title: 'Stratified', body: 'Split the population by a trait that changes the answer, then draw randomly within each group in proportion.', foot: 'When groups are likely to differ' },
+  { title: 'Convenience', body: 'Whoever is easy to reach: people at the mall entrance, those who returned the form.', foot: 'Biased. Avoid for decisions' },
+]} />
+
+**How large is a "large" sample?** At least **30**. It is an absolute number, not a percentage of the population. It comes from the central limit theorem: with 30 or more observations, the averages of samples follow a bell-shaped curve, whatever the shape of the underlying data.
+
+### Kinds of data
+
+| Kind | What it is | Example |
+|---|---|---|
+| **Cross-sectional** | Many elements at one point in time | Every customer's profit this year |
+| **Time series** | One element over many points in time | One customer's profit each year for ten years |
+| **Panel** | Many elements, each followed over time | Every customer, every year |
+
+The Pilgrim file is cross-sectional. It can show that online customers differ from offline ones. It can't show what happens to a customer *after* moving online; that needs data over time.
+
+## Mean and standard deviation
+
+The **mean** is the sum of the values divided by how many there are. A sample mean is a **point estimate**: one best guess for the unknown population figure. The population's true mean is a fixed, unknown number (a *parameter*). The sample mean is a *statistic*: it changes with who happens to be in the sample.
+
+The **standard deviation (SD)** measures spread: how far values typically sit from the mean, in the same units as the data.
+
+<div class="callout trap">
+<p class="callout-title">Never report an average alone</p>
+
+Pilgrim's average profit is $111.50, with a standard deviation of $272.84. One standard deviation either side of the mean runs from about −$161 to +$384. When that range includes outcomes that would change your decision, the average alone can't be trusted.
+
+</div>
+
+### The bell curve
+
+Many measurements follow the **normal distribution**: a symmetric bell with its peak at the mean.
+
+<Fig title="The 68–95–99.7 rule">
+  <Bars unit="% of values" rows={[
+    { label: 'Within 1 SD of the mean', value: 68, note: 'about two in three' },
+    { label: 'Within 2 SDs', value: 95, note: 'all but one in twenty', mark: true },
+    { label: 'Within 3 SDs', value: 99.7, note: 'almost all' },
+  ]} />
+</Fig>
+
+## Online versus offline: the first attempt
+
+| Group | Customers | Average profit | Standard deviation |
+|---|---|---|---|
+| Offline | 27,780 | $110.79 | $271.30 |
+| Online | 3,854 | $116.67 | $283.66 |
+
+Online customers look $5.88 more profitable. Is that enough to act on?
+
+Not yet. Draw a different sample and both averages would shift. **A difference between two sample averages is evidence, not proof.** We need to know how far each average could be from the truth.
+
+## Confidence intervals
+
+A **confidence interval** turns a single number into a range: the point estimate plus or minus a cushion.
+
+**Interval = sample mean ± z × SD ÷ √n**
+
+where n is the sample size and z depends on how sure you want to be: 1.645 for 90%, 1.96 for 95%, 2.576 for 99%.
+
+Try it on the whole Pilgrim sample. Shrink the sample and watch the range widen.
+
+<Fig title="A confidence interval for average profit" caption="With all 31,634 customers and 95% confidence, the true average for the bank lies between about $108.50 and $114.50.">
+  <CiCalc />
+</Fig>
+
+Two things to notice:
+
+- **More data narrows the range, but slowly.** The cushion shrinks with the square root of the sample size, so you need four times the data to halve it.
+- **More confidence widens the range.** To be more sure, you must accept a vaguer answer.
+
+**When is an interval too wide?** When your decision would differ at its two ends. If you'd act the same way at $108 and at $115, it is narrow enough.
+
+### Do the two groups really differ?
+
+<Fig title="95% confidence intervals for average profit" caption="The online interval is wider because there are far fewer online customers.">
+  <Overlap min={100} max={130} rows={[
+    { label: 'Offline', lo: 107.60, hi: 113.98, mean: 110.79 },
+    { label: 'Online', lo: 107.71, hi: 125.62, mean: 116.67 },
+  ]} />
+</Fig>
+
+The two ranges overlap. The true online average could be $108 while the true offline average is $113. **Overlapping intervals are inconclusive**: the data can't tell the two groups apart. The result is the same at 90%, 95% and 99% confidence.
+
+<Decide q="The online interval reaches as high as $125.62, well above anything in the offline interval. Does that show online customers are more profitable?" options={[
+  { label: 'Yes. Online’s upper limit is clearly higher.', why: 'The true value could be anywhere in the interval, including its lower end at $107.71, which is below most of the offline range.' },
+  { label: 'No. The intervals overlap, so the question is still open.', good: true, why: 'An interval says where the truth probably lies, not that it sits at the top. While the ranges overlap, either group could be the more profitable.' },
+]} />
+
+## The cliffhanger: age
+
+The usual reflex at this point is "collect more data". That is slow and expensive. Prof. Sharma's alternative: **look at the same data differently.**
+
+Two patterns in the file point the way:
+
+- **Younger customers are far more likely to be online.** About 20% of the youngest age band bank online, against under 4% of the oldest.
+- **Older customers are far more profitable.** Average profit rises from a few dollars in the youngest band to nearly $200 in the oldest.
+
+So the online group is full of young, low-profit customers, and the offline group is full of older, high-profit ones. Comparing the two averages mixes up two things: the effect of banking online, and the effect of age. Session 4 separates them.
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: three questions for any average on a slide</p>
+
+1. What is the spread around it?
+2. How big was the sample, and how was it chosen?
+3. Are the groups being compared alike in everything else that matters?
+
+</div>

@@ -1,0 +1,194 @@
+---
+title: The Decision and Its Environment
+kicker: Session 1
+order: 1
+source: "Campus session by Prof. Megha Sharma · Business Decision Making"
+description: "Why we postpone decisions, courses of action and states of nature, deciding under certainty, risk and uncertainty, optimisation and routing problems, and why the data behind a decision is often distorted. Session 1 of Business Decision Making."
+takeaways:
+  - "Every decision is your course of action meeting a state of nature you don't control."
+  - "Classify the environment first: certainty, risk or uncertainty. The tool follows the environment."
+  - "Under risk, choose by expected value. Under uncertainty, the right choice depends on your temperament."
+  - "Many scheduling and routing problems can't be solved exactly at scale, so industry uses good-enough methods."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Sort from '../../components/d/Sort.astro';
+import Decide from '../../components/d/Decide.astro';
+import SamosaCalc from '../../components/d/SamosaCalc.astro';
+import UncertaintyCalc from '../../components/d/UncertaintyCalc.astro';
+import FactorialWall from '../../components/d/FactorialWall.astro';
+
+## The decisions we postpone
+
+A travel enthusiast books the family holiday the moment it is mentioned. A couch potato facing the same holiday keeps saying "next month". Same decision, opposite behaviour.
+
+Prof. Sharma's point: **we postpone decisions where the right course of action isn't the one we want to take.** A plant head delays retiring an old production line he is attached to. A delivery head keeps a loss-making client because the logo looks good on a slide. In each case the analysis is done. What stalls is the conflict between preference and what is right.
+
+<div class="callout">
+<p class="callout-title">Postponement is a conflict problem, not a data problem</p>
+
+Nobody postpones watching the big match at 1 a.m. Everybody postpones the report due the next morning. Making a decision and carrying it out are two different things.
+
+</div>
+
+## Two building blocks
+
+Every decision has two parts.
+
+<Cards min={240} items={[
+  { title: 'Course of action', body: 'The alternative you choose. Fully under your control.', foot: 'Which crop the farmer sows; which stock you buy' },
+  { title: 'State of nature', body: 'What the world does after you choose. Beyond your control.', foot: 'Whether the monsoon arrives; what the market does on Monday' },
+]} />
+
+| Setting | Course of action | State of nature |
+|---|---|---|
+| Factory | Batch size and shift plan for the week | A machine breakdown; variation in raw material |
+| Product company | Launch price and build quantity | A competitor's response; actual demand |
+| Service company | An airline's overbooking level | How many passengers don't turn up |
+
+<div class="callout trap">
+<p class="callout-title">Don't judge a decision by its outcome alone</p>
+
+A sound choice can meet an unlucky state of nature and turn out badly. A reckless one can get lucky. Judge a decision by the process and the information available at the time. Session 2 builds on this.
+
+</div>
+
+## Three environments
+
+One question sorts every decision: when you choose, what do you know about the states of nature?
+
+<Fig title="Certainty, risk and uncertainty">
+<Cards min={200} items={[
+  { title: 'Certainty', body: 'One known outcome for each action.', foot: 'Tool: compare or optimise' },
+  { title: 'Risk', body: 'Several possible outcomes, and you know their probabilities.', foot: 'Tool: expected value, decision trees', hl: true },
+  { title: 'Uncertainty', body: 'Several possible outcomes, and no probabilities at all.', foot: 'Tool: a criterion that fits your temperament' },
+]} />
+</Fig>
+
+<Sort title="Try it: which environment?" choices={['Certainty', 'Risk', 'Uncertainty']} items={[
+  { text: 'Choosing the one-year fixed deposit with the highest rate.', answer: 'Certainty', why: 'One action, one known outcome. Just compare.' },
+  { text: 'An airline deciding how many seats to overbook, using years of no-show data.', answer: 'Risk', why: 'The outcomes vary, but history gives their probabilities.' },
+  { text: 'A business deciding what to do in the first week of the March 2020 lockdown.', answer: 'Uncertainty', why: 'The possible outcomes were visible, but nothing like it had happened before, so there were no probabilities.' },
+  { text: 'A firm planning staff for next quarter against signed multi-year contracts.', answer: 'Certainty', why: 'The contracts fix the workload in advance.' },
+  { text: 'Launching a product in a category that doesn’t exist yet.', answer: 'Uncertainty', why: 'No history, so no probabilities.' },
+  { text: 'Stocking spare parts using known failure rates.', answer: 'Risk', why: 'Failure data gives the probabilities.' },
+]} />
+
+### Certainty
+
+You have ₹1 lakh for a one-year fixed deposit at a nationalised bank, and you want the highest maturity amount. Compare the rates and pick the highest. One action, one known outcome.
+
+Two class debates sharpened this:
+
+- **"But inflation eats the return."** True, but the objective was fixed as the maturity amount of a fixed deposit. Change the objective to real, after-tax return across all investments and you have a different problem, possibly no longer one of certainty. **The objective defines the problem.**
+- **Why ₹1 lakh and not ₹10 lakh?** Bank deposits in India are insured up to ₹5 lakh per depositor per bank. Below that, even a bank failure can't touch the money. Above it, a small chance of loss appears and certainty quietly becomes risk.
+
+### Risk
+
+The samosa seller outside your office doesn't know if tomorrow will be sunny or rainy. But ten years there have taught him that it rains about 3 days in 10, and that rain cuts his sales from 200 samosas to 80. Each samosa costs ₹5 to make and sells for ₹10; unsold ones are wasted.
+
+The tool is **expected monetary value (EMV)**: for each action, multiply every outcome by its probability and add them up.
+
+| | Sunny (70%) | Rainy (30%) | EMV |
+|---|---|---|---|
+| Fry 200 | Sells 200: ₹1,000 profit | Sells 80: ₹200 loss | 0.7 × 1,000 + 0.3 × (−200) = **₹640** |
+| Fry 100 | Sells 100: ₹500 profit | Sells 80: ₹300 profit | 0.7 × 500 + 0.3 × 300 = **₹440** |
+
+Fry 200, and accept the occasional rainy-day loss. Now change the weather:
+
+<Fig title="The samosa stall" caption="EMV is the long-run average per day. It is the right guide for decisions you make again and again.">
+  <SamosaCalc />
+</Fig>
+
+### Uncertainty
+
+When there are no probabilities, criteria replace calculation. A manufacturer is sizing a plant for a brand-new product (figures in ₹ lakh):
+
+| | Demand turns out high | Demand turns out low |
+|---|---|---|
+| Large plant | +100 | −40 |
+| Small plant | +40 | +10 |
+
+| Criterion | Logic | Picks |
+|---|---|---|
+| **Maximax** (optimist) | Best of the best outcomes: 100 vs 40 | Large |
+| **Maximin** (pessimist) | Best of the worst outcomes: −40 vs +10 | Small |
+| **Minimax regret** | Smallest worst-case "if only": 50 vs 60 | Large |
+| **Laplace** | Treat the states as equally likely: 30 vs 25 | Large |
+| **Hurwicz** | Blend best and worst by your optimism | Depends on you |
+
+<Fig title="Five criteria, one decision" caption="The criteria disagree, and that is honest: under uncertainty the right answer depends on the decision-maker's temperament and on whether the organisation could survive the worst case.">
+  <UncertaintyCalc />
+</Fig>
+
+<div class="callout">
+<p class="callout-title">Knight's distinction</p>
+
+The economist Frank Knight drew the line in 1921. **Risk** is measurable: probabilities exist and can be priced, which is why insurance is a business. **Uncertainty** is not measurable. Risk can be insured; uncertainty has to be managed.
+
+</div>
+
+In practice most real decisions start as uncertainty and are pushed towards risk with pilots, test markets and comparisons with similar cases.
+
+## Certainty at business scale
+
+Decisions under certainty aren't trivial when there are thousands of them to make together.
+
+<Cards min={220} items={[
+  { title: 'Linear programming', body: 'Find the best mix when quantities can be fractional and the limits are known.', foot: 'How many tables and chairs to make with this week’s machine hours' },
+  { title: 'Integer programming', body: 'The same, when decisions are whole numbers or yes/no.', foot: 'Staff rosters; maintenance windows; a sports league’s fixture list' },
+]} />
+
+A system that must be up 99.9% of the year has a known downtime budget of about 8.8 hours. Fitting maintenance windows into it is a yes-or-no scheduling problem with everything known in advance.
+
+## Routing problems
+
+Mumbai's dabbawalas collect thousands of lunch boxes, sort them, deliver them to the right desks and return them, every day, by hand. They are solving two famous problems.
+
+<Cards min={240} items={[
+  { title: 'Vehicle routing problem (VRP)', body: 'Several vehicles with limited capacity. Decide which parcels go on which vehicle, and the order of each vehicle’s stops.', foot: 'A delivery station; a food-delivery app batching orders' },
+  { title: 'Travelling salesman problem (TSP)', body: 'One vehicle. Visit every stop exactly once and return to the start at the lowest cost.', foot: 'A technician’s day of eight home visits' },
+]} />
+
+The travelling salesman problem is the special case of vehicle routing with one vehicle and no capacity limit.
+
+### The factorial wall
+
+"Visit these ten houses in the cheapest order" sounds simple. The only guaranteed way to find the best route is to check every possible order, and the number of orders is n factorial: 5 stops give 5 × 4 × 3 × 2 × 1 = 120.
+
+<Fig title="How fast the possibilities grow" caption="Brute force stops being possible at about twenty stops. Five more stops turn minutes into decades.">
+  <FactorialWall />
+</Fig>
+
+These problems are called **NP-hard**: no known method finds the guaranteed best answer quickly as the problem grows. Airline crew scheduling, exam timetabling and factory job scheduling belong to the same family, which is why your roster headache really is mathematically hard.
+
+Industry's answer is the **heuristic**: a rule that finds a good route quickly without promising the best one. "Always go to the nearest unvisited stop" is the simplest.
+
+<Decide q="Your delivery software produces routes in two seconds, but a consultant says they are about 3% longer than the best possible. Should you replace it with a system that guarantees the best route?" options={[
+  { label: 'Yes. A 3% saving on fuel is worth having.', why: 'For a realistic number of stops, a guaranteed-best route can’t be computed in any useful time. The saving is theoretical.' },
+  { label: 'No. A good answer in seconds beats a perfect answer that never arrives.', good: true, why: 'This is the practical meaning of NP-hard. The useful question is whether a better heuristic can close some of that 3% at reasonable cost.' },
+]} />
+
+## Where the numbers come from
+
+A decision is only as good as its inputs. The campus session covered several ways those inputs go wrong.
+
+| Idea | What it means |
+|---|---|
+| **Hawthorne effect** | People behave differently when watched. Data from a pilot or an audit week shows best behaviour, not normal behaviour |
+| **Censored sales data** | Sales equal demand only until stock runs out. After that, the customers who found an empty shelf leave no trace. Estimate the demand you didn't see before you forecast |
+| **Markdown vs event discount** | A markdown is a permanent price cut on stock that didn't sell. A sale-day price that returns to normal on Monday is an event |
+| **Bass model** | Forecasts a brand-new category from two kinds of buyers: innovators, moved by advertising, and imitators, moved by word of mouth. Together they trace the S-shaped adoption curve |
+| **EOQ and safety stock** | The order size that balances ordering and holding cost, plus the extra kept for what the formula can't foresee |
+| **Bullwhip effect** | A small change in what shoppers buy becomes a large swing at the factory, because each link forecasts separately, adds its own buffer and orders in batches |
+| **CPFR** | The cure for the bullwhip: retailer and supplier share sales data and plan from one joint forecast |
+
+In the early weeks of COVID, shoppers bought a little extra toilet paper. Retailers ordered far more, distributors more still, and factories ran flat out before orders collapsed. The bullwhip is an information problem disguised as an inventory problem.
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: check the history before you extrapolate it</p>
+
+Before forecasting from past sales, ask whether that history was cut short by stock-outs, flattered by a pilot, or amplified by someone else's buffer. And before any analysis, write down three things: the objective, the alternatives, and what you know about the states of nature.
+
+</div>

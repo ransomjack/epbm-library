@@ -1,0 +1,32 @@
+---
+// Age clouding the online effect. Young: online -20, offline -70. Older: online 400, offline 300.
+---
+<div class="calc" data-mix>
+  <div class="calc-in">
+    <label class="ctl"><span>Share of online customers who are young</span><input type="range" min="0" max="100" step="5" value="80" data-k="on" /><output data-o="on"></output></label>
+    <label class="ctl"><span>Share of offline customers who are young</span><input type="range" min="0" max="100" step="5" value="20" data-k="off" /><output data-o="off"></output></label>
+    <div class="pool-bars">
+      <div><span>Average profit, online group</span><i data-bar="a"></i><em data-v="a"></em></div>
+      <div><span>Average profit, offline group</span><i data-bar="b"></i><em data-v="b"></em></div>
+    </div>
+    <p class="calc-cap">Fixed in this example: a young customer loses $20 online and $70 offline; an older customer earns $400 online and $300 offline. Online is better at every age.</p>
+  </div>
+  <div class="calc-out"><span>Comparing the two averages, it looks as if</span><b data-v="best"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-mix]').forEach((root) => {
+    const g = (k) => Number(root.querySelector(`input[data-k="${k}"]`).value) / 100;
+    const run = () => {
+      const on = g('on'), off = g('off'), a = on * -20 + (1 - on) * 400, b = off * -70 + (1 - off) * 300;
+      root.querySelector('[data-o="on"]').textContent = Math.round(on * 100) + '%'; root.querySelector('[data-o="off"]').textContent = Math.round(off * 100) + '%';
+      const set = (k, v) => { root.querySelector(`[data-v="${k}"]`).textContent = v; };
+      set('a', '$' + Math.round(a)); set('b', '$' + Math.round(b));
+      const ba = root.querySelector('[data-bar="a"]'), bb = root.querySelector('[data-bar="b"]');
+      ba.style.width = Math.max(1, a / 4) + '%'; bb.style.width = Math.max(1, b / 4) + '%';
+      ba.classList.toggle('on', a >= b); bb.classList.toggle('on', b > a);
+      set('best', a > b ? 'Online wins' : a < b ? 'Offline wins' : 'A tie');
+      set('note', a < b ? `Offline looks $${Math.round(b - a)} better, yet online is better at every age. The age mix is hiding the real effect.` : on === off ? 'With the same age mix in both groups, the averages tell the truth.' : 'Here the averages point the right way, but the size of the gap still depends on the age mix.');
+    };
+    root.querySelectorAll('input').forEach((i) => i.addEventListener('input', run)); run();
+  });
+</script>

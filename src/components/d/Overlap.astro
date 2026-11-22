@@ -1,0 +1,20 @@
+---
+// Two confidence intervals on one scale. rows: [{ label, lo, hi, mean }]
+const { rows, min, max, unit = '$' } = Astro.props;
+const pos = (v) => ((v - min) / (max - min)) * 100;
+const olo = Math.max(...rows.map((r) => r.lo)), ohi = Math.min(...rows.map((r) => r.hi));
+---
+<div class="ovl">
+  {rows.map((r) => (
+    <div class="ovl-row">
+      <span class="ovl-l">{r.label}</span>
+      <div class="ovl-track">
+        {ohi > olo && <i class="ovl-band" style={`left:${pos(olo)}%;width:${pos(ohi) - pos(olo)}%`}></i>}
+        <i class="ovl-bar" style={`left:${pos(r.lo)}%;width:${pos(r.hi) - pos(r.lo)}%`}></i>
+        <i class="ovl-dot" style={`left:${pos(r.mean)}%`}></i>
+      </div>
+      <span class="ovl-v">{unit}{r.lo.toFixed(2)} to {unit}{r.hi.toFixed(2)}</span>
+    </div>
+  ))}
+  {ohi > olo && <p class="ovl-note">The shaded band is where the two ranges overlap: the true averages could be equal, or either could be higher.</p>}
+</div>

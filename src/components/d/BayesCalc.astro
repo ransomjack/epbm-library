@@ -1,0 +1,29 @@
+---
+// Bayes: turn a survey's track record into the probabilities a decision tree needs.
+---
+<div class="calc" data-bayes>
+  <div class="calc-in">
+    <label class="ctl"><span>Your belief before the survey: market is favourable</span><input type="range" min="5" max="95" step="5" value="50" data-k="pr" /><output data-o="pr"></output></label>
+    <label class="ctl"><span>Survey says “favourable” when the market really is</span><input type="range" min="50" max="100" step="5" value="70" data-k="tp" /><output data-o="tp"></output></label>
+    <label class="ctl"><span>Survey says “favourable” when the market is not</span><input type="range" min="0" max="50" step="5" value="20" data-k="fp" /><output data-o="fp"></output></label>
+    <div class="kv">
+      <div><span>Chance the survey says “favourable”</span><b data-v="pp"></b></div>
+      <div><span>If it says “unfavourable”: chance the market is still favourable</span><b data-v="pn"></b></div>
+    </div>
+  </div>
+  <div class="calc-out"><span>If the survey says “favourable”, the chance the market really is</span><b data-v="post"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-bayes]').forEach((root) => {
+    const g = (k) => Number(root.querySelector(`input[data-k="${k}"]`).value) / 100;
+    const run = () => {
+      const pr = g('pr'), tp = g('tp'), fp = g('fp');
+      ['pr', 'tp', 'fp'].forEach((k) => { root.querySelector(`[data-o="${k}"]`).textContent = Math.round(g(k) * 100) + '%'; });
+      const pp = pr * tp + (1 - pr) * fp, post = pp ? pr * tp / pp : 0, pn = pp < 1 ? pr * (1 - tp) / (1 - pp) : 0;
+      const set = (k, v) => { root.querySelector(`[data-v="${k}"]`).textContent = v; };
+      set('pp', Math.round(pp * 100) + '%'); set('post', Math.round(post * 100) + '%'); set('pn', Math.round(pn * 100) + '%');
+      set('note', `Your belief moved from ${Math.round(pr * 100)}% to ${Math.round(post * 100)}%. The same survey moves a different starting belief by a different amount.`);
+    };
+    root.querySelectorAll('input').forEach((i) => i.addEventListener('input', run)); run();
+  });
+</script>

@@ -1,0 +1,13 @@
+---
+// Decision tree as an indented outline. node: { kind: 'decision'|'chance'|'end', label, value?, p?, best?, children? }
+const { node, root = true } = Astro.props;
+---
+<div class:list={['tree', { 'tree-root': root }]}>
+  <div class:list={['tr-n', node.kind, { best: node.best }]}>
+    <i aria-hidden="true"></i>
+    <div class="tr-t"><span class="tr-l">{node.p && <em>{node.p}</em>}{node.label}</span>
+    {node.value && <b>{node.value}</b>}
+    {node.best && <span class="tr-b">chosen</span>}</div>
+  </div>
+  {node.children && <div class="tr-c">{node.children.map((c) => <Astro.self node={c} root={false} />)}</div>}
+</div>

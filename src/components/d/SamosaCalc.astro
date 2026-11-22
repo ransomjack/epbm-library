@@ -1,0 +1,31 @@
+---
+// Samosa stall: fry 200 or 100? Sunny sells 200, rainy sells 80. Cost Rs.5, price Rs.10.
+---
+<div class="calc" data-samosa>
+  <div class="calc-in">
+    <label class="ctl hl"><span>Chance of rain tomorrow</span><input type="range" min="0" max="100" step="5" value="30" data-k="p" /><output data-o="p"></output></label>
+    <div class="pool-bars">
+      <div><span>Fry 200: average profit a day</span><i data-bar="a"></i><em data-v="a"></em></div>
+      <div><span>Fry 100: average profit a day</span><i data-bar="b"></i><em data-v="b"></em></div>
+    </div>
+    <p class="calc-cap">Fry 200: ₹1,000 on a sunny day, −₹200 on a rainy day. Fry 100: ₹500 sunny, ₹300 rainy.</p>
+  </div>
+  <div class="calc-out"><span>Best choice</span><b data-v="best"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-samosa]').forEach((root) => {
+    const inp = root.querySelector('input');
+    const run = () => {
+      const p = Number(inp.value) / 100, a = (1 - p) * 1000 + p * -200, b = (1 - p) * 500 + p * 300;
+      root.querySelector('[data-o="p"]').textContent = inp.value + '%';
+      const set = (k, v) => { root.querySelector(`[data-v="${k}"]`).textContent = v; };
+      set('a', '₹' + Math.round(a)); set('b', '₹' + Math.round(b));
+      const ba = root.querySelector('[data-bar="a"]'), bb = root.querySelector('[data-bar="b"]');
+      ba.style.width = Math.max(1, a / 10) + '%'; bb.style.width = Math.max(1, b / 10) + '%';
+      ba.classList.toggle('on', a >= b); bb.classList.toggle('on', b > a);
+      set('best', a > b ? 'Fry 200' : b > a ? 'Fry 100' : 'Either');
+      set('note', Math.abs(p - 0.5) < 0.001 ? 'At exactly 50% rain the two are equal.' : a > b ? 'Below a 50% chance of rain, the bigger batch wins on average.' : 'Above a 50% chance of rain, the smaller batch wins.');
+    };
+    inp.addEventListener('input', run); run();
+  });
+</script>

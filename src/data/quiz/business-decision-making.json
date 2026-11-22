@@ -1,0 +1,3949 @@
+{
+ "title": "Practice questions",
+ "sections": [
+  {
+   "name": "Session 1: Decisions and their environment",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "According to the professor, we postpone decisions mainly when:",
+     "options": [
+      "The deadline is far away",
+      "The data is incomplete",
+      "Nobody else is involved",
+      "The right course of action is not the one we want to take"
+     ],
+     "answer": 3,
+     "why": "The travel enthusiast and the couch potato face the same holiday decision; only the want-vs-right gap differs."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Making a decision and executing it are two different things.\" The stalled step in the plant-head, delivery-head and product-manager examples is:",
+     "options": [
+      "The execution, because preference conflicts with optimality",
+      "The approval from finance",
+      "The analysis",
+      "The data collection"
+     ],
+     "answer": 0,
+     "why": "In every case the numbers already point one way; the conflict with what they want to do is what defers action."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The course of action is:",
+     "options": [
+      "The alternative you choose, fully under your control",
+      "The outcome",
+      "What the world does after you choose",
+      "The probability of success"
+     ],
+     "answer": 0,
+     "why": "The farmer picks the crop; the monsoon is the state of nature."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Buying TCS stock on Friday; the price moves on Monday. The Monday move is:",
+     "options": [
+      "An objective function",
+      "A course of action",
+      "A state of nature",
+      "A payoff table"
+     ],
+     "answer": 2,
+     "why": "Beyond your control after you choose."
+    },
+    {
+     "tag": "MCQ",
+     "q": "For a SOC, which pairing is correct?",
+     "options": [
+      "Roster = course of action; alert volume = state of nature",
+      "Both are states of nature",
+      "Roster = state of nature; alert volume = course of action",
+      "Both are courses of action"
+     ],
+     "answer": 0,
+     "why": "You choose the roster; the night's alerts and attackers are the world's move."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The classification into certainty, risk and uncertainty is a statement about:",
+     "options": [
+      "The size of the payoff",
+      "How much you know about the states of nature before you choose",
+      "The number of decision-makers",
+      "How many alternatives you have"
+     ],
+     "answer": 1,
+     "why": "One outcome per action, known probabilities, or unknown probabilities."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Decision making under certainty means:",
+     "options": [
+      "There is only one alternative",
+      "The decision is easy",
+      "Probabilities are known",
+      "Each course of action leads to exactly one known outcome"
+     ],
+     "answer": 3,
+     "why": "Nothing is left to chance; the work is comparing known outcomes."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the FD example, the objective was fixed as:",
+     "options": [
+      "Maximise liquidity",
+      "Minimise risk",
+      "Maximise the nominal maturity value of a one-year FD at a nationalised bank",
+      "Maximise real post-tax return across all instruments"
+     ],
+     "answer": 2,
+     "why": "Change the objective and you change the whole decision problem - the objective function is sovereign."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why did the professor use Rs. 1 lakh and not Rs. 10 lakh in the FD example?",
+     "options": [
+      "Tax rules change above Rs. 1 lakh",
+      "Deposit insurance covers up to Rs. 5 lakh per depositor per bank, so Rs. 1 lakh keeps the outcome certain even if the bank fails",
+      "Banks do not accept larger FDs",
+      "Rounding"
+     ],
+     "answer": 1,
+     "why": "Above Rs. 5 lakh a small probability of loss creeps in and the decision slides into risk."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Planning delivery capacity against a signed multi-year contract book is decision making under:",
+     "options": [
+      "Certainty",
+      "Risk",
+      "Uncertainty",
+      "None - it is not a decision"
+     ],
+     "answer": 0,
+     "why": "The signatures pin down the states of nature; the new-business pipeline is what lives under risk."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The tool for decisions under certainty is:",
+     "options": [
+      "Maximin",
+      "Comparison and optimisation - linear and integer programming",
+      "EMV",
+      "Decision trees"
+     ],
+     "answer": 1,
+     "why": "Known outcomes, so the job is to optimise."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The samosa-wala knows it rains about 3 days in 10 and that rain cuts sales to 80. His decision is under:",
+     "options": [
+      "Risk",
+      "Ignorance",
+      "Certainty",
+      "Uncertainty"
+     ],
+     "answer": 0,
+     "why": "Several states per action, with probabilities known from ten years of history."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Frying 200 samosas at Rs. 5 cost and Rs. 10 price, with p(sunny) = 0.7 and rainy-day sales of 80, gives an EMV of:",
+     "options": [
+      "Rs. 640",
+      "Rs. 440",
+      "Rs. 1,000",
+      "Rs. 800"
+     ],
+     "answer": 0,
+     "why": "0.7 x 1,000 + 0.3 x (-200) = 640. Frying 100 gives 440."
+    },
+    {
+     "tag": "MCQ",
+     "q": "EMV is the right criterion mainly for:",
+     "options": [
+      "One-off bet-the-company decisions",
+      "Decisions under certainty",
+      "Repeated decisions, because it plays the long run",
+      "Decisions with no data"
+     ],
+     "answer": 2,
+     "why": "For one-off decisions risk appetite matters too; the vendor is playing many days."
+    },
+    {
+     "tag": "MCQ",
+     "q": "March 2020 for most businesses was a decision environment of:",
+     "options": [
+      "Risk",
+      "Uncertainty",
+      "Optimisation",
+      "Certainty"
+     ],
+     "answer": 1,
+     "why": "The possible states were visible; nobody had probabilities for them."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Jio launching free voice in 2016 is an example of:",
+     "options": [
+      "Risk, from telecom history",
+      "Uncertainty - no precedent for how incumbents and customers would react",
+      "A TSP",
+      "Certainty"
+     ],
+     "answer": 1,
+     "why": "A category-changing move with no historical data."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Large plant: +100 / -40; small plant: +40 / +10 (Rs. lakh). The maximin criterion chooses:",
+     "options": [
+      "Either",
+      "Large",
+      "Small",
+      "Neither"
+     ],
+     "answer": 2,
+     "why": "Best of the worst outcomes: small's +10 beats large's -40."
+    },
+    {
+     "tag": "MCQ",
+     "q": "With the same table, maximax chooses:",
+     "options": [
+      "Either",
+      "Large",
+      "Small",
+      "Neither"
+     ],
+     "answer": 1,
+     "why": "Best of the best: 100 beats 40."
+    },
+    {
+     "tag": "MCQ",
+     "q": "With the same table, minimax regret chooses:",
+     "options": [
+      "Small, with worst regret 50",
+      "Small, with worst regret 60",
+      "Large, with worst regret 60",
+      "Large, with worst regret 50"
+     ],
+     "answer": 3,
+     "why": "If HIGH the regrets are 0 and 60; if LOW they are 50 and 0; large's worst regret (50) is the smaller."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Laplace criterion:",
+     "options": [
+      "Requires known probabilities",
+      "Treats the states as equally likely when there is no information",
+      "Uses an optimism index",
+      "Chooses the best worst case"
+     ],
+     "answer": 1,
+     "why": "Large: (100 - 40)/2 = 30 beats small: 25."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Hurwicz criterion:",
+     "options": [
+      "Is the same as Laplace",
+      "Ignores the worst case",
+      "Only works with three states",
+      "Blends best and worst outcomes with an optimism index alpha between 0 and 1"
+     ],
+     "answer": 3,
+     "why": "Alpha = 1 is maximax, alpha = 0 is maximin."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The criteria disagreed (maximin said small, the rest said large). The professor's view of this is:",
+     "options": [
+      "A sign the data is wrong",
+      "A reason to use EMV instead",
+      "A flaw in the method",
+      "An honest admission that under uncertainty the answer depends on temperament and the capacity to survive the worst case"
+     ],
+     "answer": 3,
+     "why": "There are no probabilities to settle the argument."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Frank Knight's distinction says:",
+     "options": [
+      "Risk and uncertainty are synonyms",
+      "Risk has no probabilities",
+      "Risk is measurable and can be priced (insured); uncertainty is unmeasurable and must be managed",
+      "Uncertainty can be insured"
+     ],
+     "answer": 2,
+     "why": "Insurance is a business precisely because risk is measurable."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A zero-day exploit, as opposed to a known ransomware family, is a decision environment of:",
+     "options": [
+      "Risk",
+      "Certainty",
+      "Uncertainty",
+      "Both"
+     ],
+     "answer": 2,
+     "why": "Known families come with frequency data; a zero-day comes with none."
+    },
+    {
+     "tag": "MCQ",
+     "q": "For any decision problem, the first step is to:",
+     "options": [
+      "Draw a tree first",
+      "List the states of nature last",
+      "Classify the environment first - the tool follows the environment",
+      "Compute EMV immediately"
+     ],
+     "answer": 2,
+     "why": "Write the objective, the courses of action, and what is known about the states of nature."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A 99.9% availability SLA allows roughly how much downtime a year?",
+     "options": [
+      "8.8 hours",
+      "88 hours",
+      "0.88 hours",
+      "24 hours"
+     ],
+     "answer": 0,
+     "why": "0.1% of 8,760 hours; scheduling maintenance inside it is integer programming."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Integer programming is distinguished from linear programming by:",
+     "options": [
+      "Whole-number or yes/no decision variables",
+      "Unknown probabilities",
+      "More constraints",
+      "Larger numbers"
+     ],
+     "answer": 0,
+     "why": "A match happens in a slot or it does not; litres of a blend may be fractional."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The IPL fixture was the professor's analogy for:",
+     "options": [
+      "Integer programming",
+      "Uncertainty",
+      "The TSP",
+      "EMV"
+     ],
+     "answer": 0,
+     "why": "Every team plays every other, grounds and broadcast slots have constraints, decisions are yes/no."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Assigning 41 warehouses to cities once demand estimates are treated as known is:",
+     "options": [
+      "A TSP",
+      "A decision under uncertainty",
+      "A hypothesis test",
+      "A deterministic allocation problem solvable by optimisation"
+     ],
+     "answer": 3,
+     "why": "Large, but certainty-world once demand is taken as known."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The two decisions inside a Vehicle Routing Problem are:",
+     "options": [
+      "Allocation of parcels to capacity-constrained vehicles, and sequencing of each route",
+      "Hiring and training",
+      "Pricing and promotion",
+      "Forecasting and inventory"
+     ],
+     "answer": 0,
+     "why": "Which parcels go with whom, and in what order."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A valid alternative objective for a VRP, mentioned in class, is:",
+     "options": [
+      "Maximise distance",
+      "Minimise average delivery time",
+      "Minimise the number of parcels",
+      "Maximise the number of vehicles"
+     ],
+     "answer": 1,
+     "why": "The choice of objective defines the problem."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A PCB drilling machine visiting thousands of hole positions is:",
+     "options": [
+      "A decision under uncertainty",
+      "A VRP",
+      "A TSP hiding inside a factory",
+      "An integer programme only"
+     ],
+     "answer": 2,
+     "why": "One head, every hole once, minimum travel."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The number of ways to sequence 10 stops is 10!, which equals about:",
+     "options": [
+      "3.6 million",
+      "3.6 billion",
+      "3,600",
+      "3.6 trillion"
+     ],
+     "answer": 0,
+     "why": "36,28,800; 15 stops is about 1.3 trillion."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Checking every route for 20 stops at a billion routes a second would take about:",
+     "options": [
+      "490 million years",
+      "4 seconds",
+      "22 minutes",
+      "77 years"
+     ],
+     "answer": 3,
+     "why": "20! is about 2.43 x 10^18; 25 stops is about 490 million years."
+    },
+    {
+     "tag": "MCQ",
+     "q": "For a closed tour from a fixed depot, the number of distinct circular routes is:",
+     "options": [
+      "N!",
+      "2 to the power n",
+      "(n - 1)!, halved again if direction does not matter",
+      "N squared"
+     ],
+     "answer": 2,
+     "why": "The refinement barely matters - every version grows explosively."
+    },
+    {
+     "tag": "MCQ",
+     "q": "NP-hard means, in substance:",
+     "options": [
+      "The problem has no constraints",
+      "The problem is non-polynomial in name only",
+      "The problem cannot be solved at all",
+      "No known method guarantees the optimum quickly as size grows; brute force explodes"
+     ],
+     "answer": 3,
+     "why": "The formally correct expansion is non-deterministic polynomial; the class shorthand was non-polynomial."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Because routing is NP-hard, industry:",
+     "options": [
+      "Stops planning routes",
+      "Uses EMV",
+      "Uses heuristics that find a very good route in seconds rather than the perfect route in centuries",
+      "Buys bigger computers"
+     ],
+     "answer": 2,
+     "why": "Optimality sacrificed for tractability - a deep managerial lesson."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of these is NOT an NP-hard cousin mentioned in the notes?",
+     "options": [
+      "Airline crew pairing",
+      "Comparing FD rates",
+      "University exam timetabling",
+      "Factory job-shop scheduling"
+     ],
+     "answer": 1,
+     "why": "Comparing FD rates is a trivial comparison; the other three explode combinatorially."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The shared file Detailed_Data.xls is the dataset of:",
+     "options": [
+      "A samosa stall",
+      "A Mumbai dabbawala study",
+      "An IPL fixture",
+      "Pilgrim Bank (A): Customer Profitability, the HBS case by Frei and Campbell"
+     ],
+     "answer": 3,
+     "why": "31,634 US retail bank customers in 1999."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The \"9\" prefix in the column names (9Profit, 9Online) means:",
+     "options": [
+      "The ninth sample",
+      "Nine variables",
+      "Category 9",
+      "The year 1999"
+     ],
+     "answer": 3,
+     "why": "The full file also has columns prefixed 0 for the year 2000."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Mean profit is $111.50 and the median is $9. This tells you:",
+     "options": [
+      "Profit is heavily skewed - a few very profitable customers pull the mean up",
+      "Most customers earn about $111",
+      "A data error",
+      "The SD is small"
+     ],
+     "answer": 0,
+     "why": "The median tells the story the mean hides."
+    },
+    {
+     "tag": "MCQ",
+     "q": "9Tenure is complete for every customer because:",
+     "options": [
+      "Customers always answer it",
+      "It was imputed",
+      "It is a binary variable",
+      "It comes from the bank's own database - the customer did not have to supply it"
+     ],
+     "answer": 3,
+     "why": "Age and income came from forms and are missing for about a quarter of customers."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Roughly what share of Pilgrim customers were unprofitable in 1999?",
+     "options": [
+      "26%",
+      "12%",
+      "70%",
+      "46%"
+     ],
+     "answer": 3,
+     "why": "14,580 of 31,634; the top 10% deliver about 70% of the profit."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The four-step Pilgrim ladder for any \"does X drive profit?\" question is:",
+     "options": [
+      "Plot, colour, present, decide",
+      "Sort, sum, average, chart",
+      "Compare group means; test significance; control for confounders; check missing-data bias",
+      "Survey, tree, EMV, decide"
+     ],
+     "answer": 2,
+     "why": "Parts III and IV climb exactly this ladder."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Sales data equals demand data:",
+     "options": [
+      "Only until a stock-out; after that sales undercount demand and the data is censored",
+      "Only when prices are constant",
+      "Always",
+      "Only for services"
+     ],
+     "answer": 0,
+     "why": "The customers who found the shelf empty leave no trace; uncensoring estimates the demand you never saw."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Hawthorne effect warns that:",
+     "options": [
+      "Forecasts improve with observation",
+      "Surveys always understate demand",
+      "People behave differently when they know they are being watched, so pilot or audit data can flatter",
+      "Machines slow down when observed"
+     ],
+     "answer": 2,
+     "why": "Size the plan on normal weeks, not the week the auditors were on the floor."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the Bass model, imitators are moved by:",
+     "options": [
+      "Price cuts only",
+      "Advertising and media (coefficient p)",
+      "Government mandates",
+      "Word of mouth - they adopt because others have (coefficient q)"
+     ],
+     "answer": 3,
+     "why": "Innovators respond to external influence (p); imitators to internal influence (q); together they trace the S-curve."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Bass model is used when:",
+     "options": [
+      "The data is a panel",
+      "Demand is certain",
+      "Five years of sales history exist",
+      "The product category does not yet exist, so there is no history to extrapolate"
+     ],
+     "answer": 3,
+     "why": "Kindle, the first smartwatch - forecast adoption from the two kinds of buyers instead."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The economic order quantity balances:",
+     "options": [
+      "Revenue and profit",
+      "Price and quality",
+      "Demand and supply",
+      "Ordering cost against holding cost - total cost is U-shaped and EOQ sits at its bottom"
+     ],
+     "answer": 3,
+     "why": "Many small orders cost ordering effort; few large orders cost holding space and capital."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Safety stock exists to:",
+     "options": [
+      "Cover the uncertainty in demand and lead time that the EOQ formula cannot see",
+      "Replace forecasting",
+      "Increase markdowns",
+      "Reduce the order quantity"
+     ],
+     "answer": 0,
+     "why": "The service version is surge capacity - extra analysts or riders for the night volume spikes."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The bullwhip effect is best described as:",
+     "options": [
+      "Small changes in consumer demand amplified up the supply chain - an information problem disguised as an inventory problem",
+      "A pricing problem",
+      "A quality problem",
+      "A transport problem"
+     ],
+     "answer": 0,
+     "why": "Independent forecasts, safety buffers, order batching, promotions and shortage gaming each add to the swing."
+    },
+    {
+     "tag": "MCQ",
+     "q": "CPFR fixes the bullwhip by:",
+     "options": [
+      "Building one shared retailer-supplier forecast on shared point-of-sale data, with shorter order cycles",
+      "Cancelling promotions",
+      "Holding more inventory at every tier",
+      "Ordering in larger batches"
+     ],
+     "answer": 0,
+     "why": "Collaborative planning, forecasting and replenishment; vendor-managed inventory is a cousin."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"With chaos comes revenue; with order comes profit\" means:",
+     "options": [
+      "Order reduces revenue",
+      "Disruption creates the revenue opportunity; operational discipline is what turns it into profit",
+      "Profit requires chaos",
+      "Disorderly companies are more profitable"
+     ],
+     "answer": 1,
+     "why": "Jio's launch created chaos and revenue; the profit needed operational order underneath."
+    }
+   ]
+  },
+  {
+   "name": "Session 2: Deciding under risk",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "Which statement best captures the module's definition of a good decision?",
+     "options": [
+      "One that follows the precedent that worked the last time",
+      "One that produces the desirable outcome",
+      "One approved by the most experienced person in the room",
+      "One based on logic, that considers all available data and alternatives and is arrived at through rational analysis"
+     ],
+     "answer": 3,
+     "why": "Outcome, precedent and seniority are all substitutes for process; the definition is about the process and the information available at the time."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Being wrong feels exactly like being right.\" The point of this line was that:",
+     "options": [
+      "Wrong decisions are as common as right ones",
+      "Emotions should be kept out of decision making",
+      "Until you discover you were wrong, your confidence is identical - so confidence is not evidence of being right",
+      "Outcomes take time to materialise"
+     ],
+     "answer": 2,
+     "why": "Every feeling the class listed was the feeling of finding out; before that moment, wrong and right feel the same."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why does judging decisions by their outcome \"promote mediocrity\"?",
+     "options": [
+      "It makes people take excessive risks to chase results",
+      "It ignores the ethical dimension",
+      "Outcomes are hard to measure accurately",
+      "People copy precedent as a safety net and avoid the full-potential option, because rewards and penalties follow outcomes"
+     ],
+     "answer": 3,
+     "why": "When outcomes are rewarded and punished, everyone plays safe and the organisation settles in the middle - neither failing nor realising its potential."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A manager used all available data and considered every option; the market turned bad and the product lost money. By the session's standard the decision was:",
+     "options": [
+      "Bad, because it lost money",
+      "Good, because decision quality is judged on the process and the information available at the time",
+      "Neither - too early to tell",
+      "Bad, because the loss could have been predicted"
+     ],
+     "answer": 1,
+     "why": "Under risk, a sound process can meet an unlucky state of nature; the outcome reflects chance, not the decision."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the Alcoa story, why was the plant executive fired?",
+     "options": [
+      "He opposed the union",
+      "An accident occurred on his plant",
+      "He tried to cover up an accident - the outcome mindset the CEO was eliminating",
+      "He missed his production targets"
+     ],
+     "answer": 2,
+     "why": "Accidents were allowed to happen once; hiding one was not, because cover-ups mean the process is being fudged."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why could the unions not resist Paul O'Neill's changes to how work was done at Alcoa?",
+     "options": [
+      "Unions had little power in 1987",
+      "The analysts backed him publicly",
+      "Every change was framed as removing a hazard to workers, which no union can oppose",
+      "He offered higher wages in return"
+     ],
+     "answer": 2,
+     "why": "Safety was the door through which every process was re-examined; nobody can argue for keeping a hazardous process."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The stock price fell immediately after O'Neill's first speech. This illustrates:",
+     "options": [
+      "That analysts had perfect information",
+      "The market grading a leader on an early \"outcome\" before any process had been built",
+      "That safety programmes destroy shareholder value",
+      "Sensitivity analysis"
+     ],
+     "answer": 1,
+     "why": "The analysts judged the outcome of one speech; the process he built took thirteen years to show in profits."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why does design thinking forbid talking about solutions in its first steps?",
+     "options": [
+      "Customers cannot evaluate solutions",
+      "Problems are more interesting than solutions",
+      "Solutions are expensive to prototype",
+      "Once invested in a solution, we reshape the problem so that the solution fits it"
+     ],
+     "answer": 3,
+     "why": "Emotional investment in a solution creates the bias of moulding the problem to fit; the ban protects step one."
+    },
+    {
+     "tag": "MCQ",
+     "q": "For the blind child who wants to play basketball, the session's \"real problem\" was:",
+     "options": [
+      "The child cannot see",
+      "No eye transplant is possible",
+      "The child cannot independently navigate an unfamiliar space",
+      "Basketball is unsafe for the child"
+     ],
+     "answer": 2,
+     "why": "\"Cannot see\" is the symptom; the navigation problem is the one echolocation actually solves."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is the professor's test that you treated a symptom rather than the root cause?",
+     "options": [
+      "The fix cost more than the budget",
+      "The next fire arrives without a significant period of calm",
+      "The team disagreed with the fix",
+      "The fix took longer than a week"
+     ],
+     "answer": 1,
+     "why": "Calm after a fix is the evidence that the cause was treated; back-to-back fires mean the cause is still there."
+    },
+    {
+     "tag": "MCQ",
+     "q": "If firefighting happens daily, which of these was NOT listed as a possible reason?",
+     "options": [
+      "The processes are broken",
+      "The team is not aligned or motivated",
+      "The processes are fine but their implementation is broken",
+      "The organisation has too many strategic projects"
+     ],
+     "answer": 3,
+     "why": "The four listed reasons were broken processes, broken implementation, an unaligned team, and treating symptoms - not too much strategy."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which step of the six-step process should receive the most time?",
+     "options": [
+      "Step 4: estimate the payoffs",
+      "Step 5: select the model",
+      "Step 1: define the problem",
+      "Step 6: apply the model"
+     ],
+     "answer": 2,
+     "why": "\"Solving the right problem roughly beats solving the wrong problem accurately\" - steps 5 and 6 are mechanical."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of these is a state of nature rather than a course of action?",
+     "options": [
+      "Conducting a market survey",
+      "The market turning out unfavourable",
+      "Constructing a small plant",
+      "Charging a fee for online banking"
+     ],
+     "answer": 1,
+     "why": "The other three are choices under the decision-maker's control; the market's reaction is not."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"What is the probability that TLC chooses the large plant?\" The correct response is:",
+     "options": [
+      "One in three, since there are three alternatives",
+      "0.5, from the payoff table",
+      "It equals the EMV divided by the payoff",
+      "The question is malformed - alternatives are chosen (1 or 0); only states of nature carry probabilities"
+     ],
+     "answer": 3,
+     "why": "This was the professor's explicit concept trap: you pick alternatives, you do not roll dice on them."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why does the six-step process insist on listing ALL alternatives?",
+     "options": [
+      "To make the payoff table larger",
+      "To satisfy auditors",
+      "To neutralise the bias that quietly drops options we dislike or over-favours our own idea before the analysis begins",
+      "Because the model cannot run with fewer than three"
+     ],
+     "answer": 2,
+     "why": "The rival's-product example: national launch vanishes from a rival's list, the small-town test vanishes from your own."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A payoff in step 4 need NOT be:",
+     "options": [
+      "Estimated for every alternative-state combination",
+      "Monetary",
+      "Tied to the performance measure of the decision",
+      "Comparable across alternatives"
+     ],
+     "answer": 1,
+     "why": "Market share is a perfectly valid payoff; \"monetary\" in EMV is only a label."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Decision making under uncertainty differs from decision making under risk in that:",
+     "options": [
+      "Under risk the outcome of each action is certain",
+      "Uncertainty uses EMV while risk uses linear programming",
+      "Under uncertainty there is only one state of nature",
+      "Under uncertainty the probabilities of the states are unknown; under risk they are estimated"
+     ],
+     "answer": 3,
+     "why": "Both have several states of nature; the difference is whether you can attach probabilities."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Amazon launching the Kindle before e-readers existed as a category is an example of decision making under:",
+     "options": [
+      "Risk",
+      "Sensitivity",
+      "Uncertainty",
+      "Certainty"
+     ],
+     "answer": 2,
+     "why": "No historical data and no probability estimates for how the market would react - \"shooting in the dark\"."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Tools for decision making under certainty include:",
+     "options": [
+      "Linear and integer programming",
+      "EMV maximisation and EOL minimisation",
+      "Bayes' theorem",
+      "Decision trees"
+     ],
+     "answer": 0,
+     "why": "Under certainty each action has one known outcome, so the job is optimisation - operations research."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Per the session, using gut feeling in analytical decision making is:",
+     "options": [
+      "Acceptable, because it is inference from a sample of experience - what is unacceptable is stubbornness when the evidence disagrees",
+      "A substitute for market research",
+      "To be avoided altogether",
+      "Only acceptable for the most senior person"
+     ],
+     "answer": 0,
+     "why": "Gut feeling works like statistics - a sample generalised to the whole; the sin is refusing to examine it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Challenger engineers' chart failed to convince because:",
+     "options": [
+      "It showed only launches with O-ring problems, omitting the successful launches that all sat at warmer temperatures",
+      "It had too few data points to plot",
+      "It was drawn by managers rather than engineers",
+      "It used the wrong temperature units"
+     ],
+     "answer": 0,
+     "why": "Failures alone appeared at all temperatures; adding the successes showed that no clean launch had happened below the threshold."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The lesson the professor drew from Challenger was:",
+     "options": [
+      "Launch schedules should never be delayed",
+      "Managers should never overrule engineers",
+      "Gut feeling should be ignored in engineering",
+      "The engineers' gut was right but they never found the data to support it - look at the successes, not only the failures"
+     ],
+     "answer": 3,
+     "why": "Their instinct was correct and later proved; what failed was the second check - finding the right data."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The EMV of an alternative is:",
+     "options": [
+      "Its payoff minus its opportunity loss",
+      "Its best-case payoff",
+      "The probability-weighted average of its payoffs across the states of nature",
+      "Its most likely payoff"
+     ],
+     "answer": 2,
+     "why": "A weighted average where the weights are the probabilities - the professor's translation for non-mathematicians."
+    },
+    {
+     "tag": "MCQ",
+     "q": "At P = 0.5, EMV of the large plant is:",
+     "options": [
+      "Rs. 40,000",
+      "Rs. 10,000",
+      "Rs. 20,000",
+      "Rs. 200,000"
+     ],
+     "answer": 1,
+     "why": "0.5 x 200,000 + 0.5 x (-180,000) = 100,000 - 90,000 = 10,000."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The EMV criterion selects the SMALLEST EMV when:",
+     "options": [
+      "The probabilities are below 0.5",
+      "The payoff is a cost or risk measure, where smaller is better",
+      "There are more than two states of nature",
+      "Never - it always selects the largest"
+     ],
+     "answer": 1,
+     "why": "\"Best\" depends on the payoff: largest for profit, revenue or share; smallest for cost, risk or defects."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"The small plant never actually earns 40,000.\" The right interpretation of EMV = 40,000 is:",
+     "options": [
+      "It is a rounding artefact of the table",
+      "It is the median profit",
+      "It is the long-run average per instance if the same decision were repeated many times under the same probabilities",
+      "It is the guaranteed profit"
+     ],
+     "answer": 2,
+     "why": "Over ten launches, five favourable and five unfavourable, the small plant nets 400,000 - 40,000 per launch."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Over ten repetitions with five favourable and five unfavourable markets, the large plant nets in total:",
+     "options": [
+      "Rs. -900,000",
+      "Rs. 10,000",
+      "Rs. 1,000,000",
+      "Rs. 100,000"
+     ],
+     "answer": 3,
+     "why": "5 x 200,000 - 5 x 180,000 = 1,000,000 - 900,000 = 100,000 over ten instances, i.e. 10,000 per instance."
+    },
+    {
+     "tag": "MCQ",
+     "q": "EOL minimisation compared with EMV maximisation:",
+     "options": [
+      "Needs no probabilities",
+      "Always recommends the same alternative",
+      "Is used only under uncertainty",
+      "Can recommend a different alternative"
+     ],
+     "answer": 1,
+     "why": "The mathematics guarantees the same choice; that is why the class focuses on EMV."
+    },
+    {
+     "tag": "MCQ",
+     "q": "For TLC at P = 0.5, the EOL of the small plant is:",
+     "options": [
+      "Rs. 60,000",
+      "Rs. 40,000",
+      "Rs. 90,000",
+      "Rs. 100,000"
+     ],
+     "answer": 0,
+     "why": "Regrets are 100,000 (favourable) and 20,000 (unfavourable): 0.5 x 100,000 + 0.5 x 20,000 = 60,000 - which also equals EVPI."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The range of P (probability of a favourable market) over which the small plant is the best choice is:",
+     "options": [
+      "0.5 to 1",
+      "0.615 to 1",
+      "0.167 to 0.615",
+      "0 to 0.167"
+     ],
+     "answer": 2,
+     "why": "Below 0.167 do nothing wins; above 0.615 the large plant wins; the small plant holds the middle."
+    },
+    {
+     "tag": "MCQ",
+     "q": "If P = 0.70, EMV recommends:",
+     "options": [
+      "Small plant, EMV 64,000",
+      "Do nothing",
+      "Indifferent between small and large",
+      "Large plant, EMV 86,000"
+     ],
+     "answer": 3,
+     "why": "380,000 x 0.7 - 180,000 = 86,000 beats 120,000 x 0.7 - 20,000 = 64,000; 0.70 is above the 0.615 threshold."
+    },
+    {
+     "tag": "MCQ",
+     "q": "If P = 0.60, EMV recommends:",
+     "options": [
+      "Large plant, EMV 48,000",
+      "Large plant, because 0.60 is above 0.5",
+      "Do nothing",
+      "Small plant, EMV 52,000"
+     ],
+     "answer": 3,
+     "why": "0.60 is still below the 0.615 threshold: small = 52,000 beats large = 48,000. The 0.5 estimate is irrelevant; the threshold is what matters."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A decision is called \"sensitive\" when:",
+     "options": [
+      "A small change in an input flips the recommended alternative",
+      "The payoff table has more than three rows",
+      "The probabilities are subjective",
+      "Its EMV is negative"
+     ],
+     "answer": 0,
+     "why": "Sensitivity analysis asks how much the inputs can move before the answer changes; a thin cushion means sensitive."
+    },
+    {
+     "tag": "MCQ",
+     "q": "When sensitivity analysis shows a very thin cushion, the professor's advice is to:",
+     "options": [
+      "Buy perfect information at any price",
+      "Proceed, but prepare a contingency plan - accepting that risk management has a cost",
+      "Choose the alternative with the smallest possible loss instead",
+      "Abandon the decision until better data arrives"
+     ],
+     "answer": 1,
+     "why": "If the upper threshold were 0.515 nobody's gut can tell 50% from 51%; so line up suppliers, a leased plant or a subcontractor in advance."
+    },
+    {
+     "tag": "MCQ",
+     "q": "EVPI equals:",
+     "options": [
+      "The cost of a market survey",
+      "The best payoff in the table",
+      "The EMV of the best alternative",
+      "The expected value with perfect information minus the best EMV without it"
+     ],
+     "answer": 3,
+     "why": "Worth of information = what you make with it minus what you make without it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "EVwPI for TLC is 100,000 because:",
+     "options": [
+      "It is the sum of the positive payoffs divided by three",
+      "It is EMV(large) + EMV(small) + 50,000",
+      "It is the large-plant payoff halved",
+      "It is the best payoff in each state weighted by that state's probability: 0.5 x 200,000 + 0.5 x 0"
+     ],
+     "answer": 3,
+     "why": "Take the best payoff in each state and weight it by that state’s probability: 0.5 × 200,000 + 0.5 × 0 = 100,000."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Information is worth paying for only if:",
+     "options": [
+      "Its cost is below the best payoff",
+      "It comes from a reputed agency",
+      "It would change the course of action you would otherwise take",
+      "It is 100 percent accurate"
+     ],
+     "answer": 2,
+     "why": "If you would do the same thing with or without it, it is worth nothing however accurate it is."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A consultant offers TLC perfect information about the market for Rs. 65,000. TLC should:",
+     "options": [
+      "Accept only if the probability of a favourable market is 0.5",
+      "Counter-offer at 62,000",
+      "Decline, since EVPI of 60,000 is the ceiling on what the information is worth",
+      "Accept, since 65,000 exceeds the small plant's EMV"
+     ],
+     "answer": 2,
+     "why": "Any price above 60,000 leaves TLC worse off than deciding without the information."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In computing EVwPI, the informant's \"favourable\" and \"unfavourable\" messages are weighted 0.5 and 0.5 because:",
+     "options": [
+      "EMV happened to be computed at 0.5",
+      "Perfect information is always a 50-50 proposition",
+      "They are our own estimates of the market, and we cannot hold two different estimates of the same thing",
+      "The informant has exactly two possible messages"
+     ],
+     "answer": 2,
+     "why": "Had the prior been 60-40, a truthful informant would say \"favourable\" 60 percent of the time."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Calcutta bakery could reduce its demand uncertainty most directly by:",
+     "options": [
+      "Stocking more of every product",
+      "Discarding fewer items at closing time",
+      "Raising prices on popular items",
+      "Offering a pre-booking discount funded from EVPI, converting some walk-ins into committed orders"
+     ],
+     "answer": 3,
+     "why": "The customer is the one who can remove tomorrow's demand uncertainty, and needs an incentive to do so; EVPI caps that incentive."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Per the session, OnePlus's invite-only launch and Xiaomi's flash sales were:",
+     "options": [
+      "EVSI exercises",
+      "Marketing tactics creating scarcity and exclusivity - not uncertainty-management devices",
+      "Ways to obtain perfect demand information",
+      "Markdown strategies"
+     ],
+     "answer": 1,
+     "why": "They created the feeling of owning something not everyone can get; inventory was not the constraint."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In a decision tree:",
+     "options": [
+      "Squares are chance nodes and circles are decision nodes",
+      "Both node types are drawn from right to left",
+      "Branches out of a square carry probabilities",
+      "Squares are decision nodes whose branches are courses of action; circles are outcome nodes whose branches are states of nature with probabilities"
+     ],
+     "answer": 3,
+     "why": "Square = you choose; circle = nature decides. Only the circle's branches have probabilities."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A decision tree is drawn from left to right in the sequence in which events unfold so that:",
+     "options": [
+      "It fits on a landscape slide",
+      "The payoffs appear last",
+      "The probabilities sum to one",
+      "You never assume information that will not yet be available, and you see what you will know at each point"
+     ],
+     "answer": 3,
+     "why": "The sequence is the discipline: read the survey before you choose the plant, not after."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Solving (\"folding back\") a decision tree means:",
+     "options": [
+      "Evaluating only the leftmost node",
+      "Working right to left: computing expected value at circles, choosing the best branch at squares and marking the rejected ones",
+      "Working right to left, choosing the best branch at circles",
+      "Working left to right, computing EMV at squares"
+     ],
+     "answer": 1,
+     "why": "Branches fold into their nearest node: average at circles, choose at squares, slash what you drop."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the survey tree, what immediately follows the \"conduct survey\" branch?",
+     "options": [
+      "A decision node with large, small and no plant",
+      "A chance node for the survey result - favourable (0.45) or unfavourable (0.55) - because you read the report before deciding",
+      "A payoff of -10,000",
+      "The market outcome node"
+     ],
+     "answer": 1,
+     "why": "Drawing a square straight after the survey was the mistake most of the class made."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why do the payoffs on the survey side read 190,000 and -190,000 instead of 200,000 and -180,000?",
+     "options": [
+      "The Rs. 10,000 survey cost is committed the moment you decide to survey, so every payoff on that side is reduced by 10,000",
+      "The survey changes the market",
+      "Because of a five percent tax",
+      "Because the probabilities changed to 0.78 and 0.22"
+     ],
+     "answer": 0,
+     "why": "Even \"no plant\" becomes -10,000 on the survey side; the money is spent regardless of what follows."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Given a favourable survey result, the best action and its EMV are:",
+     "options": [
+      "Small plant, 63,600",
+      "Large plant, 106,400",
+      "Large plant, 200,000",
+      "No plant, -10,000"
+     ],
+     "answer": 1,
+     "why": "0.78 x 190,000 + 0.22 x (-190,000) = 106,400 beats 63,600 and -10,000."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Given an unfavourable survey result, the best action and its EMV are:",
+     "options": [
+      "Small plant, 2,400",
+      "Large plant, -87,400",
+      "No plant, -10,000",
+      "Small plant, 40,000"
+     ],
+     "answer": 0,
+     "why": "0.27 x 90,000 + 0.73 x (-30,000) = 2,400 - small, positive, and better than -10,000 or -87,400."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The EMV of \"conduct the survey\" (node 1) is:",
+     "options": [
+      "49,200",
+      "40,000",
+      "59,200",
+      "108,800"
+     ],
+     "answer": 0,
+     "why": "0.45 x 106,400 + 0.55 x 2,400 = 47,880 + 1,320 = 49,200 - already net of the survey cost."
+    },
+    {
+     "tag": "MCQ",
+     "q": "EVSI for the TLC survey is:",
+     "options": [
+      "Rs. 49,200",
+      "Rs. 19,200",
+      "Rs. 9,200",
+      "Rs. 60,000"
+     ],
+     "answer": 1,
+     "why": "Value with the survey if it were free (49,200 + 10,000 = 59,200) minus 40,000 without it; 9,200 is the net gain after paying."
+    },
+    {
+     "tag": "MCQ",
+     "q": "TLC's optimal strategy is:",
+     "options": [
+      "Survey; build large if favourable, nothing if unfavourable",
+      "Survey; build large if favourable, small if unfavourable",
+      "Survey; build small in both cases",
+      "Skip the survey and build the small plant"
+     ],
+     "answer": 1,
+     "why": "The folded-back tree prescribes a complete policy, not a single action - that is what a table cannot do."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of the following is always true?",
+     "options": [
+      "EVSI is greater than or equal to EVPI",
+      "EVSI is zero whenever the survey costs money",
+      "EVSI equals EVPI minus the survey cost",
+      "EVSI is less than or equal to EVPI"
+     ],
+     "answer": 3,
+     "why": "Imperfect information can never be worth more than perfect information: 19,200 against 60,000 here."
+    },
+    {
+     "tag": "MCQ",
+     "q": "P(favourable market | survey favourable) = 0.78 and P(unfavourable market | survey unfavourable) = 0.73 are not symmetric because:",
+     "options": [
+      "A test's false-positive and false-negative error rates need not be equal - as with the COVID rapid antigen test",
+      "The survey costs money",
+      "0.45 + 0.55 must equal one",
+      "The slide contains a typo"
+     ],
+     "answer": 0,
+     "why": "Different error rates, and different stakes for each error, are the norm rather than the exception."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why should a survey vendor's historical accuracy (say 70 percent) NOT be plugged straight into the tree?",
+     "options": [
+      "Trees accept only round numbers",
+      "Historical data is always unreliable",
+      "The probabilities must be customised to the current prior - a near-certain product and a 50-50 product cannot get identical survey probabilities",
+      "Vendors always overstate accuracy"
+     ],
+     "answer": 2,
+     "why": "The COVID-vaccine example: a survey on a 90-10 product must point more confidently than the same survey on a coin toss."
+    },
+    {
+     "tag": "MCQ",
+     "q": "With a prior of 0.5/0.5, P(survey positive | favourable) = 0.70 and P(survey positive | unfavourable) = 0.20, the posterior P(favourable | survey positive) is:",
+     "options": [
+      "0.35",
+      "0.45",
+      "0.70",
+      "0.78"
+     ],
+     "answer": 3,
+     "why": "Joint probabilities 0.35 and 0.10 sum to 0.45; 0.35 / 0.45 = 0.78."
+    },
+    {
+     "tag": "MCQ",
+     "q": "P(survey positive) = 0.45 was obtained as:",
+     "options": [
+      "1 - 0.78 + 0.22",
+      "0.70 x 0.50 + 0.20 x 0.50",
+      "0.70 x 0.78",
+      "0.70 x 0.50 only"
+     ],
+     "answer": 1,
+     "why": "The total of the joint probabilities across both states of nature - the denominator in Bayes' theorem."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Pilgrim Bank assignment asks whether to charge a fee or offer a rebate for online banking. The rebate makes sense when:",
+     "options": [
+      "Interest rates are falling",
+      "Customers refuse to pay fees",
+      "Online banking lowers the bank's servicing cost, so migrating customers online is worth paying for",
+      "Online customers are wealthier"
+     ],
+     "answer": 2,
+     "why": "The fee logic applies when online banking is an additional facility on top of continued branch cost."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Sales data equals demand data only when:",
+     "options": [
+      "Marketing spend was zero",
+      "The Bass model was used",
+      "Prices were constant",
+      "There was no stock-out"
+     ],
+     "answer": 3,
+     "why": "After a stock-out, sales undercount demand - the campus-session point the class recalled."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Ross selling last season's bag at a permanently lower price is:",
+     "options": [
+      "A markdown - a permanent reduction once demand falls short",
+      "A stock-out",
+      "An event discount like Zara on Black Friday",
+      "An EVPI exercise"
+     ],
+     "answer": 0,
+     "why": "A true markdown never returns to the original price; Zara's Black Friday price does."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor's distinction between a fishbone diagram and a decision tree is:",
+     "options": [
+      "Fishbone is for root-cause analysis (chains of why); the tree structures the solution once the problem is defined",
+      "Both solve the same problem in different notation",
+      "The tree is for root cause; the fishbone for options",
+      "Fishbone is for numbers; the tree is for pros and cons"
+     ],
+     "answer": 0,
+     "why": "Fishbone belongs before step one; the tree belongs after step four."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The CPWD architect's Canada decision illustrates:",
+     "options": [
+      "A well-informed decision with a poor outcome (COVID) still being a good decision - process over outcome",
+      "Sensitivity analysis",
+      "The value of perfect information",
+      "That personal decisions cannot use trees"
+     ],
+     "answer": 0,
+     "why": "The tree in his diary showed he had let go of what he had chosen to let go of; COVID was not knowable."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The slide's five steps of decision tree analysis are:",
+     "options": [
+      "Sort, sum, average, chart, decide",
+      "Define the problem; draw the tree; assign probabilities to the states of nature; estimate payoffs; solve by computing EMVs at the state-of-nature nodes",
+      "List alternatives; compute EOL; buy information; survey; launch",
+      "Draw, colour, present, argue, decide"
+     ],
+     "answer": 1,
+     "why": "Steps 3 and 4 put numbers on the tree; step 5 folds it back from the right."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Decision trees are most beneficial when:",
+     "options": [
+      "There is only one alternative",
+      "Probabilities are unknown",
+      "A sequence of decisions must be made, such as survey first and then choose the plant",
+      "The payoff table has two columns"
+     ],
+     "answer": 2,
+     "why": "Any decision table can be drawn as a tree; a sequence of decisions cannot be held in a table at all."
+    },
+    {
+     "tag": "MCQ",
+     "q": "According to the slide, probability values for a tree can come from:",
+     "options": [
+      "Only market surveys",
+      "Only historical data",
+      "Management's experience and intuition, historical data, or computation from other data using Bayes' theorem",
+      "The payoff table"
+     ],
+     "answer": 2,
+     "why": "Bayes incorporates the initial estimate and the accuracy of the information source, and revises the estimate as new information arrives."
+    },
+    {
+     "tag": "MCQ",
+     "q": "EVwPI is defined as:",
+     "options": [
+      "The long-run average return if perfect information were available before each decision: the best payoff in each state, weighted by that state's probability",
+      "The best single payoff in the table",
+      "The survey cost",
+      "The EMV of the best alternative"
+     ],
+     "answer": 0,
+     "why": "For TLC: 0.5 x 200,000 + 0.5 x 0 = 100,000."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Google testing a new product first inside the team, then with family and friends, then with all employees, then in a beta is an example of:",
+     "options": [
+      "Converting uncertainty into risk with proxies - each stage produces an estimate you can put on a tree",
+      "Sensitivity analysis",
+      "Perfect information",
+      "Decision making under certainty"
+     ],
+     "answer": 0,
+     "why": "Most decisions start in uncertainty; proxies move them into the risk column."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The kirana store owner facing a new dark store two streets away lists: start own delivery, list on a platform, or do nothing. Those three are:",
+     "options": [
+      "Courses of action",
+      "Probabilities",
+      "States of nature",
+      "Payoffs"
+     ],
+     "answer": 0,
+     "why": "How heavily the neighbourhood takes to delivery is the state of nature; monthly profit is the payoff."
+    }
+   ]
+  },
+  {
+   "name": "Session 3: From data to an estimate",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "When a student said the Pilgrim data was too messy and incomplete to support a decision, the professor's response was that:",
+     "options": [
+      "Real business data is always messy, and not deciding is usually not one of the options",
+      "Only the rows with complete age and income should be used",
+      "More data should be collected before deciding",
+      "The decision should wait for the year-2000 columns"
+     ],
+     "answer": 0,
+     "why": "Missing values are the normal condition of data; postponing a decision usually means it gets taken for you when options expire."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Making every survey question mandatory tends to:",
+     "options": [
+      "Raise the response rate",
+      "Make people abandon the survey or type garbage",
+      "Eliminate missing values with no side effects",
+      "Improve the quality of the answers"
+     ],
+     "answer": 1,
+     "why": "The information you want is not the respondent's obligation; forcing it produces exits or junk."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the professor's framing, retaining customers and building relationships are:",
+     "options": [
+      "Irrelevant for start-ups",
+      "Means to an end that comes from the vision, mission and strategy",
+      "The end goal of every for-profit company",
+      "The same thing as loyalty"
+     ],
+     "answer": 1,
+     "why": "Retention is a means; the end is profit for a for-profit firm (or market share for a start-up in its valuation phase)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Loyalty bought with freebies is weak because:",
+     "options": [
+      "Freebies reduce market share",
+      "Only large companies can afford them",
+      "Customers seek value, and someone who came for a freebie leaves for the next one",
+      "Regulators prohibit them"
+     ],
+     "answer": 2,
+     "why": "Solid loyalty comes from value delivered over a long time, not from a rebate."
+    },
+    {
+     "tag": "MCQ",
+     "q": "On the profitability skew (Exhibit 3), the horizontal axis is:",
+     "options": [
+      "Profit in ascending order",
+      "Customers in ID order",
+      "Tenure with the bank",
+      "Cumulative % of customers, sorted from most to least profitable"
+     ],
+     "answer": 3,
+     "why": "Sorting descending by profit is what makes \"the top 10%\" mean the ten percent most profitable customers."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The top 10% most profitable customers bring roughly what share of the year's profit?",
+     "options": [
+      "About 121%",
+      "About 97%",
+      "About 70%",
+      "About 50%"
+     ],
+     "answer": 2,
+     "why": "The computed figure is 69.2%; 97% is the top 20% and 121% is the peak at about 53%."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The top 20% most profitable customers bring roughly:",
+     "options": [
+      "97%",
+      "Exactly 100%",
+      "70%",
+      "80%"
+     ],
+     "answer": 0,
+     "why": "97.1% - which the class rounded to \"about 100%\". 80% is the classic Pareto figure, not this bank's."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The curve rises above 100% because:",
+     "options": [
+      "The vertical axis was mislabelled",
+      "Excel double-counted some customers",
+      "Profit grew 21% during the year",
+      "The cumulative profit of the profitable customers exceeds the net total, and the loss-makers then pull it back down"
+     ],
+     "answer": 3,
+     "why": "At the peak every profitable customer has been added ($4.29 million) and no loss-maker yet."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The peak of the curve occurs at:",
+     "options": [
+      "100% of customers",
+      "20% of customers",
+      "The median customer",
+      "The last customer with a positive profit, about 53% of customers"
+     ],
+     "answer": 3,
+     "why": "Customer 16,832 is the last one with profit above zero; everyone after subtracts."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor read the 121.6% peak as:",
+     "options": [
+      "Letting go of roughly the bottom half of customers would have raised last year's profit by about 20%",
+      "21.6% of customers are online",
+      "The bank overstated its profit by 21.6%",
+      "Online customers bring 21.6% more profit"
+     ],
+     "answer": 0,
+     "why": "The loss-making tail returned 21.6 points of the profit the good customers had earned."
+    },
+    {
+     "tag": "MCQ",
+     "q": "How many customers in the file were loss-making in 1999?",
+     "options": [
+      "3,854",
+      "27,780",
+      "16,832",
+      "14,580"
+     ],
+     "answer": 3,
+     "why": "14,580 customers (46.1%) had negative profit; 16,832 were profitable; 3,854 and 27,780 are the online and offline counts."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the recipe =A2/$E$1 for the percentage of customers, the dollar signs are there to:",
+     "options": [
+      "Keep the total-customers cell fixed when the formula is dragged down",
+      "Round the result",
+      "Format the result as currency",
+      "Convert the result to a percentage"
+     ],
+     "answer": 0,
+     "why": "Without the absolute reference, dragging would move the denominator down a row each time."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The chart type the professor used for the skew, and why:",
+     "options": [
+      "Pie chart, because the shares add to 100%",
+      "Scatter with markers only, because lines through 31,634 points make a cluttered mess",
+      "Stacked bar, to show losses separately",
+      "Line chart, because the points are ordered"
+     ],
+     "answer": 1,
+     "why": "Markers only; and tidy the axes to 20%, 40% ... rather than 0.2000 for the reader's sake."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Can a bank explicitly refuse to serve a customer because they were loss-making last year?",
+     "options": [
+      "Yes, after two loss-making years",
+      "Generally no - in India it cannot refuse service and in the West it would be treated as discrimination - so it uses implicit means",
+      "Only in India",
+      "Yes, anywhere"
+     ],
+     "answer": 1,
+     "why": "Refusal risks the licence; preferential treatment achieves the same end quietly."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor's 27-minute JetPrivilege wait, against her husband's one-minute connection, illustrates:",
+     "options": [
+      "A call-centre system failure",
+      "Deliberate steering of low-tier customers to cheap channels so agents stay free for high-tier customers",
+      "A loyalty programme error",
+      "Understaffing during a peak"
+     ],
+     "answer": 1,
+     "why": "The queue did not vanish when she hung up; Gold and Silver tiers are routed ahead of Blue."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A Rs. 10,000 annual card fee that is waived above a spending threshold is designed to:",
+     "options": [
+      "Reward every customer equally",
+      "Earn Rs. 10,000 per customer",
+      "Keep undesirable customers out while the profitable ones never pay it",
+      "Comply with regulation"
+     ],
+     "answer": 2,
+     "why": "One rule for everyone, two effects: the fee filters entrants, the waiver retains the profitable."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In Subarna's bank, a customer who stops meeting the profitability score for a tier is:",
+     "options": [
+      "Offered a rebate to stay",
+      "Charged a penalty",
+      "Downgraded to the next tier, where the cost to serve and the facilities are both lower",
+      "Asked to close the account"
+     ],
+     "answer": 2,
+     "why": "Graduated, not abrupt: the customer is weaned off expensive service rather than fired."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Gopal's car insurer refusing to renew after two claims above Rs. 1 lakh is an example of:",
+     "options": [
+      "A Pareto effect",
+      "Stratified sampling",
+      "Explicit refusal - possible in insurance, unthinkable for a bank account",
+      "Implicit channel steering"
+     ],
+     "answer": 2,
+     "why": "The professor added that many organisations do this through faulty systems rather than deliberate policy."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Pareto principle says:",
+     "options": [
+      "Effects always split exactly 80/20",
+      "A small share of the causes or elements accounts for most of the effect",
+      "It applies only to inventory",
+      "20% of the profit comes from 80% of customers"
+     ],
+     "answer": 1,
+     "why": "The exact split varies (this bank is nearer 20/97); the shape and the management response are the same."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In total quality management, the Pareto idea implies that:",
+     "options": [
+      "80% of defects cannot be fixed",
+      "Inspect 20% of the output",
+      "A handful of root causes produce most of the defects, so fix those first",
+      "20% of workers cause the defects"
+     ],
+     "answer": 2,
+     "why": "Fix the vital few causes and most of the symptoms disappear with them."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In this data, the top 20% of customers bring what share of the profit earned by the profitable customers (before losses are netted)?",
+     "options": [
+      "About 80%",
+      "About 97%",
+      "About 69%",
+      "About 20%"
+     ],
+     "answer": 0,
+     "why": "$3,423,486 of $4,288,303 is 79.8% - the 80/20 rule almost exactly; 97% is the share of the net total."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Koutons' \"50% + 40% off\" is a total discount of:",
+     "options": [
+      "90%",
+      "45%",
+      "80%",
+      "70%"
+     ],
+     "answer": 3,
+     "why": "The 40% comes off the remaining half: 50% + 40% of 50% = 70%. Cantabil's 50% + 49% is about 75%."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A full-price retailer that is on sale most days of the year is showing:",
+     "options": [
+      "Very low costs",
+      "A successful discount business model",
+      "Poorly managed demand - stock that did not sell has to be marked down",
+      "Price jacking, as the professor's grandmother believed"
+     ],
+     "answer": 2,
+     "why": "Koutons discounts by design; Shoppers Stop or Marks and Spencer discount because forecasting and lead times failed them."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Remember, you are buying to sell, not to wear yourself\" warns merchandisers against:",
+     "options": [
+      "Using employee discounts",
+      "Overbuying before a season",
+      "Copying boutique designs",
+      "Substituting their own taste for the target customer's"
+     ],
+     "answer": 3,
+     "why": "Consolidation put buying in the hands of people who are not the customer - a NIFT graduate buying for a value store."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Offshoring apparel manufacturing to China, Vietnam and Bangladesh worsened discounting because:",
+     "options": [
+      "Long lead times and logistics costs stop retailers responding to trends, so the wrong stock piles up",
+      "Quality fell",
+      "Labour became scarce",
+      "Import tariffs rose"
+     ],
+     "answer": 0,
+     "why": "Orders go in months ahead; your size sells out while the unwanted shades wait for the sale."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Zara replenishes its stores roughly every:",
+     "options": [
+      "Six weeks",
+      "Six months",
+      "15 days",
+      "Season"
+     ],
+     "answer": 2,
+     "why": "Frequent replenishment from centralised production, small displays and city fulfilment centres are all aligned around fast fashion."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Delayed differentiation means:",
+     "options": [
+      "Keeping generic components or a base product and customising at the last step, as Dell and Asian Paints do",
+      "Launching a product after competitors",
+      "Postponing markdowns to the end of the season",
+      "Cutting the number of brands stocked"
+     ],
+     "answer": 0,
+     "why": "Stock components, not finished variety: the same component serves many configurations; pigments are mixed to order."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Where can variety NOT easily be reduced, according to the class?",
+     "options": [
+      "A configure-to-order laptop maker",
+      "A value supermarket with strong bargaining power",
+      "A departmental store - drop the item a customer came for and they take all their shopping elsewhere",
+      "A paint company"
+     ],
+     "answer": 2,
+     "why": "Padmanabhan's example; Dell, Asian Paints and DMart were the cases where it works."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The lesson of Spencer's late and struggling Jiffy quick-delivery service is that:",
+     "options": [
+      "Online channels should not be launched after COVID",
+      "Kolkata is a difficult market",
+      "Quick commerce cannot work for supermarkets",
+      "Starting a new channel is easy; aligning every process behind it is where businesses fail"
+     ],
+     "answer": 3,
+     "why": "Many post-COVID online channels died for the same reason."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A population is best defined as:",
+     "options": [
+      "Everyone in the country",
+      "The sample plus the people who did not respond",
+      "The set of all elements that are of interest to the study",
+      "The 31,634 customers in the file"
+     ],
+     "answer": 2,
+     "why": "Both halves matter: all the elements, and only those this study cares about - so it changes from study to study."
+    },
+    {
+     "tag": "MCQ",
+     "q": "For an inventory-management study, the \"elements\" of the population would be:",
+     "options": [
+      "Suppliers",
+      "Customers",
+      "Store managers",
+      "SKUs"
+     ],
+     "answer": 3,
+     "why": "For a defects study they would be the possible root causes; for Pilgrim they are customers."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of these is NOT one of the reasons the professor gave for using a sample instead of the population?",
+     "options": [
+      "It is sometimes impossible, as in destructive testing",
+      "A sample is more accurate than population data",
+      "Collecting population data is expensive",
+      "It is time-consuming"
+     ],
+     "answer": 1,
+     "why": "The population is always better if you can afford it in money and time; a sample is the fallback."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is an example of destructive testing?",
+     "options": [
+      "An exit poll",
+      "Lighting an LED bulb and leaving it on until it fails, noting the hours",
+      "Counting ATM withdrawals",
+      "A customer satisfaction survey"
+     ],
+     "answer": 1,
+     "why": "The measured unit cannot be sold afterwards, so testing the whole population would leave nothing to sell."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Honda's decision not to give the 2001 Activa a spare wheel was:",
+     "options": [
+      "A talking point backed by a tyre-life claim that could only come from testing a sample destructively",
+      "A regulatory requirement",
+      "A mistake later corrected",
+      "Pure cost cutting"
+     ],
+     "answer": 0,
+     "why": "Priced like a bike, shaped like a scooter, no stepney - and a claim of about 5,000 trouble-free kilometres."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A sample is representative of the population when:",
+     "options": [
+      "It was chosen by a method that gave every element an equal chance of inclusion",
+      "It is balanced on gender",
+      "It is at least 10% of the population",
+      "It has the same demographic mix as the population"
+     ],
+     "answer": 0,
+     "why": "The definition is about the method, not the mix - you cannot balance on infinitely many characteristics."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A population of 5,000 men and 5,000 women; a sample of 100. Must it contain 50 men and 50 women?",
+     "options": [
+      "Only if the question is one where men and women are likely to answer differently",
+      "Never",
+      "Only if the sample is smaller than 30",
+      "Always"
+     ],
+     "answer": 0,
+     "why": "Balance for a trait only when it drives the answer; otherwise forcing the balance introduces bias."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In stratified sampling, the strata in the sample should be in:",
+     "options": [
+      "The same ratio as in the population, e.g. 60/40 if the population is 60/40",
+      "Equal proportions",
+      "Any convenient proportion",
+      "Inverse proportion to their size"
+     ],
+     "answer": 0,
+     "why": "And within each stratum the elements are drawn by simple random sampling."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Within each stratum of a stratified sample, elements are chosen by:",
+     "options": [
+      "Convenience",
+      "Simple random sampling",
+      "Taking the first names on the list",
+      "Expert judgement"
+     ],
+     "answer": 1,
+     "why": "Stratification fixes the ratio; randomness inside each stratum keeps the sample fair."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The main danger of convenience sampling is:",
+     "options": [
+      "Bias - the people who responded may differ systematically from those who did not",
+      "The sample is too large",
+      "It requires special software",
+      "It is too expensive"
+     ],
+     "answer": 0,
+     "why": "You did not choose the sample; the respondents did."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A school reports that its alumni earn Rs. 75 lakh a year on average, based on replies to a reunion survey. The most likely problem is:",
+     "options": [
+      "Inflation",
+      "The sample was stratified",
+      "The sample was smaller than 30",
+      "Non-response bias: those doing badly stayed silent while a few unicorn founders replied"
+     ],
+     "answer": 3,
+     "why": "A segment of the population was far more likely to respond and dragged the average up."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Rare-event sampling is needed when:",
+     "options": [
+      "Testing is destructive",
+      "The phenomenon is so rare that a random draw would never find the cases",
+      "The population is small",
+      "The data is a time series"
+     ],
+     "answer": 1,
+     "why": "A one-in-a-million disease will not appear in a simple random sample; most managers never need this method."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Statistically, a \"large sample\" is one with:",
+     "options": [
+      "At least 30% of the population",
+      "At least 1,000 elements",
+      "At least 10% of the population",
+      "At least 30 elements, regardless of the population size"
+     ],
+     "answer": 3,
+     "why": "An absolute number, not a percentage - the class's 10% answer was the corporate convention, not the statistics."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The reason 30 is the threshold is:",
+     "options": [
+      "The Pareto principle",
+      "The central limit theorem: sample averages start to follow the bell curve once samples have about 30 or more elements",
+      "Convention in one industry",
+      "An Excel limitation"
+     ],
+     "answer": 1,
+     "why": "That regularity is what the estimation and testing formulas rely on."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Beyond 30, a larger sample buys you:",
+     "options": [
+      "Nothing further",
+      "Permission to use the formulas",
+      "Precision - a smaller cushion around every estimate",
+      "Representativeness"
+     ],
+     "answer": 2,
+     "why": "Permission arrives at 30; accuracy keeps improving with the square root of n."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The three things a sample is used for are:",
+     "options": [
+      "Sorting, summing and charting",
+      "Mean, median and mode",
+      "Simple random, stratified and convenience sampling",
+      "Estimation, hypothesis testing and identifying relationships (regression)"
+     ],
+     "answer": 3,
+     "why": "This session did estimation; Session 4 does hypothesis testing; regression comes later."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An exit poll is an example of:",
+     "options": [
+      "Regression",
+      "Hypothesis testing",
+      "Destructive testing",
+      "Estimating a population proportion"
+     ],
+     "answer": 3,
+     "why": "Nobody asks every voter; a sample estimates the share in favour."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The fine print \"tested on 1,000 subjects under laboratory conditions\" exists because:",
+     "options": [
+      "It reports a regression",
+      "A claim like \"lasts 3,000 hours\" or \"makes you taller\" must rest on sample evidence that can be defended in a hypothesis test",
+      "It describes stratified sampling",
+      "It is a legal formality with no statistical content"
+     ],
+     "answer": 1,
+     "why": "Syska, Horlicks and hair-fall shampoos have all been challenged by consumer groups; the sample is the defence."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Working out how much pre-launch promotion to spend to hit a first-quarter sales target is:",
+     "options": [
+      "Sampling",
+      "Hypothesis testing",
+      "Regression - identifying the relationship and solving backwards",
+      "Estimation"
+     ],
+     "answer": 2,
+     "why": "If sales are a known function of promotion, a Rs. 50 crore target can be turned into a promotion budget."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Pilgrim 1999 file is:",
+     "options": [
+      "Time-series data",
+      "Panel data",
+      "Cross-sectional data - many customers at one point in time",
+      "Experimental data"
+     ],
+     "answer": 2,
+     "why": "It is a snapshot; following the same customers into 2000 and 2001 would make it a panel."
+    },
+    {
+     "tag": "MCQ",
+     "q": "India's GDP from 1991 to 2025 is:",
+     "options": [
+      "Panel data",
+      "Convenience data",
+      "Cross-sectional data",
+      "Time-series data"
+     ],
+     "answer": 3,
+     "why": "One variable, many points in time; the 2025 GDP of 200 countries would be cross-sectional."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Panel data is:",
+     "options": [
+      "Many elements, each followed over time - the most powerful of the three",
+      "Data from a consumer panel survey",
+      "Many elements at one point in time",
+      "One element over time"
+     ],
+     "answer": 0,
+     "why": "For each country a time series, for each year a cross-section, and the whole picture together."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why did the case use cross-sectional data as a proxy instead of an experiment with a control group?",
+     "options": [
+      "Experiments on customers are illegal",
+      "Cross-sectional data is more accurate",
+      "Tracking two groups for five to ten years is too slow - the technology would be obsolete by then",
+      "Control groups need more than 30 customers"
+     ],
+     "answer": 2,
+     "why": "So the question becomes \"are online customers more profitable than offline customers?\" rather than \"does going online make a customer more profitable?\"."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A population parameter, such as the true average profit of all five million customers, is:",
+     "options": [
+      "Equal to the sample mean",
+      "A random variable",
+      "Undefined",
+      "A fixed but unknown constant"
+     ],
+     "answer": 3,
+     "why": "If we had every row we would all compute the same number; we just do not have every row."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A sample mean is a random variable because:",
+     "options": [
+      "Excel rounds it",
+      "It has a standard deviation",
+      "The population keeps changing",
+      "Its value depends on who happens to land in the sample"
+     ],
+     "answer": 3,
+     "why": "Sample the batch's work experience from the three most senior people and the mean is high; from the three youngest and it is low."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The deviations of the values from their mean always:",
+     "options": [
+      "Sum to the standard deviation",
+      "Sum to zero",
+      "Sum to n - 1",
+      "Sum to the variance"
+     ],
+     "answer": 1,
+     "why": "The mean is the centre of gravity of the data, so negatives and positives cancel - hence the squaring."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The difference between STDEV.S and STDEV.P in Excel is that:",
+     "options": [
+      "They are identical",
+      "S divides by n; P divides by n - 1",
+      "S divides the sum of squares by n - 1; P divides by n",
+      "S is for small samples only"
+     ],
+     "answer": 2,
+     "why": "S for sample (31,633), P for population (31,634); negligible here, material with a handful of values."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why n - 1 for a sample variance?",
+     "options": [
+      "It is a safety margin",
+      "An Excel convention",
+      "Because the sample mean has already used up one degree of freedom, and dividing by n - 1 makes the estimate unbiased",
+      "To correct for rounding"
+     ],
+     "answer": 2,
+     "why": "Given the mean and nine of ten values, the tenth is determined - only nine are free to vary."
+    },
+    {
+     "tag": "MCQ",
+     "q": "For the sample 1, 2, 3, 4, 5, the sample variance is:",
+     "options": [
+      "2.5",
+      "10",
+      "2.0",
+      "1.58"
+     ],
+     "answer": 0,
+     "why": "Sum of squares 10, divided by n - 1 = 4. Dividing by 5 gives the population variance 2.0; 1.58 is the SD."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The standard deviation is expressed in:",
+     "options": [
+      "Squared units of the data",
+      "No units",
+      "The same units as the data",
+      "Percent"
+     ],
+     "answer": 2,
+     "why": "Variance is in squared units; the square root brings it back - $272.84 is in dollars."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Whether a standard deviation is \"large\" is judged:",
+     "options": [
+      "Relative to the mean - $273 is trivial against a $50,000 mean and enormous against $111.50",
+      "Against a fixed cut-off of 100",
+      "Against a cut-off of 30",
+      "Against the median"
+     ],
+     "answer": 0,
+     "why": "Then check mean +/- 1 SD and ask whether that range could support the decision."
+    },
+    {
+     "tag": "MCQ",
+     "q": "For a normal distribution, mean +/- 1 SD contains about:",
+     "options": [
+      "95% of values",
+      "50% of values",
+      "99.7% of values",
+      "68% of values (the professor used 66%)"
+     ],
+     "answer": 3,
+     "why": "95% is +/- 2 SD; 99.7% is +/- 3 SD."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Mean +/- 1 SD for the Pilgrim profit data is:",
+     "options": [
+      "$91.5 to $131.5",
+      "$107.6 to $114.0",
+      "$0 to $223",
+      "-$161 to +$384"
+     ],
+     "answer": 3,
+     "why": "111.50 +/- 272.84. The first option is what the range would be if the SD were 20; the third is the offline confidence interval."
+    },
+    {
+     "tag": "MCQ",
+     "q": "If the mean were $111.50 but the SD were $20, mean +/- 1 SD would be:",
+     "options": [
+      "$111.5 to $131.5",
+      "-$161 to +$384",
+      "$0 to $223",
+      "$91.5 to $131.5"
+     ],
+     "answer": 3,
+     "why": "Now you could say the average customer is profitable, and by roughly how much - the point of the comparison."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The median profit is $9 while the mean is $111.50. This indicates:",
+     "options": [
+      "That the SD must be small",
+      "A symmetric bell-shaped distribution",
+      "A data error",
+      "A distribution skewed by a tail of very profitable customers"
+     ],
+     "answer": 3,
+     "why": "Half the customers earn the bank $9 or less; a few earn up to $2,071 and pull the mean up."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The offline customers' mean profit and standard deviation are:",
+     "options": [
+      "$107.60 and $113.98",
+      "$110.79 and $271.30",
+      "$116.67 and $283.66",
+      "$111.50 and $272.84"
+     ],
+     "answer": 1,
+     "why": "The second pair is online; the third is everyone; the fourth is the offline confidence interval."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The number of online customers in the file is:",
+     "options": [
+      "27,780",
+      "3,142",
+      "3,854",
+      "31,634"
+     ],
+     "answer": 2,
+     "why": "27,780 are offline; 3,142 is the count for district 1100."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A student proposed dropping the loss-making customers before comparing online and offline. The professor said:",
+     "options": [
+      "Only drop customers with missing age",
+      "Only drop the offline loss-makers",
+      "No - those customers stay in the population the fee or rebate will apply to, and rules must be identical for everyone",
+      "Yes - losses distort the average"
+     ],
+     "answer": 2,
+     "why": "A threshold rule (fee waived above Rs. 3 lakh of spend) is legitimate because it is the same rule for all."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A rebate can be worth paying even when:",
+     "options": [
+      "The customer never uses online banking",
+      "It only reduces a customer's loss, say from $50 offline to $30 online",
+      "Online customers are less profitable in every group",
+      "The fee would raise more"
+     ],
+     "answer": 1,
+     "why": "Reducing losses counts; a rebate does not have to make everyone profitable."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why could the class not conclude that online customers are more profitable from $116.67 versus $110.79?",
+     "options": [
+      "The online sample is too large",
+      "The sample is smaller than 30",
+      "The gap is under 6% while the SDs are around $270-280, so a different sample could easily reverse it",
+      "Age was missing for some customers"
+     ],
+     "answer": 2,
+     "why": "Sample means are random variables; with that much spread the population could be the other way round."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A point estimate is:",
+     "options": [
+      "A range with an upper and lower limit",
+      "The true population value",
+      "The most frequent value",
+      "A single number offered as the best guess of a population parameter"
+     ],
+     "answer": 3,
+     "why": "The sample mean of $111.50 is the point estimate of the population mean."
+    },
+    {
+     "tag": "MCQ",
+     "q": "At \"gunpoint\", everyone in the class gave a range for the pen's price because:",
+     "options": [
+      "They were told to",
+      "The standard deviation was unknown",
+      "A range has a far higher chance of being right than a single number",
+      "Point estimates are not allowed"
+     ],
+     "answer": 2,
+     "why": "High stakes make you demand accuracy, and you buy accuracy by widening the range."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Minus infinity to plus infinity is a 100% confidence interval. It is:",
+     "options": [
+      "Statistically invalid",
+      "Certainly right and completely useless - which is why 100% confidence is never used",
+      "The most useful interval",
+      "The default in Excel"
+     ],
+     "answer": 1,
+     "why": "Confidence and usefulness trade off; 90%, 95% and 99% are the working compromises."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A confidence interval is built as:",
+     "options": [
+      "Mean plus or minus one standard deviation",
+      "Median plus or minus the SD",
+      "Minimum to maximum of the sample",
+      "Point estimate plus or minus a cushion"
+     ],
+     "answer": 3,
+     "why": "The cushion is z times the SD divided by the square root of n; mean +/- 1 SD describes the data, not the estimate."
+    },
+    {
+     "tag": "MCQ",
+     "q": "You should choose 99% rather than 90% confidence when:",
+     "options": [
+      "The SD is small",
+      "The cost of going wrong is very high",
+      "Always - more confidence is better",
+      "The sample is larger"
+     ],
+     "answer": 1,
+     "why": "The level is a business choice driven by the cost of error; higher confidence costs you a wider interval."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The multiplier z for a 95% confidence interval is:",
+     "options": [
+      "1.645",
+      "1.96",
+      "2.576",
+      "1.5"
+     ],
+     "answer": 1,
+     "why": "1.645 is 90%, 2.576 is 99%. NORM.S.INV(0.975) returns 1.96."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The multiplier z for a 99% confidence interval is:",
+     "options": [
+      "3.0",
+      "1.645",
+      "1.96",
+      "2.576"
+     ],
+     "answer": 3,
+     "why": "Wider than 95%: more confidence means a bigger cushion."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The cushion of a confidence interval grows with:",
+     "options": [
+      "The tenure of the customers",
+      "The sample size",
+      "The confidence level and the SD, and shrinks with the sample size",
+      "The mean"
+     ],
+     "answer": 2,
+     "why": "z and sigma sit on top of the formula; the square root of n sits underneath."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Doubling the sample size reduces the cushion by:",
+     "options": [
+      "Nothing",
+      "A factor of the square root of 2, about 29%",
+      "Three quarters",
+      "Half"
+     ],
+     "answer": 1,
+     "why": "The square root is why you need four times the data to halve the cushion."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The 95% confidence interval for offline customers' average profit is:",
+     "options": [
+      "$107.71 to $125.62",
+      "$107.60 to $113.98",
+      "-$160 to +$382",
+      "$108.50 to $114.51"
+     ],
+     "answer": 1,
+     "why": "The second is online; the third is all customers; the fourth is mean +/- 1 SD."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The online interval ($17.9 wide) is about three times the offline interval ($6.4) mainly because:",
+     "options": [
+      "The online mean is higher",
+      "Online customers have more losses",
+      "The online SD is much higher",
+      "The online sample is far smaller (3,854 against 27,780), and n sits in the denominator"
+     ],
+     "answer": 3,
+     "why": "The SDs are similar ($284 against $271); the sample size does almost all the work."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The correct way to state the offline result is:",
+     "options": [
+      "Offline profit will be $113.98 next year",
+      "95% of offline customers earn between $107.60 and $113.98",
+      "With 95% confidence, the population average profit from an offline customer lies between $107.60 and $113.98",
+      "The average offline customer earns exactly $110.79"
+     ],
+     "answer": 2,
+     "why": "The interval is about the population mean, not about individual customers."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The two 95% intervals overlap between $107.7 and $114.0. Therefore:",
+     "options": [
+      "Online is more profitable because its upper limit is higher",
+      "Offline is more profitable because its interval is tighter",
+      "Nothing can be concluded - the true means could sit either way round",
+      "The two groups are equally profitable"
+     ],
+     "answer": 2,
+     "why": "Case A (offline 113.5, online 108.5) and Case B (offline 108, online 124) are both consistent with the data."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Online must be more profitable - its interval goes up to $125.6.\" This reasoning is wrong because:",
+     "options": [
+      "The interval should have been 99%",
+      "The online sample is too small to count",
+      "The true value can be anywhere in its interval, not preferentially near the upper end",
+      "$125.6 is an outlier"
+     ],
+     "answer": 2,
+     "why": "The professor called this the most common mistake made with confidence intervals."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Non-overlapping intervals would allow a conclusion even if:",
+     "options": [
+      "Only if the SDs were equal",
+      "Never - overlap is not the test",
+      "Only if the sample sizes were equal",
+      "The sample sizes were 3,000 and 28,000"
+     ],
+     "answer": 3,
+     "why": "What matters is overlap, not matching sizes; new interventions always start with a small group."
+    },
+    {
+     "tag": "MCQ",
+     "q": "At 90% confidence the intervals are offline $108.11 to $113.46 and online $109.15 to $124.18. They:",
+     "options": [
+      "Cannot be compared at different z values",
+      "No longer overlap, so online wins",
+      "Overlap only because the SD changed",
+      "Still overlap, so the verdict is unchanged"
+     ],
+     "answer": 3,
+     "why": "Tightening the confidence narrows both intervals but never separates them; at 99% the overlap is larger still."
+    },
+    {
+     "tag": "MCQ",
+     "q": "When intervals overlap, the professor's advice on collecting more online data was:",
+     "options": [
+      "Collect more offline data instead",
+      "Usually unnecessary - the existing data has more to say if you look at it differently, which is Session 4",
+      "Always collect more",
+      "Reduce the confidence level until they separate"
+     ],
+     "answer": 1,
+     "why": "Session 4 uses the same 31,634 rows and reaches a conclusion."
+    },
+    {
+     "tag": "MCQ",
+     "q": "For the binary variable 9Online, the professor said mean and SD:",
+     "options": [
+      "Do not make much sense - the average just reports the proportion of ones; for many categories use the median",
+      "Should be replaced by the mode",
+      "Should be computed with STDEV.P",
+      "Are the right summary"
+     ],
+     "answer": 0,
+     "why": "12.2% of customers are online is the sensible statement, not \"mean 0.122, SD 0.327\"."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Mr Ambani buys a house in your neighbourhood. Should his income be excluded from the locality's average?",
+     "options": [
+      "Replace it with the median",
+      "Always - outliers are always excluded",
+      "Never - every data point counts",
+      "It depends on the question: keep it when estimating total tax revenue, drop it when asking whether the typical resident is wealthy"
+     ],
+     "answer": 3,
+     "why": "The same value is an outlier for one question and the whole point for another."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Collecting additional data points after seeing the analysis, to fill in what you wish you had observed, is:",
+     "options": [
+      "Stratified sampling",
+      "Required for anomaly detection",
+      "A shortcut to a biased result - collect first, analyse later",
+      "Good practice"
+     ],
+     "answer": 2,
+     "why": "Data gathered to match a conclusion cannot test that conclusion."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Flagging a credit-card month of several lakh when 90% of months fall between Rs. 22,000 and Rs. 30,000 is:",
+     "options": [
+      "Regression",
+      "Stratification",
+      "Anomaly detection - a value outside its usual interval triggers an alert",
+      "Estimation"
+     ],
+     "answer": 2,
+     "why": "The same confidence-interval mathematics pointed at a different question - the one a SOC baseline asks."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor's closing hint was that, in the Pilgrim data, younger customers are:",
+     "options": [
+      "More likely to be online and more profitable",
+      "Less likely to be online",
+      "No different from older customers",
+      "More likely to be online and less profitable"
+     ],
+     "answer": 3,
+     "why": "The real file agrees: about 20% of the youngest category is online against under 4% of the oldest, and profit rises with age."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the hint grid, within each age group, online beats offline by:",
+     "options": [
+      "$30 for the old only",
+      "$184 for everyone",
+      "$20 for the young and $50 for the old",
+      "$0 - they are equal"
+     ],
+     "answer": 2,
+     "why": "-$30 vs -$50 for the young; +$350 vs +$300 for the old."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Yet the overall column averages in that grid come out as:",
+     "options": [
+      "Both $138",
+      "Online $116, offline $110",
+      "Online $46, offline $230",
+      "Online $230, offline $46"
+     ],
+     "answer": 2,
+     "why": "(80 x -30 + 20 x 350)/100 = 46; (20 x -50 + 80 x 300)/100 = 230."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The reversal in the grid - online wins in every row but loses overall - is caused by:",
+     "options": [
+      "The two groups having different age mixes, and age driving profit",
+      "An Excel sorting error",
+      "Sampling error",
+      "A high standard deviation"
+     ],
+     "answer": 0,
+     "why": "Compare like with like (young with young, old with old) and the true effect reappears - the plan for Session 4."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Excel function that returns the cushion of a 95% interval directly is:",
+     "options": [
+      "=STDEV.S(range)",
+      "=NORM.S.INV(0.95)",
+      "=CONFIDENCE.NORM(0.05, SD, n)",
+      "=AVERAGE(range)/SQRT(n)"
+     ],
+     "answer": 2,
+     "why": "It equals 1.96 x SD / SQRT(n); NORM.S.INV(0.975), not 0.95, gives the 1.96."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A SOC manager reviews the tickets that analysts remember as difficult to judge quality. This is:",
+     "options": [
+      "Stratified sampling",
+      "Rare-event sampling",
+      "Convenience sampling with a bias towards memorable cases",
+      "Simple random sampling"
+     ],
+     "answer": 2,
+     "why": "Draw tickets at random across customers, severities and shifts instead."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The decision to charge a fee or pay a rebate applies to:",
+     "options": [
+      "The 3,854 online customers",
+      "The population of about five million customers",
+      "The 31,634 customers in the sample",
+      "The profitable customers only"
+     ],
+     "answer": 1,
+     "why": "That is why the whole exercise is about inferring the population from the sample."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which statement is consistent with the professor's view of customers?",
+     "options": [
+      "Every customer is equally valuable",
+      "Customers are God and must always be served",
+      "Loss-making customers should be refused service",
+      "Customers are the means of the company's success, so some are worth keeping, some changing and some letting go"
+     ],
+     "answer": 3,
+     "why": "The profitability curve makes the idea unavoidable; Section 3.3 shows how it is done without refusing anyone."
+    },
+    {
+     "tag": "MCQ",
+     "q": "From the case slides, the standard deviation of profit among profitable customers ($306) against loss-making customers ($45) tells you:",
+     "options": [
+      "Profitable customers vary enormously while losses are small and similar - the number of loss-makers, not any one of them, hurts the bank",
+      "The data has errors",
+      "Loss-makers are more varied",
+      "The mean is reliable"
+     ],
+     "answer": 0,
+     "why": "Average profitable customer $251.45; average loss-maker -$52.19; maximum $2,071; minimum -$221."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"The profit of the profitable customers is 21% more than the actual total\" and \"17% of the good customers' profit goes to loss-makers\" are:",
+     "options": [
+      "About different years",
+      "Two readings of the same numbers: $4,288,303 against $3,527,276, and $761,027 of $4,288,303",
+      "Both wrong",
+      "Contradictory"
+     ],
+     "answer": 1,
+     "why": "The peak of the curve is 121.6%; the losses are 17.7% of the gross."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The confidence level of an interval is:",
+     "options": [
+      "The sample size",
+      "The probability that the interval contains the real population mean",
+      "The standard deviation",
+      "The width of the interval"
+     ],
+     "answer": 1,
+     "why": "Higher confidence is better; a narrower interval is better; the two pull against each other."
+    },
+    {
+     "tag": "MCQ",
+     "q": "According to the case slides, an interval is too wide when:",
+     "options": [
+      "The sample is below 30",
+      "It contains zero",
+      "It exceeds one standard deviation",
+      "Your decision would differ at its lower limit and at its upper limit"
+     ],
+     "answer": 3,
+     "why": "If the bank would act the same way at $108.50 and at $114.51, that interval is narrow enough for its question."
+    }
+   ]
+  },
+  {
+   "name": "Session 4: From estimate to decision",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "A hypothesis test always involves:",
+     "options": [
+      "As many statements as there are variables",
+      "Two statements about the sample, tested with population data",
+      "Two statements about the population, tested with sample data",
+      "One statement about the sample"
+     ],
+     "answer": 2,
+     "why": "H0 and H1 are claims about the population; the sample is only the evidence."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The null and alternate hypotheses must be:",
+     "options": [
+      "Both true at once",
+      "Both testable with a census",
+      "Mutually exclusive and collectively exhaustive",
+      "Independent of each other"
+     ],
+     "answer": 2,
+     "why": "They cannot both be true, and one of them must be - together they cover every possibility."
+    },
+    {
+     "tag": "MCQ",
+     "q": "On the Delhi Metro, the \"sample\" the passengers used was:",
+     "options": [
+      "The other passengers in the compartment",
+      "The police record",
+      "The baby's birth certificate",
+      "A lifetime of observing what usually goes with what"
+     ],
+     "answer": 3,
+     "why": "Nobody knew the truth; everyone compared what they saw with their experience and found a mismatch."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The only two possible outcomes of a hypothesis test are:",
+     "options": [
+      "Accept H0 or accept H1",
+      "Prove H1 or prove H0",
+      "Significant or insignificant sample",
+      "Reject H0 or do not reject H0"
+     ],
+     "answer": 3,
+     "why": "Both verdicts are worded around the null."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Do not reject H0\" means:",
+     "options": [
+      "H0 has been proven",
+      "The evidence is not strong enough to decide - inconclusive",
+      "H1 has been proven false",
+      "The sample was too small"
+     ],
+     "answer": 1,
+     "why": "Not rejecting is not accepting; the professor repeated it twice on request."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The only hypothesis you can ever accept is:",
+     "options": [
+      "Both, with enough data",
+      "The null",
+      "Whichever has the higher p-value",
+      "The alternate"
+     ],
+     "answer": 3,
+     "why": "Rejecting H0 is the only conclusive verdict, and it means accepting H1."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The rule for framing a hypothesis is:",
+     "options": [
+      "Put whatever you want to establish in the alternate; its negation becomes the null",
+      "Put the larger group in the null",
+      "Put the status quo in the alternate",
+      "Put the action you will take in the null"
+     ],
+     "answer": 0,
+     "why": "Only \"reject H0\" is decisive, so the statement you need must be the one that gets accepted."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Case 1 for the shampoo (H0: the formula reduces hair fall) is useful to:",
+     "options": [
+      "The regulator only",
+      "A competitor or consumer advocacy group that wants to prove the claim false",
+      "The FMCG company that wants to advertise",
+      "Nobody"
+     ],
+     "answer": 1,
+     "why": "Rejecting that null establishes that the formula does not work - their win, not the company's."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Under Case 2 (H0: does not reduce; H1: reduces), rejecting H0 lets the company:",
+     "options": [
+      "Withdraw the product",
+      "Advertise, and defend the claim in court with the data",
+      "Only run more tests",
+      "Accept that the formula is no better"
+     ],
+     "answer": 1,
+     "why": "That is why the company frames it this way: one of the two outcomes lets it act."
+    },
+    {
+     "tag": "MCQ",
+     "q": "For Pilgrim Bank, \"H0: charge a fee\" is a poor hypothesis because:",
+     "options": [
+      "It has no alternate",
+      "The fee amount is unknown",
+      "Fees are unpopular",
+      "Hypotheses must be about what the data shows (profit), not the action you will take"
+     ],
+     "answer": 3,
+     "why": "The fact being tested is who is more profitable; fee or rebate is what you do with the verdict."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the Pilgrim hypotheses, the equality sign always appears in:",
+     "options": [
+      "Neither",
+      "The alternate",
+      "The null",
+      "Whichever is convenient"
+     ],
+     "answer": 2,
+     "why": "The test begins by assuming the null is true and asking how likely the sample is; \"equal\" is the natural starting point."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Frame A: H0 average offline >= average online. If H0 is rejected, the bank:",
+     "options": [
+      "Collects more data",
+      "Charges a fee",
+      "Does nothing",
+      "Offers the rebate"
+     ],
+     "answer": 3,
+     "why": "Rejecting establishes that online customers are more profitable."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Frame B: H0 average offline <= average online. If H0 is not rejected, the bank:",
+     "options": [
+      "Switches to Frame A",
+      "Does nothing",
+      "Charges a fee",
+      "Offers the rebate as its fallback"
+     ],
+     "answer": 3,
+     "why": "And that fallback is a calculated hit: costs may rise if online is not really more profitable."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The risk of Frame A's fallback (fee when inconclusive) is:",
+     "options": [
+      "Customer pushback from a blanket fee on thin evidence, though no increase in the bank's cost",
+      "Regulatory penalty",
+      "Losing the online channel",
+      "Higher servicing cost"
+     ],
+     "answer": 0,
+     "why": "Frame B's fallback risks cost; Frame A's risks customers."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Choosing between Frame A and Frame B is:",
+     "options": [
+      "A management decision about which mistake you would rather risk",
+      "Determined by the p-value",
+      "A statistical calculation",
+      "Determined by the sample size"
+     ],
+     "answer": 0,
+     "why": "Same data, opposite default actions; the frame encodes the risk appetite."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A Type I error is:",
+     "options": [
+      "Using too small a sample",
+      "Rejecting a true null",
+      "Not rejecting a false null",
+      "Choosing the wrong alpha"
+     ],
+     "answer": 1,
+     "why": "On the Metro: reporting a mother whose baby really is hers."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A Type II error is:",
+     "options": [
+      "Rejecting a true null",
+      "Rejecting the alternate",
+      "A calculation error",
+      "Not rejecting a false null"
+     ],
+     "answer": 3,
+     "why": "On the Metro: doing nothing while a kidnapper walks away."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The level of significance, alpha, is:",
+     "options": [
+      "The correlation coefficient",
+      "The confidence level",
+      "The probability of a Type II error",
+      "The tolerance for a Type I error - the maximum probability you accept of rejecting a true null"
+     ],
+     "answer": 3,
+     "why": "The methodology keeps the Type I probability within alpha; it does not directly control Type II."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The most commonly used alpha is:",
+     "options": [
+      "1%",
+      "10%",
+      "5%",
+      "0.1%"
+     ],
+     "answer": 2,
+     "why": "10% for low-stakes decisions, 1% for high stakes, 0.1% or 0.01% for nuclear plants."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A vendor claims its automation will raise your productivity; adopting means redesigning processes and re-staffing. The appropriate alpha is:",
+     "options": [
+      "50%",
+      "It does not matter",
+      "10%, to give the vendor a fair chance",
+      "1%, because the cost of going wrong is very high"
+     ],
+     "answer": 3,
+     "why": "You want the pilot to show a significant improvement before committing."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The way to reduce the probability of a Type II error is:",
+     "options": [
+      "Lower alpha",
+      "A larger sample",
+      "A higher alpha",
+      "Reframe the null"
+     ],
+     "answer": 1,
+     "why": "The test guards Type I; Type II shrinks with sample size."
+    },
+    {
+     "tag": "MCQ",
+     "q": "If you push the probability of Type I error down, the probability of Type II error:",
+     "options": [
+      "Becomes zero",
+      "Stays the same",
+      "Rises",
+      "Also falls"
+     ],
+     "answer": 2,
+     "why": "The two trade off - the legal-systems example."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the Indian legal system, H0 is that the accused is innocent. A Type I error is therefore:",
+     "options": [
+      "Setting a guilty person free",
+      "Refusing to hear the case",
+      "Punishing an innocent person",
+      "Delaying the verdict"
+     ],
+     "answer": 2,
+     "why": "Rejecting the true null \"innocent\" convicts an innocent."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In a system where H0 is that the accused is guilty, a Type I error is:",
+     "options": [
+      "Punishing an innocent person",
+      "Neither",
+      "Both",
+      "Setting a guilty person free"
+     ],
+     "answer": 3,
+     "why": "Rejecting the true null \"guilty\" frees the guilty; the Type II error there is punishing an innocent."
+    },
+    {
+     "tag": "MCQ",
+     "q": "India's layers of appeal up to the President for capital punishment exist to:",
+     "options": [
+      "Speed up justice",
+      "Push the probability of punishing an innocent (Type I) towards zero - at the cost of slow justice",
+      "Reduce Type II error",
+      "Raise alpha"
+     ],
+     "answer": 1,
+     "why": "Each layer is another check against the error the system refuses to make."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why did nobody believe the sibling at age six?",
+     "options": [
+      "There was CCTV",
+      "Given past behaviour, the probability that they broke it was high - their innocence would have been a miracle",
+      "Siblings always lie",
+      "The wind never blows indoors"
+     ],
+     "answer": 1,
+     "why": "The same logic as the p-value: suspect the explanation that requires a miracle."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Thirty years later most people believe the sibling. The lesson is:",
+     "options": [
+      "More data - and no remaining incentive to lie - can change the verdict; hypothesis testing is not written in stone",
+      "Memories fade",
+      "Beer improves honesty",
+      "The null was wrong from the start"
+     ],
+     "answer": 0,
+     "why": "Same hypothesis, larger data set, different decision."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The p-value is:",
+     "options": [
+      "The level of significance",
+      "The probability that H1 is true",
+      "The probability of getting a sample like ours if H0 is true",
+      "The probability that H0 is true"
+     ],
+     "answer": 2,
+     "why": "It is about the sample given the null, not about the null given the sample."
+    },
+    {
+     "tag": "MCQ",
+     "q": "You reject H0 when:",
+     "options": [
+      "The p-value is greater than alpha",
+      "The slope is positive",
+      "The p-value is less than alpha",
+      "The p-value equals the confidence level"
+     ],
+     "answer": 2,
+     "why": "A sample that would be a near-miracle under H0 is evidence against H0."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A p-value of 0.21 with alpha = 0.05 means:",
+     "options": [
+      "Reject H0",
+      "Do not reject H0 - a sample like this occurs one time in five under H0",
+      "H0 is proven",
+      "The test is invalid"
+     ],
+     "answer": 1,
+     "why": "Not a miracle, so the null stands unrefuted."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The two ways of testing a hypothesis taught in the module are:",
+     "options": [
+      "Confidence-interval overlap and the p-value",
+      "Regression and correlation",
+      "Mean and median",
+      "T Stat and R Square"
+     ],
+     "answer": 0,
+     "why": "Both must agree on the same data - and did (inconclusive, then p = 0.21)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In a regression, the independent variable is:",
+     "options": [
+      "The one whose value is known or decided first; the input or predictor, x",
+      "The one you want to predict",
+      "Always a 0/1 variable",
+      "The one with the larger mean"
+     ],
+     "answer": 0,
+     "why": "The dependent variable is the response, y, which happens afterwards."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the Pilgrim regression, 9Profit is:",
+     "options": [
+      "The intercept",
+      "The dependent (response) variable",
+      "A dummy variable",
+      "The independent variable"
+     ],
+     "answer": 1,
+     "why": "The customer first decides to go online; the profit follows."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The first thing to do in any regression is:",
+     "options": [
+      "Compute R Square",
+      "Delete missing rows",
+      "Compute the p-value",
+      "Plot the scatter chart"
+     ],
+     "answer": 3,
+     "why": "The scatter tells you whether a linear model is even sensible."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The best-fit line is the line that:",
+     "options": [
+      "Starts at the origin",
+      "Has slope 1",
+      "Passes through the maximum number of points",
+      "Is close to all the points, even if it passes through none"
+     ],
+     "answer": 3,
+     "why": "The school-practical mistake is drawing through the most points."
+    },
+    {
+     "tag": "MCQ",
+     "q": "To describe a straight line you need:",
+     "options": [
+      "Its slope and its intercept",
+      "Two p-values",
+      "Only its slope",
+      "Its R Square"
+     ],
+     "answer": 0,
+     "why": "Many parallel lines share a slope; the intercept says where the line cuts the y-axis."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Simple\" in simple linear regression means:",
+     "options": [
+      "A small sample",
+      "One independent variable",
+      "A 0/1 dependent variable",
+      "No intercept"
+     ],
+     "answer": 1,
+     "why": "Multiple regression has more than one independent variable; linear refers to the shape."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A COVID case curve that stays flat and then shoots up would call for:",
+     "options": [
+      "No regression",
+      "Non-linear regression",
+      "A dummy variable",
+      "Simple linear regression"
+     ],
+     "answer": 1,
+     "why": "The scatter does not look like a straight band."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Excel's regression tool is found under:",
+     "options": [
+      "Insert > Chart",
+      "Data > Data Analysis (after enabling the Analysis ToolPak add-in)",
+      "Review > Analyse",
+      "Formulas > Statistical"
+     ],
+     "answer": 1,
+     "why": "File > Options > Add-ins > Manage Excel Add-ins > Go > Analysis ToolPak."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A student's regression threw an error because:",
+     "options": [
+      "The sample exceeded 30",
+      "The whole column was selected, including the blank cells below the data",
+      "The data had negative profits",
+      "Labels were ticked"
+     ],
+     "answer": 1,
+     "why": "Select from the label cell with Ctrl + Shift + Down Arrow instead."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Ticking \"Labels\" in the regression dialog:",
+     "options": [
+      "Changes the confidence level",
+      "Removes the intercept",
+      "Names the variables in the output (9Online instead of X Variable 1)",
+      "Adds a chart"
+     ],
+     "answer": 2,
+     "why": "With several variables, unnamed outputs become confusing."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Every regression output has three tables. They are:",
+     "options": [
+      "Input, output, chart",
+      "Mean, SD, count",
+      "Summary statistics, ANOVA, coefficients",
+      "Slope, intercept, residuals"
+     ],
+     "answer": 2,
+     "why": "Whatever the software, the same three appear."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The first Pilgrim regression equation is:",
+     "options": [
+      "9Profit = 110.79 + 5.88 x 9Online",
+      "9Profit = 116.67 + 5.88 x 9Online",
+      "9Profit = 110.79 - 5.88 x 9Online",
+      "9Profit = 5.88 + 110.79 x 9Online"
+     ],
+     "answer": 0,
+     "why": "Intercept 110.786, slope 5.881."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The predicted profits from that equation for offline and online customers are:",
+     "options": [
+      "$116.67 and $110.79",
+      "$5.88 and $116.67",
+      "$110.79 and $121.85",
+      "$110.79 and $116.67 - the two sample averages"
+     ],
+     "answer": 3,
+     "why": "A regression on a 0/1 variable reproduces the group means; the slope is their difference."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The p-value of 9Online in the first regression is 0.21. Therefore:",
+     "options": [
+      "The intercept is wrong",
+      "Do not use the equation - the same verdict as the overlapping intervals",
+      "Use the equation: online is $5.88 better",
+      "Charge a fee"
+     ],
+     "answer": 1,
+     "why": "21% is above every usual alpha; the slope could well be zero in the population."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The hypothesis behind every slope's p-value is:",
+     "options": [
+      "H0: R Square = 0",
+      "H0: intercept = 0",
+      "H0: slope = 1",
+      "H0: slope = 0 (no relationship) against H1: slope not 0"
+     ],
+     "answer": 3,
+     "why": "A zero slope is a flat line - the independent variable does not move the dependent one."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The \"Standard Error\" next to a coefficient is:",
+     "options": [
+      "The residual",
+      "The SD of the profit data",
+      "The p-value",
+      "The standard deviation of the estimate - how much the coefficient would vary across samples"
+     ],
+     "answer": 3,
+     "why": "Estimates are random variables; this is their spread."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why are p-values more popular than t Stats?",
+     "options": [
+      "They can be compared directly with alpha, without looking up a t-table",
+      "They are more accurate",
+      "They are always smaller",
+      "Excel does not print t Stats"
+     ],
+     "answer": 0,
+     "why": "Both test the same hypothesis; the p-value skips the table lookup."
+    },
+    {
+     "tag": "MCQ",
+     "q": "If the regression dialog's confidence level is left blank, Excel:",
+     "options": [
+      "Prints no intervals",
+      "Uses 99%",
+      "Uses 90%",
+      "Prints the 95% limits twice"
+     ],
+     "answer": 3,
+     "why": "Enter 90 and you get the 90% limits alongside the 95% ones."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The 95% interval for the 9Online slope is -3.31 to 15.07. This tells you:",
+     "options": [
+      "Online is better by $15",
+      "The interval contains zero - consistent with p = 0.21, the slope may be zero",
+      "The slope is certainly positive",
+      "The sample is too small"
+     ],
+     "answer": 1,
+     "why": "A coefficient whose interval straddles zero is not significant at that level."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The correlation coefficient r lies between:",
+     "options": [
+      "-1 and +1",
+      "-infinity and +infinity",
+      "0 and 1",
+      "0 and infinity"
+     ],
+     "answer": 0,
+     "why": "+1 perfectly positive, -1 perfectly negative, 0 no linear relationship."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A slope of 1 means perfect correlation. This statement is:",
+     "options": [
+      "True for large samples",
+      "True",
+      "False - the slope depends on units, and only on the line y = x do both equal 1",
+      "True for positive slopes"
+     ],
+     "answer": 2,
+     "why": "Slope and correlation coefficient are different measures."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the professor's clouding-out grid (23 August), the average profits were:",
+     "options": [
+      "Both $145",
+      "Online $46, offline $230",
+      "Online $226, offline $64",
+      "Online $64, offline $226"
+     ],
+     "answer": 3,
+     "why": "(80 x -20 + 20 x 400)/100 = 64; (20 x -70 + 80 x 300)/100 = 226."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In that grid, within each age group online was better by:",
+     "options": [
+      "$162 for both",
+      "Nothing",
+      "$50 for the young and $100 for the old",
+      "$20 and $70"
+     ],
+     "answer": 2,
+     "why": "-20 vs -70 and 400 vs 300; the reversal comes from the opposite age mixes."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Instead of seven separate confidence intervals by age category, the professor used:",
+     "options": [
+      "Seven scatter charts",
+      "A t-table",
+      "One multiple linear regression with 9Online and 9Age",
+      "A pivot table"
+     ],
+     "answer": 2,
+     "why": "The equation holds age constant while it reads the online effect."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The regression on the 23,345 customers with an age gave:",
+     "options": [
+      "9Profit = 17.08 + 27.19 x 9Online + 25.86 x 9Age",
+      "9Profit = 72.96 + 52.22 x 9Age",
+      "9Profit = 70.93 + 19.65 x 9Online + 25.60 x 9Age",
+      "9Profit = 110.79 + 5.88 x 9Online"
+     ],
+     "answer": 0,
+     "why": "The second is the imputed model (without its HasAge term); the fourth is the bias check."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Two online customers, age categories 3 and 4, under that equation. The category-4 customer is more profitable by:",
+     "options": [
+      "$51.72",
+      "$27.19",
+      "$17.08",
+      "$25.86"
+     ],
+     "answer": 3,
+     "why": "Only the age term differs: one category step x 25.86."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The 9Online slope of 27.19 in that model means:",
+     "options": [
+      "Online customers are $27.19 more profitable in total",
+      "Each age step adds $27.19",
+      "Online customers are 27% of the file",
+      "Within the same age category, online customers are $27.19 more profitable on average than offline"
+     ],
+     "answer": 3,
+     "why": "Holding age constant is what \"within the same age category\" means."
+    },
+    {
+     "tag": "MCQ",
+     "q": "How many customers remained after dropping those without an age?",
+     "options": [
+      "31,634",
+      "8,289",
+      "23,345",
+      "27,780"
+     ],
+     "answer": 2,
+     "why": "8,289 rows were lost; 31,634 - 8,289 = 23,345."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In a multiple regression, the first thing to check is:",
+     "options": [
+      "Significance F in the ANOVA table",
+      "The intercept",
+      "The largest coefficient",
+      "R Square"
+     ],
+     "answer": 0,
+     "why": "Only if it is below alpha do you move on to the individual p-values."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The null hypothesis of the F-test behind Significance F is:",
+     "options": [
+      "The sample is biased",
+      "R Square is one",
+      "The intercept is zero",
+      "All the slopes are simultaneously zero"
+     ],
+     "answer": 3,
+     "why": "The alternate is that at least one slope is not zero, so the regression captures something."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A Significance F of 1.67E-114 means:",
+     "options": [
+      "Effectively zero - go on to the p-values",
+      "The slopes are 1.67",
+      "Alpha should be raised",
+      "Stop - the regression is invalid"
+     ],
+     "answer": 0,
+     "why": "A decimal point, 113 zeros, then 167."
+    },
+    {
+     "tag": "MCQ",
+     "q": "8.59E-07 equals:",
+     "options": [
+      "0.000000859",
+      "0.0859",
+      "8.59",
+      "859"
+     ],
+     "answer": 0,
+     "why": "E-07 shifts the decimal seven places to the left."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which p-value is NOT part of the check before using a regression?",
+     "options": [
+      "The p-value of 9Age",
+      "Significance F",
+      "The p-value of the intercept",
+      "The p-value of 9Online"
+     ],
+     "answer": 2,
+     "why": "Only the slopes are checked; the intercept is an anchor."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Multiple R in the summary table is:",
+     "options": [
+      "A measure of correlation",
+      "The p-value",
+      "The coefficient of determination",
+      "The sample size"
+     ],
+     "answer": 0,
+     "why": "R Square is the coefficient of determination."
+    },
+    {
+     "tag": "MCQ",
+     "q": "R Square is defined as:",
+     "options": [
+      "The probability the model is correct",
+      "The correlation between the two independent variables",
+      "The percentage of variation in the dependent variable explained by the independent variables",
+      "The slope squared"
+     ],
+     "answer": 2,
+     "why": "The \"god of house prices\" weight that area gets versus everything else."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An R Square of 95% when verifying Ohm's law would be:",
+     "options": [
+      "Excellent",
+      "Typical for social science",
+      "Poor - it is a universal law, so the missing 5% is experimental error",
+      "Impossible"
+     ],
+     "answer": 2,
+     "why": "Context decides what counts as good."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An R Square of 10% for in-store music predicting purchase intention would be:",
+     "options": [
+      "Very good - purchase intention depends on dozens of things, and music alone moves a tenth of it",
+      "Meaningless without a larger sample",
+      "Exactly average",
+      "A failed study"
+     ],
+     "answer": 0,
+     "why": "Small R Square with significant p-values means a real but modest lever."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The R Square of the first regression (9Profit on 9Online) was:",
+     "options": [
+      "21%",
+      "50%",
+      "About 0.005% - effectively zero",
+      "About 2%"
+     ],
+     "answer": 2,
+     "why": "0.00005; adding age raised it to about 2.2%."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Dropping the customers without an age could bias the sample because:",
+     "options": [
+      "It reduces n below 30",
+      "Those may be systematically the casual, less profitable customers - not a random slice",
+      "Age is the dependent variable",
+      "Excel requires equal groups"
+     ],
+     "answer": 1,
+     "why": "Representativeness was the Session 3 requirement, and deletion can destroy it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor's test for bias was:",
+     "options": [
+      "Compute the median age",
+      "Regress 9Profit on a dummy HasAge (1 if age present, 0 if blank) and look at the p-value and slope",
+      "Draw two histograms",
+      "Compare the two age slopes"
+     ],
+     "answer": 1,
+     "why": "If the dropped and kept customers had equal average profit, the slope would be near zero with a large p-value."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The bias-check regression gave:",
+     "options": [
+      "9Profit = 72.96 + 5.88 x HasAge, p = 0.21: no bias",
+      "9Profit = 52.22 + 72.96 x HasAge",
+      "9Profit = 110.79 + 52.22 x HasAge",
+      "9Profit = 72.96 + 52.22 x HasAge, p ~ 0: bias"
+     ],
+     "answer": 3,
+     "why": "Customers with age data average $125.19; without, $72.96."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Because of that result, the $27.19 online slope from the complete-case model was:",
+     "options": [
+      "Irrelevant",
+      "Underestimated",
+      "Correct",
+      "Overestimated - the deleted loss-makers made the remaining sample rosier"
+     ],
+     "answer": 3,
+     "why": "A rebate sized at $27 would overpay; the corrected figure is $19.65."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor's imputation rule is:",
+     "options": [
+      "Fill with any constant, the same for every missing cell, and add an indicator that marks plugged values",
+      "Delete the column",
+      "Fill with random values",
+      "Fill missing values with the mean only"
+     ],
+     "answer": 0,
+     "why": "With the flag in the model, the choice of fill value does not affect the slopes or the predictions."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The final regression equation on all 31,634 customers is:",
+     "options": [
+      "9Profit = 70.93 + 19.65 x 9Online + 25.60 x 9Age - 51.85 x HasAge",
+      "9Profit = 70.93 + 25.60 x 9Online + 19.65 x 9Age - 51.85 x HasAge",
+      "9Profit = 17.08 + 27.19 x 9Online + 25.86 x 9Age",
+      "9Profit = -32.66 + 19.65 x 9Online + 25.60 x 9Age"
+     ],
+     "answer": 0,
+     "why": "Online 19.65, age 25.60, HasAge -51.85 - check the assignments of the numbers."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Two customers, both without age data, one online and one offline. The online one is more profitable by:",
+     "options": [
+      "$70.93",
+      "$51.85",
+      "$19.65",
+      "$25.60"
+     ],
+     "answer": 2,
+     "why": "Age and HasAge are zero for both; only the online term differs."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Two customers, both online, one in category 7 and one without age data. Who is more profitable, by how much?",
+     "options": [
+      "The no-age customer, by $51.85",
+      "The category-7 customer, by about $127",
+      "Equal",
+      "The category-7 customer, by $179.20"
+     ],
+     "answer": 1,
+     "why": "25.60 x 7 - 51.85 = 127.35."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Two customers, both online, one in category 1 and one without age data. Who is more profitable?",
+     "options": [
+      "Equal",
+      "The category-1 customer, by $51.85",
+      "The customer without age data, by about $26",
+      "The category-1 customer, by $25.60"
+     ],
+     "answer": 2,
+     "why": "25.60 x 1 - 51.85 = -26.25: the with-age customer predicts lower."
+    },
+    {
+     "tag": "MCQ",
+     "q": "From which age category onwards is a customer with age data more profitable than one without (same channel)?",
+     "options": [
+      "Category 1",
+      "Category 5",
+      "Category 3",
+      "Category 2"
+     ],
+     "answer": 2,
+     "why": "25.60 x 3 = 76.80 exceeds 51.85; at category 2 the terms almost cancel (-0.65)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Two offline customers, categories 2 and 5. The difference in predicted profit is:",
+     "options": [
+      "$19.65",
+      "$76.80",
+      "$51.85",
+      "$25.60"
+     ],
+     "answer": 1,
+     "why": "Three category steps x 25.60."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The predicted profit of an online customer in age category 4 is:",
+     "options": [
+      "$90.58",
+      "$141.13",
+      "$192.98",
+      "$121.85"
+     ],
+     "answer": 1,
+     "why": "70.93 + 19.65 + 102.40 - 51.85."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The predicted profit of an offline customer without age data is:",
+     "options": [
+      "$72.96",
+      "$70.93",
+      "$0",
+      "$110.79"
+     ],
+     "answer": 1,
+     "why": "Only the intercept survives. ($72.96 is the bias-check intercept - a different model.)"
+    },
+    {
+     "tag": "MCQ",
+     "q": "HasAge = -51.85 means:",
+     "options": [
+      "The model failed",
+      "Read with the age term: a real category k is worth 25.60k - 51.85 relative to a plugged zero - the indicator re-anchors the age line",
+      "Customers without age data are more profitable in every category",
+      "Giving your age costs $52 of profit"
+     ],
+     "answer": 1,
+     "why": "Negative for k = 1, about zero for k = 2, positive from k = 3."
+    },
+    {
+     "tag": "MCQ",
+     "q": "If the blanks are filled with the average age instead of zero, which coefficients change?",
+     "options": [
+      "Only the intercept and the HasAge coefficient; the online and age slopes and every prediction stay identical",
+      "Only the online slope",
+      "None",
+      "All of them"
+     ],
+     "answer": 0,
+     "why": "Intercept becomes -32.66 and HasAge +51.74 (the case slide's minus sign is a typo)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor's final recommendation for Pilgrim Bank is:",
+     "options": [
+      "Offer a rebate of up to about $19 per online customer",
+      "Charge a fee",
+      "Offer a rebate of up to $27",
+      "Collect more data"
+     ],
+     "answer": 0,
+     "why": "Within comparable cohorts, online customers are $19.65 more profitable; the rebate is capped there."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The R Square of the final model is about:",
+     "options": [
+      "95%",
+      "24%",
+      "0.005%",
+      "2.4%"
+     ],
+     "answer": 3,
+     "why": "Small, and enough for the question, which is the online effect rather than what drives profit."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Repeating the exercise with income (all 31,634 rows, income imputed with a flag), the online slope is:",
+     "options": [
+      "-4.72 with p = 0.31 - not significant",
+      "+19.65, significant",
+      "+27.19",
+      "+11.87"
+     ],
+     "answer": 0,
+     "why": "Holding income alone constant, the data shows no significant online effect."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Holding both age and income constant (both imputed with flags), the online slope is:",
+     "options": [
+      "+11.87 with p = 0.011 - significant",
+      "+52.22",
+      "-4.72",
+      "+19.65"
+     ],
+     "answer": 0,
+     "why": "Different sets of controls give different like-for-like comparisons."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the model 9Profit = 46.36 + 16.55 x 9Online + 6.21 x 9Tenure, two customers with the same tenure, one online:",
+     "options": [
+      "The online customer is $16.55 more profitable",
+      "The offline customer is $16.55 more profitable",
+      "The online customer is $6.21 more profitable",
+      "Equal"
+     ],
+     "answer": 0,
+     "why": "Same tenure cancels; the online term remains. (The case slide quotes $14.67 for its version.)"
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the same model, two offline customers whose tenures differ by one year:",
+     "options": [
+      "Differ by $16.55",
+      "Differ by $6.21, the longer-tenured one being higher",
+      "Do not differ",
+      "Differ by $46.36"
+     ],
+     "answer": 1,
+     "why": "The tenure slope is per year of tenure."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Three districts (1100, 1200, 1300) enter a regression as:",
+     "options": [
+      "Two 0/1 dummy variables, with one district as the base",
+      "One variable coded 1100, 1200, 1300",
+      "They cannot be used",
+      "Three dummies"
+     ],
+     "answer": 0,
+     "why": "With 1200 as the base, the 1100 dummy is -21.19 and the 1300 dummy is -13.20 in the comprehensive model."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the comprehensive model (online, age, income, tenure, district), the online slope is about:",
+     "options": [
+      "$27.19",
+      "$19.65",
+      "$13.82, p = 0.003",
+      "$5.88"
+     ],
+     "answer": 2,
+     "why": "Like for like on everything measured; a careful bank would size the rebate to this."
+    },
+    {
+     "tag": "MCQ",
+     "q": "How many customers are missing both age and income?",
+     "options": [
+      "533",
+      "561",
+      "7,728",
+      "8,289"
+     ],
+     "answer": 2,
+     "why": "561 are missing only age and 533 only income - largely the same casual customers behind both bias checks."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The case slides' lesson for service managers is to:",
+     "options": [
+      "Trust assumptions about customer behaviour built into the service model",
+      "Avoid statistics",
+      "Always offer rebates",
+      "Surface implicit assumptions, convert them into testable hypotheses, test them, and update the model"
+     ],
+     "answer": 3,
+     "why": "Assumptions treated as facts hide important changes in behaviour."
+    },
+    {
+     "tag": "MCQ",
+     "q": "With only cross-sectional data, the hypothesis \"online adoption causes increased profitability\" is modified to:",
+     "options": [
+      "It cannot be tested at all",
+      "\"Profit causes online adoption\"",
+      "\"Online adoption will be discontinued\"",
+      "\"Online customers are more profitable than offline customers\""
+     ],
+     "answer": 3,
+     "why": "A snapshot can show association like for like, not causation over time."
+    },
+    {
+     "tag": "MCQ",
+     "q": "If one slope in a multiple regression has a p-value above alpha while Significance F passes, you should:",
+     "options": [
+      "Not use it as it stands - fix the model, for example by removing or replacing that variable",
+      "Use the equation as it is",
+      "Raise alpha",
+      "Ignore R Square"
+     ],
+     "answer": 0,
+     "why": "The check is: Significance F, then every slope's p-value, and only then the equation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Lowering alpha from 5% to 1% makes it:",
+     "options": [
+      "Irrelevant to either error",
+      "Impossible to reject H0",
+      "Easier to reject H0 and reduces Type II error",
+      "Harder to reject H0, reducing Type I error but raising Type II error"
+     ],
+     "answer": 3,
+     "why": "A stricter tolerance for false alarms means more missed effects."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Hypothesis testing helps set the length of a product or service warranty by:",
+     "options": [
+      "Guessing",
+      "Copying competitors",
+      "Testing claims about product life on sample data so that the firm neither bleeds on replacements nor forgoes the confidence a warranty buys",
+      "Using R Square"
+     ],
+     "answer": 2,
+     "why": "Urban Company's 30-day warranties and a manufacturer's six-month ones are the same problem."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Holding the other variables constant\" in interpreting a slope means:",
+     "options": [
+      "Comparing two customers who are identical on every other variable in the model",
+      "Averaging them",
+      "Removing them from the model",
+      "Setting them to zero"
+     ],
+     "answer": 0,
+     "why": "That is why the online slope is read \"within the same age category\"."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor's view on using ChatGPT to run the regressions was:",
+     "options": [
+      "Required",
+      "Forbidden",
+      "Fine - but you must be able to interpret the output, and the prompts come from understanding the business",
+      "Only for the assignment"
+     ],
+     "answer": 2,
+     "why": "\"The good part is GenAI can do it for you; you just have to prompt it.\""
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which statement is correct about the same data analysed with confidence intervals and with regression?",
+     "options": [
+      "If both techniques are valid, they must give the same result - a fancier name does not buy a different answer",
+      "Confidence intervals are obsolete",
+      "Regression is always more conclusive",
+      "They can give opposite verdicts"
+     ],
+     "answer": 0,
+     "why": "Inconclusive by intervals, p = 0.21 by regression: the same verdict."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The case slides warn that managers often build beliefs about customer behaviour into service designs as:",
+     "options": [
+      "Testable hypotheses reviewed every year",
+      "Regression coefficients",
+      "Factual claims left unchallenged for a long time, so important changes in behaviour are overlooked",
+      "Confidence intervals"
+     ],
+     "answer": 2,
+     "why": "Surface the assumption, convert it into a hypothesis, test it, and update the model."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The slides suggest surfacing an implicit assumption by:",
+     "options": [
+      "Posing a question that depends on the assumption to elicit a strong opinion, then reverse-engineering the assumption behind the opinion",
+      "Reading the annual report",
+      "Running a regression first",
+      "Asking the regulator"
+     ],
+     "answer": 0,
+     "why": "\"Should Pilgrim charge a fee or offer a rebate?\" flushes out the belief about what online customers cost to serve."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the managerial research design, the step after \"refine the question into researchable hypotheses\" is:",
+     "options": [
+      "Identify the data requirements",
+      "Choose alpha",
+      "Communicate results",
+      "Update the service model"
+     ],
+     "answer": 0,
+     "why": "Problem, hypotheses, data requirements, analyses, interpretation and communication - five steps."
+    },
+    {
+     "tag": "MCQ",
+     "q": "After a hypothesis test, the slides say you should:",
+     "options": [
+      "Update your assumptions and, if required, the service model built on them",
+      "File the result",
+      "Change alpha",
+      "Collect more data regardless"
+     ],
+     "answer": 0,
+     "why": "The test exists to change what you believe and what you design."
+    }
+   ]
+  }
+ ]
+}

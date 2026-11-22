@@ -1,0 +1,32 @@
+---
+// Confidence interval for a mean. Pilgrim Bank: mean 111.50, SD 272.84.
+---
+<div class="calc" data-ci>
+  <div class="calc-in">
+    <label class="ctl hl"><span>Customers in the sample</span><input type="range" min="0" max="100" step="1" value="100" data-k="n" /><output data-o="n"></output></label>
+    <div class="seg" role="group" aria-label="Confidence level"><button type="button" data-z="1.645" aria-pressed="false">90% sure</button><button type="button" data-z="1.96" aria-pressed="true">95% sure</button><button type="button" data-z="2.576" aria-pressed="false">99% sure</button></div>
+    <div class="ci-track"><i data-bar></i><span data-dot></span></div>
+    <p class="calc-cap">Sample average ₹… shown as the dot; the bar is the range. Scale: $0 to $220.</p>
+    <div class="kv"><div><span>Sample average</span><b>$111.50</b></div><div><span>Standard deviation</span><b>$272.84</b></div></div>
+  </div>
+  <div class="calc-out"><span>The true average is probably between</span><b data-v="r"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-ci]').forEach((root) => {
+    let z = 1.96; const inp = root.querySelector('input'), mean = 111.5, sd = 272.84;
+    const nOf = (v) => Math.round(30 * Math.pow(31634 / 30, v / 100));
+    root.querySelector('.calc-cap').textContent = 'The dot is the sample average; the bar is the range. Scale: $0 to $220.';
+    const run = () => {
+      const n = nOf(Number(inp.value)), c = z * sd / Math.sqrt(n), lo = mean - c, hi = mean + c;
+      root.querySelector('[data-o="n"]').textContent = n.toLocaleString('en-IN');
+      const pos = (v) => Math.min(100, Math.max(0, v / 220 * 100));
+      const bar = root.querySelector('[data-bar]'); bar.style.left = pos(lo) + '%'; bar.style.width = (pos(hi) - pos(lo)) + '%';
+      root.querySelector('[data-dot]').style.left = pos(mean) + '%';
+      root.querySelector('[data-v="r"]').textContent = c < 10 ? `$${lo.toFixed(1)} and $${hi.toFixed(1)}` : `$${lo.toFixed(0)} and $${hi.toFixed(0)}`;
+      root.querySelector('[data-v="note"]').textContent = `Cushion: ± $${c.toFixed(1)}. Four times the data halves the cushion; being more sure widens it.`;
+      root.querySelectorAll('[data-z]').forEach((b) => b.setAttribute('aria-pressed', String(Number(b.dataset.z) === z)));
+    };
+    root.querySelectorAll('[data-z]').forEach((b) => b.addEventListener('click', () => { z = Number(b.dataset.z); run(); }));
+    inp.addEventListener('input', run); run();
+  });
+</script>
