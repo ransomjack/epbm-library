@@ -10,6 +10,8 @@ takeaways:
   - "Task conflict can help; relationship conflict almost never does."
   - "In a distributed team, nothing happens by proximity. Norms, identity and ownership must be designed."
 ---
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
 import Fig from '../../components/d/Fig.astro';
 import Cards from '../../components/d/Cards.astro';
 import Steps from '../../components/d/Steps.astro';
@@ -120,6 +122,12 @@ Social loafing has a Western bias. It shows up reliably in individualist culture
 
 To build cohesion: make the group smaller, agree shared goals, increase time together, raise the group's status and make it harder to join, create competition with other groups, reward the group rather than individuals, and physically isolate it by giving it its own space.
 
+<Decide q='Your team is close-knit, loyal and well liked across the office. It has also quietly settled on doing the minimum. What should worry you most?' options={[
+  { label: 'Nothing. Cohesion is always good for performance.', why: 'Cohesion amplifies whatever the norms are. With low performance norms, a cohesive group holds itself to the minimum.' },
+  { label: 'This is the most dangerous combination: high cohesion with low performance norms.', good: true, why: 'Breaking the bonds would be a mistake. Change the norms instead: clearer goals, visible results, and a respected member who sets a higher standard.' },
+  { label: 'The team is too small.', why: 'Size affects loafing and coordination, but the problem here is the standard the group has agreed on.' },
+]} />
+
 ### 6. Diversity and faultlines
 
 **Surface-level diversity** (nationality, gender, age) is visible. **Deep-level diversity** (values, communication styles, work habits) reveals itself over time and drives most real conflict. **Faultlines** are hidden crack lines that appear when several differences line up on the same split. Like a geological fault, they don't cause the earthquake, but they are exactly where the group breaks.
@@ -156,6 +164,13 @@ Irving Janis coined "groupthink" studying US foreign-policy fiascos, most famous
 | **Nominal group technique** | Write ideas silently → each person presents one → discuss → rank silently | Highest |
 
 The nominal group technique wins because the silent writing step removes social pressure: your thinking arrives before the most confident voice in the room has shaped it. To prevent groupthink, keep groups under ten, have the leader hold back their view at the start, appoint a devil's advocate, and discuss risks before benefits.
+
+<Sort title='Try it: groupthink or groupshift?' choices={['Groupthink', 'Groupshift']} items={[
+  { text: 'Nobody mentions the obvious risk because the boss clearly loves the plan.', answer: 'Groupthink', why: 'The pressure for harmony overrides a realistic look at the options.' },
+  { text: 'A cautious credit committee ends the meeting more cautious than any member was before it.', answer: 'Groupshift', why: 'Discussion pushed the group further in the direction it already leaned.' },
+  { text: 'A dissenter is told that questioning the plan is disloyal.', answer: 'Groupthink', why: 'Pressure on dissenters is a classic symptom.' },
+  { text: 'A bold product team, after an hour of discussion, decides to bet even bigger.', answer: 'Groupshift', why: 'Risky groups get riskier: polarisation.' },
+]} />
 
 ## Groups versus teams
 
@@ -228,6 +243,13 @@ The most disciplined question isn't "how do I make this team work?" but "should 
 1. **Complexity:** it genuinely needs several perspectives.
 2. **Common purpose:** the output only makes sense when contributions are combined.
 3. **Interdependence** (interdependency): each person's success depends on the others. Football passes; a swimming relay, where each swimmer races alone and the times are added, doesn't.
+
+<Sort title='Try it: does this work need a team?' choices={['Use a team', 'Don’t need a team']} items={[
+  { text: 'Four regional sales reps, each closing their own accounts.', answer: 'Don’t need a team', why: 'No interdependence: each person succeeds or fails on their own work.' },
+  { text: 'Launching a product that needs design, production, marketing and pricing together.', answer: 'Use a team', why: 'Complex, a common purpose, and each part depends on the others.' },
+  { text: 'Three clerks processing payroll, each for a different region.', answer: 'Don’t need a team', why: 'The outputs are simply added up, like a swimming relay.' },
+  { text: 'Restoring a major outage that touches the network, the application and customer communication.', answer: 'Use a team', why: 'It passes all three tests: complexity, common purpose and interdependence.' },
+]} />
 
 ## Running a distributed team
 

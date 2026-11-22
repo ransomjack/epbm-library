@@ -10,6 +10,8 @@ takeaways:
   - "Net profit alone can mislead. The path from operating profit to net profit tells the real story."
   - "Profit is not cash. CFO, CFI and CFF explain where the cash actually went."
 ---
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
 import Fig from '../../components/d/Fig.astro';
 import Cards from '../../components/d/Cards.astro';
 import Steps from '../../components/d/Steps.astro';
@@ -140,6 +142,12 @@ Prof. Jaiswall showed a company whose net profit margin fell from **5% to 3.1%**
 The **entire** fall came from one line: a **loss on disposal of plant assets of 83.5**. That's an investing decision to get rid of old equipment, not a sign of how well the business ran that year. Add back the one-off loss and the margin is about **7.1%**, better than last year.
 
 > "Don't look at net profit as a magic number. How you got to net profit is what matters. The journey from operating profit to net profit tells the real story." Prof. Manju Jaiswall
+
+<Decide q='A company’s net profit margin falls from 5% to 3.1%. What should you do first?' options={[
+  { label: 'Treat it as a sign the business is weakening.', why: 'In the Misra example the whole fall came from a one-off loss on selling old equipment.' },
+  { label: 'Walk down the multi-step statement to see which line caused the fall.', good: true, why: '“How you got to net profit is what matters.” Without the one-off loss, the margin was about 7.1%, better than last year.' },
+  { label: 'Compare it with the industry average.', why: 'Useful later, but first find out where the fall came from.' },
+]} />
 
 ## Richie Advisors: February 2020
 
@@ -371,12 +379,27 @@ This statement is worked out from the case figures rather than taken from the cl
 
 </div>
 
+<Sort title='Try it: where does it go in the cash flow statement?' choices={['Operating', 'Investing', 'Financing']} items={[
+  { text: 'Interest paid on a bank loan.', answer: 'Financing', why: 'Under Ind AS 7, for a non-financial company, interest paid is a financing flow.' },
+  { text: 'Interest received on a fixed deposit.', answer: 'Investing', why: 'Interest received goes to investing.' },
+  { text: 'An advance received from a client.', answer: 'Operating', why: 'Cash from running the business, even though the revenue isn’t earned yet.' },
+  { text: 'Buying computers for the office.', answer: 'Investing', why: 'Long-term assets.' },
+  { text: 'Paying a dividend.', answer: 'Financing', why: 'Money returned to owners.' },
+  { text: 'Paying salaries.', answer: 'Operating', why: 'A day-to-day running cost.' },
+]} />
+
 ### Direct vs indirect method
 
 | Method | How it works | Who uses it |
 |---|---|---|
 | Direct | Lists each cash receipt and payment: from customers, to suppliers, to staff | Rarely used: hard to prepare from accounting records |
 | Indirect | Starts from net profit: adds back non-cash charges (depreciation, amortisation), removes investing gains and losses, adjusts for working capital (debtors up = cash not in yet; creditors up = not paid yet; inventory up = cash locked) | Every Indian annual report you'll read |
+
+<Decide q='A client who owed ₹50,000 for work done last year has gone out of business. What happens to last year’s revenue?' options={[
+  { label: 'It is reversed, because the money will never come.', why: 'The revenue was correctly recorded when the work was done.' },
+  { label: 'It stays. A new bad-debt expense is recorded now, when the loss is confirmed.', good: true, why: 'The write-off is a separate expense in the period the debt becomes uncollectable.' },
+  { label: 'Nothing is recorded until the client’s case is closed.', why: 'Once the debt is confirmed uncollectable, the expense is recognised.' },
+]} />
 
 ## Key formulas
 

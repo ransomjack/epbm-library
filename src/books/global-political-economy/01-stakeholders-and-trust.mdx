@@ -10,6 +10,8 @@ takeaways:
   - "Trust rests on ability, benevolence and integrity, and you demonstrate them through voluntary action, transparency and responsiveness."
   - "Counter-intuitively, prioritising some stakeholders over others lowers trust in the firm (P6)."
 ---
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
 import Fig from '../../components/d/Fig.astro';
 import Cards from '../../components/d/Cards.astro';
 import StakeholderMap from '../../components/d/StakeholderMap.astro';
@@ -49,6 +51,12 @@ Regulatory Agencies are **not** part of Government, and competitors **are** stak
 The idea goes back to R. Edward Freeman, whose 1984 book defined a stakeholder as any group or individual who can affect, or is affected by, the achievement of the organisation's objectives. The PPT's two-part definition (affected by you, or needed to approve you) is a practical version of the same idea.
 
 </div>
+
+<Decide q='A firm’s stakeholder map lists customers, investors, employees, suppliers, government, the community, and NGOs, media and competitors. Which group is missing?' options={[
+  { label: 'Shareholders’ families', why: 'Employees and their families are one group; there is no separate group for shareholders’ families.' },
+  { label: 'Regulatory agencies', good: true, why: 'They are a separate group from government, and the one most often left out.' },
+  { label: 'Competitors', why: 'They are already there, under “Others”.' },
+]} />
 
 ## What do you want from each stakeholder?
 
@@ -121,6 +129,14 @@ Stakeholders can't see ability, benevolence or integrity directly. They infer th
 
 **Responsiveness** has two parts: **timing** (act fast, because without information stakeholders assume the worst) and **ability** (you can actually fix it). Mattel recalled two-thirds of affected toys worldwide and backed it with a full campaign. Toyota spoke quickly but acted slowly, a lag blamed on its hierarchical structure.
 
+<Sort title='Try it: which trust dimension does it signal?' choices={['Ability', 'Benevolence', 'Integrity']} items={[
+  { text: 'Recalling faulty toys worldwide within weeks.', answer: 'Ability', why: 'It shows the firm can actually fix the problem.' },
+  { text: 'Funding an anti-corruption programme that no law required.', answer: 'Benevolence', why: 'Voluntary action signals genuine care.' },
+  { text: 'Publishing videos that explain why food in ads looks different.', answer: 'Integrity', why: 'Transparency signals that the firm has nothing to hide.' },
+  { text: 'Offering a recall before any regulator orders one.', answer: 'Benevolence', why: 'Acting without being forced.' },
+  { text: 'Warning customers directly instead of quietly telling dealers.', answer: 'Integrity', why: 'Openness with the people affected.' },
+]} />
+
 ## Crane's six propositions
 
 | Prop. | What it says | Why it matters |
@@ -147,6 +163,12 @@ Stakeholders can't see ability, benevolence or integrity directly. They infer th
 You may meet the **stakeholder salience** model of Mitchell, Agle & Wood (1997), which ranks stakeholders by **power, legitimacy and urgency**. It is a tool for prioritising, which is exactly what Crane warns about. "Power, legitimacy and urgency" are not the three dimensions of trust. Those are ability, benevolence and integrity.
 
 </div>
+
+<Decide q='Short of budget, a chief executive announces that investors and the top 20 customers will come first in every decision this year. What does Crane predict?' options={[
+  { label: 'Trust rises, because the most important stakeholders feel valued.', why: 'The favoured groups are only part of the audience. Everyone else is watching.' },
+  { label: 'Trust in the firm falls, across stakeholders, because prioritising signals favouritism and a zero-sum mindset.', good: true, why: 'Proposition 6: prioritisation undermines ability, benevolence and integrity at once.' },
+  { label: 'Nothing changes, because other stakeholders won’t notice.', why: 'Proposition 1: actions toward one stakeholder send signals to all.' },
+]} />
 
 ## The class case: a dengue vaccine launched in emerging markets first
 

@@ -10,6 +10,8 @@ takeaways:
   - "McKinsey's ten value drivers split into five Trade & Economics and five Security drivers."
   - "Bozonelos & Tsagdis: treat geopolitics as continuous, think outside-out, and aim to 'bounce with' rather than bounce back."
 ---
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
 import Fig from '../../components/d/Fig.astro';
 import Cards from '../../components/d/Cards.astro';
 import Levels from '../../components/d/Levels.astro';
@@ -64,6 +66,13 @@ Company examples show each strategy in practice.
 
 </div>
 
+<Sort title='Try it: which response is this?' choices={['Reshoring', 'Near-shoring', 'Just-in-case']} items={[
+  { text: 'Moving production out of China back to the home country.', answer: 'Reshoring', why: 'Bringing production home or to trusted partners.' },
+  { text: 'Moving a plant from China to Thailand.', answer: 'Near-shoring', why: 'Closer, to a nearby trusted country, but not all the way home.' },
+  { text: 'Building spare manufacturing capacity in India alongside China.', answer: 'Just-in-case', why: 'Buffers and redundancy instead of lean, single-source supply.' },
+  { text: 'Holding six weeks of key components instead of one.', answer: 'Just-in-case', why: 'Safety stock replaces just-in-time.' },
+]} />
+
 ## McKinsey's ten value drivers
 
 Five sit under **Trade & Economics**, five under **Security**.
@@ -82,6 +91,14 @@ Five sit under **Trade & Economics**, five under **Security**.
 **Australia, United Kingdom, United States.** Not Japan, Canada or Singapore. A trilateral security and technology pact (nuclear-powered submarines), filed under "multilateral cooperation and alliances" on the Security side.
 
 </div>
+
+<Sort title='Try it: trade and economics, or security?' choices={['Trade & Economics', 'Security']} items={[
+  { text: 'Tariffs on steel and electric vehicles.', answer: 'Trade & Economics', why: 'Tariffs and trade barriers.' },
+  { text: 'Screening foreign investment in sensitive technology.', answer: 'Security', why: 'Foreign investment restrictions.' },
+  { text: 'A subsidy scheme for domestic manufacturing.', answer: 'Trade & Economics', why: 'Domestic industrial policy.' },
+  { text: 'A data-security law.', answer: 'Security', why: 'Technology, IP and cybersecurity controls.' },
+  { text: 'Rules on how much of a product must be made inside a trade bloc.', answer: 'Trade & Economics', why: 'Trade agreements.' },
+]} />
 
 ## Bozonelos & Tsagdis (2023): geopolitical resilience
 
@@ -150,6 +167,12 @@ A turkey is fed every day for 1,000 days and concludes that it is safe and loved
 </div>
 
 Inside-In is the trap: perfect internal optimisation with no view of the world outside is rearranging the deckchairs on the Titanic.
+
+<Decide q='A firm sets up a second source in another region before any disruption, so that a blockade would barely affect it. Which kind of resilience is this?' options={[
+  { label: 'Bouncing back', why: 'That means recovering after the setback.' },
+  { label: 'Bouncing beyond', why: 'That still assumes the setback has happened.' },
+  { label: 'Bouncing with', good: true, why: 'Pre-emptive: anticipating and managing so the big setback never lands.' },
+]} />
 
 ## The class case: rethinking "Made in China"
 

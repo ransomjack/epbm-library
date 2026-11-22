@@ -10,6 +10,8 @@ takeaways:
   - "Mechanistic structures exploit (do known work cheaper); organic ones explore (do new things). Firms now need both."
   - "Push decisions to where the information is, but set the limits within which people decide."
 ---
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
 import Fig from '../../components/d/Fig.astro';
 import Cards from '../../components/d/Cards.astro';
 import Steps from '../../components/d/Steps.astro';
@@ -124,6 +126,12 @@ Prof. Jha's running example. Under centralisation the waiter says "I'm not autho
 
 **Boundary spanning** is mostly about the edge between the organisation and its environment: HR reads the hiring market, sales reads demand, top management reads everything. Citing Karl Weick's idea of *enactment*, Prof. Jha stressed that there is no single objective environment. People see what their training and interests let them see: a finance person reads finance signals, a marketer reads market signals, and the same monsoon forecast produces opposite strategies in two firms. "The environment lies in the eyes of the beholder."
 
+<Decide q='Customers complain that refunds take a week, because every refund, however small, needs approval from head office. Which fix fits best?' options={[
+  { label: 'Add a regional manager to approve refunds faster.', why: 'Another layer adds cost and still moves the decision away from where the information is.' },
+  { label: 'Let front-line staff approve refunds up to a set limit, and review anything above it.', good: true, why: 'Push the decision to where the information is, and control the premises of the decision rather than each decision: the “five soups a month” idea.' },
+  { label: 'Remove all limits so staff can refund anything.', why: 'Pure decentralisation invites abuse. Bounded authority gets the speed without the risk.' },
+]} />
+
 ## Eight common structures
 
 | Structure | Strengths | Weaknesses | Example |
@@ -168,6 +176,13 @@ The eight structures sit along a spectrum between two ideal types.
 
 A traditional joint family, where elders decide and roles are fixed, is mechanistic. A nuclear family with two working partners who debate every decision is organic. Neither is better; one is built for stability, the other for change.
 
+<Sort title='Try it: mechanistic or organic?' choices={['Mechanistic', 'Organic']} items={[
+  { text: 'A loan-processing centre handling thousands of standard applications a day.', answer: 'Mechanistic', why: 'Routine work, a stable task and high volume suit rules and narrow roles.' },
+  { text: 'A six-person team building a new product for a market nobody understands yet.', answer: 'Organic', why: 'Uncertainty and novel work need fluid roles and shared decisions.' },
+  { text: 'The control room of a power plant.', answer: 'Mechanistic', why: 'Precision and safety need high formalisation.' },
+  { text: 'A design studio that pitches for very different clients every month.', answer: 'Organic', why: 'Non-routine work and a changing environment.' },
+]} />
+
 ### Four factors decide the fit
 
 <Cards min={200} items={[
@@ -188,6 +203,12 @@ A traditional joint family, where elders decide and roles are fixed, is mechanis
 | Individual fit | People with a high need for clarity (need-for-clarity) thrive in mechanistic structures; people who need autonomy in organic ones |
 
 **Downsizing**, the permanent, deliberate reduction of the workforce, belongs here too. Done as a redesign of the work, it brings lasting speed. Done as a payroll cut without changing the work, it produces **survivor syndrome**: the remaining staff carry the load, morale falls and knowledge walks out of the door. The test is simple: did we redesign the work, or just remove the people?
+
+<Decide q='A firm cuts 15% of its staff to reduce costs. Nobody changes how the work is done. What should it expect?' options={[
+  { label: 'A lasting gain in speed and efficiency.', why: 'That follows only when the work itself is redesigned.' },
+  { label: 'Survivor syndrome: the remaining staff carry the extra load, morale falls and knowledge leaves.', good: true, why: 'The test is whether you redesigned the work or just removed the people.' },
+  { label: 'No effect, because the people who left were the least productive.', why: 'Removing people without removing work moves the load onto those who stay.' },
+]} />
 
 ## The cases
 

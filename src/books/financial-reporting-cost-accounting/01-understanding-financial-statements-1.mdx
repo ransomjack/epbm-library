@@ -10,6 +10,8 @@ takeaways:
   - "Profit and cash are different numbers. Accruals, credit sales, funding and investment all sit between them."
   - "Depreciation spreads an asset's cost over its life. SLM charges evenly; WDV charges more early. The total is the same; only the timing differs."
 ---
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
 import Fig from '../../components/d/Fig.astro';
 import Cards from '../../components/d/Cards.astro';
 import Steps from '../../components/d/Steps.astro';
@@ -84,6 +86,15 @@ Every transaction belongs to one of three activities, and they happen in a natur
 
 This sequence (finance → invest → operate) is frequently tested.
 
+<Sort title='Try it: which activity is this?' choices={['Operating', 'Investing', 'Financing']} items={[
+  { text: 'Paying this month’s salaries.', answer: 'Operating', why: 'Running the business day to day.' },
+  { text: 'Buying a new machine for the factory.', answer: 'Investing', why: 'Long-term assets the business will use for years.' },
+  { text: 'Taking a bank loan.', answer: 'Financing', why: 'Raising money from lenders.' },
+  { text: 'Collecting cash from a customer.', answer: 'Operating', why: 'Part of the core business.' },
+  { text: 'Paying a dividend to shareholders.', answer: 'Financing', why: 'Returning money to the owners.' },
+  { text: 'Selling an old building.', answer: 'Investing', why: 'Disposing of a long-term asset.' },
+]} />
+
 ## The accounting equation
 
 <div class="callout">
@@ -124,6 +135,13 @@ Pay for something with a **future benefit** (a deposit you get back, a machine y
 </div>
 
 > "When I sell inventory, the asset converts into an expense, Cost of Goods Sold. It had future benefit; once sold, that benefit is gone. Same logic as depreciation." Prof. Manju Jaiswall
+
+<Sort title='Try it: asset, liability, expense or revenue?' choices={['Asset', 'Liability', 'Expense', 'Revenue']} items={[
+  { text: 'A security deposit paid to the landlord.', answer: 'Asset', why: 'It is refundable, so it is a future benefit. It isn’t rent.' },
+  { text: 'Cash received from a client for work not yet done.', answer: 'Liability', why: 'Unearned revenue: you owe the service until you perform it.' },
+  { text: 'Rent for the office space used this month.', answer: 'Expense', why: 'Recorded when the space is used.' },
+  { text: 'A fee for work completed this month, not yet paid.', answer: 'Revenue', why: 'Earned when the service is done, whether or not cash has arrived.' },
+]} />
 
 ## The three statements
 
@@ -226,6 +244,12 @@ The most dangerous sentence in a business review is "we are profitable". A compa
 
 </div>
 
+<Decide q='A company reports a healthy profit for the year, but its bank balance fell. Is that possible?' options={[
+  { label: 'No. Profit and cash must move together.', why: 'The income statement records revenue when earned and costs when incurred, not when cash moves.' },
+  { label: 'Yes. Cash can go into stock, customer credit, new assets or loan repayments that don’t reduce profit.', good: true, why: 'That is why the cash flow statement exists alongside the income statement.' },
+  { label: 'Only if the company made an accounting error.', why: 'It is normal, especially for a growing business.' },
+]} />
+
 ## Depreciation
 
 Inventory became an expense when it was sold. But the Rs.5 lakh of furniture will be used for years. Charging it all in month one would make January look terrible and the next 59 months look artificially good.
@@ -301,6 +325,12 @@ Example: asset costs Rs.10,00,000, WDV rate 40%.
 Over an asset's full life both methods charge the same total. Only the **timing** differs. Because WDV charges more early, profit and tax are lower in the early years, which is why the choice matters for tax planning.
 
 </div>
+
+<Decide q='Over the whole life of an asset, which method charges more depreciation in total: straight line or written-down value?' options={[
+  { label: 'Written-down value, because it charges more in the early years.', why: 'It charges more early and less later.' },
+  { label: 'Neither. The total is the same; only the timing differs.', good: true, why: 'Written-down value front-loads the charge. The difference in timing is what creates deferred tax.' },
+  { label: 'Straight line, because it charges the same every year.', why: 'Same total, spread evenly.' },
+]} />
 
 ### Deferred tax, in plain English
 

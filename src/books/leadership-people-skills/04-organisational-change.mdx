@@ -10,6 +10,8 @@ takeaways:
   - "Most failed change skipped unfreezing (Kotter's steps 1–4), not execution."
   - "Release the brake before pressing the accelerator."
 ---
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
 import Fig from '../../components/d/Fig.astro';
 import Cards from '../../components/d/Cards.astro';
 import Steps from '../../components/d/Steps.astro';
@@ -61,6 +63,12 @@ Some resistance is healthy. It brings stability, sparks real debate and often ex
 
 A new process is announced at a townhall. No hard questions, plenty of nodding. Three months later adoption is near zero, workarounds are everywhere, and two good people are interviewing elsewhere. Nobody objected, because the objection went underground on day one. **The nodding was the resistance.**
 
+<Decide q='You announce a new process at a townhall. No hard questions, plenty of nodding. What do you do next?' options={[
+  { label: 'Move on. The room agreed.', why: 'Silence isn’t agreement. Quiet non-compliance is the resistance that kills change months later.' },
+  { label: 'Treat the silence as data: follow up one to one, especially with the people who lose a habit or power.', good: true, why: 'Loud resistance can be engaged; silent resistance has to be found. Small conversations surface what a townhall won’t.' },
+  { label: 'Announce penalties for anyone who doesn’t adopt it.', why: 'Coercion gets surface compliance and pushes the resistance further underground.' },
+]} />
+
 ### Ten sources of resistance
 
 | Inside people | | Inside the system | |
@@ -105,6 +113,14 @@ A few catches worth knowing:
 Giving your loudest credible critic a real design role, with actual power to change the plan, is participation. Giving them a token seat is manipulation. The difference is whether you are willing to be changed by them.
 
 </div>
+
+<Sort title='Try it: change with people, or change to people?' choices={['With people', 'To people']} items={[
+  { text: 'Explaining the reasons honestly, before and during the change.', answer: 'With people', why: 'Communication is the first of the five tactics that build change with people.' },
+  { text: 'Letting the team help design how the new process will work.', answer: 'With people', why: 'Participation: it is hard to fight a decision you helped make.' },
+  { text: 'Giving the loudest critic a title on the project but no real say.', answer: 'To people', why: 'That is cooptation, a form of manipulation. It backfires once people realise.' },
+  { text: '“Accept the new system or face a transfer.”', answer: 'To people', why: 'Coercion: fastest, with the highest cost later.' },
+  { text: 'Applying the same rules to everyone, with leaders taking the first cuts.', answer: 'With people', why: 'Fair implementation lets people accept a hard outcome.' },
+]} />
 
 ## Three questions every change must answer
 
@@ -181,6 +197,14 @@ Two benefits: the problem chooses the solution (rather than a manager arriving w
   { title: 'Appreciative inquiry', body: 'Starts from “when were we at our best?” rather than “what’s broken?”. Four Ds: Discovery, Dreaming, Design, Destiny.' },
 ]} />
 
+<Sort title='Try it: which Lewin stage does each Kotter step serve?' choices={['Unfreeze', 'Move', 'Refreeze']} items={[
+  { text: 'Create a sense of urgency.', answer: 'Unfreeze', why: 'Steps 1 to 4 make standing still feel unsafe.' },
+  { text: 'Form a powerful guiding coalition.', answer: 'Unfreeze', why: 'Part of the preparation before anything visibly changes.' },
+  { text: 'Empower others and remove barriers.', answer: 'Move', why: 'Steps 5 to 7 carry the change out.' },
+  { text: 'Generate short-term wins.', answer: 'Move', why: 'Early evidence keeps the change moving.' },
+  { text: 'Anchor the new approach in the culture.', answer: 'Refreeze', why: 'Step 8 locks it in.' },
+]} />
+
 ## Change-ready organisations
 
 The best organisations treat change as a capacity, not an event.
@@ -222,6 +246,14 @@ Individual differences change everything: perception (the same layoff terrifies 
 List your team's top five stressors and mark each C (challenge) or H (hindrance). Protect the Cs and remove the Hs. Most hindrances are within your own signature: unclear ownership, duplicate reporting, approval loops. Role ambiguity is the cheapest stressor to fix and the one managers create most often.
 
 </div>
+
+<Sort title='Try it: challenge or hindrance?' choices={['Challenge', 'Hindrance']} items={[
+  { text: 'A tight deadline on a launch the team cares about.', answer: 'Challenge', why: 'Pressure on meaningful work can energise.' },
+  { text: 'Three approvals pending before work can start.', answer: 'Hindrance', why: 'Red tape blocks progress and only corrodes.' },
+  { text: 'Nobody is sure who owns the customer escalation.', answer: 'Hindrance', why: 'Role ambiguity: the cheapest stressor to fix.' },
+  { text: 'A stretch target you set for yourself.', answer: 'Challenge', why: 'A demanding goal you own.' },
+  { text: 'A turf war that eats every stand-up.', answer: 'Hindrance', why: 'Office politics blocks goals.' },
+]} />
 
 ## The case: Jess Westerly at Kauflauf
 

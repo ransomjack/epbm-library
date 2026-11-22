@@ -10,6 +10,8 @@ takeaways:
   - "Pay and conditions only remove dissatisfaction. Drive comes from the work itself."
   - "Fairness is a ratio against a referent, not an absolute amount."
 ---
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
 import Fig from '../../components/d/Fig.astro';
 import Cards from '../../components/d/Cards.astro';
 import Steps from '../../components/d/Steps.astro';
@@ -90,6 +92,15 @@ The opposite of *satisfaction* is **no satisfaction**. The opposite of *dissatis
 </div>
 
 The method draws fair criticism: people credit themselves for the good times and blame their surroundings for the bad. Yet the theory is used widely, including across Asia in settings such as Japan and India (few managers anywhere are unfamiliar with it), and its core recommendation, enrich the work itself, has held up.
+
+<Sort title='Try it: motivator or hygiene factor?' choices={['Motivator', 'Hygiene factor']} items={[
+  { text: 'Being given full ownership of a project from start to finish.', answer: 'Motivator', why: 'Responsibility and achievement come from the work itself. They create satisfaction.' },
+  { text: 'A pay rise that brings salary in line with the market.', answer: 'Hygiene factor', why: 'Fair pay stops dissatisfaction. On its own it does not create drive.' },
+  { text: 'A cleaner, quieter office.', answer: 'Hygiene factor', why: 'Working conditions are surroundings, not the work. Fixing them reaches "no complaints".' },
+  { text: 'Public recognition for solving a hard client problem.', answer: 'Motivator', why: 'Recognition for achievement is one of Herzberg’s motivators.' },
+  { text: 'A clearer company leave policy.', answer: 'Hygiene factor', why: 'Company policy is a hygiene factor.' },
+  { text: 'A path to lead a bigger team next year.', answer: 'Motivator', why: 'Advancement and growth are motivators.' },
+]} />
 
 ### McClelland's theory of needs
 
@@ -231,6 +242,12 @@ You can't always give people the raise or promotion they want. You can always ex
 
 **Engagement** is the investment of a person's physical, cognitive and emotional energy in their work, deeper than simply liking the job. It rises when the work feels meaningful, when there are enough resources to do it well, and when the person's values match the organisation's. Two cautions: it overlaps heavily with job satisfaction, and over-engagement has a dark side. A nurse completely absorbed in patient care is more effective, but the same total involvement, unchecked, becomes burnout.
 
+<Decide q='A capable salesperson does only the minimum. She is confident that extra effort would win more deals, and the bonus rules are clear and always honoured. But the bonus is a weekend resort voucher, and what she wants most is time at home with her young child. Which link is broken?' options={[
+  { label: 'Expectancy: effort won’t lead to performance.', why: 'She believes extra effort would win more deals, so this link holds.' },
+  { label: 'Instrumentality: performance won’t lead to the reward.', why: 'The rules are clear and always honoured, so performance does bring the reward.' },
+  { label: 'Valence: the reward isn’t something she values.', good: true, why: 'The reward is real but unwanted. Because the three links multiply, low valence pulls the whole score down. A cafeteria-style choice, such as time off instead of the voucher, would fix it.' },
+]} />
+
 ## Putting it together: the integrated model
 
 None of these theories competes with the others. Expectancy theory provides the spine, and every other theory explains one of its links.
@@ -314,6 +331,14 @@ Pay involves two separate decisions.
 The textbook tells of an employee on $8.50 an hour, in a job that isn't challenging, who speaks about it with real enthusiasm. Her supervisor praises her in front of others and named her Employee of the Month. If your budget is tight, recognition is the lever you always have: specific, prompt, public where appropriate, and fair.
 
 </div>
+
+<Sort title='Try it: whose performance does the pay plan reward?' choices={['The individual', 'The team or the firm']} items={[
+  { text: 'Piece rate', answer: 'The individual', why: 'A fixed amount for each unit the person produces.' },
+  { text: 'Merit pay', answer: 'The individual', why: 'Tied to the person’s appraisal rating.' },
+  { text: 'Gainsharing', answer: 'The team or the firm', why: 'The team shares the gains from improved performance.' },
+  { text: 'Profit sharing', answer: 'The team or the firm', why: 'Paid from a formula based on the company’s profit.' },
+  { text: 'Employee stock ownership', answer: 'The team or the firm', why: 'Employees own a share of the whole company.' },
+]} />
 
 ## The case, briefly: Shivani Carriers
 

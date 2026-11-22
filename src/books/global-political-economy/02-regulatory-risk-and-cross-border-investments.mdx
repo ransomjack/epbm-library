@@ -10,6 +10,8 @@ takeaways:
   - "Assess six country risks: political, economic, transfer, exchange rate, location/neighbourhood and sovereign."
   - "PEST scans the macro environment for factors that matter and are likely to change, and feeds the O and T of SWOT."
 ---
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
 import Fig from '../../components/d/Fig.astro';
 import Cards from '../../components/d/Cards.astro';
 import FDIChains from '../../components/d/FDIChains.astro';
@@ -33,6 +35,13 @@ Every cross-border investment fits one or more of four motives. "Tax avoidance" 
 These four come from John Dunning's well-known classification of FDI: resource-seeking, market-seeking, efficiency-seeking and strategic-asset-seeking. A single deal often has more than one motive. Tata–JLR was about markets **and** strategic assets (the brands).
 
 </div>
+
+<Sort title='Try it: which motive?' choices={['Resources', 'Markets', 'Efficiency', 'Strategic assets']} items={[
+  { text: 'Buying a stake in oil fields abroad.', answer: 'Resources', why: 'Energy not available, or costlier, at home.' },
+  { text: 'Opening stores in a new country to sell the products you already make.', answer: 'Markets', why: 'New customers.' },
+  { text: 'Moving assembly to a lower-cost country close to your customers.', answer: 'Efficiency', why: 'Lower cost and closeness to the market.' },
+  { text: 'Buying a European IT firm for its engineers and client relationships.', answer: 'Strategic assets', why: 'Capabilities you can’t easily build yourself.' },
+]} />
 
 ## Horizontal vs vertical FDI
 
@@ -87,6 +96,12 @@ Before investing anywhere, assess these six.
 
 </div>
 
+<Decide q='Your subsidiary is profitable, but new capital controls stop it sending dividends home. Which country risk is this?' options={[
+  { label: 'Political risk', why: 'Related, but the six-way list has a more precise name for this.' },
+  { label: 'Transfer risk', good: true, why: 'Limits on moving profits, dividends, royalties or capital out of the country.' },
+  { label: 'Exchange-rate risk', why: 'That is about the currency losing value, not about being unable to move the money.' },
+]} />
+
 ## PEST: scanning the big picture
 
 PEST identifies the external, macro-level factors that shape a firm's competitive position. Its output goes straight into the **Opportunities** and **Threats** of a SWOT.
@@ -109,6 +124,14 @@ Only include a factor if it (a) **directly affects** how attractive the industry
 
 - **Disintermediation:** technology **removes** a middleman. Travel agents replaced by online booking.
 - **Re-intermediation:** technology **creates** a new middleman. Amazon, eBay and Expedia are re-intermediation, not disintermediation.
+
+<Sort title='Try it: which PEST factor?' choices={['Political', 'Economic', 'Social', 'Technological']} items={[
+  { text: 'A new tariff on imported components.', answer: 'Political', why: 'Trade policy.' },
+  { text: 'Inflation pushing up input costs.', answer: 'Economic', why: 'Hits both spending power and costs.' },
+  { text: 'An ageing population.', answer: 'Social', why: 'Demographics.' },
+  { text: 'Online booking replacing travel agents.', answer: 'Technological', why: 'Disintermediation.' },
+  { text: 'A swing in the exchange rate.', answer: 'Economic', why: 'Hits margins directly for international firms.' },
+]} />
 
 ## The PEST family
 
@@ -138,6 +161,12 @@ The five-step process:
 - PEST gives the **O and T** of SWOT. Strengths and Weaknesses come from internal analysis.
 
 </div>
+
+<Decide q='Should a decades-old law that nobody expects to change go into your PEST analysis?' options={[
+  { label: 'Yes. Every relevant factor belongs in PEST.', why: 'Without a filter, PEST becomes an endless list with no conclusion.' },
+  { label: 'No, unless it is likely to change. Include only factors that bear directly on the industry and are likely to change.', good: true, why: 'That is the golden rule of PEST.' },
+  { label: 'Only if it is a political factor.', why: 'The rule applies to all four areas.' },
+]} />
 
 ## Where foreign investment went in 2024
 

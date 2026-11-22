@@ -10,6 +10,8 @@ takeaways:
   - "Read ratios through four windows: liquidity, efficiency, profitability, leverage."
   - "Debt raises ROE only while the return on assets beats the cost of debt."
 ---
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
 import Fig from '../../components/d/Fig.astro';
 import Cards from '../../components/d/Cards.astro';
 import Bars from '../../components/d/Bars.astro';
@@ -65,6 +67,12 @@ A bonus issue **capitalises reserves**: share capital goes up and reserves go do
 The premium is driven by **sentiment**, which is temporary. The price could settle at Rs.70, Rs.65 or Rs.55. A bonus creates no lasting value on its own; the business hasn't changed. Treat it as a signal to analyse, not a reason to chase the stock.
 
 </div>
+
+<Decide q='A company makes a 1:1 bonus issue. What happens to total owners’ equity?' options={[
+  { label: 'It doubles, because there are twice as many shares.', why: 'No new money comes in.' },
+  { label: 'It stays the same: share capital rises and reserves fall by the same amount.', good: true, why: 'A bonus moves reserves into share capital. Any price rise beyond the arithmetic is sentiment.' },
+  { label: 'It falls, because reserves are used up.', why: 'Reserves fall, but share capital rises by exactly that amount.' },
+]} />
 
 ### Stock splits and buybacks
 
@@ -129,6 +137,13 @@ Set an anchor to 100% and express everything else as a share of it: **net sales*
 
 IT companies carry almost no long-term debt because their main asset is people, which isn't debt-financed. A bank couldn't be Company B, since its customer deposits **are** its liabilities. Common-sizing reveals the industry without the company's name.
 
+<Sort title='Try it: which tool of analysis?' choices={['Horizontal', 'Trend', 'Vertical']} items={[
+  { text: 'This year’s revenue against last year’s, in rupees and per cent.', answer: 'Horizontal', why: 'Two periods, line by line.' },
+  { text: 'Ten years of sales, each shown as an index of the first year.', answer: 'Trend', why: 'Many years against one base year.' },
+  { text: 'Every expense as a percentage of revenue, to compare a small firm with a large one.', answer: 'Vertical', why: 'Common-size analysis removes the effect of size.' },
+  { text: 'Each asset as a percentage of total assets.', answer: 'Vertical', why: 'Common-size balance sheet.' },
+]} />
+
 ## The four-window approach to ratios
 
 <Cards min={160} items={[
@@ -173,6 +188,12 @@ Cash, receivables and inventory earn little or nothing; plant and technology ear
 </Fig>
 
 > "Shareholder wealth maximisation is the objective. Supplier wealth maximisation is not. Stretching payables to the maximum allowed term is exactly what a well-run business should do." Prof. Manju Jaiswall
+
+<Decide q='A finance head proudly reports that the company pays suppliers in 10 days, although the agreed terms allow 45. Good practice?' options={[
+  { label: 'Yes. Paying fast is always good.', why: 'Within agreed terms, paying later lets suppliers fund your working capital at no cost.' },
+  { label: 'No. The company is giving up 35 days of free credit and tying up its own cash.', good: true, why: 'Days payable should be stretched to the agreed limit. Low days payable lengthens the cash conversion cycle.' },
+  { label: 'Only if the suppliers are small businesses.', why: 'Relationships matter, but the financial point is the free credit being given up.' },
+]} />
 
 ### Window 3: profitability
 
@@ -230,6 +251,12 @@ If assets earn 8% and debt costs 11%, every rupee of debt **destroys** equity va
 
 **The three levers of return on equity.** ROE = net profit margin × asset turnover × financial leverage (the DuPont breakdown). It shows whether a return comes from earning more on each sale, working the assets harder, or borrowing more.
 
+<Decide q='Assets earn 8% (return on total assets) and the company can borrow at 11%. Should it borrow more to lift return on equity?' options={[
+  { label: 'Yes. More debt always raises return on equity.', why: 'Only when the assets earn more than the debt costs.' },
+  { label: 'No. Each borrowed rupee earns 8% and costs 11%, so it reduces what is left for shareholders.', good: true, why: 'That is negative leverage. Borrowing helps only when return on assets beats the cost of debt.' },
+  { label: 'Yes, as long as interest coverage stays above 1.', why: 'Coverage measures safety, not whether the borrowing adds value.' },
+]} />
+
 ### Putting the windows together
 
 **Liquidity** keeps the business alive in the short run; **efficiency** makes every asset work; **profitability** turns those sales into profit; **leverage** turns profit into the best possible return for owners. A very profitable company with poor liquidity can default before the profit arrives. A liquid company with poor efficiency is wasting capital. Ratio analysis tells you **which window** needs attention.
@@ -243,3 +270,13 @@ Run the four-window check on your own unit every quarter, not just when the acco
 - **IT services / SaaS:** watch DSO. Under 45 days is healthy; over 75 means unhappy clients or a broken billing process. For SaaS, track gross margin separately from EBITDA; below 60% gross margin is a unit-economics problem. For asset-light services, ROCE should comfortably beat 15–18%. If ROCE is below a bank FD rate, the business destroys value and should return capital rather than reinvest.
 
 </div>
+
+<Sort title='Try it: which window does each ratio belong to?' choices={['Liquidity', 'Efficiency', 'Profitability', 'Leverage']} items={[
+  { text: 'Current ratio', answer: 'Liquidity', why: 'Can the company pay its bills in the short term?' },
+  { text: 'Inventory turnover', answer: 'Efficiency', why: 'How hard the assets are being worked.' },
+  { text: 'Net profit margin', answer: 'Profitability', why: 'How much of each rupee of sales is left as profit.' },
+  { text: 'Debt-equity ratio', answer: 'Leverage', why: 'How much of the funding is borrowed.' },
+  { text: 'Debtor days', answer: 'Efficiency', why: 'How fast customers pay.' },
+  { text: 'Interest coverage', answer: 'Leverage', why: 'How many times operating profit covers the interest bill.' },
+]} />
+

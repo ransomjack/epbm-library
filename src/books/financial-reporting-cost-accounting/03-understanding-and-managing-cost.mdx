@@ -10,6 +10,8 @@ takeaways:
   - "The contribution income statement separates costs by behaviour, which is what decisions need."
   - "Never shut a unit because its P&L shows a loss. Compare the revenue you lose with the costs you actually avoid."
 ---
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
 import Fig from '../../components/d/Fig.astro';
 import Cards from '../../components/d/Cards.astro';
 import Steps from '../../components/d/Steps.astro';
@@ -58,6 +60,14 @@ Before you classify a single rupee, decide **what you are costing**: a product, 
 
 Box 1 + Box 2 + Box 3 = **total manufacturing cost**.
 
+<Sort title='Try it: direct or indirect for a T-shirt?' choices={['Direct', 'Indirect']} items={[
+  { text: 'Fabric, 1.2 metres per shirt.', answer: 'Direct', why: 'Measurable and traceable to each shirt.' },
+  { text: 'Stitching labour paid per shirt.', answer: 'Direct', why: 'You know exactly what each shirt cost.' },
+  { text: 'Factory rent.', answer: 'Indirect', why: 'It serves all shirts, so it has to be allocated.' },
+  { text: 'The factory manager’s salary.', answer: 'Indirect', why: 'Manages the whole floor, not one shirt.' },
+  { text: 'Thread used per shirt.', answer: 'Direct', why: 'Tracked per unit.' },
+]} />
+
 ### Product cost vs period cost
 
 | | Product cost | Period cost |
@@ -84,6 +94,14 @@ Manufacturing cost is what it costs to **make** the product. It becomes an expen
 |---|---|---|---|
 | Fixed | Constant | Falls | Factory rent Rs.50,000/month: Rs.500/unit at 100 units, Rs.250 at 200 |
 | Variable | Rises proportionally | Constant | Plastic at Rs.100/computer: Rs.10,000 for 100, Rs.20,000 for 200 |
+
+<Sort title='Try it: fixed, variable or mixed?' choices={['Fixed', 'Variable', 'Mixed']} items={[
+  { text: 'Factory rent of ₹50,000 a month.', answer: 'Fixed', why: 'The same total whatever the volume.' },
+  { text: 'Plastic at ₹100 per computer.', answer: 'Variable', why: 'The total rises with every unit.' },
+  { text: 'An electricity bill with a standing charge plus a charge per unit.', answer: 'Mixed', why: 'Part fixed, part variable: it has to be split.' },
+  { text: 'Sales commission on each sale.', answer: 'Variable', why: 'Paid only when a sale happens.' },
+  { text: 'A supervisor’s monthly salary.', answer: 'Fixed', why: 'Paid whatever the output.' },
+]} />
 
 ### Mixed costs: splitting fixed from variable
 
@@ -235,6 +253,12 @@ At 513 units contribution is 513 × $331.25 = $169,931, still $69 short. Break-e
 
 </div>
 
+<Decide q='At the chai stall (price ₹20, variable cost ₹8, fixed costs ₹36,000 a month), the helper’s pay rises by ₹6,000 a month. What is the new break-even?' options={[
+  { label: '3,000 cups, the same as before.', why: 'Fixed costs went up, so the hole to fill is bigger.' },
+  { label: '3,500 cups.', good: true, why: 'Fixed costs are now ₹42,000. Contribution is still ₹12 a cup. 42,000 ÷ 12 = 3,500 cups, about 117 a day.' },
+  { label: '4,500 cups.', why: 'That was the target for an ₹18,000 profit at the old fixed costs.' },
+]} />
+
 ## Prestige Telephone: the shutdown decision
 
 Prestige Telephone is a regulated utility in 1999 whose prices the government controls. President **Daniel Rowe** noticed that the mainframe running telephone operations sat idle much of the day, so he set up **Prestige Data Services** to sell those hours: **$800/hour** to outside businesses, **$400/hour** to the parent. Three years on, it has never had a profitable month. It is April 2003. Should Rowe shut it down?
@@ -281,6 +305,12 @@ Closing saves about **$87,000** a month but gives up about **$200,000** of reven
 March's accounting loss of **$21,438** is real, but it answers "how much did the subsidiary make?" Rowe's question is "am I better off with it or without it?" Only **relevant-cost analysis** answers that, and here the two give **opposite** answers. Never close a unit on a P&L loss alone.
 
 </div>
+
+<Decide q='A division shows a loss of ₹2 lakh after being charged ₹5 lakh of head-office costs. Those head-office costs won’t go away if the division closes. Should it close?' options={[
+  { label: 'Yes. It loses money.', why: 'The loss appears only after costs the firm pays anyway.' },
+  { label: 'No. Before the unavoidable charge, it contributes ₹3 lakh; closing it would make the firm ₹3 lakh worse off.', good: true, why: 'Compare avoidable revenue with avoidable cost. The income statement and the shutdown decision answer different questions.' },
+  { label: 'Only if it has made a loss for two years in a row.', why: 'The test is avoidable against unavoidable cost, not how long the loss lasted.' },
+]} />
 
 ### Q2. How many commercial hours to break even?
 
