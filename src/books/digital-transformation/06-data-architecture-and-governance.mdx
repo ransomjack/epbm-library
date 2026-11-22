@@ -11,7 +11,6 @@ takeaways:
   - "Almost none of the failures in this module were technical. They were relationships that were never realigned."
 ---
 import Fig from '../../components/d/Fig.astro';
-import Cards from '../../components/d/Cards.astro';
 import Flow from '../../components/d/Flow.astro';
 import Sort from '../../components/d/Sort.astro';
 import Decide from '../../components/d/Decide.astro';
@@ -29,6 +28,12 @@ The last stretch of the module went to data products. Two real companies got it 
 **The base gravy.** The professor's kitchen version. The big bang is cooking every dish on the menu before anybody has ordered, then finding nobody wanted what you made. The grassroots is a fast-food kiosk chopping onions from scratch for every order. A good restaurant does neither. It makes one base gravy in the morning, and from that one base produces paneer butter masala and the rest of the menu.
 
 A car maker does the same: one standard base model, with different seats and trim for different buyers. One base, many users, improved over time.
+
+<Decide q="A retailer wants personalised offers in the app within six months. IT proposes moving every system's data into one cloud lake first, then deciding what to build. What is the risk?" options={[
+  { label: "None. Clean data first is always right.", why: "That was the bank's reasoning. Three years later only occasional analysts used the lake, and real-time offers were never in scope." },
+  { label: "The big bang: building before anyone has ordered.", good: true, why: "Start from the use. Build the base the offers need, in a way the next use can reuse: the base gravy, not the whole menu." },
+  { label: "Too little central control.", why: "The opposite problem. Too little control is the grassroots failure." },
+]} />
 
 ## Inside the grassroots architecture
 
@@ -66,6 +71,14 @@ Control buys you symmetry. It also installs guardrails. Pulling data straight of
 **Gold at home, or gold in the bank locker.** A hundred households each keeping gold at home is easy pickings for a hundred small thefts. Moving it all into one bank locker is far more regulated. But the bank is now a single, very attractive target. Neither is safe by default. What changes is the shape of the risk.
 
 On the single point of failure the professor was relaxed. If the central store goes down for a few hours, the data-product layer acts as the backup. What suffers isn't availability but delay: twenty-minute-old data becomes two-hour-old data.
+
+<Sort title="Try it: grassroots or monolith?" choices={['Grassroots', 'Monolith']} items={[
+  { text: "Three departments clean the same customer data separately.", answer: 'Grassroots', why: "Duplication: the same work done three times." },
+  { text: "A business user can't pull data without a specialist and an access request.", answer: 'Monolith', why: "Control installs guardrails. Flexibility becomes a barrier." },
+  { text: "The chief executive's meeting starts by reconciling revenue in units, rupees and tonnes.", answer: 'Grassroots', why: "No standardisation and no single source of truth." },
+  { text: "One attractive target holds everything, so a breach is a big one.", answer: 'Monolith', why: "Gold in the bank locker: fewer thefts, but one big target." },
+  { text: "Data is close to real time and built exactly for its business owner.", answer: 'Grassroots', why: "Its real strength: few hops from source to screen, and better adoption." },
+]} />
 
 ## The hybrid, and the data product layer
 

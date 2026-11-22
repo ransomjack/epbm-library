@@ -1445,7 +1445,7 @@
       "Demand variability (noise) and the promised service level"
      ],
      "answer": 3,
-     "why": "Predictable high volume needs near-zero buffer; erratic low volume can need plenty - the classic trap."
+     "why": "Predictable high volume needs near-zero buffer; erratic low volume can need plenty - a common mistake."
     },
     {
      "tag": "MCQ",
@@ -2236,18 +2236,6 @@
      ],
      "answer": 2,
      "why": "The collapse is steep; a 99%-utilised system has congestion multiplier 99 - IndiGo's December arithmetic."
-    },
-    {
-     "tag": "MCQ",
-     "q": "When Mumbai airport caps peak flights to cut congestion, the module's critique is:",
-     "options": [
-      "It violates Little's Law",
-      "Correct - always curb demand",
-      "It raises utilisation",
-      "It kills lambda (sales); the better lever is raising mu (capacity or speed)"
-     ],
-     "answer": 3,
-     "why": "Curbing arrivals sacrifices revenue; adding service rate attacks congestion without killing sales."
     },
     {
      "tag": "MCQ",

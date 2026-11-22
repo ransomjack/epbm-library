@@ -3332,18 +3332,6 @@
      "why": "The stressors and their meaning differ across cultures."
     },
     {
-     "tag": "MCQ",
-     "q": "The best-documented buffer against stress in the whole literature is …",
-     "options": [
-      "An enriched job",
-      "Social support",
-      "High pay",
-      "A bonus"
-     ],
-     "answer": 1,
-     "why": "Social support is repeatedly the strongest moderator."
-    },
-    {
      "tag": "CLASS",
      "q": "The professor’s three questions for any change are content, process and …",
      "options": [
@@ -3578,18 +3566,6 @@
     },
     {
      "tag": "MCQ",
-     "q": "The strongest source of self-efficacy is …",
-     "options": [
-      "Verbal persuasion",
-      "Enactive mastery",
-      "Vicarious modelling",
-      "Arousal"
-     ],
-     "answer": 1,
-     "why": "Actually succeeding at the task builds belief most."
-    },
-    {
-     "tag": "MCQ",
      "q": "The Wells Fargo scandal shows goals …",
      "options": [
       "Reduce effort",
@@ -3611,30 +3587,6 @@
      ],
      "answer": 3,
      "why": "Seeing the beneficiary raised persistence and funds raised."
-    },
-    {
-     "tag": "MCQ",
-     "q": "A high-nAch person in the integrated model …",
-     "options": [
-      "Jumps from effort straight to personal goals",
-      "Avoids challenge",
-      "Needs tight supervision",
-      "Only wants pay"
-     ],
-     "answer": 0,
-     "why": "They’re internally driven and bypass extrinsic rewards."
-    },
-    {
-     "tag": "MCQ",
-     "q": "ESOPs raise performance only when employees …",
-     "options": [
-      "Psychologically feel ownership and have a say",
-      "Get bonuses",
-      "Are paid hourly",
-      "Work remotely"
-     ],
-     "answer": 0,
-     "why": "Felt ownership and voice are required."
     },
     {
      "tag": "MCQ",
@@ -3674,30 +3626,6 @@
     },
     {
      "tag": "MCQ",
-     "q": "Self-determination theory’s three needs are autonomy, competence and …",
-     "options": [
-      "Power",
-      "Relatedness",
-      "Security",
-      "Achievement"
-     ],
-     "answer": 1,
-     "why": "Autonomy, competence, relatedness."
-    },
-    {
-     "tag": "MCQ",
-     "q": "The punctuated-equilibrium model applies only to …",
-     "options": [
-      "Permanent groups",
-      "Virtual teams",
-      "Large groups",
-      "Temporary deadline-driven groups"
-     ],
-     "answer": 3,
-     "why": "Major change occurs at the midpoint of a fixed-deadline group."
-    },
-    {
-     "tag": "MCQ",
      "q": "Asch’s experiments demonstrated …",
      "options": [
       "Groupshift",
@@ -3719,42 +3647,6 @@
      ],
      "answer": 1,
      "why": "Collectivist members feel more responsible to the group."
-    },
-    {
-     "tag": "MCQ",
-     "q": "The most dangerous cohesiveness combination is …",
-     "options": [
-      "High cohesion + high norms",
-      "Low + low",
-      "High cohesion + low performance norms",
-      "Low cohesion + high norms"
-     ],
-     "answer": 2,
-     "why": "A tight team coheres around disengagement."
-    },
-    {
-     "tag": "MCQ",
-     "q": "A faultline is …",
-     "options": [
-      "A personality clash",
-      "A reward system",
-      "A decision rule",
-      "An invisible split where aligned attributes divide a group"
-     ],
-     "answer": 3,
-     "why": "It’s where the group breaks when pressure comes."
-    },
-    {
-     "tag": "MCQ",
-     "q": "Which decision technique yields the highest-quality ideas?",
-     "options": [
-      "Interacting",
-      "Voting",
-      "Brainstorming",
-      "Nominal Group Technique"
-     ],
-     "answer": 3,
-     "why": "Silent idea-writing removes social pressure."
     },
     {
      "tag": "MCQ",
@@ -3782,18 +3674,6 @@
     },
     {
      "tag": "MCQ",
-     "q": "Knowing who is best at what on a team is …",
-     "options": [
-      "Reflexivity",
-      "Cohesion",
-      "Transactive memory",
-      "Efficacy"
-     ],
-     "answer": 2,
-     "why": "Part of a shared mental model."
-    },
-    {
-     "tag": "MCQ",
      "q": "The Big Five trait most important for teams is …",
      "options": [
       "Openness",
@@ -3803,66 +3683,6 @@
      ],
      "answer": 3,
      "why": "Conscientious members follow through and back up teammates."
-    },
-    {
-     "tag": "MCQ",
-     "q": "Optimal team size per research and the ‘two-pizza rule’ is about …",
-     "options": [
-      "5–9",
-      "20+",
-      "10–15",
-      "2–3"
-     ],
-     "answer": 0,
-     "why": "Above ~10, loafing and coordination cost rise."
-    },
-    {
-     "tag": "MCQ",
-     "q": "Which conflict type can help a team when moderate?",
-     "options": [
-      "Political",
-      "Personal",
-      "Task",
-      "Relationship"
-     ],
-     "answer": 2,
-     "why": "Moderate task conflict sharpens evaluation."
-    },
-    {
-     "tag": "MCQ",
-     "q": "The central lesson of Greg James is that he …",
-     "options": [
-      "Applied co-located habits to a distributed team",
-      "Lacked skill",
-      "Had too few staff",
-      "Was overpaid"
-     ],
-     "answer": 0,
-     "why": "Distributed coordination must be deliberately designed."
-    },
-    {
-     "tag": "MCQ",
-     "q": "Nick’s ‘not competent’ remark is …",
-     "options": [
-      "Groupthink",
-      "Status equity",
-      "Role conflict",
-      "Social identity threat"
-     ],
-     "answer": 3,
-     "why": "It damaged self-esteem and had direct operational fallout."
-    },
-    {
-     "tag": "MCQ",
-     "q": "A team is appropriate only if work passes complexity, common purpose and …",
-     "options": [
-      "Speed",
-      "Size",
-      "Interdependency",
-      "Cost"
-     ],
-     "answer": 2,
-     "why": "Like soccer (interdependent), not swimming (additive)."
     },
     {
      "tag": "MCQ",
@@ -3878,30 +3698,6 @@
     },
     {
      "tag": "MCQ",
-     "q": "A wide span of control produces a … organisation.",
-     "options": [
-      "More formal",
-      "More centralised",
-      "Flatter",
-      "Taller"
-     ],
-     "answer": 2,
-     "why": "Fewer managers, flatter hierarchy — if work is routine."
-    },
-    {
-     "tag": "MCQ",
-     "q": "Which structure violates unity of command by design?",
-     "options": [
-      "Simple",
-      "Matrix",
-      "Functional",
-      "Divisional"
-     ],
-     "answer": 1,
-     "why": "Matrix gives two bosses (functional + project)."
-    },
-    {
-     "tag": "MCQ",
      "q": "Acme is mechanistic; Omega is …",
      "options": [
       "Virtual",
@@ -3914,30 +3710,6 @@
     },
     {
      "tag": "MCQ",
-     "q": "An innovation strategy calls for a … structure.",
-     "options": [
-      "Mechanistic",
-      "Bureaucratic",
-      "Functional",
-      "Organic"
-     ],
-     "answer": 3,
-     "why": "Innovation needs flexibility and experimentation."
-    },
-    {
-     "tag": "MCQ",
-     "q": "Routine technology pushes structure toward …",
-     "options": [
-      "Organic",
-      "Circular",
-      "Team-based",
-      "Mechanistic"
-     ],
-     "answer": 3,
-     "why": "Same inputs/outputs suit standardised design."
-    },
-    {
-     "tag": "MCQ",
      "q": "Cutting payroll without redesigning the work produces …",
      "options": [
       "Decentralisation",
@@ -3947,18 +3719,6 @@
      ],
      "answer": 3,
      "why": "Remaining staff overloaded, morale down, knowledge lost."
-    },
-    {
-     "tag": "MCQ",
-     "q": "In The Restaurant, Stage 1 is a … structure.",
-     "options": [
-      "Divisional",
-      "Matrix",
-      "Simple",
-      "Bureaucracy"
-     ],
-     "answer": 2,
-     "why": "Flat, centralised, low formalisation."
     },
     {
      "tag": "MCQ",
@@ -4022,18 +3782,6 @@
     },
     {
      "tag": "MCQ",
-     "q": "The matrix’s most dangerous feature is …",
-     "options": [
-      "No specialists",
-      "No rules",
-      "The dual reporting line creating role conflict",
-      "Too few managers"
-     ],
-     "answer": 2,
-     "why": "Two authorities pulling on one person."
-    },
-    {
-     "tag": "MCQ",
      "q": "‘Structure is strategy made visible’ means design choices …",
      "options": [
       "Don’t matter",
@@ -4058,66 +3806,6 @@
     },
     {
      "tag": "MCQ",
-     "q": "The most dangerous resistance is …",
-     "options": [
-      "Townhall questions",
-      "Written objections",
-      "Loud complaints",
-      "Silent, deferred resistance"
-     ],
-     "answer": 3,
-     "why": "Invisible until adoption quietly collapses."
-    },
-    {
-     "tag": "MCQ",
-     "q": "Lewin’s steps in order are …",
-     "options": [
-      "Unfreeze, move, refreeze",
-      "Refreeze, move, unfreeze",
-      "Move, unfreeze, refreeze",
-      "Diagnose, act, evaluate"
-     ],
-     "answer": 0,
-     "why": "Melt, mould, freeze."
-    },
-    {
-     "tag": "MCQ",
-     "q": "The strongest restraining force in force-field analysis is often …",
-     "options": [
-      "Past success",
-      "Young staff",
-      "New tech",
-      "Lack of cash"
-     ],
-     "answer": 0,
-     "why": "‘Why fix what isn’t broken?’ in winning firms."
-    },
-    {
-     "tag": "MCQ",
-     "q": "Kotter steps 1–4 map to which Lewin phase?",
-     "options": [
-      "Refreeze",
-      "Evaluate",
-      "Unfreeze",
-      "Move"
-     ],
-     "answer": 2,
-     "why": "Most failed change skips the unfreezing steps."
-    },
-    {
-     "tag": "MCQ",
-     "q": "Which tactic crosses the ethical line?",
-     "options": [
-      "Communication",
-      "Fair implementation",
-      "Participation",
-      "Manipulation and cooptation"
-     ],
-     "answer": 3,
-     "why": "Covert influence and fake roles destroy credibility when found out."
-    },
-    {
-     "tag": "MCQ",
      "q": "Coercion is …",
      "options": [
       "Cost-free",
@@ -4127,78 +3815,6 @@
      ],
      "answer": 2,
      "why": "Surface compliance now, underground disengagement later."
-    },
-    {
-     "tag": "MCQ",
-     "q": "Action research’s five steps are diagnosis, analysis, feedback, action and …",
-     "options": [
-      "Selection",
-      "Coercion",
-      "Evaluation",
-      "Refreezing"
-     ],
-     "answer": 2,
-     "why": "It ends by measuring against the baseline data."
-    },
-    {
-     "tag": "MCQ",
-     "q": "Appreciative inquiry starts from …",
-     "options": [
-      "When we were at our best",
-      "What’s broken",
-      "The budget",
-      "The org chart"
-     ],
-     "answer": 0,
-     "why": "Its 4-D cycle builds on strengths, not deficits."
-    },
-    {
-     "tag": "MCQ",
-     "q": "Red tape and office politics are … stressors.",
-     "options": [
-      "Hindrance",
-      "Resource",
-      "Buffer",
-      "Challenge"
-     ],
-     "answer": 0,
-     "why": "They block goals and only corrode."
-    },
-    {
-     "tag": "MCQ",
-     "q": "The best-documented buffer against stress is …",
-     "options": [
-      "Caffeine",
-      "Social support",
-      "Overtime",
-      "High pay"
-     ],
-     "answer": 1,
-     "why": "Social support is the most reliable moderator."
-    },
-    {
-     "tag": "MCQ",
-     "q": "The cheapest organisational stressor a leader can fix is …",
-     "options": [
-      "Personality",
-      "Pay",
-      "The economy",
-      "Role ambiguity"
-     ],
-     "answer": 3,
-     "why": "Clarifying ownership costs little and is within the leader’s control."
-    },
-    {
-     "tag": "MCQ",
-     "q": "Kauflauf’s consultants rank money … among motivators.",
-     "options": [
-      "Last",
-      "Only money",
-      "First",
-      "Second"
-     ],
-     "answer": 0,
-     "why": "Pride and storytelling motivate them, not cash."
     },
     {
      "tag": "MCQ",

@@ -811,7 +811,7 @@
       "The question is malformed - alternatives are chosen (1 or 0); only states of nature carry probabilities"
      ],
      "answer": 3,
-     "why": "This was the professor's explicit concept trap: you pick alternatives, you do not roll dice on them."
+     "why": "The professor stressed this point: you pick alternatives, you do not roll dice on them."
     },
     {
      "tag": "MCQ",

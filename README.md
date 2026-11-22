@@ -37,20 +37,20 @@ There is no sign-in, no account and no tracking. Anything the site saves (your t
 | Business Decision Making | 8 | 327 |
 | Market Economies & Macroeconomic Policies | 9 | 217 |
 | Financial Reporting & Cost Accounting | 5 | 315 |
-| Leadership and People Skills | 5 | 350 |
-| Operational Excellence | 6 | 200 |
+| Leadership and People Skills | 5 | 318 |
+| Operational Excellence | 6 | 199 |
 | Digital Transformation | 7 | 130 |
 | Marketing Management | 16 | 302 |
-| **Total** | **60** | **1,937** |
+| **Total** | **60** | **1,904** |
 
-That adds up to 206 interactive exercises across the eight books. AI/ML and Business Analytics shows as "Coming soon" and will be added after that module.
+That adds up to 210 interactive exercises across the eight books. AI/ML and Business Analytics shows as "Coming soon" and will be added after that module.
 
 Every book ends with a **Quick Reference** chapter: the formulas, frameworks and one-line summaries from the whole subject in one place.
 
 ## Features
 
 **Reading**
-- One book per subject, one chapter per class session, in the order it was taught.
+- One book per subject, following the class sessions in the order they were taught. Where a session is long, it is split into parts, and the subject page groups the parts under their session.
 - Each chapter opens with a short summary and closes with its key takeaways.
 - Reading time and the number of exercises are shown for every chapter.
 - Light, sepia and dark themes, adjustable text size and a choice of serif or sans-serif text.
@@ -113,7 +113,7 @@ epbm-library/
     ├── components/
     │   ├── Cover.astro       Book cover shown on the home page
     │   ├── Share.astro       WhatsApp / LinkedIn / copy-link row
-    │   └── d/                74 diagram, exercise and calculator components
+    │   └── d/                73 diagram, exercise and calculator components
     ├── data/
     │   ├── subjects.js       Subject list, order, colours, blurbs, PDF and image paths
     │   └── quiz/<subject>.json   Practice questions
@@ -173,7 +173,7 @@ A subject appears as a book on the home page as soon as its folder has at least 
 
 ## Interactive components
 
-All 74 live in `src/components/d/`. The main types:
+All 73 live in `src/components/d/`. The main types:
 
 | Type | Examples | Use |
 |---|---|---|
@@ -251,11 +251,12 @@ The site is hosted on **Cloudflare Pages**, connected to this repository.
 
 Before each release the whole site was checked with a headless browser (Playwright):
 
-- All 60 pages at five widths (360, 390, 768, 1024 and 1440 px): every page loads, nothing overflows sideways, and no script errors appear.
+- All 78 pages at five widths (360, 390, 768, 1024 and 1440 px): every page loads, nothing overflows sideways, and no script errors appear.
 - Every Decide and Sort exercise is clicked through to confirm it responds.
-- Every calculator slider is pushed to its limits to confirm no result breaks (no "NaN").
+- Every calculator slider is pushed to its minimum, middle and maximum to confirm no result breaks (no "NaN"), and calculator results are checked against the worked examples in the notes.
 - Every internal link is checked.
-- Every practice question is validated: it has options, a correct answer in range and an explanation.
+- Every practice question is validated: it has options, a correct answer in range and an explanation, and no question repeats another in the same subject.
+- Page metadata, the sitemap and the search index are checked against every page, and no paragraph is repeated across chapters.
 - Worked numbers in the chapters are recalculated.
 
 ## Adding a new subject

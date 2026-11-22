@@ -338,7 +338,7 @@
       "Rs. 50,000"
      ],
      "answer": 2,
-     "why": "5,000 × 20 × 10% = 10,000. Forgetting the margin gives the 1,00,000 trap."
+     "why": "5,000 × 20 × 10% = 10,000. Forgetting the margin gives the wrong answer of 1,00,000."
     },
     {
      "tag": "MCQ",
