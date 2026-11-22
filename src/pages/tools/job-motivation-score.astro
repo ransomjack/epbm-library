@@ -1,0 +1,38 @@
+---
+import Base from '../../layouts/Base.astro';
+import Share from '../../components/Share.astro';
+import MpsCalc from '../../components/d/MpsCalc.astro';
+import { tools } from '../../data/tools.js';
+import '../../styles/diagrams.css';
+const t = tools.find((x) => x.slug === 'job-motivation-score');
+---
+<Base title="Job motivation score calculator" back={{ href: '/tools/', label: 'Tools' }} description="Free Motivating Potential Score (MPS) calculator. Rate a job on skill variety, task identity, task significance, autonomy and feedback, and see how motivating it is." image="/og/leadership-people-skills.png">
+<main class="wrap tool">
+  <div class="kicker">Tool</div>
+  <h1>How motivating is this job?</h1>
+  <p class="lede">Rate any job from 1 (low) to 7 (high) on five dimensions. The score shows how much the job itself is likely to motivate the person doing it.</p>
+
+  <div class="fig"><div class="fig-body"><MpsCalc /></div></div>
+
+  <div class="prose">
+    <h2>How to read the score</h2>
+    <p>The score comes from Hackman and Oldham's Job Characteristics Model. The first three dimensions are <strong>averaged</strong>, because together they make work feel meaningful. Autonomy and feedback <strong>multiply</strong>, so a job with almost no autonomy or no feedback scores low however varied it is. Set autonomy to 1 to see it.</p>
+    <ul>
+      <li><strong>Skill variety:</strong> how many different skills the job uses.</li>
+      <li><strong>Task identity:</strong> whether you complete a whole, identifiable piece of work.</li>
+      <li><strong>Task significance:</strong> how much the job affects other people.</li>
+      <li><strong>Autonomy:</strong> freedom to decide how and when to do the work.</li>
+      <li><strong>Feedback:</strong> how directly the work shows how well you are doing.</li>
+    </ul>
+    <p>The score is for comparing jobs, or the same job before and after a redesign. It is not a pass mark. The cheapest improvements are usually more autonomy and faster feedback.</p>
+    <p>From the chapter: <a href={t.from.href}>{t.from.label}</a>.</p>
+  </div>
+  <Share text="How motivating is your job? A 30-second calculator:" label="Share this tool" />
+</main>
+<style>
+.tool{max-width:800px;padding-top:56px}
+.kicker{font:600 14px var(--sans);color:var(--accent)}
+h1{margin:8px 0 0;font-weight:500;font-size:clamp(32px,5vw,46px);line-height:1.1}
+.lede{margin:14px 0 8px;font:17px/1.6 var(--sans);color:var(--muted)}
+</style>
+</Base>

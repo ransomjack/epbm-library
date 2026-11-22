@@ -1,0 +1,28 @@
+---
+// Share row: WhatsApp, LinkedIn, copy link. text: message to send with the link.
+const { text, label = 'Share this page' } = Astro.props;
+const url = new URL(Astro.url.pathname, Astro.site).href;
+const wa = `https://wa.me/?text=${encodeURIComponent(`${text} ${url}`)}`;
+const li = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
+---
+<div class="share" data-share>
+  <span class="share-l">{label}</span>
+  <a class="share-b" href={wa} target="_blank" rel="noopener">WhatsApp</a>
+  <a class="share-b" href={li} target="_blank" rel="noopener">LinkedIn</a>
+  <button class="share-b" type="button" data-copy={url}>Copy link</button>
+</div>
+<script is:inline>
+document.querySelectorAll('[data-copy]').forEach(function (b) {
+  if (b.dataset.bound) return; b.dataset.bound = '1';
+  b.addEventListener('click', function () {
+    var done = function () { var t = b.textContent; b.textContent = 'Link copied'; setTimeout(function () { b.textContent = t; }, 1800); };
+    if (navigator.clipboard) navigator.clipboard.writeText(b.dataset.copy).then(done, function () {});
+  });
+});
+</script>
+<style is:global>
+.share{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:32px;font-family:var(--sans)}
+.share-l{font-size:14px;font-weight:600;color:var(--muted);margin-right:6px}
+.share-b{display:inline-flex;align-items:center;min-height:40px;padding:0 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:600 14px var(--sans);text-decoration:none;cursor:pointer}
+.share-b:hover{border-color:var(--accent);color:var(--accent)}
+</style>

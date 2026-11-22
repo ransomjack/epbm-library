@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { library } from '../../lib/books.js';
+import Share from '../../components/Share.astro';
 import '../../styles/diagrams.css';
 
 export function getStaticPaths() {
@@ -36,6 +37,8 @@ const { Content } = c;
     )}
 
     <div class="prose"><Content /></div>
+
+    <Share text={`${c.title} (${s.name}), explained simply:`} label="Found this useful? Share it" />
 
     <nav class="pager" aria-label="Chapters">
       {prev ? <a href={`/${s.slug}/${prev.slug}/`}>Previous: {prev.title}</a> : <a href={`/${s.slug}/`}>Back to the subject</a>}

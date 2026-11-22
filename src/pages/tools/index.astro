@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+import { tools } from '../../data/tools.js';
+---
+<Base title="Tools" back={{ href: '/', label: 'EPBM Library' }} description="Free interactive calculators and exercises from EPBM Library. Change the numbers and see the concept move.">
+<main class="wrap tl-page">
+  <div class="kicker">Tools</div>
+  <h1>Try the ideas yourself</h1>
+  <p class="lede">Interactive calculators and exercises from the chapters. Change the numbers and watch the concept move. More are added with each subject.</p>
+  <div class="tl-grid">
+    {tools.map((t) => <a class="tl-card" href={`/tools/${t.slug}/`}><b>{t.name}</b><span>{t.blurb}</span><em>Open the tool →</em></a>)}
+  </div>
+</main>
+<style>
+.tl-page{max-width:860px;padding-top:56px}
+.kicker{font:600 14px var(--sans);color:var(--accent)}
+h1{margin:8px 0 0;font-weight:500;font-size:clamp(34px,5vw,48px);line-height:1.1}
+.lede{margin:14px 0 32px;font:17px/1.6 var(--sans);color:var(--muted);max-width:620px}
+.tl-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.tl-card{display:flex;flex-direction:column;gap:8px;padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--surface);text-decoration:none;font-family:var(--sans)}
+.tl-card:hover{border-color:var(--accent)}
+.tl-card b{font:600 20px var(--display);color:var(--ink)}
+.tl-card span{font-size:15px;line-height:1.5;color:var(--body)}
+.tl-card em{font-style:normal;font-weight:600;font-size:14px;color:var(--accent);margin-top:6px}
+</style>
+</Base>
