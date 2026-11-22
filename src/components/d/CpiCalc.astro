@@ -1,0 +1,30 @@
+---
+// The classroom CPI: a fixed basket of 20 pizzas and 10 CDs, base prices Rs. 10 and Rs. 15.
+---
+<div class="calc" data-cpi>
+  <div class="calc-in">
+    <label class="ctl"><span>Price of a pizza (base year: Rs. 10)</span><input type="range" min="8" max="16" step="0.5" value="11" data-k="p" /><output data-o="p"></output></label>
+    <label class="ctl"><span>Price of a CD (base year: Rs. 15)</span><input type="range" min="12" max="20" step="0.5" value="15" data-k="c" /><output data-o="c"></output></label>
+    <div class="kv">
+      <div><span>Basket in the base year</span><b>Rs. 350</b></div>
+      <div><span>Same basket now</span><b data-v="cost"></b></div>
+      <div><span>Pizza’s weight in the basket</span><b>57%</b></div>
+      <div><span>CDs’ weight in the basket</span><b>43%</b></div>
+    </div>
+  </div>
+  <div class="calc-out"><span>Consumer price index</span><b data-v="cpi"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-cpi]').forEach((root) => {
+    const $ = (s) => root.querySelector(s);
+    const run = () => {
+      const p = Number($('[data-k="p"]').value), c = Number($('[data-k="c"]').value);
+      $('[data-o="p"]').textContent = 'Rs. ' + p; $('[data-o="c"]').textContent = 'Rs. ' + c;
+      const cost = 20 * p + 10 * c, cpi = 100 * cost / 350, inf = cpi - 100;
+      $('[data-v="cost"]').textContent = 'Rs. ' + cost;
+      $('[data-v="cpi"]').textContent = cpi.toFixed(1);
+      $('[data-v="note"]').textContent = Math.abs(inf) < 0.05 ? 'No change from the base year.' : inf > 0 ? `Prices are ${inf.toFixed(1)}% above the base year. The quantities never changed; only prices did.` : `Prices are ${Math.abs(inf).toFixed(1)}% below the base year: deflation.`;
+    };
+    root.querySelectorAll('input').forEach((i) => i.addEventListener('input', run)); run();
+  });
+</script>

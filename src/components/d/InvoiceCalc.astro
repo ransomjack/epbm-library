@@ -1,0 +1,48 @@
+---
+// The invoicing exercise: a car costing Rs. 50,000 when the rate is Rs. 50 per dollar.
+---
+<div class="calc" data-invoice>
+  <div class="calc-in">
+    <div class="seg" role="group" aria-label="Currency of the invoice">
+      <button type="button" data-cur="inr" aria-pressed="true">Invoice in rupees</button>
+      <button type="button" data-cur="usd" aria-pressed="false">Invoice in dollars</button>
+    </div>
+    <label class="ctl"><span>Rupees per dollar now (it was Rs. 50)</span><input type="range" min="40" max="100" step="5" value="80" data-k="e" /><output data-o="e"></output></label>
+    <label class="ctl"><span>Rise in the exporter’s costs at home</span><input type="range" min="0" max="100" step="10" value="0" data-k="c" /><output data-o="c"></output></label>
+    <div class="kv">
+      <div><span>Buyer paid before</span><b>$1,000</b></div>
+      <div><span>Buyer pays now</span><b data-v="buyer"></b></div>
+      <div><span>Exporter received before</span><b>Rs. 50,000</b></div>
+      <div><span>Exporter receives now</span><b data-v="seller"></b></div>
+    </div>
+  </div>
+  <div class="calc-out"><span data-v="lab"></span><b data-v="big"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-invoice]').forEach((root) => {
+    const $ = (s) => root.querySelector(s), set = (k, v) => { $(`[data-v="${k}"]`).textContent = v; };
+    const rs = (n) => 'Rs. ' + Math.round(n).toLocaleString('en-IN'), us = (n) => '$' + Math.round(n).toLocaleString('en-US');
+    let cur = 'inr';
+    const run = () => {
+      const e = Number($('[data-k="e"]').value), c = Number($('[data-k="c"]').value);
+      $('[data-o="e"]').textContent = 'Rs. ' + e; $('[data-o="c"]').textContent = c + '%';
+      const cost = 50000 * (1 + c / 100);
+      if (cur === 'inr') {
+        const buyer = cost / e;
+        set('buyer', us(buyer)); set('seller', rs(cost));
+        set('lab', 'Change in the buyer’s price'); set('big', (buyer > 1000 ? '+' : buyer < 1000 ? '−' : '') + Math.abs(Math.round(100 * (buyer / 1000 - 1))) + '%');
+        set('note', Math.abs(buyer - 1000) < 0.5 ? 'Nothing has changed for the buyer.' : buyer < 1000 ? 'The car is cheaper abroad, so the exporter gains through volume.' : e > 50 ? 'The rupee fell, but costs at home rose faster. The car is dearer abroad and demand falls.' : 'The car is dearer abroad, so demand falls.');
+      } else {
+        const got = 1000 * e;
+        set('buyer', us(1000)); set('seller', rs(got));
+        set('lab', 'Exporter’s rupee gain per car, after costs'); set('big', (got - cost < 0 ? '−' : '') + rs(Math.abs(got - cost)));
+        set('note', got - cost > 0.5 ? (c === 0 && e === 50 ? '' : 'The buyer sees no change. The whole move lands on the exporter’s rupee income: a gain through margin, not volume.') : got - cost < -0.5 ? 'The buyer sees no change, but the exporter is worse off than before: costs rose by more than the currency gave.' : 'The buyer sees no change, and the exporter is where it started.');
+      }
+    };
+    root.querySelectorAll('input').forEach((x) => x.addEventListener('input', run));
+    root.querySelectorAll('[data-cur]').forEach((b) => b.addEventListener('click', () => {
+      cur = b.dataset.cur; root.querySelectorAll('[data-cur]').forEach((x) => x.setAttribute('aria-pressed', String(x === b))); run();
+    }));
+    run();
+  });
+</script>

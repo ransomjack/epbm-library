@@ -1,0 +1,164 @@
+---
+title: Steering Demand
+kicker: Session 2
+order: 2
+source: "Sessions by Prof. Ankit Kumar · Market Economies & Macroeconomic Policies"
+description: "M = m × B and India's COVID lesson, business cycles and the output gap, money and inflation in the short and long run, why deflation is feared, fiscal policy, the Keynesian multiplier and aggregate demand. Session 2 of Market Economies & Macroeconomic Policies."
+takeaways:
+  - "The RBI controls the monetary base. The multiplier is in the hands of banks, borrowers and savers."
+  - "In the short run prices are sticky and more money raises output. In the long run it raises only prices."
+  - "Falling prices are more dangerous than rising ones, because waiting to buy feeds on itself."
+  - "A rupee of government spending raises income by more than a rupee: 1 ÷ (1 − MPC)."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Bars from '../../components/d/Bars.astro';
+import Sort from '../../components/d/Sort.astro';
+import Decide from '../../components/d/Decide.astro';
+import Cascade from '../../components/d/Cascade.astro';
+
+## Two layers of money: M = m × B
+
+Money is made in two places, so who is in charge of how much there is?
+
+<Cards min={260} items={[
+  { title: 'Layer 1: base money (B)', body: 'Currency notes plus the reserves banks keep with the RBI. Created by the RBI, and directly in its control.', foot: 'In the classroom example: Rs. 100' },
+  { title: 'Layer 2: total money (M)', body: 'Currency plus all bank deposits: the money people actually spend. Created by banks each time they lend. Nobody controls it directly.', foot: 'Rs. 1,000 at a 10% reserve ratio' },
+]} />
+
+**M = m × B.** Total money equals the multiplier times the base. Think of the RBI as a dairy and banks as tea stalls. The dairy decides how many litres of milk go out each morning. The stalls decide how many cups each litre becomes. The town drinks tea, not milk.
+
+| What moves | Works on | Who decides |
+|---|---|---|
+| Bond purchases and sales, QE and QT | B, the base | The RBI |
+| The cash reserve ratio | The ceiling on m | The RBI |
+| The repo rate | The price of reserves, and so the appetite to lend | The RBI |
+| Willingness to lend | The actual m | Banks |
+| Willingness to borrow | The actual m | Firms and families |
+| Cash kept in wallets | The actual m | The public |
+
+When the RBI cut the CRR from 4% to 3% during 2025 it created not one new rupee. Banks simply had to lock up less of each deposit, so the chain ran longer. A CRR cut works on m, not on B.
+
+### When the multiplier stalls: India in 2020
+
+The formula assumes that when the RBI adds to the base, banks multiply it. In the first lockdown the RBI bought bonds and filled banks with fresh reserves. The banks did not lend. They were carrying old bad loans, few borrowers looked safe, and a banker who doesn't lend is never questioned later about a loan that failed. The cash was parked straight back at the RBI, which paid interest on its own money.
+
+<Fig title="Bank credit to businesses and households, 2019 to 2020" caption="Per cent of GDP, from the table shown in class. Emerging economies' credit jumped; India's barely moved, and was back near 52% a year later.">
+  <Bars unit="% of GDP" rows={[
+    { label: 'Emerging economies, before', value: 113, note: '2019' },
+    { label: 'Emerging economies, COVID year', value: 136, note: 'up about 22 points', mark: true },
+    { label: 'India, before', value: 54, note: '2019' },
+    { label: 'India, COVID year', value: 58, note: 'up under 5 points' },
+  ]} />
+</Fig>
+
+<div class="callout">
+<p class="callout-title">The lesson</p>
+
+A bigger base does not guarantee more money. Banks can absorb a push of liquidity by not lending it, and the multiplier falls to offset it. The RBI controls B. It does not control m.
+
+</div>
+
+<Decide q="The RBI’s statement says policy is easy. The monthly numbers show bank credit is flat. Which do you plan around?" options={[
+  { label: 'The policy statement.', why: 'It tells you the base and the rules, not what reaches your customers.' },
+  { label: 'The credit numbers.', good: true, why: 'What reaches your business is what banks do with the RBI’s money. If dealers can’t get inventory finance, “easy” policy hasn’t arrived yet.' },
+]} />
+
+### New kinds of money
+
+Three groups are trying to put currencies on new digital rails: central banks (a **central bank digital currency**), existing banks (**tokenised deposits**) and private firms (**stablecoins**). A stablecoin issuer holds full reserves and does not lend, so it resembles a money market fund more than a bank. Only the bank creates money by lending.
+
+## Business cycles and the output gap
+
+On a long highway drive your average may be 60 km an hour, yet you are almost never doing exactly 60. An economy is the same: over decades it grows along a trend, and in any year it runs a little faster or slower. **Business cycles** are these swings, in which many activities expand and contract together, recurring but not on a timetable.
+
+**Potential GDP** is what the economy can produce with its capital, labour and technology. The **output gap** is actual output minus potential.
+
+<Sort title="Try it: running hot or cold?" choices={['Positive gap: overheating', 'Negative gap: slack']} items={[
+  { text: 'Two job openings for every unemployed person.', answer: 'Positive gap: overheating', why: 'More vacancies than people. Wages get bid up.' },
+  { text: 'Factories running one shift where they used to run two.', answer: 'Negative gap: slack', why: 'Idle machines and idle people.' },
+  { text: 'Actual GDP is 104 and potential is 100.', answer: 'Positive gap: overheating', why: 'A gap of plus 4. The cure is to cool demand.' },
+  { text: 'Inflation is drifting below target and firms are discounting.', answer: 'Negative gap: slack', why: 'Demand is short of capacity.' },
+]} />
+
+Policy manages the gap, not the trend. The trend comes from three things: more capital, more labour, better technology. Capital grows only by **net investment**, which is investment minus depreciation: invest 100 while 30 wears out and the stock grows by 70.
+
+A new technology raises average productivity but lowers the value of the old tasks it takes over. Jobs return when new tasks appear that people do better than the machine.
+
+## More money: output or prices?
+
+It depends on one thing: whether prices are free to move.
+
+| | Short run | Long run |
+|---|---|---|
+| Prices are | Sticky: stuck at a level set earlier | Flexible |
+| Output is decided by | Demand at those prices | Capacity: capital, labour, technology |
+| More money leads to | More output | Higher prices |
+
+Prices are sticky because changing them costs effort (**menu costs**), because frequent changes annoy customers, and because no rival wants to move first.
+
+<Cards min={260} items={[
+  { title: 'World 1: one bottle of water', body: 'Everyone has Rs. 100 and the bottle sells for Rs. 100. The central bank doubles everyone’s money. There is still one bottle, so it sells for Rs. 200.', foot: 'More money, same goods: only the price moved' },
+  { title: 'World 2: a full warehouse, a fixed price tag', body: 'The price stays at Rs. 100. When money doubles, a buyer who wanted one bottle takes two.', foot: 'More money, idle capacity: the quantity moved' },
+]} />
+
+"Too much money chasing too few goods" is World 1. With output fixed, **M = P × Y** says money can move only prices.
+
+## Why falling prices are worse
+
+Cheaper everything sounds good. It isn't.
+
+- **Buyers wait.** If a car will be cheaper next month, why buy now? Demand falls further.
+- **Margins and wages shrink.** Price cuts reach salaries and jobs.
+- **Investment dries up.** There is little reason to build a factory whose product keeps getting cheaper.
+- **Debts don't shrink.** An EMI is fixed in rupees. If salaries fall, its real burden rises.
+
+Rising prices are a nightmare; falling prices are a night terror. **Involution** is the name for a price war nobody wins: firms cut prices for market share, rivals match, and everyone's margin and wages suffer. China's oversupplied solar, battery and electric-car industries are the current example.
+
+## Why markets don't correct themselves
+
+In a recession, the advice "everyone go and buy a car" would fix it. No sensible household follows it: when jobs are being lost, you hold on to your money. That **precautionary saving** is prudent for one family and damaging when every family does it, because your spending is someone else's income. This is the **paradox of thrift**.
+
+Keynes's conclusion was that someone who isn't frightened has to spend, and that someone is the government. The same failure runs the other way: once inflation rises, expectations keep it high. So every economy has two institutions able to intervene: the central bank, through money and interest rates, and the government, through spending and taxes.
+
+## Fiscal policy and the multiplier
+
+**Budget balance = taxes − spending.** With taxes of 90 and spending of 110 the deficit is 20, which the government borrows.
+
+A rupee the government spends raises income by more than a rupee. It buys chips worth Rs. 100. The seller spends Rs. 80 of that on pots. The potter spends Rs. 64. And so on. The share of each extra rupee that people spend is the **marginal propensity to consume** (MPC).
+
+<Fig title="The Keynesian multiplier" caption="With an MPC of 0.8, Rs. 100 becomes Rs. 500. Switch to a tax cut and the first Rs. 20 is saved before the chain begins, so the multiplier is 4, not 5.">
+  <Cascade mode="spend" />
+</Fig>
+
+It has the same shape as the money multiplier. There, the leak at each round is reserves; here it is saving. Both are ceilings that depend on behaviour.
+
+A cut in a tax on goods must pass two gates before it raises demand:
+
+<Flow items={[
+  { t: 'Gate 1: pass-through', s: 'Do companies lower prices by the amount of the cut?' },
+  { t: 'Gate 2: the MPC', s: 'Do households spend the saving or bank it?' },
+  { t: 'New demand', s: 'An income-tax cut skips Gate 1.', hl: true },
+]} />
+
+Real multipliers are smaller than the textbook's, because taxes and imports drain each round too. And it matters who gets the money: a family on a tight budget spends almost all of an extra rupee.
+
+## Aggregate demand
+
+**Aggregate demand** is the total demand for the economy's output at each price level. The curve slopes down, and the reason is not that incomes change. With Rs. 100 and a price of Rs. 5 you can buy 20 items; at Rs. 4 the same Rs. 100 buys 25. A lower price level raises the real value of money.
+
+<Sort title="Try it: a shift of the curve, or a move along it?" choices={['Shifts right', 'Shifts left', 'Move along the curve']} items={[
+  { text: 'The RBI adds to the money supply.', answer: 'Shifts right', why: 'Expansionary monetary policy: more is demanded at every price.' },
+  { text: 'The government raises taxes.', answer: 'Shifts left', why: 'Contractionary fiscal policy.' },
+  { text: 'The price level falls.', answer: 'Move along the curve', why: 'Nothing has shifted. The same money simply buys more.' },
+  { text: 'Households turn optimistic and spend more.', answer: 'Shifts right', why: 'No policy changed. Confidence moved the curve.' },
+  { text: 'Government spending is cut.', answer: 'Shifts left', why: 'Contractionary fiscal policy.' },
+]} />
+
+<div class="callout">
+<p class="callout-title">Manager takeaway</p>
+
+When a tax on your product falls, you are standing at Gate 1 and the decision is yours: pass it through for volume, or keep part as margin. The multiplier also works at the scale of a town. When a large plant opens, its salaries are the first round, and restaurants, landlords and schools are rounds two and three.
+
+</div>

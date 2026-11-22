@@ -1,0 +1,175 @@
+---
+title: Exchange Rates and the World Outside
+kicker: Session 4
+order: 4
+source: "Sessions by Prof. Ankit Kumar · Market Economies & Macroeconomic Policies"
+description: "Rupee or dollar invoicing, pricing power, fixed, flexible and managed exchange rates, the impossible trinity, devaluation, reserves and import cover, the three exposures and how to hedge them. Session 4 of Market Economies & Macroeconomic Policies."
+takeaways:
+  - "The invoice currency decides where a currency move lands: on volume if you bill in rupees, on margin if you bill in dollars."
+  - "A fixed rate must be defended by selling reserves, and it hands your interest rate to whoever sets rates abroad."
+  - "India runs a managed float: the RBI smooths the ride and promises no level."
+  - "Only transaction exposure can be removed with a contract. The rest is about pricing power and not depending on any one thing."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Bars from '../../components/d/Bars.astro';
+import Sort from '../../components/d/Sort.astro';
+import Decide from '../../components/d/Decide.astro';
+import InvoiceCalc from '../../components/d/InvoiceCalc.astro';
+import Trinity from '../../components/d/Trinity.astro';
+import HedgeCalc from '../../components/d/HedgeCalc.astro';
+
+## Rupee invoice or dollar invoice?
+
+Session 3 ended with an exporter who billed in rupees. What changes if the same exporter bills in dollars?
+
+You export a car that costs Rs. 50,000, in a parallel universe where the rate is Rs. 50 to the dollar. Your American customer pays 1,000 dollars. Now the rupee falls to 80.
+
+<Fig title="Where does the currency move land?" caption="Three cases from class. Rupee invoice, price unchanged: the buyer pays 625 dollars. Rupee invoice with costs doubled: 1,250 dollars. Dollar invoice: the buyer still pays 1,000 and the exporter converts it into Rs. 80,000.">
+  <InvoiceCalc />
+</Fig>
+
+<div class="callout">
+<p class="callout-title">The rule</p>
+
+**Rupee invoice:** a real depreciation makes you cheaper abroad, and you gain through volume. **Dollar invoice:** your price abroad is unchanged, and you gain through margin. Either way, a weaker rupee helps only while costs at home have not risen to match it.
+
+</div>
+
+The planning differs. A product exporter billing in rupees needs capacity for the extra orders. A services exporter billing in dollars sees the gain in margin at once and has to decide whether to keep it, share it with clients or use it for wage increases.
+
+## Who bears the risk
+
+Who chooses the invoice currency? Take two American subscriptions an Indian customer might hold. A streaming service bills Rs. 499 a month. An AI assistant bills about 20 dollars.
+
+<Decide q="Why does one bill Indians in rupees and the other in dollars?" options={[
+  { label: 'Tax rules differ for the two kinds of service.', why: 'Tax isn’t what separates them.' },
+  { label: 'The streaming market is crowded; the AI service has few rivals.', good: true, why: 'This is pricing power. A streaming customer whose bill kept rising would cancel and move to a rival, so the company carries the currency risk. The AI customer asks “where will I go?”, so the customer carries it.' },
+  { label: 'One company is larger than the other.', why: 'Size isn’t the test. What matters is whether the customer has somewhere else to go.' },
+]} />
+
+The side whose own currency is **not** on the invoice bears the exchange-rate risk. Who that is follows from pricing power.
+
+## Fixed, flexible and in between
+
+<Cards min={220} items={[
+  { title: 'Fixed', body: 'The central bank announces a rate and stands ready to buy or sell at it. Needs very large reserves. The interest rate is not its own to set.', foot: 'Hong Kong, Saudi Arabia; India until 1991' },
+  { title: 'Managed float', body: 'The market sets the rate; the central bank smooths sharp moves. Needs large reserves.', foot: 'India and most emerging economies', hl: true },
+  { title: 'Flexible', body: 'The market sets the rate; the central bank stands aside. Needs small reserves.', foot: 'US dollar, euro, yen, pound' },
+]} />
+
+Under a float, the rate does the adjusting: if Americans buy more Japanese goods they need more yen, the yen gets dearer, and Japanese goods cost more in dollars. Under a fixed rate, a currency does not move for years, and then moves a great deal in one night.
+
+### Defending a fixed rate
+
+Suppose India has fixed the rupee at 85 to the dollar, and American interest rates rise.
+
+<Flow items={[
+  { t: 'US rates rise', s: 'Dollar bonds pay more; investors sell rupees to buy them' },
+  { t: 'Dollars become scarce', s: 'The rate is pushed towards 87' },
+  { t: 'The RBI sells dollars', s: 'From its reserves, taking rupees in return' },
+  { t: 'Rupees leave circulation', s: 'Money is scarcer, so Indian interest rates rise', hl: true },
+]} />
+
+The rate holds at 85. The price is that reserves are used up, and the interest rate is no longer the RBI's to set. "What the US does, you have to do."
+
+<Fig title="The impossible trinity" caption="Any two, never all three.">
+  <Trinity />
+</Fig>
+
+### Devaluation: when reserves run out
+
+A central bank defending a rate is selling dollars from a finite stock. Before it runs dry, the bank moves the fixed rate: "I can no longer defend 85. From now on I will defend 90." That is a **devaluation**. India has done it twice: on 6 June 1966, from Rs. 4.76 to Rs. 7.50 to the dollar overnight, and in July 1991, from about Rs. 21 to about Rs. 26, when reserves covered only a few weeks of imports. Sri Lanka left it too late: its reserves fell from about five months of imports in 2020 to under one in 2022, and it defaulted.
+
+<Sort title="Try it: the right word" choices={['Devaluation', 'Depreciation', 'Revaluation', 'Appreciation']} items={[
+  { text: 'The government moves its official fixed rate from 85 to 90 rupees per dollar.', answer: 'Devaluation', why: 'A fixed rate, lowered by announcement.' },
+  { text: 'A floating rupee slides from 85 to 90 over three months.', answer: 'Depreciation', why: 'The market did it. A floating currency is never “devalued”.' },
+  { text: 'The rate goes from 5 Malaysian ringgit per dollar to 4, in the market. What happened to the ringgit?', answer: 'Appreciation', why: 'Fewer ringgit buy a dollar, so the ringgit gained value.' },
+  { text: 'A country with a fixed rate announces that its currency will be worth more.', answer: 'Revaluation', why: 'A fixed rate, raised by announcement.' },
+]} />
+
+## India's managed float
+
+The rupee's value is set by the market, and the RBI steps in to steady it: selling dollars when the rupee falls too fast, buying when money pours in. It does not defend a number. Under a managed float the RBI will smooth your ride, not change your destination. What it gives a business is time to hedge, reprice and renegotiate.
+
+### When the Fed sneezes
+
+India saves less than it invests, so it depends on other countries' saving arriving every month. A higher interest rate in America makes that saving prefer to stay home.
+
+<Flow items={[
+  { t: 'The Fed raises its rate', s: 'Dollar assets pay more' },
+  { t: 'Capital leaves emerging markets', s: 'Their currencies fall' },
+  { t: 'Central banks sell reserves', s: 'Imports cost more: inflation' },
+  { t: 'Local rates rise', s: 'Growth slows', hl: true },
+]} />
+
+In 2022 the rupee went from about 74 to about 83 to the dollar and reserves fell from about 630 to about 530 billion dollars. The same chain began again after the Fed's rise of 16 September 2026.
+
+### Reading the reserves
+
+Foreign exchange reserves are the country's inventory of foreign currency, published by the RBI every Friday. Their movement tells you what the RBI has been doing.
+
+<Fig title="India's foreign exchange reserves, September 2026" caption="US dollars, billions. In two weeks the RBI sold dollars to steady the rupee: the rupee was allowed to weaken, but not to slide.">
+  <Bars unit="USD bn" rows={[
+    { label: 'Week to 4 September', value: 786, note: 'a record' },
+    { label: 'Week to 18 September', value: 766, note: 'down about 15 billion in the last week alone', mark: true },
+  ]} />
+</Fig>
+
+The measure that makes countries comparable is **import cover**: reserves divided by monthly imports. The traditional floor is three months. India holds about eleven.
+
+**Is the world leaving the dollar?** If it were, the demand for dollars could not be strong enough to push currencies everywhere down against it. The dollar's share of central-bank reserves has slipped slowly, from about 70% in 2000 to between 55% and 60%. It is still on one side of nearly nine in ten currency trades. Plan on it remaining the currency of international business.
+
+## Three exposures
+
+<Sort title="Try it: which exposure is it?" choices={['Transaction', 'Translation', 'Economic']} items={[
+  { text: 'An invoice raised in dollars, to be paid in 60 days.', answer: 'Transaction', why: 'A deal already agreed, not yet paid. This one can be hedged with a contract.' },
+  { text: 'A plant abroad whose profits are reported in the parent’s rupee accounts.', answer: 'Translation', why: 'An accounting effect at each reporting date. Mostly a matter of explaining it.' },
+  { text: 'A rival country’s currency falls 15% and its exports undercut yours for years.', answer: 'Economic', why: 'Your long-run competitive position: the real exchange rate at work on your own business.' },
+  { text: 'A machine ordered from Germany, payable in euros in three months.', answer: 'Transaction', why: 'A pending payment in a foreign currency.' },
+]} />
+
+Economic exposure is dealt with by decisions about where to make, buy and sell, not by the treasury.
+
+### The hedging toolkit
+
+<Cards min={200} items={[
+  { title: 'Forward contract', body: 'Agree today the rate at which you will exchange on a future date.', foot: 'Cost: you give up any gain' },
+  { title: 'Currency option', body: 'Buy the right, not the duty, to exchange at a set rate.', foot: 'Cost: a premium up front' },
+  { title: 'Currency swap', body: 'Exchange streams of payments in two currencies over years.', foot: 'Suits loans and long contracts' },
+  { title: 'Natural hedge', body: 'Match the currency of your costs to the currency of your revenue.', foot: 'No fee, but it shapes where you buy and borrow' },
+]} />
+
+An exporter will receive 1,00,000 dollars in 90 days. Today's rate is Rs. 95.
+
+<Fig title="The same receivable, three choices" caption="At Rs. 92 the forward wins. At Rs. 98 doing nothing wins. The forward is the only one whose result was known in advance.">
+  <HedgeCalc />
+</Fig>
+
+<div class="callout trap">
+<p class="callout-title">Hedging is not a way to make money</p>
+
+A forward at 96 when the rate turns out to be 98 has done its job: it replaced an unknown number with a known one. A treasury praised when hedges gain and blamed when they lose will soon stop hedging and start speculating.
+
+</div>
+
+## A changing environment
+
+The United States has been trying to weaken its own currency, on the argument that a cheaper dollar would revive manufacturing and narrow the trade deficit. The tools include tariffs and pressure for lower interest rates. There is precedent for managing the dollar down: after the Plaza Accord of 1985 it went from about 240 yen to about 120 by the end of 1987.
+
+Two points from this module apply whatever one thinks of the policy. A tariff is paid in the first instance by the home buyer, and it is a supply shock at home. And the identity still holds: a trade deficit lasts as long as saving falls short of investment.
+
+A firm cannot forecast its way through this. It can build resilience:
+
+- **Hedge** what is hedgeable.
+- **Build pricing power** through products others cannot copy. Only pricing power lets a firm pass currency risk to its customers.
+- **Spread** suppliers, locations and ownership across countries.
+- **Price every dependence** on a single supplier, market or currency.
+
+<div class="callout">
+<p class="callout-title">Manager takeaway</p>
+
+List what you will receive and what you must pay in each currency over the next year. The difference is the amount at risk. A firm that both imports and exports may find most of it cancels. A services firm with dollar revenue and rupee salaries has a one-way exposure and should hedge a steady share as routine, not as a view on the rupee.
+
+</div>

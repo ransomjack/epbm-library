@@ -16,7 +16,13 @@ export const subjects = [
     pdf: '/pdf/business-decision-making-master-notes.pdf',
     og: '/og/business-decision-making.png',
   },
-  { slug: 'macroeconomic-policies', color: '#5A4A1E', name: 'Market Economies & Macroeconomic Policies' },
+  {
+    slug: 'macroeconomic-policies', color: '#5A4A1E',
+    name: 'Market Economies & Macroeconomic Policies',
+    blurb: "How an economy is measured, how money is made, how demand is steered, and how the rupee meets the world.",
+    pdf: '/pdf/macroeconomic-policies-master-notes.pdf',
+    og: '/og/macroeconomic-policies.png',
+  },
   {
     slug: 'financial-reporting-cost-accounting', color: '#1F5F4A',
     name: 'Financial Reporting & Cost Accounting',

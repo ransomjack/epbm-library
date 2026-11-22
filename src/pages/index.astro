@@ -15,8 +15,8 @@ const num = (n) => n.toLocaleString('en-IN');
 <main class="home">
   <section class="wrap hm-hero">
     <div class="hm-pitch">
-      <h1>Business school notes you can play with.</h1>
-      <p class="hm-sub">Classroom notes from an executive management programme, rewritten in plain English. Short chapters, things to try as you read, and practice questions. Free to read, no sign-in.</p>
+      <h1>EPBM notes you can play with.</h1>
+      <p class="hm-sub">Class notes from EPBM-32, written by a batchmate for the batch and rewritten in plain English. Short chapters, things to try as you read, and practice questions. Free to read, no sign-in.</p>
       <form class="hm-search" role="search" onsubmit="return false">
         <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
         <label class="sr" for="q">Search the library</label>
@@ -73,10 +73,17 @@ const num = (n) => n.toLocaleString('en-IN');
           </span>
         </a>
       ))}
+      {soon.map((s) => (
+        <div class="hm-book hm-book-soon">
+          <Cover s={s} />
+          <span class="hm-book-body">
+            <span class="hm-book-name">{s.name}</span>
+            <span class="hm-book-blurb">This book is on its way.</span>
+            <span class="hm-book-meta"><span class="hm-soon-pill">Coming soon</span></span>
+          </span>
+        </div>
+      ))}
     </div>
-    {soon.length > 0 && (
-      <p class="hm-soon"><strong>Being written:</strong> {soon.map((s) => s.name).join(', ')}.</p>
-    )}
   </section>
 </main>
 
@@ -174,8 +181,10 @@ const num = (n) => n.toLocaleString('en-IN');
 .hm-book-meta span{padding:3px 9px;border-radius:999px;background:var(--surface);font-size:12.5px;font-weight:500;color:var(--body);white-space:nowrap}
 .hm-book-prog{display:block;height:4px;border-radius:2px;background:var(--surface-2);overflow:hidden}
 .hm-book-prog i{display:block;height:100%;background:var(--accent);border-radius:2px}
-.hm-soon{margin:28px 0 0;font-size:15px;color:var(--muted)}
-.hm-soon strong{color:var(--body);font-weight:600}
+.hm-book-soon{border-style:dashed}
+.hm-book-soon .cover{filter:grayscale(.75);opacity:.6}
+.hm-book-soon .hm-book-name{color:var(--muted)}
+.hm-book-meta .hm-soon-pill{background:var(--surface-2);color:var(--body);font-weight:600}
 @media (max-width:980px){
   .hm-hero{padding-top:44px;padding-bottom:44px}
 }

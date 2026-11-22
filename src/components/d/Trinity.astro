@@ -1,0 +1,35 @@
+---
+// The impossible trinity: choose any two of three.
+---
+<div class="trin" data-trinity>
+  <p class="trin-q">A country would like all three. Pick the two it keeps.</p>
+  <div class="trin-opts" role="group" aria-label="Policy goals">
+    <button type="button" data-g="fx" aria-pressed="true"><b>A stable exchange rate</b><span>Importers and exporters can plan.</span></button>
+    <button type="button" data-g="cap" aria-pressed="true"><b>Free movement of capital</b><span>Money can enter and leave at will.</span></button>
+    <button type="button" data-g="rate" aria-pressed="false"><b>Its own interest rate</b><span>The central bank sets rates for conditions at home.</span></button>
+  </div>
+  <div class="trin-out" aria-live="polite"><span>What it must give up</span><b data-v="lose"></b><p data-v="why"></p><p class="trin-eg" data-v="eg"></p></div>
+</div>
+<script>
+  document.querySelectorAll('[data-trinity]').forEach((root) => {
+    const btns = Array.from(root.querySelectorAll('[data-g]'));
+    let picked = ['fx', 'cap'];
+    const out = {
+      rate: ['Its own interest rate', 'To hold the rate it must match whatever the anchor country does. If American rates rise and its own do not, dollars leave.', 'Hong Kong and Saudi Arabia today.'],
+      fx: ['The stable exchange rate', 'With money free to move and rates set for home, the currency has to float and find its own level.', 'The United States, the euro area, Japan and Britain.'],
+      cap: ['The free movement of capital', 'It can fix the rate and still set its own interest rate only by restricting who may move money across the border.', 'India before 1991.'],
+    };
+    const run = () => {
+      btns.forEach((b) => b.setAttribute('aria-pressed', String(picked.includes(b.dataset.g))));
+      const lost = ['fx', 'cap', 'rate'].find((g) => !picked.includes(g)), o = out[lost];
+      root.querySelector('[data-v="lose"]').textContent = o[0];
+      root.querySelector('[data-v="why"]').textContent = o[1];
+      root.querySelector('[data-v="eg"]').textContent = 'Example: ' + o[2];
+    };
+    btns.forEach((b) => b.addEventListener('click', () => {
+      const g = b.dataset.g; if (picked.includes(g)) return;
+      picked = [picked[1], g]; run();
+    }));
+    run();
+  });
+</script>

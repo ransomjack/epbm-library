@@ -2,7 +2,7 @@ import { subjects } from '../data/subjects.js';
 
 const mods = import.meta.glob('../books/*/*.{md,mdx}', { eager: true });
 const raws = import.meta.glob('../books/*/*.{md,mdx}', { eager: true, query: '?raw', import: 'default' });
-const TOOL = /<(Decide|Sort|\w+Calc|ProcessSim|Newsvendor|IsCircuit|Radar|Tabs|ValueChain|FactorialWall|SixFriends)\b/g;
+const TOOL = /<(Decide|Sort|\w+Calc|ProcessSim|Newsvendor|IsCircuit|Radar|Tabs|ValueChain|FactorialWall|SixFriends|Cascade|AdAs|Trinity)\b/g;
 const stats = (raw = '') => {
   const body = raw.replace(/^---[\s\S]*?---/, '').replace(/^import .*$/gm, '');
   const words = body.replace(/<[^>]*>/g, ' ').split(/\s+/).filter(Boolean).length;

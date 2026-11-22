@@ -1,0 +1,34 @@
+---
+// One receivable of 1,00,000 dollars due in 90 days: do nothing, forward at Rs. 96, or option at Rs. 95 for a Re 1 premium.
+---
+<div class="calc" data-hedge>
+  <div class="calc-in">
+    <label class="ctl hl"><span>Rupees per dollar on the day the money arrives (today: Rs. 95)</span><input type="range" min="88" max="102" step="0.5" value="98" data-k="e" /><output data-o="e"></output></label>
+    <div class="pool-bars">
+      <div><span>Do nothing: convert at whatever the rate is</span><i data-bar="none"></i><em data-v="none"></em></div>
+      <div><span>Forward contract at Rs. 96</span><i data-bar="fwd"></i><em data-v="fwd"></em></div>
+      <div><span>Option to sell at Rs. 95, premium Re 1 per dollar</span><i data-bar="opt"></i><em data-v="opt"></em></div>
+    </div>
+    <p class="calc-cap">Rupees received, in lakh, for 1,00,000 dollars.</p>
+  </div>
+  <div class="calc-out"><span>With hindsight, the best choice was</span><b class="calc-word" data-v="best"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-hedge]').forEach((root) => {
+    const $ = (s) => root.querySelector(s);
+    const run = () => {
+      const e = Number($('[data-k="e"]').value);
+      $('[data-o="e"]').textContent = 'Rs. ' + e;
+      const v = { none: e, fwd: 96, opt: Math.max(e, 95) - 1 };
+      const names = { none: 'No hedge', fwd: 'Forward', opt: 'Option' };
+      const best = Object.keys(v).reduce((a, b) => (v[b] > v[a] ? b : a));
+      Object.keys(v).forEach((k) => {
+        $(`[data-v="${k}"]`).textContent = v[k].toFixed(1);
+        const bar = $(`[data-bar="${k}"]`); bar.style.width = (100 * (v[k] - 84) / 18) + '%'; bar.classList.toggle('on', k === best);
+      });
+      $('[data-v="best"]').textContent = names[best];
+      $('[data-v="note"]').textContent = best === 'fwd' ? 'The forward protected the exporter from a stronger rupee. Only the forward was known in advance.' : best === 'none' ? `The rupee weakened, so the forward “lost” Rs. ${(e - 96).toFixed(1)} lakh. It still did its job: it replaced an unknown number with a known one.` : 'The option kept the upside, at the price of the premium.';
+    };
+    $('[data-k="e"]').addEventListener('input', run); run();
+  });
+</script>

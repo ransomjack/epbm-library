@@ -1,0 +1,60 @@
+---
+// Two multipliers with the same shape. mode: 'money' (reserve ratio) or 'spend' (MPC).
+const { mode = 'money' } = Astro.props;
+---
+<div class="calc" data-cascade={mode}>
+  <div class="calc-in">
+    {mode === 'money'
+      ? <label class="ctl hl"><span>Share of each deposit a bank keeps as reserves</span><input type="range" min="3" max="90" step="1" value="10" data-k="r" /><output data-o="r"></output></label>
+      : <>
+          <div class="seg" role="group" aria-label="What the government does">
+            <button type="button" data-kind="spend" aria-pressed="true">Government spends Rs. 100</button>
+            <button type="button" data-kind="tax" aria-pressed="false">Tax cut of Rs. 100</button>
+          </div>
+          <label class="ctl hl"><span>Share of each extra rupee that people spend (MPC)</span><input type="range" min="0.5" max="0.9" step="0.05" value="0.8" data-k="r" /><output data-o="r"></output></label>
+        </>}
+    <p class="calc-cap" data-v="cap"></p>
+    <div class="minibars tall" data-bars aria-hidden="true"></div>
+    <div class="kv">
+      <div><span data-v="l1"></span><b data-v="v1"></b></div>
+      <div><span data-v="l2"></span><b data-v="v2"></b></div>
+    </div>
+  </div>
+  <div class="calc-out"><span data-v="lab"></span><b data-v="total"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-cascade]').forEach((root) => {
+    const mode = root.dataset.cascade, $ = (s) => root.querySelector(s);
+    const set = (k, v) => { $(`[data-v="${k}"]`).textContent = v; };
+    const rs = (n) => 'Rs. ' + (n >= 100 ? Math.round(n).toLocaleString('en-IN') : n.toFixed(1));
+    let kind = 'spend';
+    const run = () => {
+      const r = Number($('[data-k="r"]').value);
+      const keep = mode === 'money' ? 1 - r / 100 : r;          // share passed on each round
+      const first = mode === 'spend' && kind === 'tax' ? 100 * r : 100;
+      const rounds = Array.from({ length: 12 }, (_, i) => first * Math.pow(keep, i));
+      $('[data-bars]').innerHTML = rounds.map((v, i) => `<i class="${i === 0 ? 'on' : ''}" style="height:${Math.max(3, v)}%" title="Round ${i + 1}: ${v.toFixed(1)}"></i>`).join('');
+      const total = first / (1 - keep), mult = total / 100;
+      if (mode === 'money') {
+        $('[data-o="r"]').textContent = r + '%';
+        set('cap', 'New deposit created in each of the first 12 rounds of lending');
+        set('l1', 'Money multiplier (1 ÷ reserve ratio)'); set('v1', mult.toFixed(1));
+        set('l2', 'Reserves locked up, all banks'); set('v2', 'Rs. 100');
+        set('lab', 'Rs. 100 of cash becomes deposits of'); set('total', rs(total));
+        set('note', r === 3 ? 'India’s cash reserve ratio is 3%, so the textbook ceiling is about 33. The actual multiplier is about 6.' : r <= 10 ? 'A low ratio lets the chain run for many rounds.' : r >= 80 ? 'Almost everything is locked up at once. The chain dies after a round or two.' : 'The higher the ratio, the sooner the chain stops.');
+      } else {
+        $('[data-o="r"]').textContent = r.toFixed(2);
+        set('cap', 'Extra income created in each of the first 12 rounds of spending');
+        set('l1', kind === 'tax' ? 'Tax-cut multiplier, MPC ÷ (1 − MPC)' : 'Multiplier, 1 ÷ (1 − MPC)'); set('v1', mult.toFixed(1));
+        set('l2', 'Saved along the way'); set('v2', rs(kind === 'tax' ? 100 : 100));
+        set('lab', kind === 'tax' ? 'A Rs. 100 tax cut raises income by' : 'Rs. 100 of spending raises income by'); set('total', rs(total));
+        set('note', kind === 'tax' ? `Smaller than spending: Rs. ${Math.round(100 * (1 - r))} of the cut is saved before the first round begins.` : r >= 0.85 ? 'People who spend nearly all of an extra rupee make it travel furthest.' : r <= 0.6 ? 'When people save a lot, the chain fades quickly.' : 'Each round is smaller than the last by the share that is saved.');
+      }
+    };
+    $('[data-k="r"]').addEventListener('input', run);
+    root.querySelectorAll('[data-kind]').forEach((b) => b.addEventListener('click', () => {
+      kind = b.dataset.kind; root.querySelectorAll('[data-kind]').forEach((x) => x.setAttribute('aria-pressed', String(x === b))); run();
+    }));
+    run();
+  });
+</script>

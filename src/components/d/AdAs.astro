@@ -1,0 +1,92 @@
+---
+// Demand and supply stepper, using the numbers from the class slides.
+// Each state: ad / as = a point the curve passes through; eq = where the economy sits.
+const scenarios = {
+  demand: {
+    label: 'A demand push', sd: -2, ss: 1.5, base: { ad: [10, 2], as: [10, 2] },
+    states: [
+      { ad: [10, 2], as: [10, 2], eq: [10, 2], t: 'The economy starts at its potential: output 10, inflation 2%.', next: [['The central bank adds money', 1]] },
+      { ad: [11, 3.5], as: [10, 2], eq: [11, 3.5], t: 'Demand shifts right. Output rises above potential, to 11, and inflation to 3.5%. So far, more money has meant more output.', next: [['People notice prices rising', 2]] },
+      { ad: [11, 3.5], as: [10, 5.5], eq: [10, 5.5], t: 'People now expect higher prices and ask for higher wages. Costs rise and supply shifts up. Output is back at 10, with inflation at 5.5%. In the long run the extra money bought only higher prices.', next: [] },
+    ],
+  },
+  shock: {
+    label: 'A supply shock', sd: -1, ss: 1.5, base: { ad: [10, 2], as: [10, 2] },
+    states: [
+      { ad: [10, 2], as: [10, 2], eq: [10, 2], t: 'The economy starts at its potential: output 10, inflation 2%.', next: [['Oil jumps, or the monsoon fails', 1]] },
+      { ad: [10, 2], as: [9, 3], eq: [9, 3], t: 'Costs rise and supply shifts left. Inflation goes up to 3% while output falls to 9: the worst of both. The central bank’s tool works only on demand, so it has to choose.', next: [['Protect output: add money', 2], ['Protect prices: withdraw money', 3]] },
+      { ad: [10, 4.5], as: [9, 3], eq: [10, 4.5], t: 'Demand shifts right. Output recovers to 10, but inflation climbs to 4.5%, and expectations may break loose.', next: [] },
+      { ad: [8.33, 2], as: [9, 3], eq: [8.33, 2], t: 'Demand shifts left. Inflation returns to 2%, but output falls further, to about 8.3: a recession on top of the shock.', next: [] },
+    ],
+  },
+  disinflation: {
+    label: 'Disinflation', sd: -2, ss: 2, base: { ad: [10, 6], as: [10, 6] },
+    states: [
+      { ad: [10, 6], as: [10, 6], eq: [10, 6], t: 'Output is at potential, but inflation is stuck at 6% because everyone expects 6%. (Illustrative numbers.)', next: [['The central bank tightens', 1]] },
+      { ad: [9, 4], as: [10, 6], eq: [9, 4], t: 'Demand shifts left. This is the pain: output falls below potential, to 9, and unemployment rises. Inflation falls to 4%.', next: [['People see inflation falling', 2]] },
+      { ad: [9, 4], as: [10, 2], eq: [10, 2], t: 'Expectations come down, wage demands ease, and supply shifts back. Output returns to potential, now with inflation at 2%. A shorter pain for a longer gain.', next: [] },
+    ],
+  },
+};
+---
+<div class="adas" data-adas data-scn={JSON.stringify(scenarios)}>
+  <div class="seg" role="group" aria-label="Scenario">
+    {Object.entries(scenarios).map(([k, s], i) => <button type="button" data-s={k} aria-pressed={i === 0 ? 'true' : 'false'}>{s.label}</button>)}
+  </div>
+  <div class="adas-body">
+    <svg viewBox="0 0 520 300" role="img" aria-label="Aggregate demand and aggregate supply, with inflation on the vertical axis and output on the horizontal axis"></svg>
+    <div class="adas-side">
+      <div class="kv">
+        <div><span>Output</span><b data-v="y"></b></div>
+        <div><span>Inflation</span><b data-v="p"></b></div>
+      </div>
+      <p class="adas-t" data-v="t" aria-live="polite"></p>
+      <div class="adas-next" data-next></div>
+    </div>
+  </div>
+</div>
+<script>
+  document.querySelectorAll('[data-adas]').forEach((root) => {
+    const S = JSON.parse(root.dataset.scn), svg = root.querySelector('svg');
+    let key = Object.keys(S)[0], idx = 0;
+    const draw = () => {
+      const sc = S[key], st = sc.states[idx];
+      const W = svg.clientWidth && svg.clientWidth < 420 ? 340 : 520, H = 300, L = 44, R = W - 14, T = 14, B = H - 38;
+      svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+      const Y0 = 7.4, Y1 = 12.4, P0 = 0, P1 = 8;
+      const x = (y) => L + (R - L) * (y - Y0) / (Y1 - Y0), yy = (p) => B - (B - T) * (p - P0) / (P1 - P0);
+      const line = (pt, slope, cls) => {
+        // clip the line to the plot box
+        let a = [Y0 + 0.15, pt[1] + slope * (Y0 + 0.15 - pt[0])], b = [Y1 - 0.15, pt[1] + slope * (Y1 - 0.15 - pt[0])];
+        const clip = (p, q) => { if (p[1] > P1 - 0.2) p = [pt[0] + (P1 - 0.2 - pt[1]) / slope, P1 - 0.2]; if (p[1] < P0 + 0.3) p = [pt[0] + (P0 + 0.3 - pt[1]) / slope, P0 + 0.3]; return p; };
+        a = clip(a); b = clip(b);
+        return { a, b, html: `<line class="${cls}" x1="${x(a[0])}" y1="${yy(a[1])}" x2="${x(b[0])}" y2="${yy(b[1])}"/>` };
+      };
+      const moved = (p, q) => Math.abs(p[0] - q[0]) > 0.01 || Math.abs(p[1] - q[1]) > 0.01;
+      let h = `<line class="ax" x1="${L}" y1="${T}" x2="${L}" y2="${B}"/><line class="ax" x1="${L}" y1="${B}" x2="${R}" y2="${B}"/>`;
+      [2, 4, 6].forEach((p) => { h += `<text class="tk" x="${L - 6}" y="${yy(p) + 4}" text-anchor="end">${p}%</text>`; });
+      [8, 9, 10, 11, 12].forEach((v) => { h += `<text class="tk" x="${x(v)}" y="${B + 15}" text-anchor="middle">${v}</text>`; });
+      h += `<line class="pot" x1="${x(10)}" y1="${T}" x2="${x(10)}" y2="${B}"/><text class="tk" x="${x(10) + 4}" y="${T + 9}">potential</text>`;
+      h += `<text class="axl" x="${R}" y="${H - 6}" text-anchor="end">Output</text><text class="axl" x="${L - 34}" y="${T + 4}">Inflation</text>`;
+      if (moved(st.ad, sc.base.ad)) h += line(sc.base.ad, sc.sd, 'ad ghost').html;
+      if (moved(st.as, sc.base.as)) h += line(sc.base.as, sc.ss, 'as ghost').html;
+      const ad = line(st.ad, sc.sd, 'ad'), as = line(st.as, sc.ss, 'as');
+      h += ad.html + as.html;
+      h += `<text class="cl ad" x="${x(ad.a[0]) + 8}" y="${yy(ad.a[1]) + 2}">Demand</text>`;
+      h += `<text class="cl as" x="${x(as.b[0]) - 10}" y="${yy(as.b[1]) - 6}" text-anchor="end">Supply</text>`;
+      h += `<line class="drop" x1="${x(st.eq[0])}" y1="${yy(st.eq[1])}" x2="${x(st.eq[0])}" y2="${B}"/><line class="drop" x1="${L}" y1="${yy(st.eq[1])}" x2="${x(st.eq[0])}" y2="${yy(st.eq[1])}"/>`;
+      h += `<circle class="eq" cx="${x(st.eq[0])}" cy="${yy(st.eq[1])}" r="6"/>`;
+      svg.innerHTML = h;
+      root.querySelector('[data-v="y"]').textContent = (Math.round(st.eq[0] * 10) / 10) + (st.eq[0] > 10.01 ? ' (above potential)' : st.eq[0] < 9.99 ? ' (below potential)' : ' (at potential)');
+      root.querySelector('[data-v="p"]').textContent = st.eq[1] + '%';
+      root.querySelector('[data-v="t"]').textContent = st.t;
+      const nx = root.querySelector('[data-next]'); nx.textContent = '';
+      st.next.forEach(([label, to]) => { const b = document.createElement('button'); b.type = 'button'; b.className = 'adas-go'; b.textContent = label; b.addEventListener('click', () => { idx = to; draw(); }); nx.appendChild(b); });
+      if (idx > 0) { const b = document.createElement('button'); b.type = 'button'; b.className = 'adas-back'; b.textContent = 'Start again'; b.addEventListener('click', () => { idx = 0; draw(); }); nx.appendChild(b); }
+    };
+    root.querySelectorAll('[data-s]').forEach((b) => b.addEventListener('click', () => {
+      key = b.dataset.s; idx = 0; root.querySelectorAll('[data-s]').forEach((z) => z.setAttribute('aria-pressed', String(z === b))); draw();
+    }));
+    window.addEventListener('resize', draw); draw();
+  });
+</script>

@@ -1,0 +1,2634 @@
+{
+ "title": "Market Economies & Macroeconomic Policies",
+ "sections": [
+  {
+   "name": "Session 1: Measuring the economy, and money",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "Stagflation describes an economy with:",
+     "options": [
+      "Stable prices together with stagnant wages over several years",
+      "High growth together with high inflation, as in an overheating economy",
+      "Falling prices together with falling output, as in a depression",
+      "Rising prices together with weak growth and rising unemployment"
+     ],
+     "answer": 3,
+     "why": "Stagnation plus inflation - the mix in which the cure for one problem makes the other worse."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A tyre maker sells tyres to a car company, which fits them to new cars. In GDP the tyres are:",
+     "options": [
+      "Counted only if the finished car is exported rather than sold in India",
+      "Not counted separately - their value is already inside the price of the car",
+      "Counted once, as the car company's investment in equipment",
+      "Counted twice - once when sold as tyres and once inside the price of the car"
+     ],
+     "answer": 1,
+     "why": "They are intermediate goods; counting them again would be double counting."
+    },
+    {
+     "tag": "MCQ",
+     "q": "India imports a phone and pays the foreign seller in rupees. What is added to India's GDP?",
+     "options": [
+      "The full price of the phone, because the payment was made in rupees",
+      "A reduction equal to the price of the phone, because imports are subtracted",
+      "Nothing - the phone was produced abroad, and the currency of payment is irrelevant",
+      "Half the price of the phone, shared between the two countries"
+     ],
+     "answer": 2,
+     "why": "GDP asks where the good was produced. The purchase enters consumption and is removed again as an import."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why are imports subtracted in the GDP identity?",
+     "options": [
+      "Imports displace domestic production, so each rupee imported destroys a rupee of output",
+      "C, I and G already include spending on imported goods, which were not produced in the country",
+      "The government taxes imports, and taxes are not part of production",
+      "Imports are paid for in dollars, which have to be removed from a rupee total"
+     ],
+     "answer": 1,
+     "why": "Subtracting imports only removes foreign production that entered through C, I and G."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A sweet maker produces extra stock in September for Diwali, and it is still unsold when the quarter ends. In that quarter's GDP the stock is:",
+     "options": [
+      "Counted twice - now and again when sold",
+      "Counted as inventory investment",
+      "Left out until it is sold",
+      "Counted as consumption"
+     ],
+     "answer": 1,
+     "why": "Unsold output is treated as bought by the firm itself. When it sells, inventories fall and consumption rises."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A forestry company sells logs for 1,000 to a furniture maker, who sells furniture for 2,500 to a retailer, who sells it to a consumer for 3,000. The contribution to GDP is:",
+     "options": [
+      "6,500",
+      "3,500",
+      "500",
+      "3,000"
+     ],
+     "answer": 3,
+     "why": "GDP is the value of the final good: 3,000, which equals 1,000 + 1,500 + 500 of value added."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An economy produces 5 apples in both years, and the price rises from Rs. 20 to Rs. 40. Then:",
+     "options": [
+      "Nominal GDP is unchanged and real GDP doubles",
+      "Both are unchanged",
+      "Nominal GDP doubles and real GDP is unchanged",
+      "Nominal and real GDP both double"
+     ],
+     "answer": 2,
+     "why": "Nominal GDP goes from 100 to 200 on price alone; at base-year prices output is still 100."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A firm's sales grew 9% in a year in which its prices rose 5%. Its volume growth was about:",
+     "options": [
+      "4%",
+      "9%",
+      "5%",
+      "14%"
+     ],
+     "answer": 0,
+     "why": "Rupee growth is roughly price growth plus volume growth, so 9 - 5 = 4."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The CPI is 114.3 in 2004 and 117.1 in 2005. Inflation in 2005 is:",
+     "options": [
+      "2.5%",
+      "17.1%",
+      "14.3%",
+      "2.8%"
+     ],
+     "answer": 0,
+     "why": "(117.1 - 114.3) / 114.3 = 2.5%. Subtracting the two index numbers gives 2.8, which is the trap."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Inflation falls from 8.1% to 2.5%. This means that prices are:",
+     "options": [
+      "Falling",
+      "Unchanged",
+      "Back at their base-year level",
+      "Still rising, but more slowly"
+     ],
+     "answer": 3,
+     "why": "Lower inflation is a slower rise. Prices fall only when inflation is negative."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Engel's law states that:",
+     "options": [
+      "The poor spend a smaller share of income on food than the rich",
+      "As income rises, the share of income spent on food falls",
+      "Food prices rise faster than incomes",
+      "As income rises, spending on food falls in rupees"
+     ],
+     "answer": 1,
+     "why": "The share falls even though the rupee amount usually rises."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Core inflation is:",
+     "options": [
+      "Wholesale price inflation",
+      "Inflation in food and fuel only",
+      "Inflation in services only",
+      "Headline inflation with food and fuel taken out"
+     ],
+     "answer": 3,
+     "why": "Core strips out the two most volatile groups to show the underlying trend."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A one-year loan carries a nominal rate of 4% and inflation is expected to be 6%. The real interest rate is:",
+     "options": [
+      "-10%",
+      "2%",
+      "10%",
+      "-2%"
+     ],
+     "answer": 3,
+     "why": "4 - 6 = -2%. The lender gets back less purchasing power than he lent."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A borrows Rs. 10,000 from B at 5% while inflation runs at 10%. Who gains?",
+     "options": [
+      "B, because he earns 5% interest on money that would otherwise lie idle",
+      "A, because he repays in rupees that buy less; B's real return is about -5%",
+      "Both, because the loan allowed A to spend and B to earn",
+      "Neither, because the interest received exactly offsets the inflation"
+     ],
+     "answer": 1,
+     "why": "Unexpected inflation favours the borrower."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Money is defined as:",
+     "options": [
+      "The stock of assets that can be readily used to make transactions",
+      "The gold and foreign currency held by the central bank",
+      "The income a person earns over a year from all sources",
+      "The total wealth a person owns, including house and shares"
+     ],
+     "answer": 0,
+     "why": "Income is a flow, and most wealth - a house, say - cannot be used to pay a bill."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Seigniorage is:",
+     "options": [
+      "The central bank's profit: interest earned on its assets, none paid on currency",
+      "The fee the government pays the central bank to have currency notes printed",
+      "The interest the government pays to all the holders of its bonds",
+      "A tax collected from commercial banks on the deposits that they hold"
+     ],
+     "answer": 0,
+     "why": "Liabilities at 0%, assets earning interest: the difference is seigniorage."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Quantitative easing (QE) is best described as:",
+     "options": [
+      "Raising the policy interest rate in large, pre-announced steps to fight inflation",
+      "Cutting the cash reserve ratio to its legal minimum in a single, pre-announced step",
+      "A large, pre-announced government spending programme funded by fresh borrowing",
+      "Large, pre-announced bond purchases by the central bank when the policy rate is near its floor"
+     ],
+     "answer": 3,
+     "why": "When the price lever is stuck near zero, the central bank works through quantity."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The government sells Rs. 10,000 crore of new bonds to banks and mutual funds. As a result:",
+     "options": [
+      "The RBI's balance sheet expands by Rs. 10,000 crore",
+      "Rs. 10,000 crore of new money is created, because bonds are a form of money",
+      "The money supply rises by the multiplier times Rs. 10,000 crore",
+      "Existing money moves from the buyers to the government; no new money is created"
+     ],
+     "answer": 3,
+     "why": "Money is created only when the central bank buys bonds with new reserves."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The correct order of transmission after a repo-rate cut is:",
+     "options": [
+      "Borrowing rises, then loan rates fall, then banks' cost of funds falls, then money shrinks",
+      "Banks' cost of funds falls, loan rates fall, borrowing rises, and more loans create more money",
+      "Deposits rise, then banks' cost of funds falls, then the RBI cuts, then loan rates fall",
+      "Loan rates fall, then banks' cost of funds falls, then borrowing rises, then the RBI cuts"
+     ],
+     "answer": 1,
+     "why": "The chain runs from the RBI to banks to borrowers, with a lag at each step."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the classroom cascade with R = 10%, the third bank receives a deposit of Rs. 81. It keeps and lends:",
+     "options": [
+      "Rs. 7.29 and Rs. 65.61",
+      "Rs. 8.10 and Rs. 72.90",
+      "Rs. 8 and Rs. 73",
+      "Rs. 9 and Rs. 81"
+     ],
+     "answer": 1,
+     "why": "10% of 81 is 8.10; the remaining 72.90 is lent. Rs. 7.29 and Rs. 65.61 is what the fourth bank does."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The actual multiplier is far below 1 / CRR mainly because:",
+     "options": [
+      "The effective CRR is far higher than the announced 3%",
+      "The RBI limits bank lending to a fixed multiple of capital each year",
+      "People hold part of their money as cash, and banks do not lend all they are allowed to",
+      "Deposits created by loans are not counted in the money supply"
+     ],
+     "answer": 2,
+     "why": "These are the two points of the critique on the slides: cash leakage and banks holding back."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Maturity mismatch in a bank means:",
+     "options": [
+      "Short-term deposits are funding long-term loans",
+      "Its lending and deposit rates differ",
+      "Long-term deposits are funding short-term loans",
+      "Its assets and liabilities are in different currencies"
+     ],
+     "answer": 0,
+     "why": "Banks borrow short and lend long - it is what banking is."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A bank has deposits of 1,000, reserves of 100 and sound loans of 900. Depositors demand 300 in one day. The bank:",
+     "options": [
+      "Is closed automatically by the RBI, because its reserves are below 30% of deposits",
+      "Recalls enough of its loans from borrowers the same afternoon to pay everyone",
+      "Cannot pay from its reserves and may fail, because good loans cannot quickly be turned into cash",
+      "Pays easily, because sound loans can be counted as cash when depositors ask"
+     ],
+     "answer": 2,
+     "why": "A solvent bank can still be illiquid."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Deposit insurance in India covers each depositor up to:",
+     "options": [
+      "Rs. 1 lakh per bank",
+      "An unlimited amount",
+      "Rs. 5 lakh per bank",
+      "Rs. 50 lakh per bank"
+     ],
+     "answer": 2,
+     "why": "Above that limit, money in a bank is an unsecured claim on the bank."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Suppose real GDP growth is 7.8%, CPI inflation is 4.82% and the repo rate is 5.25%. Which statement is true?",
+     "options": [
+      "The real policy rate is mildly positive, and inflation is above target but inside the band",
+      "Nominal growth must be below real growth, because inflation is positive",
+      "The real policy rate is negative, because inflation is close to the repo rate",
+      "Inflation is below the 4% target, so the RBI has room to cut"
+     ],
+     "answer": 0,
+     "why": "5.25 - 4.82 is about +0.4%, and 4.82% lies between 4% and 6%."
+    }
+   ]
+  },
+  {
+   "name": "Session 2: Steering demand",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "A CRR of 3% implies a textbook multiplier of about 33, yet India's actual multiplier is about 6. The best explanation is that:",
+     "options": [
+      "The textbook formula was designed only for developed economies",
+      "The RBI holds back a large part of the base money that it creates each year",
+      "People hold cash, and banks do not lend every rupee they are allowed to",
+      "Banks are in practice required to keep reserves of about 16% of deposits"
+     ],
+     "answer": 2,
+     "why": "Cash in wallets stops multiplying, and lending depends on banks' and borrowers' willingness. 1/R is only a ceiling."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of the following works on B rather than on m?",
+     "options": [
+      "Households moving their savings from cash into deposits",
+      "Commercial banks becoming more willing to extend loans",
+      "A cut in the cash reserve ratio announced by the RBI",
+      "The RBI buying government bonds with newly created reserves"
+     ],
+     "answer": 3,
+     "why": "An open market purchase adds to base money itself. The other three change how far a given base is multiplied."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In terms of M = m x B, India's experience in 2020 is best described as:",
+     "options": [
+      "Both B and m rose strongly at the same time",
+      "B and m were both unchanged through the year",
+      "B rose but m fell, offsetting much of the rise",
+      "B fell while m rose, leaving M unchanged"
+     ],
+     "answer": 2,
+     "why": "The RBI expanded the base; banks did not lend it on, so the multiplier adjusted downwards."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An issuer has 50 billion dollars of coins outstanding, fully backed by Treasury bills yielding 4%. Its annual interest income is about:",
+     "options": [
+      "200 million dollars",
+      "4 billion dollars",
+      "2 billion dollars",
+      "12.5 billion dollars"
+     ],
+     "answer": 2,
+     "why": "50 billion x 4% = 2 billion a year, none of which is passed to coin holders."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Under the GENIUS Act, interest paid by a stablecoin issuer to holders of its coin is:",
+     "options": [
+      "Left to each state to decide",
+      "Prohibited",
+      "Allowed, but capped at 2% a year",
+      "Compulsory, at the Treasury bill rate"
+     ],
+     "answer": 1,
+     "why": "Issuers are barred from paying holders interest or yield - one of the things that separates the coin from a deposit."
+    },
+    {
+     "tag": "MCQ",
+     "q": "If nominal GDP grows 10.3% and real GDP grows 7.8%, the prices of domestically produced output rose by about:",
+     "options": [
+      "18.1%",
+      "2.5%",
+      "0.8%",
+      "7.8%"
+     ],
+     "answer": 1,
+     "why": "Nominal growth is roughly real growth plus price rise: 10.3 minus 7.8 is about 2.5."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Double deflation means:",
+     "options": [
+      "Deflating output and intermediate inputs separately, then subtracting",
+      "Using two different base years, one for goods and one for services",
+      "Deflating GDP by the CPI and by the WPI, and averaging the two",
+      "Removing the effect of inflation twice from the same figure"
+     ],
+     "answer": 0,
+     "why": "Real value added = real output minus real inputs, each valued at its own base-year prices."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Actual GDP is 104 and potential GDP is 100. The economy has:",
+     "options": [
+      "A positive output gap of 4% and is overheating",
+      "A recession, since output differs from potential",
+      "A negative output gap of 4% and idle capacity",
+      "A budget surplus equal to 4% of its GDP"
+     ],
+     "answer": 0,
+     "why": "Output above capacity is a positive gap - the overheating case, with pressure on wages and prices."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A country invests 100 this year while 30 of its existing capital wears out. Its capital stock changes by:",
+     "options": [
+      "Plus 100",
+      "Minus 30",
+      "Plus 130",
+      "Plus 70"
+     ],
+     "answer": 3,
+     "why": "Net addition = investment minus depreciation = 100 - 30 = 70."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Firms decide whether to hire one more worker by looking at:",
+     "options": [
+      "Their total output",
+      "The marginal product of labour",
+      "Last year's profit",
+      "The average product of labour"
+     ],
+     "answer": 1,
+     "why": "Every decision of a firm is taken at the margin: what will the next person add?"
+    },
+    {
+     "tag": "MCQ",
+     "q": "A branch clears 400 cheques a day with 8 clerks. After computerisation 2 clerks clear all 400. The average product per clerk has moved from:",
+     "options": [
+      "50 to 200",
+      "400 to 200",
+      "8 to 2",
+      "50 to 100"
+     ],
+     "answer": 0,
+     "why": "400 / 8 = 50 before; 400 / 2 = 200 after. Average productivity has quadrupled."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the water-bottle economy there is ONE bottle, and citizens' money is doubled from Rs. 100 to Rs. 200 each. The outcome is:",
+     "options": [
+      "Price Rs. 100, one bottle sold",
+      "Price Rs. 200, two bottles sold",
+      "Price Rs. 200, one bottle sold",
+      "Price Rs. 100, two bottles sold"
+     ],
+     "answer": 2,
+     "why": "Capacity is one bottle, so the extra money can only bid up the price."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Using M = P x Y with output fixed at one bottle, raising money from 100 to 300 gives a price of:",
+     "options": [
+      "100",
+      "300",
+      "200",
+      "33"
+     ],
+     "answer": 1,
+     "why": "P = M / Y = 300 / 1. With output fixed, the price level moves one for one with money."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Deflation is:",
+     "options": [
+      "A fall in real GDP for two successive quarters",
+      "A sustained fall in the general level of prices",
+      "A fall in the rate of inflation, say from 6% to 3%",
+      "A fall in the exchange value of the currency"
+     ],
+     "answer": 1,
+     "why": "A falling inflation rate is disinflation - prices still rise. Deflation is prices themselves falling."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Pigou effect failed in the Great Depression mainly because:",
+     "options": [
+      "Falling prices led people to expect further falls, so they waited",
+      "The money supply was expanding very rapidly at the time",
+      "Governments were running very large budget deficits",
+      "Prices did not in fact fall during those years, so the mechanism was never tested"
+     ],
+     "answer": 0,
+     "why": "Deflation creates deflationary expectations - the piece Pigou's argument left out."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The paradox of thrift says that when everyone tries to save more:",
+     "options": [
+      "Total income falls, so total saving may not rise at all",
+      "The government's deficit falls by the same amount",
+      "Investment rises automatically to absorb the saving",
+      "Interest rates rise and bring spending back"
+     ],
+     "answer": 0,
+     "why": "If all cut spending together, all incomes fall, and nobody ends up safer."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Your salary rises 6% in a year in which prices rise 8%. Your real wage has:",
+     "options": [
+      "Fallen by about 2%",
+      "Risen by 6%",
+      "Fallen by 8%",
+      "Risen by about 2%"
+     ],
+     "answer": 0,
+     "why": "Real wage change is roughly pay rise minus inflation: 6 - 8 = -2."
+    },
+    {
+     "tag": "MCQ",
+     "q": "If T = 90 and G = 110, the budget shows:",
+     "options": [
+      "Public saving of 20, held in reserve",
+      "A balanced position, since both are near 100",
+      "A deficit of 20, financed by issuing bonds",
+      "A surplus of 20, which is public saving"
+     ],
+     "answer": 2,
+     "why": "G - T = 20. The gap is borrowed by selling government bonds."
+    },
+    {
+     "tag": "MCQ",
+     "q": "By the test given in class, government spending is \"productive\" if it:",
+     "options": [
+      "Is spent on salaries rather than on purchases of goods",
+      "Is financed out of taxes rather than out of borrowing",
+      "Is disbursed quickly after the budget is passed, so that it reaches people without delay",
+      "Increases the economy's capacity to produce in the future"
+     ],
+     "answer": 3,
+     "why": "If capacity rises, there are more goods tomorrow for the money to chase, so the spending need not be inflationary."
+    },
+    {
+     "tag": "MCQ",
+     "q": "With an MPC of 0.8, the Keynesian multiplier is:",
+     "options": [
+      "1.25",
+      "0.8",
+      "8",
+      "5"
+     ],
+     "answer": 3,
+     "why": "1 / (1 - 0.8) = 1 / 0.2 = 5."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A tax cut of Rs. 100 has a smaller multiplier than Rs. 100 of government spending because:",
+     "options": [
+      "Government spending is never saved or taxed away",
+      "Part of the tax cut is saved before any of it is spent",
+      "Tax cuts are not permitted during a recession",
+      "Tax cuts push up interest rates more than spending does"
+     ],
+     "answer": 1,
+     "why": "All 100 of spending enters round one; of a tax cut only the 80 that is spent does. Hence 4 rather than 5."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The money supply doubles while the price level is unchanged. On the diagram this is shown as:",
+     "options": [
+      "A shift of the AD curve to the right",
+      "A movement up along the AD curve",
+      "A movement down along the AD curve",
+      "A shift of the AD curve to the left"
+     ],
+     "answer": 0,
+     "why": "At the same price more is demanded - the whole curve moves. Only a change in P itself is a movement along it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A stablecoin issuer, a commercial bank and a money market fund all take money from the public. Which of them multiplies deposits by lending to firms and households?",
+     "options": [
+      "None of the three",
+      "Only the stablecoin issuer",
+      "The issuer and the fund",
+      "Only the commercial bank"
+     ],
+     "answer": 3,
+     "why": "Only the bank lends on what it receives, and so only the bank creates money."
+    }
+   ]
+  },
+  {
+   "name": "Session 3: Supply, expectations and the open economy",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "In the COVID years the combination of policies in most countries was:",
+     "options": [
+      "Contractionary fiscal policy with contractionary monetary policy",
+      "Expansionary fiscal policy with contractionary monetary policy",
+      "Contractionary fiscal policy with expansionary monetary policy",
+      "Expansionary fiscal policy with expansionary monetary policy"
+     ],
+     "answer": 3,
+     "why": "Governments spent more than they taxed, and central banks bought the bonds with new money."
+    },
+    {
+     "tag": "MCQ",
+     "q": "With an expansionary budget but a tightening central bank, which business is most likely to struggle?",
+     "options": [
+      "A grocery retailer selling daily essentials",
+      "A seller of cars bought mostly on loans",
+      "A chain of neighbourhood pharmacies",
+      "A maker of toothpaste and soap sold for cash"
+     ],
+     "answer": 1,
+     "why": "Incomes are supported by the budget, but credit is costly - so goods bought on borrowed money suffer most."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A stock-market boom makes households feel richer and spend more, though their salaries are unchanged. This is:",
+     "options": [
+      "The Keynesian multiplier at work on consumer spending",
+      "The crowding out of private spending by the state",
+      "The wealth effect - a rise in autonomous consumption",
+      "The Pigou effect produced by a falling price level"
+     ],
+     "answer": 2,
+     "why": "Wealth, not income, has changed. Demand shifts right with no policy action at all."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Keynesian short-run supply curve is horizontal because:",
+     "options": [
+      "Output is fixed by the economy's stock of capital and labour",
+      "Wages are perfectly flexible and adjust every week",
+      "The money supply is held constant by the central bank",
+      "Prices are stuck, so firms meet changes in demand by changing output"
+     ],
+     "answer": 3,
+     "why": "In the short run it is output, not price, that responds - depending on how much capacity firms use."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A unit costs Rs. 5 to make and sells for Rs. 6. The price rises to Rs. 7 while the cost stays at Rs. 5. Profit per unit:",
+     "options": [
+      "Is unchanged at Re 1",
+      "Trebles, from Re 1 to Rs. 3",
+      "Doubles, from Re 1 to Rs. 2",
+      "Rises by one half"
+     ],
+     "answer": 2,
+     "why": "6 - 5 = 1 before; 7 - 5 = 2 after. Each extra unit now earns twice as much."
+    },
+    {
+     "tag": "MCQ",
+     "q": "If producers correctly realise that ALL prices have risen in the same proportion, they will:",
+     "options": [
+      "Leave output unchanged, since nothing real has changed",
+      "Close down until prices return to normal",
+      "Cut their own prices to gain market share",
+      "Produce a great deal more than before, to profit from the higher prices"
+     ],
+     "answer": 0,
+     "why": "Their price relative to their costs is the same as before, so there is no reason to produce more."
+    },
+    {
+     "tag": "MCQ",
+     "q": "On the class slide the economy moves from A (output 7,500, unemployment 7%, inflation 2%) to B (output 8,000). At B:",
+     "options": [
+      "Unemployment is 10% and inflation is 2%",
+      "Unemployment is 4% and inflation is 2%",
+      "Unemployment is 7% and inflation is 6%",
+      "Unemployment is 4% and inflation is 6%"
+     ],
+     "answer": 3,
+     "why": "More output, so fewer unemployed; higher prices, so more inflation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the Phillips curve equation, inflation rises above expected inflation when:",
+     "options": [
+      "Unemployment is equal to its natural rate",
+      "Unemployment is below its natural rate",
+      "The natural rate itself is rising",
+      "Unemployment is above its natural rate"
+     ],
+     "answer": 1,
+     "why": "A labour market tighter than normal pushes wages, and therefore prices, up faster than people expected."
+    },
+    {
+     "tag": "MCQ",
+     "q": "On the class slide, extra money first takes the economy from output 10 and inflation 2% to output 11 and inflation 3.5%. After expectations have adjusted, it ends at:",
+     "options": [
+      "Output 10, inflation 5.5%",
+      "Output 11, inflation 5.5%",
+      "Output 10, inflation 2%",
+      "Output 11, inflation 3.5%"
+     ],
+     "answer": 0,
+     "why": "Output returns to potential; the only lasting effect of the extra money is higher inflation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A rate hike differs from quantitative tightening in that a rate hike:",
+     "options": [
+      "Works only by reducing the government's spending",
+      "Removes money from the system directly, by selling bonds",
+      "Has no effect of any kind on the supply of money",
+      "Raises the price of money, reducing its quantity only indirectly"
+     ],
+     "answer": 3,
+     "why": "QT works on the quantity directly. A rate hike works on the price and cuts the quantity through less lending."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The wage-price spiral is a loop in which:",
+     "options": [
+      "Higher wages lower prices by raising productivity",
+      "Prices rise while wages are held down by long contracts",
+      "Higher prices raise expected inflation, then wages, then costs, then prices again",
+      "Wages and prices fall together, year after year, as firms and workers undercut one another in turn"
+     ],
+     "answer": 2,
+     "why": "Each turn feeds the next, so inflation no longer needs an outside cause."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Inflation should be low enough that nobody talks about it\" means that price stability is achieved when:",
+     "options": [
+      "The prices of goods and services stop changing altogether",
+      "The rate of inflation equals the rate of economic growth",
+      "Wages are frozen by agreement between firms and workers",
+      "Inflation does not enter the decisions of households and firms"
+     ],
+     "answer": 3,
+     "why": "Once people talk about prices, they build inflation into their wage demands and plans."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A negative supply shock moves inflation and output in which directions?",
+     "options": [
+      "Inflation up, output down",
+      "Inflation up, output up",
+      "Inflation down, output up",
+      "Inflation down, output down"
+     ],
+     "answer": 0,
+     "why": "A demand shock moves both the same way; a supply shock gives the worst of both."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The central bank faces this dilemma after a supply shock because:",
+     "options": [
+      "Supply shocks are always permanent",
+      "Its instrument acts on demand and cannot move supply",
+      "The government's budget is too tight to help",
+      "It has run out of foreign exchange reserves"
+     ],
+     "answer": 1,
+     "why": "Money shifts the demand curve. It cannot produce oil or rain."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Inflation falling from 8% to 4% is ________; inflation moving from 4% to minus 4% is ________.",
+     "options": [
+      "Disinflation; disinflation",
+      "Deflation; disinflation",
+      "Disinflation; deflation",
+      "Deflation; deflation"
+     ],
+     "answer": 2,
+     "why": "In the first case prices are still rising; in the second they are actually falling."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The \"sacrifice ratio\" measures:",
+     "options": [
+      "The ratio of government debt to GDP",
+      "The output or employment lost for each point taken off inflation",
+      "The ratio of a country's exports to its imports of goods and services",
+      "The share of national income that is saved"
+     ],
+     "answer": 1,
+     "why": "It is the price of disinflation. Senator Kennedy's 3.6 points of unemployment for 2 points of inflation is one estimate."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Senator Kennedy's rule from history was 3.6 points of unemployment for every 2 points taken off inflation. With inflation at 6.4% and unemployment at 3.4%, reaching 2.4% inflation would need unemployment of:",
+     "options": [
+      "7.0%",
+      "5.2%",
+      "13.6%",
+      "10.6%"
+     ],
+     "answer": 3,
+     "why": "Four points off inflation is twice 3.6, or 7.2 points more unemployment: 3.4 + 7.2 = 10.6."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The index suggests that fragmentation today is:",
+     "options": [
+      "About the same as it was in the year 2000",
+      "Higher than it was during the 1970s",
+      "At the lowest level in the whole series",
+      "Lower than it was during the 1970s"
+     ],
+     "answer": 1,
+     "why": "It has climbed since 2008 to the highest level in the series."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The open-economy identity derived in class is:",
+     "options": [
+      "S - I = M - X",
+      "S - I = X - M",
+      "S = X - M",
+      "S + I = X + M"
+     ],
+     "answer": 1,
+     "why": "Saving minus investment equals exports minus imports."
+    },
+    {
+     "tag": "MCQ",
+     "q": "India exports 100 and imports 150. Foreign investors bring in 100. The country's foreign exchange reserves:",
+     "options": [
+      "Fall by 50",
+      "Rise by 50",
+      "Rise by 100",
+      "Are unchanged"
+     ],
+     "answer": 1,
+     "why": "50 of the inflow pays for the trade gap; the RBI buys the other 50."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The rate moves from Rs. 90 to Rs. 92 per dollar. Then:",
+     "options": [
+      "Both currencies have depreciated",
+      "The rupee has appreciated and the dollar has depreciated",
+      "The rupee has depreciated and the dollar has appreciated",
+      "Both currencies have appreciated"
+     ],
+     "answer": 2,
+     "why": "More rupees are needed for the same dollar: the dollar is dearer, the rupee cheaper."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A foreign tourist visiting the Taj Mahal is, in the country's external accounts:",
+     "options": [
+      "A remittance from abroad",
+      "An import of goods into India, since the visitor consumes what is produced here",
+      "An inflow of foreign capital",
+      "An export of services, raising the demand for rupees"
+     ],
+     "answer": 3,
+     "why": "The visitor buys Indian services - hotel, transport - and needs rupees to do it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A car costs Rs. 71 lakh in India - about 86,600 dollars at Rs. 82 - and a similar car costs 105,900 dollars in the US. The real exchange rate, the American car in terms of Indian cars, is about:",
+     "options": [
+      "0.82",
+      "1.22",
+      "1.00",
+      "1.49"
+     ],
+     "answer": 1,
+     "why": "105,900 / 86,600 = 1.22. The reverse, 0.82, is one Indian car in terms of American cars."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the class exercise the buyer's demand is Q = 87 - 0.082 x P, with P in dollars. XYZ raises its price to Rs. 90,000 while the rate is Rs. 84, so the dollar price is about 1,071. Units demanded are:",
+     "options": [
+      "2",
+      "Zero",
+      "5",
+      "7"
+     ],
+     "answer": 1,
+     "why": "87 - 0.082 x 1,071 is negative: at that price the buyer takes nothing."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The United States raises interest rates. The most likely effect on India is that:",
+     "options": [
+      "Capital floods into India in search of safety, and the rupee strengthens",
+      "India's exports to the United States stop",
+      "Capital is drawn toward dollar assets and the rupee tends to weaken",
+      "India's saving rises above its investment"
+     ],
+     "answer": 2,
+     "why": "Higher US rates raise the demand for dollar assets; foreign saving is slower to arrive in India."
+    }
+   ]
+  },
+  {
+   "name": "Session 4: Exchange rates and the world outside",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "The exchange rate moves from 5 Malaysian ringgit per dollar to 4 ringgit per dollar. Then:",
+     "options": [
+      "Both currencies have depreciated",
+      "The dollar has depreciated and the ringgit has appreciated",
+      "The dollar has appreciated and the ringgit has depreciated",
+      "Neither currency has changed in value"
+     ],
+     "answer": 1,
+     "why": "A dollar now buys fewer ringgit, so the dollar is weaker and the ringgit stronger - the example on the slide."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A car is invoiced in rupees. Its price doubles from Rs. 50,000 to Rs. 1,00,000 while the rupee moves from Rs. 50 to Rs. 80 per dollar. The American buyer, who used to pay 1,000 dollars, now pays:",
+     "options": [
+      "1,000 dollars",
+      "625 dollars",
+      "2,000 dollars",
+      "1,250 dollars"
+     ],
+     "answer": 3,
+     "why": "1,00,000 / 80 = 1,250 dollars - more than the original 1,000, although the rupee has fallen."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"The adjustment happens on the revenue side rather than the demand side\" describes:",
+     "options": [
+      "Rupee invoicing: the buyer's price changes and so does the quantity sold",
+      "Dollar invoicing: quantity is unchanged and the exporter's rupee revenue changes",
+      "A devaluation announced by the government",
+      "A fixed exchange rate defended by the central bank"
+     ],
+     "answer": 1,
+     "why": "With the dollar price fixed, demand does not respond; the exporter's home-currency income does."
+    },
+    {
+     "tag": "MCQ",
+     "q": "According to the class, the choice of invoicing currency depends mainly on:",
+     "options": [
+      "The size of the customer's national economy",
+      "The tax laws of the seller's home country",
+      "The payment technology available to the buyer",
+      "How much pricing power the seller holds"
+     ],
+     "answer": 3,
+     "why": "\"It is a function of how much monopolistic power you hold. Who will bear the risk?\""
+    },
+    {
+     "tag": "MCQ",
+     "q": "Under dollar currency pricing, who bears the exchange-rate risk in the short run?",
+     "options": [
+      "Nobody, because the dollar price is fixed",
+      "The importer, whose local-currency cost moves with the exchange rate",
+      "The central bank of the importing country",
+      "The exporter, whose home-currency revenue changes with the rate"
+     ],
+     "answer": 1,
+     "why": "The dollar price is fixed for a time, so the buyer's cost in its own currency rises and falls with the rate."
+    },
+    {
+     "tag": "MCQ",
+     "q": "When the RBI sells dollars and takes in rupees, India's money supply:",
+     "options": [
+      "Doubles",
+      "Is unchanged",
+      "Falls",
+      "Rises"
+     ],
+     "answer": 2,
+     "why": "The rupees it receives are withdrawn from circulation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The \"impossible trinity\" says that a country cannot have all three of:",
+     "options": [
+      "A fixed exchange rate, free movement of capital and its own monetary policy",
+      "A budget surplus, low rates of taxation and a high level of public spending",
+      "High exports, low imports and rising reserves",
+      "Low inflation, low unemployment and high growth"
+     ],
+     "answer": 0,
+     "why": "It can choose any two of the three, never all three."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The correct pairing of regime and vocabulary is:",
+     "options": [
+      "Both regimes - devaluation and revaluation",
+      "Fixed rate - depreciation and appreciation; flexible rate - devaluation and revaluation",
+      "Fixed rate - devaluation and revaluation; flexible rate - depreciation and appreciation",
+      "Both regimes - depreciation and appreciation"
+     ],
+     "answer": 2,
+     "why": "Governments devalue; markets depreciate."
+    },
+    {
+     "tag": "MCQ",
+     "q": "On 6 June 1966 India:",
+     "options": [
+      "Devalued the rupee by 36.5%, from Rs. 4.76 to Rs. 7.50 per dollar",
+      "Allowed the rupee to float freely",
+      "Nationalised its largest commercial banks",
+      "Became a member of the International Monetary Fund and the World Bank"
+     ],
+     "answer": 0,
+     "why": "The front page shown in class: \"Rupee devalued by 36.5 per cent.\""
+    },
+    {
+     "tag": "MCQ",
+     "q": "Governor Malhotra's statement of November 2025 was that the RBI:",
+     "options": [
+      "Had devalued the rupee to help exporters",
+      "Would stop intervening in the currency market",
+      "Does not target any level for the rupee; the depreciation was driven by dollar demand",
+      "Would defend the rupee at Rs. 85 to the dollar for as long as its reserves allowed it to do so"
+     ],
+     "answer": 2,
+     "why": "Not a fixed regime: no line it has promised to hold."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the week to 18 September 2026 India's reserves fell by almost 15 billion dollars. This indicates that the RBI had been:",
+     "options": [
+      "Buying dollars to stop the rupee rising",
+      "Revaluing its holdings of gold upward",
+      "Lending dollars to the government",
+      "Selling dollars to steady the rupee"
+     ],
+     "answer": 3,
+     "why": "Oil was dearer and the Fed had just raised rates; the rupee was allowed to weaken, but not to slide."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of these is NOT one of the four spillovers the RBI listed in 2022?",
+     "options": [
+      "A fall in the prices of imports",
+      "Capital outflows",
+      "Pressure on the currency to depreciate",
+      "Loss of reserves"
+     ],
+     "answer": 0,
+     "why": "The fourth was imported inflation - imports became dearer, not cheaper."
+    },
+    {
+     "tag": "MCQ",
+     "q": "India is exposed to the Fed's decisions because, by the identity S - I = X - M, it:",
+     "options": [
+      "Keeps its exchange rate fixed against the dollar at all times",
+      "Saves less than it invests, and relies on foreign saving",
+      "Exports more than it imports",
+      "Saves more than it invests"
+     ],
+     "answer": 1,
+     "why": "Anything that makes foreign saving prefer to stay at home is felt here at once."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Import cover\" measures:",
+     "options": [
+      "Imports as a percentage of GDP",
+      "How many months of imports the reserves could pay for",
+      "The insurance carried on imported shipments",
+      "The tariffs charged on a country's imports of goods and services"
+     ],
+     "answer": 1,
+     "why": "It makes countries of different sizes comparable."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Import cover fell from about 17 months in 2021 to about 10-11 months although reserves in dollars are near a record, because:",
+     "options": [
+      "The RBI stopped counting gold in the reserves",
+      "The dollar lost value against the rupee",
+      "Imports have grown, so the same reserves cover fewer months",
+      "Gold in the reserves lost most of its value during those years"
+     ],
+     "answer": 2,
+     "why": "The measure is reserves divided by monthly imports; the denominator has risen."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor's argument against large-scale de-dollarisation was that:",
+     "options": [
+      "The dollar is backed by the gold held by the US government, which no other currency can match",
+      "The International Monetary Fund does not permit it",
+      "If the world were abandoning the dollar, demand for it could not be weakening other currencies",
+      "The euro has failed as an international currency"
+     ],
+     "answer": 2,
+     "why": "Both statements cannot be true in any large way."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Transaction exposure is the risk that:",
+     "options": [
+      "The exchange rate changes the home-currency value of a payment agreed but not yet made",
+      "The accounts of a foreign subsidiary change in value when they are consolidated with the parent's",
+      "A firm's competitive position is eroded over several years",
+      "The interest rate on a loan rises before it is repaid"
+     ],
+     "answer": 0,
+     "why": "A deal already struck, not yet settled."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An exporter is due 1,00,000 dollars in 90 days and sells them forward at Rs. 96. If the rate on the day is Rs. 92, it receives:",
+     "options": [
+      "Rs. 98 lakh",
+      "Rs. 96 lakh",
+      "Rs. 94 lakh",
+      "Rs. 92 lakh"
+     ],
+     "answer": 1,
+     "why": "The forward rate applies whatever the market rate turns out to be."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The same exporter instead buys an option to sell at Rs. 95, paying a premium of Re 1 per dollar. If the rate turns out to be Rs. 98, it nets:",
+     "options": [
+      "Rs. 95 lakh",
+      "Rs. 94 lakh",
+      "Rs. 98 lakh",
+      "Rs. 97 lakh"
+     ],
+     "answer": 3,
+     "why": "It lets the option lapse and sells at 98; less the premium of Rs. 1 lakh, that is Rs. 97 lakh."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Plaza Accord of 1985 was an agreement among five countries to:",
+     "options": [
+      "Act together to bring down the value of the dollar",
+      "Create a common European currency",
+      "Fix their exchange rates permanently against one another",
+      "Raise the price of oil"
+     ],
+     "answer": 0,
+     "why": "The United States, Japan, West Germany, France and the United Kingdom."
+    },
+    {
+     "tag": "MCQ",
+     "q": "According to S - I = X - M, a tariff by itself:",
+     "options": [
+      "Changes what is imported and from whom, not the saving-investment gap that sets the deficit",
+      "Eliminates the trade deficit within a year, provided that other countries do not retaliate at all",
+      "Raises the country's saving rate",
+      "Lowers investment by the amount of the tariff"
+     ],
+     "answer": 0,
+     "why": "The deficit lasts as long as saving falls short of investment."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The proposal to charge foreign holders of US Treasury debt a fee \"needs co-operation from the Fed\" because:",
+     "options": [
+      "The Fed must approve every trade agreement",
+      "The Fed would be the agency responsible for collecting the fee from foreign governments",
+      "If foreigners sell bonds and long-term rates rise, the Fed may have to buy the bonds",
+      "The Fed is responsible for setting tariffs"
+     ],
+     "answer": 2,
+     "why": "Buying government bonds with new money to hold rates down - the very thing central-bank independence is meant to prevent."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Focus on innovation\" follows from this session's lesson that:",
+     "options": [
+      "The rupee floats freely",
+      "Only pricing power lets a firm pass currency risk to its customers",
+      "Tariffs are always temporary, so a firm need only wait for them to be removed",
+      "India's reserves are at a record"
+     ],
+     "answer": 1,
+     "why": "A product others cannot copy is what lets you invoice on your own terms."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Fed raises rates; India's reserves fall by 15 billion dollars in a week while the rupee weakens modestly. This is consistent with:",
+     "options": [
+      "A free float with no intervention",
+      "A managed float in which the RBI sold dollars to slow the fall",
+      "A fixed rate that was successfully defended by the central bank",
+      "A devaluation of the rupee"
+     ],
+     "answer": 1,
+     "why": "Under a peg the rupee would not have moved; under a free float the reserves would not have. AFTER THE FOUR SESSIONS"
+    }
+   ]
+  },
+  {
+   "name": "Mixed: all four sessions",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "Which of the following is NOT one of the three reasons given in class for a manager to study macroeconomics?",
+     "options": [
+      "To analyse the contemporary economic condition",
+      "To forecast the firm's own share price for the next quarter",
+      "To comprehend the words and signals of policymakers and factor them into decisions",
+      "To analyse the boundary conditions within which a business operates"
+     ],
+     "answer": 1,
+     "why": "The three reasons are boundary conditions, the current condition and policymakers' signals; share-price forecasting was never on the list."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the formula M = m x B, the letter B stands for:",
+     "options": [
+      "Bank deposits held by households and firms across the banking system",
+      "The monetary base: currency plus banks' reserves with the central bank",
+      "Broad money, including the time deposits that the public holds with banks",
+      "The government bonds held as assets on the central bank's balance sheet"
+     ],
+     "answer": 1,
+     "why": "B is base (reserve) money - the layer the central bank creates directly. Deposits belong to M, the second layer."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The quarrel between President Trump and Fed chair Powell was at root a case of:",
+     "options": [
+      "Both policies turning expansionary at the same time",
+      "Both policies turning contractionary at the same time",
+      "Contractionary fiscal policy meeting expansionary monetary policy",
+      "Expansionary fiscal policy meeting contractionary monetary policy"
+     ],
+     "answer": 3,
+     "why": "A tax cut pushed demand up while the Fed raised rates and shrank its bond holdings to hold demand down."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A country whose saving is greater than its investment is:",
+     "options": [
+      "A net borrower from the rest of the world, with a trade deficit",
+      "A net lender to the rest of the world, with a trade deficit",
+      "A net borrower from the rest of the world, with a trade surplus",
+      "A net lender to the rest of the world, with a trade surplus"
+     ],
+     "answer": 3,
+     "why": "S greater than I means X greater than IM. Lenders run surpluses; borrowers run deficits."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A Korean company runs a phone factory in Noida. The output of that factory is part of:",
+     "options": [
+      "Both countries' GDP in full",
+      "Neither country's GDP",
+      "India's GDP",
+      "Korea's GDP only"
+     ],
+     "answer": 2,
+     "why": "GDP follows geography, not ownership. It was produced on Indian soil."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A 10% reserve ratio turns Rs. 100 into Rs. 1,000 of deposits; a 90% ratio turns it into Rs. 111. The reason is that a lower ratio:",
+     "options": [
+      "Makes the RBI issue fresh currency notes at every round of lending",
+      "Increases the amount of base money that exists in the banking system as a whole",
+      "Lets more of each deposit be lent on, so the chain runs for more rounds",
+      "Raises the interest rate that banks have to pay depositors to attract funds"
+     ],
+     "answer": 2,
+     "why": "The base is unchanged at 100. Less is locked up per round, so more rounds of lending and depositing take place."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Autonomous\" consumption or investment means spending that:",
+     "options": [
+      "Changes without any change in income or in policy",
+      "Rises only when household incomes have risen first",
+      "Is financed directly out of the government's budget",
+      "Is undertaken by autonomous public-sector bodies"
+     ],
+     "answer": 0,
+     "why": "It comes from optimism or from wealth - people or firms deciding to spend more of their own accord."
+    },
+    {
+     "tag": "MCQ",
+     "q": "After a real depreciation of the rupee, India's:",
+     "options": [
+      "Exports and imports both fall by the same amount",
+      "Exports rise and imports fall, so net exports rise",
+      "Exports fall and imports rise, so net exports fall",
+      "Exports rise and imports rise by the same amount"
+     ],
+     "answer": 1,
+     "why": "Buyers at home and abroad switch towards the relatively cheaper Indian goods."
+    },
+    {
+     "tag": "MCQ",
+     "q": "You sell a ten-year-old flat for Rs. 80 lakh through a broker who charges Rs. 80,000. The addition to this year's GDP is:",
+     "options": [
+      "Zero",
+      "Rs. 80 lakh",
+      "Rs. 80,000",
+      "Rs. 80.8 lakh"
+     ],
+     "answer": 2,
+     "why": "The flat was produced years ago; only the broker's service was produced this year."
+    },
+    {
+     "tag": "MCQ",
+     "q": "When the RBI cut the cash reserve ratio from 4% to 3% in 2025, what changed?",
+     "options": [
+      "The monetary base rose; the multiplier did not change at all",
+      "Both the monetary base and the multiplier rose together",
+      "Neither changed; a CRR cut only moves the repo rate",
+      "The ceiling on the multiplier rose; the monetary base did not change"
+     ],
+     "answer": 3,
+     "why": "A CRR cut creates no new base money. It lets banks lend more of each deposit - it works on m, not on B."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The classical view that \"supply creates its own demand\" implies that the aggregate supply curve is:",
+     "options": [
+      "Upward sloping: output rises as the price level rises",
+      "Horizontal: prices are fixed and output adjusts to demand",
+      "Downward sloping: output falls as the price level rises",
+      "Vertical: output is fixed by capital, labour and technology"
+     ],
+     "answer": 3,
+     "why": "If prices adjust freely, everything produced is sold, and output depends only on the economy's capacity."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Under a dollar invoice fixed at 1,000 dollars, when the rupee moves from 50 to 80 the buyer pays:",
+     "options": [
+      "1,600 dollars",
+      "1,250 dollars",
+      "1,000 dollars, as before",
+      "625 dollars, as in Case 1"
+     ],
+     "answer": 2,
+     "why": "The buyer's price is set in dollars, so the exchange rate does not touch it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A team in Bengaluru monitors a customer's factory in Texas remotely and bills the customer in dollars. The service is counted in:",
+     "options": [
+      "US GDP, because it is used there",
+      "Both countries' GDP in full",
+      "Neither, because nothing physical crosses a border",
+      "India's GDP, as an export of services"
+     ],
+     "answer": 3,
+     "why": "It is produced in India; where it is consumed decides only that it is an export."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Banks were reluctant to lend in 2020 for all of the following reasons EXCEPT:",
+     "options": [
+      "Fear of later investigation if a loan went bad",
+      "Bad loans carried over from the previous decade",
+      "Few safe borrowers in a locked-down economy",
+      "A ban on fresh lending imposed by the RBI"
+     ],
+     "answer": 3,
+     "why": "There was no ban - the RBI and the government wanted banks to lend. The reluctance was the banks' own."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the Keynesian short run, what decides how much firms produce?",
+     "options": [
+      "The size of the capital stock and nothing else",
+      "The price level that firms expect next year",
+      "The natural rate of unemployment in the economy",
+      "The level of demand at the prices already set"
+     ],
+     "answer": 3,
+     "why": "With prices fixed, firms produce whatever is demanded, using more or less of their capacity."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A car is invoiced at 1,000 dollars. When the rupee moves from Rs. 50 to Rs. 80 per dollar, the exporter's rupee receipts per car:",
+     "options": [
+      "Stay at Rs. 50,000",
+      "Rise from Rs. 50,000 to Rs. 62,500",
+      "Rise from Rs. 50,000 to Rs. 80,000",
+      "Fall from Rs. 80,000 to Rs. 50,000"
+     ],
+     "answer": 2,
+     "why": "1,000 dollars converts into 80,000 rupees at the new rate."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A household buys a newly built apartment from the builder. In the national accounts this is:",
+     "options": [
+      "Investment (I) - residential",
+      "Government purchases (G)",
+      "Consumption (C)",
+      "Not counted"
+     ],
+     "answer": 0,
+     "why": "New housing is investment, the one large item of I that households rather than firms buy."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"He was paying interest on his own money\" refers to:",
+     "options": [
+      "The government paying interest to the RBI on the bonds the RBI had bought",
+      "Small firms paying interest on loans that the government had guaranteed",
+      "Banks paying interest to their depositors on balances they could not lend",
+      "The RBI paying banks interest on money it had created and they had parked back"
+     ],
+     "answer": 3,
+     "why": "The RBI created the money, banks deposited it back through the reverse repo, and the RBI paid them interest on it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The sticky-wage model explains the upward-sloping supply curve by saying that when prices rise:",
+     "options": [
+      "Firms are misled about what is happening to the price level",
+      "The central bank expands money to match the higher prices",
+      "Wages rise faster than prices, so workers supply more labour",
+      "Wages lag behind, so profit per unit rises and firms produce more"
+     ],
+     "answer": 3,
+     "why": "Prices are slow to change but wages are slower; the gap between the two is extra profit on every unit."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An AI subscription is priced in dollars for Indian customers. When the rupee falls:",
+     "options": [
+      "The company receives fewer dollars; the customer pays the same rupees",
+      "Both the company and the customer lose equally",
+      "The customer pays more rupees; the company's dollar revenue is unchanged",
+      "Neither the company nor the customer is affected"
+     ],
+     "answer": 2,
+     "why": "With a dollar price the risk sits with the customer - the professor's own rising bill."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A farmer sells wheat to a miller for $1; the miller sells flour to a baker for $3; the baker sells bread for $6. The miller's value added is:",
+     "options": [
+      "$1",
+      "$3",
+      "$2",
+      "$6"
+     ],
+     "answer": 2,
+     "why": "3 - 1 = 2. The three value-added figures (1, 2, 3) sum to the $6 price of the bread."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The government's most direct answer in 2020 to banks' fear of lending to small firms was to:",
+     "options": [
+      "Guarantee the loans, so the risk of default did not fall on the bank",
+      "Close the reverse repo window so that banks could not park cash",
+      "Order the RBI to lend to small firms from its own balance sheet",
+      "Have the repo rate cut to zero until the lockdowns were lifted"
+     ],
+     "answer": 0,
+     "why": "\"Give the loan, I am the guarantor\" - credit-guarantee schemes for MSMEs removed the banker's fear directly."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In Lucas's imperfect-information model a producer raises output when her price rises because she:",
+     "options": [
+      "Believes her price has risen relative to other prices",
+      "Finds that wages have fallen in her industry",
+      "Receives a subsidy linked to the price she charges",
+      "Expects the price of her product to fall soon"
+     ],
+     "answer": 0,
+     "why": "She reads a general rise in prices as a rise in demand for her own product."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A streaming service that sells in a crowded market prices in rupees for its Indian customers because:",
+     "options": [
+      "Its market is competitive: customers would leave if their bill rose whenever the rupee fell",
+      "Indian law requires every subscription sold to consumers in India to be priced and billed in rupees",
+      "UPI cannot be used to pay a price that is set in dollars",
+      "All of its costs are incurred in rupees"
+     ],
+     "answer": 0,
+     "why": "With several rivals a click away, it cannot make customers carry the currency risk."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In April-June 2026 India's nominal GDP grew 10.3% and real GDP grew 7.8%. The difference mainly reflects:",
+     "options": [
+      "The growth of imports",
+      "A statistical discrepancy",
+      "Population growth",
+      "The rise in prices"
+     ],
+     "answer": 3,
+     "why": "The gap between nominal and real growth is the price change, measured by the GDP deflator."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Money held in a UPI app is:",
+     "options": [
+      "A central bank digital currency issued directly to users by the RBI",
+      "Tokenised but not digital, since it is recorded on a public blockchain",
+      "Digital but not tokenised: it is still entries in banks' own ledgers",
+      "A stablecoin that is issued and guaranteed by the payments network"
+     ],
+     "answer": 2,
+     "why": "UPI moves entries between banks' private books. A tokenised rupee would itself live on a shared ledger."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The natural rate of unemployment is the rate that prevails when:",
+     "options": [
+      "Inflation has fallen to zero",
+      "No one is between jobs or searching for work",
+      "The government's budget is in balance",
+      "Output is equal to potential output"
+     ],
+     "answer": 3,
+     "why": "Even at potential some unemployment remains - frictional and structural."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which measure of inflation does the RBI target?",
+     "options": [
+      "Core CPI inflation",
+      "WPI inflation",
+      "The GDP deflator",
+      "Headline CPI inflation"
+     ],
+     "answer": 3,
+     "why": "The target is headline CPI, although the RBI watches core closely."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Because so much trade is invoiced in dollars, a fall in the rupee reaches the Indian economy first as:",
+     "options": [
+      "An immediate surge in the volume of goods and services exported",
+      "A fall in the rate of inflation",
+      "Costlier imports, with export volumes responding slowly",
+      "Lower prices for imported goods"
+     ],
+     "answer": 2,
+     "why": "Dollar-priced exports are no cheaper for foreign buyers; dollar-priced imports cost more rupees at once."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The institution a stablecoin issuer most closely resembles, according to the class, is a:",
+     "options": [
+      "Commercial bank",
+      "Stock exchange",
+      "Central bank",
+      "Money market fund"
+     ],
+     "answer": 3,
+     "why": "Like a money market fund it pools the public's cash into Treasury bills and repos; unlike the fund, it keeps the interest."
+    },
+    {
+     "tag": "MCQ",
+     "q": "India's large number of young people who are not trained for the jobs on offer is an example of:",
+     "options": [
+      "Cyclical unemployment",
+      "Frictional unemployment",
+      "Seasonal unemployment",
+      "Structural unemployment"
+     ],
+     "answer": 3,
+     "why": "The people and the jobs both exist; the skills do not match. More demand alone will not fix it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In a fixed exchange-rate system the central bank:",
+     "options": [
+      "Lets the market decide the rate each day",
+      "Changes the announced rate every day, in line with the demand and supply it observes",
+      "Takes no part in the currency market",
+      "Stands ready to buy and sell foreign currency at the announced rate"
+     ],
+     "answer": 3,
+     "why": "Because it will always deal at the fixed price, nobody deals at any other."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The GDP deflator differs from the CPI because the deflator:",
+     "options": [
+      "Includes imported consumer goods such as phones and fuel",
+      "Covers only the goods and services that households consume",
+      "Covers everything produced domestically, including capital goods and government services",
+      "Uses a basket of items that stays fixed until the base year changes"
+     ],
+     "answer": 2,
+     "why": "The first three describe the CPI or are simply wrong for the deflator."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Dollarisation\", the risk that central banks outside the US fear from stablecoins, means:",
+     "options": [
+      "Banks from emerging economies opening branches and taking deposits inside the United States",
+      "Households and firms moving savings and payments into dollars, weakening the home currency",
+      "The US government buying up the currencies of emerging economies in the foreign exchange market",
+      "A sustained fall in the value of the dollar against the currencies of emerging economies"
+     ],
+     "answer": 1,
+     "why": "If people save and pay in dollar tokens, the home central bank's tools reach less and less of the economy."
+    },
+    {
+     "tag": "MCQ",
+     "q": "After a rise in the money supply, what carries the economy from the short-run result (more output) to the long-run result (only more inflation)?",
+     "options": [
+      "A rise in the economy's potential output",
+      "The adjustment of expected prices, which shifts aggregate supply",
+      "A cut in taxes by the government",
+      "A fall in the money supply back to its original level, engineered by the central bank"
+     ],
+     "answer": 1,
+     "why": "People revise their expectations and ask for higher wages; costs rise and the supply curve shifts up."
+    },
+    {
+     "tag": "MCQ",
+     "q": "India's present exchange-rate system is best described as:",
+     "options": [
+      "A fixed rate",
+      "A free float with no intervention",
+      "A managed float",
+      "A currency board"
+     ],
+     "answer": 2,
+     "why": "The market sets the rate; the RBI steps in from time to time to steady it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A sharp rise in the price of imported smartphones will show up in:",
+     "options": [
+      "The GDP deflator but not the CPI",
+      "Both equally",
+      "Neither",
+      "The CPI but not the GDP deflator"
+     ],
+     "answer": 3,
+     "why": "Households buy them, so CPI rises; they are not produced in India, so the deflator does not."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Some critics compared Rs. 88.27 lakh crore on the new GDP series with Rs. 86 lakh crore on the old one and called it 2.6% growth. That figure is wrong because it:",
+     "options": [
+      "Compares a new-series number with an old-series number",
+      "Uses real numbers where nominal numbers are needed",
+      "Ignores the growth of population between the two years",
+      "Leaves the informal sector out of the calculation"
+     ],
+     "answer": 0,
+     "why": "88.27 (new method) against 86.05 (old method) mixes two rulers. The professor said it makes no economic sense."
+    },
+    {
+     "tag": "MCQ",
+     "q": "On 16 September 2026 the US Federal Reserve:",
+     "options": [
+      "Raised its policy rate by 25 basis points, to 3.75-4.00%",
+      "Cut its policy rate by 25 basis points",
+      "Raised its policy rate by 100 basis points",
+      "Left its policy rate unchanged for a sixth meeting"
+     ],
+     "answer": 0,
+     "why": "From 3.50-3.75% to 3.75-4.00%, with a signal that more could follow."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"The interest rate becomes endogenous\" under a fixed exchange rate means that:",
+     "options": [
+      "The interest rate is fixed for ever at its present level",
+      "The interest rate is decided by the government in its budget instead of by the central bank",
+      "The central bank can no longer choose it; it is dictated by the need to hold the rate",
+      "The interest rate falls to zero and stays there"
+     ],
+     "answer": 2,
+     "why": "Holding the exchange rate decides the money supply, and so the interest rate."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Between the 2012 and 2024 baskets, the all-India combined weight of food and beverages moved from about:",
+     "options": [
+      "45.9 to 40.1",
+      "36.3 to 34.3",
+      "40.1 to 45.9",
+      "54.2 to 44.8"
+     ],
+     "answer": 0,
+     "why": "54.2 to 44.8 is the rural figure and 36.3 to 34.3 the urban one."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A higher policy rate reduces the money supply indirectly because:",
+     "options": [
+      "The government prints fewer currency notes that year",
+      "Savers withdraw their deposits and hold cash instead",
+      "Costlier loans mean fewer loans, so the deposit-loan chain creates less money",
+      "Banks are then required to hold a larger part of their deposits as gold in their own vaults"
+     ],
+     "answer": 2,
+     "why": "Money is created when banks lend. Fewer loans mean fewer rounds of the multiplier."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Households can feel inflation near 5% while the GDP deflator shows about 2.5% because the CPI, unlike the deflator:",
+     "options": [
+      "Leaves out food and fuel, whose prices are the most volatile",
+      "Is compiled only once a year and so lags behind actual prices",
+      "Covers machinery, construction and government services as well",
+      "Tracks the household shopping basket, including imported goods"
+     ],
+     "answer": 3,
+     "why": "The deflator covers everything made in India and excludes imports; the CPI covers what households buy, wherever made."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A country wants a fixed exchange rate AND an interest rate of its own choosing. By the impossible trinity it must:",
+     "options": [
+      "Restrict the movement of capital across its borders",
+      "Let its currency float freely against all other currencies",
+      "Hold no foreign exchange reserves",
+      "Give up having a central bank"
+     ],
+     "answer": 0,
+     "why": "With capital unable to leave, a different interest rate does not drain the reserves."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Headline inflation is high only because of vegetable prices, while core inflation is low. A rate hike:",
+     "options": [
+      "Will bring vegetable prices down quickly by cooling the demand for food",
+      "Cannot grow more vegetables, so the RBI may look through a temporary supply shock",
+      "Is compulsory under the law whenever headline inflation is above 4%",
+      "Will raise core inflation by making loans to food traders costlier"
+     ],
+     "answer": 1,
+     "why": "Interest rates act on demand. A supply shock in food is not cured by costlier loans."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A firm makes the same quantity of goods from the same quantity of inputs as last year. Output prices are flat and input prices fall 10%. Its real value added has:",
+     "options": [
+      "Risen by 10%",
+      "Fallen by 10%",
+      "Not changed",
+      "Risen by the saving on inputs"
+     ],
+     "answer": 2,
+     "why": "Nothing real changed - only the margin in rupees. Single deflation would wrongly report growth; double deflation reports zero."
+    },
+    {
+     "tag": "MCQ",
+     "q": "If inflation expectations rise, workers demand higher wages. For firms this acts like:",
+     "options": [
+      "A negative supply shock: costs rise and the supply curve shifts left",
+      "A positive supply shock: costs fall and output rises",
+      "A fall in the money supply engineered by the central bank",
+      "A positive demand shock: sales rise at every price, and the demand curve shifts right"
+     ],
+     "answer": 0,
+     "why": "A rise in wages is a rise in costs, whatever caused it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Saying that \"the rupee was devalued today\" is wrong for the present-day rupee because:",
+     "options": [
+      "The rupee never loses value against the dollar for more than a few days, so the word cannot apply",
+      "Only the RBI is permitted to use the word",
+      "The rupee's rate is set by the market, so it depreciates; devaluation belongs to a fixed rate",
+      "The word has been dropped from economics"
+     ],
+     "answer": 2,
+     "why": "The professor was blunt about writers who mix the two."
+    },
+    {
+     "tag": "MCQ",
+     "q": "According to the Fisher equation, the real interest rate is approximately:",
+     "options": [
+      "The nominal rate multiplied by expected inflation",
+      "The nominal rate minus expected inflation",
+      "The nominal rate plus expected inflation",
+      "Expected inflation minus the nominal rate"
+     ],
+     "answer": 1,
+     "why": "i = r + expected inflation, so r = i - expected inflation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor used popular songs about rising prices as evidence that:",
+     "options": [
+      "People are talking about inflation - a sign that expectations are not anchored",
+      "Official inflation figures are exaggerated, since songs are written about only a few goods",
+      "The consumer price index is wrongly constructed",
+      "Real wages are rising across the country"
+     ],
+     "answer": 0,
+     "why": "\"The economy is people, not aliens.\" What people talk about is what they act on."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which combination is typical of a negative output gap?",
+     "options": [
+      "The central bank raising interest rates",
+      "Labour shortages and fast-rising wages",
+      "Prices rising faster than the target",
+      "Idle capacity and rising unemployment"
+     ],
+     "answer": 3,
+     "why": "Below potential, machines and people are idle. The other three belong to an overheating economy."
+    },
+    {
+     "tag": "MCQ",
+     "q": "India's second devaluation, in July 1991, took the rupee from about:",
+     "options": [
+      "Rs. 21 to Rs. 26 per dollar",
+      "Rs. 8 to Rs. 12 per dollar",
+      "Rs. 45 to Rs. 60 per dollar",
+      "Rs. 4.76 to Rs. 7.50 per dollar"
+     ],
+     "answer": 0,
+     "why": "Reserves had fallen to a few weeks of imports; the fixed rate was abandoned within two years."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A fixed deposit pays 7%. Interest is taxed at 30% and inflation is 5%. The real after-tax return is about:",
+     "options": [
+      "4.9%",
+      "7%",
+      "2%",
+      "Just below zero"
+     ],
+     "answer": 3,
+     "why": "After tax the deposit earns 4.9%; against 5% inflation that is about -0.1%."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The \"Golden Rule\" level of saving (called the golden ratio in class) is the saving rate that:",
+     "options": [
+      "Gives the highest consumption the country can sustain in the long run",
+      "Brings the government's budget exactly into balance each year",
+      "Produces the largest stock of capital that the economy could possibly accumulate",
+      "Matches the investment rate of the fastest-growing large economy"
+     ],
+     "answer": 0,
+     "why": "Too little saving means too little capital; too much means giving up consumption for nothing."
+    },
+    {
+     "tag": "MCQ",
+     "q": "After a negative supply shock, a central bank that expands money in order to restore output will:",
+     "options": [
+      "Leave inflation where it was",
+      "Shift the supply curve back to where it began",
+      "Bring inflation down at the same time",
+      "Push inflation higher still"
+     ],
+     "answer": 3,
+     "why": "Protecting output: output recovers, at the cost of even more inflation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A rise in world demand for India's software services, other things equal:",
+     "options": [
+      "Weakens the rupee, because more dollars are needed to pay for them",
+      "Reduces India's foreign exchange reserves",
+      "Raises the demand for rupees and limits the rupee's depreciation",
+      "Has no effect on the exchange rate"
+     ],
+     "answer": 2,
+     "why": "Companies and individuals move the rate in the same way the RBI does - through demand and supply."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Unexpected inflation transfers wealth from:",
+     "options": [
+      "Exporters to importers",
+      "Borrowers to lenders",
+      "The government to households",
+      "Lenders and savers to borrowers"
+     ],
+     "answer": 3,
+     "why": "Debts are repaid in cheaper money. The biggest borrower, the government, is the biggest gainer."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of these would raise India's potential GDP?",
+     "options": [
+      "A faster rise in the supply of money and bank credit",
+      "A rebate on personal income tax for salaried households",
+      "A technology that lets the same workers and machines produce more",
+      "A cut of half a percentage point in the repo rate by the RBI's rate-setting committee"
+     ],
+     "answer": 2,
+     "why": "The first three move demand. Only capital, labour and technology move capacity."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The RBI Governor whose term (2008 to 2013) was marked by costly oil, weak monsoons and inflation near 10% was:",
+     "options": [
+      "D. Subbarao",
+      "Shaktikanta Das",
+      "Raghuram Rajan",
+      "Urjit Patel"
+     ],
+     "answer": 0,
+     "why": "Rajan succeeded him in September 2013 and began the disinflation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Restrictions on imports, or on taking money abroad, manage the exchange rate by:",
+     "options": [
+      "Reducing the demand for dollars",
+      "Creating more rupees",
+      "Increasing the supply of dollars",
+      "Raising interest rates"
+     ],
+     "answer": 0,
+     "why": "They are the capital-control corner of the impossible trinity."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Fiat money has value because:",
+     "options": [
+      "It is backed one-for-one by gold",
+      "It is costly to print",
+      "It has intrinsic value as paper",
+      "Everyone expects everyone else to accept it"
+     ],
+     "answer": 3,
+     "why": "Its value is a shared belief, reinforced by the state accepting it for taxes."
+    },
+    {
+     "tag": "MCQ",
+     "q": "According to the class, the early unemployment caused by a new technology is eventually reversed mainly when:",
+     "options": [
+      "Wages fall far enough to make hiring attractive again",
+      "The central bank cuts interest rates to support demand",
+      "The government restricts the use of the technology",
+      "The technology creates new tasks for which people are needed"
+     ],
+     "answer": 3,
+     "why": "Computers removed the ledger clerk and created ATMs, cards, net banking and analytics. New tasks restore hiring."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A central bank can sometimes \"look through\" a supply shock when the shock is:",
+     "options": [
+      "Expected to last for many years",
+      "Temporary, and expectations remain anchored",
+      "Caused by excessive demand in the economy",
+      "Larger than five percentage points"
+     ],
+     "answer": 1,
+     "why": "One bad monsoon reverses itself. The danger is only that it raises expectations and so becomes permanent."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Imported inflation\" arises when:",
+     "options": [
+      "Wages at home rise faster than the productivity of the workers who earn them",
+      "A country's exports grow faster than its imports",
+      "The central bank expands the money supply",
+      "The currency falls, so goods bought abroad cost more in home currency"
+     ],
+     "answer": 3,
+     "why": "Oil at the same dollar price costs more rupees when the rupee is weaker."
+    },
+    {
+     "tag": "MCQ",
+     "q": "On the three-function test, Bitcoin's clearest weakness today is that:",
+     "options": [
+      "It cannot be transferred between people without going through a bank",
+      "It cannot be divided into units small enough for everyday payments",
+      "Prices and salaries are not quoted in it, and its value swings too sharply",
+      "It is illegal to hold or trade in every major economy of the world"
+     ],
+     "answer": 2,
+     "why": "It fails as a unit of account and as a stable store of value, and is rarely used as a medium of exchange."
+    },
+    {
+     "tag": "MCQ",
+     "q": "One explanation for why AI is a louder worry in India than in the US was that in the US:",
+     "options": [
+      "The labour market is tight and new tasks are being created fast",
+      "Companies have been much slower to adopt AI tools",
+      "Wages are set by the government and cannot be cut",
+      "Labour law prevents firms from laying off their workers"
+     ],
+     "answer": 0,
+     "why": "America is running above potential, with more demand for workers than supply, and is quick to build new tasks."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the first stage of a disinflation the central bank:",
+     "options": [
+      "Shifts aggregate supply to the right by lowering firms' costs",
+      "Reduces aggregate demand, pushing output below potential",
+      "Cuts taxes in order to support household incomes",
+      "Raises potential GDP by encouraging investment"
+     ],
+     "answer": 1,
+     "why": "It raises interest rates; demand shifts left; output and inflation both fall. This is the pain."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A rise in the Fed's interest rate is, for the United States and for India respectively:",
+     "options": [
+      "A tax on American consumers; a subsidy to Indian exporters that raises their dollar prices",
+      "A devaluation of the dollar; a revaluation of the rupee",
+      "A way of cooling demand; a rise in the return on dollar assets that pulls capital away",
+      "A fiscal stimulus; a fiscal contraction"
+     ],
+     "answer": 2,
+     "why": "Session 3 saw it from America's side; this session sees it from the other end."
+    },
+    {
+     "tag": "MCQ",
+     "q": "On the RBI's balance sheet, a currency note in your pocket is:",
+     "options": [
+      "A liability",
+      "An asset",
+      "Not recorded at all",
+      "Part of its capital"
+     ],
+     "answer": 0,
+     "why": "The note is the RBI's promise to pay the bearer - a debt it owes."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the version of the water-bottle economy with a full warehouse and a price tag fixed at Rs. 100, doubling everyone's money leads to:",
+     "options": [
+      "Price Rs. 200, one bottle sold",
+      "Price Rs. 200, two bottles sold",
+      "Price Rs. 100, two bottles sold",
+      "Price Rs. 50, two bottles sold"
+     ],
+     "answer": 2,
+     "why": "With a sticky price and spare capacity, the quantity adjusts instead of the price."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Powell's phrase \"a sustained period of below-trend growth\" means:",
+     "options": [
+      "Output growing faster than its potential for a time",
+      "A period in which the budget is balanced",
+      "A period in which inflation is exactly zero",
+      "Output deliberately held below potential for a time"
+     ],
+     "answer": 3,
+     "why": "A central banker's way of saying that a slowdown is intended."
+    },
+    {
+     "tag": "MCQ",
+     "q": "According to the \"painless disinflation\" argument, inflation can fall without higher unemployment if:",
+     "options": [
+      "Wages and prices are frozen by law for a year",
+      "The government raises its spending at the same time",
+      "The central bank's commitment is credible, so expected inflation falls at once",
+      "The central bank acts quietly, without announcing its intentions to the public in advance"
+     ],
+     "answer": 2,
+     "why": "If people believe the announcement, expectations fall first and inflation can follow without a slump."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The three \"prices\" of money are:",
+     "options": [
+      "The CPI, the WPI and the GDP deflator",
+      "The repo rate, the cash reserve ratio and the statutory liquidity ratio",
+      "Wages, rent and profit - the three kinds of income",
+      "The interest rate, the price level and the exchange rate"
+     ],
+     "answer": 3,
+     "why": "Money priced against time, against goods, and against other currencies."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Involution\", as the word was used in class, describes:",
+     "options": [
+      "A wave of mergers and takeovers that steadily reduces the number of competitors in an industry",
+      "Firms cutting prices to gain share, forcing rivals to follow, until all margins shrink",
+      "A government setting minimum prices for every firm in an industry",
+      "Exporters turning back to the home market when foreign demand falls"
+     ],
+     "answer": 1,
+     "why": "A price war nobody wins: no one gains share for long, everyone's margin is thinner, and wages follow."
+    },
+    {
+     "tag": "MCQ",
+     "q": "One cost of holding very large reserves is that:",
+     "options": [
+      "They are held in safe foreign assets that pay little",
+      "They earn a higher return than any other asset",
+      "They cannot be used in a crisis",
+      "They push up the price of imports"
+     ],
+     "answer": 0,
+     "why": "Reserves are insurance, and insurance has a premium."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A fall of several billion dollars in reserves within a week most likely signals that:",
+     "options": [
+      "Inflation in India has fallen below target",
+      "The RBI has been selling dollars; the rupee was under pressure",
+      "The RBI has been buying dollars from the market",
+      "Exports have risen sharply during the week, bringing in more dollars"
+     ],
+     "answer": 1,
+     "why": "The rupee wanted to fall further than it did."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A repo-rate hike and QT are:",
+     "options": [
+      "Both forms of tightening, one through the price of money and the other through its quantity",
+      "Both fiscal measures, taken by the government rather than the central bank",
+      "Opposite in effect - a rate hike tightens while QT eases",
+      "The same thing under two names - both reduce the quantity of money directly"
+     ],
+     "answer": 0,
+     "why": "They are different levers that push in the same direction."
+    },
+    {
+     "tag": "MCQ",
+     "q": "During deflation, a borrower paying a fixed EMI finds that the real burden of the loan:",
+     "options": [
+      "Disappears",
+      "Rises",
+      "Stays the same",
+      "Falls"
+     ],
+     "answer": 1,
+     "why": "The EMI is fixed in rupees while prices and salaries fall, so it takes a larger share of income."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Senator Kennedy's central argument to Powell was that:",
+     "options": [
+      "If Congress slowed spending and borrowing, the Fed could put fewer people out of work",
+      "Unemployment is of no importance when inflation is high",
+      "Interest rates should be cut at once to protect jobs, whatever the effect on prices might be",
+      "The Fed should give up trying to reduce inflation"
+     ],
+     "answer": 0,
+     "why": "Demand can be reduced from the fiscal side as well as the monetary side; sharing the load shortens the pain."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Dollar invoicing supports the dollar's dominance because:",
+     "options": [
+      "Other currencies cannot legally be used for trade",
+      "The World Trade Organization requires it",
+      "Even trade that never touches the United States needs dollars",
+      "The United States is a party to most of the world's trade"
+     ],
+     "answer": 2,
+     "why": "Oil and most commodities are priced in dollars, whoever buys and sells them."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The RBI buying bonds directly from the government at the time of issue would be:",
+     "options": [
+      "The same as a repo, because the bonds are later bought back",
+      "Something the law requires at the end of every quarter",
+      "Monetisation of the deficit - the automatic version ended in April 1997",
+      "A routine open market operation of the kind carried out every week"
+     ],
+     "answer": 2,
+     "why": "The RBI buys in the secondary market; a direct purchase is printing money to fund spending."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The central Keynesian claim is that:",
+     "options": [
+      "Governments should balance their budgets in every single year, whatever the state of the economy",
+      "Money has no effect on output or employment at any horizon, short or long",
+      "Inflation is always and everywhere the result of rising wages",
+      "Markets do not correct themselves, so government must act to restore demand"
+     ],
+     "answer": 3,
+     "why": "Keynes was the first to say it plainly, and it gave governments a far larger role in the economy."
+    },
+    {
+     "tag": "MCQ",
+     "q": "What actually happened in the months after the Kennedy-Powell hearing of March 2023?",
+     "options": [
+      "Unemployment rose above 10%, very much as the historical rule had predicted",
+      "Inflation fell to about 3% while unemployment stayed under 4%",
+      "Inflation climbed back above 9%",
+      "The United States entered a deep recession"
+     ],
+     "answer": 1,
+     "why": "History had predicted far more pain than came."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Translation exposure arises when:",
+     "options": [
+      "A rival's currency falls sharply",
+      "An export invoice has not yet been paid and the exchange rate moves in the meantime",
+      "The results of foreign subsidiaries are converted into the parent's currency",
+      "Tariffs are changed without notice"
+     ],
+     "answer": 2,
+     "why": "It is an effect on the financial statements."
+    },
+    {
+     "tag": "MCQ",
+     "q": "According to the index, the long fall in fragmentation - the era of globalisation - ran roughly from:",
+     "options": [
+      "2008 to 2020",
+      "1975 to 1990",
+      "The early 1990s to 2008",
+      "The end of the war in 1945 to 1975"
+     ],
+     "answer": 2,
+     "why": "Before it, the Cold War years were high and steady; after it, fragmentation rose."
+    },
+    {
+     "tag": "MCQ",
+     "q": "When rural demand weakened after COVID, the first response of Indian FMCG companies, as, was to:",
+     "options": [
+      "Withdraw from the smaller rural markets",
+      "Cut prices on all their main products",
+      "Raise prices in order to protect margins",
+      "Keep the price point and reduce the pack size"
+     ],
+     "answer": 3,
+     "why": "Sticky prices in action: the Rs. 5 and Rs. 10 points stayed and the grams came down."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The interest rate on a Rs. 50 lakh, 20-year home loan falls from 9% to 8%. The monthly EMI falls by about:",
+     "options": [
+      "Rs. 10,000",
+      "Rs. 500",
+      "Rs. 1,000",
+      "Rs. 3,200"
+     ],
+     "answer": 3,
+     "why": "From about Rs. 44,990 to about Rs. 41,820 - which is why EMI-driven demand follows the repo rate."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A natural hedge is:",
+     "options": [
+      "Entering a forward contract with a bank",
+      "Matching the currency of costs or borrowing to the currency of revenue",
+      "Insurance against currency losses that is bought from a government agency",
+      "Buying a currency option from a bank"
+     ],
+     "answer": 1,
+     "why": "A fall in the rupee then raises costs and revenue together."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In a fractional reserve banking system, banks:",
+     "options": [
+      "Lend only their owners' capital and leave deposits untouched",
+      "Keep all deposits as reserves and earn a fee for safekeeping",
+      "Pass all deposits to the central bank, which does the lending",
+      "Keep a fraction of deposits as reserves and lend out the rest"
+     ],
+     "answer": 3,
+     "why": "Because depositors do not all withdraw at once, a fraction is enough on a normal day."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Government never pays. You pay\" makes the point that:",
+     "options": [
+      "The central bank finances whatever the government spends",
+      "Governments in practice never repay what they borrow",
+      "Companies, not individuals, bear the whole tax burden",
+      "Public spending is ultimately financed by taxpayers, now or later"
+     ],
+     "answer": 3,
+     "why": "A government has no income of its own beyond taxes and, at the edges, the proceeds of its assets."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Joseph Stiglitz's prediction, recalled in class, was that the decade after the financial crisis would be one of:",
+     "options": [
+      "Falling inequality within rich countries",
+      "Faster globalisation than ever before",
+      "Stronger international institutions",
+      "Populist leaders, as after the Great Depression"
+     ],
+     "answer": 3,
+     "why": "Hardship leaves people asking what globalisation has done for them; the anger builds into politics over years."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A forward at Rs. 96 that \"loses\" because the rate ends at Rs. 98 has:",
+     "options": [
+      "Cost the firm part of its capital",
+      "Broken the firm's hedging policy",
+      "Done its job: it replaced an unknown outcome with a known one",
+      "Failed, and shows that forward contracts should not be used again"
+     ],
+     "answer": 2,
+     "why": "Hedging is not a way to make money. Judge it by whether the business could plan."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"A fractional reserve banking system creates money, but not wealth\" because:",
+     "options": [
+      "The borrower's new cash is matched by a new debt of the same size",
+      "Banks keep the interest, so the gain goes to them and not to society",
+      "The RBI takes back the new money through the reserve requirement",
+      "Inflation immediately wipes out the value of the new money"
+     ],
+     "answer": 0,
+     "why": "Spending power rises; net worth does not."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Germany's past budget surpluses were described in class as a way of:",
+     "options": [
+      "Forcing the economy to save more, making capital cheap for investment",
+      "Reducing the volume of the country's exports to its European neighbours",
+      "Lowering saving in order to boost household consumption",
+      "Paying for a more generous system of welfare benefits"
+     ],
+     "answer": 0,
+     "why": "Tax more than you spend and the state saves on the citizens' behalf - cheap capital, more factories, more exports."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A country that exports more than it imports must be:",
+     "options": [
+      "Investing more than it saves",
+      "Consuming more than it produces",
+      "Running a deficit in its government budget",
+      "Saving more than it invests"
+     ],
+     "answer": 3,
+     "why": "If X - M is positive, S - I must be positive. There is no third possibility."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The US administration presents its tariffs as:",
+     "options": [
+      "A form of quantitative easing",
+      "A subsidy paid to American exporters",
+      "A source of revenue for the government, with no effect on trade or the currency",
+      "A tool for correcting an overvalued dollar and a wide trade deficit"
+     ],
+     "answer": 3,
+     "why": "\"Tariffs as currency tools\" - one more form of intervention."
+    },
+    {
+     "tag": "MCQ",
+     "q": "According to the identity, a country's trade deficit can shrink only if:",
+     "options": [
+      "It changes the currency in which it invoices",
+      "The gap between its saving and its investment narrows",
+      "It imposes a tariff on its largest trading partner",
+      "It changes the list of goods that it imports"
+     ],
+     "answer": 1,
+     "why": "Tariffs change what is imported and from whom; the total is set by saving and investment."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The marginal propensity to consume (MPC) is:",
+     "options": [
+      "The ratio of a household's saving to its investment",
+      "The share of income that is paid in taxes",
+      "The share of total income that a household consumes",
+      "The part of an extra rupee of income that is spent"
+     ],
+     "answer": 3,
+     "why": "It is about the extra rupee - the margin - not the average share of income consumed."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Loans create deposits\" means that:",
+     "options": [
+      "Deposits are, in effect, loans made by the public to the RBI",
+      "Loans are paid out in cash, which borrowers then deposit elsewhere",
+      "A bank must first collect a deposit of equal size before it can make each loan",
+      "When a bank grants a loan it credits the borrower's account, creating a new deposit"
+     ],
+     "answer": 3,
+     "why": "The bank finds the reserves afterwards, at around the repo rate."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A tariff on imported inputs acts on the home economy like:",
+     "options": [
+      "A positive supply shock: costs fall and output rises",
+      "A fall in the money supply",
+      "A negative supply shock: costs and prices rise",
+      "A fiscal stimulus"
+     ],
+     "answer": 2,
+     "why": "Session 3: anything that raises the cost of production shifts supply left."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A bank run is:",
+     "options": [
+      "A bank expanding its lending faster than its capital allows",
+      "A sudden rush by investors to buy a bank's shares",
+      "A sharp, unexpected rise in interest rates announced by the RBI",
+      "Many depositors withdrawing at once because they fear the bank will fail"
+     ],
+     "answer": 3,
+     "why": "The fear can be self-fulfilling, even when the bank is sound."
+    },
+    {
+     "tag": "MCQ",
+     "q": "With an MPC of 0.75, government spending of Rs. 200 crore raises total income by:",
+     "options": [
+      "Rs. 267 crore",
+      "Rs. 150 crore",
+      "Rs. 1,000 crore",
+      "Rs. 800 crore"
+     ],
+     "answer": 3,
+     "why": "The multiplier is 1 / 0.25 = 4, and 4 x 200 = 800."
+    },
+    {
+     "tag": "MCQ",
+     "q": "If Indian interest rates rise relative to those abroad, the rupee tends to:",
+     "options": [
+      "Depreciate, because money becomes scarce at home",
+      "Appreciate, because foreigners buy more Indian bonds and need rupees",
+      "Depreciate, because exports become dearer",
+      "Stay unchanged, because interest rates are a domestic matter"
+     ],
+     "answer": 1,
+     "why": "Higher returns raise the demand for Indian assets, and so for rupees."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A weaker dollar would be helped by lower US interest rates because:",
+     "options": [
+      "Dollar assets then pay less, reducing the demand for dollars",
+      "Lower interest rates raise American saving",
+      "Lower interest rates automatically raise the tariffs charged on imports",
+      "Lower interest rates fix the exchange rate"
+     ],
+     "answer": 0,
+     "why": "The chain of Section 4.08, run in reverse."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of the following is NOT a defence against bank runs?",
+     "options": [
+      "Reserve and liquidity requirements",
+      "Paying higher dividends to shareholders",
+      "The central bank acting as lender of last resort",
+      "Deposit insurance"
+     ],
+     "answer": 1,
+     "why": "Dividends take money out of the bank; the other three build confidence or cushions."
+    },
+    {
+     "tag": "MCQ",
+     "q": "CRISIL said the effect of the GST cuts would depend on pass-through and on whether consumption rose. \"Pass-through\" refers to:",
+     "options": [
+      "How soon tax refunds reach the companies",
+      "How quickly the new rates were notified and came into force across the states",
+      "Whether the states share the loss of revenue",
+      "Whether companies lower prices by the amount of the tax cut"
+     ],
+     "answer": 3,
+     "why": "Gate 1: only if prices actually fall is it as though the consumer's income had risen."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A car costs Rs. 71 lakh in India and a similar car costs 105,900 dollars in the US. At Rs. 82 per dollar the Indian car costs about:",
+     "options": [
+      "105,900 dollars",
+      "58,200 dollars",
+      "86,600 dollars",
+      "71,000 dollars"
+     ],
+     "answer": 2,
+     "why": "71,00,000 / 82 is about 86,600."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The \"user fee\" recommendation attributed to Stephen Miran would be charged on:",
+     "options": [
+      "American exporters",
+      "American households",
+      "American commercial banks and pension funds",
+      "Foreign holders of US Treasury debt"
+     ],
+     "answer": 3,
+     "why": "The dollar is strong because the world wants to hold US government bonds."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A company funds a ten-year plant with ninety-day borrowings that must be renewed every quarter. The risk it is running is the same as:",
+     "options": [
+      "Seigniorage",
+      "Engel's law",
+      "Stagflation",
+      "A bank's maturity mismatch"
+     ],
+     "answer": 3,
+     "why": "Long assets on short money - one bad quarter in the credit market can be fatal."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Compared with a GST cut, an income-tax cut:",
+     "options": [
+      "Depends on companies reducing their prices",
+      "Puts money directly in taxpayers' hands, so only the MPC matters",
+      "Benefits only the buyers of imported goods",
+      "Has no effect at all on consumer demand, because income tax is paid only once a year"
+     ],
+     "answer": 1,
+     "why": "There is no company in between deciding whether to pass it on - only the second gate remains."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The formula given in class is: real exchange rate =",
+     "options": [
+      "Nominal exchange rate - inflation abroad",
+      "Nominal exchange rate x (price at home / price abroad)",
+      "Nominal exchange rate x (price abroad / price at home)",
+      "Nominal exchange rate + inflation at home"
+     ],
+     "answer": 2,
+     "why": "82 x 105,900 / 71,00,000 = 1.22. A rise in this number is a real depreciation of the rupee."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Offshore operations act as a hedge because:",
+     "options": [
+      "They remove currency risk completely",
+      "They always reduce the wage bill",
+      "They spread costs and revenues across more than one currency and jurisdiction",
+      "They allow a firm to avoid paying taxes in any of the countries where it operates"
+     ],
+     "answer": 2,
+     "why": "A natural hedge built into where the firm operates."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The revenue of an Indian IT services exporter sits in which component of India's GDP?",
+     "options": [
+      "NX",
+      "I",
+      "C",
+      "G"
+     ],
+     "answer": 0,
+     "why": "Services sold abroad are exports. [Session 1]"
+    },
+    {
+     "tag": "MCQ",
+     "q": "A fall in the general price level, with nothing else changed, causes:",
+     "options": [
+      "A movement along the AD curve to a higher quantity demanded",
+      "No change at all in the quantity demanded",
+      "A shift of the whole AD curve to the right, as after a rise in the money supply",
+      "A shift of the whole AD curve to the left"
+     ],
+     "answer": 0,
+     "why": "A change in P moves you along the curve. Shifts come from money, spending, taxes or confidence."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the class exercise the real exchange rate began at 1.50. With the rate at Rs. 84 and XYZ's price raised to Rs. 90,000 it becomes 84 x 1,500 / 90,000, which is:",
+     "options": [
+      "0.71 - a real depreciation of the rupee",
+      "1.50 - no change in real terms",
+      "1.40 - a real appreciation of the rupee from 1.50",
+      "1.54 - a real depreciation of the rupee from 1.50"
+     ],
+     "answer": 2,
+     "why": "Indian goods have become dearer relative to American ones although the rupee fell in nominal terms."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The rupee falls 10% and an exporter's rupee costs also rise 10%. Billing in dollars, its position is:",
+     "options": [
+      "Better, since it will sell more units",
+      "Much better, since it now earns more rupees on every dollar that it bills abroad",
+      "Much worse, since its costs have risen",
+      "Unchanged in real terms: more rupees per dollar, offset by higher costs"
+     ],
+     "answer": 3,
+     "why": "A depreciation helps the exporter only so long as costs at home have not risen to match it. [Session 4]"
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which statement about money creation is correct?",
+     "options": [
+      "The RBI creates all money; commercial banks only pass it on to borrowers",
+      "The RBI creates base money; commercial banks create most of broad money by lending",
+      "The government creates money when it spends; the RBI only records it",
+      "Commercial banks create base money; the RBI creates deposits"
+     ],
+     "answer": 1,
+     "why": "Two layers: reserves and currency from the RBI, deposits from banks. [Session 1]"
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which pair correctly matches each multiplier with its \"leak\"?",
+     "options": [
+      "Money multiplier - saving; Keynesian multiplier - reserves",
+      "Money multiplier - reserves; Keynesian multiplier - saving",
+      "Money multiplier - taxes; Keynesian multiplier - depreciation",
+      "Money multiplier - depreciation; Keynesian multiplier - taxes"
+     ],
+     "answer": 1,
+     "why": "Banks hold back reserves at each round; households hold back saving. [Session 2]"
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which sequence correctly describes a successful disinflation?",
+     "options": [
+      "Demand shifts left; expectations fall; supply shifts right; output returns to potential",
+      "Demand shifts right; expectations rise; supply shifts left; output returns to potential at higher inflation",
+      "Supply shifts left, then demand shifts right",
+      "Demand shifts right, then supply shifts right"
+     ],
+     "answer": 0,
+     "why": "Short pain while output is below potential; the gain arrives when expectations and supply adjust. [Session 3]"
+    },
+    {
+     "tag": "MCQ",
+     "q": "A country with a fixed rate, free capital flows and falling reserves faces a rise in US interest rates. The likely sequence is:",
+     "options": [
+      "Its currency appreciates and its reserves rise",
+      "Its interest rates fall, its exports boom and its reserves rise within a few months",
+      "It sells reserves, its interest rates rise, and if reserves run low it devalues",
+      "Nothing changes, because the rate is fixed"
+     ],
+     "answer": 2,
+     "why": "Sections 4.05 and 4.06 in order. [Session 4] THE LAST FEW PAGES"
+    }
+   ]
+  }
+ ]
+}
