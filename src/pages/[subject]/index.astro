@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Cover from '../../components/Cover.astro';
+import Share from '../../components/Share.astro';
 import { library } from '../../lib/books.js';
 
 export function getStaticPaths() {
@@ -27,6 +28,9 @@ const first = s.chapters[0];
       <div class="sb-actions">
         <a class="sb-go" id="sb-go" href={`/${s.slug}/${first.slug}/`}>Start reading</a>
         {s.quiz && <a class="sb-alt" href={`/${s.slug}/quiz/`}>Go to practice questions</a>}
+      </div>
+      <div class="sb-share">
+        <Share label="Share this subject" text={`${s.name}: the EPBM-32 class notes in ${s.chapters.length} chapters${s.quiz ? `, with ${s.questions} practice questions` : ''}. Free to read, no sign-in:`} />
       </div>
     </div>
   </header>
@@ -155,5 +159,6 @@ const first = s.chapters[0];
   .sb-head .cover{display:none}
   .sb-go{width:100%;justify-content:center}
 }
+  .sb-share .share{margin-top:20px}
 </style>
 </Base>
