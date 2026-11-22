@@ -1,0 +1,202 @@
+---
+title: Exchange Rates and the World Outside
+kicker: Session 4, part 1
+order: 7
+source: "Sessions by Prof. Ankit Kumar · Market Economies & Macroeconomic Policies"
+description: "Rupee or dollar invoicing, pricing power, fixed, flexible and managed exchange rates, defending a fixed rate, the impossible trinity, devaluation, India's managed float, the Fed's spillovers, reserves and import cover, and de-dollarisation. Session 4 of Market Economies & Macroeconomic Policies."
+takeaways:
+  - "The invoice currency decides where a currency move lands: on volume if you bill in rupees, on margin if you bill in dollars."
+  - "The side whose currency is not on the invoice bears the risk, and that follows from pricing power."
+  - "A fixed rate must be defended by selling reserves, and it hands your interest rate to whoever sets rates abroad."
+  - "India runs a managed float: the RBI smooths the ride and promises no level."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Bars from '../../components/d/Bars.astro';
+import Sort from '../../components/d/Sort.astro';
+import Decide from '../../components/d/Decide.astro';
+import InvoiceCalc from '../../components/d/InvoiceCalc.astro';
+import Trinity from '../../components/d/Trinity.astro';
+
+## Recap: the open economy in four lines
+
+Everything in this session is built on four lines from Session 3.
+
+- **Net exports.** A country exports the part of its output it doesn't use itself.
+- **Capital flows.** A country that saves more than it invests lends the difference abroad: S − I = NX.
+- **The nominal exchange rate** is the rate at which one currency is exchanged for another, set by supply and demand.
+- **The real exchange rate** is the price of one country's goods in terms of another's, and trade follows it.
+
+A currency **depreciates** when it buys less foreign currency than before. If the rate goes from 5 Malaysian ringgit per dollar to 4, the dollar has depreciated and the ringgit has appreciated.
+
+<div class="callout trap">
+<p class="callout-title">The same fact, two ways of writing the number</p>
+
+One American car is worth 1.22 Indian cars, and one Indian car is worth 0.81 of an American one. Some texts use the first number, which rises when Indian goods get cheaper; others use the second, which falls. Don't memorise up or down. Ask one question: have Indian goods become cheaper relative to foreign goods? If yes, the rupee has depreciated in real terms and net exports tend to rise.
+
+</div>
+
+## Rupee invoice or dollar invoice?
+
+Session 3 ended with an exporter who billed in rupees. The class had been promised the other half.
+
+You export a car that costs Rs. 50,000, in "a parallel universe" where the rate is Rs. 50 to the dollar. Your American customer pays 1,000 dollars. Now the rupee falls from 50 to 80.
+
+| | What the exporter does | What the buyer pays | What happens |
+|---|---|---|---|
+| Case 1 | Bills in rupees; keeps the price at Rs. 50,000 | 625 dollars | Cheaper for the buyer. The gain shows up as more cars sold |
+| Case 2 | Bills in rupees; costs at home have doubled, so the price is Rs. 1,00,000 | 1,250 dollars | Dearer in spite of the weaker rupee. Demand falls |
+| Case 3 | Bills in dollars; the price stays at 1,000 dollars | 1,000 dollars | Demand doesn't change. The exporter converts into Rs. 80,000, not Rs. 50,000 |
+
+<Fig title="Where does the currency move land?" caption="Work through the three cases, then try your own.">
+  <InvoiceCalc />
+</Fig>
+
+Cases 1 and 2 repeat Session 3. "It is a half-baked statement that if the currency depreciates, exports will pick up. They pick up only if the depreciation is real." Case 3 is new: the adjustment happens on the revenue side, not the demand side.
+
+<div class="callout">
+<p class="callout-title">The rule to carry forward</p>
+
+**Rupee invoice:** a real depreciation makes you cheaper abroad. You gain through volume. **Dollar invoice:** your price abroad is unchanged. You gain through margin. Either way, a weaker rupee helps only while costs at home haven't risen to match it.
+
+</div>
+
+A product exporter billing in rupees needs capacity ready for the orders. A services exporter billing in dollars sees it in margins at once, and must decide whether to keep the windfall, share it with clients or use it to absorb wage increases.
+
+## Who bears the risk: pricing power
+
+If the invoice currency matters so much, who chooses it? Take two subscriptions many in the class pay every month. A streaming service bills Rs. 499. An AI assistant from another American company quotes dollars, about 20 a month.
+
+<Decide q="Why does one bill Indians in rupees and the other in dollars?" options={[
+  { label: 'UPI only works in rupees, so rupee pricing is forced.', why: 'The payment can leave your account in rupees and be converted afterwards. The currency the price is fixed in is a separate, commercial decision.' },
+  { label: 'The streaming market is crowded; the AI service has few rivals.', good: true, why: 'A streaming subscriber whose bill crept from 500 to 560 to 580 would leave, so the company fixes the rupee price and takes the risk. The AI customer asks “where will I go?”, so the customer carries it.' },
+  { label: 'One company is larger than the other.', why: 'Size isn’t the test. What matters is whether the customer has somewhere else to go.' },
+]} />
+
+> The invoicing decision is not a small thing. It is a function of how much monopolistic power you hold. The simple point is: who will bear the risk?
+
+| Term | Meaning | Who bears the risk |
+|---|---|---|
+| Local currency pricing | The exporter sets the price in the customer's currency | The exporter |
+| Dollar (dominant) currency pricing | The exporter sets the price in dollars whatever the destination | The importer |
+
+**Why it matters for a whole country.** Most of India's trade is invoiced in dollars. So when the rupee falls, dollar-priced exports don't become cheaper for foreign buyers in the short run, while dollar-priced imports become dearer at once. A depreciation reaches a country first as costlier imports and inflation, and only later, if at all, as higher exports.
+
+Look at your own invoices, and your suppliers'. If you must quote in the customer's currency to win the order, you carry the risk. And software, cloud and licences priced in dollars give your suppliers the right to raise your rupee costs every time the rupee falls. Count those bills as dollar liabilities.
+
+## Fixed and flexible: two extremes
+
+<Cards min={220} items={[
+  { title: 'Fixed', body: 'The central bank announces a rate and defends it. Needs very large reserves. The interest rate is not its own to set.', foot: 'Hong Kong, Saudi Arabia; India until 1991' },
+  { title: 'Managed float', body: 'The market sets the rate; the central bank smooths sharp moves. Needs large reserves.', foot: 'India and most emerging economies', hl: true },
+  { title: 'Flexible', body: 'The market sets the rate; the central bank stands aside. Needs small reserves.', foot: 'US dollar, euro, yen, pound' },
+]} />
+
+In a **flexible** system the rate does the adjusting. Suppose a yen costs 0.86 US cents and Japanese exports to America rise. American buyers need more yen, the yen rises to 0.90 cents, Japanese goods cost more in dollars and demand eases.
+
+In a **fixed** system the central bank announces a rate, say Rs. 85, and stands ready to buy or sell at it. That buying and selling is **intervention**. It was the world's system until the early 1970s. It needs every country to hold a very large stock of foreign currency, and as globalisation arrived the idea took hold that markets should set the rate. Emerging economies added a condition: our markets are volatile, so we will follow the market but step in from time to time.
+
+Under a float a currency moves a little every day and can be hedged at a known cost. Under a peg it doesn't move for years, and then moves a great deal in one night. Selling into a pegged-currency market, watch that country's reserves, not its exchange rate.
+
+## Defending a fixed rate
+
+A fixed rate is a promise. Suppose India has fixed the rupee at 85, and American interest rates rise.
+
+<Flow items={[
+  { t: 'US rates rise', s: 'Dollar bonds pay more; investors sell rupees to buy them' },
+  { t: 'Dollars become scarce', s: 'The rate is pushed towards 87' },
+  { t: 'The RBI sells dollars', s: 'From its reserves, taking rupees in return' },
+  { t: 'Rupees leave circulation', s: 'Money is scarcer, so Indian interest rates rise, whether the RBI wants it or not', hl: true },
+]} />
+
+The rate is held. The price: reserves are used up, and the interest rate is no longer the RBI's to set. It becomes **endogenous**, decided by what is needed to hold the rate. "What the US does, you have to do." Whoever fixes a price must make up any excess demand, and so must hold an inventory.
+
+<Fig title="The impossible trinity" caption="Any two, never all three.">
+  <Trinity />
+</Fig>
+
+A tell-tale sign of a peg under strain: local interest rates rising sharply while the exchange rate stays still. Collect receivables early when you see it.
+
+## Devaluation: when reserves run out
+
+A central bank defending a rate is selling dollars from a finite stock. If a country keeps paying out more foreign currency than it earns, the reserves drain. Before they are gone, the central bank says: I cannot defend 85. From now on I will defend 90. That is a **devaluation**.
+
+India has done it twice. On 6 June 1966 the front page read "Rupee devalued by 36.5 per cent": from Rs. 4.76 to Rs. 7.50 to the dollar overnight. In July 1991, with reserves down to a few weeks of imports, the rupee went in two steps from about Rs. 21 to about Rs. 26, and within two years India gave up the fixed rate. Sri Lanka left it too late: about five months of import cover in 2020, under one by 2022. It couldn't pay for fuel or medicine, defaulted, and saw its currency lose almost half its value in weeks.
+
+| | Currency loses value | Currency gains value | Who does it |
+|---|---|---|---|
+| Under a fixed rate | Devaluation | Revaluation | The government, by announcement |
+| Under a flexible rate | Depreciation | Appreciation | The market |
+
+<Sort title="Try it: the right word" choices={['Devaluation', 'Depreciation', 'Revaluation', 'Appreciation']} items={[
+  { text: 'The government moves its official fixed rate from 85 to 90 rupees per dollar.', answer: 'Devaluation', why: 'A fixed rate, lowered by announcement.' },
+  { text: 'Today’s rupee slides from 85 to 90 over three months.', answer: 'Depreciation', why: 'The market did it. The word “devalued” is simply wrong for a floating currency.' },
+  { text: 'The rate goes from 5 ringgit per dollar to 4, in the market. What happened to the ringgit?', answer: 'Appreciation', why: 'Fewer ringgit buy a dollar.' },
+  { text: 'A country with a fixed rate announces that its currency will be worth more.', answer: 'Revaluation', why: 'A fixed rate, raised by announcement.' },
+]} />
+
+A devaluation is a cliff, not a slope. The warning signs are public: shrinking import cover, a widening gap between the official and street rates, and new restrictions on buying foreign currency. Shorten credit terms and insist on payment in dollars.
+
+## India's managed float
+
+The rupee's value is set by the market, and the RBI steps in from time to time: selling dollars when the rupee falls too fast, buying when money pours in. It doesn't defend a number. In late 2025 the Governor said exactly that: the RBI targets no level, it intervenes to curb volatility, and the depreciation is driven by the demand for dollars. Europe had the opposite problem at the time: an appreciating euro, which is trouble for exporters.
+
+**A live example.** India's reserves reached a record 786 billion dollars in the first week of September 2026. Then oil prices rose, the Fed raised its rate, and the rupee came under pressure. In the week to 18 September reserves fell by almost 15 billion dollars as the RBI sold dollars. The rupee was allowed to weaken, but not to slide.
+
+| A question from class | The answer |
+|---|---|
+| Could the rate be managed by restricting imports or the purchase of dollars? | Yes, and governments do. That is the third corner of the trinity: restricting the movement of capital |
+| What about what companies and individuals do? | They move the rate in exactly the same way. The RBI is one participant, a very large one |
+
+The RBI will smooth your ride, not change your destination. What the system gives you is time to hedge, reprice and renegotiate. Use it; don't mistake it for stability.
+
+## When the Fed sneezes
+
+When the Fed sneezes, everyone catches a cold. US government bonds are the asset everyone holds. When their return rises, money moves towards them from everywhere else.
+
+<Flow items={[
+  { t: 'The Fed raises its rate', s: 'Dollar assets pay more' },
+  { t: 'Capital leaves emerging markets', s: 'Their currencies fall' },
+  { t: 'Central banks sell reserves', s: 'Imports cost more: inflation' },
+  { t: 'Local rates rise', s: 'Growth slows', hl: true },
+]} />
+
+| The spillover | How India met it in 2022 |
+|---|---|
+| Capital outflows | Foreign portfolio investors were heavy sellers for months |
+| Pressure on the currency | The rupee fell from about 74 to about 83 |
+| Loss of reserves | From about 630 to about 530 billion dollars |
+| Imported inflation | Costlier oil and inputs; the RBI raised its own rate |
+
+India is exposed because it saves less than it invests and depends on others' saving arriving every month. A country with ample reserves and anchored inflation feels a shiver. One without them catches the cold. The Fed meets eight times a year on published dates. Put its calendar in your own.
+
+## Reading the reserves
+
+Foreign exchange reserves are the country's inventory of foreign currency, mostly foreign-currency assets with gold second, published every Friday.
+
+<Fig title="India's foreign exchange reserves" caption="US dollars, billions, at selected dates. Falls mark periods when the RBI was selling dollars to steady the rupee.">
+  <Bars unit="USD bn" rows={[
+    { label: 'Early 2022', value: 630, note: 'a high point' },
+    { label: 'October 2022', value: 530, note: 'after the Fed’s rate rises' },
+    { label: '4 September 2026', value: 786, note: 'a record' },
+    { label: '18 September 2026', value: 766, note: 'after two weeks of dollar sales', mark: true },
+  ]} />
+</Fig>
+
+The measure that makes countries comparable is **import cover**: how long reserves could pay for imports if no foreign currency came in. India holds around 11 months, down from about 17 in 2021 because imports have grown. The traditional floor is three. The insurance isn't free: reserves sit in safe assets that pay little, and reserves built by attracting deposits from abroad are borrowed.
+
+A fall of several billion dollars in a week means the rupee wanted to fall further than it did. Before taking on business in another country, check its import cover: below three months, treat every receivable as at risk.
+
+## De-dollarisation: how much is real?
+
+If the world were really leaving the dollar, how could the demand for dollars be strong enough to push currencies everywhere down against it? Both can't be true in any large way. There has been some movement, and it is small. The talk, in the professor's phrase, belongs to WhatsApp University.
+
+| Where the dollar is used | How dominant |
+|---|---|
+| Central banks' reserves | Between 55% and 60%, down from about 70% in 2000 |
+| Currency trading | On one side of nearly nine in ten transactions |
+| Invoicing of world trade | Far beyond America's own share of trade |
+| Safe assets | US government bonds remain the benchmark |
+
+Dollar invoicing, dollar stablecoins and every rise in American rates all point the same way. What has changed is at the edges: more gold in reserves, and more trade between some pairs of countries settled in their own currencies. Plan on the dollar remaining the currency of international business for as long as your plan runs.

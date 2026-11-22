@@ -1,0 +1,166 @@
+---
+title: The Open Economy
+kicker: Session 3, part 2
+order: 6
+source: "Sessions by Prof. Ankit Kumar · Market Economies & Macroeconomic Policies"
+description: "S − I = X − M, lenders and borrowers, the exchange rate as the price of a currency, the real exchange rate and exports, and the class export exercise. Session 3 of Market Economies & Macroeconomic Policies."
+takeaways:
+  - "S − I = X − M: a country with a trade deficit is borrowing the world's saving."
+  - "The exchange rate is a price, moved only by the demand for a country's goods and its assets."
+  - "Trade follows the real exchange rate. A weaker rupee helps exporters only if prices at home don't rise to cancel it."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Steps from '../../components/d/Steps.astro';
+import Sort from '../../components/d/Sort.astro';
+import Decide from '../../components/d/Decide.astro';
+import ExportCalc from '../../components/d/ExportCalc.astro';
+
+## Lenders and borrowers: S − I = X − M
+
+The open economy starts from one line of algebra. The professor called it *Brahma Satya*, a truth that cannot fail, because it isn't a theory about behaviour. It is an identity.
+
+<Steps items={[
+  { title: 'Y = C + I + G + (X − M)', body: 'Output is bought by households, firms, the government and, net, the rest of the world.' },
+  { title: 'Y − C − G = I + (X − M)', body: 'Move consumption and government spending to the left.' },
+  { title: 'S = I + (X − M)', body: 'Income not consumed by households or the government is the nation’s saving.' },
+  { title: 'S − I = X − M', body: 'Saving minus investment equals exports minus imports.' },
+]} />
+
+Read the last line slowly. A country that exports more than it imports must be saving more than it invests. A country that imports more than it exports must be saving less than it invests. There is no third possibility.
+
+<Cards min={260} items={[
+  { title: 'Net lenders', body: 'Save more than they invest, export more than they import, and lend the spare saving abroad.', foot: 'China, Germany, Japan' },
+  { title: 'Net borrowers', body: 'Save less than they invest, import more than they export, and borrow other countries’ saving.', foot: 'India, United States' },
+]} />
+
+The two groups fit together like pieces of a puzzle.
+
+**The classroom example.** India earns 100 dollars from exports in a month and spends 150 on imports. It is short by 50. A participant suggested remittances. They are already counted. The gap is filled by someone else's saving: a saver in Japan places money in Indian shares and bonds, or in a factory.
+
+Now suppose foreign savers send in 100 when only 50 was needed. The spare 50 doesn't vanish. The RBI buys those dollars and holds them as **foreign exchange reserves**. So two things cross the border: goods and services, which is trade, and money, which is finance.
+
+| A question from class | The answer |
+|---|---|
+| Why would a country take in 100 when it needs 50? | "Welcome to the world of reality." Foreign investors don't come to fill a gap. They come for returns. Reserves absorb the difference |
+| Why does the US import more than it exports? | Like India, it saves less than it invests |
+| Isn't Germany's surplus because it is so good at making cars? | "Wrong understanding." Skill explains *what* a country exports, not whether it runs a surplus |
+
+<Decide q="A country wants to close its trade deficit and imposes a tariff on imports. What happens to the deficit?" options={[
+  { label: 'It closes.', why: 'The deficit equals investment minus saving. A tariff doesn’t change that gap.' },
+  { label: 'It changes what is imported and from whom, not the total.', good: true, why: 'As long as a country saves less than it invests, the gap must appear somewhere.' },
+]} />
+
+India's gap is modest: the deficit in goods is large, but earnings from software and other services and remittances offset most of it.
+
+A deficit country lives on other people's saving. That makes foreign capital a normal part of the business environment, and a risk: it can stop arriving, as when interest rates rise in America, and then the rupee falls and money becomes costlier at home within weeks.
+
+## The exchange rate: the price of a currency
+
+The interest rate turned out to be a price: the price of money across time. The exchange rate is just as simple: the price of one sovereign money in terms of another.
+
+When the rupee is at 90 to the dollar, you hand over Rs. 90 to get one dollar. If the rate moves to 92, the dollar has become more expensive and the rupee cheaper.
+
+<div class="callout trap">
+<p class="callout-title">A bigger number is a weaker rupee</p>
+
+The rate is quoted as rupees per dollar, so it is the price of the dollar. Headlines saying the rupee "rose to 97" and "fell to 97" describe the same event. Only the second is correct.
+
+</div>
+
+What moves it? Demand and supply, and nothing else. Who wants rupees? The class found two answers, and the professor insisted there are only two.
+
+<Cards min={260} items={[
+  { title: 'To buy Indian goods and services', body: 'An importer abroad, a foreign company using Indian software services, a tourist. Even if the bill is in dollars, the exporter finally converts into rupees to pay salaries.', foot: 'Pushes the rupee up' },
+  { title: 'To buy Indian assets', body: 'A foreign fund buying shares or government bonds; a company building a plant.', foot: 'Pushes the rupee up' },
+]} />
+
+The reverse pushes it down: Indians buying foreign goods (oil, gold, electronics, travel), Indians buying foreign assets, and foreigners taking money out. Is domestic monetary policy a third cause? It matters only through these channels. If Indian interest rates rise, Indian bonds pay more, foreigners want them, and to buy them they need rupees. Interest rates, inflation, growth and political risk are all catalysts acting on the same two motives.
+
+<Sort title="Try it: which way does it push the rupee?" choices={['Rupee up', 'Rupee down']} items={[
+  { text: 'A US firm signs a large contract for Indian software services.', answer: 'Rupee up', why: 'Foreigners buying Indian services need rupees in the end.' },
+  { text: 'Crude oil gets costlier.', answer: 'Rupee down', why: 'India needs more dollars to pay for the same oil.' },
+  { text: 'American interest rates rise.', answer: 'Rupee down', why: 'Money that might have bought Indian assets buys American ones.' },
+  { text: 'A foreign company builds a plant in India.', answer: 'Rupee up', why: 'It brings dollars and converts them to rupees.' },
+]} />
+
+A weaker rupee is neither good nor bad. It moves money from those who buy dollars to those who earn them. The dangerous position is the hidden one: revenue in rupees and a loan in dollars.
+
+## The real exchange rate and exports
+
+Session 1 separated the nominal interest rate from the real one. The exchange rate has the same two faces, and for trade only the real one matters.
+
+Imagine the same car built in two places. A plant in India makes it for Rs. 71 lakh. A plant in the US makes a similar car for 105,900 dollars. Both are offered to a buyer in a third country. At Rs. 82 to the dollar the Indian car costs about 86,600 dollars. Divide: 105,900 ÷ 86,600 = 1.22. One American car can be exchanged for 1.22 Indian cars.
+
+**Real exchange rate = nominal rate × price abroad ÷ price at home.** It is the price of one country's goods in terms of another's. When it rises, Indian goods have become relatively cheaper: a **real depreciation**. When it falls, a **real appreciation**.
+
+Does this apply to software? With more force. If your quotation is 100 dollars and a firm in Vietnam quotes 98, the work moves, and faster than in goods, because there is no factory to relocate.
+
+### The class exercise
+
+In 2022 an Indian company, XYZ Ltd, exports an item to ABC Ltd in the US at Rs. 82,000 a unit. In the base year the item was priced at Rs. 80,000. ABC's demand is Q = 87 − 0.082 × P, with P in dollars. The rate is Rs. 82 to the dollar and a similar American item costs 1,500 dollars.
+
+| Question | Working | Answer |
+|---|---|---|
+| What is the real exchange rate? | XYZ's dollar price is 82,000 ÷ 82 = 1,000. Ratio: 1,500 ÷ 1,000 | 1.5 |
+| How much does this export add to India's real GDP? | Quantity: 87 − 0.082 × 1,000 = 5 units, valued at the base-year price | Rs. 4,00,000 |
+| In 2023 the rupee weakens to Rs. 84 and XYZ keeps its price. What happens? | Dollar price: 976. Quantity: about 7 | Real GDP up by 2 × 80,000 = Rs. 1,60,000 |
+
+That last row is the story most people carry in their heads: the rupee falls, Indian goods get cheaper, exports rise. But look at the assumption: XYZ kept its rupee price unchanged. Now suppose fuel and wages have gone up and XYZ bills Rs. 90,000.
+
+<Fig title="Does a weaker rupee raise exports?" caption="Set the rate to Rs. 84 and leave the price alone: 7 units. Now raise the price to Rs. 90,000: the rupee is weaker, and nothing sells.">
+  <ExportCalc />
+</Fig>
+
+| | 2022 | 2023, price unchanged | 2023, price raised |
+|---|---|---|---|
+| Rupees per dollar | 82 | 84 | 84 |
+| Indian price | Rs. 82,000 | Rs. 82,000 | Rs. 90,000 |
+| Real exchange rate | 1.50 | 1.54 | 1.40 |
+| In real terms the rupee | | Depreciated | Appreciated |
+| Units exported | 5 | 7 | 0 |
+
+<div class="callout">
+<p class="callout-title">Three lessons from one exercise</p>
+
+1. **A depreciation raises exports only if it is real.** "The one mistake people make is to assume that because the currency is depreciating, exports will pick up."
+2. **Inflation at home is the enemy of the exporter.**
+3. **The real rate can move while the nominal rate stands still**, if a rival country learns to produce more cheaply.
+
+</div>
+
+The RBI publishes a **real effective exchange rate**: the rupee against a basket of 40 currencies, adjusted for inflation differences, with 100 as the base. And the exercise assumed XYZ bills in rupees. Had it billed in dollars, the buyer's price would not have changed and the gain would have appeared in XYZ's rupee margin. That is where Session 4 begins.
+
+## The session on a manager's desk
+
+| Idea | Product business | Service business |
+|---|---|---|
+| The policy mix | Easy budget with tight money hurts whatever is bought on credit | Clients dependent on borrowing cut projects |
+| Autonomous demand | Premium goods follow the stock and property markets | Travel, private banking and premium education ride the same wave |
+| Lucas's question | Don't add capacity because you could raise prices | A 10% rate rise with 10% salary inflation has improved nothing |
+| The Phillips curve | Pressure on shop-floor and contract wages | Attrition and poaching rise where skills are scarce |
+| Supply shocks | Hedge inputs, keep a second source, hold margin | Fuel, travel and logistics cost more; clients cut discretionary work |
+| A fragmenting world | Price in tariffs and a second supplier | Rules on data, technology and people can stop delivery |
+| S − I = X − M | Foreign capital is a normal source of funds, until it stops | Capability centres ride the same inflow |
+| Real exchange rates | A weaker rupee helps only if your costs haven't risen as fast | Dollar billing gains, unless wage inflation eats it |
+
+| The event | What moves | Inflation | Output |
+|---|---|---|---|
+| More money, lower rates, more government spending, a tax cut | Demand, right | Up | Up in the short run |
+| A rate hike, bond sales, a tighter budget | Demand, left | Down | Down |
+| Costlier oil, a failed monsoon, a broken supply chain, higher expected inflation | Supply, left | Up | Down |
+| Expectations fall, supply chains heal, productivity improves | Supply, right | Down | Up |
+
+**Ten questions to take back to work**
+
+1. Are the budget and the central bank pushing the same way this year?
+2. Does my customers' spending follow their salaries, or their portfolios and mood?
+3. When demand rises, does my business respond first with volume or with price?
+4. When I last raised prices, was that demand for my product or inflation for everyone?
+5. Is the labour market for the skills I need tighter than normal?
+6. If rates rise abroad, which reaches me first: export demand, funds, or the rupee?
+7. What do my customers and employees expect inflation to be, and are my contracts indexed?
+8. If a key input jumped 30%, how long could my margin hold?
+9. Which borders does my supply chain cross, and what if one closes?
+10. After my own cost inflation, has the rupee's fall made me cheaper than my foreign rival?

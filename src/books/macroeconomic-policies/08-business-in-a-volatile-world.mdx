@@ -1,0 +1,196 @@
+---
+title: Business in a Volatile World
+kicker: Session 4, part 2
+order: 8
+source: "Sessions by Prof. Ankit Kumar · Market Economies & Macroeconomic Policies"
+description: "Transaction, translation and economic exposure, the hedging toolkit, the weak-dollar agenda and tariffs, the President and the Fed, and what a firm can do: resilience as a design choice. Session 4 of Market Economies & Macroeconomic Policies."
+takeaways:
+  - "Only transaction exposure can be removed with a contract. Economic exposure is dealt with by where you make, buy and sell."
+  - "A hedge replaces an unknown number with a known one. It is not a way to make money."
+  - "A tariff is a price change with no notice period, and it does not change the gap between saving and investment."
+  - "A firm cannot forecast its way through this. It can hedge, build pricing power and price every dependence it has."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Steps from '../../components/d/Steps.astro';
+import Bars from '../../components/d/Bars.astro';
+import Sort from '../../components/d/Sort.astro';
+import Decide from '../../components/d/Decide.astro';
+import HedgeCalc from '../../components/d/HedgeCalc.astro';
+
+## Three exposures
+
+What does the exchange rate mean for a business? Three kinds of exposure, which differ in how far ahead they look and in what can be done about them.
+
+| Exposure | What it is | A product business | A service business | Horizon |
+|---|---|---|---|---|
+| **Transaction** | Risk on a deal already agreed, not yet paid | A machine ordered from Germany, payable in euros in three months | An invoice raised in dollars, to be paid in 60 days | Weeks to months |
+| **Translation** | The effect on the accounts when a foreign subsidiary's results are converted | A plant abroad whose profits are reported in rupees | An overseas delivery centre consolidated in rupees | Each reporting date |
+| **Economic** | The long-term effect on your competitive position | A rival country's currency falls and its exports undercut yours for years | Clients compare your dollar rates with firms whose currencies have fallen further | Years |
+
+<Sort title="Try it: which exposure is it?" choices={['Transaction', 'Translation', 'Economic']} items={[
+  { text: 'An exporter invoices 1,00,000 dollars, payable in 90 days.', answer: 'Transaction', why: 'The rupees it receives depend on the rate that day. This one can be hedged.' },
+  { text: 'A subsidiary earns profits in euros; their value in the parent’s rupee accounts moves with the rate.', answer: 'Translation', why: 'Mostly a matter of explaining the accounts.' },
+  { text: 'A rival’s currency falls 15%. Its goods are now cheaper than yours in every market, even though you never trade abroad.', answer: 'Economic', why: 'The real exchange rate at work on your own business.' },
+]} />
+
+Only the first can be removed with a financial contract. The third is dealt with by decisions about where to make, buy and sell, not by the treasury.
+
+## The hedging toolkit
+
+<Cards min={200} items={[
+  { title: 'Forward contract', body: 'Agree today the rate at which you will exchange on a future date.', foot: 'The price: you give up any gain if the rate moves your way' },
+  { title: 'Currency option', body: 'Buy the right, not the duty, to exchange at a set rate.', foot: 'The price: a premium up front, like insurance' },
+  { title: 'Currency swap', body: 'Exchange streams of payments in two currencies over years.', foot: 'Suits loans and long contracts; complex' },
+  { title: 'Natural hedge', body: 'Match the currency of your costs to the currency of your revenue.', foot: 'No fee, but it shapes where you buy and borrow' },
+]} />
+
+**The same receivable, three choices.** An exporter will receive 1,00,000 dollars in 90 days. Today's rate is Rs. 95.
+
+- *Do nothing:* Rs. 92 lakh if the rupee strengthens to 92, Rs. 98 lakh if it weakens to 98.
+- *Forward at Rs. 96:* Rs. 96 lakh whatever happens.
+- *Option to sell at Rs. 95, premium Re 1 per dollar:* at 92 it uses the option and nets Rs. 94 lakh; at 98 it lets the option lapse and nets Rs. 97 lakh.
+
+<Fig title="Move the rate and compare" caption="The forward costs nothing up front and gives certainty. The option keeps the upside, at a price.">
+  <HedgeCalc />
+</Fig>
+
+A natural hedge needs no contract. A firm that earns dollars can borrow in dollars, or buy equipment and software in dollars, so that a fall in the rupee raises costs and revenue together. Large firms keep treasury teams to see the whole position and hedge only what is left.
+
+<div class="callout trap">
+<p class="callout-title">Hedging is not a way to make money</p>
+
+A forward at 96 when the rate turns out to be 98 has done its job: it replaced an unknown number with a known one. A treasury praised when hedges gain and blamed when they lose will soon stop hedging and start speculating. The right test is whether the business could plan, price and pay its bills whatever the rate did.
+
+</div>
+
+Draw up your exposure before choosing a tool: what you will receive and what you must pay in each currency over the next year. The difference is the amount at risk. A firm with dollar revenue and rupee salaries has a one-way exposure and should hedge a steady share as routine, not as a matter of opinion about the rupee.
+
+## The weak-dollar agenda
+
+The second half of the class turned to the change in the international environment itself. One slide asked plainly what the US President says he is doing.
+
+| The claim | The reasoning behind it |
+|---|---|
+| Weaken the dollar | A cheaper dollar makes American goods cheaper for foreigners: the real exchange rate used as policy |
+| Revive manufacturing | Make goods produced in America competitive again |
+| Reduce the trade deficit | America imports far more than it exports |
+| Protect American jobs | The charge is that other countries keep their currencies artificially cheap |
+
+The proposed tools: tariffs on imports, pressure on the Fed for lower interest rates, a currency deal with allies using defence commitments as leverage, and a fee on foreign buyers of US government debt. Seen through this module, the programme is coherent in its own terms: exports depend on the real exchange rate; America's is high; so bring it down. The interesting part is the choice of tools.
+
+<Fig title="Tariff rates announced by the United States on 2 April 2025" caption="Selected partners, per cent. These were raised, cut and bargained over for months, India's reaching 50% at one stage, and were struck down by the US Supreme Court in February 2026. Other tariffs replaced them.">
+  <Bars unit="%" rows={[
+    { label: 'Vietnam', value: 46, note: '' },
+    { label: 'China', value: 34, note: '' },
+    { label: 'Taiwan', value: 32, note: '' },
+    { label: 'India', value: 26, note: '', mark: true },
+    { label: 'South Korea', value: 25, note: '' },
+    { label: 'Japan', value: 24, note: '' },
+    { label: 'European Union', value: 20, note: '' },
+    { label: 'United Kingdom', value: 10, note: '' },
+  ]} />
+</Fig>
+
+**The precedent.** In September 1985, at the Plaza Hotel in New York, five governments agreed to act together to bring the dollar down. It went from about 240 yen to about 120 by the end of 1987.
+
+| The issue with the policy | In the language of this module |
+|---|---|
+| The tariff may pass to the home consumer, who pays more | A tariff raises costs at home: a negative supply shock |
+| If other countries retaliate, everyone loses | Exports fall on both sides; no one's trade balance improves |
+| Supply chains may be disrupted | The fragmentation of Session 3, speeded up |
+
+And the identity has the last word: S − I = X − M. A tariff changes what a country imports and from whom. The size of the deficit is set by the gap between saving and investment.
+
+A tariff is a price change with no notice period. Decide in advance who bears a new one, in the contract, and know which products could ship from another country. A services firm isn't charged tariffs, but its clients are, and they cut technology and consulting budgets next.
+
+## The President and the Fed
+
+"Volatile global business environment: conflict between two benevolent dictators." It is the quarrel of Session 3 again, now with consequences for every other country.
+
+| | What the President wants | What the Federal Reserve is charged with |
+|---|---|---|
+| The aim | A weaker dollar, more exports, cheaper government borrowing | Stable prices and full employment |
+| The interest rate it implies | Lower | High enough to bring inflation back to 2% |
+| The effect of tariffs | A tool for correcting the trade balance | A rise in prices that must not feed into expectations |
+
+A weaker dollar needs lower American interest rates. The Fed's concern runs the other way: tariffs raise prices, and a central bank that sees inflation and expectations rising will not cut. It may raise, as it did in September 2026.
+
+One proposal shows why the plan needs the Fed: a fee on foreign official holders of US Treasury bonds.
+
+<Steps items={[
+  { title: 'A fee is charged', body: 'Holding US bonds becomes less attractive to foreign official holders.' },
+  { title: 'Some bonds are sold', body: 'The demand for dollars falls and the dollar weakens.' },
+  { title: 'But bond prices fall', body: 'Long-term interest rates rise, which hurts American borrowers.' },
+  { title: 'So the Fed would have to buy', body: 'Creating money to do it. The plan works only with the Fed’s co-operation.' },
+]} />
+
+Session 1 explained why a central bank must be independent, and Session 2 where things end when it buys government bonds because the government needs it to. When the issuer of the world's main currency argues in public about both, the uncertainty is exported to every exchange rate quoted against the dollar.
+
+<Decide q="The two authorities that set the price of the dollar disagree in public. How should you budget for the rupee?" options={[
+  { label: 'Pick the forecast from the most respected bank.', why: 'When direction can’t be predicted, no single forecast deserves much weight.' },
+  { label: 'Budget on a range, and check the business survives the bad case.', good: true, why: 'Plan for a range, not a forecast. Flexibility in contracts, sourcing and the currency of borrowing is worth paying for.' },
+  { label: 'Assume this year’s rate will hold.', why: 'Under a managed float nobody guarantees a rate.' },
+]} />
+
+## What it means for your business
+
+The deck closed with eight answers. None is about predicting what governments will do. All are about being able to live with whatever they do.
+
+| The response | What it involves | Why it follows from this module |
+|---|---|---|
+| **Hedge the exchange rate** | Forwards, options, swaps and natural hedges | The rupee floats, the Fed sneezes, and the dollar's direction is disputed |
+| **Focus on innovation** | R&D, process improvement, solutions built around customers | Pricing power decides who bears the risk. Only a product others can't copy has it |
+| **Use AI and analytics** | Collect data, find patterns, turn insight into action | Productivity changes the real exchange rate without help from the currency |
+| **Corporate sustainability** | Lower resource use, fair labour practices, transparent governance | Buyers and regulators abroad increasingly make it a condition of trade |
+| **Caution in politics** | Engage on policy, not in partisan battles | Trade and currency policy are now openly political |
+| **Restructure ownership** | Spread ownership across jurisdictions | Where a company is owned decides which rules apply to it |
+| **Offshore operations** | Stable locations, talent from several regions | A natural hedge: costs and revenues in more than one currency |
+| **Diversify the supply chain** | Several suppliers, several countries, flexible contracts | Tariffs and supply shocks arrive without notice |
+
+The first item deals with risk that can be bought off with a contract. The rest change the business itself, so that no single currency, country, supplier or government can stop it. The two benevolent dictators set the weather. The firm chooses how it is built.
+
+<div class="callout">
+<p class="callout-title">Efficiency and resilience are both costs of doing business</p>
+
+A company that held one supplier in one country for its lower unit cost wasn't being efficient. It was carrying a risk it hadn't priced. Put a number on each dependence: what would a 15% move in the rupee, a 25% tariff or the loss of one location cost us? Then compare it with the price of the protection.
+
+</div>
+
+## The session on a manager's desk
+
+| Idea | Product business | Service business |
+|---|---|---|
+| The invoice currency | Billing in rupees, a weaker rupee arrives as more orders | Billing in dollars, it arrives as margin at once |
+| Pricing power | If you must quote in the customer's currency, you carry the risk | Dollar-priced software and cloud bills are your suppliers' pricing power |
+| Pegged markets | Watch the reserves, not the rate | Don't leave large balances; bring cash home |
+| India's managed float | Don't budget on this year's rate | Nor will the RBI let the rupee weaken for ever |
+| When the Fed sneezes | Don't carry large unhedged dollar payments across a Fed meeting | American clients facing costlier money sign more slowly |
+| Hedging | Net receipts and payments by currency first; much may cancel | Dollar revenue with rupee salaries: hedge a steady share |
+| Tariffs | Write into the contract who bears a new tariff | Clients squeezed by tariffs cut technology budgets next |
+| Resilience | A single low-cost supplier was an unpriced risk | One city, one currency, one visa regime is the same concentration |
+
+**Reading the rupee: a field guide**
+
+| What you see | What it usually means | What to do |
+|---|---|---|
+| The rupee weakens; reserves steady | A market move the RBI is allowing | Exporters gain; importers check hedges |
+| The rupee steady; reserves fall sharply | The RBI is selling dollars: pressure is building | Importers bring hedges forward |
+| The Fed raises its rate | Capital is drawn to dollar assets | Expect a weaker rupee and costlier dollar borrowing |
+| The price of oil jumps | More dollars needed for the same imports | Expect pressure on the rupee and inflation together |
+| Reserves rise while foreign money pours in | The RBI is buying dollars to stop the rupee rising | Dollar earners shouldn't count on a stronger tailwind |
+| A partner country's import cover falls below three months | Risk of devaluation, controls or default | Shorten credit; invoice in dollars; collect early |
+
+**Ten questions to take back to work**
+
+1. In which currency do we invoice, and did we choose it or did the customer?
+2. Which of our costs are really dollar costs, whatever currency we pay in?
+3. Over the next twelve months, what do we receive and owe in each currency?
+4. Do we hedge that gap by routine, or only when someone has a view?
+5. If the rupee moved 15% either way, which line of our accounts shows it first?
+6. Do any of our markets have a pegged currency and thin reserves?
+7. Have we looked at the Fed's calendar as well as the RBI's?
+8. Who bears a new tariff under our contracts?
+9. Which of our dependences has never been priced?
+10. What gives us pricing power, and what are we doing this year to add to it?

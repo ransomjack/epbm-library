@@ -1,0 +1,231 @@
+---
+title: Supply, Expectations and Inflation
+kicker: Session 3, part 1
+order: 5
+source: "Sessions by Prof. Ankit Kumar · Market Economies & Macroeconomic Policies"
+description: "The policy mix, aggregate supply and why it slopes upward, the Phillips curve and the natural rate, reading a rate hike, inflation expectations, supply shocks, disinflation, the Kennedy-Powell hearing and a fragmenting world. Session 3 of Market Economies & Macroeconomic Policies."
+takeaways:
+  - "The government and the central bank can push the same way or against each other. The mix sets the business environment."
+  - "Supply slopes upward only for a given level of expected prices. When expectations move, the whole curve moves."
+  - "A demand push raises output only until expectations catch up. Then it leaves just higher inflation."
+  - "A supply shock raises inflation and lowers output together, and the central bank must choose which to repair."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Steps from '../../components/d/Steps.astro';
+import Quad from '../../components/d/Quad.astro';
+import Sort from '../../components/d/Sort.astro';
+import Decide from '../../components/d/Decide.astro';
+import AdAs from '../../components/d/AdAs.astro';
+
+## Two policymakers: in step or in conflict
+
+Session 2 ended with the two "benevolent dictators", each able to push demand up or down. Session 3 began with an awkward fact: they are separate institutions, and nothing guarantees they push the same way.
+
+**In step: the COVID years.** The government had to spend far more while taxes didn't rise, so it borrowed. When a government comes to the pool of saving for a large amount, the price of money starts to rise. The central bank can then buy government bonds with new money, which pushes the rate back down. Monetary policy is **accommodating** fiscal policy. For business it is the friendliest setting possible: plenty of money, and cheap.
+
+**In conflict: the United States, 2018.** A large tax cut was signed in December 2017: expansionary fiscal policy. During 2018 the Federal Reserve under Jerome Powell raised its rate four times and kept shrinking its bond holdings. One pressed the accelerator, the other the brake. Powell's reasoning was Session 2's: the economy was already close to potential, so a fiscal push would produce not much extra output but inflation. The quarrel later became public and personal, which is rare. To feel how rare, the professor translated it: imagine a Prime Minister speaking that way about the RBI Governor, with the Finance Minister on stage. The point for us is the mechanics, not the politics.
+
+<Fig title="The policy mix" caption="Read a budget and a monetary policy statement as a pair.">
+  <Quad cols={['Central bank eases', 'Central bank tightens']} rows={['Government spends more, taxes less', 'Government spends less, taxes more']} cells={[
+    { t: 'Both feet on the accelerator', b: 'Demand surges; money is plentiful and cheap. India and most of the world, 2020.' },
+    { t: 'Accelerator and brake', b: 'The two pull against each other. United States, 2018.' },
+    { t: 'Brake and accelerator', b: 'A tight budget cushioned by easy money. Much of Europe after 2010.' },
+    { t: 'Both feet on the brake', b: 'Demand cools fastest; inflation falls sooner. What a US senator asked for in 2023.' },
+  ]} />
+</Fig>
+
+| The job | Who does it | How |
+|---|---|---|
+| Raise potential GDP | Mainly the government | Infrastructure, public facilities, ease of doing business |
+| Keep actual output close to potential | Mainly the central bank, with the government | By moving aggregate demand |
+
+Below potential the cost is obvious: idle people and machines. Above it the cost is subtler. "The issue in the United States is not unemployment. It is too much employment." When there are more jobs than people, firms bid for workers, wages rise, costs rise, prices rise, and people expect more inflation.
+
+A fiscal push with tight money lifts incomes but makes loans costly: a product bought on credit can struggle even as everyday goods do well. When both turn contractionary, protect cash first.
+
+## Aggregate demand, revisited
+
+Keep the money in your pocket at Rs. 100. At Rs. 20 an apple you buy five; at Rs. 50, two. Nothing has happened to your money; its real value has fallen. Now hold the price at Rs. 20 and double the money: you buy ten. The whole curve has moved right.
+
+One new idea: **autonomous** consumption and investment, spending that changes without any change in income or policy. One source is optimism: a business owner who feels India is growing invests more. The other is wealth: when the stock market rises, people feel richer and spend more though their salaries haven't changed. No policy announcement warns you of it, so watch confidence surveys and the stock and property markets. If your customers' spending follows their portfolios, a market correction is your early warning.
+
+## Aggregate supply: the great debate
+
+"Macroeconomists love to disagree, and the biggest fight in the history of the subject was over one question: what is the shape of the aggregate supply curve?" The verdict came first: both sides were right. They were describing different stretches of time.
+
+<Cards min={220} items={[
+  { title: 'Classical: the long run', body: 'Supply creates its own demand. Output is fixed by capital, labour and technology; only prices move.', foot: 'Supply is vertical' },
+  { title: 'Keynesian: the very short run', body: 'Prices don’t adjust, so demand decides how much is produced.', foot: 'Supply is flat' },
+  { title: 'The real world: the short run', body: 'Higher prices draw out more output. Both views hold in part.', foot: 'Supply slopes upward', hl: true },
+]} />
+
+Keynes didn't deny the classical story. He said it was a story about the long run, and we don't live there. If inflation is 4% a year, prices rise about a third of one per cent a month, too little to reprint a price list. A firm meets a change in demand by producing more or less, not by changing its price. (Commodities, priced by auction every day, are the exception.)
+
+Which curve is yours? A company with a printed price list and spare capacity is Keynesian in the short run. One selling steel, cotton or algorithm-priced hotel rooms is closer to classical. Service firms with annual rate cards sit at the sticky end: demand shows up in utilisation long before it shows up in rates.
+
+### Why supply slopes upward
+
+**The first answer: wages are stickier than prices.** A unit costs Rs. 5 to make, mostly wages, and sells for Rs. 6. Prices rise to Rs. 7 and wages haven't moved yet. Profit per unit has doubled, so the manager produces more.
+
+**The second answer won a Nobel Prize.** Robert Lucas asked what would happen if nothing were sticky. Would supply still slope up? Yes, and the professor compressed the reason into one line: "The supply curve slopes upward because managers are idiots."
+
+The kinder version. Every producer makes one thing and buys many. He knows his own price exactly. For everything else he works with an expectation. Picture the owner of a small restaurant who finds he can charge Rs. 10 more for a thali and still fill his tables. He takes it as a sign his food is popular, hires another cook and stays open later. Three months on he notices that rice, gas, rent and wages have all gone up by about as much. He was never doing better. But for those three months he produced more, and so did every other owner who made the same mistake.
+
+<div class="callout">
+<p class="callout-title">The idea that matters: expected prices</p>
+
+The supply curve slopes upward for a given level of expected prices. If prices rise while expectations stay put, firms produce more: a move along the curve. If expectations rise too, there is no reason to produce more: the whole curve shifts.
+
+</div>
+
+Before reading a price rise as good news, ask Lucas's question: is it you, or is it everyone? A 10% rise in billing rates in a year when salaries rise 10% has improved nothing.
+
+## The Phillips curve and the natural rate
+
+When output grows, firms hire and unemployment falls. So take the supply curve and replace "higher output" with "lower unemployment" and "higher prices" with "higher inflation". You get the **Phillips curve**. "It is nothing but the aggregate supply curve written differently." It is named after A. W. Phillips, who in 1958 plotted a century of British data and found wages rose fastest when unemployment was lowest.
+
+| | Point A: weak demand | Point B: strong demand |
+|---|---|---|
+| Output | 7,500 | 8,000 |
+| Price level | 102 | 106 |
+| Inflation | 2% | 6% |
+| Unemployment | 7% | 4% |
+
+Even at potential, unemployment isn't zero. What remains is the **natural rate**.
+
+<Sort title="Try it: which kind of unemployment?" choices={['Frictional', 'Structural', 'Cyclical']} items={[
+  { text: 'An engineer who has resigned and is choosing between offers.', answer: 'Frictional', why: 'Between jobs, searching for a better match. Part of the natural rate.' },
+  { text: 'Young people not trained for the jobs on offer.', answer: 'Structural', why: 'Skills don’t fit the work available. No rise in demand fixes this.' },
+  { text: 'Workers laid off because orders collapsed in a downturn.', answer: 'Cyclical', why: 'Caused by weak demand. The part that moves with the cycle.' },
+  { text: 'A typist whose work has been automated.', answer: 'Structural', why: 'The job has gone, not paused.' },
+]} />
+
+In words: **inflation = expected inflation − something proportional to (unemployment − the natural rate) + any supply shock.** Three things move inflation: expectations, how tight the labour market is, and shocks to costs.
+
+The Phillips curve is a statement about your salary bill. When unemployment is below its natural rate, competitors poach, attrition rises and pay has to follow. And if the people you want can't be hired at any sensible wage, train them yourself.
+
+## Demand meets supply
+
+Put the two curves on one diagram, with inflation on the vertical axis and output on the horizontal. Where they cross, the economy settles. Every event is then one question: which curve moved, and which way?
+
+<Fig title="Three stories on one diagram" caption="The numbers are those on the class slides (output in Rs. trillion). Dashed lines show where each curve started.">
+  <AdAs />
+</Fig>
+
+Take the demand push first. Session 2 said more money raises output in the short run and only prices in the long run. The diagram shows how one turns into the other. The bridge is the adjustment of expectations. A central bank cannot keep an economy above potential by printing money. It can only buy a temporary boost at the price of permanently higher inflation.
+
+### Reading a rate hike
+
+On 16 September 2026, four days before the class, the US Federal Reserve raised its policy rate from 3.50–3.75% to 3.75–4.00%: the first increase since July 2023 and the first under its new chair.
+
+<Flow items={[
+  { t: 'Policy rate up', s: 'Loans cost more: homes, cars, business credit' },
+  { t: 'Fewer loans', s: 'The deposit-loan chain shortens; less money' },
+  { t: 'Demand shifts left', s: 'Inflation eases; unemployment rises', hl: true },
+]} />
+
+America was at a point like B: unemployment low, inflation high. The Fed can't order inflation down. It can only reduce demand and accept slower growth. Will the hike cause unemployment? Relative to what would have happened without it, yes. That is the mechanism, not a side-effect.
+
+It reaches an Indian company through three doors. *Demand*: American clients trim budgets. *Finance*: dollar loans cost more. *Currency*: the rupee tends to weaken.
+
+## Inflation expectations and the wage-price spiral
+
+A participant objected: how can prices be rising while expected prices are constant? That is exactly what a move along the curve is: a surprise. The real question is what happens next. If expectations rise, workers demand higher wages, costs rise, and supply shifts left. The same output as before, at a higher rate of inflation. "Bad idea."
+
+<div class="callout">
+<p class="callout-title">Why expectations worry central bankers more than inflation</p>
+
+High inflation with stable expectations can be managed. Once expectations rise, wages rise, costs rise, prices rise, and expectations rise again: the **wage-price spiral**. At that point inflation no longer needs a cause.
+
+</div>
+
+| Period | Expected inflation a year ahead, US households | What was happening |
+|---|---|---|
+| 1979-80 | About 10% | Expectations broke loose; it took a deep recession to bring them back |
+| Mid-1980s to 2020 | About 3%, year after year | Anchored |
+| 2020 to mid-2022 | From about 2.7% to near 5.3% | The post-pandemic surge |
+| September 2023 | About 3.4% | Coming down after eighteen months of high rates |
+
+After the pandemic the Fed had created money on an enormous scale. Inflation rose, then expectations began to. The professor's image of the central banker's stance: he puts a gun to the head of every manager and household and says, raise your inflation expectations if you dare, and I will break this economy. Powell held rates very high for about a year and a half. A bank failed along the way. He didn't relent.
+
+How much inflation is too much? A central banker's working definition: "Inflation should be low enough that nobody talks about it." The moment people talk about prices, they build inflation into their plans. How do you know they are talking? Listen to what they sing: a 2010 film song called inflation a witch that eats up everything a hard-working husband earns. When prices become the subject of songs, expectations are no longer anchored.
+
+> The economy at the end of the day is people, not aliens.
+
+Your increment cycle is the spiral in miniature: employees ask for what they expect prices to do, and you try to recover it in your own prices. Customers buying early "before the next increase" is the sign that expectations have moved.
+
+## Supply shocks: the central banker's dilemma
+
+India's own history is mostly about the other curve. A jump in oil, a broken supply chain, a failed monsoon and higher inflation expectations all raise costs: **negative supply shocks**. When demand rises, inflation and output rise together. When supply is hit, inflation goes up while output goes down.
+
+The central bank's instrument acts on demand. It has no lever that moves supply.
+
+| | Protect output | Protect prices |
+|---|---|---|
+| What it does | Adds money, lowers rates | Withdraws money, raises rates |
+| Output | Recovers | Falls further |
+| Inflation | Rises further | Returns to target |
+| The risk | Expectations break loose | A recession on top of the shock |
+
+<Decide q="Oil is expensive and one poor monsoon has followed another. Inflation is running at 10% to 11% and output is slowing. What can the central bank repair?" options={[
+  { label: 'Both, with the right interest rate.', why: 'Its tool works on demand. It has no lever that moves supply.' },
+  { label: 'One of the two. It has to choose.', good: true, why: 'This was India under Governor Subbarao (2008 to 2013). “One option is to look east and west and pray: let there be rain.” The title of his memoir tells you how it felt: Who Moved My Interest Rate?' },
+  { label: 'Neither. It should always wait.', why: 'It can look through a temporary shock, but not if expectations start to rise, because that makes it permanent.' },
+]} />
+
+A supply shock hits your costs and your customers together, and rates may rise on top. Hedge the input, keep a second source, or hold margin for a bad year.
+
+## Disinflation: short pain, long gain
+
+America reached its limit around 1980. Inflation was 13.5%. Paul Volcker pushed interest rates close to 20%. Unemployment passed 10%. By 1986 inflation was 1.9%. But the central bank's job was to keep output near potential, and here it pushes output *below* potential, on purpose. Why?
+
+Because of what happens next (the third story in the diagram above). As inflation falls, people stop expecting high inflation. Workers no longer walk in demanding 10%. For firms that is a fall in costs, and supply shifts back. Output returns to potential, this time at low inflation. "A shorter pain for a longer gain."
+
+| Who | When | What happened |
+|---|---|---|
+| Paul Volcker, US Federal Reserve | 1979 to the mid-1980s | Inflation from 13.5% to 1.9%; unemployment soared first |
+| Raghuram Rajan, RBI | From September 2013 | Inflation fell from about 10% to about 5%, and India adopted a formal target |
+| Jerome Powell, US Federal Reserve | 2022 to 2023 | The fastest rate increases in forty years; inflation from about 9% to about 3% |
+
+**Can it be painless?** The **sacrifice ratio** is the output or employment lost for each point taken off inflation. Suppose inflation and expectations are both 6% and the central bank announces it will do whatever is needed to reach 2%. If people believe it, expectations fall at once, and inflation can come down with no rise in unemployment. Everything depends on credibility.
+
+A disinflation has an order: borrowing costs rise first, volumes weaken next, inflation falls last. Cut inventory early. Don't lock in an 8% escalator at the peak; it will be reopened when inflation halves.
+
+## Case study: the Kennedy–Powell hearing
+
+To finish the closed economy the class watched a US senator cross-examine the Fed chair in March 2023, at the height of the disinflation. "If after four classes you can follow what these two gentlemen are saying, my job is done."
+
+| The senator asks | The chair replies | The economics underneath |
+|---|---|---|
+| When Congress spends, does that not stimulate the economy? | It depends on whether it is paid for by taxes | Deficit-financed spending shifts demand right |
+| You are raising rates to slow the economy? | Yes, to cool it off | Demand shifts left |
+| So you are trying to put people out of work? | We are trying to restore price stability | A move down the Phillips curve. He won't say it in those words |
+| Each 2 points off inflation cost 3.6 points of unemployment. Is that not a fact? | That is what the record shows; he doesn't expect numbers of that kind | The sacrifice ratio from past disinflations |
+| The more Congress helps on the fiscal side, the fewer people you put out of work? | It could work out that way | Two contractionary policies share the load |
+
+The senator had done his homework. With inflation at 6.4% and unemployment at 3.4%, getting to 2.4% inflation would on that record mean unemployment of 10.6%. His point: the Fed is doing the job alone. If the budget tightened too, the pain would be shorter. As an opposition senator he was using the Fed chair to criticise the government's spending.
+
+History didn't repeat. Within months inflation had fallen to about 3% while unemployment stayed under 4%. Supply recovered as supply chains healed and energy prices fell, and expectations stayed anchored because people believed the Fed. The senator's arithmetic described disinflations fought with demand alone.
+
+Official speeches can be read. "Realign supply and demand" means demand will be reduced. "Below-trend growth" means a slowdown is intended. "Expectations remain anchored" means the central bank believes it can be patient.
+
+## A fragmenting world
+
+Before opening the economy, look at the world it opens into. An index of **geopolitical fragmentation**, built from trade, finance, the movement of people and technology, and political relations, tracks how divided the world is.
+
+| Phase | Years | What the index shows |
+|---|---|---|
+| The Cold War years | 1975 to the early 1990s | High and steady |
+| Globalisation | Early 1990s to 2008 | A long fall |
+| After the financial crisis | 2008 to today | A steady rise, to the highest in the series |
+
+The turning point is 2008. Around 2011 the economist Joseph Stiglitz predicted the coming decade would belong to populist leaders, reasoning from the 1930s: a crisis leaves ordinary people asking what globalisation has done for them, and the anger takes years to build into politics. Will it reverse? Some argue this is the new normal; others expect a quicker turn. "They are all predictions." The research behind the index finds that more fragmentation lowers output worldwide, that emerging economies lose more, and that the damage is immediate while recovery is gradual.
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: efficiency is no longer the only design rule</p>
+
+For thirty years the question about a supply chain was where a thing could be made most cheaply. A second question now sits beside it: what happens if that route closes? Tariffs that change by announcement, export controls, rules on where data may be stored and limits on moving people don't show up in a unit-cost comparison, and any of them can stop a business overnight.
+
+</div>
