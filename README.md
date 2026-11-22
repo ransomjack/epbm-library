@@ -4,7 +4,7 @@
 
 EPBM Library holds the class notes from the Executive Programme in Business Management at IIM Calcutta (EPBM-32), turned into one free online book per subject. Each class session is a chapter. Every chapter keeps the professor's examples and the class discussion, and adds diagrams and short exercises you can try in the browser. Each subject also has a practice-question set and a downloadable PDF.
 
-There is no sign-in, no account and no tracking. Anything the site saves (your theme and text size, and the name on your score card) stays in your own browser.
+There is no sign-in, no account and no tracking. Anything the site saves (your theme and text size, your reading progress, and the name on your score card) stays in your own browser.
 
 ---
 
@@ -25,6 +25,7 @@ There is no sign-in, no account and no tracking. Anything the site saves (your t
 - [Adding a new subject](#adding-a-new-subject)
 - [Content principles](#content-principles)
 - [Editor](#editor)
+- [Licence](#licence)
 
 ---
 
@@ -52,6 +53,7 @@ Every book ends with a **Quick Reference** chapter: the formulas, frameworks and
 - Each chapter opens with a short summary and closes with its key takeaways.
 - Reading time and the number of exercises are shown for every chapter.
 - Light, sepia and dark themes, adjustable text size and a choice of serif or sans-serif text.
+- Reading progress is remembered: finished chapters are ticked, each subject shows how many chapters you've read, and the home page offers "Continue reading" with the next chapter to open.
 - Search across all subjects from the home page.
 - A downloadable PDF of the full notes for each subject.
 
@@ -114,7 +116,7 @@ epbm-library/
     ├── data/
     │   ├── subjects.js       Subject list, order, colours, blurbs, PDF and image paths
     │   └── quiz/<subject>.json   Practice questions
-    ├── layouts/Base.astro    Page shell: header, reading settings, footer
+    ├── layouts/Base.astro    Page shell: header, reading settings, footer, reading progress
     ├── lib/books.js          Loads chapters, reading time and exercise counts
     ├── pages/
     │   ├── index.astro       Home page with search and the bookshelf
@@ -279,3 +281,9 @@ Edited by **Abhinav Roy**, EPBM-32, IIM Calcutta. Abhinav works in OT/ICS cybers
 More about the editor: [library.girder.in/editor](https://library.girder.in/editor/)
 
 These are personal class notes, shared to help batchmates and anyone studying the same topics. If you spot a mistake, please get in touch through the editor page.
+
+## Licence
+
+The **code** (layouts, pages, components, styles, scripts and configuration) is released under the [MIT License](LICENSE), so you're welcome to reuse it for your own notes site.
+
+The **notes content** (the chapters in `src/books/`, the practice questions in `src/data/quiz/`, the PDFs and the images) is © 2026 Abhinav Roy, all rights reserved. It's free to read and to link to, but please ask before copying or republishing it.

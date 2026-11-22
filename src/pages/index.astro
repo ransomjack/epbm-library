@@ -9,6 +9,7 @@ const totalQ = live.reduce((n, s) => n + s.questions, 0);
 const totalTools = live.reduce((n, s) => n + s.tools, 0);
 const top = [...live].sort((a, b) => b.tools - a.tools).slice(0, 2).map((s) => s.name);
 const num = (n) => n.toLocaleString('en-IN');
+const order = Object.fromEntries(live.map((s) => [s.slug, { n: s.name, q: !!s.quiz, c: s.chapters.map((c) => ({ u: `/${s.slug}/${c.slug}/`, t: `${c.kicker}: ${c.title}` })) }]));
 
 ---
 <Base>
@@ -29,7 +30,7 @@ const num = (n) => n.toLocaleString('en-IN');
 
   <section class="wrap" id="resume" hidden>
     <a class="hm-resume" id="resume-link" href="/">
-      <span class="hm-resume-l">Pick up where you left off</span>
+      <span class="hm-resume-l" id="resume-label">Continue reading</span>
       <span class="hm-resume-t" id="resume-title"></span>
       <span class="hm-resume-s" id="resume-subject"></span>
     </a>
@@ -69,7 +70,7 @@ const num = (n) => n.toLocaleString('en-IN');
               {s.tools > 0 && <span>{s.tools} to try</span>}
               <span>{s.questions} questions</span>
             </span>
-            <span class="hm-book-prog" hidden><i></i></span>
+            <span class="hm-book-prog" hidden><span class="hm-book-bar"><i></i></span><span class="hm-book-pt"></span></span>
           </span>
         </a>
       ))}
@@ -87,6 +88,7 @@ const num = (n) => n.toLocaleString('en-IN');
   </section>
 </main>
 
+<script type="application/json" id="book-order" set:html={JSON.stringify(order)}></script>
 <script is:inline>
 (function () {
   var data = null, loading = false;
@@ -123,20 +125,36 @@ const num = (n) => n.toLocaleString('en-IN');
   });
   var st = window.EPBM;
   if (st) {
-    var last = st.last();
+    var read = st.read(), last = st.last(), order = {};
+    try { order = JSON.parse(document.getElementById('book-order').textContent); } catch (e) {}
     if (last && last.u) {
-      document.getElementById('resume').hidden = false;
-      document.getElementById('resume-link').href = last.u;
-      document.getElementById('resume-title').textContent = last.t;
-      document.getElementById('resume-subject').textContent = last.s;
+      var slug = last.u.split('/')[1], book = order[slug], go = { u: last.u, t: last.t, l: 'Continue reading' };
+      if (book) {
+        var urls = book.c.map(function (c) { return c.u; }), i = urls.indexOf(last.u);
+        var unread = function (c) { return read.indexOf(c.u) === -1; };
+        if (i !== -1 && !unread(book.c[i])) {
+          var nx = book.c.slice(i + 1).filter(unread)[0] || book.c.filter(unread)[0];
+          if (nx) go = { u: nx.u, t: nx.t, l: 'Up next' };
+          else if (book.q) go = { u: '/' + slug + '/quiz/', t: 'Test yourself: ' + book.n + ' practice questions', l: 'Book finished' };
+          else go = null;
+        }
+        var done = book.c.filter(function (c) { return read.indexOf(c.u) !== -1; }).length;
+        if (go) go.s = book.n + (done ? ', ' + done + ' of ' + book.c.length + ' chapters read' : '');
+      } else go.s = last.s;
+      if (go) {
+        document.getElementById('resume').hidden = false;
+        document.getElementById('resume-link').href = go.u;
+        document.getElementById('resume-label').textContent = go.l;
+        document.getElementById('resume-title').textContent = go.t;
+        document.getElementById('resume-subject').textContent = go.s;
+      }
     }
-    var read = st.read();
     document.querySelectorAll('[data-book]').forEach(function (b) {
       var pre = '/' + b.dataset.book + '/', n = read.filter(function (u) { return u.indexOf(pre) === 0; }).length, tot = +b.dataset.n;
       if (!n) return;
       var p = b.querySelector('.hm-book-prog'); p.hidden = false;
       p.querySelector('i').style.width = Math.min(100, 100 * n / tot) + '%';
-      p.setAttribute('title', n + ' of ' + tot + ' chapters read');
+      p.querySelector('.hm-book-pt').textContent = n >= tot ? 'All ' + tot + ' read' : n + ' of ' + tot + ' read';
     });
   }
 })();
@@ -179,8 +197,11 @@ const num = (n) => n.toLocaleString('en-IN');
 .hm-book-blurb{font-size:14.5px;line-height:1.5;color:var(--body)}
 .hm-book-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}
 .hm-book-meta span{padding:3px 9px;border-radius:999px;background:var(--surface);font-size:12.5px;font-weight:500;color:var(--body);white-space:nowrap}
-.hm-book-prog{display:block;height:4px;border-radius:2px;background:var(--surface-2);overflow:hidden}
-.hm-book-prog i{display:block;height:100%;background:var(--accent);border-radius:2px}
+.hm-book-prog{display:flex;align-items:center;gap:10px}
+.hm-book-prog[hidden]{display:none}
+.hm-book-bar{flex:1;display:block;height:4px;border-radius:2px;background:var(--surface-2);overflow:hidden}
+.hm-book-bar i{display:block;height:100%;background:var(--accent);border-radius:2px}
+.hm-book-pt{font-size:13px;font-weight:600;color:var(--accent);white-space:nowrap}
 .hm-book-soon{border-style:dashed}
 .hm-book-soon .cover{filter:grayscale(.75);opacity:.6}
 .hm-book-soon .hm-book-name{color:var(--muted)}
