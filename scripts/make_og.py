@@ -30,6 +30,7 @@ jobs = [
  ('leadership-people-skills', page('Leadership and People Skills', 'Motivation · Groups and teams · Structure · Leading change · 350 practice questions', 'Leadership', small=True)),
  ('operational-excellence', page('Operational Excellence', 'Strategy · Process · Inventory · Supply chains · Lean · 200 practice questions', 'Operations', small=True)),
  ('business-decision-making', page('Business Decision Making', 'Risk and uncertainty · Decision trees · Sampling · Hypothesis tests · Regression · 327 practice questions', 'Decision Making', small=True)),
+ ('digital-transformation', page('Digital Transformation', 'Outputs vs outcomes · The value chain · Proving it worked · Data products · 130 practice questions', 'Digital', small=True)),
 ]
 out = sys.argv[1]
 with sync_playwright() as p:

@@ -1,0 +1,33 @@
+---
+// Porter's value chain with the four transformations as a switch.
+const support = ['Firm infrastructure (finance, facilities, planning)', 'Technology development (IT systems, R&D)', 'Human resource management', 'Procurement and legal'];
+const primary = ['Inbound logistics', 'Operations', 'Outbound logistics', 'Marketing and sales', 'After-sales service'];
+const modes = [
+  { id: 'none', label: 'Value chain', t: 'Where a firm makes value', b: 'Primary activities each add a little value. Support activities create none on their own but nothing runs without them. Value is what the customer pays minus what the whole chain costs.' },
+  { id: 'itot', label: 'ITOT', t: 'IT-enabled organisation transformation', b: 'Technology lands in the support layer: an ERP, cloud, an internal reporting tool. It helps people, who then do the value-creating work better. The route to value is indirect.' },
+  { id: 'pt', label: 'PT', t: 'Process transformation', b: 'One process is picked and rebuilt end to end, such as procurement or loan approval. Narrow scope: one flow, not the whole picture.' },
+  { id: 'bt', label: 'BT', t: 'Business transformation', b: 'The business model itself changes: new markets, new revenue models, a different basis of competition. The margin isn’t just widened; it is redrawn.' },
+  { id: 'dt', label: 'DT', t: 'Digital transformation', b: 'Technology does the value-creating work directly, with no person in between: an algorithm sets the cab fare and assigns the car. The short circuit.' },
+];
+---
+<div class="vc" data-vc data-mode="none">
+  <div class="seg" role="group" aria-label="Show">{modes.map((m, i) => <button type="button" data-m={m.id} aria-pressed={i === 0 ? 'true' : 'false'}>{m.label}</button>)}</div>
+  <div class="vc-body">
+    <div class="vc-main">
+      <p class="vc-h">Support activities</p>
+      {support.map((s, i) => <div class:list={['vc-s', `s${i}`]}>{s}</div>)}
+      <p class="vc-h">Primary activities</p>
+      <div class="vc-p">{primary.map((p, i) => <div class:list={['vc-pc', `p${i}`]}>{p}</div>)}</div>
+    </div>
+    <div class="vc-m"><span>Margin</span></div>
+  </div>
+  {modes.map((m) => <p class="vc-note" data-for={m.id}><b>{m.t}.</b> {m.b}</p>)}
+</div>
+<script>
+  document.querySelectorAll('[data-vc]').forEach((root) => {
+    root.querySelectorAll('[data-m]').forEach((b) => b.addEventListener('click', () => {
+      root.dataset.mode = b.dataset.m;
+      root.querySelectorAll('[data-m]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    }));
+  });
+</script>

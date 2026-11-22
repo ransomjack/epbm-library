@@ -1,0 +1,1585 @@
+{
+ "title": "Practice questions",
+ "sections": [
+  {
+   "name": "Part 1: What digital transformation is",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "Which of the following is the correct order of the four rungs?",
+     "options": [
+      "Digitisation, digitalisation, digital enablement, digital transformation",
+      "Digital enablement, digitisation, digitalisation, digital transformation",
+      "Digitisation, digital enablement, digitalisation, digital transformation",
+      "Digitalisation, digitisation, digital enablement, digital transformation"
+     ],
+     "answer": 0,
+     "why": "Each rung only stands on the one below it. You cannot make data flow before you have captured it, and you cannot equip people to act before the data flows."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A company scans twenty years of paper registers into PDF files. This is:",
+     "options": [
+      "Digital transformation",
+      "Digitisation",
+      "Digitalisation",
+      "Digital enablement"
+     ],
+     "answer": 1,
+     "why": "Converting a physical record to an electronic one, and nothing else. The work has not changed - the same steps happen on a different medium."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A bank launches UPI payments so that transactions process themselves end to end. This is best described as:",
+     "options": [
+      "Digitisation",
+      "Digitalisation",
+      "Process transformation only",
+      "A digital artefact"
+     ],
+     "answer": 1,
+     "why": "The system is now processing the transaction, not merely recording what a clerk did. That is the shift from holding data to moving and using it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of these is an OUTPUT rather than an outcome?",
+     "options": [
+      "Cost leakage falls by two per cent",
+      "A decision that used to take a week now takes a day",
+      "Working capital cycle shortens by four days",
+      "Two hundred Power BI licences have been purchased"
+     ],
+     "answer": 3,
+     "why": "A licence is a thing you now have - countable and photographable. The other three describe something that got measurably better, which makes them outcomes."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor corrected a student who said the outcome of a new dashboard was 'access to data'. What was his correction?",
+     "options": [
+      "The outcome is access to insight",
+      "The outcome is higher licence utilisation",
+      "The outcome is faster hardware",
+      "The outcome is better data storage"
+     ],
+     "answer": 0,
+     "why": "Data is still an output - a thing you hold. Insight is what lets somebody act. The distance between those two words is the distance between a project that pays for itself and one that does not."
+    },
+    {
+     "tag": "MCQ",
+     "q": "'We do not have digital, we do digital' is a restatement of which distinction?",
+     "options": [
+      "Cost leader versus differentiator",
+      "Top line versus bottom line",
+      "Noun versus verb",
+      "Related versus unrelated diversification"
+     ],
+     "answer": 2,
+     "why": "The noun view lists what a company owns; the verb view lists what it does. Only the second is evidence that anything changed."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of the following belongs in the VERB column of the digital estate?",
+     "options": [
+      "Data servers",
+      "The balance sheet",
+      "Assembly lines",
+      "Orchestrating and deciding"
+     ],
+     "answer": 3,
+     "why": "The first three are things that can be bought with a purchase order. Orchestrating and deciding are actions, and no purchase order buys them."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Digital enablement is best defined as:",
+     "options": [
+      "Converting physical records to electronic ones",
+      "Achieving a measurable improvement in margin",
+      "Equipping people and processes with tools, access and skills so the verbs can be performed",
+      "Buying the right tools at the right price"
+     ],
+     "answer": 2,
+     "why": "Enablement is not owning the artefact - it is being able to act with it. Option C describes transformation, and option D describes digitisation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which statement about digital enablement is FALSE according to the professor?",
+     "options": [
+      "It is not digitisation",
+      "It is not AI adoption",
+      "It is not IT implementation",
+      "It is the destination rather than the journey"
+     ],
+     "answer": 3,
+     "why": "That describes transformation, not enablement. Enablement is the work of getting there; transformation is where you end up. The other three are all things the professor said enablement is NOT."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Data hygiene refers to:",
+     "options": [
+      "How freely data moves between systems",
+      "How much data is stored",
+      "How often dashboards are refreshed",
+      "Whether data is clean and trustworthy enough to use"
+     ],
+     "answer": 3,
+     "why": "Hygiene is about condition. Movement between systems is liquidity, which is the next question."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Data liquidity refers to:",
+     "options": [
+      "How freely data moves between the places that need it",
+      "The volume of data held",
+      "The accuracy of a single field",
+      "The cost of cloud storage"
+     ],
+     "answer": 0,
+     "why": "A firm can have enormous volume and almost no liquidity, and it will feel exactly like a firm with no data at all."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the glacier analogy, the glass of clean drinking water represents:",
+     "options": [
+      "The cleaning and structuring step",
+      "The stack of systems",
+      "The decision somebody actually takes",
+      "The data warehouse"
+     ],
+     "answer": 2,
+     "why": "The glacier is the systems, the melt is the data flowing, and the glass is where value is finally consumed. Plenty of firms are proud of the glacier; few can hand you the glass."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A change is called a transformation when it is:",
+     "options": [
+      "Large in scale",
+      "Intended to be positive and lasting, judged on outcomes",
+      "Approved by the board",
+      "Driven by new technology"
+     ],
+     "answer": 1,
+     "why": "Scale, technology and board approval are all irrelevant. The word carries the intent inside it, and the judgement is made on outcomes rather than outputs."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of the following is a PRIMARY activity in Porter's value chain?",
+     "options": [
+      "Technology development",
+      "Procurement and legal",
+      "Human resource management",
+      "Outbound logistics"
+     ],
+     "answer": 3,
+     "why": "The five primary activities are inbound logistics, operations, outbound logistics, marketing and sales, and after-sales service. The other three options are support activities."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the value chain, information technology sits under:",
+     "options": [
+      "Operations",
+      "Technology development, a support activity",
+      "Firm infrastructure only",
+      "Marketing and sales"
+     ],
+     "answer": 1,
+     "why": "Note the distinction the professor drew: scientific technology - a better chemical composition for your product - sits under firm infrastructure. Information technology sits under technology development."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Value, at its simplest, is:",
+     "options": [
+      "Revenue",
+      "Customer satisfaction",
+      "Market capitalisation",
+      "Revenue minus cost - the delta"
+     ],
+     "answer": 3,
+     "why": "The size of the number is not the point; the size of the gap is. Everything else people call value is either a driver of that surplus or a consequence of it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The bottom line refers to:",
+     "options": [
+      "Profit - what is left at the end",
+      "The lowest-paid employees",
+      "Revenue or turnover",
+      "Senior management"
+     ],
+     "answer": 0,
+     "why": "It has nothing to do with hierarchy or with people at the top or bottom of an organisation. The top line is revenue."
+    },
+    {
+     "tag": "MCQ",
+     "q": "There are only two generic business positions. They are:",
+     "options": [
+      "Cost leader and market follower",
+      "Cost leader and differentiator",
+      "Product leader and market leader",
+      "Differentiator and customer-intimate only"
+     ],
+     "answer": 1,
+     "why": "Only two generic positions. A differentiator may compete on product or on customer closeness, but that is a split within one of the two, not a third position."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A firm whose strategy is product differentiation spends its AI budget on cutting internal processing time. This is an example of:",
+     "options": [
+      "Process transformation",
+      "Backward integration",
+      "Strategic misalignment",
+      "Good cost discipline"
+     ],
+     "answer": 2,
+     "why": "The cost lever is the right lever for a cost leader. For a differentiator, that money has been spent pulling the lever the strategy does not pay for."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Efficiency converts into margin only when:",
+     "options": [
+      "The technology is best in class",
+      "The freed capacity is absorbed by growth or genuinely removed",
+      "The saving is reported to the board",
+      "Utilisation of the tool is high"
+     ],
+     "answer": 1,
+     "why": "Otherwise you have improved a ratio and changed no rupee. This is the fixed-cost objection raised in class, and it is the framework working rather than failing."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is NOT one of the doors for a firm's surplus?",
+     "options": [
+      "Diversify outside the current system",
+      "Distribute as dividends",
+      "Hold it indefinitely while telling shareholders to wait",
+      "Reinvest inside the business"
+     ],
+     "answer": 2,
+     "why": "Reinvest, distribute, diversify are the three doors. Sitting on a surplus that earns nothing is what destroys value."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Market capitalisation equals:",
+     "options": [
+      "Shares outstanding multiplied by market price per share",
+      "Retained earnings plus dividends",
+      "Revenue multiplied by profit margin",
+      "Assets minus liabilities"
+     ],
+     "answer": 0,
+     "why": "The market price reflects the whole expected future stream of profit, valued today - which is why both reinvesting well and paying dividends serve the shareholder."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A smartphone maker begins manufacturing the semiconductors it consumes. This is:",
+     "options": [
+      "Related diversification",
+      "Forward integration",
+      "Unrelated diversification",
+      "Backward integration"
+     ],
+     "answer": 3,
+     "why": "Backward means moving towards your suppliers, into your own inputs. Forward means moving towards the customer, into the next layer of your chain."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The value SYSTEM is:",
+     "options": [
+      "One firm's internal activities",
+      "The support layer of the value chain",
+      "The primary activities only",
+      "Your chain plus every connected chain - suppliers, channels, customers"
+     ],
+     "answer": 3,
+     "why": "One firm's internal activities is the value chain. This distinction returns in Part 3 with the Viacom value system."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A company deploys an ERP and internal reporting so its staff make better buying decisions. This is:",
+     "options": [
+      "PT",
+      "DT",
+      "ITOT",
+      "BT"
+     ],
+     "answer": 2,
+     "why": "The technology landed in the support layer and reached the value-creating work only indirectly, through people. That indirect route is the signature."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A cab-hailing algorithm sets your price and allots your car with no human involved. This is the signature of:",
+     "options": [
+      "BT",
+      "PT",
+      "DT",
+      "ITOT"
+     ],
+     "answer": 2,
+     "why": "The algorithm is doing the value-creating work itself, with no human intermediary. That is the short circuit onto primary activities."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An automated password-reset workflow inside the IT service desk is best classified as:",
+     "options": [
+      "Digital transformation",
+      "Process transformation",
+      "IT-enabled organisation transformation",
+      "Business transformation"
+     ],
+     "answer": 1,
+     "why": "It sits entirely inside one internal support flow. Impressive, but nothing in the value-creating chain moved."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Business transformation is distinguished by the fact that:",
+     "options": [
+      "It is the most expensive of the four",
+      "It touches only one process end to end",
+      "It always uses artificial intelligence",
+      "The dominant strategy moves and the business model changes"
+     ],
+     "answer": 3,
+     "why": "Cost is not the test, and neither is the technology used. On the value chain map, the wedge is not merely widened - it is redrawn."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which pairing is correct?",
+     "options": [
+      "Cyber security and data privacy are the same control",
+      "Data privacy protects networks and devices from intrusion",
+      "Cyber security protects the individual behind the data",
+      "Data security protects the data itself, wherever it sits or moves"
+     ],
+     "answer": 3,
+     "why": "Cyber security protects the systems; data privacy protects the individual behind the data. All three are handled by different controls."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why does pursuing DT change a firm's risk profile more than pursuing ITOT?",
+     "options": [
+      "Because the attack surface moves to where value is actually created",
+      "Because ITOT has no security implications",
+      "Because DT requires cloud by definition",
+      "Because DT costs more"
+     ],
+     "answer": 0,
+     "why": "ITOT puts technology behind your own staff. DT puts it directly in front of customers, so the exposure sits on the value-creating activity itself."
+    }
+   ]
+  },
+  {
+   "name": "Part 2: Proving it worked",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "The four building blocks in the anchoring reading are:",
+     "options": [
+      "Scope, ways, means, ends",
+      "Data, service, system, satisfaction",
+      "Leadership, collaboration, data empowerment, value realisation",
+      "Leadership, workforce, technology, governance"
+     ],
+     "answer": 2,
+     "why": "These four come from the anchoring reading. Scope, ways, means and ends is the separate strategic framework from"
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which building block did the professor add to the four in the reading?",
+     "options": [
+      "Cybersecurity",
+      "Workforce and its adoption",
+      "Governance",
+      "Analytics maturity"
+     ],
+     "answer": 1,
+     "why": "The reading has nothing about people's willingness to accept what the machine says, which is exactly the gap the card-company caselet exposes."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A collaboration problem between departments is very often, in disguise:",
+     "options": [
+      "A tooling problem",
+      "A regulatory problem",
+      "A leadership problem",
+      "A budget problem"
+     ],
+     "answer": 2,
+     "why": "Whether departments share data is a culture question, and culture is set, raised or flattened by leadership. Diagnose them together or you fix the wrong one."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the logistics caselet, which TWO boxes of the IS Success Model were broken?",
+     "options": [
+      "Use and satisfaction",
+      "Data quality and service quality",
+      "System quality and use",
+      "Service quality and system quality"
+     ],
+     "answer": 1,
+     "why": "Data arrived fragmented from several systems and was never believed; re-pulls took two days to two and a half months. System quality was present but not acute."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Service quality, in the IS Success Model, is about:",
+     "options": [
+      "Whether the number is accurate",
+      "Whether the vendor contract is well written",
+      "How responsive the internal team is when somebody queries a number",
+      "Whether the software loads quickly"
+     ],
+     "answer": 2,
+     "why": "The reconciliation and re-pull your data team performs is a service being delivered to an internal customer. Two days for a two-hour decision is a service failure, not a data failure."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The reporting interface takes two minutes to launch on a Monday morning. This is a failure of:",
+     "options": [
+      "Data quality",
+      "Service quality",
+      "System quality",
+      "User satisfaction"
+     ],
+     "answer": 2,
+     "why": "This is the artefact itself - does it load, respond and stay up. It destroys credibility just as effectively as a wrong number."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The DeLone and McLean model added service quality as a separate dimension in:",
+     "options": [
+      "The original 1992 version",
+      "The 2015 revision",
+      "The 2003 revision",
+      "It was never added"
+     ],
+     "answer": 2,
+     "why": "The original model is from 1992. Service quality was added as a separate dimension in the widely used 2003 revision."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the card-company caselet, which box was broken?",
+     "options": [
+      "Data quality",
+      "Use",
+      "System quality",
+      "Satisfaction"
+     ],
+     "answer": 3,
+     "why": "Everything to the left was fine and usage was high. What failed was trust - they used it and then overrode it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Two thirds of underwriting decisions being overridden with no reason recorded is evidence that:",
+     "options": [
+      "The model is inaccurate",
+      "The licences were never issued",
+      "The system is too slow",
+      "The users do not trust the output enough to act on it"
+     ],
+     "answer": 3,
+     "why": "The model was accurate and the system was working. An override with no reason recorded is a satisfaction failure, which is why the fix was behavioural rather than technical."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which statement is correct?",
+     "options": [
+      "Adoption is attitudinal; usage is behavioural",
+      "Usage always precedes adoption",
+      "Adoption and usage are the same thing measured differently",
+      "Adoption is behavioural; usage is attitudinal"
+     ],
+     "answer": 0,
+     "why": "Adoption comes first and lives in the head. Usage comes later and shows up in the logs. Getting this backwards is the most common error in this part."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Technology Acceptance Model rests on which two beliefs?",
+     "options": [
+      "Perceived support and perceived training",
+      "Perceived usefulness and perceived ease of use",
+      "Perceived speed and perceived accuracy",
+      "Perceived cost and perceived risk"
+     ],
+     "answer": 1,
+     "why": "Two beliefs, and only two, in the classical model. Training exists to move the second one."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Everything to the left of adoption is described as 'perceived' because:",
+     "options": [
+      "Nobody has used the thing yet, so these are beliefs not evidence",
+      "The survey is anonymous",
+      "The measures are unreliable",
+      "Managers exaggerate"
+     ],
+     "answer": 0,
+     "why": "We are still in the thinking phase rather than the doing phase, which is exactly why the dashed line on the diagram sits where it does."
+    },
+    {
+     "tag": "MCQ",
+     "q": "'Continued intention to use' is the workplace equivalent of which marketing idea?",
+     "options": [
+      "Brand recall",
+      "Customer acquisition cost",
+      "Repurchase intention",
+      "Net promoter score"
+     ],
+     "answer": 2,
+     "why": "Continued intention to use is the same idea, except that here your employees are the customers."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of these is NOT a usage metric?",
+     "options": [
+      "Frequency of logins per day",
+      "Override rate",
+      "Time per session",
+      "Licences issued"
+     ],
+     "answer": 1,
+     "why": "The other three measure the tool. Override rate measures whether the tool changed a decision, which is the only one on the road to margin."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The single intervention that fixed the card-company problem was:",
+     "options": [
+      "Removing the override option entirely",
+      "A new model with higher accuracy",
+      "Mandatory retraining for all underwriters",
+      "Requiring a written justification for every override"
+     ],
+     "answer": 3,
+     "why": "No new model, no new platform, no retraining. One change-management intervention."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why does requiring a justification work?",
+     "options": [
+      "It makes reasoning visible, removes the effortlessness of overriding, and creates measurable data",
+      "It punishes the user",
+      "It shifts accountability to the model",
+      "It reduces the number of decisions taken"
+     ],
+     "answer": 0,
+     "why": "Three effects at once. Note that it does not remove the override - the professor was explicit that nothing was being forced down anybody's throat."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An employee refuses to help improve an automation tool that could replace their role. This is best described as:",
+     "options": [
+      "A psychological safety issue",
+      "A skills gap",
+      "A licensing issue",
+      "A data quality issue"
+     ],
+     "answer": 0,
+     "why": "No amount of training fixes it. What fixes it is leadership giving credible comfort that this is an enabler rather than a replacement, and then behaving consistently."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The five readiness buckets are leadership, organisational, data, workforce and:",
+     "options": [
+      "Vendor readiness",
+      "Financial readiness",
+      "Current decision intelligence",
+      "Regulatory readiness"
+     ],
+     "answer": 2,
+     "why": "It measures the head start that already exists - dashboards, data products, a reporting culture."
+    },
+    {
+     "tag": "MCQ",
+     "q": "On the readiness chart, an axis closer to the centre means:",
+     "options": [
+      "Better governance",
+      "Lower readiness",
+      "Higher readiness",
+      "More budget already spent"
+     ],
+     "answer": 1,
+     "why": "Further from the centre means more ready. The innermost axes are where the constraint sits, and therefore where the money should go."
+    },
+    {
+     "tag": "MCQ",
+     "q": "If data readiness is the innermost axis and decision intelligence the outermost, where should the money go?",
+     "options": [
+      "Into data literacy training",
+      "Into a better reporting tool",
+      "Into unifying the data",
+      "Into leadership alignment workshops"
+     ],
+     "answer": 2,
+     "why": "The first three all target axes that are already strong. Spending on a strength that is not the constraint buys almost nothing, because the inner axis still blocks the value."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Workforce readiness scoring higher than organisational readiness suggests:",
+     "options": [
+      "Leadership is disengaged",
+      "People are capable but the collective culture stalls the workflow",
+      "People lack skills",
+      "The data is unreliable"
+     ],
+     "answer": 1,
+     "why": "Individually skilled, collectively stuck. That is cultural resistance, and it needs change management, not another training programme."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor distinguished mistrust from distrust. Mistrust is:",
+     "options": [
+      "A synonym for distrust",
+      "A judgement you have formed about something",
+      "A refusal to use a system",
+      "A doubt you cannot resolve"
+     ],
+     "answer": 3,
+     "why": "Distrust is a judgement you have formed about something. Mistrust is what bad data leaves you with - you simply cannot settle whether the number is right."
+    },
+    {
+     "tag": "MCQ",
+     "q": "For a quantitative survey, the Hair and Black rule of thumb is roughly:",
+     "options": [
+      "Ten responses per bucket",
+      "Ten responses per question",
+      "One hundred responses regardless",
+      "Thirty per cent of the population"
+     ],
+     "answer": 1,
+     "why": "Per individual question, not per bucket. With thirty-odd questions, forty-nine responses is thin but workable for a demonstration."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In a qualitative study, you stop interviewing when:",
+     "options": [
+      "You reach thirty interviews",
+      "The same pain points start repeating - saturation",
+      "Half the organisation has been covered",
+      "The budget runs out"
+     ],
+     "answer": 1,
+     "why": "In the professor's experience that shows up after seven or eight interviews, which is why five well-chosen respondents can be enough."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Survey participation rates depend most on:",
+     "options": [
+      "Who asks and how they ask",
+      "The software used",
+      "Whether it is anonymous",
+      "The length of the questionnaire"
+     ],
+     "answer": 0,
+     "why": "A chief executive asking lands differently from a technology chief asking, and three live sessions land differently from one email. Same request, very different response rates."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The story of moving the data chief's reporting line to the chief executive shows that:",
+     "options": [
+      "Structure has no effect on outcomes",
+      "Centralisation always wins",
+      "Data teams should report to technology",
+      "Every organisation design fixes something and breaks something else"
+     ],
+     "answer": 3,
+     "why": "Moving the reporting line solved the influence problem and created a new one, where the data team stopped listening to the business. There is no correct chart."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the information systems triangle, a decision SUPPORT system is one where:",
+     "options": [
+      "A human reads the output and decides",
+      "The system decides and acts alone",
+      "Only transaction processing happens",
+      "There is no data pipeline"
+     ],
+     "answer": 0,
+     "why": "If the output triggers an action with nobody in between, you are in decision automation - a different world with a different risk profile."
+    },
+    {
+     "tag": "MCQ",
+     "q": "How is decision automation properly earned?",
+     "options": [
+      "By regulatory approval",
+      "By retiring the legacy system",
+      "By keeping a human in the loop for years, tracking disagreement, and removing the human only when error is negligible",
+      "By buying a more accurate model"
+     ],
+     "answer": 2,
+     "why": "Redeploying that person afterwards is what the professor calls capability building."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of the three data monetisation routes disappears inside a company that does not sell data externally?",
+     "options": [
+      "None of them disappear",
+      "Wrapping the offering",
+      "Selling the information itself",
+      "Improving internal work"
+     ],
+     "answer": 2,
+     "why": "Inside a company that does not sell data externally, the third leg disappears and you are left with the first two - which map onto cost leadership and differentiation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the published framework, big data analytics ranks last of eight themes because:",
+     "options": [
+      "It is unimportant",
+      "It was added late to the paper",
+      "The authors dislike technology",
+      "It behaves like a hygiene factor - presence earns nothing, absence stops everything"
+     ],
+     "answer": 3,
+     "why": "Herzberg's idea, applied to technology. It is the vehicle, not the destination, which is the argument the whole module opened with."
+    }
+   ]
+  },
+  {
+   "name": "Part 3: Paths and foundations",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "Incremental value creation describes:",
+     "options": [
+      "Growing an already positive surplus year on year",
+      "Selling data to competitors",
+      "Cutting the workforce to protect margin",
+      "Recovering value that has been lost"
+     ],
+     "answer": 0,
+     "why": "The ordinary ambition of a healthy firm - reinforce technology, train people, tighten the line, and the triangle gets bigger."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Value re-creation is the correct response when:",
+     "options": [
+      "The company wants to diversify",
+      "The company is already the cost leader",
+      "The company has spotted a new market",
+      "The company's value is shrinking and must be recovered"
+     ],
+     "answer": 3,
+     "why": "A different brief from growth. Fund a growth programme for a company that needs a repair programme and you get General Electric."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Viacom's top line fell roughly ten per cent while profit fell roughly forty per cent. The correct reading is:",
+     "options": [
+      "The company overpaid for technology",
+      "Costs were fixed and could not be cut",
+      "Market share is going AND the spend to hold customers is not converting",
+      "The auditors changed the accounting policy"
+     ],
+     "answer": 2,
+     "why": "You have to read both lines together. A bottom line falling four times faster than the top line means the retention effort has become pure operating cost."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Migrating from an in-house ERP to SAP is best classified as:",
+     "options": [
+      "Digital transformation",
+      "IT-enabled organisation transformation",
+      "Business transformation",
+      "Value co-creation"
+     ],
+     "answer": 1,
+     "why": "Same transactions, same approvals, same invoices, same audit trails. The system sits in the support activities. Useful and expensive, but the business is not somewhere new."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An outward-facing need typically leads to which value discipline and which line?",
+     "options": [
+      "Cost leader, top line",
+      "Differentiator, bottom line",
+      "Cost leader, bottom line",
+      "Differentiator, top line"
+     ],
+     "answer": 3,
+     "why": "Outward-facing needs are opportunistic. You are chasing a new market or a new product, so you differentiate and you aim at revenue."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An inward-facing need is characterised by:",
+     "options": [
+      "A new regulation",
+      "A competitor entering your market",
+      "A shortcoming in the existing set-up",
+      "An untapped opportunity"
+     ],
+     "answer": 2,
+     "why": "Top line going, margins squeezed, customers leaving. You still transform, but towards plugging leakages and efficiency - cost leadership, aimed at the bottom line."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Adding sensors so a car achieves a five-star safety rating at the same price is an example of:",
+     "options": [
+      "Cost leadership",
+      "Customer closeness",
+      "Product-based innovation",
+      "Backward integration"
+     ],
+     "answer": 2,
+     "why": "The uniqueness sits in the product itself, and everything else stays as it is."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Free lifetime roadside assistance and a buyback agreement on an unchanged car is an example of:",
+     "options": [
+      "Cost leadership",
+      "Co-opetition",
+      "Product-based innovation",
+      "Customer closeness"
+     ],
+     "answer": 3,
+     "why": "Same car, same production line. What changed is the relationship around the product, not the metal."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The shift from corner shops to ten-minute delivery for the same packet of biscuits is:",
+     "options": [
+      "Product innovation",
+      "Digitisation",
+      "Customer closeness",
+      "Value co-creation"
+     ],
+     "answer": 2,
+     "why": "The biscuits have not changed. No travel, no waiting, pre-delivery and loyalty are all customer-centric interventions layered on an unchanged product."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why does it matter WHO is driving a transformation?",
+     "options": [
+      "Because budgets differ by department",
+      "Because regulators require a named owner",
+      "Because it changes the technology stack",
+      "Because a leader-championed programme is steered and executed very differently from a bottom-up one"
+     ],
+     "answer": 3,
+     "why": "When the need was sensed at the top, leadership is committed from the start. When it arrives as a complaint after bad results, the leader may never fully commit."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the Viacom data journey, the metering devices in homes solved which problem and created which?",
+     "options": [
+      "Solved personalisation, created cost",
+      "Solved generalisability, but the unit of measurement was still the household",
+      "Solved latency, created duplication",
+      "Solved data quality, created a privacy breach"
+     ],
+     "answer": 1,
+     "why": "Grandparents, parents and children all watched the same set, so family-level viewing stayed scattered and varied. Still generalised, just at a finer grain."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The unit of measurement finally became one person when:",
+     "options": [
+      "The agency changed its method",
+      "The metering devices were upgraded",
+      "Streaming and individual logins arrived",
+      "The sample size was increased"
+     ],
+     "answer": 2,
+     "why": "And that is exactly when the appetite for data exploded and decision-making got paralysed - they were capturing far more than they could use."
+    },
+    {
+     "tag": "MCQ",
+     "q": "'T minus K' expresses the idea that:",
+     "options": [
+      "Dashboards can predict the future",
+      "Data must be refreshed every K minutes",
+      "Every dashboard shows data that has already happened, K being the delay",
+      "Latency can be reduced to zero with sensors"
+     ],
+     "answer": 2,
+     "why": "K can be squeezed but never made zero, and never negative. Which is why moving from measures of what happened to predictions of what will happen is the hinge of the Viacom case."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Value co-creation means:",
+     "options": [
+      "Internal departments collaborating on a project",
+      "Selling data to a third party",
+      "Separate firms, each with their own value chain, all ending up better off",
+      "Merging with a competitor"
+     ],
+     "answer": 2,
+     "why": "Internal departments collaborating is collaboration, not co-creation. A value chain is drawn from the point of view of a single firm."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the Viacom value system, what do advertising agencies receive?",
+     "options": [
+      "Free advertising slots",
+      "Ownership of the content",
+      "Pricing and slot predictions before signing",
+      "Access to the raw customer database"
+     ],
+     "answer": 2,
+     "why": "Viacom's ability to predict was more mature than theirs, so they trusted its judgement over their own - and both sides negotiated faster as a result."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Co-opetition is best described as:",
+     "options": [
+      "Rivals cooperating in a defined space where all gain, while competing elsewhere",
+      "Buying a competitor's data",
+      "Competitors lobbying a government together",
+      "A merger between two rivals"
+     ],
+     "answer": 0,
+     "why": "Option A is lobbying - collective pressure applied to a third party. Co-opetition creates value none of the participants could create alone."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of the following is NOT one of the five ingredients (means)?",
+     "options": [
+      "Organisational capabilities",
+      "Leadership",
+      "Market share",
+      "Workforce"
+     ],
+     "answer": 2,
+     "why": "The five are organisational capabilities, leadership, workforce, data governance and analytics. Market share is an outcome, not an ingredient."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the 2024 paper, leadership originally sat:",
+     "options": [
+      "Inside organisational capabilities",
+      "As its own separate ingredient",
+      "Outside the framework",
+      "Under digital governance"
+     ],
+     "answer": 0,
+     "why": "It was pulled out as a separate ingredient afterwards, on the strength of practitioner work rather than the paper. Know which version you are quoting."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which three things sit under organisational capabilities?",
+     "options": [
+      "Leadership, governance, analytics",
+      "Strategy, structure, systems",
+      "Culture, structure and design, decision making",
+      "People, process, technology"
+     ],
+     "answer": 2,
+     "why": "Processes and innovation were both folded back into culture when the class offered them separately."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An organisation with a long history of subjective, expert-based decisions is likely to:",
+     "options": [
+      "Have excellent data quality",
+      "Resist model-driven decision autonomy at first",
+      "Have no need for governance",
+      "Adopt model-driven decisions quickly"
+     ],
+     "answer": 1,
+     "why": "It is the opposite habit. Objective decision cultures accept model outputs naturally; discretionary ones fight it, at least for the first months or years."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor's conclusion on leadership and culture is that the relationship is:",
+     "options": [
+      "Unrelated",
+      "Two-way - each constrains and scales the other",
+      "Culture always shapes leadership",
+      "Leadership always shapes culture"
+     ],
+     "answer": 1,
+     "why": "The Bengali instruction shows culture doing the work rather than authority. The email story shows a sixty-year-old culture shaping how every leader behaves."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the Oracle-to-SAP migration example, the root cause of the inertia was:",
+     "options": [
+      "The new system was technically inferior",
+      "The leadership did not communicate",
+      "Training was never provided",
+      "Perceived usefulness at the individual level was close to zero"
+     ],
+     "answer": 3,
+     "why": "Same transactions, same approvals, same audit trails. The organisation gained scale; the user gained nothing and lost their comfort."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which pairing of problem and fix is correct?",
+     "options": [
+      "Ability gap - fixed with change management",
+      "Attitude gap - fixed with training",
+      "Ability gap - fixed with training and exposure",
+      "Attitude gap - fixed with better software"
+     ],
+     "answer": 2,
+     "why": "Attitude gaps need change management, communication and something genuinely in it for the user. Spending training money on an attitude problem is the classic and expensive mix-up."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The big bang data strategy failed at the Asia-Pacific bank mainly because:",
+     "options": [
+      "The data was too small",
+      "The cloud provider was unreliable",
+      "It was never aligned to a business use case before starting",
+      "Regulators blocked it"
+     ],
+     "answer": 2,
+     "why": "Three years later only occasional analysts wanting historical data could use it, and real-time needs were never in scope."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the kitchen analogy, the correct approach is:",
+     "options": [
+      "Buy ready meals",
+      "Chop onions fresh for every order",
+      "Make one base gravy in the morning and build dishes from it",
+      "Cook the whole menu in advance"
+     ],
+     "answer": 2,
+     "why": "One base, many users, improved over time, components reused. That base gravy is the data product idea in one image."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is a disadvantage of the grassroots architecture?",
+     "options": [
+      "Revenue defined three different ways by three departments",
+      "Poor adoption by business users",
+      "High capital cost up front",
+      "Slow to build"
+     ],
+     "answer": 0,
+     "why": "Lack of standardisation is a grassroots problem. Slow builds and heavy capital cost belong to the monolith, and adoption is one of grassroots' genuine strengths."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is a disadvantage of the monolithic architecture?",
+     "options": [
+      "Business users cannot easily self-serve",
+      "Governance is harder",
+      "No single source of truth",
+      "Duplication of effort"
+     ],
+     "answer": 0,
+     "why": "Control buys symmetry and installs guardrails. Pulling data off a server needs skills and access a business user usually does not have."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the hybrid design, where exactly is the cut made?",
+     "options": [
+      "Between the sources and staging",
+      "Before the landing zone",
+      "After the lakehouse, inserting a data product layer",
+      "After the dashboards"
+     ],
+     "answer": 2,
+     "why": "Keep the monolith up to that point, because that is where its uniformity comes from. Then restore grassroots freedom on the other side."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Data products are typically shipped as CSV rather than XLSX because CSV:",
+     "options": [
+      "Is more secure",
+      "Is lightweight, machine readable and has no row ceiling",
+      "Supports formulas",
+      "Looks better in presentations"
+     ],
+     "answer": 1,
+     "why": "If your user base grows and the format caps out at around a million rows, your product is obsolete. CSV also avoids the encoding complications of a spreadsheet format."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which statement about data governance is correct?",
+     "options": [
+      "Data governance subsumes data quality",
+      "Data governance is a subset of cyber security",
+      "Data quality subsumes data governance",
+      "Data governance and data quality are the same thing"
+     ],
+     "answer": 0,
+     "why": "Quality is one building block inside it, alongside ownership, rights, stewardship, classification, access and accountability."
+    }
+   ]
+  },
+  {
+   "name": "Mixed: all three parts",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "A firm has a mature reporting estate, twelve crore already spent, high dashboard usage - and working capital, cost leakage and the top line have all been flat for eight quarters. What is the correct first move?",
+     "options": [
+      "Increase the training budget",
+      "Walk back up the IS Success chain and find which box is broken",
+      "Escalate to the board for more investment",
+      "Replace the reporting tool with a better one"
+     ],
+     "answer": 1,
+     "why": "Everything to the left may look fine while satisfaction or service quality is quietly failing. Buying a new tool fixes one box out of six."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which pairing of monetisation route and value discipline is correct?",
+     "options": [
+      "Sell the information - cost leader",
+      "Improve internal work - cost leader",
+      "Wrap the offering - cost leader",
+      "Improve internal work - differentiator"
+     ],
+     "answer": 1,
+     "why": "Plugging leakage and deciding faster serves the cost leader. Wrapping data around what you already sell serves the differentiator."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A company's need is inward facing - shrinking margins and eroding customers - but its transformation programme is built around launching a premium connected product. What is the problem?",
+     "options": [
+      "The budget is too small",
+      "The need and the chosen value discipline do not match",
+      "The technology is immature",
+      "There is nothing wrong; both branches are always valid"
+     ],
+     "answer": 1,
+     "why": "Inward-facing needs point to cost leadership and the bottom line. Building a premium offering pulls the lever the situation does not pay for."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Put these in the order a company must actually achieve them:",
+     "options": [
+      "Data products, digitisation, digitalisation",
+      "Digitalisation, data products, digitisation",
+      "Digitisation, digitalisation, data products",
+      "Digitisation, data products, digitalisation"
+     ],
+     "answer": 2,
+     "why": "You cannot make data flow before you have captured it, and you cannot package a clean, reusable mart before the data flows."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Rolling out training on a new assistant tool across the whole workforce is best described as:",
+     "options": [
+      "Digitisation",
+      "Business transformation",
+      "Digital enablement",
+      "Procurement"
+     ],
+     "answer": 2,
+     "why": "Buying the licences would be procurement, a noun. Equipping people so the verb can actually be performed is enablement."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A readiness chart shows leadership at 4.2 and data readiness at 3.2. The company buys a new reporting tool. What should you predict?",
+     "options": [
+      "Improvement in year two once training completes",
+      "Little or no improvement, because the constraint was never the tool",
+      "Improvement only in the finance function",
+      "A significant improvement, since leadership is behind it"
+     ],
+     "answer": 1,
+     "why": "Money into an existing strength buys almost nothing. The innermost axis still blocks the value from coming out."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which sequence of frameworks answers the two questions 'will they use it?' and 'did using it change anything?'",
+     "options": [
+      "SERVQUAL, then Garvin",
+      "Balanced Scorecard, then SERVQUAL",
+      "The IS Success Model, then the acceptance model",
+      "The acceptance model, then the IS Success Model"
+     ],
+     "answer": 3,
+     "why": "Acceptance tells you whether they will adopt. The IS Success Model tells you whether adoption produced any net benefit."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In which of the four transformations is the value wedge redrawn rather than merely widened?",
+     "options": [
+      "PT",
+      "BT",
+      "DT",
+      "ITOT"
+     ],
+     "answer": 1,
+     "why": "Business transformation is where the dominant strategy moves and the model itself changes. The others widen the wedge without redrawing it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A vehicle manufacturer gives its five hundred suppliers visibility of forward demand, and charges for it. This is:",
+     "options": [
+      "Wrapping the offering",
+      "Selling the information itself",
+      "Backward integration",
+      "Improving internal work"
+     ],
+     "answer": 1,
+     "why": "The data has become the offering. Suppliers pay because it frees working capital that was locked in inventory."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the Viacom value system, how many independent value chains are involved?",
+     "options": [
+      "Five - Viacom plus advertisers, content creators, regulators and competitors",
+      "Five, but only Viacom's value rises",
+      "Two - Viacom and its advertisers",
+      "One - Viacom's own"
+     ],
+     "answer": 0,
+     "why": "And the whole point is that every one of the five ends up better off - which is what separates co-creation from collaboration."
+    },
+    {
+     "tag": "MCQ",
+     "q": "You install more sensors and increase refresh frequency on a dashboard. What happens to T minus K?",
+     "options": [
+      "K is unaffected by refresh rate",
+      "K gets smaller but never reaches zero",
+      "K becomes zero",
+      "K becomes negative"
+     ],
+     "answer": 1,
+     "why": "A dashboard is always retrospective. Squeezing the delay is worth doing, but if you want to see forward you have to move from measures to predictions."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the hybrid architecture the professor recommends, what typically sits on premise and what on cloud?",
+     "options": [
+      "Everything on cloud",
+      "Everything on premise",
+      "The lakehouse on premise, the data products on cloud",
+      "The data products on premise, the lakehouse on cloud"
+     ],
+     "answer": 2,
+     "why": "Users hold credentials and fetch the product they need into a dashboard or a hosted analysis environment."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A team shows high login frequency and a high override rate. Which diagnosis is correct?",
+     "options": [
+      "Adoption has failed",
+      "System quality has failed",
+      "Data quality has failed",
+      "Use is fine; satisfaction has failed"
+     ],
+     "answer": 3,
+     "why": "They open it and they mean to - that is use. They do not trust it enough to act on it - that is satisfaction."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which element of the framework behaves like a hygiene factor?",
+     "options": [
+      "Big data analytics",
+      "Organisational capabilities",
+      "Value co-creation",
+      "Digital talent"
+     ],
+     "answer": 0,
+     "why": "Having it earns you nothing; not having it stops everything. It is the vehicle, not the destination."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of these does NOT sit under organisational capabilities?",
+     "options": [
+      "Culture",
+      "Workforce ability and attitude",
+      "Decision making",
+      "Structure and design"
+     ],
+     "answer": 1,
+     "why": "Workforce is its own ingredient in the list of five, precisely because ability and attitude behave differently from culture and structure."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor's own definition of data culture is:",
+     "options": [
+      "Every decision must be justified with numbers",
+      "The chief data officer reports to the chief executive",
+      "Everybody has access to a dashboard",
+      "Data is treated as another product line, nurtured like any other product"
+     ],
+     "answer": 3,
+     "why": "He is deliberate about not calling it data culture. Once data is a product line, no leader gets to look at it in their own private fragmented way."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why does the grassroots architecture usually show better adoption than the monolith?",
+     "options": [
+      "It uses better technology",
+      "It has a single source of truth",
+      "It is centrally governed",
+      "Whoever built the pipeline built it for that specific business owner"
+     ],
+     "answer": 3,
+     "why": "Few hops, instant feedback loop, and the same person who wrote the rules fixes it when it breaks."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which statement correctly pairs each failure with its cause?",
+     "options": [
+      "Big bang failed on reusability; grassroots failed on alignment to use cases",
+      "Both failed on governance",
+      "Big bang failed on alignment to use cases; grassroots failed on reusability",
+      "Both failed on cost"
+     ],
+     "answer": 2,
+     "why": "The bank cleaned and dumped everything without asking what anybody needed. The grassroots teams built one-off pipelines nobody else could use."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Three departments walk into the chief executive's room with three different revenue figures and spend fifteen minutes reconciling them. The root cause is:",
+     "options": [
+      "Poor system quality",
+      "Lack of standardisation and no single source of truth",
+      "Insufficient training",
+      "A licensing shortfall"
+     ],
+     "answer": 1,
+     "why": "One team counts units, one counts rupees, one counts tonnes. This is the classic grassroots cost."
+    },
+    {
+     "tag": "MCQ",
+     "q": "'Who may share this data without first removing the names from it?' is a question belonging to:",
+     "options": [
+      "Cyber security",
+      "Data governance",
+      "Data security",
+      "System quality"
+     ],
+     "answer": 1,
+     "why": "Governance covers ownership, definitions, quality protocols, access, sharing and anonymisation. Security protects; governance decides."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A bank moves loan approval from fifteen days of paperwork to a two-day automated workflow. This is:",
+     "options": [
+      "DT",
+      "ITOT",
+      "PT",
+      "BT"
+     ],
+     "answer": 2,
+     "why": "One horizontal process rebuilt end to end, narrow by design. The business model has not moved."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The same bank then launches a mobile-first proposition - accounts opened in minutes, instant algorithmic lending, branches turned advisory. This is:",
+     "options": [
+      "ITOT",
+      "BT",
+      "PT",
+      "Digitisation"
+     ],
+     "answer": 1,
+     "why": "The dominant strategy has moved and the revenue model is new. The wedge is redrawn, not widened."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which sequence is correct?",
+     "options": [
+      "Adoption, intention, satisfaction, use",
+      "Satisfaction, use, adoption, intention",
+      "Use, adoption, intention, satisfaction",
+      "Intention, adoption, use, satisfaction, continued intention"
+     ],
+     "answer": 3,
+     "why": "Everything before adoption is belief. Everything after it is observable. Continued intention is the repeat-purchase equivalent."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which sequence describes the IS Success Model correctly?",
+     "options": [
+      "Use, then the three qualities, then satisfaction",
+      "Satisfaction, then net benefits, then the three qualities",
+      "The three qualities, then use and satisfaction, then net benefits",
+      "Net benefits, then the three qualities, then use"
+     ],
+     "answer": 2,
+     "why": "Technology, then behaviour, then strategic outcome. That order is what makes it a diagnostic path rather than a scorecard."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Data readiness is the weakest axis on a readiness chart. A vendor proposes a new self-service analytics platform. The best response is:",
+     "options": [
+      "Decline for now and unify the data first, because the platform will surface the same distrusted numbers faster",
+      "Buy it but delay the rollout by a year",
+      "Buy it - self-service will solve the queue",
+      "Buy it only for the finance team"
+     ],
+     "answer": 0,
+     "why": "A faster route to a number nobody believes does not produce a decision. Fix the innermost axis first."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An AI deployment frees two hours of work per person per day, but the cost base is fixed and nobody is redeployed. The honest claim to make is:",
+     "options": [
+      "Revenue will rise automatically",
+      "The deployment has failed",
+      "A ratio has improved but no rupee has changed",
+      "Cost has fallen by the value of two hours per person"
+     ],
+     "answer": 2,
+     "why": "Efficiency converts into margin only when the freed capacity is absorbed by growth or genuinely removed. This is the fixed-cost objection from class."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the Balanced Scorecard, training, knowledge and capability building sit under which perspective?",
+     "options": [
+      "Internal process",
+      "Learning and growth",
+      "Financial",
+      "Customer"
+     ],
+     "answer": 1,
+     "why": "And learning and growth feeds internal process, which feeds customer, which feeds financial. That chain is how a soft benefit reaches a hard number."
+    },
+    {
+     "tag": "MCQ",
+     "q": "RATER stands for:",
+     "options": [
+      "Reliability, Assurance, Tangibles, Empathy, Responsiveness",
+      "Reliability, Accuracy, Timeliness, Efficiency, Responsiveness",
+      "Reliability, Availability, Traceability, Effectiveness, Resilience",
+      "Relevance, Access, Trust, Ease, Reach"
+     ],
+     "answer": 0,
+     "why": "The five criteria of SERVQUAL, which is where the service quality dimension of the IS Success Model comes from."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Garvin's eight dimensions of quality apply primarily to:",
+     "options": [
+      "Organisational culture",
+      "Services",
+      "Data pipelines",
+      "Products"
+     ],
+     "answer": 3,
+     "why": "Performance, features, reliability, conformance, durability, serviceability, aesthetics and perceived quality. SERVQUAL is the services parallel."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which stakeholder in the Viacom value system receives an early read on what is likely to clear screening?",
+     "options": [
+      "Content creators",
+      "Competitors",
+      "Advertising agencies",
+      "Regulatory bodies"
+     ],
+     "answer": 3,
+     "why": "Fewer surprises for them, and Viacom avoids signing contracts that will not pass."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Two rival payment providers pool transaction data under agreed rules and each earns from the shared analysis. Two other rivals jointly petition a regulator not to enforce a rule. These are, respectively:",
+     "options": [
+      "Both lobbying",
+      "Both co-opetition",
+      "Lobbying and co-opetition",
+      "Co-opetition and lobbying"
+     ],
+     "answer": 3,
+     "why": "Co-opetition creates value none of them could create alone. Lobbying applies collective pressure to a third party."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A company runs three hundred systems and every department builds its own pipeline. Which cost appears first and keeps recurring?",
+     "options": [
+      "Capital expenditure on the data platform",
+      "The cost of hiring a chief data officer",
+      "Licensing cost for the reporting tool",
+      "Operating cost from doing the same cleaning several times over"
+     ],
+     "answer": 3,
+     "why": "You burn the same computing resource repeatedly for no new information. That is a recurring running cost, not a one-off."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The cleanest test of whether something is genuinely a data product is:",
+     "options": [
+      "Is it stored in the cloud?",
+      "Pull the data out - does the business still run?",
+      "Does more than one department use it?",
+      "Is it refreshed daily?"
+     ],
+     "answer": 1,
+     "why": "Take data out of a cab-hailing app and no cab gets booked and no price gets set. At that point data is core, not support."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is NOT a reason data products are shipped as CSV rather than as a spreadsheet file?",
+     "options": [
+      "It has no practical row ceiling",
+      "It is supported natively by reporting tools",
+      "It is lightweight and machine readable",
+      "It supports formulas and formatting"
+     ],
+     "answer": 3,
+     "why": "Formulas and formatting are exactly what you do not want in a data product - it is a clean, reusable dataset, not a working document."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The fifth building block - workforce - was added to the reading's four because of which case?",
+     "options": [
+      "The card company where everything worked and value still did not appear",
+      "General Electric",
+      "The logistics company with the distrusted dashboard",
+      "Viacom"
+     ],
+     "answer": 0,
+     "why": "Data, service and system quality were all fine there. The only thing broken was people's willingness to act on the output."
+    },
+    {
+     "tag": "MCQ",
+     "q": "What does the T minus K idea imply about a company that wants to become predictive?",
+     "options": [
+      "It should buy faster hardware",
+      "It must move from measures of what happened to forecasts of what will happen",
+      "It should centralise its data team",
+      "It should reduce the number of dashboards"
+     ],
+     "answer": 1,
+     "why": "Squeezing the delay makes a backward-looking view fresher. It never makes it forward-looking. That extension is the hinge of the Viacom case."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A transformation is proposed. Which pair of questions should you ask first?",
+     "options": [
+      "Which vendor, and at what price?",
+      "What is the need, and who is driving it?",
+      "What is the cloud strategy, and who owns it?",
+      "How many licences, and for whom?"
+     ],
+     "answer": 1,
+     "why": "The need tells you which value discipline you are pulling on. Who is driving it tells you more about the odds than the technology stack ever will."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which statement about digitisation in the Viacom story is correct?",
+     "options": [
+      "It was skipped entirely",
+      "It happened only after streaming arrived",
+      "Once capture became automatic, the money moved from collection into building data pipelines",
+      "It was the transformation itself"
+     ],
+     "answer": 2,
+     "why": "Same budget line, completely different purpose - and a good illustration that digitisation is an antecedent, not a substitute."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Change management for digital transformation is specifically about:",
+     "options": [
+      "Communicating the vision to employees",
+      "Retraining the workforce on a new tool",
+      "Managing the vendor contract",
+      "Realigning how data teams interact with technology teams, business users and processes, in phases"
+     ],
+     "answer": 3,
+     "why": "Look back at the failures in this document and count how many were technical. Almost none were."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which single sentence best captures the module?",
+     "options": [
+      "Automate everything a human currently decides",
+      "Buy the best technology you can afford",
+      "It is not about what we have; it is about what we do",
+      "Data is the new oil"
+     ],
+     "answer": 2,
+     "why": "Every distinction in this document - output against outcome, artefact against enablement, adoption against usage - is that one sentence in a different costume."
+    }
+   ]
+  }
+ ]
+}

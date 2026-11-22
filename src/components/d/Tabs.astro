@@ -1,0 +1,21 @@
+---
+// Switch between panels of key/value rows. tabs: [{ label, rows: [[k, v]], note? }]
+const { tabs } = Astro.props;
+---
+<div class="tabs" data-tabs>
+  <div class="seg" role="group">{tabs.map((t, i) => <button type="button" data-i={i} aria-pressed={i === 0 ? 'true' : 'false'}>{t.label}</button>)}</div>
+  {tabs.map((t, i) => (
+    <div class="tabs-p" data-p={i} hidden={i !== 0}>
+      <dl>{t.rows.map(([k, v]) => <div><dt>{k}</dt><dd>{v}</dd></div>)}</dl>
+      {t.note && <p class="tabs-n">{t.note}</p>}
+    </div>
+  ))}
+</div>
+<script>
+  document.querySelectorAll('[data-tabs]').forEach((root) => {
+    root.querySelectorAll('[data-i]').forEach((b) => b.addEventListener('click', () => {
+      root.querySelectorAll('[data-i]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      root.querySelectorAll('[data-p]').forEach((p) => { p.hidden = p.dataset.p !== b.dataset.i; });
+    }));
+  });
+</script>

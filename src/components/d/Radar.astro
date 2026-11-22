@@ -1,0 +1,39 @@
+---
+// Readiness spider chart with five sliders (1 to 5).
+const axes = [
+  { id: 'di', t: 'Decision intelligence', v: 4.17 },
+  { id: 'dr', t: 'Data readiness', v: 3.3 },
+  { id: 'or', t: 'Organisational readiness', v: 3.73 },
+  { id: 'wf', t: 'Workforce readiness', v: 3.86 },
+  { id: 'ld', t: 'Leadership readiness', v: 3.91 },
+];
+---
+<div class="calc" data-radar>
+  <div class="calc-in">
+    {axes.map((a) => <label class="ctl"><span>{a.t}</span><input type="range" min="1" max="5" step="0.01" value={a.v} data-k={a.id} data-t={a.t} /><output data-o={a.id}></output></label>)}
+  </div>
+  <div class="radar-out">
+    <svg viewBox="0 0 300 270" role="img" aria-label="Readiness spider chart" data-svg></svg>
+    <p class="calc-note" data-v="note"></p>
+  </div>
+</div>
+<script>
+  document.querySelectorAll('[data-radar]').forEach((root) => {
+    const inputs = [...root.querySelectorAll('input')], svg = root.querySelector('[data-svg]');
+    const cx = 150, cy = 138, R = 92, pt = (i, f) => { const a = -Math.PI / 2 + i * 2 * Math.PI / 5; return [cx + Math.cos(a) * R * f, cy + Math.sin(a) * R * f]; };
+    const short = ['Decisions', 'Data', 'Organisation', 'Workforce', 'Leadership'];
+    const run = () => {
+      const vals = inputs.map((i) => Number(i.value));
+      inputs.forEach((i) => { root.querySelector(`[data-o="${i.dataset.k}"]`).textContent = Number(i.value).toFixed(2); });
+      const order = vals.map((v, i) => [v, i]).sort((a, b) => a[0] - b[0]), low = [order[0][1], order[1][1]];
+      let h = '';
+      [0.25, 0.5, 0.75, 1].forEach((f) => { h += `<polygon points="${[0, 1, 2, 3, 4].map((i) => pt(i, f).map((n) => n.toFixed(1)).join(',')).join(' ')}" style="fill:none;stroke:var(--line)"/>`; });
+      [0, 1, 2, 3, 4].forEach((i) => { const [x, y] = pt(i, 1), [lx, ly] = pt(i, 1.22); h += `<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" style="stroke:var(--line)"/><text x="${lx}" y="${ly + 4}" text-anchor="middle" style="fill:${low.includes(i) ? 'var(--trap)' : 'var(--muted)'};font:600 11px var(--sans)">${short[i]}</text>`; });
+      h += `<polygon points="${vals.map((v, i) => pt(i, (v - 1) / 4 * 0.9 + 0.1).map((n) => n.toFixed(1)).join(',')).join(' ')}" style="fill:var(--accent-soft);stroke:var(--accent);stroke-width:2"/>`;
+      vals.forEach((v, i) => { const [x, y] = pt(i, (v - 1) / 4 * 0.9 + 0.1); h += `<circle cx="${x}" cy="${y}" r="4" style="fill:${low.includes(i) ? 'var(--trap)' : 'var(--accent)'}"/>`; });
+      svg.innerHTML = h;
+      root.querySelector('[data-v="note"]').textContent = `Weakest: ${inputs[low[0]].dataset.t.toLowerCase()}, then ${inputs[low[1]].dataset.t.toLowerCase()}. Spend there first. Money put into the stronger areas buys little while these two hold the value back.`;
+    };
+    inputs.forEach((i) => i.addEventListener('input', run)); run();
+  });
+</script>

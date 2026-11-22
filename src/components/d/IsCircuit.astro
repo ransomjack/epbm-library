@@ -1,0 +1,34 @@
+---
+// DeLone & McLean IS Success Model as a circuit you can break.
+const boxes = [
+  { id: 'data', t: 'Data quality', s: 'Is the number right, complete and on time?' },
+  { id: 'service', t: 'Service quality', s: 'How fast do the people who fix it respond?' },
+  { id: 'system', t: 'System quality', s: 'Does the tool load, respond and stay up?' },
+  { id: 'use', t: 'Use', s: 'Do people open it?' },
+  { id: 'sat', t: 'Satisfaction', s: 'Do they trust it enough to act on it?' },
+];
+---
+<div class="isc" data-isc>
+  <div class="seg" role="group" aria-label="Example"><button type="button" data-p="ok" aria-pressed="true">Everything works</button><button type="button" data-p="logi" aria-pressed="false">Logistics firm</button><button type="button" data-p="card" aria-pressed="false">Card company</button></div>
+  <p class="calc-cap">Tap any box to break or repair it.</p>
+  <div class="isc-grid">
+    {boxes.map((b) => <button type="button" class="isc-b" data-b={b.id} aria-pressed="true"><b>{b.t}</b><span>{b.s}</span><em></em></button>)}
+    <div class="isc-out" data-out><b>Net benefits</b><span data-v="msg"></span></div>
+  </div>
+</div>
+<script>
+  document.querySelectorAll('[data-isc]').forEach((root) => {
+    const st = { data: true, service: true, system: true, use: true, sat: true };
+    const presets = { ok: {}, logi: { data: false, service: false, sat: false }, card: { sat: false } };
+    const run = () => {
+      root.querySelectorAll('.isc-b').forEach((b) => { const ok = st[b.dataset.b]; b.setAttribute('aria-pressed', String(ok)); b.querySelector('em').textContent = ok ? 'Working' : 'Broken'; });
+      const broken = Object.keys(st).filter((k) => !st[k]);
+      const out = root.querySelector('[data-out]'); out.classList.toggle('bad', broken.length > 0);
+      const names = { data: 'data quality', service: 'service quality', system: 'system quality', use: 'use', sat: 'satisfaction' };
+      root.querySelector('[data-v="msg"]').textContent = broken.length === 0 ? 'Value flows: margin, cycle time and customer loyalty improve.' : `No value comes out. Broken: ${broken.map((k) => names[k]).join(', ')}. ` + (broken.length === 1 && broken[0] === 'sat' ? 'Every usage number looks healthy, and people still don’t act on it.' : 'A new tool would fix only system quality.');
+    };
+    root.querySelectorAll('.isc-b').forEach((b) => b.addEventListener('click', () => { st[b.dataset.b] = !st[b.dataset.b]; root.querySelectorAll('[data-p]').forEach((x) => x.setAttribute('aria-pressed', 'false')); run(); }));
+    root.querySelectorAll('[data-p]').forEach((b) => b.addEventListener('click', () => { Object.keys(st).forEach((k) => { st[k] = true; }); Object.assign(st, presets[b.dataset.p]); root.querySelectorAll('[data-p]').forEach((x) => x.setAttribute('aria-pressed', String(x === b))); run(); }));
+    run();
+  });
+</script>

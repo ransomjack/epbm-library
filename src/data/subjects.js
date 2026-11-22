@@ -38,6 +38,12 @@ export const subjects = [
     pdf: '/pdf/operational-excellence-master-notes.pdf',
     og: '/og/operational-excellence.png',
   },
-  { slug: 'digital-transformation', name: 'Digital Transformation' },
+  {
+    slug: 'digital-transformation',
+    name: 'Digital Transformation',
+    blurb: 'What digital transformation is, how to prove it worked, and the paths and foundations it needs, with interactive exercises and 130 practice questions.',
+    pdf: '/pdf/digital-transformation-master-notes.pdf',
+    og: '/og/digital-transformation.png',
+  },
   { slug: 'ai-ml-business-analytics', name: 'AI/ML and Business Analytics' },
 ];

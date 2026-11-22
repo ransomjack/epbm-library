@@ -1,0 +1,223 @@
+---
+title: Which Path, and What It Runs On
+kicker: Part 3
+order: 3
+source: "Sessions by Prof. Rahul Kumar · Digital Transformation"
+description: "Value re-creation and co-creation, the need tree, the five ingredients of a transformation, grassroots versus monolithic data architecture, data products and data governance. Part 3 of Digital Transformation."
+takeaways:
+  - "A shrinking business must first re-create lost value; a healthy one can co-create value with partners."
+  - "Needs come from outside (an opportunity) or inside (a shortcoming), and that decides which lever to pull."
+  - "Ability gaps need training. Attitude gaps need change management and something in it for the user."
+  - "Keep one central source of truth, then give each function its own clean, ready-to-use data product."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Flow from '../../components/d/Flow.astro';
+import Steps from '../../components/d/Steps.astro';
+import Sort from '../../components/d/Sort.astro';
+import Decide from '../../components/d/Decide.astro';
+import Tabs from '../../components/d/Tabs.astro';
+
+## Two ways back to value
+
+A healthy firm wants its surplus to grow every year: **incremental value creation**. Most transformation programmes are written for that.
+
+Viacom had the opposite: **value depletion**. Revenue down about 10%, profit down about 40%. That needs a different brief.
+
+<Cards min={240} items={[
+  { title: 'Value re-creation', body: 'Get back to where you were. Repair what is leaking before trying to grow.', foot: 'For a business whose value is shrinking' },
+  { title: 'Value co-creation', body: 'Build new value together with other firms, so that everyone ends up better off.', foot: 'For a business ready to grow' },
+]} />
+
+Confuse the two and you fund a growth programme for a company that needs a repair programme.
+
+### What business transformation is not
+
+"We have launched fourteen applications in six years, so we are on a digital transformation journey." No. Fourteen applications mean you can now capture transactions. That is a precondition, not the thing itself.
+
+The test: **going from point A to point B with a positive outcome.** Moving from an in-house ERP to a commercial one fails it: the same transactions, approvals and invoices as before.
+
+## The need tree
+
+Every transformation starts from a need, and needs come from two directions.
+
+<Cards min={260} items={[
+  { title: 'Outward-facing: an opportunity', body: 'A new market, a new product, or a competitor showing where the money is.', foot: 'Differentiator · chases the top line' },
+  { title: 'Inward-facing: a shortcoming', body: 'Revenue shrinking, margins squeezed, customers leaving, processes wasteful.', foot: 'Cost leader · protects the bottom line' },
+]} />
+
+Viacom's need was inward-facing: not an opportunity spotted but numbers that could no longer be ignored. (This is a rule of thumb. Many programmes carry both.)
+
+**Differentiation comes in two kinds.** A carmaker can add safety features until the car earns a five-star rating at the same price: *product innovation*. Or it can leave the car alone and add lifetime roadside assistance and a buy-back guarantee: *customer closeness*. Ten-minute grocery delivery is customer closeness: the biscuits haven't changed, only how they reach you.
+
+<Sort title="Try it: read the need" choices={['Outward-facing', 'Inward-facing']} items={[
+  { text: 'A stationery maker sees digital artists paying a premium for precise styluses.', answer: 'Outward-facing', why: 'An opportunity in the market. Differentiation, aimed at revenue.' },
+  { text: 'Marketing spend is rising while subscriber numbers fall.', answer: 'Inward-facing', why: 'Spending isn’t converting. A shortcoming to repair.' },
+  { text: 'A rival is earning well from a service you could also offer.', answer: 'Outward-facing', why: 'Following a competitor is still an opportunity seen outside.' },
+  { text: 'Customer complaints have doubled and repeat orders are down.', answer: 'Inward-facing', why: 'The existing set-up is failing its customers.' },
+]} />
+
+<div class="callout">
+<p class="callout-title">Ask who, not just what</p>
+
+If the chief executive sensed the need, leadership champions the programme from day one. If it came up from frustrated operations teams, the leader may never be fully committed. Same technology, very different odds.
+
+</div>
+
+## Viacom's long walk to the individual viewer
+
+How did a broadcaster ever know which programmes worked?
+
+<Flow items={[
+  { t: 'Sample surveys', s: 'An agency visits a representative set of homes. Unit: a sample.' },
+  { t: 'Metering devices', s: 'Boxes record what each home watched. Unit: a household.' },
+  { t: 'Streaming apps', s: 'Every tap and pause is recorded. Unit: one person.', hl: true },
+]} />
+
+Each step improved how well the findings generalised. Only the last made personalisation possible, and that is when the data problem exploded: Viacom was capturing far more than it could use, and decisions stalled.
+
+### Dashboards look backwards
+
+A dashboard always shows what has already happened. Call the present T and the delay K: you are looking at T minus K. K can be squeezed. It can't reach zero.
+
+Viacom's move was to extend its reporting from measures of what happened to predictions of what will. Self-service reporting was re-creation. Prediction opened the door to co-creation.
+
+## Value co-creation
+
+Co-creation isn't teams collaborating inside one firm. It happens when **separate firms, each with its own value chain, all end up better off.**
+
+| Partner | What Viacom shares | Why they value it |
+|---|---|---|
+| Advertising agencies | What this slot, at this hour, in this region should cost | Viacom predicts better than they can; deals close faster |
+| Content creators | What is watched, when and by whom | They commission on evidence rather than instinct |
+| Regulators | An early view of which titles are likely to clear review | Fewer surprises on both sides |
+| Competitors | Aggregate patterns of what is popular in a region | It powers the "trending" half of everyone's recommendations |
+
+Sharing with rivals has a name: **co-opetition**, co-operating in one defined area where everyone gains while competing everywhere else. Shared payment networks are the standard example. It is not lobbying, where rivals jointly pressure a third party.
+
+## The means: five ingredients
+
+If digital transformation is the finished dish, these are the ingredients. The recipe varies by firm; the list doesn't.
+
+<Steps items={[
+  { title: 'Organisational capabilities', body: 'Culture, structure and the way decisions are made.' },
+  { title: 'Leadership', body: 'Carries enough weight to stand on its own.' },
+  { title: 'Workforce', body: 'Ability and attitude: two different problems.' },
+  { title: 'Data governance', body: 'Ownership, definitions, access and quality.' },
+  { title: 'Analytics', body: 'The technology. Necessary, and never sufficient.' },
+]} />
+
+### Organisational capabilities
+
+- **Culture** is the broadest and the stickiest. It changes over decades, not quarters.
+- **Structure**: flat and flexible, where you can try an idea and be wrong, or hierarchical and rule-bound, where you can't.
+- **Decision making**: how long a decision takes to climb the hierarchy, and what kind of deciding is habitual.
+
+<div class="callout">
+<p class="callout-title">A predictor of resistance</p>
+
+If your organisation already decides from numbers, people will accept a model's output: it is the same habit. If decisions have always rested on senior judgement, expect a real fight over letting a model decide.
+
+</div>
+
+**Leadership and culture shape each other.** A leader can raise or flatten a culture, and a culture quietly limits what any leader can do. In a diagnosis, don't try to separate them. Ask which is the binding constraint right now.
+
+### Workforce: nothing in it for the user
+
+A retail group moving from one ERP to another found staff resisting. Run the acceptance test honestly. Is the new system useful? Yes, and so was the old one. Easier? Not for people comfortable with the old one. And for the individual: the same transactions, the same approvals, the same invoices.
+
+The organisation gains scale and a supported platform. The user gains nothing and loses a familiar tool. Perceived usefulness, for the individual, is close to zero. That explains the resistance.
+
+<Decide q="Staff can clearly operate the new system but keep finding reasons to use the old spreadsheet. What do they need?" options={[
+  { label: 'More training.', why: 'They already have the ability. Training fixes ability gaps, not attitude gaps.' },
+  { label: 'Change management, and something in it for them.', good: true, why: 'This is an attitude gap. It needs communication, involvement and a real personal benefit: less rework, faster approvals, time saved.' },
+  { label: 'A better system.', why: 'The system isn’t the problem. Any replacement would meet the same resistance.' },
+]} />
+
+<div class="callout trap">
+<p class="callout-title">The most expensive mix-up</p>
+
+**Ability gaps are fixed with training. Attitude gaps are fixed with change management and something in it for the user.** Spending training money on an attitude problem is the commonest waste in this field.
+
+</div>
+
+## Grassroots, big bang, or both
+
+Two real companies got their data architecture wrong in opposite directions.
+
+- **The big bang.** A large bank ran one enormous programme to pull all its data into a central lake, without tying it to any business use. Three years on, very little value.
+- **The grassroots.** Every team built its own pipeline for its own need. Nothing was reusable, and the tangle became expensive to maintain.
+
+Prof. Kumar's kitchen version: the big bang cooks every dish on the menu before anyone orders. The grassroots kiosk chops onions from scratch for each order. A good restaurant makes **one base gravy** in the morning and turns out many dishes from it.
+
+<Fig title="Three ways to organise a firm's data" caption="The hybrid isn't a compromise. It keeps the central model up to the warehouse, then hands each function its own ready-made data.">
+  <Tabs tabs={[
+    { label: 'Grassroots', rows: [
+      ['How it works', 'Each department builds its own pipeline and dashboard from the sources it needs.'],
+      ['Strengths', 'Fast and cheap to build; close to real time; built for its user, so well adopted; easy to debug.'],
+      ['Costs', 'The same data is pulled and cleaned several times; departments report the same number in different units; no single source of truth; hard to govern.'],
+      ['Running it', 'Many people doing the same cleaning work in parallel.'],
+      ['If it fails', 'One pipeline breaks; the others carry on.'],
+    ], note: 'Nobody designs this. It accumulates as each new application wires up its own pipeline.' },
+    { label: 'Monolithic', rows: [
+      ['How it works', 'Everything from every source lands in one place, is transformed once, and feeds all reporting.'],
+      ['Strengths', 'One version of the truth; no duplication; easier governance and security.'],
+      ['Costs', 'Heavy to build, taking months; business users can’t easily help themselves.'],
+      ['Running it', 'A small skilled team maintains the whole thing.'],
+      ['If it fails', 'A single point of failure, and a single attractive target.'],
+    ], note: 'Staged data is accessible but not yet usable: it still has to be structured before anyone can work with it.' },
+    { label: 'Hybrid', rows: [
+      ['How it works', 'Keep the central model up to the warehouse. Then add a layer of data products: one clean, standard data set per function.'],
+      ['Strengths', 'One source of truth and freedom for each function to explore without asking.'],
+      ['Costs', 'The data-product layer has to be built and governed, and few firms build it.'],
+      ['Running it', 'A central team maintains the core; functions use their own data products.'],
+      ['If it fails', 'The data products act as a buffer: users get older data, not no data.'],
+    ], note: 'This is the base gravy: one foundation, many dishes.' },
+  ]} />
+</Fig>
+
+### Data products
+
+A **data product** is a clean, standardised, well-documented data set built for a function and kept ready for use, to the standard of a good public data set. The layer unlocks four things:
+
+- **Self-service without a business case.** A manager can try an analysis without first justifying the cost of preparing data.
+- **Uses nobody has thought of yet.**
+- **Cheaper computing**, because heavy processing happens here and not inside the reporting tool.
+- **Real collaboration.** What departments share is data products, and a model built on several is stronger than any one department could build.
+
+Is data an asset or a product? A product, because it feeds the value-creating activities directly.
+
+## Data governance
+
+Build that layer and questions follow. What rules apply? How is each field defined? Who checks quality? Who may see what, and who may share it? Answer them and you have **data governance**.
+
+<div class="callout trap">
+<p class="callout-title">Governance is not data quality</p>
+
+Ask most firms about governance and they talk about quality. Quality is one part. Governance also covers ownership, definitions, stewardship, classification, access and accountability. India's Digital Personal Data Protection Act is forcing the conversation, as GDPR did in Europe.
+
+</div>
+
+| Term | What it covers |
+|---|---|
+| **Data governance** | Ownership, definitions, quality, access and sharing |
+| **Data security** | Protecting the data itself |
+| **Cyber security** | Protecting systems and applications |
+
+Ungoverned data moving between departments leads to unapproved tools appearing across the business. Governance isn't paperwork laid over the architecture. It is what makes one architecture safer than another.
+
+## What the module left open
+
+Prof. Kumar named three subjects there wasn't time for: data governance in depth, change management for digital programmes, and responsible AI.
+
+The one you'll meet first is change management. Look back at the failures in this module: the card company's overrides, the retail group's resistance, the logistics firm's queue, General Electric's centralised programme. In every one the technology was fine. What failed was a relationship between teams that was never redesigned.
+
+<div class="callout">
+<p class="callout-title">Manager takeaway: four questions before any digital programme</p>
+
+1. **Need:** is this an opportunity outside or a shortcoming inside?
+2. **Way:** are we repairing lost value or building new value with partners?
+3. **Means:** which ingredient is weakest: culture, leadership, people, governance or technology?
+4. **End:** which outcome will move, and how will we measure it?
+
+</div>
