@@ -31,6 +31,7 @@ jobs = [
  ('operational-excellence', page('Operational Excellence', 'Strategy · Process · Inventory · Supply chains · Lean · 200 practice questions', 'Operations', small=True)),
  ('business-decision-making', page('Business Decision Making', 'Risk and uncertainty · Decision trees · Sampling · Hypothesis tests · Regression · 327 practice questions', 'Decision Making', small=True)),
  ('digital-transformation', page('Digital Transformation', 'Outputs vs outcomes · The value chain · Proving it worked · Data products · 130 practice questions', 'Digital', small=True)),
+ ('marketing-management', page('Marketing Management', 'The marketing plan · How buyers decide · Research · Segmentation · Positioning · Brands · 302 practice questions', 'Marketing', small=True)),
  ('macroeconomic-policies', page('Market Economies & Macroeconomic Policies', 'GDP and inflation · How money is made · Demand and supply · Exchange rates · 217 practice questions', 'Macro', small=True)),
 ]
 out = sys.argv[1]

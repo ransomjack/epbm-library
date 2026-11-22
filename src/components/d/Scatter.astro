@@ -1,0 +1,29 @@
+---
+// Perceptual map: two axes crossing at the centre, brands as dots. x and y run from 0 to 1.
+// points: [{ x, y, label, hl?, side?: 'l' }], gap?: { x, y, label }, label?: accessible description
+const { xl, xr, yb, yt, points, gap, label = 'Perceptual map', h = 360 } = Astro.props;
+const W = 640, H = h, P = 30;
+const X = (v) => P + v * (W - 2 * P), Y = (v) => H - P - v * (H - 2 * P);
+const ax = 'fill:var(--muted);font:600 11px var(--sans);letter-spacing:.05em';
+---
+<svg class="pe" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={label}>
+  <line x1={X(0)} y1={Y(0.5)} x2={X(1)} y2={Y(0.5)} style="stroke:var(--line);stroke-width:1.5" />
+  <line x1={X(0.5)} y1={Y(0)} x2={X(0.5)} y2={Y(1)} style="stroke:var(--line);stroke-width:1.5" />
+  <text x={X(0)} y={Y(0.5) - 8} style={ax}>{xl}</text>
+  <text x={X(1)} y={Y(0.5) - 8} text-anchor="end" style={ax}>{xr}</text>
+  <text x={X(0.5) + 8} y={Y(1) + 10} style={ax}>{yt}</text>
+  <text x={X(0.5) + 8} y={Y(0) - 2} style={ax}>{yb}</text>
+  {gap && (
+    <g>
+      <circle cx={X(gap.x)} cy={Y(gap.y)} r="38" style="fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.5;stroke-dasharray:5 4" />
+      <text x={X(gap.x)} y={Y(gap.y) + 4} text-anchor="middle" style="fill:var(--accent);font:600 12px var(--sans)">{gap.label}</text>
+    </g>
+  )}
+  {points.map((p) => (
+    <g>
+      <circle cx={X(p.x)} cy={Y(p.y)} r={p.hl ? 8 : 5.5} style={`fill:${p.hl ? 'var(--accent)' : 'var(--ink)'}`} />
+      <text x={X(p.x) + (p.side === 'l' ? -11 : 11)} y={Y(p.y) + 4} text-anchor={p.side === 'l' ? 'end' : 'start'}
+        style={`fill:${p.hl ? 'var(--accent)' : 'var(--body)'};font:${p.hl ? 600 : 500} 13px var(--sans)`}>{p.label}</text>
+    </g>
+  ))}
+</svg>

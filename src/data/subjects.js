@@ -8,7 +8,13 @@ export const subjects = [
     pdf: '/pdf/global-political-economy-master-notes.pdf',
     og: '/og/global-political-economy.png',
   },
-  { slug: 'marketing-management', color: '#8A3B2E', name: 'Marketing Management' },
+  {
+    slug: 'marketing-management', color: '#8A3B2E',
+    name: 'Marketing Management',
+    blurb: "How to win and keep customers: the marketing plan, how buyers really decide, research, segmentation, positioning and brands.",
+    pdf: '/pdf/marketing-management-master-notes.pdf',
+    og: '/og/marketing-management.png',
+  },
   {
     slug: 'business-decision-making', color: '#3D3A78',
     name: 'Business Decision Making',

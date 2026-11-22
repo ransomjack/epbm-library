@@ -1,0 +1,39 @@
+---
+// Customer lifetime value in three steps: basic, discounted, and with the chance of leaving.
+// Defaults are the class example: Rs. 5,000 a year, 10% margin, 20 years, 10% discount rate, 80% retention, Rs. 1,500 to acquire.
+---
+<div class="calc" data-clv>
+  <div class="calc-in">
+    <label class="ctl"><span>Revenue from the customer each year</span><input type="range" min="1000" max="20000" step="500" value="5000" data-k="rev" /><output data-o="rev"></output></label>
+    <label class="ctl"><span>Profit margin</span><input type="range" min="5" max="40" step="1" value="10" data-k="mg" /><output data-o="mg"></output></label>
+    <label class="ctl"><span>Years in the relationship</span><input type="range" min="1" max="20" step="1" value="20" data-k="n" /><output data-o="n"></output></label>
+    <label class="ctl"><span>Discount rate</span><input type="range" min="5" max="20" step="1" value="10" data-k="i" /><output data-o="i"></output></label>
+    <label class="ctl hl"><span>Retention rate (customers who stay each year)</span><input type="range" min="30" max="95" step="5" value="80" data-k="r" /><output data-o="r"></output></label>
+    <label class="ctl"><span>Cost of acquiring the customer</span><input type="range" min="0" max="5000" step="100" value="1500" data-k="ac" /><output data-o="ac"></output></label>
+    <div class="kv">
+      <div><span>Step 1: revenue × years × margin</span><b data-v="s1"></b></div>
+      <div><span>Step 2: discounted, less acquisition cost</span><b data-v="s2"></b></div>
+    </div>
+  </div>
+  <div class="calc-out"><span>Step 3: customer lifetime value, allowing the customer to leave</span><b data-v="clv"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-clv]').forEach((root) => {
+    const $ = (s) => root.querySelector(s), g = (k) => Number($(`[data-k="${k}"]`).value);
+    const rs = (v) => (v < 0 ? '−' : '') + 'Rs. ' + Math.abs(Math.round(v)).toLocaleString('en-IN');
+    const run = () => {
+      const rev = g('rev'), mg = g('mg') / 100, n = g('n'), i = g('i') / 100, r = g('r') / 100, ac = g('ac');
+      $('[data-o="rev"]').textContent = rev.toLocaleString('en-IN'); $('[data-o="mg"]').textContent = g('mg') + '%';
+      $('[data-o="n"]').textContent = n; $('[data-o="i"]').textContent = g('i') + '%';
+      $('[data-o="r"]').textContent = g('r') + '%'; $('[data-o="ac"]').textContent = ac.toLocaleString('en-IN');
+      const m = rev * mg; let pv = 0, ev = 0;
+      for (let t = 1; t <= n; t++) { const d = m / Math.pow(1 + i, t); pv += d; ev += d * Math.pow(r, t - 1); }
+      const clv = ev - ac;
+      $('[data-v="s1"]').textContent = rs(rev * n * mg);
+      $('[data-v="s2"]').textContent = rs(pv - ac);
+      $('[data-v="clv"]').textContent = rs(clv);
+      $('[data-v="note"]').textContent = clv < 0 ? 'This customer costs more to win than he will ever return.' : clv < ac ? 'Positive, but thin. A little more retention changes the picture.' : 'Worth acquiring: the value is well above the cost of winning the customer.';
+    };
+    root.querySelectorAll('input').forEach((x) => x.addEventListener('input', run)); run();
+  });
+</script>

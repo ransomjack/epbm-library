@@ -1,0 +1,30 @@
+---
+// Product life cycle: sales and profit against time, in four stages.
+const W = 640, H = 300, L = 46, R = 16, T = 34, B = 44;
+const x = (f) => L + f * (W - L - R);
+const y = (v) => H - B - (v + 0.12) / 1.2 * (H - T - B);
+const n = 80, s = [], p = [];
+for (let i = 0; i <= n; i++) {
+  const t = i / n;
+  s.push([t, Math.exp(-Math.pow((t - 0.64) / 0.29, 2))]);
+  p.push([t, 0.6 * Math.exp(-Math.pow((t - 0.5) / 0.22, 2)) - 0.09]);
+}
+const path = (a) => a.map(([u, v], i) => `${i ? 'L' : 'M'}${x(u).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+const cuts = [0.22, 0.46, 0.8];
+const stages = [['Introduction', 0.11], ['Growth', 0.34], ['Maturity', 0.63], ['Decline', 0.9]];
+const lab = 'fill:var(--muted);font:500 12px var(--sans)';
+---
+<svg class="pe" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Product life cycle. Sales rise slowly in introduction, steeply in growth, flatten in maturity and fall in decline. Profit is negative at first and peaks before sales do.">
+  {cuts.map((c) => <line x1={x(c)} y1={T - 6} x2={x(c)} y2={y(-0.12)} style="stroke:var(--line);stroke-dasharray:4 4" />)}
+  {stages.map(([t, f]) => <text x={x(f)} y={T - 12} text-anchor="middle" style="fill:var(--ink);font:600 12px var(--sans)">{t}</text>)}
+  <line x1={x(0)} y1={y(0)} x2={x(1)} y2={y(0)} style="stroke:var(--line)" />
+  <line x1={x(0)} y1={y(-0.12)} x2={x(0)} y2={T - 6} style="stroke:var(--line)" />
+  <path d={path(p)} style="fill:none;stroke:var(--trap);stroke-width:2;stroke-dasharray:6 4" />
+  <path d={path(s)} style="fill:none;stroke:var(--accent);stroke-width:2.6" />
+  <text x={x(0.66)} y={y(1) - 8} text-anchor="middle" style="fill:var(--accent);font:600 13px var(--sans)">Sales</text>
+  <text x={x(0.5)} y={y(0.51) - 8} text-anchor="middle" style="fill:var(--trap);font:600 13px var(--sans)">Profit</text>
+  <circle cx={x(0.44)} cy={y(Math.exp(-Math.pow((0.44 - 0.64) / 0.29, 2)))} r="6" style="fill:var(--bg);stroke:var(--accent);stroke-width:2.5" />
+  <text x={x(0.42)} y={y(0.78)} text-anchor="end" style="fill:var(--ink);font:600 12px var(--sans)">Launch the next</text>
+  <text x={x(0.42)} y={y(0.78) + 15} text-anchor="end" style="fill:var(--ink);font:600 12px var(--sans)">product here</text>
+  <text x={x(0.5)} y={H - 12} text-anchor="middle" style={lab}>Time →</text>
+</svg>

@@ -1,0 +1,20 @@
+---
+// Three-circle positioning framework: customer needs, our offering, the competitor's offering.
+const W = 640, H = 380;
+const c = 'fill-opacity:.16;stroke-width:1.5';
+const t = 'font:600 13px var(--sans)';
+---
+<svg class="pe" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Three overlapping circles: customer needs, the firm's offering and the competitor's offering. A, where all three overlap, holds the points of parity. B, where customer needs overlap only the firm's offering, holds the firm's points of difference. C, where customer needs overlap only the competitor's offering, holds the competitor's points of difference.">
+  <circle cx="320" cy="135" r="112" style={`fill:var(--accent);stroke:var(--accent);${c}`} />
+  <circle cx="243" cy="255" r="112" style={`fill:var(--ink);stroke:var(--ink);${c}`} />
+  <circle cx="397" cy="255" r="112" style={`fill:var(--trap);stroke:var(--trap);${c}`} />
+  <text x="320" y="62" text-anchor="middle" style={`fill:var(--accent);${t}`}>Customer needs</text>
+  <text x="190" y="312" text-anchor="middle" style={`fill:var(--ink);${t}`}>Our offering</text>
+  <text x="438" y="312" text-anchor="middle" style={`fill:var(--trap);${t}`}>Competitor's offering</text>
+  {[['A', 320, 222], ['B', 262, 188], ['C', 378, 188]].map(([k, x, y]) => (
+    <g>
+      <circle cx={x} cy={y} r="14" style={`fill:${k === 'B' ? 'var(--accent)' : 'var(--bg)'};stroke:var(--ink);stroke-width:1.2`} />
+      <text x={x} y={y + 5} text-anchor="middle" style={`fill:${k === 'B' ? 'var(--on-accent)' : 'var(--ink)'};font:700 14px var(--sans)`}>{k}</text>
+    </g>
+  ))}
+</svg>

@@ -1,0 +1,314 @@
+---
+title: "Market Segmentation"
+kicker: "Session 3, part 1"
+order: 8
+source: "Session by Prof. Ritu Mehta · Marketing Management"
+description: "What segmentation is, why it balances effectiveness and efficiency, its bases for consumer and business markets, why to start with value and then profile, and how segments are found by judgement or by cluster analysis. Session 3 of Marketing Management."
+takeaways:
+  - "Segmentation keeps the differences that change buying and drops the ones that do not."
+  - "Start with the value customers seek, then profile who they are. Without the profile you cannot design the 4Ps."
+  - "Business markets are segmented the same way, with firmographics and buying approach in place of demographics and psychographics."
+  - "Cluster analysis groups respondents by the distance between their ratings. Three or four clusters is usual."
+---
+import Cards from '../../components/d/Cards.astro';
+import Decide from '../../components/d/Decide.astro';
+import DistCalc from '../../components/d/DistCalc.astro';
+import Fig from '../../components/d/Fig.astro';
+import Flow from '../../components/d/Flow.astro';
+import Sort from '../../components/d/Sort.astro';
+import Steps from '../../components/d/Steps.astro';
+
+Session 3 covered the first two letters of STP. This chapter is about segmentation: what it is, why it improves both effectiveness and efficiency, the bases on which a market can be divided, why a good approach starts with what customers value and then profiles who they are, and how segments are actually found. Targeting follows in the next chapter.
+
+## The framework, revisited
+
+The class opened with a recap of the previous session, which had discussed the ways a company can grow: penetrating its existing market, developing new products, developing new markets, or diversifying. That framework, the <strong>Ansoff matrix</strong>, is taught in [Growth options: the Ansoff matrix](/marketing-management/launching-and-growing/#growth-options-the-ansoff-matrix); it came back at the end of this class and is applied in [Applying the Ansoff matrix](/marketing-management/targeting-and-growth/#applying-the-ansoff-matrix).
+
+Then the professor sent the class back to the on-campus session. If you had to build a marketing plan, what would it involve? One participant offered the 4Ps; another the 5Cs. Both right, but incomplete: what was missing was <strong>STP</strong>, the subject of the day.
+
+<div class="callout">
+<p class="callout-title">The full framework, in one line</p>
+
+Use the <strong>5Cs</strong> (customers, company, competitors, collaborators, and context through PESTLE) to analyse; decide <strong>STP</strong>: segment the market, choose the target, decide the positioning; then design the <strong>4Ps</strong>. There is no fixed order within the 4Ps: they go hand in hand, because a decision on one affects the others. In marketing, collaborators usually means your channel partners.
+
+</div>
+
+The professor added that the 5Cs is generic enough to support every one of these decisions, even choosing how to segment. Looking at how competitors segment, and at your own strengths and weaknesses, is part of the job.
+
+<strong>On a manager's desk.</strong> Everything downstream depends on getting STP right, which is why this session spent so long on it. A product company that skips segmentation ends up with a mix that tries to please everyone. A service firm that skips it ends up with one proposal template for a 50-bed clinic and a 500-bed hospital.
+
+## What segmentation is
+
+Participants described segmentation as grouping customers on common factors: demographics, purchase patterns, behaviour, preferences, even "personas". The slide gave the formal version.
+
+<div class="callout">
+<p class="callout-title">Segmentation (the slide)</p>
+
+Dividing the market into groups of actual and/or potential customers so that each group is relatively <strong>homogeneous</strong>, similar inside, with respect to its characteristics, needs, evaluations or behaviours. The groups are called <strong>market segments</strong>.
+
+</div>
+
+Two words in the definition matter. <strong>Potential</strong>: you segment the whole possible market, not just today's buyers. <strong>Homogeneous</strong>: people inside a segment should be alike in the ways that matter for buying, and different from people in other segments. If two segments behave the same, they are really one.
+
+<strong>On a manager's desk.</strong> A segment is defined by what drives buying, not by what is easy to count. A product company that segments shampoo buyers by pin code may learn little; one that segments by hair concern learns a lot. A service firm should ask the same question of its client list: do these clients buy differently, or do they merely look different?
+
+## Why segment: effectiveness and efficiency
+
+The professor used the class itself as the market. There were about 65 participants online. A marketer who designed 65 different strategies (one for each person) would be <strong>most effective</strong>: everyone would get exactly what they want. It would also be ruinously <strong>expensive</strong>. At the other extreme, one strategy for all 65 is cheap, but fits nobody well.
+
+Segmentation sits between the two. It looks for the differences that actually change preferences and purchase behaviour, keeps those, and throws away the <strong>redundant differences</strong> that do not. Instead of 65 strategies you might design 6. You give up a little effectiveness, but the cost-benefit balance is far better.
+
+<Fig title="Effectiveness against efficiency" caption="Segmentation trades a little effectiveness for a large gain in efficiency.">
+  <Cards min={200} items={[
+    { title: "One strategy for all", body: "Mass marketing.", foot: "Cheapest, but fits nobody well" },
+    { title: "A few strategies", body: "Segmentation: say, 6 segments. Drop the differences that do not change buying; keep those that do.", foot: "The best balance", hl: true },
+    { title: "One strategy per customer", body: "65 strategies for 65 participants.", foot: "Most effective, and far too expensive" },
+  ]} />
+</Fig>
+
+Her example: an air conditioner maker could segment by gender and offer pink and orange units for women, blue and purple for men. Is gender meaningful for air conditioners? Probably not. Room size and how often the unit is used are. So you drop gender and keep two strategies: bigger rooms versus smaller ones, heavy users versus light users.
+
+| Segmentation optimises... | How (from the slide) |
+|---|---|
+| Marketing <strong>effectiveness</strong> | A more targeted marketing mix, by identifying key differences among customers; increased customer satisfaction; higher customer lifetime value (CLV) |
+| Cost <strong>efficiency</strong> | Doing away with irrelevant differences, to create a single offering for all customers within each segment |
+
+<div class="callout trap">
+<p class="callout-title">Segmentation is not about making more groups</p>
+
+More segments are not better segments. Every extra segment costs a separate mix. A difference earns a segment only if it changes what customers want or how they buy. Gender splits for air conditioners fail that test; room size passes it.
+
+</div>
+
+<strong>On a manager's desk.</strong> Test every segmentation variable with one question: would customers on either side of this line buy differently? A product company that cannot answer yes should drop the variable. A service firm should do the same with its client tiers: if gold and silver clients receive the same service, the tiers are only labels.
+
+<Decide q="An air-conditioner maker plans pink and orange units for women and blue and purple ones for men. Is this good segmentation?" options={[
+  { label: "Yes. Gender is always a useful basis.", why: "A difference earns a segment only if it changes what customers want or how they buy." },
+  { label: "No. Gender does not change what a buyer needs from an air conditioner. Room size and usage do.", good: true, why: "Drop gender; keep bigger rooms against smaller ones, heavy users against light ones." },
+]} />
+
+## The bases of segmentation
+
+Participants listed variables (geography, age, gender, income, behaviour, psychographics, values) and the professor grouped them. Broadly there are five bases, which the slide arranges as one value-based base and four profile-based ones.
+
+| Base | What it asks | Variables (from the slide) |
+|---|---|---|
+| Value-based (need- or benefit-based) | What value or benefit does the customer seek from this category? | Whitening, sensitivity relief, cavity protection, fresh breath (for toothpaste) |
+| Geographic | Where does the customer live? | Region, country, urban or rural |
+| Demographic (socio-demographic) | Who is the customer, in visible terms? | Age, gender, income, education, and ethnicity and the like: a huge bucket |
+| Psychographic | What is the customer like as a person? | Lifestyle and personality: style-conscious, risk-taker, fun-loving; attitudes, opinions, interests |
+| Behavioural | How does the customer behave in this category? | User status (user or non-user), usage rate, channel usage, loyalty status |
+
+### Psychographics versus behaviour
+
+The two are closely related but not the same. <strong>Psychographics</strong> describe a person's broad lifestyle: a party-goer, someone with a very simple life, an adventure seeker. <strong>Behaviour</strong> is narrower: how the person acts <em>within this product category</em>. For toothpaste: does she brush once or twice a day? Is she loyal to a brand or does she switch?
+
+Behaviour can change how attractive a segment looks. The sensitive-teeth segment may be small in number, but if its members brush twice a day without fail, its consumption can be high.
+
+<strong>On a manager's desk.</strong> Know which kind of variable you are using. A product company segmenting sports drinks by lifestyle (adventure seekers) will design different ads from one segmenting by usage (daily gym-goers). A service firm segmenting clients by behaviour (frequency of incidents, renewal history) is using data it already owns.
+
+<Sort title="Try it: which base of segmentation?" choices={["Value-based", "Geographic", "Demographic", "Psychographic", "Behavioural"]} items={[
+  { text: "People who want whiter teeth.", answer: "Value-based", why: "The benefit sought from the category." },
+  { text: "Households in rural Bihar.", answer: "Geographic", why: "Where the customer lives." },
+  { text: "Women aged 25 to 35.", answer: "Demographic", why: "Who the customer is, in visible terms." },
+  { text: "Adventure seekers.", answer: "Psychographic", why: "A lifestyle, not an age." },
+  { text: "People who brush twice a day and never switch brands.", answer: "Behavioural", why: "Usage rate and loyalty within this category." },
+  { text: "Families earning over Rs. 20 lakh a year.", answer: "Demographic", why: "Income is a demographic variable." },
+  { text: "People who have never used the category.", answer: "Behavioural", why: "User status: user or non-user." },
+]} />
+
+## Where to start: value first, then profile
+
+Faced with five bases, where should a marketer begin? Not with all of them at once: that creates a mess of overlapping variables. One participant suggested starting with value, because marketing is about creating customer value. The professor agreed: <strong>a good starting point is value-based segmentation</strong> (what different customers want from the category) and then bring in the other variables.
+
+### Working it through: toothpaste
+
+Look at a toothpaste shelf and you can see value-based segmentation in action. Colgate sells a whitening variant for people who want whiter teeth, a sensitive variant for people with sensitive teeth, an anti-cavity variant that parents of young children choose, and gels for fresh breath. Each is a need, and each need is a segment. A participant added one more: some people simply want everything in one tube.
+
+What next? A participant answered well: find the <strong>size</strong> of each segment and the level of <strong>competition</strong> in it. A large, crowded segment such as fresh breath may be a bad place for a new player to get lost; a smaller, less crowded one such as whitening may be a better place to start. Then study what competitors offer there and whether it truly meets the need: that gap is where you differentiate.
+
+And then the step most people skip. Knowing the need is not enough to design the 4Ps. Where will you sell? Whom will you show in the ad? Which media will you use? At what price? You cannot answer any of this until you know <strong>who</strong> is in the segment. So after the value-based cut, you <strong>profile</strong> the segment with the other variables: age, income, gender, where they live, lifestyle, usage. The result is a <strong>persona</strong>.
+
+<Fig title="Value first, then profile" caption="Start with needs, size them, profile them, and only then design the 4Ps.">
+  <Flow items={[
+    { t: "1. Needs", s: "What do customers want from the category? Whitening, sensitivity, cavity protection, fresh breath." },
+    { t: "2. Size it", s: "How big is each need, how much do its buyers use, how much competition is there?" },
+    { t: "3. Profile it", s: "Who are they? Age, income, gender, where they live, lifestyle, usage: the persona." },
+    { t: "4. Decide the 4Ps", s: "Now product, price, place and promotion can be designed for a real person.", hl: true },
+  ]} />
+</Fig>
+
+A participant from fashion retail described exactly this: when her company launches a brand, it defines the customer to the level of a persona (a woman of 20 to 25, how she shops, how she lives, how much she spends, which brands she compares). The professor's point: if the fresh-breath segment turns out to be young people, digital media may suit; if it is older customers, traditional mass media. If both men and women want it, the ad shows both. Income sets the price points. The profile turns the segment into decisions.
+
+<div class="callout trap">
+<p class="callout-title">Promotion is not "placement"</p>
+
+When asked what decisions promotion involves, a participant said "placement of the product". The professor corrected it: product placement is a very small part. Promotion is mainly <strong>advertising and sales promotion</strong>: how much to spend, on digital versus mass media, in which language, in which magazines, and whom to show in the ad. All of these depend on the profile.
+
+</div>
+
+### Does the product come before STP?
+
+A participant asked: shouldn't all this have been thought through when the product was developed? Yes, which is why the <strong>product follows STP</strong>. Many companies make the mistake of designing a technically advanced product first and only then asking who will buy it; that is when products fail. The professor recalled the Ford car from the campus session ([Everything must line up: Apple and Samsung](/marketing-management/the-marketing-plan/#everything-must-line-up-apple-and-samsung)). As in Session 0, the broad category (toothpaste rather than toothbrushes) is a top-management decision; the marketing manager's product decisions are the specific features, colours and flavours, made after the target is clear.
+
+<strong>On a manager's desk.</strong> Write the persona before the brief. A product team should be able to describe the target customer in a paragraph (age, income, habits, where she shops) before anyone briefs an agency. A service team selling into plants should be able to name who signs, who uses, and what each of them worries about, before writing the proposal.
+
+## What marketers actually use, and why
+
+Value-based segmentation is the recommended starting point, but in practice marketers lean heavily on <strong>demographics</strong> and <strong>behaviour</strong>. The professor explained why.
+
+| Base | Why it is popular, or not | Example |
+|---|---|---|
+| Demographics | Easily visible. A shopkeeper can see who buys sensitive toothpaste; a store can see the age group walking in. | Retail staff observing who shops in the store |
+| Behaviour | Firms now sit on data. Managers have plenty of it. | Ride-hailing apps segment by when you last booked, how often, how often you cancel |
+| Value-based | Strongly linked to what really drives buying, but needs research, often starting with qualitative work on motivations and unmet needs. | Used less, because it costs effort |
+| Category-specific choices | Some categories have a natural variable. | Toys by age (motor skills for toddlers, then other skills); life insurance plans by age |
+
+Even natural variables can be questioned. The professor noted that the US retailer Target decided to stop using gender in its toy aisles and moved to gender-neutral aisles.
+
+<div class="callout">
+<p class="callout-title">The rule of thumb</p>
+
+Data availability and the product category both influence which variables are used. But as a generic approach: begin with value-based segmentation, then bring in profile variables so that the segment can be described well enough to design the 4Ps.
+
+</div>
+
+<strong>On a manager's desk.</strong> Use the data you have, but do not let it choose your segments for you. A product company with rich purchase data will be tempted to segment only by behaviour and miss why people buy. A service company with a ticketing system knows how often each client raises incidents, but only conversations reveal what each client values.
+
+## Segmenting business markets
+
+For those in B2B marketing, the professor's message was that things are not very different. The same bases apply, with business versions of each.
+
+| Base | Variables for business markets (from the slide) | Consumer-market parallel |
+|---|---|---|
+| Geographic | Country, region, city, urban or rural | Geographic |
+| "Firmographics" | Industry, firm size, global or regional, ownership | Demographics |
+| Buying approach | Centralised or decentralised purchase, purchase policies, involvement of decision makers | Close to psychographics |
+| Behavioural | Volume, purchase frequency, attitude to risk, loyalty, urgency | Behavioural |
+| Benefits sought | Price, product quality, service, relationship | Value-based |
+
+### A B2B example from the slides
+
+In 2000 Hillrom, a maker of healthcare equipment, segmented hospitals by size (the number of staffed beds) on the logic that bigger hospitals spend more. In 2001 a new CEO commissioned a study of how customers actually bought. It found eight segments, grouped for ease of implementation into two: <strong>key</strong> and <strong>prime</strong> customers. Facility size no longer drove anything: 50-bed and 250-bed facilities sat in the same segment.
+
+|   | Key customers | Prime customers |
+|---|---|---|
+| Primary decision maker | Nurses | Administrators |
+| Purchase drivers | Patient satisfaction, physician requirements, return on investment | Necessity, low maintenance costs, low risk and liability |
+| Deciding factors on brand | Performance, patient outcomes and safety, caregiver safety | Reliability, ease of use, price |
+| Product preferences | High-end to moderate; systems; shorter replacement cycle (about 40% sooner) | Moderate to low-end; stand-alone; longer replacement cycle |
+| Required response | Shorter service response; longer shipment lead time acceptable | Longer service response acceptable; shorter shipment lead time |
+
+The company had been selling to both groups in the same way. Its cost of sales to prime customers was four to five times higher than to key customers, because the sales force kept pushing a level of service and innovation that prime customers neither valued nor could afford. After restructuring the sales force around the two segments, customer satisfaction improved significantly within two years, revenue per employee rose 11% and operating income per employee rose 51%.
+
+<strong>On a manager's desk.</strong> The obvious variable is often the wrong one. A product firm selling to hospitals by bed count, or to factories by plant size, may be grouping customers who buy for completely different reasons. A security service provider might find that a small plant run by a safety-obsessed engineer behaves like a large one, and that segmenting by what clients value, then aligning the sales effort, cuts the cost of selling as Hillrom's did.
+
+<Sort title="Try it: which base for a business market?" choices={["Firmographics", "Buying approach", "Behavioural", "Benefits sought"]} items={[
+  { text: "Industry and number of employees.", answer: "Firmographics", why: "The business version of demographics." },
+  { text: "Purchasing is centralised at head office.", answer: "Buying approach", why: "How the firm buys." },
+  { text: "Orders every week, in large volumes.", answer: "Behavioural", why: "Volume and purchase frequency." },
+  { text: "Wants the lowest price above all.", answer: "Benefits sought", why: "The business version of value-based segmentation." },
+  { text: "Wants training and documentation.", answer: "Benefits sought", why: "A service-seeking segment." },
+  { text: "Family-owned or listed.", answer: "Firmographics", why: "Ownership is a firmographic variable." },
+]} />
+
+## How to segment: judgement or cluster analysis
+
+The slide named two methodological approaches: <strong>qualitative or judgemental</strong>, and <strong>quantitative</strong> (chiefly <strong>cluster analysis</strong>). The professor stressed that every marketing decision can be supported by research and data analysis, and gave a brief tour of cluster analysis. The class did not go into the mathematics, but managers should know it exists and what it does.
+
+### The judgemental route
+
+A participant from a start-up asked how to segment quickly without a survey. The answer: go to people with experience (the sales team and front-line staff who talk to customers, an experienced manager, dealers and channel partners, consultants) through interviews or focus group discussions. Demographic segmentation is often done this way, because the variables are visible.
+
+### The quantitative route: cluster analysis, step by step
+
+<strong>Step 1: choose the variables.</strong> For value-based segmentation, list the values customers seek. The class did this for a hypermarket: availability of brands and variety of products, price points, layout (ease of movement), merchandising, clear signage, quick checkout, play areas for children, sales assistance. Each must be clearly defined, because respondents will rate it. Someone suggested proximity: important, but left out, because a marketing manager cannot change the store's location. Stores differ on these by design: a low-price chain may not stock frozen or organic food at all, while a service-led chain offers more variety and ambience and charges a little more for it, and customers who value the service pay.
+
+<strong>Step 2: collect ratings.</strong> Ask customers how important each variable is to them, usually on a 1-to-5 or 1-to-7 scale. Robust results typically need at least 100 respondents, and around 200 when there are many variables. Collect demographics too, so the clusters can be profiled afterwards.
+
+<strong>Step 3 (measure similarity.</strong> The algorithm calculates the distance between every pair of respondents using <strong>Euclidean distance</strong>) the straight-line distance from school geometry. For two respondents, take the difference on each variable, square it, add the squares, and take the square root. A small distance means similar priorities.
+
+<Fig title="Three respondents and the distances between them" caption="Ratings from 1 to 7 for availability of brands, price points and layout. R2 and R3 are the most alike, so they join first.">
+  <Cards min={190} items={[
+    { title: "R1 and R2", body: "(6, 6, 5) and (7, 7, 4)", foot: "√(1 + 1 + 1) = 1.73" },
+    { title: "R2 and R3", body: "(7, 7, 4) and (7, 7, 5)", foot: "√(0 + 0 + 1) = 1.00, the closest pair", hl: true },
+    { title: "R1 and R3", body: "(6, 6, 5) and (7, 7, 5)", foot: "√(1 + 1 + 0) = 1.41" },
+  ]} />
+</Fig>
+
+<Fig title="Try it: how far apart are two shoppers?" caption="The sliders start at R1 and R3. Make the two shoppers identical, then as different as you can.">
+  <DistCalc />
+</Fig>
+
+In the class's three-respondent example, R2 and R3 were closest (a distance of 1), so they would combine into one cluster first. <strong>Hierarchical clustering</strong> starts with every respondent as its own cluster and keeps merging the closest ones, step by step.
+
+<strong>K-means clustering</strong> works the other way: the marketer chooses <strong>k</strong>, the number of clusters wanted. The algorithm places k random starting points (centroids), assigns each respondent to the nearest one, recalculates each centroid as the average of its members, reassigns anyone now closer to the other centroid, and repeats until nothing moves.
+
+<Fig title="K-means with k = 2" caption="Each point is a customer rated on two values, say the importance of price and of quality.">
+  <Steps items={[
+    { title: "Pick k = 2 random centroids", body: "Two starting points are dropped onto the map." },
+    { title: "Assign each customer to the nearest centroid", body: "Every point joins the cluster whose centre is closest." },
+    { title: "Recompute the centroids, and repeat", body: "Each centre moves to the average of its members. Reassign, recompute, and stop when nothing moves." },
+  ]} />
+</Fig>
+
+<strong>Step 4: label and size the clusters.</strong> The output gives each cluster's average rating on every variable and its size (say 100, 60 and 40 out of 200). The marketer names each cluster by what stands out: a product-and-brand-availability cluster, a time-sensitive cluster that wants to get out fast (quick billing, easy layout), a price cluster, perhaps a demanding cluster that wants everything. Then the demographic data profiles each one: are the time-sensitive shoppers working parents? high-income?
+
+<div class="callout">
+<p class="callout-title">Practical points from class</p>
+
+<strong>How many clusters?</strong> Usually 3 or 4. Beyond 5, segments get small and strategies too many to be efficient. Good-better-best (3) is a common structure.
+
+<strong>No overlaps.</strong> A participant asked if a customer can be in two clusters. No: if that happens, the exercise has not been done well.
+
+<strong>Software.</strong> Not Excel. SPSS is user-friendly; R is open source; Stata and others also work. Tutorials are easy to find.
+
+</div>
+
+<strong>On a manager's desk.</strong> You do not have to run cluster analysis yourself, but you should know when to ask for it. A product company with survey data on what shoppers value can find natural segments instead of guessing. A service company with a few hundred clients can cluster them on what they rate as important (response time, reporting, price, expertise) and design three service tiers around the clusters that emerge.
+
+<Decide q="After a cluster analysis, one customer turns up in two clusters. What do you conclude?" options={[
+  { label: "He is a valuable customer with wide tastes.", why: "Segments are meant to be distinct. A customer cannot be in two." },
+  { label: "The exercise has not been done well, and needs to be redone.", good: true, why: "No overlaps. Three or four clear clusters is the usual result." },
+]} />
+
+## Reading a preference-based segmentation
+
+The slide showed the output of a value-based cluster analysis for a B2B firm. Customers rated seven variables: technical documentation, training, product variety, supplier quality, customised products, delivery time and price. Three clusters emerged.
+
+<Fig title="Three segments, read as deviations from the average customer" caption="Per cent above or below the average rating of all respondents (0 = average). Approximate values read from the class slide.">
+
+| Variable | Price segment (A) | Product segment (B) | Service segment (C) |
+|---|---|---|---|
+| Technical documentation | −11 | −1 | **+26** |
+| Training | −7 | −11 | **+10** |
+| Product variety | −30 | **+30** | +3 |
+| Supplier quality | −2 | **+23** | −11 |
+| Customised products | −9 | **+23** | −8 |
+| Delivery time | **+16** | −18 | −2 |
+| Price | **+24** | −15 | −9 |
+
+</Fig>
+
+<strong>How to read it.</strong> The 0% line is the average of all respondents on each variable, rescaled to zero. A bar to the right means that segment rates the variable as more important than the average customer does; a bar to the left, less important. (Sometimes the scale is in standard deviations instead of percentages.) All customers carry equal weight: this is a survey of importance, not of spend.
+
+| Segment | Cares more than average about | Cares less than average about | What to offer |
+|---|---|---|---|
+| Price segment (A) | Price, delivery time | Product variety, technical documentation | A lean, fast, low-cost offer |
+| Product segment (B) | Product variety, supplier quality, customised products | Delivery time, price | Range, quality and customisation |
+| Service segment (C) | Technical documentation, training | Supplier quality, price | Support, training and documentation |
+
+<div class="callout trap">
+<p class="callout-title">A short bar near zero is not a finding</p>
+
+The product segment's bar for technical documentation is slightly negative, but so small it is probably not significant. Read the big deviations, not the small ones.
+
+</div>
+
+<strong>On a manager's desk.</strong> One chart like this can redesign a sales approach. A product supplier learns that one-third of its customers would trade variety for a lower price and faster delivery. A service provider learns which clients want training and documentation, and stops giving it free to clients who do not value it.
+
+<Decide q="In the table above, the service segment's figure for technical documentation is +26. What does it mean?" options={[
+  { label: "The segment spends 26% more on documentation.", why: "This is a survey of importance, not of spending." },
+  { label: "The segment rates documentation as more important than the average customer does.", good: true, why: "Zero is the average of all respondents. A positive figure means more important than average." },
+  { label: "26% of the segment wants documentation.", why: "It is a deviation from the average rating, not a share of people." },
+]} />

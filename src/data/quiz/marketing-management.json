@@ -1,0 +1,3664 @@
+{
+ "title": "Marketing Management",
+ "sections": [
+  {
+   "name": "Orientation class: The marketing mindset",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "According to Samsung's US marketing chief, what was Samsung's smartphone problem in 2011?",
+     "options": [
+      "Its phones were technically weaker than the iPhone and reviewers said so",
+      "Its phones were priced far above the iPhone, so few people tried them",
+      "People knew Samsung for televisions but did not recognise it in smartphones",
+      "It had no retail distribution for phones anywhere in the United States"
+     ],
+     "answer": 2,
+     "why": "It was a branding problem: no recognition of what the phones were or stood for."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Advertising that openly mocks the market leader, like Samsung's \"Next Big Thing\", is most typical of:",
+     "options": [
+      "A market leader defending its share",
+      "A challenger trying to grab attention",
+      "A brand in the decline stage clearing stock",
+      "A monopoly with no rivals"
+     ],
+     "answer": 1,
+     "why": "Challengers borrow the leader's fame; leaders rarely give rivals free publicity."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A firm starts from the factory, focuses on existing products, relies on selling and promotion, and aims for profit through volume. It follows the:",
+     "options": [
+      "Production concept",
+      "Marketing concept",
+      "Selling concept",
+      "Societal marketing concept"
+     ],
+     "answer": 2,
+     "why": "Factory, existing products, push, volume: the selling arrow in Figure 0.1."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Drucker's view of selling and marketing is best captured by:",
+     "options": [
+      "Marketing aims to make selling superfluous, though some selling will always be needed",
+      "Good salesmanship makes marketing unnecessary, since a strong sales force can sell anything",
+      "Selling and marketing are two names for the same activity, done by the same people",
+      "Marketing should replace the sales force entirely, so that no selling is ever needed"
+     ],
+     "answer": 0,
+     "why": "Know the customer so well that the product sells itself, but some selling remains."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Compared with the AMA's 2004 definition, the 2007 definition:",
+     "options": [
+      "Removes customers from the definition",
+      "Limits marketing to advertising and promotion",
+      "Returns to the flow of goods from producer to consumer",
+      "Describes marketing as an activity and names society at large"
+     ],
+     "answer": 3,
+     "why": "Function became activity; exchanging offerings and society at large were added."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the AMA definition, \"delivering\" offerings corresponds most closely to which P?",
+     "options": [
+      "Place",
+      "Product",
+      "Price",
+      "Promotion"
+     ],
+     "answer": 0,
+     "why": "Creating = product, communicating = promotion, delivering = place, exchanging value = price."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The earliest official definitions of marketing focused mainly on the flow of goods from producers to consumers. In 4P terms this is chiefly:",
+     "options": [
+      "Product",
+      "Place",
+      "Price",
+      "Promotion"
+     ],
+     "answer": 1,
+     "why": "Moving goods to where customers are is distribution: Place."
+    },
+    {
+     "tag": "MCQ",
+     "q": "When pricing a new smartphone, the class agreed that demand:",
+     "options": [
+      "Should be estimated first from market data, and the price then set to match it",
+      "Is irrelevant for a new brand, which has no customers whose demand can be measured",
+      "Is fixed by competitors' prices, so the new brand's own price cannot change it",
+      "Changes with the price; the task is to find the price threshold customers will accept"
+     ],
+     "answer": 3,
+     "why": "Price and demand move together; study competitors, the USP and willingness to pay to find the threshold."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Mercedes-Benz India's \"Retail of the Future\" model changed which P most directly?",
+     "options": [
+      "Product",
+      "Promotion",
+      "Place",
+      "Positioning"
+     ],
+     "answer": 2,
+     "why": "It changed the channel (direct sales with dealers as franchise partners) which in turn affected price."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A mother buys a breakfast cereal that her eight-year-old eats. In marketing terms:",
+     "options": [
+      "The mother is the customer and the child the consumer",
+      "Both are consumers",
+      "The mother is the consumer and the child the customer",
+      "Neither is a customer, since the child pays nothing"
+     ],
+     "answer": 0,
+     "why": "The customer buys; the consumer uses."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A distributor who must be offered enough margin to stock your product belongs to which of the 5Cs?",
+     "options": [
+      "Customers",
+      "Company",
+      "Competitors",
+      "Collaborators"
+     ],
+     "answer": 3,
+     "why": "Collaborators are those who can help you, and must be motivated to."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Should we launch a premium phone while the economy is slowing?\" is a question about which C?",
+     "options": [
+      "Company",
+      "Context",
+      "Competitors",
+      "Customers"
+     ],
+     "answer": 1,
+     "why": "The state of the economy is part of the macro context, the E in PESTLE."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The cost of adding a feature, and what customers will pay for it, places \"features\" in:",
+     "options": [
+      "Company only",
+      "Customers only",
+      "Both company and customers",
+      "Competitors only"
+     ],
+     "answer": 2,
+     "why": "Cost to provide is a company question; willingness to pay is a customer question."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Moving from pricing a smartphone to pricing a breakfast cereal, the class concluded that:",
+     "options": [
+      "The same framework applies, with different emphasis (perishability, seasonality, health trends)",
+      "An entirely new framework is needed, because food is bought differently from phones",
+      "Only costs matter for a cereal, since buyers of food products compare nothing else",
+      "PESTLE does not apply to food products, though the other four Cs still do"
+     ],
+     "answer": 0,
+     "why": "Frameworks are generic; you change the weights, not the framework."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of the following is a marketing decision rather than an activity?",
+     "options": [
+      "Conducting an analysis of competitors' prices",
+      "Choosing which distributor to appoint in a new state",
+      "Tracking the revenue of each region every month",
+      "Doing market research among target customers"
+     ],
+     "answer": 1,
+     "why": "Research, analysis and tracking feed decisions; appointing a distributor is the decision."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A participant listed \"market selection\" under Place. The correct home is:",
+     "options": [
+      "Place, because it concerns geography",
+      "Promotion",
+      "Product",
+      "Targeting, within STP"
+     ],
+     "answer": 3,
+     "why": "Place means channels; choosing which market to serve is targeting."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Packaging decisions belong to which P, as taught in class?",
+     "options": [
+      "Price",
+      "Place",
+      "Product",
+      "Promotion"
+     ],
+     "answer": 2,
+     "why": "Packaging is part of the product (some argue for a fifth P, but not in this module)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "STP should generally precede the 4Ps because:",
+     "options": [
+      "The 4Ps are costlier to change than STP, so they are fixed last",
+      "STP is strategic and long-term; the 4Ps are tactics that must serve it",
+      "The 4Ps are set by finance, and STP by the marketing team",
+      "STP is easier to change than price, so it is tried first"
+     ],
+     "answer": 1,
+     "why": "Segment and position first; then design the mix to deliver them."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Changing an established brand's image is called repositioning. The class view was that it is:",
+     "options": [
+      "Very risky, costly and often unsuccessful",
+      "Quick and cheap with a new ad campaign",
+      "Necessary every year",
+      "Only relevant to luxury brands"
+     ],
+     "answer": 0,
+     "why": "Once an image forms in customers' minds it is hard to move: Maruti's Jimny was the example."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Apple sells through few, controlled outlets; Samsung sells almost everywhere. This shows that:",
+     "options": [
+      "Apple's narrow distribution is a mistake that costs it sales",
+      "Samsung's wide distribution is a mistake that hurts its image",
+      "Each firm's Place follows from its own target and positioning",
+      "Distribution is chosen for cost reasons, not for positioning"
+     ],
+     "answer": 2,
+     "why": "No right or wrong: each mix is aligned to its STP."
+    },
+    {
+     "tag": "MCQ",
+     "q": "How can you find out what positioning a company intends for its brand?",
+     "options": [
+      "From how newspapers and television describe the brand",
+      "From the company's share price and annual report",
+      "From what competitors say about it in their own ads",
+      "From its own communication: what its ads say about the brand"
+     ],
+     "answer": 3,
+     "why": "Intended positioning shows in the company's own communication; actual positioning lives in customers' minds."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Tata's own launch ads for the Nano stressed that it was spacious and robust. It still came to be seen as the \"cheapest car\" mainly because:",
+     "options": [
+      "Tata's own advertising promised the lowest price in the world",
+      "Huge media attention to its record-low price fixed that image",
+      "Competitors ran comparative ads calling it a poor man's car",
+      "Dealers promoted it locally as the cheapest car one could buy"
+     ],
+     "answer": 1,
+     "why": "The media, not the company, fixed the image, and in India a car is aspirational."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Allotting the first Nanos by lottery hurt the brand because:",
+     "options": [
+      "Many cars went to people who already owned bigger cars, who compared it unfavourably",
+      "A lottery is not a legal way to sell cars, and the bookings had to be cancelled",
+      "The lottery pushed the on-road price well above the promised Rs. 1 lakh",
+      "The lottery delayed deliveries by several years, by which time rivals had caught up"
+     ],
+     "answer": 0,
+     "why": "The intended buyer was a first-time car owner; existing owners spread negative word of mouth."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In case analysis, which of the following should you NOT do?",
+     "options": [
+      "State the problem before proposing solutions",
+      "List alternatives with pros and cons",
+      "Support the recommendation with the case's numbers",
+      "Use what the company did after the case date to support your answer"
+     ],
+     "answer": 3,
+     "why": "Restrict yourself to the information given in the case."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Coca-Cola launched Coke Zero alongside Diet Coke mainly to:",
+     "options": [
+      "Offer a completely different health benefit",
+      "Replace Diet Coke, which was failing",
+      "Reach men, who avoided Diet Coke's feminine image",
+      "Lower prices in the cola market"
+     ],
+     "answer": 2,
+     "why": "Similar benefits, different image: worth the cannibalisation to reach a new segment."
+    },
+    {
+     "tag": "MCQ",
+     "q": "According to the professor, the best time for a market leader like Axe to launch a new product or segment is:",
+     "options": [
+      "When sales begin to plateau, or before, while still growing",
+      "In the introduction stage, before awareness is built",
+      "Only after sales start to decline",
+      "Never; leaders should defend their one brand"
+     ],
+     "answer": 0,
+     "why": "Act from strength, before the challenger arrives at maturity."
+    },
+    {
+     "tag": "MCQ",
+     "q": "For an expert business (B2B) buyer, the value that usually matters most is:",
+     "options": [
+      "Psychological value",
+      "Economic value",
+      "Brand image",
+      "Status"
+     ],
+     "answer": 1,
+     "why": "B2B buyers are knowledgeable; economics comes first, then function."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Annual customer revenue Rs. 5,000, 20 loyal years, profit margin 10%, ignoring the discount rate. CLV is:",
+     "options": [
+      "Rs. 1,00,000",
+      "Rs. 500",
+      "Rs. 10,000",
+      "Rs. 50,000"
+     ],
+     "answer": 2,
+     "why": "5,000 × 20 × 10% = 10,000. Forgetting the margin gives the 1,00,000 trap."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A friend promises you Rs. 121 two years from now. At a 10% discount rate it is worth today:",
+     "options": [
+      "Rs. 121",
+      "Rs. 110",
+      "Rs. 99",
+      "Rs. 100"
+     ],
+     "answer": 3,
+     "why": "121 / (1.1 × 1.1) = 100."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A firm's retention rate is 80%. The churn rate, and the chance a new customer is still with the firm in year 3, are:",
+     "options": [
+      "80% and 0.512",
+      "20% and 0.64",
+      "20% and 0.512",
+      "80% and 0.64"
+     ],
+     "answer": 1,
+     "why": "Churn = 1 - r = 20%; survival in year 3 = r^(3-1) = 0.8 × 0.8 = 0.64."
+    },
+    {
+     "tag": "MCQ",
+     "q": "CLV is called the NET present value of future profits because:",
+     "options": [
+      "Taxes are deducted from each year's profit",
+      "Only net revenue after returns is counted",
+      "Competitors' profits are subtracted",
+      "The acquisition cost of the customer is subtracted"
+     ],
+     "answer": 3,
+     "why": "CLV = discounted future margins minus the acquisition cost."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Many dot-com firms collapsed in the early 2000s, in CLV terms, because:",
+     "options": [
+      "Acquisition costs were high and retention so low that margins never covered them",
+      "Retention costs were so high that loyal customers became unprofitable",
+      "Discount rates were set too low, which made future margins look too large",
+      "They captured so much customer data that storage costs outran their margins"
+     ],
+     "answer": 0,
+     "why": "Customers won with freebies left before paying back the cost of winning them."
+    }
+   ]
+  },
+  {
+   "name": "Session 1: Influencing customers' buying behaviour",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "In standard economic theory, the buyer is assumed to be:",
+     "options": [
+      "Subjective, shaped by culture, and so unpredictable",
+      "Guided mainly by emotion, habit and social pressure",
+      "Rational only within limits, relying on shortcuts",
+      "Rational, utility-maximising and therefore predictable"
+     ],
+     "answer": 3,
+     "why": "No emotion attached: he weighs every option and maximises utility."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Bounded rationality arises because buyers have limited:",
+     "options": [
+      "Cognitive ability, time and information",
+      "Income, savings and access to credit",
+      "Brand loyalty, trust and experience",
+      "Access to shops, stock and delivery"
+     ],
+     "answer": 0,
+     "why": "These three limits push people to use heuristics."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A heuristic leads a buyer to a decision that is:",
+     "options": [
+      "Always optimal",
+      "Satisficing: good enough, not necessarily the best",
+      "Always irrational",
+      "Identical to the economist's prediction"
+     ],
+     "answer": 1,
+     "why": "Mental shortcuts trade accuracy for speed."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Behavioural economics gained momentum after 2002, when the Nobel Prize in economics went to:",
+     "options": [
+      "Richard Thaler",
+      "Dan Ariely",
+      "Thorstein Veblen",
+      "Daniel Kahneman"
+     ],
+     "answer": 3,
+     "why": "Kahneman, a psychologist, won in 2002; Thaler won in 2017."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Two groups estimate the same engineer's salary. One question mentions a low figure, the other a high one, and the second group's estimates are higher. This is:",
+     "options": [
+      "Framing",
+      "Availability",
+      "Anchoring",
+      "Mental accounting"
+     ],
+     "answer": 2,
+     "why": "A suggested value for an unknown quantity pulls the estimate towards it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Showing \"Rs. 4,999\" struck through above \"Rs. 2,499\" mainly uses:",
+     "options": [
+      "Anchoring",
+      "Representativeness",
+      "The decoy effect",
+      "Mental accounting"
+     ],
+     "answer": 0,
+     "why": "The original price becomes the reference for judging the sale price."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An electronics store places its most expensive TVs at the entrance. The intended effect is that shoppers:",
+     "options": [
+      "Buy the most expensive model on display at the entrance",
+      "Leave the store quickly because the prices look too high",
+      "Compare the price per inch of every screen in the store",
+      "Raise the price they consider normal for the TV they came to buy"
+     ],
+     "answer": 3,
+     "why": "Placement anchors: a Rs. 40-50K budget drifts towards Rs. 70K."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Airlines publishing a scheduled time longer than actual flying time, so that flights \"arrive early\", is an application of:",
+     "options": [
+      "Availability of recent delays",
+      "Anchoring on expected time",
+      "Scarcity of seats on the flight",
+      "The Veblen effect on fares"
+     ],
+     "answer": 1,
+     "why": "Like Disney's posted wait times, the stated time sets the expectation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"50% of patients survive\" produces more yeses than \"50% of patients die\". This shows:",
+     "options": [
+      "Anchoring",
+      "Availability",
+      "Framing",
+      "Representativeness"
+     ],
+     "answer": 2,
+     "why": "Same information, presented as a gain versus a loss."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A bottle offers \"33% more\" for the same price. Its effective discount is about:",
+     "options": [
+      "25%",
+      "33%",
+      "20%",
+      "67%"
+     ],
+     "answer": 0,
+     "why": "100 / 1.33 = Rs. 75 a litre, i.e. 25% off."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A \"25% more\" offer is equivalent to a price cut of:",
+     "options": [
+      "25%",
+      "20%",
+      "33%",
+      "15%"
+     ],
+     "answer": 1,
+     "why": "1 / 1.25 = 0.80, so 20% off per unit."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Most people choose \"33% more\" over \"33% off\" because:",
+     "options": [
+      "\"More\" is the better deal per litre, as the arithmetic shows",
+      "A larger bottle is more convenient to carry home and store",
+      "A discount makes buyers doubt the quality of the product",
+      "\"More\" feels like a gain, while a discount is still felt as a loss"
+     ],
+     "answer": 3,
+     "why": "People prefer gains to reduced losses, even when the reduced loss is worth more."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which statement is a positive frame of the same fact as \"8% skipped their second dose\"?",
+     "options": [
+      "\"Millions are skipping their second dose\"",
+      "\"Vaccines are 92% effective\"",
+      "\"92% returned for their second dose\"",
+      "\"8% of doses are wasted\""
+     ],
+     "answer": 2,
+     "why": "Same fact presented as a gain: more motivating for people on the fence."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Tata Nano being widely seen as the \"cheapest car\" is NOT an example of framing because:",
+     "options": [
+      "Framing applies to offers and discounts, not to the image of a product",
+      "Framing is how the company presents information; the Nano's image came from media coverage",
+      "The Nano was not in fact cheap once taxes and registration were added",
+      "Framing works only when a fact is expressed as a percentage or a share"
+     ],
+     "answer": 1,
+     "why": "The company did not frame it that way: it got positioned by the media."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Asked about seven-letter words, people expect more \"_ _ _ _ i n g\" words than \"_ _ _ _ _ n _\" words. This is wrong because:",
+     "options": [
+      "Every -ing word also has n in the sixth position, so the n-set is larger",
+      "Words ending in -ing are in fact very rare in the pages of a novel",
+      "The two sets of words do not overlap, so they cannot be compared",
+      "Seven-letter words are too uncommon for either estimate to be right"
+     ],
+     "answer": 0,
+     "why": "The -ing words are a subset; the error comes from how easily they come to mind."
+    },
+    {
+     "tag": "MCQ",
+     "q": "After a bad experience with a brand's smartphone, a buyer avoids its washing machines. This is mainly:",
+     "options": [
+      "Anchoring",
+      "The decoy effect",
+      "Availability",
+      "Mental accounting"
+     ],
+     "answer": 2,
+     "why": "The easily recalled failure gets high weight, even across unrelated technologies."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The class's lesson from MH370 and from AirAsia's 2014 crash was that after a crisis a brand should:",
+     "options": [
+      "Stay silent until all the facts are known",
+      "Change its brand name",
+      "Cut prices immediately",
+      "Communicate early, consistently and with a visible face"
+     ],
+     "answer": 3,
+     "why": "Silence lets customers create their own narratives; AirAsia's open handling limited the damage."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Jingles and taglines matter most in impulse categories because of:",
+     "options": [
+      "Representativeness of the category",
+      "Availability at the point of purchase",
+      "Mental accounting of small amounts",
+      "The Veblen effect on cheap goods"
+     ],
+     "answer": 1,
+     "why": "What is easily recalled gets picked when buyers do not deliberate."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Most people rank \"Linda is a bank teller active in a feminist movement\" above \"Linda is a bank teller\". This shows:",
+     "options": [
+      "Representativeness",
+      "Anchoring",
+      "Framing",
+      "Mental accounting"
+     ],
+     "answer": 0,
+     "why": "Fit to the stereotype beats probability, although (f) is a subset of (d)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A new soap uses a translucent bar to signal gentleness, borrowing a cue that Pears made famous. This uses:",
+     "options": [
+      "The decoy effect",
+      "Anchoring",
+      "Mental accounting",
+      "Representativeness"
+     ],
+     "answer": 3,
+     "why": "The cue fits a pre-existing prototype of a gentle soap."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Brand positioning is best described as:",
+     "options": [
+      "A kind of heuristic that customers use to choose quickly",
+      "Another name for framing a brand's message as a gain",
+      "A strategic choice by the firm, separate from the heuristics customers use",
+      "The same as availability, since both are about recall"
+     ],
+     "answer": 2,
+     "why": "Heuristics describe customer decisions; positioning is part of the firm's STP."
+    },
+    {
+     "tag": "MCQ",
+     "q": "X costs $3.00 (quality 5) and Y costs $3.80 (quality 6). Adding Z, priced above X with quality 5, will most likely:",
+     "options": [
+      "Increase the share choosing X",
+      "Increase the share choosing Y",
+      "Leave choices unchanged",
+      "Make most people choose Z"
+     ],
+     "answer": 0,
+     "why": "Z is dominated by X but not by Y, so fence-sitters move to X."
+    },
+    {
+     "tag": "MCQ",
+     "q": "To push buyers towards Y in the same set, a marketer should add an option that is:",
+     "options": [
+      "Clearly inferior to X but not to Y",
+      "Clearly inferior to Y but not to X",
+      "Better than both X and Y",
+      "Identical to X"
+     ],
+     "answer": 1,
+     "why": "The decoy must be dominated by the option you want to sell."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Economist added a print-only subscription at the same $125 as web-plus-print. Its purpose was to:",
+     "options": [
+      "Sell more print-only subscriptions",
+      "Reduce printing costs",
+      "Make web-plus-print look like the obvious choice",
+      "Test price sensitivity for the web edition"
+     ],
+     "answer": 2,
+     "why": "Print-only is the decoy; almost nobody chooses it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A shopper always picks the middle-priced option of three, regardless of features. This is called the:",
+     "options": [
+      "Veblen effect",
+      "Availability heuristic",
+      "Framing effect",
+      "Goldilocks effect"
+     ],
+     "answer": 3,
+     "why": "Not the cheapest, not the dearest: the one in between."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Most people would not buy a second concert ticket after losing the first, but would buy one after losing the same amount in cash. This is explained by:",
+     "options": [
+      "Framing",
+      "Mental accounting",
+      "Anchoring",
+      "Representativeness"
+     ],
+     "answer": 1,
+     "why": "The lost ticket drains the concert account; lost cash drains a general account."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Houston airport cut baggage complaints by:",
+     "options": [
+      "Hiring more baggage handlers to unload the aircraft faster",
+      "Installing a faster belt that delivered bags in half the time",
+      "Offering vouchers to passengers who waited over 8 minutes",
+      "Making passengers walk longer so they waited less at the belt"
+     ],
+     "answer": 3,
+     "why": "Total time stayed the same; occupied walking time is not felt as waiting."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An apparel store cut a price from $39 to $34 and sales fell. The most likely reason is that:",
+     "options": [
+      "Prices ending in 9 signal a deal, so $39 looked like an offer",
+      "$34 is above a price threshold",
+      "Customers expected a higher price for quality",
+      "The store ran out of stock"
+     ],
+     "answer": 0,
+     "why": "9-endings carry a discount perception; round numbers carry a quality perception."
+    },
+    {
+     "tag": "MCQ",
+     "q": "For some luxury goods, demand rises as price rises. This is the:",
+     "options": [
+      "Decoy effect",
+      "Framing effect",
+      "Veblen (snob) effect",
+      "Left-digit effect"
+     ],
+     "answer": 2,
+     "why": "Exclusivity is the product; a higher price keeps others out: within a range."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the case discussion, the market research had been run in the head-office city rather than in the launch region. The lesson is that:",
+     "options": [
+      "A head-office city is usually a fair sample of the national market",
+      "Convenience can bias research; research must represent the market you enter",
+      "Market research adds little for consumer goods sold at low prices",
+      "Only quantitative research, not interviews, can be relied upon"
+     ],
+     "answer": 1,
+     "why": "Firms choose what is easy to implement, and the results can mislead."
+    }
+   ]
+  },
+  {
+   "name": "Session 2: Understanding customers",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "Under A.G. Lafley, P&G's research approach shifted mainly towards:",
+     "options": [
+      "Running larger telephone surveys across more cities each year",
+      "Watching consumers in their homes to find nuisances a product could solve",
+      "Testing products only in laboratories before any launch",
+      "Relying on retailers' sales data to see what customers buy"
+     ],
+     "answer": 1,
+     "why": "Observation reveals problems people never mention."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The session's answer to Steve Jobs's view that customers don't know what they want was that:",
+     "options": [
+      "Research is indeed of little use for products that are truly new, as the iPhone showed",
+      "Only a company with Apple's design strength can afford to launch without any research",
+      "Customers should be asked to design the products they want, and firms should then build them",
+      "Without research the likelihood of failure is higher; the lesson is how research goes wrong"
+     ],
+     "answer": 3,
+     "why": "Apple's own court documents showed extensive customer research."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Maruti executive who saw a paid respondent at a bus stop illustrates a problem with:",
+     "options": [
+      "The sample: respondents who are not target customers",
+      "The wording of questions, which led respondents to an answer",
+      "The software used to analyse the data that was collected",
+      "The advertising shown to respondents before the interview"
+     ],
+     "answer": 0,
+     "why": "Feedback from the wrong people misleads."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Ethnography differs from ordinary observation research mainly because it:",
+     "options": [
+      "Uses structured questionnaires in place of observation",
+      "Takes place in a laboratory under controlled conditions",
+      "Is carried out over a longer period, immersed in the community",
+      "Uses eye-tracking equipment to record what people notice"
+     ],
+     "answer": 2,
+     "why": "The researcher lives among users to see how the product fits their lives."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which method is best for revealing how people influence one another's opinions?",
+     "options": [
+      "A mail survey",
+      "A focus group",
+      "Sales data",
+      "An eye-tracking study"
+     ],
+     "answer": 1,
+     "why": "The New Coke lesson on the slide."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Gillette's Vector razor failed in India mainly because it was developed with:",
+     "options": [
+      "Rural Indian men who shaved with a single cup of water",
+      "Barbers in Indian cities who shaved many customers a day",
+      "Indian students at MIT who shaved with running water",
+      "Retailers who wanted a cheaper razor to sell in volume"
+     ],
+     "answer": 2,
+     "why": "Most Indian men shaved with a cup of water; the blades clogged."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Gillette Guard's success after research in Indian homes shows that:",
+     "options": [
+      "Research must reflect the real conditions of use",
+      "Price alone decides which razor succeeds in a poor market",
+      "Focus groups held abroad are enough if respondents are Indian",
+      "Twin blades are always preferred once buyers have tried them"
+     ],
+     "answer": 0,
+     "why": "Over 50% volume share within six months of its 2010 launch."
+    },
+    {
+     "tag": "MCQ",
+     "q": "New Coke beat old Coke in about 200,000 blind taste tests but failed because the tests missed:",
+     "options": [
+      "How sensitive buyers were to the price of the new drink",
+      "Whether bottlers could distribute the new formula in time",
+      "How the new can and logo would look on the shelf",
+      "The meaning of losing the original and social influence"
+     ],
+     "answer": 3,
+     "why": "People reacted to what was taken away, and to each other."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The slide's lesson from New Coke is that new product development should routinely consider:",
+     "options": [
+      "Social influence effects, which focus groups can reveal",
+      "Celebrity endorsement, which taste tests cannot measure",
+      "Lower launch prices, which protect a new product",
+      "Larger pack sizes, which encourage trial at home"
+     ],
+     "answer": 0,
+     "why": "Individual tests cannot show social interaction effects."
+    },
+    {
+     "tag": "MCQ",
+     "q": "ChotuKool cools its contents to about:",
+     "options": [
+      "Below zero, to make ice",
+      "5-15 degrees",
+      "20-25 degrees",
+      "The same as a regular fridge"
+     ],
+     "answer": 1,
+     "why": "It is a cooler, not a freezer."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why does ChotuKool open from the top?",
+     "options": [
+      "A top lid looks more modern than a door on the front",
+      "A top lid lets the cooler be strapped onto a bicycle",
+      "A top lid is cheaper to make than a door with a seal",
+      "Cold air sinks, so it stays inside when the lid opens"
+     ],
+     "answer": 3,
+     "why": "Physics applied to design."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor's main explanation for ChotuKool's limited success was:",
+     "options": [
+      "Poor distribution in the villages where it was meant to sell",
+      "A price that was still too high, and nothing else",
+      "Researcher bias: assuming rural buyers want something different from urban buyers",
+      "Too little advertising, despite the awards it had won"
+     ],
+     "answer": 2,
+     "why": "Every stated need was met, but the real aspiration was a proper fridge."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Sleepy Owl launched a hot brew because its surveys showed that:",
+     "options": [
+      "People did not want something cold first thing in the morning, even in summer",
+      "Cold brew was too expensive for most of its customers",
+      "Retailers demanded a product they could sell in winter",
+      "Competitors had launched hot brews and were gaining share"
+     ],
+     "answer": 0,
+     "why": "A format decision driven by customer feedback."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Sleepy Owl's recyclable packs came after research showed that:",
+     "options": [
+      "Its packs cost too much to make and squeezed margins",
+      "Retailers disliked the shape and wanted smaller packs",
+      "A new law required all food packaging to be recyclable",
+      "Over 60% of customers felt guilty about its plastic"
+     ],
+     "answer": 3,
+     "why": "It took a year of research to create them."
+    },
+    {
+     "tag": "MCQ",
+     "q": "After Tropicana's pack redesign, its sales fell about 20% in under two months while category sales:",
+     "options": [
+      "Also fell 20%",
+      "Did not change",
+      "Rose 20%",
+      "Fell 50%"
+     ],
+     "answer": 1,
+     "why": "The loss was Tropicana's alone."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The main reason for Tropicana's fall, as discussed in class, was that:",
+     "options": [
+      "The juice formula was changed and regular buyers disliked the taste",
+      "The price was raised at the same time as the pack was changed",
+      "Shoppers found the brand by the orange-with-straw image, which was removed",
+      "The new pack was withdrawn from many stores for a labelling error"
+     ],
+     "answer": 2,
+     "why": "Buying behaviour depended on a visual cue."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A participant said shoppers had an emotional bond with the old orange. The professor called it instead:",
+     "options": [
+      "Buying behaviour: a learned habit of search",
+      "Brand equity built over many years",
+      "Representativeness of the category",
+      "Mental accounting for a daily habit"
+     ],
+     "answer": 0,
+     "why": "Right process, wrong label."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which research tools does the slide recommend to avoid a Tropicana-type failure?",
+     "options": [
+      "Price surveys among shoppers leaving the store",
+      "Shelf flash recall tests, eye tracking and A/B testing",
+      "Focus groups alone, held before the launch",
+      "Interviews with the company's own sales force"
+     ],
+     "answer": 1,
+     "why": "Test how people actually find and choose products."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why can FMCG companies usually afford longer research than technology companies?",
+     "options": [
+      "They have bigger research budgets",
+      "They face fewer competitors",
+      "Regulators require longer testing",
+      "Their products have longer life cycles"
+     ],
+     "answer": 3,
+     "why": "Tech features are copied within months."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which factor points towards pricing a new product HIGH?",
+     "options": [
+      "The category is habitual and early share matters",
+      "Abundant spare capacity",
+      "Competitors can copy quickly, so R&D must be recovered fast",
+      "The goal is maximum volume"
+     ],
+     "answer": 2,
+     "why": "Also a deliberate response to capacity constraints."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A candy weighs more than rivals. The professor's view on using weight to justify a higher price was that:",
+     "options": [
+      "A heavier candy always justifies a higher price, whatever buyers notice",
+      "Customers rarely perceive small weight differences unless the company communicates them",
+      "Weight has no bearing on price in a category bought for pleasure",
+      "Charging more for extra weight is not permitted for packaged sweets"
+     ],
+     "answer": 1,
+     "why": "An unperceived benefit cannot carry a price."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why might a new low-priced candy avoid TV advertising at launch?",
+     "options": [
+      "Low absolute margins make ads inefficient, and availability must be secured first",
+      "Television advertising of sweets to children is not permitted",
+      "Candies, being impulse purchases, never benefit from advertising",
+      "Competitors would have complained to the advertising regulator"
+     ],
+     "answer": 0,
+     "why": "A customer who cannot find an advertised product rarely asks a third time."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Involvement in a purchase rises mainly with:",
+     "options": [
+      "The number of brands available in the category",
+      "The height of the shelf on which it is displayed",
+      "Perceived risk: economic, psychological or performance",
+      "The volume of advertising in the category"
+     ],
+     "answer": 2,
+     "why": "Low risk means low involvement."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Clothes that are inexpensive but carry worry about what others will think involve mainly:",
+     "options": [
+      "Economic risk",
+      "Performance risk",
+      "No risk",
+      "Psychological risk"
+     ],
+     "answer": 3,
+     "why": "The concern is social judgement."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Does your toothpaste contain salt?\" is an attempt to:",
+     "options": [
+      "Lower the price of a product buyers see as a commodity",
+      "Raise consumer involvement in a low-involvement category",
+      "Reposition toothpaste as a luxury for wealthy buyers",
+      "Enter a new market of people who do not brush at all"
+     ],
+     "answer": 1,
+     "why": "Involved buyers become loyal and pay more."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Low-involvement categories benefit greatly from advertising because:",
+     "options": [
+      "Buyers choose what they recall at the point of purchase",
+      "Buyers compare features carefully before choosing",
+      "Margins are high enough to pay for heavy advertising",
+      "Products differ greatly and buyers need information"
+     ],
+     "answer": 0,
+     "why": "Out of sight, out of mind."
+    },
+    {
+     "tag": "MCQ",
+     "q": "According to the professor, a lasting advantage for a copyable candy comes mainly from:",
+     "options": [
+      "Patents and trademarks that stop others copying the product",
+      "A steady stream of new flavours, which is enough on its own",
+      "Heavy television advertising that keeps the brand in mind",
+      "Service to the retail channel: frequent visits and no stock-outs"
+     ],
+     "answer": 3,
+     "why": "Shelf space is the retailer's scarcest resource."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A shopkeeper starts stocking a copycat candy mainly when:",
+     "options": [
+      "The copy is cheaper by a rupee and customers ask for it",
+      "The copy comes in a better-looking pack and jar",
+      "The original is out of stock when customers ask for it",
+      "A festival raises the demand for sweets of all kinds"
+     ],
+     "answer": 2,
+     "why": "A stock-out gives him a reason to give space to a rival."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Selling candy in bulk packs and through online and modern-trade channels is which Ansoff strategy?",
+     "options": [
+      "Market penetration",
+      "Product development",
+      "Market development",
+      "Diversification"
+     ],
+     "answer": 0,
+     "why": "Existing product, existing market, more accessible."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A candy brand launching a mango drink is classed by the professor as:",
+     "options": [
+      "Market penetration: existing product, existing market",
+      "Diversification: new product, new market",
+      "Product development: new product, existing market",
+      "Market development: existing product, new market"
+     ],
+     "answer": 1,
+     "why": "New consumers, price point and competitors; high risk, high reward."
+    }
+   ]
+  },
+  {
+   "name": "Session 3: Market segmentation and targeting",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "Segmentation divides the market into groups that are:",
+     "options": [
+      "Roughly equal in size, so that each can be served at the same cost",
+      "Defined only by demographic variables such as age, gender and income",
+      "Relatively homogeneous within, with respect to needs, characteristics or behaviour",
+      "Made up only of current customers, since others cannot be studied"
+     ],
+     "answer": 2,
+     "why": "Alike inside, different outside; actual and potential customers."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Segmentation improves efficiency mainly by:",
+     "options": [
+      "Doing away with differences that do not affect buying",
+      "Designing a separate strategy for every customer",
+      "Raising prices for every segment",
+      "Increasing the number of segments"
+     ],
+     "answer": 0,
+     "why": "Irrelevant differences are dropped, so each segment gets one offering."
+    },
+    {
+     "tag": "MCQ",
+     "q": "According to the slide, segmentation improves effectiveness through all of the following EXCEPT:",
+     "options": [
+      "A more targeted marketing mix",
+      "Increased customer satisfaction",
+      "Higher customer lifetime value",
+      "A single offering for the whole market"
+     ],
+     "answer": 3,
+     "why": "A single offering for all is mass marketing: the opposite of segmentation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An AC maker considers pink units for women and blue for men. The professor's view was that:",
+     "options": [
+      "Gender is the best basis for segmenting air conditioners",
+      "Gender is not meaningful here; room size and usage matter more",
+      "Colour is the attribute AC buyers care about most",
+      "Air conditioners cannot usefully be segmented at all"
+     ],
+     "answer": 1,
+     "why": "A variable earns a segment only if it changes what people buy."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Style-conscious, risk-taker, fun-loving\" are examples of which base?",
+     "options": [
+      "Demographic",
+      "Behavioural",
+      "Psychographic",
+      "Geographic"
+     ],
+     "answer": 2,
+     "why": "Lifestyle and personality variables."
+    },
+    {
+     "tag": "MCQ",
+     "q": "User status, usage rate, channel usage and loyalty status are:",
+     "options": [
+      "Behavioural variables",
+      "Psychographic variables",
+      "Demographic variables",
+      "Value-based variables"
+     ],
+     "answer": 0,
+     "why": "Behaviour within the product category."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Colgate's whitening, sensitive and anti-cavity variants are an example of:",
+     "options": [
+      "Geographic segmentation by region",
+      "Value-based (need-based) segmentation",
+      "Demographic segmentation by age",
+      "Mass marketing with one product"
+     ],
+     "answer": 1,
+     "why": "Each variant serves a different need."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The generic approach recommended in class is to:",
+     "options": [
+      "Apply all five bases at once, so that nothing is missed",
+      "Start with geography, and add no other variable after it",
+      "Use demographics alone, because they are easy to observe",
+      "Start with value-based segmentation, then profile the segments"
+     ],
+     "answer": 3,
+     "why": "Needs first; then who is in each segment, so the 4Ps can be designed."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why is profiling a value-based segment necessary?",
+     "options": [
+      "Profiling removes the need for any further research on the segment",
+      "Profiling makes the segment larger by adding similar customers",
+      "Without knowing who is in the segment you cannot decide price, place or promotion",
+      "Profiling is needed only when the segment is in a business market"
+     ],
+     "answer": 2,
+     "why": "Media, ad casting, price points and outlets all depend on the profile."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Promotion, as the professor defined it, is mainly:",
+     "options": [
+      "Product placement on shelves",
+      "Advertising and sales promotion",
+      "Choosing distributors",
+      "Setting the list price"
+     ],
+     "answer": 1,
+     "why": "Placement is a small part; ads and sales promotion are the bulk."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Marketers use demographics often because they are:",
+     "options": [
+      "Easily visible and observable",
+      "The most predictive of all variables",
+      "Required by regulators",
+      "Always value-based"
+     ],
+     "answer": 0,
+     "why": "A shopkeeper can see who buys; that ease drives their use."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Value-based segmentation is used less than its usefulness suggests mainly because it:",
+     "options": [
+      "Cannot be applied to business markets",
+      "Ignores what customers actually need",
+      "Usually needs research into customer motivations",
+      "Gives segments that are too large"
+     ],
+     "answer": 2,
+     "why": "It often starts with qualitative research, which costs time and money."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In business markets, industry, firm size and ownership are called:",
+     "options": [
+      "Psychographics",
+      "Benefits sought",
+      "Buying approach",
+      "Firmographics"
+     ],
+     "answer": 3,
+     "why": "The business-market equivalent of demographics."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Hillrom found that segmenting hospitals by number of beds was weak because:",
+     "options": [
+      "The bed counts it used were out of date and often inaccurate, so segments were wrongly drawn",
+      "Buying behaviour, not size, separated customers: 50- and 250-bed facilities fell in one segment",
+      "Large hospitals had stopped buying equipment and were leasing it from other suppliers",
+      "Size gave it too few segments to justify the cost of a separate sales force for each"
+     ],
+     "answer": 1,
+     "why": "Key and prime customers differed in decision makers and purchase drivers."
+    },
+    {
+     "tag": "MCQ",
+     "q": "After Hillrom realigned its sales force to key and prime segments, operating income per employee rose by about:",
+     "options": [
+      "51%",
+      "11%",
+      "25%",
+      "4 to 5 times"
+     ],
+     "answer": 0,
+     "why": "Revenue per employee rose 11%; operating income per employee 51%."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In cluster analysis, the similarity between two respondents is commonly measured by:",
+     "options": [
+      "The correlation between their incomes",
+      "The gap between their ages in years",
+      "How recently each of them last bought",
+      "Euclidean distance between their ratings"
+     ],
+     "answer": 3,
+     "why": "Square the differences on each variable, add, take the square root."
+    },
+    {
+     "tag": "MCQ",
+     "q": "R1 rates three variables (6, 6, 5) and R3 rates them (7, 7, 5). Their Euclidean distance is:",
+     "options": [
+      "2",
+      "1",
+      "1.41",
+      "1.73"
+     ],
+     "answer": 2,
+     "why": "sqrt(1 + 1 + 0) = 1.41."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In k-means clustering, k is:",
+     "options": [
+      "The number of clusters the analyst specifies",
+      "A number the software finds at the end",
+      "The number of variables that are rated",
+      "The number of respondents surveyed"
+     ],
+     "answer": 0,
+     "why": "The analyst asks for, say, 3 clusters; the algorithm assigns and reassigns."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A customer appears in two clusters after a segmentation exercise. This means:",
+     "options": [
+      "The segmentation is especially rich, since it captures mixed needs",
+      "The exercise has not been done well: segments should not overlap",
+      "The customer is a heavy user who needs a segment of his own",
+      "The software used k-means, which places some customers twice"
+     ],
+     "answer": 1,
+     "why": "Good segmentation produces mutually exclusive groups."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In a preference-based segmentation chart, the 0% line represents:",
+     "options": [
+      "The rating of the least important variable",
+      "The firm's own score on each variable",
+      "The average rating of all respondents",
+      "A rating of zero importance to everyone"
+     ],
+     "answer": 2,
+     "why": "Bars show how far each segment sits above or below the average."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Segment compatibility refers to:",
+     "options": [
+      "The segment's size, growth and usage, which decide how much it can deliver",
+      "How well the firm's chosen segments fit together under a single brand",
+      "The lifetime value that a typical customer in the segment will bring",
+      "The company's ability to create superior value for the segment relative to competitors"
+     ],
+     "answer": 3,
+     "why": "Attractiveness asks what the segment is worth; compatibility asks if we can win it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A candy launched in only one flavour is, in SWOT terms:",
+     "options": [
+      "A threat",
+      "A weakness",
+      "An opportunity",
+      "A strength"
+     ],
+     "answer": 1,
+     "why": "It is internal to the company; threats come from outside."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Mountain Dew targeting adventure seekers is an example of:",
+     "options": [
+      "Demographic segmentation",
+      "Geographic segmentation",
+      "Firmographic segmentation",
+      "Psychographic segmentation"
+     ],
+     "answer": 3,
+     "why": "Adventure seeking is a lifestyle trait."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Titan created Fastrack as a separate brand mainly to:",
+     "options": [
+      "Target young buyers while minimising overlap with Titan's own customers",
+      "Offer Titan's watches at lower prices without a new name",
+      "Enter the business market for corporate gifting of watches",
+      "Replace the Titan brand, which was seen as old-fashioned"
+     ],
+     "answer": 0,
+     "why": "Brands in one portfolio must not cannibalise each other."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Madura Garments' brands are separated mainly by:",
+     "options": [
+      "Region and city size",
+      "Gender and age group",
+      "Occupation and career stage",
+      "Fabric and colour"
+     ],
+     "answer": 2,
+     "why": "Interview (Peter England), mid-level (Van Heusen), corner office (Louis Philippe), smart casual (Allen Solly)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Hero launched Pleasure in 2006 mainly to:",
+     "options": [
+      "Enter the motorcycle market, where it was weak",
+      "Take on Honda's Activa by targeting women",
+      "Target rural men who needed a sturdy scooter",
+      "Replace Maestro, whose sales had flattened"
+     ],
+     "answer": 1,
+     "why": "\"Why should boys have all the fun?\" (gender-based targeting)."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which was NOT a reason the class gave for Bic for Her's failure?",
+     "options": [
+      "It stereotyped women with a \"for her\" label",
+      "Pens are utilitarian and the colour added little value",
+      "The ink was a different, inferior formula",
+      "It cost about twice as much for a coloured casing"
+     ],
+     "answer": 2,
+     "why": "The ink was the same blue or black; only the casing changed."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor's caution on the product life cycle was that it applies best:",
+     "options": [
+      "At the sub-category level, such as black-and-white TVs",
+      "To every individual brand, whatever its category",
+      "To services, which age faster than products",
+      "To luxury goods, which follow fashion cycles"
+     ],
+     "answer": 0,
+     "why": "A brand's plateau may be a competitive problem to diagnose, not the end of its life."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Gap and JCPenney illustrate the risk of:",
+     "options": [
+      "Ignoring cluster analysis when choosing a target segment",
+      "Running too few brands to cover every kind of shopper",
+      "Pricing too low to pay for a new store layout",
+      "Chasing new segments at the cost of loyal existing customers"
+     ],
+     "answer": 3,
+     "why": "Both strategies alienated the core customer and the leaders were removed."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An ethnic-wear brand for women launching menswear would be classed by the professor as:",
+     "options": [
+      "Diversification: new product, new market, non-transferable skills",
+      "Market penetration: the brand's existing shoppers would buy it",
+      "Product development: a new product for the existing market",
+      "Market development: the existing product for a new market"
+     ],
+     "answer": 0,
+     "why": "Men's tailoring needs different skills; the market is new too."
+    }
+   ]
+  },
+  {
+   "name": "Session 4: Positioning",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "The pregnancy-test maker split buyers into \"hopefuls\" and \"fearfuls\". This is:",
+     "options": [
+      "Demographic segmentation",
+      "Value-based segmentation",
+      "Geographic segmentation",
+      "Firmographic segmentation"
+     ],
+     "answer": 1,
+     "why": "The segments differ in the result, the value, they want."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which segment was priced higher, and why?",
+     "options": [
+      "Fearfuls, because they want to avoid a clinic visit",
+      "Both equal, to avoid discrimination",
+      "Fearfuls, because they buy more often",
+      "Hopefuls, because it is a planned, wished-for purchase"
+     ],
+     "answer": 3,
+     "why": "For fearfuls it is a grudge purchase, so they seek the lowest price."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Selling the same test under two names works only if:",
+     "options": [
+      "Both packs look identical, so that buyers trust the cheaper one as well",
+      "The price is the same for both, so that neither segment feels cheated",
+      "The two segments value it differently and are kept apart by name, pack and placement",
+      "Both versions are sold online only, where shelves cannot be compared"
+     ],
+     "answer": 2,
+     "why": "If segments meet both products side by side, the strategy is exposed."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Positioning is best defined as:",
+     "options": [
+      "Advertising the product widely, so that as many target customers as possible become aware of it and of its benefits",
+      "The marketer's effort to occupy a clear, distinctive and attractive place in target customers' minds relative to competitors",
+      "Placing the product on the right shelf, in the right stores, where target customers will look for it and its rivals",
+      "Setting a price that tells target customers where the product stands in relation to competing products"
+     ],
+     "answer": 1,
+     "why": "Advertising is a means; the image in the mind is the end."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor's formula for positioning is:",
+     "options": [
+      "Target segment + differentiation",
+      "Price + quality",
+      "Product + promotion",
+      "Segmentation + targeting"
+     ],
+     "answer": 0,
+     "why": "Know whom you serve and what you offer them that rivals do not."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A perceptual map built from a survey requires you to know:",
+     "options": [
+      "Every competitor's cost of production",
+      "The firm's market share in each segment",
+      "The two attributes customers use most in the category",
+      "The discount rate used for the category"
+     ],
+     "answer": 2,
+     "why": "Customers rate brands on those attributes and the averages are plotted."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Subway's entry into fast food illustrates:",
+     "options": [
+      "Extending an established brand into a new category",
+      "Mass marketing with one standard offer for everyone",
+      "Repositioning a brand whose image had gone stale",
+      "Finding a desirable vacant space on a perceptual map"
+     ],
+     "answer": 3,
+     "why": "Rivals were tasty but unhealthy; Subway claimed tasty and healthy."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Multidimensional scaling asks respondents mainly:",
+     "options": [
+      "How much they would pay",
+      "How similar pairs of brands are",
+      "Their age and income",
+      "Which ad they recall"
+     ],
+     "answer": 1,
+     "why": "Similarity ratings alone are enough; the software builds the map."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In MDS, who names the dimensions of the output map?",
+     "options": [
+      "The researcher, using experience or expert input",
+      "The software, from the similarity ratings",
+      "The respondents, while rating the pairs",
+      "The brands, through their advertising"
+     ],
+     "answer": 0,
+     "why": "The algorithm places brands; interpretation is the analyst's job."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Usually an MDS output is requested in two dimensions because:",
+     "options": [
+      "Statistical software cannot produce more than two",
+      "Customers use only one attribute, plus price",
+      "A third dimension always repeats the first two",
+      "It is easiest to interpret, and two dimensions usually stand out"
+     ],
+     "answer": 3,
+     "why": "Three-dimensional outputs are hard to read."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Goodyear's wet-traction tyre story shows that:",
+     "options": [
+      "An innovation always shifts customers' perception in time",
+      "Tread life does not matter to people who buy tyres",
+      "A real product advantage may not register in customers' minds",
+      "Tyres are a commodity that cannot be positioned"
+     ],
+     "answer": 2,
+     "why": "Customers rated it no differently; the positioning had not translated."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the three-circle framework, your point of difference is the area where:",
+     "options": [
+      "Your offering meets customer needs and the competitor's does not",
+      "All three circles overlap",
+      "The competitor's offering meets needs and yours does not",
+      "Your offering does not meet any need"
+     ],
+     "answer": 0,
+     "why": "Area B. The three-way overlap is points of parity."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A weight-loss drug that works as well as rivals but causes no gastric trouble. Its point of difference is:",
+     "options": [
+      "Its effectiveness",
+      "Fewer side effects",
+      "Its price",
+      "Its category"
+     ],
+     "answer": 1,
+     "why": "Effectiveness is parity; fewer side effects is the difference."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Renault Kwid broke the assumption that budget car buyers want only mileage by segmenting on:",
+     "options": [
+      "Geography: small towns against large cities",
+      "Demographics: income bands of first-time buyers",
+      "Psychographics: aspirational features for young buyers",
+      "Behaviour: how many kilometres a buyer drives"
+     ],
+     "answer": 2,
+     "why": "It offered SUV-like styling and bigger-car features at a low price."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Chik shampoo's sachets targeted rural consumers who did not use shampoo. This targeting used:",
+     "options": [
+      "Psychographic segmentation",
+      "Firmographics",
+      "Gender",
+      "Behavioural segmentation: non-users"
+     ],
+     "answer": 3,
+     "why": "Like the Nano's two-wheeler owners, the target was defined by non-use."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Ratan Tata said the Nano \"got wrongly positioned\". The best explanation is that:",
+     "options": [
+      "Tata's own advertisements called it the cheapest car in the world",
+      "Media attention to its record low price fixed the image, contrary to the intended position",
+      "It turned out to be too expensive for the families it was aimed at",
+      "It was deliberately aimed at existing car owners as a second car"
+     ],
+     "answer": 1,
+     "why": "Its ads stressed quality and robustness; the coverage stressed price."
+    },
+    {
+     "tag": "MCQ",
+     "q": "You can best judge a company's intended positioning from:",
+     "options": [
+      "Its share price and results",
+      "Its competitors' advertising",
+      "Newspaper and TV headlines",
+      "Its own communication and advertising"
+     ],
+     "answer": 3,
+     "why": "Intended position shows in what the brand says about itself."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Volkswagen's Phaeton failed mainly because:",
+     "options": [
+      "Buyers of ultra-luxury cars did not want to be associated with a people's-car brand, and it was sold from the same showrooms",
+      "It lacked the features and finish that buyers of ultra-luxury cars expect, and reviewers said so at launch",
+      "It was priced well above rival luxury cars and had no dealer network of its own to support it",
+      "It was launched only in India, where the market for ultra-luxury cars is still very small"
+     ],
+     "answer": 0,
+     "why": "Positioning plus a misaligned channel."
+    },
+    {
+     "tag": "MCQ",
+     "q": "On a price-quality map, which move is hardest for a brand?",
+     "options": [
+      "Downscale, offering a cheaper line under the same name",
+      "Sideways, adding a variant at the same price point",
+      "Upscale, offering a premium line under the same name",
+      "None; all moves are equally hard for a brand"
+     ],
+     "answer": 2,
+     "why": "Customers accept a premium brand going down more readily than a mass brand going up."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Toyota entered the ultra-premium market with:",
+     "options": [
+      "A sub-brand, Toyota Lexus",
+      "A separate brand, Lexus",
+      "A price cut on the Camry",
+      "A new channel, like Nexa"
+     ],
+     "answer": 1,
+     "why": "A new name avoided the upscale-stretch problem."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The three key elements of a positioning statement are:",
+     "options": [
+      "Product, price, place and promotion, each stated in one line for the target",
+      "Strengths, weaknesses, opportunities and threats, as customers see them",
+      "Who (target), what (point of difference and frame of reference), why (reason to believe)",
+      "Segment, target and position, written out in the order they were decided"
+     ],
+     "answer": 2,
+     "why": "Who, what and why, per the slide."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A positioning statement is mainly:",
+     "options": [
+      "An internal document that aligns everyone on what the brand stands for",
+      "An advertising slogan written for customers to remember",
+      "A legal filing that protects the brand's name and logo",
+      "A price list that shows where the brand sits in its market"
+     ],
+     "answer": 0,
+     "why": "It can also be the basis for an agency brief."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In \"Among snackers, Snickers is the brand of candy bar that satisfies your hunger because it is packed with peanuts\", the frame of reference is:",
+     "options": [
+      "Snackers",
+      "Satisfies your hunger",
+      "Packed with peanuts",
+      "Candy bar"
+     ],
+     "answer": 3,
+     "why": "The frame is the competitive category the brand benchmarks against."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the Gatorade statement, the frame of reference is:",
+     "options": [
+      "Water",
+      "Soft drinks",
+      "Energy drinks",
+      "Athletes"
+     ],
+     "answer": 0,
+     "why": "\"Hydrates, replenishes and refuels in ways water can't.\""
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why might Gatorade not state a reason to believe?",
+     "options": [
+      "It has no reason to believe, since water hydrates just as well",
+      "Much of the refuelling comes from sugar, which carries negative connotations",
+      "Positioning statements never include one for a sports drink",
+      "Electrolytes may not be mentioned on the label of a drink"
+     ],
+     "answer": 1,
+     "why": "Highlighting only part of the reason, or sugar, may not look good."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Tropicana changing its packaging is best described as:",
+     "options": [
+      "Repositioning",
+      "Brand extension",
+      "Diversification",
+      "Rebranding"
+     ],
+     "answer": 3,
+     "why": "A new look is not a new image in customers' minds."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Starbucks adding sandwiches and tea is, in the professor's view:",
+     "options": [
+      "Repositioning itself as a food company with coffee on the side",
+      "Diversification into an unrelated business with new customers",
+      "A growth move; it still wants to be seen as a premium coffee outlet",
+      "Rebranding, since the look of its stores changed with the menu"
+     ],
+     "answer": 2,
+     "why": "Adding products is not repositioning unless the brand's meaning changes."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Cadbury Dairy Milk's move to \"kuch meetha ho jaaye\" repositioned the brand mainly by:",
+     "options": [
+      "Changing the communication and frame of reference to traditional sweets",
+      "Changing the chocolate's recipe to taste more like a sweet",
+      "Cutting the price to match that of traditional sweets",
+      "Selling through sweet shops instead of grocery stores"
+     ],
+     "answer": 0,
+     "why": "A communication-only repositioning that widened it to adults and occasions."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Fair & Lovely's multipurpose relaunch lost about 20% share in two months mainly because:",
+     "options": [
+      "The new cream did not work as well as the old one on dark spots",
+      "Competitors cut their prices as soon as the relaunch was announced",
+      "The name was changed to Glow & Lovely at the same time as the pack",
+      "Rural customers had not seen the new ads and thought the changed pack was fake"
+     ],
+     "answer": 3,
+     "why": "Repositioning must be communicated to every customer group."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A launch positioned for \"anyone, anytime\" but priced at about Rs. 50, with one variant and an energy-themed name, illustrates:",
+     "options": [
+      "Strong mass positioning that needed only a larger advertising budget",
+      "Confused positioning: the 4Ps contradict the intended mass position",
+      "A sound niche strategy let down by the choice of retail outlets",
+      "A successful repositioning from an energy drink to a soft drink"
+     ],
+     "answer": 1,
+     "why": "Mass needs low price, variety and broad appeal; every P must agree."
+    }
+   ]
+  },
+  {
+   "name": "Session 5: Brand management",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "The word \"brand\" comes from the Old Norse brandr, meaning:",
+     "options": [
+      "To sell",
+      "To own",
+      "To trade",
+      "To burn"
+     ],
+     "answer": 3,
+     "why": "Owners burned marks on cattle to tell them apart."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is NOT one of the views of a brand on the class slide?",
+     "options": [
+      "A customer experience represented by images and ideas",
+      "The legal registration of a company's name",
+      "A promise made by a firm to its customers",
+      "A network of associations in consumer memory"
+     ],
+     "answer": 1,
+     "why": "The three views stress experience, promise and associations."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A queue outside a store for a one-day 70% discount mainly shows:",
+     "options": [
+      "The power of the discount, not the brand",
+      "Strong loyalty to the brand",
+      "High brand equity in fashion",
+      "The pull of ingredient branding"
+     ],
+     "answer": 0,
+     "why": "A real fan pays more, in money and time, without a discount."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Harley-Davidson is called the poster child of branding mainly because:",
+     "options": [
+      "It spends more on advertising than any other motorcycle maker in the world",
+      "It keeps its prices below those of Japanese motorcycles of the same size",
+      "It has never been in financial trouble since it was founded in 1903",
+      "It built intense loyalty with little advertising, its employees and riders carrying the brand"
+     ],
+     "answer": 3,
+     "why": "Owners' rides, HOG, even tattoos, and licensing income."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Brand management as a function is traced to a 1931 memo by:",
+     "options": [
+      "Philip Kotler, the author",
+      "Peter Drucker, the thinker",
+      "Neil McElroy of P&G",
+      "Al Ries, the consultant"
+     ],
+     "answer": 2,
+     "why": "He asked for a dedicated team for Camay, which competed with P&G's own Ivory."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Johnson & Johnson's handling of the 1982 Tylenol poisonings is remembered because it:",
+     "options": [
+      "Recalled the product nationwide and relaunched with tamper-proof packaging",
+      "Blamed its distributors and withdrew only the affected batches",
+      "Changed the brand name and relaunched it as a new product",
+      "Cut the price sharply to win customers back after the scare"
+     ],
+     "answer": 0,
+     "why": "The first major recall; trust in the brand brought it back."
+    },
+    {
+     "tag": "MCQ",
+     "q": "When Maggi was off the shelves in 2015, the main effect was that:",
+     "options": [
+      "Yippee took most of its share permanently",
+      "Consumers lost trust in the noodle category as a whole",
+      "Pasta sales replaced noodle sales exactly",
+      "Maggi never returned"
+     ],
+     "answer": 1,
+     "why": "Maggi came back to about 60% share; trust sat with the brand."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the blind beer test, when brand names were hidden:",
+     "options": [
+      "All six brands still tasted clearly different",
+      "Guinness could not be told from the others",
+      "Five mass brands tasted alike; only Guinness stood apart",
+      "Drinkers preferred the cheapest of the six"
+     ],
+     "answer": 2,
+     "why": "Brands shape perception, even of taste."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is NOT one of the four challenges (Cs) in building a strong brand?",
+     "options": [
+      "Cash",
+      "Contemporary",
+      "Clutter",
+      "Channels"
+     ],
+     "answer": 3,
+     "why": "Cash, contemporary, clutter and consistency."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The cash challenge arises because brand-building costs are:",
+     "options": [
+      "Uncertain and in the future, while benefits are immediate",
+      "Certain and immediate, while benefits are uncertain and in the future",
+      "Tax-free",
+      "Always small"
+     ],
+     "answer": 1,
+     "why": "Managers with short tenures prefer short-term measures."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Running sales promotions too often tends to:",
+     "options": [
+      "Strengthen the brand by reminding buyers of it often",
+      "Raise the price premium the brand can command",
+      "Cut through the clutter of rival advertising",
+      "Teach customers to buy the promotion, not the brand"
+     ],
+     "answer": 3,
+     "why": "Later, nobody will pay full price."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Kodak's decline is best explained by:",
+     "options": [
+      "Failing to stay contemporary: it invented digital but protected film",
+      "Weak distribution outside the United States and Europe",
+      "Too many brand extensions that diluted the Kodak name",
+      "A fighter brand that cannibalised its premium film"
+     ],
+     "answer": 0,
+     "why": "It sat on its own patents for fear of hurting film."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Lux has stayed relevant for decades mainly by:",
+     "options": [
+      "Changing its core product often",
+      "Cutting prices",
+      "Changing its celebrity endorsers",
+      "Becoming a house of brands"
+     ],
+     "answer": 2,
+     "why": "From Leela Chitnis onwards, a succession of heroines."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Olay's change from \"Oil of Olay\" was made because:",
+     "options": [
+      "The oil it contained was banned in several of its main markets",
+      "\"Oil\" suggested stickiness rather than cosmetics, and the brand looked dated",
+      "P&G had sold the brand and the new owner wanted a new name",
+      "It was being turned into an ingredient brand for other creams"
+     ],
+     "answer": 1,
+     "why": "Dropping the word and refreshing the look repositioned it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Lucky Strike's \"It's toasted\" in Mad Men illustrates:",
+     "options": [
+      "Delivering the same promise at every touch point",
+      "Promoting a branded component inside a product",
+      "Breaking the clutter by being first to claim something",
+      "Cutting the number of brands in a portfolio"
+     ],
+     "answer": 2,
+     "why": "Everyone toasted tobacco; only one brand said so."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Only about what share of the 1955 Fortune 500 was still on the list in 2017?",
+     "options": [
+      "12%",
+      "50%",
+      "30%",
+      "2%"
+     ],
+     "answer": 0,
+     "why": "About 60 companies: evidence of how hard consistency is."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Launching new flavours of an existing biscuit under the same name is a:",
+     "options": [
+      "Category extension",
+      "New brand",
+      "Fighter brand",
+      "Line extension"
+     ],
+     "answer": 3,
+     "why": "Existing name, existing category."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Dove moving from soap into body lotion is a:",
+     "options": [
+      "Category extension",
+      "Line extension",
+      "Store brand",
+      "Ingredient brand"
+     ],
+     "answer": 0,
+     "why": "Existing name, new category."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which is a disadvantage of brand extension?",
+     "options": [
+      "It saves time and money",
+      "It may dilute the parent brand",
+      "It aids awareness",
+      "It reduces risk for customers"
+     ],
+     "answer": 1,
+     "why": "Also cannibalisation and losing the chance to reach a new segment with a new brand."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A fighter brand meant to battle low-priced rivals is best launched:",
+     "options": [
+      "Under the parent's name, to borrow its trust and awareness",
+      "As a store brand, sold through one retail chain only",
+      "Only online, where the parent brand is not available",
+      "Under a new name, to limit cannibalisation and protect the parent"
+     ],
+     "answer": 3,
+     "why": "A new name keeps the parent's image and customers safe."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Crystal Pepsi failed mainly because:",
+     "options": [
+      "It was priced well above ordinary colas in the same pack",
+      "It contained no caffeine and tasted too weak for cola drinkers",
+      "\"Clear cola\" confused buyers: cola is associated with brown",
+      "Coca-Cola held a patent that kept it out of most stores"
+     ],
+     "answer": 2,
+     "why": "The extension broke a core category association."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Coca-Cola's Tab Clear, launched next to Crystal Pepsi, is described as a:",
+     "options": [
+      "Kamikaze strategy: hurting the rival at a cost to itself",
+      "Fighter brand that succeeded in protecting Coke's core",
+      "Line extension of Coke that widened its appeal",
+      "Store brand made for one large retail chain"
+     ],
+     "answer": 0,
+     "why": "Both products failed and Tab was damaged."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Bic's lighters and razors succeeded while its perfume failed because:",
+     "options": [
+      "Perfume is seen as a stationery product, which Bic's buyers do not want from it",
+      "The perfume was priced too high for a brand known for affordable products",
+      "Lighters and razors are ingredient brands, while perfume is sold on its own",
+      "Bic's \"affordable, disposable\" association fits lighters and razors but not hedonic perfume"
+     ],
+     "answer": 3,
+     "why": "Fit comes from all the parent's associations, not just its category."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Pond's toothpaste failed mainly because:",
+     "options": [
+      "Pond's had too little awareness outside cities",
+      "Pond's means external beauty, not oral care",
+      "It was priced too low to look effective",
+      "It cannibalised Pond's own cold cream"
+     ],
+     "answer": 1,
+     "why": "Its powder and cream fit; toothpaste did not."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Honda City, Hyundai i20 and Cadbury Dairy Milk are examples of:",
+     "options": [
+      "Individual branding",
+      "Ingredient branding",
+      "Sub-branding",
+      "Store brands"
+     ],
+     "answer": 2,
+     "why": "Parent and new name share emphasis."
+    },
+    {
+     "tag": "MCQ",
+     "q": "P&G's Tide, Ariel and Pampers reflect which firm-level strategy?",
+     "options": [
+      "House of brands",
+      "Branded house",
+      "Ingredient branding",
+      "Private labels"
+     ],
+     "answer": 0,
+     "why": "Individual brands; the parent stays in the background."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Godrej, Dell and Virgin reflect which strategy?",
+     "options": [
+      "House of brands (individual branding)",
+      "Branded house (corporate branding)",
+      "Endorser branding (a light parent name)",
+      "Fighter branding (a low-price flanker)"
+     ],
+     "answer": 1,
+     "why": "The firm's name is on almost every offering."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Intel Inside\" on a laptop is an example of:",
+     "options": [
+      "A private label",
+      "A fighter brand",
+      "Line extension",
+      "Ingredient branding"
+     ],
+     "answer": 3,
+     "why": "A branded component inside another branded product is promoted."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A brand has a price of Rs. 100, variable cost Rs. 70 and allocated fixed cost Rs. 40 per unit. Dropping it would:",
+     "options": [
+      "Save Rs. 10 per unit, the loss it shows after fixed costs",
+      "Save Rs. 40 per unit, the fixed cost allocated to it",
+      "Lose Rs. 30 per unit of contribution toward fixed costs",
+      "Change nothing, since price covers variable cost"
+     ],
+     "answer": 2,
+     "why": "Contribution is positive; the fixed costs remain anyway."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A hospital brand known for emergency care opens a cancer unit. The main brand risk the professor highlighted is:",
+     "options": [
+      "Cannibalisation of its emergency patients by the new unit",
+      "Dilution of the parent brand if the new unit disappoints",
+      "Confusion with ingredient brands used in treatment",
+      "Competition from private-label hospital chains"
+     ],
+     "answer": 1,
+     "why": "The segments do not substitute; image damage is the risk."
+    }
+   ]
+  },
+  {
+   "name": "Mixed: all six classes",
+   "questions": [
+    {
+     "tag": "MCQ",
+     "q": "\"Positioning is not what you do to a product; it is what you do to the mind of the prospect.\" This line is from:",
+     "options": [
+      "Peter Drucker",
+      "Daniel Kahneman",
+      "Ries and Trout",
+      "Neil McElroy"
+     ],
+     "answer": 2,
+     "why": "Positioning is the image, not the advertising that creates it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "How does behaviour differ from psychographics as a basis of segmentation?",
+     "options": [
+      "Behaviour is how a person acts within this product category; psychographics describe the person's wider lifestyle",
+      "Behaviour describes the person's wider lifestyle; psychographics are how the person acts within this category",
+      "Behaviour is measured by income and occupation; psychographics by age and where the person lives",
+      "They are two names for the same base, one used for consumer markets and one for business markets"
+     ],
+     "answer": 0,
+     "why": "A party-goer is a lifestyle; brushing twice a day is behaviour in the category."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the multiplex popcorn example (small about Rs. 600, medium about Rs. 750, large about Rs. 800) which tub is the decoy?",
+     "options": [
+      "The small",
+      "The large",
+      "None; all three are meant to sell",
+      "The medium"
+     ],
+     "answer": 3,
+     "why": "It costs nearly as much as the large and gives much less, so the large looks obvious."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Fast fashion was the professor's example of a category where:",
+     "options": [
+      "Life cycles are so short that long research is not possible",
+      "Research can take as long as it needs, since designs last for years",
+      "Designs are protected by law, so nobody is able to copy them",
+      "Customers' tastes change so slowly that research is not needed"
+     ],
+     "answer": 0,
+     "why": "A design seen on the runway is in the stores within days."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the Snickers positioning statement, the point of difference is that it:",
+     "options": [
+      "Tastes better than other candy bars",
+      "Satisfies your hunger",
+      "Costs less than a meal",
+      "Is packed with peanuts"
+     ],
+     "answer": 1,
+     "why": "Peanuts are the reason to believe; hunger is the difference."
+    },
+    {
+     "tag": "MCQ",
+     "q": "According to its launch communication, the Tata Nano's intended target was:",
+     "options": [
+      "Existing car owners in big cities looking for a cheap second car for short trips",
+      "College students and young professionals wanting a sporty, stylish first car",
+      "Taxi and fleet operators who needed the lowest running cost per kilometre",
+      "Families without a car: two-wheeler owners in smaller towns moving up to four wheels"
+     ],
+     "answer": 3,
+     "why": "The intended positioning is read from the company's own advertising."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A participant defined positioning as \"placement\". The professor pointed out that placement means:",
+     "options": [
+      "The same thing as positioning: the two words can be used interchangeably",
+      "The choice of which segment to serve, which is properly called targeting",
+      "Shelf placement, or product placement in films: each a technical term of its own",
+      "The price band in which a product is placed relative to its competitors"
+     ],
+     "answer": 2,
+     "why": "Positioning is the image in the customer's mind."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Besides the brand's \"people's car\" image, what else hurt Volkswagen's Phaeton?",
+     "options": [
+      "It was sold from the same showrooms as Volkswagen's cheaper cars",
+      "It lacked the features that rival ultra-luxury cars already offered",
+      "It was priced far above its rivals, with no finance on offer",
+      "It was never advertised, so buyers did not know that it existed"
+     ],
+     "answer": 0,
+     "why": "An ultra-luxury buyer expects to be treated differently."
+    },
+    {
+     "tag": "MCQ",
+     "q": "As told in class, about 80% of The Economist's readers chose web only before a print-only option was added. Afterwards, about:",
+     "options": [
+      "80% still chose web only",
+      "50% chose print only",
+      "90% chose web-plus-print",
+      "70% chose web-plus-print"
+     ],
+     "answer": 3,
+     "why": "Print only at the same $125 made web-plus-print look like a free gift."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A toothpaste maker urging people to brush twice a day is using which growth strategy?",
+     "options": [
+      "Product development",
+      "Market penetration",
+      "Market development",
+      "Diversification"
+     ],
+     "answer": 1,
+     "why": "More usage of the existing product by the existing market."
+    },
+    {
+     "tag": "MCQ",
+     "q": "How many segments did the professor suggest a cluster analysis should usually end with?",
+     "options": [
+      "One or two",
+      "Eight to ten",
+      "Three or four",
+      "As many as there are respondents"
+     ],
+     "answer": 2,
+     "why": "Beyond five, segments become small and strategies too many to be efficient."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which Madura Garments brand was aimed at smart-casual workplaces and introduced the idea of Friday dressing?",
+     "options": [
+      "Allen Solly",
+      "Peter England",
+      "Van Heusen",
+      "Louis Philippe"
+     ],
+     "answer": 0,
+     "why": "The four brands are separated by occupation and career stage."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The bank advertisement shown in class asked viewers to see a savings rate of 6% against 4% as:",
+     "options": [
+      "2% more, not 50% extra",
+      "50% extra, not 2% more",
+      "A loss of 4%",
+      "A discount of 33%"
+     ],
+     "answer": 1,
+     "why": "The same difference, reframed to look larger."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Marketers lean heavily on behavioural segmentation today mainly because:",
+     "options": [
+      "Behaviour is the easiest thing to see in a shop",
+      "It needs no data at all",
+      "Regulators require it",
+      "Firms are sitting on large amounts of customer data"
+     ],
+     "answer": 3,
+     "why": "Demographics are popular because they are visible; behaviour because the data exist."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Your brand's sales have flattened while the category is still growing. According to the class, you should:",
+     "options": [
+      "Assume the product has matured and launch a replacement at once",
+      "Withdraw the product before its decline starts to hurt the brand",
+      "Diagnose your own strategy: the problem is the brand, not the life cycle",
+      "Cut advertising to protect margins until the category stops growing"
+     ],
+     "answer": 2,
+     "why": "The life cycle applies best at the sub-category level, not to a single brand's mistakes."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Mirrors in clothing stores and screens beside a billing queue apply the lesson of the Houston baggage claim, which is that:",
+     "options": [
+      "A stated wait becomes an anchor",
+      "Occupied time is not felt as waiting time",
+      "Buyers prefer gains to reduced losses",
+      "Shoppers pick the middle option"
+     ],
+     "answer": 1,
+     "why": "Time, like money, is booked into separate mental accounts."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Walmart paid about 16 billion dollars for control of a loss-making Flipkart. The professor used this to show that:",
+     "options": [
+      "The customer base, like the brand, is an intangible asset worth valuing",
+      "Loss-making firms are usually overvalued by buyers from abroad",
+      "Land, plant and machinery explain most of an online retailer's value",
+      "The cost of acquiring customers does not matter in e-commerce"
+     ],
+     "answer": 0,
+     "why": "If customers are assets, a firm needs a way to value them: hence the interest in CLV."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A hypermarket adds \"maximum 4 per customer\" to a modest discount on cookies, and shoppers buy more. The limit works as:",
+     "options": [
+      "A decoy that makes another pack look better",
+      "A negative frame",
+      "An anchor for how many to buy",
+      "A separate mental account"
+     ],
+     "answer": 2,
+     "why": "The professor bought four; without the line she would have bought two or three."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of the following is NOT a measure of segment attractiveness?",
+     "options": [
+      "The size of the segment and its rate of growth",
+      "How much the segment's members use the product",
+      "The lifetime value of the segment's customers",
+      "The company's strengths relative to competitors"
+     ],
+     "answer": 3,
+     "why": "That is compatibility: whether we can serve the segment better than rivals can."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Old Spice was mentioned in class as an example of a brand that:",
+     "options": [
+      "Failed because it segmented by gender and stereotyped its buyers",
+      "Must attract younger buyers without alienating its ageing loyal base",
+      "Lost its loyal customers by repositioning as a higher-priced brand",
+      "Was withdrawn after a recall and never recovered its market share"
+     ],
+     "answer": 1,
+     "why": "A quieter version of the dilemma that cost two retail chief executives their jobs."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Kellogg's Special K breakfast sandwich did not work because:",
+     "options": [
+      "Customers could not connect a sausage, egg and cheese sandwich with a weight-loss brand",
+      "Rural customers had not seen the new advertising and took the changed pack for a fake",
+      "It was sold from the same shelves as the cereal and took sales away from it",
+      "Its price was set too low for a brand that customers had come to see as premium"
+     ],
+     "answer": 0,
+     "why": "Moving far from what the brand stands for usually fails."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In a habitual category, where buyers stay with the taste they are used to, the factor \"habit\" points towards:",
+     "options": [
+      "A higher price, to recover R&D",
+      "Skipping the test market",
+      "Selling only online",
+      "A lower price, to win share early"
+     ],
+     "answer": 3,
+     "why": "Whoever wins the habit first tends to keep it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A perceptual map shows a marketer two things. They are:",
+     "options": [
+      "The brand's market share in each segment, and how that share has changed over time",
+      "The price each brand charges, and the cost at which each brand is produced",
+      "Whether customers see the brand where it was intended, and whether a desirable space is vacant",
+      "Which advertisements customers remember, and which of them they liked the most"
+     ],
+     "answer": 2,
+     "why": "Subway found its vacant space in healthy-and-tasty fast food."
+    },
+    {
+     "tag": "MCQ",
+     "q": "When Maggi returned to the shelves after being withdrawn in 2015, it:",
+     "options": [
+      "Climbed back quickly to about 60% of the market",
+      "Never recovered beyond about 10% of the market",
+      "Was relaunched under a new name and a new pack",
+      "Lost its lead for good to another noodle brand"
+     ],
+     "answer": 0,
+     "why": "The brand, not the category, held the trust."
+    },
+    {
+     "tag": "MCQ",
+     "q": "When Harley-Davidson was owned by AMF, what went wrong?",
+     "options": [
+      "The company stopped making motorcycles and moved into licensed merchandise",
+      "Production was pushed up and the Harley name played down, which riders disliked",
+      "Advertising was tripled, which made the brand look ordinary to its riders",
+      "The owners' club was closed down and the company's dealers were replaced"
+     ],
+     "answer": 1,
+     "why": "After the buy-back, Harley competed on legacy rather than on Japanese terms."
+    },
+    {
+     "tag": "MCQ",
+     "q": "After Hero launched Pleasure for women in 2006, its share of the scooter market:",
+     "options": [
+      "Fell from 16.9% to 9.8%",
+      "Stayed at about 19%",
+      "Rose from 9.8% to 16.9%",
+      "Rose from 15% to 85%"
+     ],
+     "answer": 2,
+     "why": "When that growth flattened, Hero launched Maestro for men."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Sleepy Owl raised the click-through rates of its advertisements by:",
+     "options": [
+      "Doubling its advertising budget and moving all of it to social media",
+      "Hiring a film star whose image matched what the brand wanted to say",
+      "Showing a struck-through higher price beside the offer price in every ad",
+      "Using the words customers said they valued: low acidity, great aroma, smooth taste"
+     ],
+     "answer": 3,
+     "why": "Survey answers were turned straight into advertising copy."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why can a blind taste test mislead a company about a well-loved brand?",
+     "options": [
+      "Tasters cannot reliably tell a sweeter drink from a less sweet one in small sips",
+      "Real buying happens with the brand visible, and knowing the brand changes the answer",
+      "Blind tests are always run with too few people to give a result worth trusting",
+      "Taste plays almost no part in the choice of a soft drink once the price is known"
+     ],
+     "answer": 1,
+     "why": "Brand loyalty showed up only when people knew what they were drinking."
+    },
+    {
+     "tag": "MCQ",
+     "q": "People asked to write down the last digits of an unrelated number before pricing a pen quoted higher prices when their digits were higher. This shows that:",
+     "options": [
+      "People with higher numbers are richer",
+      "Pens are bought as luxuries",
+      "A loss frame raises prices",
+      "Even an irrelevant number can act as an anchor"
+     ],
+     "answer": 3,
+     "why": "The number had nothing to do with the product, and it still pulled the estimate."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the US lawsuit over burgers that looked bigger in advertisements than in real life, the court:",
+     "options": [
+      "Found for the company: a reasonable person understands advertising images",
+      "Fined the company and ordered it to withdraw the advertisements",
+      "Banned the use of photographs of food in restaurant advertising",
+      "Ordered the company to make its burgers match the size shown"
+     ],
+     "answer": 0,
+     "why": "The buyer is expected to interpret advertising sensibly."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Match the route used to break the clutter: Nivea's blue tin, Amul's butter girl, Nirma's jingle.",
+     "options": [
+      "Mascot, packaging, logo",
+      "Logo, design, packaging",
+      "Packaging, mascot, advertising",
+      "Advertising, logo, mascot"
+     ],
+     "answer": 2,
+     "why": "Differentiation does not always need a new technology."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The notes suggest Sleepy Owl's surveys work because they are:",
+     "options": [
+      "Long, and run once a year",
+      "Short, frequent and tied to a specific decision",
+      "Sent only to people who have never bought",
+      "Handled by an agency in another city"
+     ],
+     "answer": 1,
+     "why": "Each answer changes something customers can see."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A challenger whose product does not look like the prototype the category leader has established must:",
+     "options": [
+      "Price well below the leader until customers switch",
+      "Withdraw, because a category's prototype cannot change",
+      "Spend heavily to make customers see it differently",
+      "Adopt a name that sounds like the leader's name"
+     ],
+     "answer": 2,
+     "why": "Borrowing a category cue is quick; breaking the prototype is costly."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An ethnic-wear brand already sells a small kids' line and decides to expand it. On the Ansoff matrix this is:",
+     "options": [
+      "Market penetration, because the line already exists",
+      "Product development, because kids' wear is a new product",
+      "Market development, because children are a new market",
+      "Diversification, because product and market are both new"
+     ],
+     "answer": 0,
+     "why": "Check what already exists before calling something new."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Every customer touch point is a moment of truth\" belongs to which of the four challenges of brand building?",
+     "options": [
+      "Cash",
+      "Clutter",
+      "Contemporary",
+      "Consistency"
+     ],
+     "answer": 3,
+     "why": "The brand has to deliver its promise at every contact, for decades."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why does watching customers at home reveal things that interviews miss?",
+     "options": [
+      "People stop noticing small nuisances and so never mention them",
+      "People deliberately mislead interviewers about what they do",
+      "Observation costs far less than interviewing the same people",
+      "Interviews can cover only a handful of people at a time"
+     ],
+     "answer": 0,
+     "why": "P&G's shift was from asking what people want to watching what they do."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"15 of the 19 big banks pass the stress test\" and \"4 of the 19 big banks fail\" illustrate:",
+     "options": [
+      "Anchoring: the first number seen sets the scale",
+      "Framing: the same fact presented as a gain or as a loss",
+      "Availability: what is easily recalled feels likely",
+      "Representativeness: judging by fit with a stereotype"
+     ],
+     "answer": 1,
+     "why": "Identical information, two different impressions."
+    },
+    {
+     "tag": "MCQ",
+     "q": "For a hospital known for emergency care opening a cancer unit, the professor leaned towards sub-branding with the parent name prominent because:",
+     "options": [
+      "A new name is always cheaper",
+      "Cancer patients would otherwise go to the emergency ward",
+      "Endorser branding is not permitted for hospitals",
+      "In services, trust matters even more and takes very long to build"
+     ],
+     "answer": 3,
+     "why": "The risk to manage is dilution, not cannibalisation."
+    },
+    {
+     "tag": "MCQ",
+     "q": "With a retention rate of 50%, the probability that a customer is still with the firm in year 3 is:",
+     "options": [
+      "0.50",
+      "0.125",
+      "0.25",
+      "1.00"
+     ],
+     "answer": 2,
+     "why": "Survival is r to the power t - 1: 1 in year 1, 0.5 in year 2, 0.25 in year 3."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Rs. 999 reads as \"nine hundred-something\" and Rs. 1,000 as \"a thousand\". This is the:",
+     "options": [
+      "Left-digit effect",
+      "Veblen effect",
+      "Goldilocks effect",
+      "Decoy effect"
+     ],
+     "answer": 0,
+     "why": "The leftmost digit has the most influence on how a price is read."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A survey is best described as a method that is:",
+     "options": [
+      "Qualitative, and about what people do",
+      "Qualitative, and about what people say",
+      "Quantitative, and about what people do",
+      "Quantitative, and about what people say"
+     ],
+     "answer": 3,
+     "why": "Many respondents, measurable answers, but people may not do what they say."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which of these is repositioning rather than rebranding?",
+     "options": [
+      "A juice brand redesigning its carton and changing the wording on it",
+      "A deodorant brand moving its message from seduction to individuality",
+      "A company replacing its old logo with a simpler, more modern one",
+      "A retail chain repainting its stores and changing its staff uniforms"
+     ],
+     "answer": 1,
+     "why": "Repositioning tries to create a new image; rebranding changes the look, the logo or the name."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Each time a participant offered \"market research\" or \"competitor analysis\" as a marketing decision, the professor replied that these are:",
+     "options": [
+      "The most important decisions a marketing manager takes",
+      "Decisions that belong to the finance function",
+      "Activities that feed decisions: to take what decision?",
+      "Part of Place in the 4Ps"
+     ],
+     "answer": 2,
+     "why": "A plan is a list of choices; research and tracking exist to inform them."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why did Kimberly-Clark sell adult diapers as Depend rather than as an extension of Huggies?",
+     "options": [
+      "Adults would not want a brand associated with toddlers",
+      "Huggies was losing share and could not support a new product",
+      "The law does not allow one name on products for two age groups",
+      "A new name is always cheaper to advertise than an existing one"
+     ],
+     "answer": 0,
+     "why": "Perceived fit, seen from the customer's side."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Within the 4Ps, brand management sits under:",
+     "options": [
+      "Price",
+      "Product",
+      "Place",
+      "Promotion"
+     ],
+     "answer": 1,
+     "why": "Services, too, are treated as part of Product."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Where did the pregnancy-test maker place the version meant for the \"fearfuls\"?",
+     "options": [
+      "Next to ovulation kits and vitamins",
+      "At the pharmacy's billing counter",
+      "In the baby-care and nappies aisle",
+      "Next to condoms and contraceptives"
+     ],
+     "answer": 3,
+     "why": "Name, pack and shelf kept the two segments from discovering each other's product."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Neil McElroy's 1931 memo asked for a dedicated team because his brand, Camay, was:",
+     "options": [
+      "Being copied by a rival company that had launched a similar-looking soap",
+      "Sold in only one region and needed a national sales force in order to grow",
+      "Competing against P&G's own flagship soap, Ivory, without resources of its own",
+      "About to be withdrawn because its sales had been falling for several years"
+     ],
+     "answer": 2,
+     "why": "The memo is regarded as the birth certificate of brand management."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Research cited in class found that a brand rated 3 out of 5, which falls to 1 after a failure, can end up rated about:",
+     "options": [
+      "1, whatever the company does",
+      "4, if the failure is handled well",
+      "3, the same as before",
+      "5, in every case"
+     ],
+     "answer": 1,
+     "why": "Good after-sales handling can turn a failure into loyalty."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A participant argued that the product must come before STP. The professor's reply was that:",
+     "options": [
+      "The broad category is a business decision; the specific product decisions follow the segment and positioning",
+      "The product always comes first; segmentation and positioning are worked out after the launch",
+      "STP and the product are both decided by the production team before marketing is involved",
+      "The order makes no difference so long as the price is set before the product is designed"
+     ],
+     "answer": 0,
+     "why": "Airbags, features and variants have to serve a target that has already been chosen."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Compared with niche positioning, mass positioning usually means:",
+     "options": [
+      "Lower volume, higher margin and stronger appeal to a few",
+      "Higher volume and higher margin, with appeal to everyone",
+      "Higher volume, lower margin and weaker appeal to any one group",
+      "Lower volume and lower margin, with appeal to a small group"
+     ],
+     "answer": 2,
+     "why": "Something for everyone becomes very appealing to no one."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The class said Jio stands for free, cheap plans and freedom. The professor used this to argue that:",
+     "options": [
+      "Jio's name can be extended into any category without risk",
+      "Telecom brands cannot be extended beyond telecom services",
+      "A brand's associations do not matter in service categories",
+      "Those associations would not help a premium education brand"
+     ],
+     "answer": 3,
+     "why": "Tata's association with trust, by contrast, travels across categories."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The changes Tropicana made in its failed relaunch were:",
+     "options": [
+      "A new formula with less sugar, in the same familiar carton as before",
+      "Cosmetic: the pack, the logo and the claims; the juice was the same",
+      "A higher price and a smaller pack, with no change to the design",
+      "A move from cartons to bottles, sold through different retailers"
+     ],
+     "answer": 1,
+     "why": "Shoppers could no longer find the orange they looked for on the shelf."
+    },
+    {
+     "tag": "MCQ",
+     "q": "HMT lost its leadership in watches mainly because:",
+     "options": [
+      "Titan arrived with quartz technology and HMT did not move in time",
+      "It raised its prices sharply and lost the gifting market to imports",
+      "Its watches were recalled after a quality failure and never returned",
+      "It stopped advertising once it had become the default gift"
+     ],
+     "answer": 0,
+     "why": "Like Kodak, it had the technology but failed to stay contemporary."
+    },
+    {
+     "tag": "MCQ",
+     "q": "What made the Gillette Guard right for the Indian market?",
+     "options": [
+      "Twin blades developed with Indian students at MIT, at a premium price",
+      "A battery-powered handle that gave a closer shave in poor light",
+      "A disposable design sold only through modern retail in large cities",
+      "A single blade that rinsed easily with little water, at a low price"
+     ],
+     "answer": 3,
+     "why": "It was designed after watching men shave at home with a cup of water."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Pears was not among the top five soap brands, yet it was kept during portfolio rationalisation because it had:",
+     "options": [
+      "The lowest variable cost",
+      "A strong regional base in the south",
+      "A strong image with future growth potential",
+      "The same positioning as another brand"
+     ],
+     "answer": 2,
+     "why": "The brand kept for its regional strength was Hamam."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Colgate launches a toothpaste for sensitive teeth. Calling it \"Colgate Sensitive\" rather than giving it a new name means that:",
+     "options": [
+      "More of its sales will come from Colgate's own customers",
+      "More of its sales will come from competitors' customers",
+      "It cannot be sold in the same shops",
+      "It becomes a fighter brand"
+     ],
+     "answer": 0,
+     "why": "If cannibalisation is the worry, a new name is safer."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A company launching a novelty knows it cannot meet demand at a low price. This points towards:",
+     "options": [
+      "A lower price",
+      "A higher price",
+      "No advertising at any stage",
+      "Leaving the market"
+     ],
+     "answer": 1,
+     "why": "Capacity is one of the factors in the choice between a high and a low launch price."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In endorser branding:",
+     "options": [
+      "The parent's name, with a product description, is the only name used",
+      "The parent and the new name share roughly equal emphasis on the pack",
+      "The new name leads and the parent appears lightly as an endorsement",
+      "The parent is kept hidden from customers in all of the communication"
+     ],
+     "answer": 2,
+     "why": "Equal emphasis is sub-branding; the parent alone is corporate branding."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the three-circle framework, the area where customer needs, your offering and the competitor's offering all overlap holds the:",
+     "options": [
+      "Points of difference",
+      "Competitor's points of difference",
+      "Unmet needs",
+      "Points of parity"
+     ],
+     "answer": 3,
+     "why": "Parity gets you considered; it gives no reason to choose you."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The two attributes tyre buyers mainly look at, in the Goodyear example, were:",
+     "options": [
+      "Price and colour",
+      "Tread life and wet traction",
+      "Brand name and warranty",
+      "Speed rating and noise"
+     ],
+     "answer": 1,
+     "why": "Goodyear improved wet traction, yet customers rated it no differently."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A smart group listing pricing factors from memory forgot distribution altogether. The professor used this to show that:",
+     "options": [
+      "Distribution has little effect on the price a customer pays",
+      "Pricing is best left to the finance and accounting team",
+      "Memory is a better guide than a framework for experts",
+      "A framework is a checklist that stops you missing things"
+     ],
+     "answer": 3,
+     "why": "Run the same problem through the 5Cs and distribution cannot be forgotten: it has a box."
+    },
+    {
+     "tag": "MCQ",
+     "q": "When the class listed variables for segmenting hypermarket shoppers, proximity was left out because:",
+     "options": [
+      "A marketing manager cannot change the store's location",
+      "Shoppers do not care how far they travel to a hypermarket",
+      "Distance cannot be rated on a scale of one to seven",
+      "It is a demographic variable, not a value customers seek"
+     ],
+     "answer": 0,
+     "why": "Choose variables on which the marketer can act."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Store brands are priced lower than national brands, yet retailers earn more on them. Why?",
+     "options": [
+      "They are made from cheaper ingredients than national brands of the same type",
+      "Customers are willing to pay a premium for a retailer's own name on the pack",
+      "The store's own trust saves brand-building cost, and there are fewer middlemen",
+      "National manufacturers subsidise them in return for better shelf space"
+     ],
+     "answer": 2,
+     "why": "National brands, with their bargaining power, leave retailers thin margins."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A new competitor entering the market is, in SWOT terms:",
+     "options": [
+      "A weakness, because it hurts the company",
+      "A threat, because it comes from outside the company",
+      "A strength, because it enlarges the market",
+      "Neither internal nor external"
+     ],
+     "answer": 1,
+     "why": "Strengths and weaknesses are internal; opportunities and threats are external."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A participant noted that luxury brands avoid strike-through prices and bonus packs. The explanation is that:",
+     "options": [
+      "Luxury buyers are far less affected by anchors and frames than ordinary buyers are",
+      "Luxury brands are bound by agreements with their retailers never to discount",
+      "Those tactics make a price look low, while luxury relies on exclusivity: the Veblen effect",
+      "Anchoring and framing have been shown to work only on low-priced products"
+     ],
+     "answer": 2,
+     "why": "Even so, the snob effect holds only within a range of prices."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why would a caffeine-free drink struggle if it were positioned as an energy drink?",
+     "options": [
+      "One dominant brand defines the category's prototype, and the drink does not fit it",
+      "Energy drinks are bought mainly in rural markets, where the brand had no reach",
+      "Customers who buy energy drinks actively dislike drinks that contain vitamins",
+      "Energy drinks must be priced below soft drinks to sell in any real volume"
+     ],
+     "answer": 0,
+     "why": "Representativeness again: customers would ask where the energy comes from."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A brand leads its communication with \"reliable\" and \"good mileage\", which every rival also claims. It is:",
+     "options": [
+      "Using its strongest point of difference in a crowded market",
+      "Repositioning itself away from what it stood for earlier",
+      "Stating its reason to believe without naming its target",
+      "Leading with points of parity, which give no reason to choose it"
+     ],
+     "answer": 3,
+     "why": "The positioning has to be built on a difference customers value."
+    },
+    {
+     "tag": "MCQ",
+     "q": "To decide which branding approach a product uses, the professor advised looking at:",
+     "options": [
+      "How the company names it in advertising, on the front of the pack and in interviews",
+      "Which company legally owns the trademark and where it has been registered",
+      "Where the product is manufactured and which factory's name is on the pack",
+      "How the product is priced compared with the parent brand's other products"
+     ],
+     "answer": 0,
+     "why": "The boundaries are blurred; judge by emphasis."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the language of Session 1, a bias is:",
+     "options": [
+      "A mental shortcut used to decide quickly",
+      "The systematic error that a heuristic produces",
+      "A deliberate attempt by a company to mislead",
+      "The gap between a product's price and its cost"
+     ],
+     "answer": 1,
+     "why": "The heuristic is the shortcut; the bias is the predictable mistake it leads to."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The first step in deciding whether to extend a brand is to:",
+     "options": [
+      "Check that the factory has spare capacity and that the channel will stock the product",
+      "Choose the advertising agency and agree the budget for the launch campaign",
+      "Set the price of the new product in line with the parent brand's price",
+      "Bring out all the parent brand's associations from customers, not just its product category"
+     ],
+     "answer": 3,
+     "why": "Bic's \"affordable and disposable\" mattered more than \"stationery\"."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In case analysis, the recommendation \"start again with fresh research\" was rejected because:",
+     "options": [
+      "Research is rarely useful once a product has already been launched",
+      "The case contained no research on which a recommendation could rest",
+      "A recommendation must say what to change, using the research already in hand",
+      "Only the company, not the analyst, may decide to commission research"
+     ],
+     "answer": 2,
+     "why": "Name the changes, across all four Ps."
+    },
+    {
+     "tag": "MCQ",
+     "q": "An Indian candy brand entering Singapore because of its large Indian population is pursuing:",
+     "options": [
+      "Market development",
+      "Market penetration",
+      "Product development",
+      "Diversification"
+     ],
+     "answer": 0,
+     "why": "An existing product in a new market: starting where tastes are familiar."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A company sold the same tablet at a higher price under a migraine label. Challenged in court, it argued that:",
+     "options": [
+      "The two tablets contained different active ingredients in different strengths",
+      "The higher price paid for the extra advertising that the migraine label needed",
+      "Customers had asked for a separate product and were willing to pay more for it",
+      "The migraine pack carries different dosage information and offers psychological value"
+     ],
+     "answer": 3,
+     "why": "As the professor recalled, the company won."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Told that a new \"fast-food outlet\" was opening near the campus, the class at once imagined rolls and chowmein. This is:",
+     "options": [
+      "Anchoring: estimating from the first number seen",
+      "Representativeness: judging by fit with a prototype",
+      "Mental accounting: keeping separate budgets",
+      "The decoy: comparing with an inferior option"
+     ],
+     "answer": 1,
+     "why": "The outlet might serve healthy food, but \"fast food\" fits a stereotype."
+    },
+    {
+     "tag": "MCQ",
+     "q": "After the outcry over New Coke, Coca-Cola:",
+     "options": [
+      "Kept New Coke on sale and withdrew the original formula for good",
+      "Halved the price of New Coke until its sales recovered a year later",
+      "Brought the original back within about three months as Coca-Cola Classic",
+      "Renamed New Coke as Diet Coke and aimed it at a different segment"
+     ],
+     "answer": 2,
+     "why": "The taste tests had never asked how people would feel about losing the original."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In a preference-based segmentation chart, a bar to the right of the 0% line means that the segment:",
+     "options": [
+      "Rates that variable as more important than the average customer does",
+      "Spends more on that variable than the average customer does",
+      "Is larger than the other segments, measured on that variable",
+      "Is less satisfied than the average customer on that variable"
+     ],
+     "answer": 0,
+     "why": "The 0% line is the average of all respondents."
+    },
+    {
+     "tag": "MCQ",
+     "q": "On an MDS map, a brand sits on the \"sporty\" side. The correct reading is that it is:",
+     "options": [
+      "The sportiest car on the market, since the axis measures sportiness",
+      "Sportier than the average of the brands rated, not necessarily a sports car",
+      "A sports car by definition, whatever its price or its features",
+      "Disliked by buyers who prefer chauffeur-driven, traditional cars"
+     ],
+     "answer": 1,
+     "why": "Positions are relative; the centre is the average of all the brands rated."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Under Mercedes-Benz India's \"Retail of the Future\" model, who sets the price, holds the stock and invoices the customer?",
+     "options": [
+      "Each dealer, as before",
+      "An online marketplace",
+      "The customer's financier",
+      "Mercedes-Benz India itself"
+     ],
+     "answer": 3,
+     "why": "Dealers became franchise partners who compete only on the customer's experience."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The story of the cement company's 25-kg bags, whose seals broke when dealers threw them off trucks, was told to show that:",
+     "options": [
+      "Small packs rarely sell in categories that are normally bought in bulk",
+      "Dealers should not be given a new product without training and incentives",
+      "Advertising and launch buzz are wasted if the product and its supply are not ready",
+      "Heavy marketing does not work for products that buyers see as commodities"
+     ],
+     "answer": 2,
+     "why": "By the time the improved bags arrived, the buzz had died."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Customers want products that are available and affordable; make them efficiently and they will sell.\" This belief belongs to the:",
+     "options": [
+      "Selling concept",
+      "Production concept",
+      "Marketing concept",
+      "Societal marketing concept"
+     ],
+     "answer": 1,
+     "why": "The earliest of the four approaches: the grandfather's sweet shop, the only one in town."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Low margins per unit in confectionery mean that a brand needs:",
+     "options": [
+      "High volumes, and therefore strong distribution",
+      "A small, loyal group of buyers who pay more",
+      "Exclusive outlets in the largest cities only",
+      "A premium price to make up for low volumes"
+     ],
+     "answer": 0,
+     "why": "A typical problem of low-involvement categories."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the psychologist's view of the buyer, behaviour is:",
+     "options": [
+      "Rational, aimed at maximum benefit for minimum cost, and so predictable",
+      "Driven only by price and income, and so predictable from demographics",
+      "Subjective, shaped by upbringing and culture, and therefore unpredictable",
+      "Rational within limits, relying on shortcuts that give predictable errors"
+     ],
+     "answer": 2,
+     "why": "It is the opposite extreme from the economist's rational, predictable buyer."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The professor's tip for reading a case was that the main dilemma is usually stated in:",
+     "options": [
+      "The exhibits at the back",
+      "The section on the company's history",
+      "The footnotes",
+      "The introduction, the conclusion, or both"
+     ],
+     "answer": 3,
+     "why": "Case writers like to close the loop by repeating the issue at the end."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"For [target market], [x] provides [point of difference], because [reason to believe].\" Which element does this template leave out?",
+     "options": [
+      "The target",
+      "The frame of reference",
+      "The point of difference",
+      "The reason to believe"
+     ],
+     "answer": 1,
+     "why": "Templates mix and match the elements; some omit one."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Lay's keeps adding flavours. One advantage of such line extensions noted in class is that they:",
+     "options": [
+      "Let a bored customer switch without leaving the brand",
+      "Remove the need to invest in distribution for each flavour",
+      "Allow a higher price to be charged for every new flavour",
+      "Stop competitors from launching flavours of their own"
+     ],
+     "answer": 0,
+     "why": "Otherwise the customer who wants a change moves to a rival snack."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the first case discussion, one proposal was to launch a premium line under the struggling brand's name. The professor's objection was that:",
+     "options": [
+      "Brand extensions rarely work, so the company should always create a new brand instead",
+      "Premium products cannot be sold to customers who first met the brand as students",
+      "The proposal ignored the cost of the extra advertising that a premium line would need",
+      "An extension cannot be built on a weak parent; it should have been proposed while the brand was strong"
+     ],
+     "answer": 3,
+     "why": "The same move is proactive from strength and desperate from weakness."
+    },
+    {
+     "tag": "MCQ",
+     "q": "How long does it take to build a strong brand that pulls customers without discounts?",
+     "options": [
+      "About six months",
+      "Two to five years",
+      "Decades",
+      "One good advertising campaign"
+     ],
+     "answer": 2,
+     "why": "The few that seem to rise in two or three years are survivors of thousands that failed."
+    },
+    {
+     "tag": "MCQ",
+     "q": "For services, the marketing mix is usually extended to seven Ps by adding:",
+     "options": [
+      "People, Process and Physical evidence",
+      "Packaging, Positioning and People",
+      "Profit, Process and Partners",
+      "Purpose, People and Planet"
+     ],
+     "answer": 0,
+     "why": "A service is produced and consumed in the same moment, by staff the customer can see."
+    },
+    {
+     "tag": "MCQ",
+     "q": "People say \"Xerox\" for a photocopy and ask for \"Bisleri\" when they want bottled water. Such names are called:",
+     "options": [
+      "Fighter brands",
+      "Generic brands",
+      "Store brands",
+      "Ingredient brands"
+     ],
+     "answer": 1,
+     "why": "The brand name has become the name of the category."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The Taj group's Vivanta and Ginger were cited to show that:",
+     "options": [
+      "A mass brand can move up easily if it changes its name",
+      "Hotel brands cannot be extended without losing their image",
+      "A premium brand can offer a cheaper line and be accepted",
+      "Repositioning a premium brand always damages the parent"
+     ],
+     "answer": 2,
+     "why": "Moving down is easier than moving up."
+    },
+    {
+     "tag": "MCQ",
+     "q": "FMCG firms usually prefer to reduce the grams in a Rs. 10 pack rather than raise its price to Rs. 11 because:",
+     "options": [
+      "Buyers notice a change in quantity more than a change in price",
+      "Retailers refuse to handle odd prices",
+      "Smaller packs are cheaper to transport",
+      "Demand can drop sharply when a price crosses a familiar threshold"
+     ],
+     "answer": 3,
+     "why": "Buyers react more to price than to quantity, and Rs. 10 is a threshold."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A pack offers \"50% more\" for the same price. The equivalent price cut is about:",
+     "options": [
+      "50%",
+      "33%",
+      "25%",
+      "40%"
+     ],
+     "answer": 1,
+     "why": "New price per unit = old price / 1.5, which is two-thirds of the old price."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The sensitive-teeth segment is small in numbers, but its members brush twice a day without fail. This shows that:",
+     "options": [
+      "Small segments should be ignored until they have grown large enough",
+      "Demographic variables always matter more than behavioural ones",
+      "The number of buyers is the only measure of a segment's worth",
+      "Usage can make a small segment more attractive than its size suggests"
+     ],
+     "answer": 3,
+     "why": "Consumption depends on how many buy and how much each uses."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A market leader rarely runs advertising that names a smaller rival because:",
+     "options": [
+      "It hands the rival free publicity and a place beside the leader in the buyer's mind",
+      "Comparative advertising is something only a challenger is permitted to run",
+      "A leader has no need to advertise at all once it has reached the top",
+      "Customers nearly always side with the smaller brand in such comparisons"
+     ],
+     "answer": 0,
+     "why": "Comparative advertising borrows the leader's fame, so it is the challenger's tool."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The same company's cost of sales to prime customers was four to five times higher because:",
+     "options": [
+      "Prime customers were smaller hospitals spread over a much wider geographic area",
+      "Prime customers bought the most expensive systems and demanded longer demonstrations",
+      "Its sales force kept pushing service and innovation those customers neither valued nor could afford",
+      "It had too few salespeople, so each call on a prime customer took far longer to arrange"
+     ],
+     "answer": 2,
+     "why": "One selling approach for two different segments wastes money on one of them."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In which stage of the product life cycle do sales flatten, competitors multiply and me-too offers appear?",
+     "options": [
+      "Introduction",
+      "Maturity",
+      "Growth",
+      "Decline"
+     ],
+     "answer": 1,
+     "why": "The objective there is to defend and differentiate."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Saffola moved from advertisements about heart patients to everyday healthy cooking for families. Its reason for repositioning was to:",
+     "options": [
+      "Correct a positioning that had gone wrong",
+      "Respond to a product recall",
+      "Reach a wider segment and expand its customer base",
+      "Move from a mass market to a niche"
+     ],
+     "answer": 2,
+     "why": "It did so by changing its communication."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Hierarchical clustering begins by:",
+     "options": [
+      "Treating every respondent as a separate cluster and merging the closest, step by step",
+      "Fixing the number of clusters wanted and placing that many random starting points",
+      "Dividing the respondents by age and income before any ratings are compared",
+      "Removing the respondents whose ratings differ most from those of the majority"
+     ],
+     "answer": 0,
+     "why": "K-means works the other way round: the analyst chooses k first."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The central lesson of the Samsung story that opened the module is that:",
+     "options": [
+      "A firm should keep cutting its price until customers notice the product",
+      "Advertising matters more than the product, the price or the channel",
+      "A challenger should avoid mentioning the market leader in its advertising",
+      "A good product still has to be made to mean something to the customer it is meant for"
+     ],
+     "answer": 3,
+     "why": "The phones were good all along; what changed between 2011 and 2012 was what people knew and felt about them."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the professor's view, the biggest problem with Bic for Her was:",
+     "options": [
+      "The \"for her\" labelling",
+      "The colour of the ink",
+      "The quality of the pen",
+      "The choice of retailers"
+     ],
+     "answer": 0,
+     "why": "Placed quietly on the shelf, the pens might have found a small segment."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The technical reason the professor gave for ChotuKool's limited success was that it:",
+     "options": [
+      "Used so much electricity that the monthly bill ran into three digits",
+      "Could not hold a low temperature in states where summers cross 40 to 45 degrees",
+      "Was too heavy to be carried to a repair shop when it needed servicing",
+      "Had too many moving parts and needed servicing every few months"
+     ],
+     "answer": 1,
+     "why": "Her deeper explanation, though, was researcher bias."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The definition of segmentation speaks of \"actual and/or potential customers\". The word potential means that:",
+     "options": [
+      "Only future customers, not present ones, should be studied",
+      "Segments must be of roughly equal size to be worth serving",
+      "People who do not buy today are left out of the exercise",
+      "You segment the whole possible market, not only today's buyers"
+     ],
+     "answer": 3,
+     "why": "Non-users can be the most interesting segment of all."
+    },
+    {
+     "tag": "MCQ",
+     "q": "\"Kitna deti hai?\" summed up an industry assumption that Renault Kwid challenged. The assumption was that:",
+     "options": [
+      "High-price car buyers care only about mileage and resale",
+      "Young buyers do not want a small car as their first car",
+      "Low-price car buyers care only about economy and mileage",
+      "Indian car buyers pay little attention to the price"
+     ],
+     "answer": 2,
+     "why": "Kwid looked at the same buyers through psychographics and offered aspirational features."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the healthcare-equipment example, the primary decision makers in the key and the prime segments were, respectively:",
+     "options": [
+      "Nurses and administrators",
+      "Administrators and nurses",
+      "Doctors and patients",
+      "Purchase managers and finance heads"
+     ],
+     "answer": 0,
+     "why": "The two segments bought for different reasons and needed different selling."
+    },
+    {
+     "tag": "MCQ",
+     "q": "For a new breakfast cereal, which letter of PESTLE did the class give the most weight?",
+     "options": [
+      "Technological, whether a 4G product will look dated in a 5G world",
+      "Political: how stable the government of a neighbouring country is",
+      "Legal: the emission and certification norms for electronic devices",
+      "Social: the move towards health-conscious and organic eating"
+     ],
+     "answer": 3,
+     "why": "The framework stays the same; the emphasis moves with the product. For the smartphone it was technology."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Which pair of methods captures what people do rather than what they say?",
+     "options": [
+      "Surveys and polls",
+      "Eye tracking and A/B tests",
+      "In-depth interviews and focus groups",
+      "Concept tests and taste tests"
+     ],
+     "answer": 1,
+     "why": "Both record actual behaviour, not stated preference."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In business markets, \"centralised or decentralised purchasing\" and \"purchase policies\" belong to which base?",
+     "options": [
+      "Firmographics",
+      "Benefits sought",
+      "Buying approach",
+      "Geographic"
+     ],
+     "answer": 2,
+     "why": "It is the business-market cousin of psychographics."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Documents disclosed in Apple's court battles over design were cited in class because they showed that:",
+     "options": [
+      "Apple did a good deal of customer research, whatever it said in public",
+      "Apple had copied several of its rivals' designs before launching its own",
+      "Customers are unable to describe what they want in a new product",
+      "Research had led Apple into several product failures it later hid"
+     ],
+     "answer": 0,
+     "why": "The lesson is to fix how research is done, not to abandon it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Maruti's difficulty with the Jimny was used in class to show that:",
+     "options": [
+      "Off-road vehicles have no real market among car buyers in Indian cities",
+      "An established image of economy and value does not easily carry a lifestyle product",
+      "Maruti's dealers were unwilling to stock a car aimed at so small a segment",
+      "A good product will always overcome the image of the brand that sells it"
+     ],
+     "answer": 1,
+     "why": "Repositioning is very risky territory, even with a good product."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the AMA's 2007 definition, the phrase \"exchanging offerings that have value\" brings in which P?",
+     "options": [
+      "Product",
+      "Place",
+      "Promotion",
+      "Price"
+     ],
+     "answer": 3,
+     "why": "Value is traded, not handed over. Creating is Product, communicating is Promotion, delivering is Place."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In a positioning statement, the frame of reference is:",
+     "options": [
+      "The proof that makes customers believe the brand's claim",
+      "The group of customers the brand has chosen to serve",
+      "The category or alternatives the brand is benchmarked against",
+      "The price band in which the brand has chosen to compete"
+     ],
+     "answer": 2,
+     "why": "It tells customers what kind of thing the brand is."
+    },
+    {
+     "tag": "MCQ",
+     "q": "What does the societal marketing concept add to the marketing concept?",
+     "options": [
+      "Heavier use of selling and promotion to move what the factory has already made",
+      "Satisfying customers in a way that also protects society's long-term interests",
+      "A focus on making products available and affordable through efficiency",
+      "Building the whole offering around what customers need and value"
+     ],
+     "answer": 1,
+     "why": "The fourth approach, later written into the AMA's 2007 definition as \"society at large\"."
+    },
+    {
+     "tag": "MCQ",
+     "q": "For a new toothpaste brand, the class thought a smaller, less crowded need could be a better place to start than a large one because:",
+     "options": [
+      "A new player can get lost in a large, crowded segment",
+      "Large segments are nearly always unprofitable to serve",
+      "Small segments have no competitors in them at all",
+      "Retailers give more shelf space to niche products"
+     ],
+     "answer": 0,
+     "why": "Size each need, then look at the competition in it."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Why can \"Linda is a bank teller and active in a feminist movement\" never be more probable than \"Linda is a bank teller\"?",
+     "options": [
+      "Bank tellers are rarely interested in social causes of any kind whatever",
+      "The description of Linda says nothing at all about the work that she does",
+      "The first is a subset of the second: two conditions must hold instead of one",
+      "Probability cannot be applied to judgements about individual people"
+     ],
+     "answer": 2,
+     "why": "Fit with the description overrode the arithmetic."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the Nano's intended positioning, the differentiation was meant to be:",
+     "options": [
+      "The lowest price of any car in the world",
+      "Sporty styling aimed at college students",
+      "Luxury features packed into a small car",
+      "Quality and robustness at that price: value"
+     ],
+     "answer": 3,
+     "why": "\"Cheapest car\" was the media's position for it, not the company's."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A participant called one-third of respondents willing to buy \"a bad number\". The professor's response was:",
+     "options": [
+      "Any figure below 50% is a failure",
+      "Bad compared with what? A number needs a reference point",
+      "The figure should be doubled to allow for error",
+      "Research numbers should be ignored in a case"
+     ],
+     "answer": 1,
+     "why": "Judge a number against a target, a competitor or a category norm."
+    },
+    {
+     "tag": "MCQ",
+     "q": "A customer gives a margin of Rs. 500 a year for 20 certain years. Discounted at 10%, these are worth about Rs. 4,257, and the customer cost Rs. 1,500 to acquire. The CLV is about:",
+     "options": [
+      "Rs. 2,757",
+      "Rs. 4,257",
+      "Rs. 5,757",
+      "Rs. 10,000"
+     ],
+     "answer": 0,
+     "why": "Net present value: 4,257 less the acquisition cost of 1,500."
+    },
+    {
+     "tag": "MCQ",
+     "q": "Driving is statistically riskier than flying, yet flying feels riskier just after a crash. The reason given in class is that:",
+     "options": [
+      "People anchor on the price of the ticket when judging the risk",
+      "Airlines frame their safety record as a loss instead of a gain",
+      "Flying is booked into a separate mental account from driving",
+      "Vivid, recent events are easily recalled and so feel more likely"
+     ],
+     "answer": 3,
+     "why": "Availability: what comes to mind easily is judged more probable."
+    },
+    {
+     "tag": "MCQ",
+     "q": "In the keep-or-drop decision on a brand, contribution means:",
+     "options": [
+      "The brand's share of total sales",
+      "Profit after allocated fixed costs",
+      "Price minus variable cost",
+      "Revenue minus advertising"
+     ],
+     "answer": 2,
+     "why": "Fixed costs remain whether or not the brand exists, so they should not drive the decision."
+    },
+    {
+     "tag": "MCQ",
+     "q": "The slide \"Marketing Management: The Plan\" names three activities: situation analysis, developing strategy and designing tactics. In that order, they are:",
+     "options": [
+      "The 5Cs, STP and the 4Ps",
+      "STP, the 5Cs and the 4Ps",
+      "The 4Ps, STP and the 5Cs",
+      "PESTLE, the 4Ps and STP"
+     ],
+     "answer": 0,
+     "why": "Read the situation, choose the strategy, then carry it out."
+    }
+   ]
+  }
+ ]
+}

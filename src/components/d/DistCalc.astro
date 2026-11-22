@@ -1,0 +1,32 @@
+---
+// Euclidean distance between two survey respondents rating three store attributes from 1 to 7.
+---
+<div class="calc" data-dist>
+  <div class="calc-in">
+    <label class="ctl"><span>Respondent 1: availability of brands</span><input type="range" min="1" max="7" step="1" value="6" data-k="a1" /><output data-o="a1"></output></label>
+    <label class="ctl"><span>Respondent 1: price points</span><input type="range" min="1" max="7" step="1" value="6" data-k="a2" /><output data-o="a2"></output></label>
+    <label class="ctl"><span>Respondent 1: layout</span><input type="range" min="1" max="7" step="1" value="5" data-k="a3" /><output data-o="a3"></output></label>
+    <label class="ctl hl"><span>Respondent 2: availability of brands</span><input type="range" min="1" max="7" step="1" value="7" data-k="b1" /><output data-o="b1"></output></label>
+    <label class="ctl hl"><span>Respondent 2: price points</span><input type="range" min="1" max="7" step="1" value="7" data-k="b2" /><output data-o="b2"></output></label>
+    <label class="ctl hl"><span>Respondent 2: layout</span><input type="range" min="1" max="7" step="1" value="5" data-k="b3" /><output data-o="b3"></output></label>
+    <div class="kv">
+      <div><span>Squared differences</span><b data-v="sq"></b></div>
+      <div><span>Their sum</span><b data-v="sum"></b></div>
+    </div>
+  </div>
+  <div class="calc-out"><span>Distance between the two respondents</span><b data-v="d"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-dist]').forEach((root) => {
+    const $ = (s) => root.querySelector(s), g = (k) => Number($(`[data-k="${k}"]`).value);
+    const run = () => {
+      const ks = ['1', '2', '3'], sq = ks.map((k) => Math.pow(g('a' + k) - g('b' + k), 2)), sum = sq.reduce((a, b) => a + b, 0), d = Math.sqrt(sum);
+      ['a1', 'a2', 'a3', 'b1', 'b2', 'b3'].forEach((k) => { $(`[data-o="${k}"]`).textContent = g(k); });
+      $('[data-v="sq"]').textContent = sq.join(' + ');
+      $('[data-v="sum"]').textContent = sum;
+      $('[data-v="d"]').textContent = d.toFixed(2);
+      $('[data-v="note"]').textContent = d === 0 ? 'Identical priorities. They belong in the same segment.' : d < 2 ? 'Close. These two would join the same cluster early.' : d < 4 ? 'Some way apart. They may or may not end up together.' : 'Far apart. These two want different things from the store.';
+    };
+    root.querySelectorAll('input').forEach((x) => x.addEventListener('input', run)); run();
+  });
+</script>

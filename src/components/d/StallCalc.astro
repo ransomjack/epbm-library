@@ -1,0 +1,29 @@
+---
+// Break-even and profit for a chai stall: fixed costs Rs. 12,000 a month, Rs. 4 of variable cost per cup.
+---
+<div class="calc" data-stall>
+  <div class="calc-in">
+    <label class="ctl hl"><span>Price of a cup</span><input type="range" min="5" max="20" step="1" value="10" data-k="p" /><output data-o="p"></output></label>
+    <label class="ctl"><span>Cups sold in the month</span><input type="range" min="500" max="5000" step="100" value="2600" data-k="q" /><output data-o="q"></output></label>
+    <div class="kv">
+      <div><span>Contribution per cup (price − Rs. 4)</span><b data-v="c"></b></div>
+      <div><span>Break-even: Rs. 12,000 ÷ contribution</span><b data-v="be"></b></div>
+    </div>
+  </div>
+  <div class="calc-out"><span>Profit for the month</span><b data-v="pr"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-stall]').forEach((root) => {
+    const $ = (s) => root.querySelector(s), g = (k) => Number($(`[data-k="${k}"]`).value), F = 12000, V = 4;
+    const rs = (v) => (v < 0 ? '−' : '') + 'Rs. ' + Math.abs(Math.round(v)).toLocaleString('en-IN');
+    const run = () => {
+      const p = g('p'), q = g('q'), c = p - V, be = Math.ceil(F / c), pr = q * c - F;
+      $('[data-o="p"]').textContent = 'Rs. ' + p; $('[data-o="q"]').textContent = q.toLocaleString('en-IN');
+      $('[data-v="c"]').textContent = 'Rs. ' + c;
+      $('[data-v="be"]').textContent = be.toLocaleString('en-IN') + ' cups';
+      $('[data-v="pr"]').textContent = rs(pr);
+      $('[data-v="note"]').textContent = pr < 0 ? `Below break-even by ${(be - q).toLocaleString('en-IN')} cups.` : pr === 0 ? 'Exactly at break-even.' : `Above break-even by ${(q - be).toLocaleString('en-IN')} cups. Would the same number of cups sell at a higher price?`;
+    };
+    root.querySelectorAll('input').forEach((x) => x.addEventListener('input', run)); run();
+  });
+</script>

@@ -1,0 +1,236 @@
+---
+title: "Beyond the Classroom: Industry, Portfolio, Brand Equity and Metrics"
+kicker: "Beyond the classroom, part 2"
+order: 15
+source: "Added by the editor from standard marketing texts · Not class material"
+description: "Porter's five forces and generic strategies, the BCG matrix, Keller's brand equity pyramid, marketing metrics, digital marketing, and the whole toolkit on one page. Not class material."
+takeaways:
+  - "Five forces share out an industry's profit: rivalry, new entrants, substitutes, buyers and suppliers."
+  - "The BCG matrix sorts products into stars, cash cows, question marks and dogs. A box is not a verdict."
+  - "A strong brand is built floor by floor: salience, performance and imagery, judgements and feelings, resonance."
+  - "A metric needs a denominator and a benchmark."
+---
+import Cards from '../../components/d/Cards.astro';
+import Decide from '../../components/d/Decide.astro';
+import Fig from '../../components/d/Fig.astro';
+import Quad from '../../components/d/Quad.astro';
+import Sort from '../../components/d/Sort.astro';
+import Steps from '../../components/d/Steps.astro';
+
+This chapter completes the editor's addition to the class notes. Like the chapter before it, none of this was taught in class, and the practice questions do not draw on it.
+
+## Reading an industry: five forces and generic strategies
+
+SWOT looks at one firm ([Targeting: attractiveness and compatibility](/marketing-management/targeting-and-growth/#targeting-attractiveness-and-compatibility)). A different question is why a whole industry earns well or badly: why branded consumer goods make comfortable margins year after year while airlines struggle. Michael Porter's answer is that five forces share out the profit of an industry.
+
+<Fig title="Porter's five forces" caption="The stronger the forces, the lower the industry's profit.">
+  <Cards min={200} items={[
+    { title: "Rivalry among existing competitors", body: "How hard do firms fight each other?", hl: true },
+    { title: "Threat of new entrants", body: "How easy is it to come in?" },
+    { title: "Threat of substitutes", body: "What else does the same job?" },
+    { title: "Bargaining power of buyers", body: "Can customers force prices down?" },
+    { title: "Bargaining power of suppliers", body: "Can suppliers force prices up?" },
+  ]} />
+</Fig>
+
+| Force | The question | Strong when | Seen in these notes |
+|---|---|---|---|
+| Rivalry among existing competitors | How hard do firms fight each other? | Many similar firms; slow growth; high fixed costs | A category crowded with me-too brands ([Lessons from the first case: a leader losing its magic](/marketing-management/the-marketing-plan/#lessons-from-the-first-case-a-leader-losing-its-magic)) |
+| Threat of new entrants | How easy is it to come in? | Little capital needed; no patents; open distribution | A candy copied within months ([Sustaining a competitive advantage](/marketing-management/launching-and-growing/#sustaining-a-competitive-advantage)) |
+| Threat of substitutes | What else does the same job? | Substitutes are cheap and close | Cereal against poha and idli ([Same framework, any product](/marketing-management/what-marketing-is/#same-framework-any-product)); film against digital ([The hard part (1): cash and staying contemporary](/marketing-management/strong-brands/#the-hard-part-1-cash-and-staying-contemporary)) |
+| Bargaining power of buyers | Can customers force prices down? | A few large buyers; easy switching | Retailers and their store brands ([Ingredient, store and fighter brands](/marketing-management/brand-extension-and-portfolio/#ingredient-store-and-fighter-brands)) |
+| Bargaining power of suppliers | Can suppliers force prices up? | A few suppliers; no alternative | A sole supplier of a key component |
+
+The competitors and collaborators of the 5Cs cover the same ground more simply; the five forces add the discipline of asking who holds the power.
+
+### Three ways to win
+
+Porter also argued that there are only three <strong>generic strategies</strong> for earning more than the industry average.
+
+| Strategy | How it wins | Example | Its risk |
+|---|---|---|---|
+| Cost leadership | The lowest cost in the industry, so it can price low and still profit | A no-frills airline; a low-price retail chain | A rival becomes cheaper still; quality slips |
+| Differentiation | Something buyers value and will pay more for | The premium phone and motorcycle brands of Session 5 | The difference is copied, or stops mattering |
+| Focus | Serves one narrow segment better than broad players, on cost or on difference | A strong regional brand; a specialist firm | The niche is too small, or a large player enters it |
+
+The danger Porter warned of is being <strong>stuck in the middle</strong>: neither the cheapest nor different. It is the strategic version of the class's lesson on mass versus niche positioning ([Lessons from the case: mass or niche?](/marketing-management/repositioning/#lessons-from-the-case-mass-or-niche)): a brand that spoke to everyone while priced for a few.
+
+<strong>On a manager's desk.</strong> Before planning against rivals, ask where the power lies. A product company whose retailers hold the power must build a brand customers ask for by name. A service firm should choose openly between being the low-cost provider and being the specialist, because the hiring, pricing and selling that suit one undermine the other.
+
+<Sort title="Try it: which of the five forces?" choices={["Rivalry", "New entrants", "Substitutes", "Buyer power", "Supplier power"]} items={[
+  { text: "Six near-identical brands fighting over a flat market.", answer: "Rivalry", why: "Many similar firms and slow growth." },
+  { text: "A product any small factory can copy.", answer: "New entrants", why: "Low barriers to entry." },
+  { text: "Poha and idli competing with breakfast cereal.", answer: "Substitutes", why: "Something else that does the same job." },
+  { text: "Three retail chains buy most of your output.", answer: "Buyer power", why: "A few large buyers can force prices down." },
+  { text: "One company makes the chip you cannot do without.", answer: "Supplier power", why: "A sole supplier can force prices up." },
+]} />
+
+<Sort title="Try it: which generic strategy?" choices={["Cost leadership", "Differentiation", "Focus"]} items={[
+  { text: "A no-frills airline.", answer: "Cost leadership", why: "The lowest cost, so it can price low and still profit." },
+  { text: "A phone people queue overnight to buy.", answer: "Differentiation", why: "Something buyers value and will pay more for." },
+  { text: "A hospital that treats only eyes.", answer: "Focus", why: "One narrow segment, served better than broad players can." },
+  { text: "A retail chain whose promise is the lowest price every day.", answer: "Cost leadership", why: "Low cost is the whole model." },
+]} />
+
+## Managing a portfolio: the BCG matrix
+
+A company with many products has to decide where to put its money. The Boston Consulting Group's growth-share matrix sorts products with two questions. Is the market growing fast? And is our share large compared with our biggest competitor's?
+
+<Fig title="The BCG growth-share matrix">
+  <Quad cols={["High relative market share", "Low relative market share"]} rows={["High market growth", "Low market growth"]} cells={[
+    { tag: "Invest", t: "Star", b: "A leader in a fast-growing market. Earns well but needs heavy investment to keep its lead." },
+    { tag: "Back it or exit", t: "Question mark", b: "A small player in a fast-growing market. Consumes cash; its future is unclear." },
+    { tag: "Protect and milk", t: "Cash cow", b: "A leader in a mature market. Generates more cash than it needs.", tone: "best" },
+    { tag: "Harvest or divest", t: "Dog", b: "A small player in a mature market. Earns little; ties up attention.", tone: "bad" },
+  ]} />
+</Fig>
+
+| Cell | Growth / share | What it is | The usual advice |
+|---|---|---|---|
+| Star | High / high | A leader in a growing market: earns well but needs investment | Invest to keep the lead |
+| Cash cow | Low / high | A leader in a mature market: produces more cash than it needs | Protect it; use its cash elsewhere |
+| Question mark | High / low | A small player in a growing market: consumes cash | Choose: invest to make it a star, or get out |
+| Dog | Low / low | A small player in a mature market | Harvest or divest, unless it serves another purpose |
+
+The logic is a cycle of cash. Cash cows fund the question marks worth backing; those that succeed become stars; and stars turn into cash cows when their markets mature, as the life cycle predicts ([The product life cycle](/marketing-management/the-marketing-plan/#the-product-life-cycle)).
+
+<div class="callout trap">
+<p class="callout-title">A box is not a verdict</p>
+
+Share and growth are not the only things that matter, and the answer changes with how "the market" is defined. A so-called dog may be a strong regional brand, or may still contribute to fixed costs: the two reasons the professor gave for keeping some small brands ([Brand portfolio rationalisation](/marketing-management/brand-extension-and-portfolio/#brand-portfolio-rationalisation)). Use the matrix to start the discussion, not to end it.
+
+</div>
+
+Three tools now sit side by side. The <strong>Ansoff matrix</strong> asks where to grow next ([Growth options: the Ansoff matrix](/marketing-management/launching-and-growing/#growth-options-the-ansoff-matrix)). The <strong>BCG matrix</strong> asks how to share money among what you already have. <strong>Portfolio rationalisation</strong> is the same question asked brand by brand ([Brand portfolio rationalisation](/marketing-management/brand-extension-and-portfolio/#brand-portfolio-rationalisation)).
+
+<strong>On a manager's desk.</strong> Know which of your offerings pay for the others. A product company should fund tomorrow's products from today's cash cows without starving the cows. A service firm should do the same with its service lines: the steady, mature contract base pays for the new practice, and the new practice must be given a date by which it becomes a star or is closed.
+
+<Sort title="Try it: which cell of the BCG matrix?" choices={["Star", "Cash cow", "Question mark", "Dog"]} items={[
+  { text: "The leader in a market growing 25% a year.", answer: "Star", why: "High growth, high share: invest to keep the lead." },
+  { text: "The leader in a flat market.", answer: "Cash cow", why: "Low growth, high share: it throws off cash." },
+  { text: "A small share of a fast-growing market.", answer: "Question mark", why: "Back it or exit." },
+  { text: "A small share of a flat market.", answer: "Dog", why: "Harvest or divest, unless it serves another purpose." },
+]} />
+
+## Brand equity: how strong brands are built
+
+Session 5 showed what strong brands do. <strong>Brand equity</strong> is the name for that strength. Kevin Keller defines it as the difference that knowing the brand makes to how customers respond to its marketing. The blind beer test of [Why build a strong brand](/marketing-management/strong-brands/#why-build-a-strong-brand) is that definition run as an experiment: the same liquids, a different response once the names were visible. When equity is positive, customers pay more, forgive more and try the brand's new products sooner.
+
+Keller's <strong>customer-based brand equity</strong> model says a strong brand is built like a house, one floor at a time. Each floor answers a question the customer silently asks.
+
+<Fig title="Keller's brand equity pyramid, from the base up" caption="Each level rests on the one below, and answers a question the customer silently asks.">
+  <Steps items={[
+    { title: "Salience: who are you?", body: "Awareness that comes to mind when the need arises." },
+    { title: "Performance and imagery: what are you?", body: "What the product does, and what the brand stands for." },
+    { title: "Judgements and feelings: what do I think and feel about you?", body: "Quality and credibility; the emotions the brand evokes." },
+    { title: "Resonance: what about you and me?", body: "Loyalty, attachment, community." },
+  ]} />
+</Fig>
+
+| Level | The customer's question | What has to be built | Seen in these notes |
+|---|---|---|---|
+| 1. Salience | Who are you? | Awareness deep and wide enough that the brand comes to mind when the need arises | Recall in impulse categories ([Availability: what comes to mind feels likely](/marketing-management/more-mental-shortcuts/#availability-what-comes-to-mind-feels-likely)); good phones nobody noticed ([Why marketing matters: the Samsung story](/marketing-management/what-marketing-is/#why-marketing-matters-the-samsung-story)) |
+| 2. Performance and imagery | What are you? | What the product does, and what the brand stands for | Points of parity and of difference ([Points of parity and points of difference](/marketing-management/positioning/#points-of-parity-and-points-of-difference)) |
+| 3. Judgements and feelings | What do I think and feel about you? | Opinions of quality and credibility; the emotions the brand evokes | Trust that survived a recall ([Why build a strong brand](/marketing-management/strong-brands/#why-build-a-strong-brand)) |
+| 4. Resonance | What about you and me? | Loyalty, attachment, a sense of community, active engagement | Owners who ride together and wear the logo ([What strong brands look like](/marketing-management/strong-brands/#what-strong-brands-look-like)) |
+
+The left side of the pyramid, performance and judgements, is the rational route to the top; the right side, imagery and feelings, is the emotional one. The strongest brands climb both. And no floor can be skipped: resonance cannot be advertised into existence on top of a product that does not perform.
+
+### The building blocks: brand elements
+
+A name, a logo, a symbol, a character, a slogan, a jingle, a pack: these are <strong>brand elements</strong>. [The hard part (2): clutter and consistency](/marketing-management/strong-brands/#the-hard-part-2-clutter-and-consistency) gave examples of each breaking the clutter: a blue tin, a butter girl, a detergent jingle. Keller offers six tests for choosing them. Three build equity: an element should be <strong>memorable</strong>, <strong>meaningful</strong> and <strong>likeable</strong>. Three defend it: it should be <strong>transferable</strong> to new products and countries, <strong>adaptable</strong> over time, and <strong>protectable</strong> in law. A name with "oil" in it stopped being adaptable when oil stopped sounding like good skincare ([The hard part (1): cash and staying contemporary](/marketing-management/strong-brands/#the-hard-part-1-cash-and-staying-contemporary)); a name that means energy does not transfer to a drink meant for everyone ([Lessons from the case: mass or niche?](/marketing-management/repositioning/#lessons-from-the-case-mass-or-niche)).
+
+<div class="callout beyond">
+<p class="callout-title">Good to know: A second lens</p>
+
+David Aaker describes brand equity as a set of assets: <strong>brand awareness</strong>, <strong>perceived quality</strong>, <strong>brand associations</strong> and <strong>brand loyalty</strong>, along with legal assets such as trademarks. The two models describe the same thing from two sides: Keller from inside the customer's head, Aaker from the company's balance sheet.
+
+</div>
+
+<strong>On a manager's desk.</strong> Ask which floor your brand has reached, and build the next one. A product company with awareness but no clear meaning should fix meaning before spending more on awareness. A service firm usually builds from the rational side (proven performance, then judgements of credibility) and reaches resonance when clients start recommending it without being asked.
+
+<Sort title="Try it: which level of the brand equity pyramid?" choices={["Salience", "Performance and imagery", "Judgements and feelings", "Resonance"]} items={[
+  { text: "The brand comes to mind at the shop counter.", answer: "Salience", why: "Who are you?" },
+  { text: "Owners ride together and wear the logo.", answer: "Resonance", why: "What about you and me?" },
+  { text: "Customers believe the quality is high and trust the maker.", answer: "Judgements and feelings", why: "What do I think and feel about you?" },
+  { text: "It does the job, and it stands for something.", answer: "Performance and imagery", why: "What are you?" },
+]} />
+
+## Measuring marketing
+
+Session 0 was firm that research and tracking are inputs to decisions, not decisions ([What does a marketing manager decide?](/marketing-management/the-marketing-plan/#what-does-a-marketing-manager-decide)). These are the standard inputs: the numbers a marketing review usually runs on.
+
+| Metric | How it is worked out | What it tells you |
+|---|---|---|
+| Market share | Your sales / total market sales, in units or in value | Your position against rivals. A value share above the unit share means you sell at a premium |
+| Relative market share | Your share / your largest competitor's share | Above 1, you lead (the BCG axis) |
+| Penetration | Buyers of your brand / the target population | The room left among non-users ([The Tata Nano: intended versus actual](/marketing-management/positioning/#the-tata-nano-intended-versus-actual)) |
+| Share of wallet | A customer's spending with you / that customer's total spending in the category | The room left within existing customers |
+| Customer acquisition cost (CAC) | Sales and marketing spend / new customers won | What a new customer costs: the AC of [Calculating customer lifetime value](/marketing-management/what-a-customer-is-worth/#calculating-customer-lifetime-value) |
+| Retention and churn rate | Customers kept, or lost, in a period / customers at its start | Loyalty. The two add up to 100% ([Calculating customer lifetime value](/marketing-management/what-a-customer-is-worth/#calculating-customer-lifetime-value)) |
+| Customer lifetime value (CLV) | Discounted margins, weighted by the chance of staying, less acquisition cost | What a customer is worth ([Calculating customer lifetime value](/marketing-management/what-a-customer-is-worth/#calculating-customer-lifetime-value)) |
+| Net Promoter Score (NPS) | % who would recommend you (9 or 10 out of 10) minus % who would not (0 to 6) | The word of mouth to expect |
+| Conversion rate | Buyers / visitors or enquiries | How well the last step works |
+| Return on marketing investment | (Extra margin earned: marketing spend) / marketing spend | Whether a campaign paid for itself |
+
+The numbers talk to each other. Take the customer of [Calculating customer lifetime value](/marketing-management/what-a-customer-is-worth/#calculating-customer-lifetime-value), who cost Rs. 1,500 to win and was worth only Rs. 164 after that cost: barely worth acquiring. Raise retention from 80% to 90% and the same customer is worth about Rs. 1,000. Before spending more on acquisition, a firm should ask whether the cheaper rupee lies in retention.
+
+<div class="callout trap">
+<p class="callout-title">A metric needs a denominator and a benchmark</p>
+
+"We won 2,000 customers" says nothing until you know what they cost, how many left, and how many rivals won. The professor's question from the first case discussion applies to every number in a review: bad, or good, compared with what? ([Lessons from the first case discussion](/marketing-management/more-mental-shortcuts/#lessons-from-the-first-case-discussion))
+
+</div>
+
+<strong>On a manager's desk.</strong> Choose a handful of metrics that follow the customer from first contact to renewal. A product company should watch share and penetration alongside repeat purchase. A service firm should watch retention, share of wallet and willingness to recommend, and be wary of activity counts that rise while these three fall.
+
+<Decide q="The quarterly review opens with: we won 2,000 new customers. What do you ask before celebrating?" options={[
+  { label: "Nothing. Growth is growth.", why: "A number on its own says very little." },
+  { label: "What did they cost, how many customers left, and how did rivals do?", good: true, why: "A metric needs a denominator and a benchmark." },
+]} />
+
+## Marketing in a digital world
+
+The owner of a good kirana shop knows every customer: who buys what, who is owed a reminder, who will try the new biscuit. Digital tools let a firm with a crore of customers do, by data, what the shopkeeper does by memory. None of the ideas in this book changes online. What changes is the cost and the speed.
+
+| What digital changes | In practice | The class idea behind it |
+|---|---|---|
+| Finding customers | Search reaches people at the moment of need; social media reaches them by interest and behaviour | Behavioural segmentation with data ([What marketers actually use, and why](/marketing-management/segmentation/#what-marketers-actually-use-and-why)) |
+| Tailoring | Different messages and offers for different people | Effectiveness against efficiency: tailoring became cheaper ([Why segment: effectiveness and efficiency](/marketing-management/segmentation/#why-segment-effectiveness-and-efficiency)) |
+| Testing | Two versions shown to live customers, and the better one kept | Experiments over opinions ([How people actually buy: Tropicana](/marketing-management/understanding-customers/#how-people-actually-buy-tropicana)) |
+| Word of mouth | Reviews, ratings, shares and influencers | The actual position forms in public ([Great product, wrong fit: the Tata Nano](/marketing-management/the-marketing-plan/#great-product-wrong-fit-the-tata-nano), [The Tata Nano: intended versus actual](/marketing-management/positioning/#the-tata-nano-intended-versus-actual)) |
+| Selling | Marketplaces, direct-to-consumer sites, rapid delivery | Place changing Price ([The opening exercise: pricing a smartphone](/marketing-management/what-marketing-is/#the-opening-exercise-pricing-a-smartphone)) |
+| Measuring | Clicks, conversions, acquisition cost and value, customer by customer | Lifetime value became calculable ([Customer lifetime value: why it matters](/marketing-management/what-a-customer-is-worth/#customer-lifetime-value-why-it-matters)) |
+
+Two cautions. <strong>Performance marketing</strong> (paying for clicks and immediate sales) is measurable and quick; brand building is neither. That is the cash challenge of [The hard part (1): cash and staying contemporary](/marketing-management/strong-brands/#the-hard-part-1-cash-and-staying-contemporary) in modern clothes: it is easy to overspend on what can be counted this week and starve what pays over a decade. And data about people has to be used with their consent and with care. Personalisation that feels like surveillance costs more trust than it earns.
+
+<strong>On a manager's desk.</strong> Use digital tools to do the fundamentals better, not to skip them. A product company still needs a position before it needs a campaign. A service firm's website, webinars and published research are its owned media: they should show the expertise the positioning claims, not just collect enquiries.
+
+## The whole toolkit on one page
+
+Frameworks are easiest to remember by the question each one answers. This table covers the book: the tools taught in class and those added in this part.
+
+| If the question is... | Reach for | Section |
+|---|---|---|
+| What is going on around us, and where do we stand? | The 5Cs, PESTLE and SWOT | [The 5Cs: reading the situation](/marketing-management/what-marketing-is/#the-5cs-reading-the-situation), [PESTLE: reading the context](/marketing-management/what-marketing-is/#pestle-reading-the-context), [Targeting: attractiveness and compatibility](/marketing-management/targeting-and-growth/#targeting-attractiveness-and-compatibility) |
+| Why is this industry profitable, or not? | Porter's five forces | [Reading an industry: five forces and generic strategies](#reading-an-industry-five-forces-and-generic-strategies) |
+| How do our customers decide? | The buying process and roles; heuristics; involvement | [How buyers decide: the buying process](/marketing-management/buyers-the-four-ps-and-services/#how-buyers-decide-the-buying-process), Session 1, [Low- and high-involvement products](/marketing-management/launching-and-growing/#low--and-high-involvement-products) |
+| How do we find out what customers want? | Research methods: what people say and what they do | [The researcher's toolkit](/marketing-management/understanding-customers/#the-researchers-toolkit) |
+| How should we divide the market, and whom should we serve? | Segmentation bases; cluster analysis; attractiveness and compatibility | [The bases of segmentation](/marketing-management/segmentation/#the-bases-of-segmentation), [How to segment: judgement or cluster analysis](/marketing-management/segmentation/#how-to-segment-judgement-or-cluster-analysis), [Targeting: attractiveness and compatibility](/marketing-management/targeting-and-growth/#targeting-attractiveness-and-compatibility) |
+| What should we stand for? | Positioning: perceptual maps, parity and difference, the statement | [Perceptual maps](/marketing-management/positioning/#perceptual-maps) to [The positioning statement](/marketing-management/positioning/#the-positioning-statement) |
+| Where should we grow, and where should the money go? | The Ansoff matrix; the BCG matrix; portfolio rationalisation | [Growth options: the Ansoff matrix](/marketing-management/launching-and-growing/#growth-options-the-ansoff-matrix), [Managing a portfolio: the BCG matrix](#managing-a-portfolio-the-bcg-matrix), [Brand portfolio rationalisation](/marketing-management/brand-extension-and-portfolio/#brand-portfolio-rationalisation) |
+| How do we compete? | Generic strategies; mass or niche | [Reading an industry: five forces and generic strategies](#reading-an-industry-five-forces-and-generic-strategies), [Lessons from the case: mass or niche?](/marketing-management/repositioning/#lessons-from-the-case-mass-or-niche) |
+| What exactly do we offer? | Product levels; the life cycle; brand extension | [Product: more than the thing in the box](/marketing-management/buyers-the-four-ps-and-services/#product-more-than-the-thing-in-the-box), [The product life cycle](/marketing-management/the-marketing-plan/#the-product-life-cycle), [Brand extension: line and category](/marketing-management/brand-extension-and-portfolio/#brand-extension-line-and-category) |
+| What should we charge? | The three Cs of pricing; break-even; skimming or penetration | [Price: the only P that earns](/marketing-management/buyers-the-four-ps-and-services/#price-the-only-p-that-earns), [Lessons from the case: pricing and promoting a novel product](/marketing-management/launching-and-growing/#lessons-from-the-case-pricing-and-promoting-a-novel-product) |
+| How do we reach buyers? | Channels; distribution intensity; push and pull | [Place: getting to the customer](/marketing-management/buyers-the-four-ps-and-services/#place-getting-to-the-customer) |
+| What do we say, and how? | The communication mix; AIDA; framing | [Promotion: the communication mix](/marketing-management/buyers-the-four-ps-and-services/#promotion-the-communication-mix), [Framing: same facts, different frame](/marketing-management/how-buyers-decide/#framing-same-facts-different-frame) |
+| How do we deliver a service well? | The 7Ps; the five dimensions of service quality | [Services: selling what cannot be seen](/marketing-management/buyers-the-four-ps-and-services/#services-selling-what-cannot-be-seen) |
+| How strong is our brand? | The brand equity pyramid; the four challenges | [Brand equity: how strong brands are built](#brand-equity-how-strong-brands-are-built), [The hard part (1): cash and staying contemporary](/marketing-management/strong-brands/#the-hard-part-1-cash-and-staying-contemporary) |
+| What is a customer worth? | Lifetime value; retention; acquisition cost | [Calculating customer lifetime value](/marketing-management/what-a-customer-is-worth/#calculating-customer-lifetime-value), [Measuring marketing](#measuring-marketing) |
+
+<div class="callout">
+<p class="callout-title">The fundamentals in one sentence</p>
+
+Understand the customer better than the customer can put into words; choose whom to serve and what to stand for; make the product, the price, the place and the promotion all agree with that choice; and keep earning the customer back.
+
+</div>

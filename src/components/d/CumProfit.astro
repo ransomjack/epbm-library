@@ -1,0 +1,25 @@
+---
+// Cumulative profit from one customer over ten years: a customer who stays against one bought with freebies who leaves.
+const W = 640, H = 300, L = 54, R = 20, T = 20, B = 40, AC = 70, M = 26, N = 10;
+const x = (t) => L + (t / N) * (W - L - R);
+const y = (v) => T + (1 - (v + 90) / 200) * (H - T - B);
+const line = (r) => {
+  let cum = -AC; const pts = [[0, 0], [0, -AC]];
+  for (let t = 1; t <= N; t++) { cum += M * Math.pow(r, t - 1); pts.push([t, cum]); }
+  return pts.map(([a, b], i) => `${i ? 'L' : 'M'}${x(a).toFixed(1)},${y(b).toFixed(1)}`).join(' ');
+};
+const lab = 'fill:var(--muted);font:500 12px var(--sans)';
+---
+<svg class="pe" viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Cumulative profit from one customer over ten years. Both lines start below zero by the acquisition cost. The customer with 90 percent retention climbs above zero in about the third year and keeps rising. The customer with 30 percent retention flattens out and never gets back to zero.">
+  <line x1={x(0)} y1={y(0)} x2={x(N)} y2={y(0)} style="stroke:var(--line);stroke-width:1.5" />
+  <line x1={x(0)} y1={T} x2={x(0)} y2={H - B} style="stroke:var(--line)" />
+  {[2, 4, 6, 8, 10].map((t) => <text x={x(t)} y={y(0) + 16} text-anchor="middle" style={lab}>Yr {t}</text>)}
+  <path d={line(0.3)} style="fill:none;stroke:var(--trap);stroke-width:2.2;stroke-dasharray:6 4" />
+  <path d={line(0.9)} style="fill:none;stroke:var(--accent);stroke-width:2.6" />
+  <text x={x(0) - 6} y={y(-AC) + 4} text-anchor="end" style="fill:var(--trap);font:600 12px var(--sans)">−AC</text>
+  <text x={x(0) - 6} y={y(0) + 4} text-anchor="end" style={lab}>0</text>
+  <text x={x(0.5)} y={y(-AC) + 22} style={lab}>Acquisition cost is paid on day one</text>
+  <text x={x(8.6)} y={y(92)} text-anchor="end" style="fill:var(--accent);font:600 13px var(--sans)">Customer who stays (retention 90%)</text>
+  <text x={x(9.9)} y={y(-48)} text-anchor="end" style="fill:var(--trap);font:600 13px var(--sans)">Bought with freebies, then leaves (retention 30%)</text>
+  <text x="16" y={y(10)} transform={`rotate(-90 16 ${y(10)})`} text-anchor="middle" style={lab}>Cumulative profit</text>
+</svg>

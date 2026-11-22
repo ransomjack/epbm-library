@@ -2,7 +2,7 @@
 // A small book cover in the subject's colour.
 const { s, size = 'm' } = Astro.props;
 // Soft hyphens so long words break cleanly on a narrow cover.
-const name = s.name.replace('Transformation', 'Transfor\u00ADmation').replace('Macroeconomic', 'Macro\u00ADeconomic').replace('Accounting', 'Account\u00ADing').replace('Excellence', 'Excel\u00ADlence').replace('Leadership', 'Leader\u00ADship').replace('Operational', 'Opera\u00ADtional');
+const name = s.name.replace('Transformation', 'Transfor\u00ADmation').replace('Macroeconomic', 'Macro\u00ADeconomic').replace('Accounting', 'Account\u00ADing').replace('Excellence', 'Excel\u00ADlence').replace('Leadership', 'Leader\u00ADship').replace('Operational', 'Opera\u00ADtional').replace('Management', 'Manage\u00ADment');
 ---
 <span class={`cover cover-${size}`} style={`--c:${s.color}`} aria-hidden="true">
   <span class="cover-t">{name}</span>

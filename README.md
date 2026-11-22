@@ -40,9 +40,10 @@ There is no sign-in, no account and no tracking. Anything the site saves (your t
 | Leadership and People Skills | 5 | 350 |
 | Operational Excellence | 6 | 200 |
 | Digital Transformation | 7 | 130 |
-| **Total** | **44** | **1,635** |
+| Marketing Management | 16 | 302 |
+| **Total** | **60** | **1,937** |
 
-That adds up to 122 interactive exercises across the seven books. Marketing Management and AI/ML and Business Analytics show as "Coming soon" and will be added after those modules.
+That adds up to 206 interactive exercises across the eight books. AI/ML and Business Analytics shows as "Coming soon" and will be added after that module.
 
 Every book ends with a **Quick Reference** chapter: the formulas, frameworks and one-line summaries from the whole subject in one place.
 
@@ -112,7 +113,7 @@ epbm-library/
     ├── components/
     │   ├── Cover.astro       Book cover shown on the home page
     │   ├── Share.astro       WhatsApp / LinkedIn / copy-link row
-    │   └── d/                66 diagram, exercise and calculator components
+    │   └── d/                74 diagram, exercise and calculator components
     ├── data/
     │   ├── subjects.js       Subject list, order, colours, blurbs, PDF and image paths
     │   └── quiz/<subject>.json   Practice questions
@@ -172,13 +173,13 @@ A subject appears as a book on the home page as soon as its folder has at least 
 
 ## Interactive components
 
-All 66 live in `src/components/d/`. The main types:
+All 74 live in `src/components/d/`. The main types:
 
 | Type | Examples | Use |
 |---|---|---|
 | Exercises | `Decide`, `Sort` | Apply a concept to a scenario and get instant feedback |
-| Calculators | `BreakEven`, `EoqCalc`, `Newsvendor`, `LittleCalc`, `QueueCalc`, `CiCalc`, `RegCalc`, `BayesCalc`, `RealRate`, `CpiCalc`, `HedgeCalc` | Move the sliders and watch the model respond |
-| Diagrams | `Fig`, `Flow`, `Steps`, `Tree`, `Quad`, `Bars`, `Timeline`, `Waterfall`, `Pyramid`, `ValueChain` | Explain structure, sequence or comparison |
+| Calculators | `BreakEven`, `EoqCalc`, `Newsvendor`, `LittleCalc`, `QueueCalc`, `CiCalc`, `RegCalc`, `BayesCalc`, `RealRate`, `CpiCalc`, `HedgeCalc`, `ClvCalc`, `BonusCalc`, `DistCalc`, `StallCalc` | Move the sliders and watch the model respond |
+| Diagrams | `Fig`, `Flow`, `Steps`, `Tree`, `Quad`, `Bars`, `Timeline`, `Waterfall`, `Pyramid`, `ValueChain`, `Scatter`, `LifeCycle`, `Circles3`, `CumProfit` | Explain structure, sequence or comparison |
 | Layout | `Cards`, `Tabs` | Group related ideas without long lists |
 
 Each component is self-contained: its own markup, styles and a few lines of script. Nothing is loaded from outside the site except the fonts.

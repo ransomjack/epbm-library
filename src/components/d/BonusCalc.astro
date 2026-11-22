@@ -1,0 +1,33 @@
+---
+// "x% more" against "x% off": what each offer does to the price per litre.
+---
+<div class="calc" data-bonus>
+  <div class="calc-in">
+    <label class="ctl hl"><span>The offer on the pack: "x% more" or "x% off"</span><input type="range" min="5" max="100" step="1" value="33" data-k="x" /><output data-o="x"></output></label>
+    <div class="kv">
+      <div><span>Regular: 1 litre for Rs. 100</span><b>Rs. 100 a litre</b></div>
+      <div><span data-v="offl"></span><b data-v="off"></b></div>
+      <div><span data-v="morel"></span><b data-v="more"></b></div>
+      <div><span>Gap between the two offers</span><b data-v="gap"></b></div>
+    </div>
+  </div>
+  <div class="calc-out"><span data-v="head"></span><b data-v="eff"></b><span class="calc-note" data-v="note"></span></div>
+</div>
+<script>
+  document.querySelectorAll('[data-bonus]').forEach((root) => {
+    const $ = (s) => root.querySelector(s);
+    const run = () => {
+      const x = Number($('[data-k="x"]').value), off = 100 - x, more = 100 / (1 + x / 100), eff = 100 - more;
+      $('[data-o="x"]').textContent = x + '%';
+      $('[data-v="offl"]').textContent = `"${x}% off": 1 litre for Rs. ${off}`;
+      $('[data-v="off"]').textContent = `Rs. ${off} a litre`;
+      $('[data-v="morel"]').textContent = `"${x}% more": ${(1 + x / 100).toFixed(2)} litres for Rs. 100`;
+      $('[data-v="more"]').textContent = `Rs. ${more.toFixed(0)} a litre`;
+      $('[data-v="gap"]').textContent = `Rs. ${(more - off).toFixed(0)} a litre`;
+      $('[data-v="head"]').textContent = `"${x}% more" is really a discount of`;
+      $('[data-v="eff"]').textContent = eff.toFixed(0) + '%';
+      $('[data-v="note"]').textContent = x >= 100 ? 'Double the quantity is half the price per litre. "100% off" would be free.' : `The buyer does better with "${x}% off". Most buyers still pick "more".`;
+    };
+    root.querySelectorAll('input').forEach((i) => i.addEventListener('input', run)); run();
+  });
+</script>

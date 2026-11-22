@@ -1,0 +1,279 @@
+---
+title: "Customer Value and Customer Lifetime Value"
+kicker: "Orientation class, part 3"
+order: 3
+source: "Session by Prof. Ritu Mehta · Marketing Management"
+description: "The three kinds of value a customer looks for, how business buyers differ from consumers, and how to work out customer lifetime value step by step, with a calculator."
+takeaways:
+  - "Customers weigh economic, functional and psychological value. Expert business buyers lean on the economics; consumers on all three."
+  - "CLV is the net present value of the future profits from a customer: margin, discounted, weighted by the chance he stays, less the cost of winning him."
+  - "A loyal customer is not always a profitable one."
+  - "Small changes in retention change a customer's value far more than small changes in price."
+---
+import ClvCalc from '../../components/d/ClvCalc.astro';
+import CumProfit from '../../components/d/CumProfit.astro';
+import Decide from '../../components/d/Decide.astro';
+import Fig from '../../components/d/Fig.astro';
+import Sort from '../../components/d/Sort.astro';
+
+So far marketing has been described as creating value for customers. The last part of the orientation class asks what that value is made of, and then turns the question round: what is a customer worth to the firm?
+
+## What customers value
+
+Throughout the class, marketing was described as satisfying customer needs and creating value. The last part of the session asked what "value" actually means. From a customer's point of view there are three broad kinds.
+
+| Type of value | What it is | Example |
+|---|---|---|
+| Economic value | Relatively objective: money in, money out. Can be calculated. | Choosing between a Wagon R and an i10: compare upfront prices, mileage, how much you will drive, running costs. |
+| Functional value | What the product does: features, performance, durability. | Boot space, safety features, how long the car lasts. |
+| Psychological value | How it makes you feel: emotions, status, peace of mind, assurance. | Pride in the badge; the comfort of a brand you trust; how others see you. |
+
+### B2B versus B2C
+
+Is marketing to businesses (B2B) the same as marketing to consumers (B2C)? The professor's answer: the basic framework is the same, but the weights differ sharply.
+
+|   | B2B buyer | B2C buyer |
+|---|---|---|
+| Who buys | An expert, very knowledgeable about the category | An individual, often far less expert |
+| Value that matters most | <strong>Economic</strong>, then functional | All three, with psychological value strong |
+| Role of brand | Smaller: the buyer judges the numbers | Larger: brand building is worth investing in |
+| Implication | Prove the economics; pricing sessions return to this | Invest in the brand and the experience |
+
+<div class="callout beyond">
+<p class="callout-title">Good to know: brand still whispers in B2B</p>
+
+The class view is that psychological value plays a small role for an expert business buyer. A nuance worth knowing: where a wrong choice is costly or visible (critical systems, safety, security) a trusted name can still matter, because it reduces the buyer's personal risk. The economics come first, but a known brand can decide between two equal offers.
+
+</div>
+
+<strong>On a manager's desk.</strong> Lead with the value your buyer weighs most. A B2B product seller should arrive with the total cost of ownership already worked out; a consumer brand should invest in how the product makes people feel. A B2B service provider pitching to a plant should quantify avoided downtime and compliance cost first, and let reputation reassure second.
+
+<Sort title="Try it: which kind of value?" choices={["Economic", "Functional", "Psychological"]} items={[
+  { text: "A lower running cost per kilometre.", answer: "Economic", why: "Money in, money out. It can be calculated." },
+  { text: "A bigger boot.", answer: "Functional", why: "What the product does." },
+  { text: "Pride in the badge on the bonnet.", answer: "Psychological", why: "How it makes you feel." },
+  { text: "A total cost of ownership below the rival's.", answer: "Economic", why: "The value an expert business buyer weighs first." },
+  { text: "Peace of mind from a name you trust.", answer: "Psychological", why: "Assurance is a feeling, not a feature." },
+  { text: "Airbags and an engine that lasts longer.", answer: "Functional", why: "Features, performance and durability." },
+]} />
+
+## Customer lifetime value: why it matters
+
+[What customers value](#what-customers-value) looked at value from the customer's side: what the customer gets from the firm. The professor then turned it around. How much value does a <strong>customer</strong> bring to the <strong>firm</strong>? Companies now measure this with a metric called <strong>customer lifetime value (CLV)</strong>, and it sits at the heart of what is often called performance marketing.
+
+The class built the definition step by step. "The total business a customer gives over his life" was the first attempt. The professor sharpened it three times. Not business: <strong>profit</strong>. Not the total: the <strong>present value</strong>, because money that arrives in future is worth less than money today. And not just the present value: the <strong>net</strong> present value, after deducting what it cost to acquire the customer.
+
+> CLV is the net present value of all future profits generated from a customer.
+>
+> <small>The definition on the class slide</small>
+
+### Why the interest in CLV grew
+
+The idea is old, so why did companies start measuring it seriously only recently? The slides gave two reasons.
+
+<strong>1. Customers came to be seen as intangible assets.</strong> A slide quoted the New York Times on the growing view that intangible assets (brand names, customer lists, trademarks, patents) matter so much that investors need to know more about them; it even suggested companies might disclose the lifetime value of a customer and the cost of acquiring new ones.
+
+The professor made this concrete with <strong>Flipkart</strong>. When Walmart bought control of Flipkart in 2018 (about 77% for roughly 16 billion dollars, valuing the whole company at around 21 billion dollars) Flipkart was not making a profit. It was losing money. And unlike a manufacturer it had little land, no plant, no machinery to account for that value. So where did the valuation come from? From two intangibles: the <strong>brand name</strong> and the <strong>customer base</strong>. For years, intangible value had meant mainly the brand. E-commerce firms made companies realise that the customer base is an asset too, and if customers are assets, you need a way to value them.
+
+<strong>2. Detailed customer knowledge.</strong> CLV is built on predicting how each customer will behave in future, which needs data. Earlier, most companies did not even capture customer-level data. Now online businesses, loyalty programmes and digital payments record what each customer buys and how often, so CLV can actually be calculated.
+
+### The two halves: acquisition and retention
+
+Why does the definition say <strong>net</strong>? Because CLV has two parts. <strong>Acquisition cost</strong> is the one-time amount spent to win a customer: the ads, the sign-up offer, the free first month. After that the relationship produces business, but keeping it also costs money: direct marketing, loyalty rewards, service. Those are <strong>retention costs</strong>, and they reduce the margin earned each year.
+
+<Fig title="One customer's cumulative profit" caption="The acquisition cost is paid on day one. Only a customer who stays long enough ever pays it back.">
+  <CumProfit />
+</Fig>
+
+The professor used this to explain the <strong>dot-com bubble</strong> of the early 2000s. Internet companies were spending heavily to acquire customers (free vouchers, Rs. 500 of free shopping, free talk time) expecting those customers to stay for years. They did not. Many bought only while something was free. Retention was so low that the money earned from customers never covered what was spent acquiring them, and the businesses collapsed. In the figure below, that is the dashed line that never climbs back above zero.
+
+The professor admitted to being that kind of customer herself: she collects points on a shopping app and buys only when the points cover the purchase. A loyal user, but not a profitable one, and CLV is the metric that tells the two apart.
+
+<div class="callout trap">
+<p class="callout-title">Loyal is not the same as profitable</p>
+
+A customer who keeps returning only for discounts and freebies can have a negative lifetime value. CLV counts profit after the cost of acquiring and keeping the customer, not visits, not revenue, not app downloads.
+
+</div>
+
+<strong>On a manager's desk.</strong> Before spending to acquire customers, know what they are worth. A product company running heavy launch discounts should check whether buyers come back at full price. A subscription service (a telecom plan, a software licence, a managed security contract) lives or dies on renewals: winning a client with a loss-making first year only pays off if the client stays long enough.
+
+<Decide q="A shopper opens your app every week but buys only when her reward points cover the bill. How should you see her?" options={[
+  { label: "As a loyal customer, to be kept at any cost.", why: "She is loyal. But loyalty that exists only for freebies can have a negative lifetime value." },
+  { label: "As loyal but not profitable. Lifetime value, not visits, tells the two apart.", good: true, why: "CLV counts profit after the cost of acquiring and keeping the customer." },
+  { label: "As a lost customer.", why: "She has not left. The question is whether she will ever pay back what she costs." },
+]} />
+
+## Calculating customer lifetime value
+
+The professor built the calculation in three steps, each adding one piece of realism.
+
+### Step 1: the basic approach (no discounting)
+
+The simplest estimate multiplies three numbers, ignoring the time value of money:
+
+<div class="callout">
+<p class="callout-title">Basic CLV</p>
+
+<strong>CLV = annual customer revenue × number of loyal years × profit margin</strong>
+
+</div>
+
+| Input (from the slide) | Value |
+|---|---|
+| Annual customer revenue | Rs. 5,000 |
+| Average number of loyal years | 20 |
+| Company profit margin | 10% |
+| CLV, ignoring the discount rate | 5,000 × 20 × 10% = <strong>Rs. 10,000</strong> |
+
+Where do loyal years come from? Many businesses know them from their own data. A telecom company, for example, knows how long a customer typically stays before switching operators: the class mentioned about three to four years.
+
+### Step 2: bring the future back to today
+
+Rs. 500 of profit twenty years from now is not worth Rs. 500 today. The professor revisited the idea of <strong>present value</strong> with a simple example. Put Rs. 100 in a bank at 10% interest and after one year you have Rs. 110. Turn it around: if a friend promises you Rs. 110 one year from now, it is worth Rs. 100 today. Rs. 121 promised in two years is also worth Rs. 100 today, because 100 × 1.1 × 1.1 = 121.
+
+This is the compound interest formula you met at school, A = P(1 + r/100)<sup>n</sup>, run backwards: <strong>present value = future amount / (1 + i)<sup>n</sup></strong>.
+
+Which rate should you use? The discount rate (also called the rate of return or cost of capital) comes from the finance and accounting team: it reflects what the company pays to borrow money, because money invested in a customer should earn at least that. Across industries companies borrow at roughly <strong>8% to 15%</strong>. If finance gives you no number, the professor's rule of thumb is to use <strong>10%</strong>.
+
+<div class="callout">
+<p class="callout-title">CLV for a customer who stays n years</p>
+
+<strong>CLV = sum over t = 1 to n of  m<sub>t</sub> / (1 + i)<sup>t</sup> :  AC</strong>
+
+m<sub>t</sub> = margin generated in year t;  i = discount rate;  n = number of years in the relationship;  AC = acquisition cost.
+
+</div>
+
+Apply it to the same customer: a margin of Rs. 500 a year (10% of Rs. 5,000) for 20 years, discounted at 10%. The present value of those twenty margins is about <strong>Rs. 4,257</strong>: less than half the Rs. 10,000 from Step 1. If it cost Rs. 1,500 to acquire this customer, the CLV is about <strong>Rs. 2,757</strong>.
+
+### Step 3: allow the customer to leave
+
+Step 2 still assumes the customer stays all twenty years. In reality some customers leave every year. Companies measure this with the <strong>retention rate</strong>: start the year with 100 customers, find 80 still with you at the end, and the retention rate is 80%. The other side of the coin is the <strong>churn rate</strong>: 1 - retention rate, here 20%.
+
+For a single customer, the professor explained, the retention rate becomes a probability: an 80% retention rate means an 80% chance that this customer continues into the next period. With a 50% retention rate (her example), the chance he is still with you is 1 in year 1, 0.5 in year 2, 0.25 in year 3, 0.125 in year 4, and so on.
+
+Why is it 1 in year 1? The calculation assumes a customer is lost, if at all, at the <strong>end</strong> of a year, so year 1's margin is certain. That is why the formula uses r<sup>t-1</sup>: in year 1, r<sup>0</sup> = 1; in year 2, r<sup>1</sup>; in year 3, r<sup>2</sup>. This survival probability is the chance the customer is still "alive" for the firm in year t.
+
+<div class="callout">
+<p class="callout-title">CLV with the possibility to defect</p>
+
+<strong>CLV = sum over t = 1 to n of  r<sup>t-1</sup> × M<sub>t</sub> / (1 + i)<sup>t</sup> :  AC</strong>
+
+r = retention rate;  r<sup>t-1</sup> = survival rate, the probability the customer is still with you in year t.
+
+</div>
+
+Now give our customer an 80% retention rate. Each year's Rs. 500 is first discounted, then multiplied by the chance he is still there.
+
+| Year t | Survival r^(t-1) | Margin in today's rupees | Expected value | Running total |
+|---|---|---|---|---|
+| 1 | 1.000 | Rs. 455 | Rs. 455 | Rs. 455 |
+| 2 | 0.800 | Rs. 413 | Rs. 331 | Rs. 785 |
+| 3 | 0.640 | Rs. 376 | Rs. 240 | Rs. 1,026 |
+| 4 | 0.512 | Rs. 342 | Rs. 175 | Rs. 1,200 |
+| 5 | 0.410 | Rs. 310 | Rs. 127 | Rs. 1,328 |
+| 6 to 20 | 0.328 down to 0.014 | Rs. 282 down to Rs. 74 | Rs. 93 down to Rs. 1 | Rs. 1,664 |
+
+<Fig title="Try it: what is this customer worth?" caption="The sliders start at the class example. Move retention from 80% to 90%, then down to 50%, and watch Step 3. Discounting shrinks each year's margin; customers leaving shrinks it much faster.">
+  <ClvCalc />
+</Fig>
+
+The total is about <strong>Rs. 1,664</strong>. Subtract the Rs. 1,500 acquisition cost and the CLV is only about <strong>Rs. 164</strong>. The same customer was worth Rs. 10,000 on the back of an envelope, Rs. 2,757 with discounting, and Rs. 164 once he is allowed to leave.
+
+| Method | Value of one customer | What it ignores |
+|---|---|---|
+| Step 1: revenue × years × margin | Rs. 10,000 | Time value of money, acquisition cost, defection |
+| Step 2: discounted, 20 sure years, less AC | Rs. 2,757 | Defection |
+| Step 3: discounted, 80% retention, less AC | Rs. 164 | (the most realistic) |
+
+<div class="callout beyond">
+<p class="callout-title">Good to know: A shortcut and a sensitivity check</p>
+
+When the margin m is the same every year and the relationship can run indefinitely, the sum collapses to a neat formula: <strong>CLV = m / (1 + i - r) - AC</strong>. Here: 500 / (1.10 - 0.80) = Rs. 1,667, almost exactly the twenty-year total. Now raise retention from 80% to 90%: 500 / (1.10 - 0.90) = Rs. 2,500. Ten points of retention add 50% to the customer's value, which is why companies obsess over churn. (This shortcut goes beyond what was taught in class.)
+
+</div>
+
+> If you try to be perfectly accurate, you will never finish. Make good assumptions and move on.
+>
+> <small>The professor on estimating CLV, paraphrased: efficiency versus accuracy</small>
+
+<div class="callout trap">
+<p class="callout-title">Three easy slips in the formula</p>
+
+<strong>1.</strong> Survival uses t - 1, discounting uses t: in year 1 the customer is certainly there (r<sup>0</sup> = 1) but the margin is still discounted once. <strong>2.</strong> Retention and churn add to 100%: 80% retention is 20% churn, not the other way round. <strong>3.</strong> CLV is built on <strong>margin</strong>, not revenue: multiplying revenue by years and forgetting the margin overstates it tenfold in the class example.
+
+</div>
+
+<strong>On a manager's desk.</strong> Retention is usually worth more than acquisition. A product company with repeat purchases (consumables, spares, service contracts) should know its retention rate as well as its sales. A service business on annual contracts should know that keeping clients from 80% to 90% renewal can raise each client's value by half; that justifies spending on service quality, account management and a renewal plan that starts on day one.
+
+<Decide title="Work it out" q="Margin Rs. 500 a year, discount rate 10%. Retention rises from 80% to 90%. By the shortcut in the box above, what happens to the customer's value before acquisition cost?" options={[
+  { label: "It rises by about a tenth.", why: "Ten points of retention do far more than that." },
+  { label: "It rises by half, from about Rs. 1,667 to Rs. 2,500.", good: true, why: "500 / (1.10 - 0.80) = 1,667. 500 / (1.10 - 0.90) = 2,500. This is why companies obsess over churn." },
+  { label: "It doubles.", why: "Close, but work it out: 500 / 0.30 against 500 / 0.20." },
+]} />
+
+## The session on a manager's desk
+
+Every idea in this session applies to a business that makes things and to one that delivers services, but it shows up differently in each.
+
+| Idea | In a product business | In a service business |
+|---|---|---|
+| Marketing, not just a good offer | Samsung: good phones, no recognition, until marketing | An expert team that cannot say in one line what it stands for |
+| Push vs pull | Units pushed into dealers vs customers asking by name | Upselling vs solving what the client worries about |
+| 5Cs: collaborators | Dealers and distributors who need margin | System integrators and channel partners who resell |
+| Customer vs consumer | Parent buys, child eats | CFO signs, operations team uses |
+| STP before 4Ps | Decide the segment before the features | Decide the client sector before the service catalogue |
+| Alignment | Apple's narrow stores fit its premium image | A specialist firm should not sell through a discount reseller |
+| Repositioning is hard | Maruti and the Jimny | The low-cost provider launching premium advisory |
+| Life cycle | Launch the next variant before the plateau | Build the next service tier while the current one grows |
+| B2B values economics | Prove total cost of ownership | Quantify avoided downtime and compliance cost |
+| CLV | Repeat purchase and spares | Renewal rate drives contract value |
+
+### The manager's checklist from this session
+
+| # | Discipline | What it looks like on Monday morning |
+|---|---|---|
+| 1 | Run the 5Cs before deciding | Ten minutes on customers, company, collaborators, competitors and context before any price or launch decision. |
+| 2 | Separate buyer from user | Know who signs and who uses, and market to both. |
+| 3 | Write decisions, not activities | Every line of the plan should be a choice: whom, what, how much, where, which message. |
+| 4 | Settle STP first | Agree the segment and the positioning before arguing about features or price. |
+| 5 | Check every P against the STP | Reject any tactic, however clever, that contradicts the target or the image. |
+| 6 | Protect the positioning | Treat repositioning as a last resort: it is slow, costly and often fails. |
+| 7 | Watch the image you are given | Track how media and customers describe you, not just what your ads say. |
+| 8 | Know your stage in the life cycle | Launch the next product or segment while sales are still growing. |
+| 9 | Lead with the right value | Economics for expert business buyers; emotion and brand for consumers. |
+| 10 | Know what a customer is worth | Measure retention and CLV before spending on acquisition. |
+
+### The sharpest lines of the session
+
+> Marketing is not black and white. Start appreciating shades of grey.
+>
+> <small>On why there is rarely one right answer</small>
+
+> The aim of marketing is to make selling superfluous.
+>
+> <small>Peter Drucker, on the class slide</small>
+
+> Try to be something to everybody and you end up being nothing to anyone.
+>
+> <small>On broadening a brand's target</small>
+
+> There is no right or wrong: everything has to be aligned.
+>
+> <small>On Apple, Samsung and the Tata Nano</small>
+
+> Repositioning is a very risky territory.
+>
+> <small>On changing an established image</small>
+
+> Customers are assets, not just sales.
+>
+> <small>On why customer lifetime value caught on</small>
+
+<div class="callout">
+<p class="callout-title">The session in one breath</p>
+
+Marketing is what turned Samsung's good phones into the world's best-seller: making a product mean something to the right customer. Business thinking moved from making products (production), to pushing them (selling), to starting with customer needs and pulling demand (marketing), and finally to serving society too (societal), which is why the AMA's 2007 definition calls marketing an activity that creates, communicates, delivers and exchanges value, the 4Ps, for customers and society at large. A marketing plan reads the situation with the 5Cs (customers, company, collaborators, competitors, and context through PESTLE), chooses a strategy with STP (segment, target, position), and carries it out with the 4Ps (product, price, place, promotion): strategy first, and everything aligned, as Apple and Samsung each are in their own way and as the Tata Nano was not. Repositioning is risky, leaders must grow the category before the life cycle flattens (Axe's lesson), customers weigh economic, functional and psychological value, and a customer's worth to the firm is the net present value of future profits: margin, discounted, multiplied by the chance he stays, minus what it cost to win him.
+
+</div>
