@@ -1,83 +1,205 @@
 ---
 import Base from '../layouts/Base.astro';
+import HeroDemo from '../components/HeroDemo.astro';
+import Cover from '../components/Cover.astro';
 import { library, chapters } from '../lib/books.js';
 
-const index = chapters.map((c) => {
-  const s = library.find((x) => x.slug === c.subject);
-  return {
-    title: `${c.kicker}: ${c.title}`,
-    subject: s.name,
-    url: `/${c.subject}/${c.slug}/`,
-    text: [c.title, c.kicker, s.name, ...c.headings.map((h) => h.text)].join(' ').toLowerCase(),
-  };
-});
-for (const s of library) if (s.quiz) index.push({ title: 'Practice questions', subject: s.name, url: `/${s.slug}/quiz/`, text: `practice mcqs quiz questions ${s.name}`.toLowerCase() });
+const live = library.filter((s) => s.chapters.length);
+const soon = library.filter((s) => !s.chapters.length);
+const totalQ = live.reduce((n, s) => n + s.questions, 0);
+const totalTools = live.reduce((n, s) => n + s.tools, 0);
+const top = [...live].sort((a, b) => b.tools - a.tools).slice(0, 2).map((s) => s.name);
+const num = (n) => n.toLocaleString('en-IN');
+
 ---
 <Base>
-<main>
-  <section class="hero wrap">
-    <h1>What are you reading today?</h1>
-    <form class="search" role="search" onsubmit="return false">
-      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-      <label class="sr" for="q">Search the library</label>
-      <input id="q" type="search" placeholder="Search a topic or a session" autocomplete="off">
-    </form>
-    <ul id="results" class="results" aria-live="polite"></ul>
+<main class="home">
+  <section class="wrap hm-hero">
+    <div class="hm-pitch">
+      <h1>Business school notes you can play with.</h1>
+      <p class="hm-sub">Classroom notes from an executive management programme, rewritten in plain English. Move a slider and watch the idea work. Free to read, no sign-in.</p>
+      <form class="hm-search" role="search" onsubmit="return false">
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <label class="sr" for="q">Search the library</label>
+        <input id="q" type="search" placeholder="Search a topic: break-even, motivation, queues" autocomplete="off">
+      </form>
+      <ul id="results" class="hm-results" aria-live="polite"></ul>
+      <p class="hm-count">{live.length} subjects, {chapters.length} chapters, {totalTools} things to try and {num(totalQ)} practice questions so far.</p>
+    </div>
+    <div class="hm-demo">
+      <p class="hm-try">Try one now</p>
+      <HeroDemo />
+    </div>
   </section>
 
-  <section class="wrap">
-    <h2 class="shelf-title">Subjects</h2>
-    <div class="shelf">
-      {library.map((s) => s.chapters.length ? (
-        <a class="book" href={`/${s.slug}/`}>
-          <span class="book-name">{s.name}</span>
-          <span class="book-meta">{s.blurb}</span>
+  <section class="wrap" id="resume" hidden>
+    <a class="hm-resume" id="resume-link" href="/">
+      <span class="hm-resume-l">Pick up where you left off</span>
+      <span class="hm-resume-t" id="resume-title"></span>
+      <span class="hm-resume-s" id="resume-subject"></span>
+    </a>
+  </section>
+
+  <section class="wrap hm-how" aria-label="How the library works">
+    <div class="hm-way">
+      <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h6a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4z"/><path d="M20 5h-6a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h6z"/></svg>
+      <h2>Read</h2>
+      <p>Each subject is a short book. Chapters take about ten to twenty minutes and start with what you'll take away.</p>
+    </div>
+    <div class="hm-way">
+      <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h10"/><path d="M18 7h2"/><circle cx="16" cy="7" r="2"/><path d="M4 17h3"/><path d="M11 17h9"/><circle cx="9" cy="17" r="2"/></svg>
+      <h2>Try</h2>
+      <p>Calculators, sorting exercises and "what would you do?" cards sit inside the chapters, so you test an idea the moment you meet it.</p>
+    </div>
+    <div class="hm-way">
+      <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16 9.5"/></svg>
+      <h2>Practise</h2>
+      <p>Every subject ends with practice questions. Pick an answer and see straight away whether it's right, and why.</p>
+    </div>
+  </section>
+
+  <section class="wrap hm-shelf">
+    <h2 class="hm-h">Choose a subject</h2>
+    <p class="hm-hint">New here? Any book works on its own. {top[0]} and {top[1]} have the most to play with.</p>
+    <div class="hm-books">
+      {live.map((s) => (
+        <a class="hm-book" href={`/${s.slug}/`} data-book={s.slug} data-n={s.chapters.length}>
+          <Cover s={s} />
+          <span class="hm-book-body">
+            <span class="hm-book-name">{s.name}</span>
+            <span class="hm-book-blurb">{s.blurb}</span>
+            <span class="hm-book-meta">
+              <span>{s.chapters.length} chapters</span>
+              <span>{s.minutes} min</span>
+              {s.tools > 0 && <span>{s.tools} to try</span>}
+              <span>{s.questions} questions</span>
+            </span>
+            <span class="hm-book-prog" hidden><i></i></span>
+          </span>
         </a>
-      ) : (
-        <div class="book soon">
-          <span class="book-name">{s.name}</span>
-          <span class="book-meta">Coming soon</span>
-        </div>
       ))}
     </div>
+    {soon.length > 0 && (
+      <p class="hm-soon"><strong>Being written:</strong> {soon.map((s) => s.name).join(', ')}.</p>
+    )}
   </section>
 </main>
 
-<script type="application/json" id="search-index" set:html={JSON.stringify(index)}></script>
 <script is:inline>
 (function () {
-  var data = JSON.parse(document.getElementById('search-index').textContent);
+  var data = null, loading = false;
   var q = document.getElementById('q'), out = document.getElementById('results');
-  q.addEventListener('input', function () {
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function load() {
+    if (data || loading) return; loading = true;
+    fetch('/search.json').then(function (r) { return r.json(); }).then(function (d) { data = d; run(); }, function () { loading = false; });
+  }
+  q.addEventListener('focus', load);
+  q.addEventListener('input', function () { load(); run(); });
+  function run() {
+    if (!data) return;
     var words = q.value.toLowerCase().split(/\s+/).filter(Boolean);
     out.textContent = '';
     if (!words.length) return;
     var hits = data.filter(function (d) { return words.every(function (w) { return d.text.indexOf(w) !== -1; }); });
-    if (!hits.length) { var li = document.createElement('li'); li.className = 'none'; li.textContent = 'Nothing found. Try a different word.'; out.appendChild(li); return; }
-    hits.slice(0, 8).forEach(function (h) {
-      var li = document.createElement('li'), a = document.createElement('a'), s = document.createElement('span');
-      a.href = h.url; a.textContent = h.title; s.textContent = h.subject;
-      li.appendChild(a); li.appendChild(s); out.appendChild(li);
+    if (!hits.length) { out.appendChild(el('li', 'none', 'Nothing found. Try one word, such as “inventory” or “ratios”.')); return; }
+    var has = function (t) { t = t.toLowerCase(); return words.every(function (w) { return t.indexOf(w) !== -1; }); };
+    var rank = function (h) { return has(h.title) ? 3 : h.heads.some(function (x) { return has(x.t); }) ? 2 : 1; };
+    hits.sort(function (a, b) { return rank(b) - rank(a); });
+    hits.slice(0, 6).forEach(function (h) {
+      var li = el('li'), a = el('a', null, h.title), url = h.url;
+      var sec = h.heads.filter(function (x) { var t = x.t.toLowerCase(); return words.every(function (w) { return t.indexOf(w) !== -1; }); })[0];
+      if (sec) url += '#' + sec.id;
+      a.href = url; li.appendChild(a);
+      li.appendChild(el('span', null, (sec ? 'Section: ' + sec.t + ' · ' : '') + h.subject + ', ' + h.kicker));
+      out.appendChild(li);
     });
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.key === '/' && document.activeElement.tagName !== 'INPUT') { e.preventDefault(); q.focus(); }
   });
+  var st = window.EPBM;
+  if (st) {
+    var last = st.last();
+    if (last && last.u) {
+      document.getElementById('resume').hidden = false;
+      document.getElementById('resume-link').href = last.u;
+      document.getElementById('resume-title').textContent = last.t;
+      document.getElementById('resume-subject').textContent = last.s;
+    }
+    var read = st.read();
+    document.querySelectorAll('[data-book]').forEach(function (b) {
+      var pre = '/' + b.dataset.book + '/', n = read.filter(function (u) { return u.indexOf(pre) === 0; }).length, tot = +b.dataset.n;
+      if (!n) return;
+      var p = b.querySelector('.hm-book-prog'); p.hidden = false;
+      p.querySelector('i').style.width = Math.min(100, 100 * n / tot) + '%';
+      p.setAttribute('title', n + ' of ' + tot + ' chapters read');
+    });
+  }
 })();
 </script>
 
-<style>
-.hero{max-width:760px;padding-top:88px;padding-bottom:64px;text-align:center}
-.hero h1{margin:0 0 28px;font-weight:500;font-size:clamp(38px,6vw,60px);line-height:1.08;letter-spacing:-0.01em}
-.search{display:flex;align-items:center;gap:10px;padding:6px 18px;border:1.5px solid var(--ink);border-radius:10px;color:var(--muted)}
-.search input{flex:1;min-width:0;min-height:48px;border:0;outline:0;background:transparent;font:inherit;font-size:17px;color:var(--ink)}
-.results{list-style:none;margin:12px 0 0;padding:0;text-align:left}
-.results li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;padding:12px 4px;border-bottom:1px solid var(--line);font-size:14px;color:var(--muted)}
-.results a{font-family:var(--display);font-size:19px;font-weight:500;color:var(--ink);text-decoration:none}
-.results a:hover{color:var(--accent)}
-.shelf-title{margin:0 0 24px;font-weight:500;font-size:30px}
-.shelf{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
-.book{min-height:180px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;padding:22px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--ink)}
-a.book:hover{border-color:var(--ink);color:var(--ink)}
-.book-name{font-family:var(--display);font-weight:500;font-size:23px;line-height:1.2}
-.book-meta{font-size:14px;line-height:1.45;color:var(--muted)}
-.book.soon .book-name{color:var(--muted)}
+<style is:global>
+.hm-hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:center;padding-top:64px;padding-bottom:56px}
+.hm-pitch h1{margin:0;font-weight:500;font-size:clamp(36px,5.2vw,62px);line-height:1.04;letter-spacing:-.018em;text-wrap:balance}
+.hm-sub{margin:22px 0 28px;max-width:34em;font-size:18px;line-height:1.6;color:var(--body)}
+.hm-search{display:flex;align-items:center;gap:10px;max-width:520px;padding:4px 16px;border:1.5px solid var(--ink);border-radius:12px;color:var(--muted);background:var(--bg)}
+.hm-search:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+.hm-search input{flex:1;min-width:0;min-height:50px;border:0;outline:0;background:transparent;font:inherit;font-size:16px;color:var(--ink)}
+.hm-results{list-style:none;margin:8px 0 0;padding:0;max-width:520px}
+.hm-results li{display:flex;flex-direction:column;gap:2px;padding:11px 4px;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}
+.hm-results a{font-family:var(--display);font-size:18px;font-weight:500;color:var(--ink);text-decoration:none}
+.hm-results a:hover{color:var(--accent)}
+.hm-count{margin:18px 0 0;font-size:14px;color:var(--muted)}
+.hm-try{margin:0 0 10px 4px;font-size:14px;font-weight:600;color:var(--accent)}
+.hm-resume{display:grid;grid-template-columns:auto 1fr;gap:2px 20px;align-items:baseline;padding:18px 22px;margin-bottom:48px;border:1.5px solid var(--accent);border-radius:14px;background:var(--accent-soft);text-decoration:none;color:var(--ink)}
+.hm-resume:hover{color:var(--ink);border-color:var(--ink)}
+.hm-resume-l{grid-row:1 / span 2;align-self:center;font-size:14px;font-weight:600;color:var(--accent)}
+.hm-resume-t{font-family:var(--display);font-size:21px;font-weight:500;line-height:1.25}
+.hm-resume-s{font-size:14px;color:var(--muted)}
+.hm-how{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;padding-top:0;padding-bottom:0}
+.hm-way{padding:28px 28px 28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.hm-way + .hm-way{padding-left:28px;border-left:1px solid var(--line)}
+.hm-way svg{color:var(--accent)}
+.hm-way h2{margin:10px 0 6px;font-weight:600;font-size:22px}
+.hm-way p{margin:0;font-size:15px;line-height:1.55;color:var(--body)}
+.hm-shelf{padding-top:64px}
+.hm-h{margin:0;font-weight:500;font-size:clamp(28px,3.4vw,36px);letter-spacing:-.01em}
+.hm-hint{margin:8px 0 28px;font-size:16px;color:var(--muted);max-width:44em}
+.hm-books{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.hm-book{display:flex;gap:20px;align-items:stretch;padding:18px;border:1px solid var(--line);border-radius:14px;text-decoration:none;color:var(--ink);background:var(--bg);transition:border-color .15s,transform .15s}
+.hm-book:hover{border-color:var(--ink);color:var(--ink)}
+.hm-book .cover{transition:transform .2s}
+.hm-book:hover .cover{transform:translateY(-3px) rotate(-1.2deg)}
+.hm-book-body{display:flex;flex-direction:column;gap:8px;min-width:0;flex:1}
+.hm-book-name{font-family:var(--display);font-weight:600;font-size:22px;line-height:1.2}
+.hm-book-blurb{font-size:14.5px;line-height:1.5;color:var(--body)}
+.hm-book-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}
+.hm-book-meta span{padding:3px 9px;border-radius:999px;background:var(--surface);font-size:12.5px;font-weight:500;color:var(--body);white-space:nowrap}
+.hm-book-prog{display:block;height:4px;border-radius:2px;background:var(--surface-2);overflow:hidden}
+.hm-book-prog i{display:block;height:100%;background:var(--accent);border-radius:2px}
+.hm-soon{margin:28px 0 0;font-size:15px;color:var(--muted)}
+.hm-soon strong{color:var(--body);font-weight:600}
+@media (max-width:980px){
+  .hm-hero{grid-template-columns:1fr;gap:40px;padding-top:44px;padding-bottom:44px}
+  .hm-demo{max-width:560px}
+}
+@media (max-width:820px){.hm-books{grid-template-columns:1fr}}
+@media (max-width:700px){
+  .hm-how{grid-template-columns:1fr}
+  .hm-way{padding:20px 0;border-bottom:0;display:grid;grid-template-columns:28px 1fr;gap:2px 14px}
+  .hm-way + .hm-way{padding-left:0;border-left:0}
+  .hm-way:last-child{border-bottom:1px solid var(--line)}
+  .hm-way svg{grid-row:1 / span 2;margin-top:2px}.hm-way h2{margin:0;font-size:20px}
+  .hm-shelf{padding-top:44px}
+  .hm-resume{grid-template-columns:1fr;margin-bottom:36px}.hm-resume-l{grid-row:auto}
+}
+@media (max-width:520px){
+  .hm-hero{padding-top:32px}
+  .hm-sub{font-size:17px;margin:16px 0 22px}
+  .hm-book{gap:14px;padding:14px}
+  .hm-book-name{font-size:19px}.hm-book-blurb{font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){.hm-book .cover{transition:none}.hm-book:hover .cover{transform:none}}
 </style>
 </Base>

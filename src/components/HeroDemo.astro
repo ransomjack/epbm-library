@@ -1,0 +1,70 @@
+---
+// Home-page taster: a live break-even calculator for a tea stall.
+---
+<div class="demo" data-demo>
+  <p class="demo-q">A tea stall pays rent every month. How many cups before it earns anything?</p>
+  <label class="dctl"><span>Price of a cup</span><input type="range" data-k="p" min="8" max="40" step="1" value="20"><output data-o="p"></output></label>
+  <label class="dctl"><span>Cost to make it</span><input type="range" data-k="c" min="3" max="25" step="1" value="8"><output data-o="c"></output></label>
+  <label class="dctl"><span>Rent and wages</span><input type="range" data-k="f" min="6000" max="60000" step="1000" value="24000"><output data-o="f"></output></label>
+  <svg class="demo-chart" viewBox="0 0 360 150" role="img" aria-label="Sales and total cost against cups sold">
+    <line x1="34" y1="126" x2="352" y2="126" class="ax"/><line x1="34" y1="10" x2="34" y2="126" class="ax"/>
+    <path data-g="loss" class="zone loss"/><path data-g="gain" class="zone gain"/>
+    <line data-g="cost" class="ln cost"/><line data-g="rev" class="ln rev"/>
+    <line data-g="drop" class="drop"/><circle data-g="dot" r="5" class="dot"/>
+    <text x="352" y="142" text-anchor="end" class="lab">cups a month</text>
+    <text data-g="lrev" class="lab strong">Sales</text><text data-g="lcost" class="lab">Total cost</text>
+  </svg>
+  <p class="demo-out" data-v="out" aria-live="polite"></p>
+  <a class="demo-more" href="/financial-reporting-cost-accounting/understanding-and-managing-cost/#break-even">This is break-even, from Financial Reporting. Read the chapter</a>
+</div>
+<script is:inline>
+document.querySelectorAll('[data-demo]').forEach(function (root) {
+  var $ = function (s) { return root.querySelector(s); };
+  var inr = function (n) { return '₹' + Math.round(n).toLocaleString('en-IN'); };
+  var X0 = 34, X1 = 352, Y0 = 126, Y1 = 10;
+  function set(el, a) { for (var k in a) el.setAttribute(k, a[k]); }
+  function draw() {
+    var p = +$('[data-k="p"]').value, c = +$('[data-k="c"]').value, f = +$('[data-k="f"]').value;
+    $('[data-o="p"]').textContent = inr(p); $('[data-o="c"]').textContent = inr(c); $('[data-o="f"]').textContent = inr(f);
+    var m = p - c, be = m > 0 ? f / m : Infinity;
+    var qmax = m > 0 ? Math.min(Math.max(be * 1.8, 1500), 20000) : 4000;
+    var vmax = Math.max(p * qmax, f + c * qmax) * 1.05;
+    var x = function (q) { return X0 + (X1 - X0) * q / qmax; }, y = function (v) { return Y0 - (Y0 - Y1) * v / vmax; };
+    set($('[data-g="rev"]'), { x1: x(0), y1: y(0), x2: x(qmax), y2: y(p * qmax) });
+    set($('[data-g="cost"]'), { x1: x(0), y1: y(f), x2: x(qmax), y2: y(f + c * qmax) });
+    var on = m > 0 && be <= qmax;
+    var bx = on ? x(be) : x(qmax), by = on ? y(p * be) : y(p * qmax);
+    $('[data-g="loss"]').setAttribute('d', 'M' + x(0) + ' ' + y(0) + 'L' + x(0) + ' ' + y(f) + 'L' + bx + ' ' + (on ? by : y(f + c * qmax)) + (on ? '' : 'L' + bx + ' ' + by) + 'Z');
+    $('[data-g="gain"]').setAttribute('d', on ? 'M' + bx + ' ' + by + 'L' + x(qmax) + ' ' + y(p * qmax) + 'L' + x(qmax) + ' ' + y(f + c * qmax) + 'Z' : '');
+    $('[data-g="dot"]').style.display = $('[data-g="drop"]').style.display = on ? '' : 'none';
+    set($('[data-g="dot"]'), { cx: bx, cy: by }); set($('[data-g="drop"]'), { x1: bx, y1: by, x2: bx, y2: Y0 });
+    var ry = y(p * qmax), cy = y(f + c * qmax); if (Math.abs(ry - cy) < 13) { if (ry < cy) cy = ry + 13; else ry = cy + 13; }
+    set($('[data-g="lrev"]'), { x: X1 - 2, y: Math.max(ry - 5, 9), 'text-anchor': 'end' });
+    set($('[data-g="lcost"]'), { x: X1 - 2, y: Math.max(cy - 5, 9), 'text-anchor': 'end' });
+    var out = $('[data-v="out"]');
+    if (m <= 0) out.innerHTML = '<b>Every cup loses money.</b> When a cup costs as much as it sells for, no number of customers will cover the rent.';
+    else { var cups = Math.ceil(be); out.innerHTML = 'Break-even: <b>' + cups.toLocaleString('en-IN') + ' cups a month</b>, about ' + Math.ceil(cups / 30).toLocaleString('en-IN') + ' a day. Each cup leaves ' + inr(m) + ' towards the rent; every cup after that is profit.'; }
+  }
+  root.querySelectorAll('input').forEach(function (i) { i.addEventListener('input', draw); });
+  draw();
+});
+</script>
+<style>
+.demo{padding:22px 22px 20px;border-radius:16px;background:var(--surface);font-family:var(--sans)}
+.demo-q{margin:0 0 16px;font-family:var(--display);font-size:19px;line-height:1.35;color:var(--ink)}
+.dctl{display:grid;grid-template-columns:118px 1fr 62px;align-items:center;gap:10px;min-height:38px;font-size:14px;color:var(--body)}
+.dctl output{text-align:right;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+.dctl input{width:100%;accent-color:var(--accent);min-width:0}
+.demo-chart{display:block;width:100%;height:auto;margin:12px 0 6px}
+.demo-chart .ax{stroke:var(--muted);stroke-width:1}
+.demo-chart .ln{stroke-width:2.5;stroke-linecap:round}
+.demo-chart .rev{stroke:var(--accent)}.demo-chart .cost{stroke:var(--trap)}
+.demo-chart .zone.loss{fill:var(--trap-soft)}.demo-chart .zone.gain{fill:var(--accent-soft)}
+.demo-chart .drop{stroke:var(--ink);stroke-width:1;stroke-dasharray:3 3}
+.demo-chart .dot{fill:var(--ink);stroke:var(--surface);stroke-width:2}
+.demo-chart .lab{font:500 10px var(--sans);fill:var(--muted)}.demo-chart .lab.strong{fill:var(--ink)}
+.demo-out{margin:0;min-height:4.4em;font-size:15px;line-height:1.5;color:var(--body)}
+.demo-out :global(b){color:var(--ink)}
+.demo-more{display:inline-block;margin-top:10px;font-size:14px;font-weight:600}
+@media (max-width:420px){.demo{padding:18px 16px}.dctl{grid-template-columns:104px 1fr 58px;gap:8px}}
+</style>

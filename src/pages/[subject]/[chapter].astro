@@ -16,7 +16,8 @@ const { s, c, prev, next } = Astro.props;
 const { Content } = c;
 ---
 <Base title={`${c.title} · ${s.name}`} back={{ href: `/${s.slug}/`, label: s.name }} pdf={s.pdf} description={c.description} image={s.og}>
-<main class="wrap page">
+<div class="rp" aria-hidden="true"><i id="rp"></i></div>
+<main class="wrap page" data-url={`/${s.slug}/${c.slug}/`} data-title={`${c.kicker}: ${c.title}`} data-subject={s.name}>
   <nav class="toc" aria-label="On this page">
     <div class="toc-title">On this page</div>
     {c.headings.map((h) => <a href={`#${h.slug}`}>{h.text}</a>)}
@@ -24,64 +25,139 @@ const { Content } = c;
 
   <article>
     <header class="head">
-      <div class="kicker">{c.kicker}</div>
+      <div class="kicker">{c.kicker} <span class="of">of {s.name}</span></div>
       <h1>{c.title}</h1>
+      <p class="facts">
+        <span>{c.minutes} min read</span>
+        {c.tools > 0 && <span class="facts-try">{c.tools} {c.tools === 1 ? 'thing' : 'things'} to try</span>}
+      </p>
       {c.source && <p class="source">{c.source}</p>}
     </header>
 
+    {c.headings.length > 1 && (
+      <details class="mtoc">
+        <summary>On this page <span>{c.headings.length} sections</span></summary>
+        <div>{c.headings.map((h) => <a href={`#${h.slug}`}>{h.text}</a>)}</div>
+      </details>
+    )}
+
     {c.takeaways && (
       <aside class="takeaways" aria-label="Key takeaways">
-        <p class="tk-title">In this chapter</p>
+        <p class="tk-title">What you'll take away</p>
         <ul>{c.takeaways.map((t) => <li>{t}</li>)}</ul>
       </aside>
     )}
 
     <div class="prose"><Content /></div>
 
+    <p class="done" id="done" hidden>Chapter finished. It's ticked off on the subject page.</p>
+
     <Share text={`${c.title} (${s.name}), explained simply:`} label="Found this useful? Share it" />
 
-    <nav class="pager" aria-label="Chapters">
-      {prev ? <a href={`/${s.slug}/${prev.slug}/`}>Previous: {prev.title}</a> : <a href={`/${s.slug}/`}>Back to the subject</a>}
-      {next ? <a href={`/${s.slug}/${next.slug}/`}>Next: {next.title}</a> : s.quiz && <a href={`/${s.slug}/quiz/`}>Next: Practice questions</a>}
+    <nav class="pager" aria-label="Chapters" id="pager">
+      {prev
+        ? <a class="pg" href={`/${s.slug}/${prev.slug}/`}><span class="pg-k">Previous</span><span class="pg-t">{prev.title}</span></a>
+        : <a class="pg" href={`/${s.slug}/`}><span class="pg-k">Back to</span><span class="pg-t">{s.name}</span></a>}
+      {next
+        ? <a class="pg pg-next" href={`/${s.slug}/${next.slug}/`}><span class="pg-k">Next: {next.kicker}</span><span class="pg-t">{next.title}</span></a>
+        : s.quiz && <a class="pg pg-next" href={`/${s.slug}/quiz/`}><span class="pg-k">Next</span><span class="pg-t">Test yourself with {s.questions} practice questions</span></a>}
     </nav>
   </article>
 </main>
 
 <script is:inline>
 (function () {
-  var links = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
-  if (!links.length || !('IntersectionObserver' in window)) return;
-  var byId = {};
-  links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (!e.isIntersecting) return;
-      links.forEach(function (a) { a.removeAttribute('aria-current'); });
-      byId[e.target.id] && byId[e.target.id].setAttribute('aria-current', 'true');
+  var page = document.querySelector('.page'), st = window.EPBM;
+  if (st) st.setLast({ u: page.dataset.url, t: page.dataset.title, s: page.dataset.subject });
+
+  var bar = document.getElementById('rp'), art = document.querySelector('.prose'), tick = false;
+  function prog() {
+    tick = false;
+    var r = art.getBoundingClientRect(), total = r.height - window.innerHeight * 0.6;
+    var p = total > 0 ? Math.max(0, Math.min(1, -r.top / total)) : 1;
+    bar.style.transform = 'scaleX(' + p + ')';
+  }
+  window.addEventListener('scroll', function () { if (!tick) { tick = true; requestAnimationFrame(prog); } }, { passive: true });
+  window.addEventListener('resize', prog); prog();
+
+  function fitTables() {
+    document.querySelectorAll('.prose table').forEach(function (t) {
+      t.classList.remove('scrolls');
+      if (t.offsetWidth > t.parentElement.clientWidth + 1) t.classList.add('scrolls');
     });
-  }, { rootMargin: '0px 0px -70% 0px' });
-  Object.keys(byId).forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
+  }
+  fitTables(); window.addEventListener('resize', fitTables);
+
+  var mt = document.querySelector('.mtoc');
+  if (mt) mt.addEventListener('click', function (e) { if (e.target.tagName === 'A') mt.open = false; });
+
+  if ('IntersectionObserver' in window) {
+    var pager = document.getElementById('pager');
+    var end = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        if (st) st.markRead(page.dataset.url);
+        document.getElementById('done').hidden = false; end.disconnect();
+      });
+    });
+    end.observe(pager);
+
+    var links = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+    if (!links.length) return;
+    var byId = {};
+    links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        links.forEach(function (a) { a.removeAttribute('aria-current'); });
+        byId[e.target.id] && byId[e.target.id].setAttribute('aria-current', 'true');
+      });
+    }, { rootMargin: '-80px 0px -65% 0px' });
+    Object.keys(byId).forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
+  }
 })();
 </script>
 
 <style>
-.page{display:flex;flex-wrap:wrap;align-items:flex-start;gap:72px;padding-top:56px}
-.toc{flex:1 1 200px;min-width:0;display:flex;flex-direction:column;gap:2px;position:sticky;top:24px;max-height:calc(100vh - 48px);overflow:auto}
+.rp{position:fixed;left:0;right:0;top:0;height:3px;z-index:30;pointer-events:none}
+.rp i{display:block;height:100%;background:var(--accent);transform:scaleX(0);transform-origin:0 50%}
+.page{display:flex;flex-wrap:wrap;align-items:flex-start;gap:72px;padding-top:48px}
+.toc{flex:1 1 200px;min-width:0;display:flex;flex-direction:column;gap:2px;position:sticky;top:92px;max-height:calc(100vh - 116px);overflow:auto}
 .toc-title{font-size:13px;font-weight:600;color:var(--muted);padding:0 12px 10px}
 .toc a{display:flex;align-items:center;min-height:40px;padding:6px 12px;border-radius:8px;text-decoration:none;color:var(--muted);font-size:14px;line-height:1.3}
 .toc a:hover{color:var(--ink)}
 .toc a[aria-current]{background:var(--surface);color:var(--ink);font-weight:600}
-@media (max-width:900px){.toc{display:none}.page{padding-top:32px}}
 article{flex:999 1 560px;min-width:0;max-width:740px}
-.head{padding-bottom:26px;border-bottom:1px solid var(--line);margin-bottom:8px}
+.head{padding-bottom:24px;border-bottom:1px solid var(--line);margin-bottom:8px}
 .kicker{font-size:14px;font-weight:600;color:var(--accent)}
-h1{margin:8px 0 0;font-weight:500;font-size:clamp(34px,5vw,52px);line-height:1.08;letter-spacing:-0.01em}
-.source{margin:14px 0 0;font-size:14px;color:var(--muted)}
+.kicker .of{color:var(--muted);font-weight:500}
+h1{margin:8px 0 0;font-weight:500;font-size:clamp(32px,5vw,52px);line-height:1.08;letter-spacing:-0.012em;text-wrap:balance}
+.facts{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0}
+.facts span{padding:4px 11px;border-radius:999px;background:var(--surface);font-size:13px;font-weight:500;color:var(--body)}
+.facts .facts-try{background:var(--accent-soft);color:var(--accent);font-weight:600}
+.source{margin:12px 0 0;font-size:14px;color:var(--muted)}
+.mtoc{display:none;margin:20px 0 0;border:1px solid var(--line);border-radius:12px}
+.mtoc summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:50px;padding:0 16px;font-weight:600;font-size:15px;cursor:pointer;list-style:none}
+.mtoc summary::-webkit-details-marker{display:none}
+.mtoc summary span{font-weight:500;font-size:13px;color:var(--muted)}
+.mtoc summary span::after{content:"";display:inline-block;width:7px;height:7px;margin:0 2px 2px 10px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg)}
+.mtoc[open] summary span::after{transform:rotate(-135deg);margin-bottom:-2px}
+.mtoc div{display:flex;flex-direction:column;padding:0 8px 8px}
+.mtoc a{display:flex;align-items:center;min-height:44px;padding:6px 8px;border-top:1px solid var(--line);text-decoration:none;color:var(--body);font-size:15px;line-height:1.3}
+@media (max-width:900px){.toc{display:none}.mtoc{display:block}.page{padding-top:28px}}
 .takeaways{margin:28px 0 36px;padding:20px 24px;border-radius:14px;background:var(--surface)}
 .tk-title{margin:0 0 10px;font-size:13px;font-weight:600;letter-spacing:.02em;color:var(--accent)}
 .takeaways ul{margin:0;padding-left:1.1em;font-size:16px;line-height:1.55;color:var(--ink)}
 .takeaways li{margin-bottom:6px}.takeaways li:last-child{margin-bottom:0}
-.pager{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;margin-top:48px;padding-top:26px;border-top:1px solid var(--line)}
-.pager a{display:inline-flex;align-items:center;min-height:44px;font-weight:600;font-size:15px;text-decoration:none}
+.done{margin:40px 0 0;padding:14px 18px;border-radius:10px;background:var(--accent-soft);color:var(--accent);font-weight:600;font-size:15px}
+.pager{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:14px;margin-top:40px;padding-top:26px;border-top:1px solid var(--line)}
+.pg{display:flex;flex-direction:column;gap:4px;justify-content:center;min-height:76px;padding:14px 18px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink)}
+.pg:hover{border-color:var(--ink);color:var(--ink)}
+.pg-k{font-size:13px;font-weight:600;color:var(--muted)}
+.pg-t{font-family:var(--display);font-weight:500;font-size:19px;line-height:1.25}
+.pg-next{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.pg-next .pg-k{color:var(--on-accent);opacity:.85}
+.pg-next:hover{color:var(--on-accent);border-color:var(--accent);filter:brightness(1.08)}
+@media (max-width:600px){.pager{grid-template-columns:1fr}.pg-next{order:-1}.takeaways{padding:18px 18px}}
 </style>
 </Base>

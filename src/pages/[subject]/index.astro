@@ -1,67 +1,159 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Cover from '../../components/Cover.astro';
 import { library } from '../../lib/books.js';
 
 export function getStaticPaths() {
   return library.filter((s) => s.chapters.length).map((s) => ({ params: { subject: s.slug }, props: { s } }));
 }
 const { s } = Astro.props;
+const others = library.filter((x) => x.chapters.length && x.slug !== s.slug);
+const first = s.chapters[0];
 ---
 <Base title={s.name} pdf={s.pdf} image={s.og} description={`${s.name}: ${s.blurb}`}>
-<main class="wrap page">
-  <nav class="side" aria-label="Subjects">
-    <div class="side-title">Subjects</div>
-    {library.map((x) => x.chapters.length
-      ? <a class="subj" href={`/${x.slug}/`} aria-current={x.slug === s.slug ? 'page' : undefined}>{x.name}</a>
-      : <span class="subj off">{x.name}</span>)}
-  </nav>
+<main class="wrap sb" data-subject={s.slug}>
+  <header class="sb-head">
+    <Cover s={s} size="l" />
+    <div class="sb-intro">
+      <div class="sb-crumb"><a href="/">Library</a> <span aria-hidden="true">/</span> Subject</div>
+      <h1>{s.name}</h1>
+      {s.blurb && <p class="sb-lede">{s.blurb}</p>}
+      <p class="sb-meta">
+        <span>{s.chapters.length} chapters</span>
+        <span>About {s.minutes} min of reading</span>
+        {s.tools > 0 && <span>{s.tools} things to try</span>}
+        {s.quiz && <span>{s.questions} practice questions</span>}
+      </p>
+      <div class="sb-actions">
+        <a class="sb-go" id="sb-go" href={`/${s.slug}/${first.slug}/`}>Start reading</a>
+        {s.quiz && <a class="sb-alt" href={`/${s.slug}/quiz/`}>Go to practice questions</a>}
+      </div>
+    </div>
+  </header>
 
-  <div class="main">
-    <div class="crumb"><a href="/">Library</a> &nbsp;/&nbsp; Subjects</div>
-    <h1>{s.name}</h1>
-    {s.blurb && <p class="lede">{s.blurb}</p>}
-
-    <ol class="chapters">
-      {s.chapters.map((c) => (
+  <section class="sb-list">
+    <div class="sb-list-head">
+      <h2>Chapters</h2>
+      <p class="sb-prog" id="sb-prog" hidden><span id="sb-prog-t"></span><span class="sb-bar"><i id="sb-bar"></i></span></p>
+    </div>
+    <ol class="sb-chapters">
+      {s.chapters.map((c, i) => (
         <li>
-          <a href={`/${s.slug}/${c.slug}/`}>
-            <span class="kicker">{c.kicker}</span>
-            <span class="ch-title">{c.title}</span>
+          <a href={`/${s.slug}/${c.slug}/`} data-ch={`/${s.slug}/${c.slug}/`}>
+            <span class="sb-n" aria-hidden="true">{i + 1}</span>
+            <span class="sb-ch">
+              <span class="sb-k">{c.kicker}</span>
+              <span class="sb-t">{c.title}</span>
+              {c.takeaways && <span class="sb-d">{c.takeaways[0]}</span>}
+            </span>
+            <span class="sb-side">
+              <span>{c.minutes} min</span>
+              {c.tools > 0 && <span class="sb-try">{c.tools} to try</span>}
+            </span>
           </a>
         </li>
-      ))}
-      {s.quiz && (
-        <li>
-          <a href={`/${s.slug}/quiz/`}>
-            <span class="kicker">Practice</span>
-            <span class="ch-title">{s.quiz.sections.reduce((n, x) => n + x.questions.length, 0)} practice questions</span>
-          </a>
-        </li>
-      )}
-      {(s.planned || []).map((p) => (
-        <li class="planned"><span class="ch-title">{p}</span><span class="kicker">Being added</span></li>
       ))}
     </ol>
-  </div>
+
+    {s.quiz && (
+      <a class="sb-quiz" href={`/${s.slug}/quiz/`}>
+        <svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16 9.5"/></svg>
+        <span>
+          <span class="sb-t">Test yourself: {s.questions} practice questions</span>
+          <span class="sb-d">{s.quiz.sections.length} sets. Pick an answer and see at once whether it's right, and why.</span>
+        </span>
+      </a>
+    )}
+  </section>
+
+  {others.length > 0 && (
+    <nav class="sb-more" aria-label="Other subjects">
+      <h2>Other subjects</h2>
+      <div class="sb-others">
+        {others.map((x) => <a href={`/${x.slug}/`} style={`--c:${x.color}`}><i aria-hidden="true"></i>{x.name}</a>)}
+      </div>
+    </nav>
+  )}
 </main>
 
-<style>
-.page{display:flex;flex-wrap:wrap;align-items:flex-start;gap:56px;padding-top:40px}
-.side{flex:1 1 220px;min-width:0;display:flex;flex-direction:column;gap:2px}
-.side-title{font-size:13px;font-weight:600;color:var(--muted);padding:0 12px 10px}
-.subj{display:flex;align-items:center;min-height:44px;padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--body);font-size:14px;line-height:1.3}
-.subj[aria-current="page"]{background:var(--surface);color:var(--ink);font-weight:600}
-.subj.off{color:var(--muted)}
-.main{flex:999 1 560px;min-width:0}
-.crumb{font-size:14px;color:var(--muted)}
-h1{margin:16px 0 0;font-weight:500;font-size:clamp(32px,4.6vw,46px);line-height:1.1;letter-spacing:-0.01em}
-.lede{margin:16px 0 0;font-size:17px;line-height:1.6;color:var(--body);max-width:660px}
-.chapters{list-style:none;margin:32px 0 0;padding:0;border-top:1px solid var(--line)}
-.chapters li{border-bottom:1px solid var(--line)}
-.chapters a,.chapters .planned{display:flex;flex-direction:column;gap:2px;padding:16px 0;text-decoration:none}
-.kicker{font-size:13px;font-weight:600;color:var(--muted)}
-.ch-title{font-family:var(--display);font-weight:500;font-size:22px;color:var(--ink)}
-.chapters a:hover .ch-title{color:var(--accent)}
-.planned .ch-title{color:var(--muted)}
+<script is:inline>
+(function () {
+  var st = window.EPBM; if (!st) return;
+  var read = st.read(), rows = Array.prototype.slice.call(document.querySelectorAll('[data-ch]')), n = 0, firstUnread = null;
+  rows.forEach(function (a) {
+    if (read.indexOf(a.dataset.ch) !== -1) {
+      n++; a.classList.add('is-read');
+      var b = a.querySelector('.sb-n'); b.textContent = '✓';
+      var sr = document.createElement('span'); sr.className = 'sr'; sr.textContent = 'Read. '; a.querySelector('.sb-ch').prepend(sr);
+    }
+  });
+  var isRead = function (a) { return a.classList.contains('is-read'); };
+  var lastRead = -1; rows.forEach(function (a, i) { if (isRead(a)) lastRead = i; });
+  firstUnread = rows.slice(lastRead + 1).filter(function (a) { return !isRead(a); })[0] || rows.filter(function (a) { return !isRead(a); })[0] || null;
+  if (!n) return;
+  document.getElementById('sb-prog').hidden = false;
+  document.getElementById('sb-prog-t').textContent = n + ' of ' + rows.length + ' read';
+  document.getElementById('sb-bar').style.width = (100 * n / rows.length) + '%';
+  var go = document.getElementById('sb-go');
+  if (firstUnread) { go.href = firstUnread.getAttribute('href'); go.textContent = 'Continue: chapter ' + (rows.indexOf(firstUnread) + 1); }
+  else { go.textContent = 'Read again from the start'; }
+})();
+</script>
+
+<style is:global>
+.sb{padding-top:44px}
+.sb-head{display:flex;gap:40px;align-items:flex-start}
+.sb-intro{min-width:0;flex:1}
+.sb-crumb{font-size:14px;color:var(--muted)}
+.sb-intro h1{margin:10px 0 0;font-weight:500;font-size:clamp(30px,4.6vw,50px);line-height:1.08;letter-spacing:-.015em;text-wrap:balance}
+.sb-lede{margin:14px 0 0;font-size:18px;line-height:1.55;color:var(--body);max-width:36em}
+.sb-meta{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 0}
+.sb-meta span{padding:4px 11px;border-radius:999px;background:var(--surface);font-size:13px;font-weight:500;color:var(--body)}
+.sb-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px;margin-top:24px}
+.sb-go{display:inline-flex;align-items:center;min-height:50px;padding:0 24px;border-radius:10px;background:var(--accent);color:var(--on-accent);font-weight:600;font-size:16px;text-decoration:none}
+.sb-go:hover{color:var(--on-accent);filter:brightness(1.08)}
+.sb-alt{display:inline-flex;align-items:center;min-height:44px;font-weight:600;font-size:15px}
+.sb-list{margin-top:56px;max-width:860px}
+.sb-list-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.sb-list-head h2,.sb-more h2{margin:0;font-weight:500;font-size:26px}
+.sb-prog{display:flex;align-items:center;gap:10px;margin:0;font-size:14px;font-weight:600;color:var(--accent)}
+.sb-bar{display:block;width:120px;height:6px;border-radius:3px;background:var(--surface-2);overflow:hidden}
+.sb-bar i{display:block;height:100%;background:var(--accent)}
+.sb-chapters{list-style:none;margin:0;padding:0}
+.sb-chapters li{border-bottom:1px solid var(--line)}
+.sb-chapters a{display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:6px 18px;align-items:start;padding:20px 8px;margin:0 -8px;border-radius:10px;text-decoration:none;color:var(--ink)}
+.sb-chapters a:hover{background:var(--surface);color:var(--ink)}
+.sb-n{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1.5px solid var(--line);border-radius:50%;font:600 16px var(--display);color:var(--body)}
+.is-read .sb-n{background:var(--accent);border-color:var(--accent);color:var(--on-accent);font-family:var(--sans)}
+.sb-ch{display:flex;flex-direction:column;gap:3px;min-width:0}
+.sb-k{font-size:13px;font-weight:600;color:var(--muted)}
+.sb-t{font-family:var(--display);font-weight:500;font-size:23px;line-height:1.22;color:var(--ink)}
+.sb-d{font-size:15px;line-height:1.5;color:var(--body);max-width:40em}
+.sb-side{display:flex;flex-direction:column;align-items:flex-end;gap:5px;padding-top:4px;font-size:13px;font-weight:500;color:var(--muted);white-space:nowrap}
+.sb-try{padding:2px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:600}
+.sb-quiz{display:grid;grid-template-columns:40px minmax(0,1fr);gap:18px;align-items:center;margin-top:28px;padding:22px 20px;border-radius:14px;background:var(--accent-soft);text-decoration:none;color:var(--accent)}
+.sb-quiz > span{display:flex;flex-direction:column;gap:3px}
+.sb-quiz:hover{color:var(--accent);outline:1.5px solid var(--accent)}
+.sb-more{margin-top:64px}
+.sb-others{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.sb-others a{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 16px 0 12px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--ink);font-weight:500;font-size:15px}
+.sb-others a:hover{border-color:var(--ink)}
+.sb-others i{display:block;width:14px;height:20px;border-radius:2px 3px 3px 2px;background:var(--c)}
+@media (max-width:700px){
+  .sb{padding-top:28px}
+  .sb-head{gap:18px}
+  .sb-lede{font-size:16px}
+  .sb-list{margin-top:40px}
+  .sb-chapters a{grid-template-columns:34px minmax(0,1fr);gap:4px 14px;padding:16px 8px}
+  .sb-n{width:34px;height:34px;font-size:14px}
+  .sb-t{font-size:20px}
+  .sb-side{grid-column:2;flex-direction:row;align-items:center;gap:10px;padding-top:2px}
+  .sb-quiz{padding:18px 16px;gap:14px}
+}
+@media (max-width:520px){
+  .sb-head{flex-direction:column}
+  .sb-head .cover{display:none}
+  .sb-go{width:100%;justify-content:center}
+}
 </style>
 </Base>
