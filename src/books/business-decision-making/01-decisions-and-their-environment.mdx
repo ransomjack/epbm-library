@@ -21,20 +21,24 @@ import FactorialWall from '../../components/d/FactorialWall.astro';
 
 ## The decisions we postpone
 
-A travel enthusiast books the family holiday the moment it is mentioned. A couch potato facing the same holiday keeps saying "next month". Same decision, opposite behaviour.
+The session didn't open with mathematics. It opened with a mirror.
 
-Prof. Sharma's point: **we postpone decisions where the right course of action isn't the one we want to take.** A plant head delays retiring an old production line he is attached to. A delivery head keeps a loss-making client because the logo looks good on a slide. In each case the analysis is done. What stalls is the conflict between preference and what is right.
+Think of the friend who is a travel enthusiast. The moment a family holiday is mentioned, work is set aside and the tickets are booked, even if the trip is six months away. For that person the decision itself is a source of instant gratification. Now flip the character: a couch potato whose family is pushing for the same holiday. The trip keeps getting postponed: "next month", "after this project", "let us see". Same decision, opposite behaviour.
+
+Prof. Sharma's point was sharp: **we postpone decisions where the right course of action isn't the one we want to take.** The family's best alternative is to travel; the couch potato's preference is to stay home. The two are in conflict, so the decision is deferred, in the quiet hope that someday what I want to do becomes what is right to do. Audit your own pending decisions and most will fit this pattern.
+
+The same pattern at work. A plant head keeps postponing the shutdown of an old but emotionally important production line though the numbers say retire it. A delivery head keeps deferring the exit of a loss-making client because the logo looks good on the slide. A product manager delays killing a feature the team loves but users ignore. In every case the analysis is done. The conflict between preference and what is right is what stalls execution.
 
 <div class="callout">
 <p class="callout-title">Postponement is a conflict problem, not a data problem</p>
 
-Nobody postpones watching the big match at 1 a.m. Everybody postpones the report due the next morning. Making a decision and carrying it out are two different things.
+When "what I want" and "what is right" diverge, we delay and hope reality changes. Nobody postpones watching the big match at 1 a.m. Everybody postpones the report due the next morning. Making a decision and carrying it out are two different things. The discipline of decision science is to separate preference from what is best, decide, and then execute.
 
 </div>
 
 ## Two building blocks
 
-Every decision has two parts.
+Before any framework, the everyday picture: a farmer chooses which crop to sow this season. That choice is entirely his. Whether the monsoon arrives on time is entirely not. Every decision problem in this module, however mathematical it becomes, is just these two forces meeting. The outcome is produced jointly by the two.
 
 <Cards min={240} items={[
   { title: 'Course of action', body: 'The alternative you choose. Fully under your control.', foot: 'Which crop the farmer sows; which stock you buy' },
@@ -45,7 +49,8 @@ Every decision has two parts.
 |---|---|---|
 | Factory | Batch size and shift plan for the week | A machine breakdown; variation in raw material |
 | Product company | Launch price and build quantity | A competitor's response; actual demand |
-| Service company | An airline's overbooking level | How many passengers don't turn up |
+| Operations centre | The weekend analyst roster; the maintenance window chosen | The actual alert volume; whether an attacker strikes that night |
+| Service company | An airline's overbooking level; the bench an IT firm carries | How many passengers don't turn up; which deals convert |
 
 <div class="callout trap">
 <p class="callout-title">Don't judge a decision by its outcome alone</p>
@@ -56,7 +61,7 @@ A sound choice can meet an unlucky state of nature and turn out badly. A reckles
 
 ## Three environments
 
-One question sorts every decision: when you choose, what do you know about the states of nature?
+One question sorts every decision: when you choose, what do you know about the states of nature? Know the outcome exactly: certainty. Know the possible outcomes and their probabilities: risk. Know the possible outcomes but not the probabilities: uncertainty. Classify the environment first. The tool follows the environment.
 
 <Fig title="Certainty, risk and uncertainty">
 <Cards min={200} items={[
@@ -84,6 +89,13 @@ Two class debates sharpened this:
 - **"But inflation eats the return."** True, but the objective was fixed as the maturity amount of a fixed deposit. Change the objective to real, after-tax return across all investments and you have a different problem, possibly no longer one of certainty. **The objective defines the problem.**
 - **Why ₹1 lakh and not ₹10 lakh?** Bank deposits in India are insured up to ₹5 lakh per depositor per bank. Below that, even a bank failure can't touch the money. Above it, a small chance of loss appears and certainty quietly becomes risk.
 
+| Where you meet certainty at work | The decision |
+|---|---|
+| Production | Product mix: machine hours, material and profit per unit are all known. How many tables and how many chairs this week? |
+| Operations | Fitting maintenance windows inside a known downtime budget |
+| Product company | Choosing among fixed supplier quotations: prices, lead times and quantities are on paper before you sign |
+| Service company | A firm with signed multi-year contracts knows next quarter's contracted revenue |
+
 ### Risk
 
 The samosa seller outside your office doesn't know if tomorrow will be sunny or rainy. But ten years there have taught him that it rains about 3 days in 10, and that rain cuts his sales from 200 samosas to 80. Each samosa costs ₹5 to make and sells for ₹10; unsold ones are wasted.
@@ -95,13 +107,22 @@ The tool is **expected monetary value (EMV)**: for each action, multiply every o
 | Fry 200 | Sells 200: ₹1,000 profit | Sells 80: ₹200 loss | 0.7 × 1,000 + 0.3 × (−200) = **₹640** |
 | Fry 100 | Sells 100: ₹500 profit | Sells 80: ₹300 profit | 0.7 × 500 + 0.3 × 300 = **₹440** |
 
-Fry 200, and accept the occasional rainy-day loss. Now change the weather:
+Fry 200, and accept the occasional rainy-day loss for the larger average gain. Notice what the vendor is really doing: playing the long run. EMV is the right guide for repeated decisions. For a one-off, bet-the-company decision, appetite for risk matters too. Now change the weather:
 
 <Fig title="The samosa stall" caption="EMV is the long-run average per day. It is the right guide for decisions you make again and again.">
   <SamosaCalc />
 </Fig>
 
+| Where you meet risk at work | The decision |
+|---|---|
+| Production | How much safety stock to hold when demand history gives a distribution |
+| Operations | Stocking spare parts from known failure rates; sizing a night shift from the history of alert volumes |
+| Product company | The Diwali build quantity from five years of festive sales; a pharma go or no-go using known success rates at each trial phase |
+| Service company | Airline overbooking from no-show rates; insurance pricing, the purest risk business there is; a restaurant ordering perishables |
+
 ### Uncertainty
+
+**The everyday picture: March 2020.** When the first lockdown hit, every business knew the possible states (demand collapses, demand shifts online, recovery in three months or in two years), but nobody had probabilities, because nothing like it had happened in living memory. The same is true for a first-time entrepreneur, or for Jio in 2016 deciding to launch voice calls free: there was no history of what rivals and customers would do to a move nobody had made before.
 
 When there are no probabilities, criteria replace calculation. A manufacturer is sizing a plant for a brand-new product (figures in ₹ lakh):
 
@@ -129,9 +150,26 @@ The economist Frank Knight drew the line in 1921. **Risk** is measurable: probab
 
 </div>
 
+| Where you meet uncertainty at work | The decision |
+|---|---|
+| Production | Capacity for a first-ever product line, where no demand history exists anywhere |
+| Operations | Entering a brand-new geography; in security, a known ransomware family comes with frequency data (risk), while a never-seen attack comes with none (uncertainty) |
+| Product company | A category-creating launch such as the first smartwatch |
+| Service company | Pricing a never-before service; building a practice for a regulation not yet notified |
+
 In practice most real decisions start as uncertainty and are pushed towards risk with pilots, test markets and comparisons with similar cases.
 
+For any decision, write down three things first: the objective, the courses of action, and the states of nature with what is known about them. One outcome per action means certainty: optimise. Known probabilities mean risk: use expected value or a decision tree. Unknown probabilities mean uncertainty: pick a criterion and justify the temperament.
+
 ## Certainty at business scale
+
+Do businesses really face decisions under certainty? The class produced three live examples from batchmates' own workplaces.
+
+**Committed revenue.** With signed contracts in hand, we already know what the top line will be. A firm with multi-year deals can state next quarter's contracted revenue with near-certainty: the states of nature have been pinned down by signatures. Planning delivery capacity against that book is deciding under certainty. It is the new-business pipeline that lives under risk.
+
+**Maintenance inside a service agreement.** Systems must stay up 99.9% of the year, so permitted downtime is a known budget of about 8.8 hours. Fitting maintenance windows into it is a scheduling problem with everything known in advance, and the decisions are yes or no: do the maintenance in this window or not.
+
+**Which warehouse serves which city?** A batchmate runs e-commerce operations with 41 warehouses across India. Cities are sorted into tiers, order density is mapped area by area, warehouses are linked to stores, and route planning follows. Once demand estimates are treated as known, assigning warehouses to cities is large but solvable by optimisation, not intuition.
 
 Decisions under certainty aren't trivial when there are thousands of them to make together.
 
@@ -140,7 +178,7 @@ Decisions under certainty aren't trivial when there are thousands of them to mak
   { title: 'Integer programming', body: 'The same, when decisions are whole numbers or yes/no.', foot: 'Staff rosters; maintenance windows; a sports league’s fixture list' },
 ]} />
 
-A system that must be up 99.9% of the year has a known downtime budget of about 8.8 hours. Fitting maintenance windows into it is a yes-or-no scheduling problem with everything known in advance.
+The Indian picture for integer programming is the IPL fixture list: every team must play every other, grounds have availability windows, broadcasters have slot constraints, and a match either happens in a slot or it doesn't. Airline crew rostering and exam timetabling are the same mathematics in different uniforms.
 
 ## Routing problems
 
@@ -151,19 +189,37 @@ Mumbai's dabbawalas collect thousands of lunch boxes, sort them, deliver them to
   { title: 'Travelling salesman problem (TSP)', body: 'One vehicle. Visit every stop exactly once and return to the start at the lowest cost.', foot: 'A technician’s day of eight home visits' },
 ]} />
 
-The travelling salesman problem is the special case of vehicle routing with one vehicle and no capacity limit.
+Picture an Amazon delivery station. Each delivery associate can carry only so much. Two decisions must be made together: **allocation** (which parcels go to which associate) and **sequencing** (the order in which each visits the addresses). The usual objective is least total distance. Fastest average delivery is equally valid, and the choice of objective, once again, defines the problem.
+
+The travelling salesman problem is the special case of vehicle routing with one vehicle and no capacity limit. Master its logic and vehicle routing is the same logic plus an allocation layer.
+
+| Where you meet it | The routing problem in disguise |
+|---|---|
+| Food delivery | Batching three orders onto one rider and sequencing the drops before the biryani goes cold |
+| Manufacturing | "Milk runs": one truck looping through several component suppliers on a fixed circuit |
+| Shop floor | A drilling machine visiting thousands of hole positions in the least head-travel time: a pure TSP inside a factory |
+| Field service | A technician's day: eight installation visits, one van, best sequence |
+| Banking | Cash-replenishment vans covering ATMs across a city |
 
 ### The factorial wall
 
-"Visit these ten houses in the cheapest order" sounds simple. The only guaranteed way to find the best route is to check every possible order, and the number of orders is n factorial: 5 stops give 5 × 4 × 3 × 2 × 1 = 120.
+"Visit these ten houses in the cheapest order" is a problem a child can state, and it defeats supercomputers. The only guaranteed way to find the best route is to check every possible order, and the number of orders is n factorial: 5 stops give 5 × 4 × 3 × 2 × 1 = 120. (For a round trip from a fixed depot the count is a little smaller. The refinement barely matters: every version grows explosively.)
 
 <Fig title="How fast the possibilities grow" caption="Brute force stops being possible at about twenty stops. Five more stops turn minutes into decades.">
   <FactorialWall />
 </Fig>
 
-These problems are called **NP-hard**: no known method finds the guaranteed best answer quickly as the problem grows. Airline crew scheduling, exam timetabling and factory job scheduling belong to the same family, which is why your roster headache really is mathematically hard.
+| Stops | Possible sequences | Time to check all, at a billion routes a second |
+|---|---|---|
+| 5 | 120 | Instant |
+| 10 | About 3.6 million | 0.004 seconds |
+| 15 | About 1.31 trillion | About 22 minutes |
+| 20 | About 2.43 × 10¹⁸ | About 77 years |
+| 25 | About 1.55 × 10²⁵ | About 490 million years |
 
-Industry's answer is the **heuristic**: a rule that finds a good route quickly without promising the best one. "Always go to the nearest unvisited stop" is the simplest.
+These problems are called **NP-hard** (the letters stand for non-deterministic polynomial): no known method finds the guaranteed best answer quickly as the problem grows. Airline crew scheduling, exam timetabling and factory job scheduling belong to the same family, which is why your roster headache really is mathematically hard.
+
+Industry's answer is the **heuristic**: a rule that finds a good route quickly without promising the best one. "Always go to the nearest unvisited stop" is the simplest. Every logistics company runs heuristics that find a very good route in seconds in place of the perfect route in centuries. That trade, optimality given up for tractability, is one of the deepest managerial lessons of operations research. When a planning problem at work is "impossible to get perfect", it probably is, mathematically. Stop paying for perfection, and spend the effort on the inputs the model depends on.
 
 <Decide q="Your delivery software produces routes in two seconds, but a consultant says they are about 3% longer than the best possible. Should you replace it with a system that guarantees the best route?" options={[
   { label: 'Yes. A 3% saving on fuel is worth having.', why: 'For a realistic number of stops, a guaranteed-best route can’t be computed in any useful time. The saving is theoretical.' },
@@ -172,19 +228,64 @@ Industry's answer is the **heuristic**: a rule that finds a good route quickly w
 
 ## Where the numbers come from
 
-A decision is only as good as its inputs. The campus session covered several ways those inputs go wrong.
+A decision is only as good as its inputs. The campus days also covered where the numbers that feed a decision come from, and what goes wrong with them.
 
-| Idea | What it means |
-|---|---|
-| **Hawthorne effect** | People behave differently when watched. Data from a pilot or an audit week shows best behaviour, not normal behaviour |
-| **Censored sales data** | Sales equal demand only until stock runs out. After that, the customers who found an empty shelf leave no trace. Estimate the demand you didn't see before you forecast |
-| **Markdown vs event discount** | A markdown is a permanent price cut on stock that didn't sell. A sale-day price that returns to normal on Monday is an event |
-| **Bass model** | Forecasts a brand-new category from two kinds of buyers: innovators, moved by advertising, and imitators, moved by word of mouth. Together they trace the S-shaped adoption curve |
-| **EOQ and safety stock** | The order size that balances ordering and holding cost, plus the extra kept for what the formula can't foresee |
-| **Bullwhip effect** | A small change in what shoppers buy becomes a large swing at the factory, because each link forecasts separately, adds its own buffer and orders in batches |
-| **CPFR** | The cure for the bullwhip: retailer and supplier share sales data and plan from one joint forecast |
+**The Hawthorne effect.** People change their behaviour when they know they are being watched. So data collected during a pilot or an audit shows best behaviour, not normal behaviour. The production line runs faster the week the auditors are on the floor. Analysts close tickets faster the week the new dashboard goes live; the real run-rate appears a month later.
 
-In the early weeks of COVID, shoppers bought a little extra toilet paper. Retailers ordered far more, distributors more still, and factories ran flat out before orders collapsed. The bullwhip is an information problem disguised as an inventory problem.
+**Qualitative and quantitative models.** Qualitative models structure judgement: frameworks, checklists, expert panels. Quantitative models use data, statistics and optimisation. Both are legitimate, and the module uses both: a launch checklist, and the expected-value table behind it.
+
+**Sales data versus demand data.** Sales equal demand only until you run out of stock. After a stock-out, sales undercount demand: the customers who found the shelf empty leave no trace. Data cut off like this is called **censored**. Uncensoring means estimating the demand you never saw, from the selling rate before the stock-out or from days when stock never ran out. A Diwali variant that sold out on day 3 of a 10-day season had far more demand than the system recorded. A fully booked clinic slot shows you capacity, not demand.
+
+**Markdown versus event discount.** A markdown is a permanent price cut once demand has fallen short: last season's handbag sold cheaply for good, or the previous-generation phone repriced when the new one launches. A sale-day price that is back to full on Sunday is an event, not a markdown.
+
+**Forecasting a category that doesn't exist yet: the Bass model.** When a product has no history, like the first e-reader or the first smartwatch, you can't extrapolate sales. The Bass model forecasts adoption from two kinds of buyers: **innovators**, who adopt on their own, moved by advertising and media, and **imitators**, who adopt because others have, moved by word of mouth. Together they trace the S-shaped adoption curve. It needs demand data, not censored sales data. Rogers' five groups (innovators, early adopters, early majority, late majority, laggards) describe the same curve.
+
+**Why hold inventory, and how much.** Inventory is a hedge against uncertainty in demand and in supply lead time, and a way to buy in economical batches. The **economic order quantity** balances the cost of placing orders against the cost of holding stock; total cost is U-shaped and the EOQ sits at its bottom. **Safety stock** is the extra kept for the uncertainty the formula can't see. Consumer goods makers hold stock; fashion can't afford to; perishables hold almost none; luxury keeps stock scarce on purpose. The service version of safety stock is surge capacity: the extra analysts, beds or riders kept for the night the volume spikes.
+
+**The bullwhip effect.** A small change in what consumers buy becomes a large swing in what the factory is asked to make, because every tier forecasts on its own, adds its own buffer, orders in batches and inflates orders during shortages. In the early weeks of COVID, shoppers bought a little extra toilet paper. Retailers ordered three times as much, distributors five times, factories ran round the clock, and then orders collapsed. Car makers cancelled chip orders in 2020, chip makers moved capacity elsewhere, and 2021 had no chips. It is an information problem disguised as an inventory problem.
+
+**CPFR: collaborative planning, forecasting and replenishment.** The fix for the bullwhip: retailer and supplier build one shared forecast, share point-of-sale data and let replenishment follow actual sales. Vendor-managed inventory is a related practice.
+
+> With chaos comes revenue; with order comes profit.
+
+Disruption creates revenue opportunities for whoever moves fast. Only operational discipline turns that revenue into profit.
+
+## The data file: Pilgrim Bank
+
+The spreadsheet shared after the campus session is the dataset of "Pilgrim Bank (A): Customer Profitability", a Harvard Business School case used worldwide to teach data-driven decision-making. It is a snapshot of 31,634 retail customers of a US bank for 1999. The decision on the table: online banking has arrived. Should the bank charge for it, keep it free, or pay customers to adopt it?
+
+| Column | Meaning | What to notice |
+|---|---|---|
+| Profit | Annual profit the bank earns from this customer, from −221 to +2,071 dollars | Customer 1 gave 21 dollars; customer 2 cost the bank 6 |
+| Online | Uses online banking? 1 = yes (3,854 customers, 12.2%), 0 = no | A binary variable |
+| Age | Age bucket, 1 (youngest) to 7 | Missing for 8,289 customers who gave no date of birth |
+| Income | Income bucket, 1 to 9 | Missing for 8,261. Slabs, because people answer "5 to 10 lakh" more readily than an exact figure |
+| Tenure | Years as a customer (mean 10.2) | Complete, because it comes from the bank's own records |
+| District | A district code with three values | Like a PIN code |
+
+Five headline numbers, a preview of Sessions 3 and 4:
+
+1. **Customer profitability is brutally skewed.** Mean profit is 111.50 dollars, but the median is just 9. About 46% of customers are unprofitable, and the top 10% deliver roughly 70% of total profit. The average customer is a statistical fiction.
+2. **The naive comparison flatters online banking, weakly.** Online customers average 116.67 dollars against 110.79 for offline: a difference of 5.88. Tested properly, that is far from convincing evidence.
+3. **Online users are a different crowd.** Younger, slightly higher-income, shorter tenure. Youth and short tenure both depress profit, so the raw comparison mixes the effect of the channel with the effect of who chooses it. This is **confounding**.
+4. **Control for the confounders and the story flips.** Holding age, income and tenure constant, the online effect becomes clearly positive, about 14 to 20 dollars. Yet the model explains under 6% of the variation in profit.
+5. **The missing-data trap.** Age and income are missing for about 26% of customers, and not at random: those with missing age average 73 dollars of profit against 125 for the rest. Silently deleting incomplete rows changes who you are studying.
+
+The ladder for any "does X drive profit?" question: compare group averages, test whether the difference is real, control for confounders, and check whether missing data is biasing the sample.
+
+Session 1 built decisions where outcomes are certain. Pilgrim Bank is the other half of the module: a decision where outcomes are noisy and the evidence is data. Under risk, you estimate the probabilities of the states of nature from exactly this kind of data.
+
+## The session on a manager's desk
+
+| Idea | Product company | Service company |
+|---|---|---|
+| Want versus right | Killing the feature the team loves but nobody uses | Exiting the loss-making client whose logo looks good on the slide |
+| Action versus state of nature | Build quantity against actual demand | Analyst roster against tonight's alert volume |
+| Certainty: optimise | Product mix from known machine hours and margins | Maintenance windows inside a known downtime budget |
+| Risk: expected value | Diwali build quantity from five years of sales | Overbooking from no-show rates |
+| Uncertainty: criteria | Capacity for a category-creating product | Pricing a never-before service |
+| Routing and heuristics | A drilling head's path; milk-run circuits | Technician day plans; cash vans; alert triage as routing |
+| The data file | Which products really earn the margin: mean versus median | Which contracts fund the team: the profit distribution, not the logo count |
 
 <div class="callout">
 <p class="callout-title">Manager takeaway: check the history before you extrapolate it</p>

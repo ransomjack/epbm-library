@@ -1,0 +1,278 @@
+---
+title: Testing a Claim
+kicker: Session 4, part 1
+order: 6
+source: "Session by Prof. Megha Sharma · Business Decision Making · Case: Pilgrim Bank (A)"
+description: "Hypothesis testing through the Delhi Metro once-over, why what you want to prove goes in the alternate, the two ways to be wrong and how two legal systems choose between them, the p-value, and a first regression run in Excel and read line by line. Session 4 of Business Decision Making."
+takeaways:
+  - "You can only ever reject the null and accept the alternate. So what you want to establish goes in the alternate."
+  - "Not rejecting is not accepting. It means the data couldn't tell the two stories apart."
+  - "Set the significance level from the cost of being wrong. The test guards one error; only more data shrinks the other."
+  - "A regression on a yes/no variable is a difference of two averages. If the slope's p-value is above your level, stop."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Steps from '../../components/d/Steps.astro';
+import Quad from '../../components/d/Quad.astro';
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
+
+## Where we are
+
+The professor opened with a ten-minute reconstruction of the last session, because everything now stands on it. Put yourself back in early 2000, at Pilgrim Bank, without today's hindsight, deciding whether to pay a rebate or charge a fee for online banking, with data on fewer than 1% of your five million customers.
+
+| Idea | Where the last session left it | What this session does with it |
+|---|---|---|
+| Population and sample | Decisions are for the five million; we have 31,634 | Every regression coefficient is an estimate for the population |
+| Sample size and representativeness | 30 or more is large; the sample must be chosen without bias | Dropping the 8,289 customers without an age turns a representative sample into a biased one |
+| Point and interval estimates | Point estimate plus or minus a cushion | Regression output carries the same intervals, for the intercept and every slope |
+| Comparing with intervals | Offline $107.60 to $113.98 and online $107.71 to $125.62 overlap: inconclusive | The same verdict from the first regression, then a way past it |
+| Inconclusive: now what? | Don't rush to collect more data | The whole session uses the same 31,634 rows and ends with a decision |
+| Kinds of data | The file is a snapshot | It can't prove that going online *makes* a customer more profitable. It can show that online customers are more profitable, like for like |
+
+A sample is for three things: estimation, hypothesis testing and relationships. Estimation is done. Today is the other two, with a twist: the hypothesis testing is done through regression. Every regression output contains a hypothesis test, so learning to read the output is learning to test hypotheses. First the theory, in stories. Then Excel.
+
+## Hypothesis testing: the Delhi Metro once-over
+
+"Anybody who has never done hypothesis testing?" Quite a few hands went up. The professor's claim: all of us do it, day in and day out. We just never wrote it down.
+
+In Manhattan there is a habit with a name, the Manhattan once-over: a stranger walking towards you looks you up and down in a fraction of a second, judges what sort of person you are, and moves on. The ladies' compartment of the Delhi Metro has the same custom. Whoever boards is looked over by everyone, once, and then everyone goes back to their phones.
+
+One day a woman boarded who was shabbily dressed; what she wore looked like rags. She was carrying a baby, and the baby was dressed for a festival: fancy clothes and what looked like gold bangles. The once-over didn't end. Everybody kept staring. Why? It didn't add up. A nanny? Nannies aren't sent alone on the Metro with a baby in gold. Somebody typed "kidnapped". (A mother in the class offered a gentler reading: a well-dressed child usually means a mother who has stopped dressing for herself. The professor accepted it as a perspective.)
+
+Whatever each passenger concluded, they had just run a hypothesis test. Two statements were on the table: the baby is hers, and the baby isn't hers. Nobody knew the truth. Everybody compared what they saw with a sample (a lifetime of seeing what usually goes with what) and found a mismatch.
+
+| Element | Definition | On the Metro |
+|---|---|---|
+| Null hypothesis (H0) | One of two statements about the population. The test is built around this one | The baby is hers |
+| Alternate hypothesis (H1) | The other statement | The baby isn't hers |
+| Mutually exclusive | They can't both be true | She is the legitimate carer or she isn't |
+| Collectively exhaustive | Together they cover every possibility | There is no third case |
+| The sample | What the statements are checked against | A lifetime of babies in gold bangles and the adults who carry them |
+| The truth | What we want to know and never observe directly | Whether the baby is in the right hands |
+
+Statistics is used this way far beyond business, in law and in medicine especially.
+
+### Only two verdicts, and only one is a conclusion
+
+| Verdict | What it means | What you may say |
+|---|---|---|
+| Reject H0 | The sample is too unlike what H0 would produce | You accept H1. This is the only conclusive outcome |
+| Do not reject H0 | The sample isn't strong enough evidence against H0 | You are inconclusive. You don't accept H0 |
+
+<div class="callout trap">
+<p class="callout-title">"We didn't reject the null, so the null is true"</p>
+
+No. Failing to reject means the sample couldn't tell the two stories apart, perhaps because the effect is small, perhaps because the data is noisy. The overlapping intervals didn't prove online and offline customers are equally profitable. They proved we couldn't yet tell. A batchmate asked the professor to repeat this twice, and she did: the only decisive verdict is "reject", and the only thing you ever accept is the alternate.
+
+</div>
+
+## Framing: what you want to prove goes in the alternate
+
+If "reject H0" is the only conclusive verdict, then which statement you call H0 decides whether the test can ever help you. The professor proved it with a shampoo.
+
+A consumer-goods company has a new formula it believes reduces hair fall. It tests a sample on a focus group.
+
+| | Case 1 | Case 2 |
+|---|---|---|
+| H0 | The formula reduces hair fall | The formula doesn't reduce hair fall |
+| H1 | The formula doesn't reduce hair fall | The formula reduces hair fall |
+| If H0 is rejected | You have shown it doesn't work. Nothing to advertise | You have shown it works. Advertise, and defend the claim in court with the data |
+| If H0 isn't rejected | Inconclusive. You can't advertise | Inconclusive. No claim yet |
+| Useful to the company? | No. Whatever the outcome, it can't do what it wanted | Yes. One outcome lets it act |
+| Useful to whom, then? | A competitor or consumer group that wants to prove the claim false | The company making the claim |
+
+> Whatever you want to establish, put it as your alternate hypothesis. The negation of it becomes the null.
+
+The same problem, even the same sample, is framed differently by different stakeholders. That isn't cheating; it is the point.
+
+### Framing Pilgrim Bank
+
+The class's first attempts were "H0: charge a fee" and "H0: don't charge a fee". Wrong kind of statement. Hypotheses are about a fact in the population, not about the action you will take. The fact here is who is more profitable.
+
+| | Frame A | Frame B |
+|---|---|---|
+| H0 | Offline customers are at least as profitable as online | Online customers are at least as profitable as offline |
+| H1 | Online customers are more profitable | Offline customers are more profitable |
+| Reject H0 means | Offer the rebate | Charge the fee |
+| Do not reject means | Inconclusive: you fall back to the fee | Inconclusive: you fall back to the rebate |
+| The risk in the fallback | A blanket fee when the groups may be just as good: possible pushback, but no rise in the bank's cost | A rebate for everyone when online may not be more profitable: cost rises with nothing to show for it |
+| Who chooses it | A bank more worried about spending money it may not recover | A bank more worried about annoying customers |
+
+Two things to notice. The "equal" always sits in the null, because the test starts by assuming the null is true. And there is no statistically right choice between A and B. A batchmate preferred A because rejecting gives you the rebate; the professor pointed out that A's fallback charges everyone a fee on thin evidence. The frame encodes which mistake you would rather make, and it has to be chosen before the data is looked at.
+
+<Decide q="You run customer support and want to roll out a new playbook. What goes in the alternate hypothesis?" options={[
+  { label: 'The new playbook makes no difference to response time.', why: 'That is the null. If you put it in the alternate, the best possible result is proof that your playbook doesn’t work.' },
+  { label: 'The new playbook cuts response time.', good: true, why: 'What you want to be able to say afterwards is the alternate. Only rejecting the null justifies the rollout.' },
+]} />
+
+Before anyone runs a test, write down what you want to be able to say afterwards. Then write down what you will do if the test comes back inconclusive, because it often will, and check that you can live with it.
+
+## Two ways to be wrong
+
+Back on the Metro. You have decided the baby is probably not hers. What do you do? Whatever you choose, the professor said, you won't be at peace that day.
+
+Report her, and imagine the police being rough with her while she says: it was my childhood dream to give my child what I never had; I have been saving since I was thirteen for these bangles. India has had people who carved a road through a mountain with a hammer, alone, over decades. Is she paying the price of an unusual dream? Do nothing, and the thought comes back on the way to the office: what about that baby? Short of a DNA test, you will never know. That is every hypothesis test: you decide from a sample, so both verdicts carry a chance of error, and neither chance is zero.
+
+<Fig title="The four possible results of a test" caption="Push the first error down and the second goes up. The test is deliberately skewed to protect the null.">
+  <Quad cols={['You reject H0', 'You do not reject H0']} rows={['H0 is true (the baby is hers)', 'H0 is false (it isn’t)']} cells={[
+    { tag: 'Type I error', t: 'You reported an innocent mother', b: 'Kept within a tolerance you choose', tone: 'bad' },
+    { t: 'Correct', b: 'You left her alone' },
+    { t: 'Correct', b: 'You reported a kidnapper' },
+    { tag: 'Type II error', t: 'A kidnapper walked away', b: 'Shrunk only by a bigger sample', tone: 'bad' },
+  ]} />
+</Fig>
+
+### Alpha: how much of the first error you can live with
+
+The tolerance for a Type I error is the **level of significance**, alpha.
+
+| Alpha | When | The professor's examples |
+|---|---|---|
+| 10% | Going wrong costs little | A small promotion: if it flops, no great harm |
+| 5% | The default | Almost every market-research report you will read |
+| 1% | Going wrong is costly | An automation vendor claims its robots will raise productivity. Adopting means redesigning processes, letting people go, hiring others |
+| 0.1% or lower | Going wrong is catastrophic | Decisions in a nuclear power plant |
+
+Alpha can never be zero. Zero error would need the whole population, and then you wouldn't be testing, you would be counting.
+
+### Two legal systems, two nulls
+
+A batchmate asked how this plays out in law. India works on "innocent until proven guilty", with exceptions in a few sections where the burden shifts. Some other systems start from the opposite assumption, and the accused must prove innocence.
+
+| | "Innocent until proven guilty" | "Guilty until proven innocent" |
+|---|---|---|
+| H0 | The accused is innocent | The accused is guilty |
+| Type I error | Punishing an innocent person | Setting a guilty person free |
+| Type II error | Setting a guilty person free | Punishing an innocent person |
+| What it refuses to do | Punish the innocent. So, unavoidably, more of the guilty walk | Let the guilty walk. So, unavoidably, more innocents are punished |
+| Side effect | Layers of appeal to push the error near zero. Justice is slow | The onus is on the accused. Justice is fast |
+
+Both systems face the same two mistakes. They differ in which one they refuse to make. Who decides? Not the statistics: the value system, or in a company the strategy.
+
+### The toy helicopter: verdicts aren't written in stone
+
+You are five and have begged for a year for a remote-control helicopter. On your sixth birthday you get it. On Monday you leave it on your table and go to school; your sibling stays home with a stomach ache. You come back and it is in two pieces. The chat was unanimous: accuse, cry, chase the sibling. The sibling says the wind blew the curtain and it fell. Does anyone believe them? Nobody. Given a lifetime of that sibling borrowing your toys and your geometry box, the chance they broke it is very high.
+
+Thirty years later, over a beer in Goa, the sibling brings it up: I really hadn't broken it. Now most people believe them. Why? No incentive to lie today, and three decades more data about them. Same incident, same hypothesis, but the data grew and the verdict flipped.
+
+If you remember only two things, remember the Delhi Metro and the sibling's helicopter.
+
+Set alpha from the cost of being wrong, not from habit. And remember that a verdict reached on today's sample is provisional: a pilot that passed can still fail at scale, and a rejected idea can come back with better data.
+
+## The p-value: would this be a miracle if the null were true?
+
+There are two ways to test a hypothesis. One you know: build confidence intervals and see whether they overlap. The other is what every research report and statistics package gives you.
+
+> The p-value is the probability of getting a sample like the one we have got, if the null hypothesis is true.
+
+Back to the Metro. If the baby really is hers, what is the chance she would be dressed as she is? Very small. That small probability is why the compartment suspected her. In probability we always suspect a miracle: when the null would make our sample a near-impossible event, we would rather believe the null is wrong than that a miracle happened.
+
+<Steps items={[
+  { title: 'State H0 and H1 and choose alpha', body: 'You do this.' },
+  { title: 'Give the data to software', body: 'Python, R, SPSS or plain Excel.' },
+  { title: 'The software computes the p-value', body: 'The chance of a sample like yours if H0 were true.' },
+  { title: 'Compare', body: 'p-value below alpha: reject H0 and accept H1. At or above alpha: don’t reject. Such a sample could commonly occur under H0.' },
+]} />
+
+<Sort title="Try it: what is the verdict at alpha = 5%?" choices={['Reject H0', 'Do not reject']} items={[
+  { text: 'p-value = 0.21', answer: 'Do not reject', why: '21% is far above 5%. A sample like this would turn up one time in five even if the null were true.' },
+  { text: 'p-value = 0.003', answer: 'Reject H0', why: '0.3% is below 5%. Under the null this sample would be a near-miracle.' },
+  { text: 'p-value = 8.59E-07', answer: 'Reject H0', why: 'E-07 means seven places to the left: 0.000000859. Enormously below 0.05.' },
+  { text: 'p-value = 0.08', answer: 'Do not reject', why: 'Above 5%. It would be rejected at 10%, which is why alpha is chosen first.' },
+]} />
+
+<div class="callout">
+<p class="callout-title">Two roads to the same verdict</p>
+
+Overlapping intervals said "inconclusive" last session; the first regression of this one says the same with p = 0.21. The professor made the class walk both roads on purpose: two valid techniques on the same data must agree. A fancier name doesn't buy a different answer.
+
+</div>
+
+| Where you meet tests at work | The claim | The frame |
+|---|---|---|
+| Marketing | "Our new formula reduces hair fall." "Our bulb lasts 3,000 hours" | H1 is the claim; the fine print "tested on 1,000 subjects" is the sample that defends it |
+| Challenging a claim | A competitor or consumer group says it is false | The mirror image: their H1 is "it doesn't work" |
+| Warranty design | How long should the warranty be: six months, a year, 30 days? | Test claims about product life so you neither bleed on replacements nor give up the confidence a warranty buys |
+| Operations | "The new roster cuts response time" | H1 is the improvement; alpha is set by how costly the change is to reverse |
+
+Whenever a report shows a p-value, a test is going on. Find out what its null was before you read the number.
+
+## Regression: a line through the cloud
+
+"Anybody who has never done regression?" Many hands. The professor's reassurance: since COVID, everyone has been on the receiving end of it. The newspaper graphs projecting next week's cases and hospital beds had regression behind them.
+
+**The idea, with a film release.** A film may be a hit or a miss, but promotion before release drives the first weekend's collection. (After that, reviews and word of mouth take over.) So you want an equation, first-weekend collection as a function of promotion budget, because then you can plug in your target and read off the budget.
+
+| Role | Other names | How to spot it | In Pilgrim |
+|---|---|---|---|
+| Independent variable, x | Input, predictor | Its value is known or decided first | Online: the customer decides to bank online or not |
+| Dependent variable, y | Output, response | It happens afterwards; you want to predict it | Profit |
+
+**Houses, areas and prices.** Suppose you have 1,000 houses, with the area and selling price of each. Area is x; price is y. The first thing you do in any regression is **plot the scatter chart.** The points won't sit on one curve: two houses of the same area sell for different prices because of locality, floor, direction, interiors. But if the cloud looks like a straight band, you fit a linear regression. If it looks like the COVID curve (flat, flat, then suddenly steep), you would fit a non-linear one.
+
+**Describing a line.** For one x the equation is y = intercept + slope × x. Imagine describing a line to someone who can't see it. First you say how steep it is and which way it tilts: the **slope**. But many parallel lines share a slope, so you also say where it cuts the y-axis: the **intercept**.
+
+"Best" has a precise meaning. Think of the physics practical where you plotted voltage against current. The tempting mistake was to draw the line through as many points as possible. The correct **best-fit line** passes close to all the points and may pass through none.
+
+| Term | Meaning |
+|---|---|
+| Simple linear regression | One independent variable |
+| Multiple linear regression | More than one: price as a function of area and the age of the building |
+| The error term | Everything the line doesn't capture: all the other reasons two houses of the same area sell for different prices |
+
+## Running it in Excel, and reading the output
+
+The first regression, for many people the first of their lives, was the simplest possible: profit as the dependent variable, online as the independent one.
+
+<Steps items={[
+  { title: 'A new sheet', body: 'Copy the profit and online columns side by side. No blank rows: you need all 31,634 rows together.' },
+  { title: 'Data, then Data Analysis', body: 'Not there? File, Options, Add-ins, Manage Excel Add-ins, Go, and tick Analysis ToolPak. Not the VBA one.' },
+  { title: 'Choose Regression', body: 'The dialog looks a little different on Windows and Mac; the fields are the same.' },
+  { title: 'Y range: profit. X range: online', body: 'Include the label cell in both and tick Labels. Y is what happens later; X is what is decided first.' },
+  { title: 'Select by keyboard', body: 'Click the label cell, then Ctrl + Shift + Down Arrow. Don’t select the whole column: the blank cells below the data make Excel throw an error, the mistake a batchmate shared on screen.' },
+  { title: 'OK', body: 'The output appears on a new sheet. With Labels ticked the variable keeps its name; otherwise it is “X Variable 1”.' },
+  { title: 'Optional', body: 'Set the Confidence Level box to 90 to get 90% limits as well as 95%.' },
+]} />
+
+Every regression output, whatever the software, has three tables: a summary at the top, an analysis-of-variance table in the middle, and the coefficients at the bottom. The class started at the bottom.
+
+| | Coefficient | Standard error | t Stat | P-value | Lower 95% | Upper 95% |
+|---|---|---|---|---|---|---|
+| Intercept | 110.786 | 1.637 | 67.68 | 0.000 | 107.58 | 113.99 |
+| Online | 5.881 | 4.690 | 1.254 | 0.210 | −3.31 | 15.07 |
+
+R Square 0.00005. Observations 31,634. Significance F 0.210.
+
+**Profit = 110.786 + 5.881 × Online**
+
+For an offline customer, Online is 0: predicted profit $110.79. For an online customer it is 1: $116.67. And yes, these are exactly the two averages from last session. **A regression on a yes/no variable is a difference of two averages**: the intercept is the offline average and the slope is how much higher the online average is.
+
+The professor was precise: not the intercept but the *estimate* of the intercept. The true value belongs to the five million.
+
+### The check before you use any regression
+
+For a simple regression, the check is the p-value of the slope. Here it is 0.210, or 21%. Our level is 5% (or 10%, or 1%; none of them is 21%). **Don't use this regression. Stop right there.** The same verdict as the overlapping intervals, by a different road.
+
+What was tested to get 0.21? Every regression tests the same thing for every slope: H0, the slope is 0, against H1, the slope isn't 0. A slope of zero means the line is flat: the two variables aren't related. The p-value is the chance that, if the true slope were zero, a sample of 31,634 would still throw up a slope as far from zero as 5.88. Twenty-one percent. Not a miracle: one sample in five.
+
+The class asked: if you knew it was inconclusive, why make us do it? Two reasons. It was a stepping stone to the regression that settles it. And the class needed to see two valid techniques agree.
+
+| Column | What it is | Here |
+|---|---|---|
+| Coefficients | Point estimates of the intercept and slope, for the population | 110.786 and 5.881 |
+| Standard error | The spread of that estimate. A different sample would give a slightly different slope | 1.637 and 4.690 |
+| t Stat | The estimate divided by its standard error. Another way to run the same test, against a table | 67.68 and 1.254 |
+| P-value | The probability worked out from the t Stat. Popular because you compare it straight with alpha | 0.000 and 0.210 |
+| Lower and Upper 95% | The confidence interval for each coefficient | Slope: −3.31 to 15.07. It contains zero: the same message as the p-value |
+| Multiple R | The correlation coefficient | 0.00705 |
+| R Square | The share of the variation explained | 0.00005: almost nothing |
+
+<div class="callout trap">
+<p class="callout-title">A slope isn't a correlation</p>
+
+A batchmate mixed up the two. The correlation coefficient lives between −1 and +1 and measures how tightly the points hug a straight line. The slope depends on the units (5.88 dollars per unit here, or thousands of rupees per square foot for houses) and says how much y changes per unit of x.
+
+</div>
+
+Reading a regression output is a fixed drill. Is the slope's p-value below alpha? If not, stop: don't quote the coefficient, don't build a business case on it. If yes, write the equation, plug in the cases that matter, and state the difference in units your audience understands: "$5.88 per online customer", not "the coefficient is significant".

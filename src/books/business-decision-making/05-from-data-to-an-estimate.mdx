@@ -1,0 +1,408 @@
+---
+title: From Data to an Estimate
+kicker: Session 3, part 2
+order: 5
+source: "Session by Prof. Megha Sharma · Business Decision Making · Case: Pilgrim Bank (A)"
+description: "Populations and samples, what representative really means and why 30 is the number, three kinds of data, mean and standard deviation, the bell curve, confidence intervals, why overlapping intervals leave a question open, outliers, and the age cliffhanger. Session 3 of Business Decision Making."
+takeaways:
+  - "Every number is a guess about a population, made from a sample. Ask how the sample was chosen and who didn't respond."
+  - "A sample is representative because of how it was chosen, not because of its mix. Thirty or more is a large sample."
+  - "Never report an average without its standard deviation."
+  - "If two confidence intervals overlap, the data hasn't settled the question. Look at the same data differently before collecting more."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Bars from '../../components/d/Bars.astro';
+import Quad from '../../components/d/Quad.astro';
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
+import Overlap from '../../components/d/Overlap.astro';
+import CiCalc from '../../components/d/CiCalc.astro';
+
+## Population and sample: why we never have all the data
+
+How many customers are in the Excel sheet? 31,634. How many customers does Pilgrim Bank have? Five million. So the decision we are about to make, fee or rebate for everyone, rests on data about fewer than 1% of the people it will affect. Is that allowed? That question is the whole of statistics.
+
+| Term | Definition | In the Pilgrim case | In other studies |
+|---|---|---|---|
+| **Population** | All the elements that are of interest to us. Both halves matter: all of them, and the ones this study cares about | The bank's five million customers | For an inventory study the elements are stock items; for a defects study, the possible root causes |
+| **Sample** | A subset of the population that we actually study | The 31,634 customers in the file: about 0.6% | The 1,000 people in a shampoo survey; the 200 bulbs burned to failure |
+
+<div class="callout">
+<p class="callout-title">The one-line test</p>
+
+Every average, every range, every decision is about the population. The sample is only a stepping stone. Ask of any number: which population is this a guess about, and how was the sample that produced it chosen?
+
+</div>
+
+### Why not get data on everyone?
+
+If it is within budget and within the time you have, the whole population beats any sample. Three things stop you.
+
+| Reason | What it means | The professor's examples |
+|---|---|---|
+| It is expensive | Reaching every element costs more than the decision is worth | A consumer-goods firm wants to know what people think of one shampoo. Some bought it in a supermarket, some from a corner shop, some used a sachet in a hotel. If the change is worth a 5% gain and the data costs 10%, it never pays |
+| It takes too long | By the time the full picture arrives it is out of date | A census can't run every year: the results would arrive too late to use |
+| It isn't possible | Some elements will not, or cannot, give you data | Customers refuse to talk. Those who talk may say one thing, feel another and do a third. And some tests destroy the unit |
+
+### Destructive testing
+
+An advertisement for an LED bulb claimed it would run 3,000 hours. How would the company know? It lights a bulb and leaves it on until it dies. That bulb is now useless. Test every bulb and there is nothing left to sell, so you test a sample and infer.
+
+The claim itself is a decision under uncertainty. Claim 3,500 hours when most bulbs fail earlier and the free replacements bankrupt you. Claim 2,500 when they last 3,000 and you have left an opportunity on the table.
+
+Her favourite example is Honda's Activa, launched in 2001. Until then the two-wheeler market was neatly split: scooters for the family man, scooterettes for school and college girls, bikes for young men. The Activa looked like a scooter, was priced like a bike (above ₹50,000 when scooters cost ₹34,000 to ₹38,000) and didn't even carry a spare wheel. Honda turned the missing spare into the talking point: our tyres won't fail before about 5,000 kilometres, so you don't need one. A claim like that can only come from testing a sample of tyres to destruction. The Activa went on to erase the old lines of the segment entirely.
+
+A less glamorous case: a plant in Tamil Nadu makes sutures, the thread that closes a body after surgery. To know how much strain a suture can take, you pull it until it breaks. The tested ones are gone; the rest ship, with the confidence the sample bought.
+
+"Expensive", "slow" and "impossible" are all good reasons to sample. Each of them means the number in front of you is an inference, not a fact.
+
+## Choosing a sample
+
+Any subset gives you numbers. Only a good subset gives you numbers you can trust. The first condition is that the sample be **representative**, and the class discovered it had the wrong idea of what the word means.
+
+### Representative doesn't mean "the same mix"
+
+A population has 10,000 people: 5,000 men and 5,000 women. You take a sample of 100. Must it contain 50 of each? Most of the class said yes, or "preferably". The answer: in general, no. It depends on the question. If men and women are likely to answer differently (a study of gender bias at work), balance the sample. If the question has nothing to do with gender, forcing 50/50 actually introduces a bias.
+
+Why? Gender is one of endlessly many characteristics. Why balance for gender and not eye colour, hair texture, or whether people prefer sweets to savouries? You can't balance on everything. So statisticians define representativeness by the method.
+
+> A sample is representative of the population if it was chosen by a method such that every element of the population had an equal chance of being included in it.
+
+<Cards min={200} items={[
+  { title: 'Simple random', body: 'Every name on an identical chit, folded, into a fishbowl, drawn blind: the party game from childhood. With five million customers, software draws the 31,000.', foot: 'The default, and the standard the others are measured against' },
+  { title: 'Stratified', body: 'Split the population by the trait that changes the answer (men and women, urban and rural, corporate and retail). Draw randomly inside each group, in the population’s ratio: 60/40 stays 60/40.', foot: 'When groups are likely to respond differently. Stratify on a trait that doesn’t matter and you create the bias you were avoiding' },
+  { title: 'Convenience', body: 'You wrote to a random list but not everyone replied. Or you stood at the mall entrance and most people walked past. You use whatever you got.', foot: 'You don’t choose it; you end up with it. Most market research is this. The people who responded may differ from those who didn’t' },
+  { title: 'Rare-event', body: 'Special methods for something that happens once in a million, such as a rare disease. A random draw would never find the cases.', foot: 'Most of us will never need it' },
+]} />
+
+### What bias looks like: the ₹75-lakh alumni
+
+A school organised a 25th reunion and wrote to everyone asking, among other things, how much they earned. It then announced that its alumni earned ₹75 lakh a year on average. Would you believe it? Put yourself in the shoes of someone whose career hasn't gone well: do you write back with your salary? Now imagine two classmates whose start-ups became unicorns: they reply, and their income alone drags the average into the stratosphere. One part of the population was far more likely to respond than another. That is bias.
+
+### How big must a sample be? Thirty, not 30%
+
+31,634 is 0.6% of five million. What would be the minimum? Several people said 10%: "that is what our organisation uses". The answer surprised most of the class: **a sample of 30 or more is, statistically, a large sample.** Thirty is an absolute number, not a percentage, and it doesn't depend on the size of the population.
+
+Why 30? The **central limit theorem**. Take a sample and compute its average. Take another and do it again. Do this many times and the averages follow the bell-shaped curve once each sample has about 30 or more elements, almost whatever the underlying data looks like. That regularity is what the formulas lean on.
+
+<div class="callout trap">
+<p class="callout-title">A larger sample buys precision, not permission</p>
+
+With 31,634 rows we are a thousand times past the threshold. What more data buys is a smaller cushion around every estimate. And below 30 (a rare event, a tiny pilot) you aren't helpless: there is a separate body of small-sample statistics.
+
+</div>
+
+> You can always go wrong, whatever the size of the sample. That is why it is statistics and not mathematics.
+
+When someone brings you a survey, a pilot or a customer study, ask two questions before you look at the numbers: how were the participants chosen, and who didn't respond? A sample of the loudest complainers and the happiest fans can be worse than no data, because it looks like evidence.
+
+## What a sample is for, and three kinds of data
+
+We take a sample for exactly three purposes.
+
+| Purpose | The question | Examples from the class |
+|---|---|---|
+| **Estimation** | What is my best guess of an unknown number about the population: its average, its proportion, its spread? | Average profit per customer across five million. Average monthly grocery spend of a bank's customers, which a retailer would love to know because it is the wallet it competes for. Opinion and exit polls |
+| **Hypothesis testing** | Can I support a claim I want to make, or reject someone else's, with evidence from a sample? | A bulb maker is taken to court because one bulb lasted 2,500 hours. It never claimed every bulb would; it needs sample data that supports the claim. Hence the fine print in advertisements: "tested on 1,000 subjects under laboratory conditions" |
+| **Relationships (regression)** | How does one thing move with another, so I can work backwards from a target? | If past data says sales are a function of promotion, a first-quarter target of ₹50 crore might imply about ₹11 crore of promotion. A film's first-weekend box office is driven by trailers, the music launch and the cast on talk shows |
+
+This session did estimation. The next does hypothesis testing and regression on the same data.
+
+### Three kinds of data
+
+The question we really want answered is causal: if a customer moves online, does the bank's profit from that customer go up? The ideal answer is an experiment: keep one group offline as a control, move another online, and track both for years. That would take five to ten years, by which time the technology would be obsolete. So the case does what most businesses do: it uses a snapshot as a proxy.
+
+| Kind | What it is | Examples | What it can tell you |
+|---|---|---|---|
+| **Cross-sectional** | Many elements at one point in time | The Pilgrim file: 31,634 customers, all in 1999. The GDP of 200 countries in one year | How elements differ right now. Not what happens to one element over time |
+| **Time series** | One thing at many points in time | India's GDP from 1991 to 2025. The demand history you forecast from | Trend, seasonality, the effect of a change on the same customer |
+| **Panel** | Many elements, each followed over time | Every country's GDP, every year. The same customers in 1999, 2000, 2001 | The most powerful: both at once |
+
+<div class="callout">
+<p class="callout-title">The hypothesis, in one line</p>
+
+With a snapshot we can't check whether customers *became* more profitable by going online. We can check whether the customers who are online are more profitable than those who are offline. If they are, the rebate is worth paying. If they aren't, the bank should recover its cost with a fee.
+
+</div>
+
+| Setting | Cross-sectional | Time series | Panel |
+|---|---|---|---|
+| Product company | Defect rate by supplier this quarter | One supplier's defect rate, month by month | Every supplier, every month: which improved after the audit? |
+| Managed security services | Time to detect, by customer, this month | One customer's detection time over 24 months | All customers over 24 months: did the new tooling help everyone, or only the large ones? |
+
+## Mean, standard deviation and the bell curve
+
+After the break the class did the simplest piece of estimation: what is our best guess of the average profit per customer across all five million?
+
+**The point estimate.** We know nothing about the five million except the 31,634 in front of us. So the best guess is the sample average: **$111.50**. Not because it is certainly right, but because it beats pulling a number out of the air. A single number offered as the guess is called a **point estimate**.
+
+### Parameters are fixed; statistics wobble
+
+The true average profit across the whole population in 1999: is it a fixed number or a random one? Fixed. With all five million rows everyone would compute the same answer. We don't know it, but it exists and it doesn't move. Such quantities are **population parameters**.
+
+The sample average is a random variable. Think of the batch as a population of about 70, and suppose the professor wants its average work experience. If she takes the first few people who appear on her screen, her answer depends on who turned up: high if the seniors appear, low if the youngest do.
+
+| | Population parameter | Sample statistic |
+|---|---|---|
+| Examples | Population mean, standard deviation, proportion | Sample mean, sample standard deviation, sample proportion |
+| Nature | A constant. Unknown, but fixed | A random variable: it changes with who lands in the sample |
+| Symbols | Mean: μ. Standard deviation: σ | Mean: x̄. Size: n |
+| Pilgrim, 1999 | The true average profit of all five million, never observed | $111.50 from these 31,634; another random 31,634 would give a slightly different number |
+
+### Never leave an average alone
+
+Take two batches. One is ours, where experience runs from early-career to seasoned. The other is a niche programme that admits only people with three to five years. Sample the same number from each. Which average is closer to its batch's true figure? The niche batch: everyone is between three and five, so there is little room to go wrong. In ours the sample could land on the veterans or the rookies.
+
+That property, how alike or how spread out the values are, is what the **standard deviation (SD)** measures. The higher it is, the less you can trust the average.
+
+**How it is computed.** Take 1, 2, 3, 4, 5. The average is 3. The distances from the average are −2, −1, 0, +1, +2. Averaging those would be natural, except they always add up to zero: the average is the balance point of the data. So square them: 4, 1, 0, 1, 4, which add to 10.
+
+| Quantity | Recipe | For 1 to 5 | Excel | Unit |
+|---|---|---|---|---|
+| Mean | Add the values, divide by how many | 3 | AVERAGE | Same as the data |
+| Variance | Sum of squared distances, divided by n for a population or n − 1 for a sample | 10 ÷ 4 = 2.5 for a sample; 10 ÷ 5 = 2.0 for a population | VAR.S or VAR.P | Squared units: awkward |
+| Standard deviation | The square root of the variance | 1.58 for a sample; 1.41 for a population | STDEV.S or STDEV.P | Back in the units of the data |
+
+STDEV.S is the one you will almost always want: S for sample. For the profit column it gives **$272.84**. The difference between the two is negligible with 31,634 rows and matters with 8.
+
+<div class="callout">
+<p class="callout-title">Why n − 1 for a sample? A question from the class</p>
+
+The short answer: dividing by n − 1 makes the sample variance land, on average, on the true value; dividing by n underestimates it. The intuitive answer is **degrees of freedom**. Suppose there are ten values and I tell you the mean is 32. Show you nine of them and you can work out the tenth yourself. Once the mean has been used, only nine numbers are free to vary.
+
+</div>
+
+### When is a standard deviation "too high"?
+
+Is $272.84 large? On its own the number means nothing. Against an average of $50,000 it would be trivial. Against $111.50 it is enormous. To judge, the professor turned to the shape most data in nature follows.
+
+Measure the height of every five-year-old banyan tree in India. Very few are very short, very few very tall, most somewhere in the middle. IQ behaves the same way. This is the **normal distribution** (the Gaussian, or bell curve). Its peak is at the mean, and:
+
+<Fig title="The bell curve, with Pilgrim’s numbers" caption="Mean $111.50, standard deviation $272.84. The professor used 66% and 99% as round figures for the first and third.">
+  <Bars unit="% of values" rows={[
+    { label: 'Within 1 SD of the mean: −$161 to +$384', value: 68, note: 'about two in three' },
+    { label: 'Within 2 SDs: −$434 to +$657', value: 95, note: 'all but one in twenty', mark: true },
+    { label: 'Within 3 SDs: −$707 to +$930', value: 99.7, note: 'almost all' },
+  ]} />
+</Fig>
+
+**The rule of thumb.** Compute the mean plus and minus one standard deviation. If that range is too wide to support your decision, the average can't be trusted much. Here it runs from a $161 loss to a $384 profit. Forget fee versus rebate: with that spread you can't even say whether the bank's customers are, on average, profitable. With an SD of $20 the range would be $91.50 to $131.50, and you could decide with some confidence.
+
+> Never, ever give anybody an average without the standard deviation. If somebody submits a report to you with an average, ask them for the standard deviation.
+
+One honesty note. The profit data isn't actually bell-shaped: the median is $9 while the mean is $111.50, because of the tail of very profitable customers. The professor was explicit that the one-SD range is "just a quick rule of thumb". The central limit theorem is what makes the confidence intervals below valid anyway, because they are about the sample *average*, which does follow the bell.
+
+"Response time is 42 minutes, SD 65" is a completely different message from "42 minutes, SD 4". The first hides a long tail. The second is a process under control.
+
+## Online versus offline: the first attempt
+
+Now the real question. Copy the profit and online columns into a new sheet, sort by the online column so the zeros come first, and insert a blank row where the ones begin. Then AVERAGE, STDEV.S and COUNT for each block.
+
+| Group | Customers | Average profit | Standard deviation | Mean ± 1 SD |
+|---|---|---|---|---|
+| Offline | 27,780 | $110.79 | $271.30 | −$160.5 to +$382.1 |
+| Online | 3,854 | $116.67 | $283.66 | −$167.0 to +$400.3 |
+| Everyone | 31,634 | $111.50 | $272.84 | −$161.3 to +$384.3 |
+
+Online looks $5.88 better, about 5.3%.
+
+### "Why not drop the loss-making customers first?"
+
+A batchmate suggested keeping only customers with positive profit. The professor pushed back twice. First, those customers don't leave the bank because you left them out of a spreadsheet. If there is a rebate they will use it; if there is a fee they will pay it or leave. They are part of the population the decision applies to. Second, you can't make one rule for the profitable and another for the rest. What you can do is set one rule with a threshold.
+
+| Why a customer makes a loss | What it looks like | What online banking might do |
+|---|---|---|
+| Too little revenue to cover the cost of serving them | A small balance and a trip to the ATM for ₹100: the professor's hostel days, when a visible note meant paying for everyone's dinner | Little. The problem is the balance, not the channel |
+| Plenty of balance, but costly to serve | Uses online banking and the ATM and still visits the branch weekly for a printed statement, and calls the contact centre | A lot. Every visit that moves to the app is cost the bank no longer bears |
+
+A point the debate often misses: **a rebate doesn't have to turn everyone profitable to be worth paying.** If a customer who costs the bank $50 offline costs it $30 online, going online is good for the bank even though the customer is still a loss. Reducing losses counts.
+
+### Only in the sample
+
+Several people typed "yes, online: $116 against $110, offer the rebate". The professor: that is true of the sample, and we aren't deciding for the sample.
+
+- **The averages are close.** A gap under 6% is easily produced by chance.
+- **The standard deviations are huge.** Around $270 to $280 against averages near $110. The sample averages could easily have landed the other way round.
+
+If, in the real population, online customers are *less* profitable and the bank pays a rebate, it pays money to customers who already cost it more. Had the SDs been $2 or $3, or the online average $298, the gap would be too large to blame on luck. With these numbers the honest verdict is: not yet.
+
+When two groups differ by a few percent on a measure with a large spread (team A closes tickets 6% faster, region B converts 5% better), ask whether the difference would survive a different sample of the same size. Most small differences in noisy data are noise.
+
+## Confidence intervals: from a number to a range
+
+The professor introduced the alternative with the strangest exercise of the module. She asked everyone to switch on their cameras.
+
+### The pen at gunpoint
+
+Guess the price of the pen she was using. One catch: you are at gunpoint (a notional gun; she is a non-violent person). Guess right and you walk free. You may give a single number or a range. Every single person typed a range, because a single number is almost certain to be wrong. And thinking clearly, why not minus infinity to plus infinity? Then you can't be wrong at all.
+
+Two lessons hid in the joke. When the stakes are high you demand high accuracy, and you buy it by widening the range. And a range wide enough to be certainly right is useless.
+
+### Point estimate plus or minus a cushion
+
+Look out of the window: "about a 70% chance of rain, give or take 5%". That is a **confidence interval**: a point estimate and a cushion on each side, stated with how confident we are.
+
+| Confidence | Multiplier z | When to use it |
+|---|---|---|
+| 90% | 1.645 | When being wrong costs little and you want a tight range |
+| 95% | 1.96 | The default in most business analysis |
+| 99% | 2.576 | When being wrong is very costly: the range widens to buy safety |
+| 100% | Infinite | Never. The pen answer that keeps you alive and tells you nothing |
+
+The level you choose is a business decision, not a statistical one.
+
+| What sets the cushion | Effect | The professor's illustration |
+|---|---|---|
+| The confidence you want | More confidence, bigger cushion | At gunpoint you went as wide as you could |
+| The standard deviation | More spread, bigger cushion | The niche batch needs a small cushion; ours needs a big one |
+| The sample size | More data, smaller cushion | Sample 3 of 70 and you might land on the three youngest. Sample 65 and the extremes balance out. Sample all 70 and there is no cushion at all |
+
+**Interval = sample mean ± z × SD ÷ √n**
+
+The confidence and the spread sit on top: bigger means wider. The sample size sits underneath, under a square root, which is why the cushion shrinks slowly.
+
+<Fig title="A confidence interval for average profit" caption="Shrink the sample and watch the range widen. With all 31,634 customers at 95%, the true average lies between about $108.50 and $114.51.">
+  <CiCalc />
+</Fig>
+
+<Fig title="The cushion at 95%, by sample size" caption="Using Pilgrim’s standard deviation. Four times the data only halves the cushion.">
+  <Bars unit="± dollars" rows={[
+    { label: '30 customers', value: 97.6 },
+    { label: '100', value: 53.5 },
+    { label: '500', value: 23.9 },
+    { label: '1,000', value: 16.9 },
+    { label: '3,854 (the online group)', value: 8.6, mark: true },
+    { label: '27,780 (the offline group)', value: 3.2, mark: true },
+    { label: '100,000', value: 1.7 },
+  ]} />
+</Fig>
+
+**When is an interval too wide?** When your decision would differ at its lower limit and its upper limit. At $108.50 or $114.51 the bank would act the same way, so that interval is narrow enough for its question.
+
+### The two intervals, and the homework worked
+
+| | Offline | Online | Excel |
+|---|---|---|---|
+| Sample mean | $110.786 | $116.667 | AVERAGE |
+| Sample SD | $271.301 | $283.665 | STDEV.S |
+| Sample size | 27,780 | 3,854 | COUNT |
+| Cushion at 95% | $3.190 | $8.956 | 1.96 × SD ÷ SQRT(n), or CONFIDENCE.NORM(0.05, SD, n) |
+| Lower limit | $107.596 | $107.711 | Mean minus cushion |
+| Upper limit | $113.977 | $125.623 | Mean plus cushion |
+| Width | $6.38 | $17.91 | |
+
+(The 1.96 comes from the normal table: NORM.S.INV(0.975). The 0.975 is because 5% of the curve is left out, 2.5% in each tail.)
+
+How to say it: with 95% confidence, the average profit from an offline customer across the whole bank lies between $107.60 and $113.98; from an online customer, between $107.71 and $125.62. That is a statement about the five million, made from the 31,634.
+
+| Group | Mean | 90% | 95% | 99% |
+|---|---|---|---|---|
+| All customers | 111.50 | 108.98 to 114.03 | 108.50 to 114.51 | 107.55 to 115.45 |
+| Offline | 110.79 | 108.11 to 113.46 | 107.60 to 113.98 | 106.59 to 114.98 |
+| Online | 116.67 | 109.15 to 124.18 | 107.71 to 125.62 | 104.90 to 128.44 |
+
+Every interval widens as confidence rises. And at every level the online interval reaches into the offline one.
+
+Replace "the number is X" with "the number is between A and B, at 95% confidence" in anything used to decide. It forces three things into the open: how sure you need to be, how noisy the data is, and how much of it you have.
+
+## Overlap, outliers and the age cliffhanger
+
+With the two intervals on the board, the professor asked the class to conclude. Somebody obliged: online is more profitable, because its interval goes up to $125. She said that was exactly what she had wanted to hear, because it is wrong, and it is the most common mistake people make with confidence intervals.
+
+<Fig title="95% confidence intervals for average profit" caption="They share the stretch from $107.7 to $114.0.">
+  <Overlap min={100} max={130} rows={[
+    { label: 'Offline', lo: 107.60, hi: 113.98, mean: 110.79 },
+    { label: 'Online', lo: 107.71, hi: 125.62, mean: 116.67 },
+  ]} />
+</Fig>
+
+An interval doesn't say the true value is near its top, its bottom or its middle. It could be anywhere inside. The offline average could be $113.5 while the online is $108.5: offline is more profitable, and a rebate would burn money. Or offline could be $108 and online $124: a rebate would pay. Both pictures fit everything we know.
+
+> If the two confidence intervals overlap, you cannot conclude anything.
+
+Overlap means "not yet". It doesn't mean "roughly equal".
+
+<Decide q="The online interval reaches as high as $125.62, well above anything in the offline interval. Does that show online customers are more profitable?" options={[
+  { label: 'Yes. Online’s upper limit is clearly higher.', why: 'The true value could be anywhere in the interval, including its lower end at $107.71, which is below most of the offline range.' },
+  { label: 'No. The intervals overlap, so the question is still open.', good: true, why: 'While the ranges overlap, either group could be the more profitable. Had offline run from 104 to 110 and online from 118 to 126, the conclusion would have been immediate.' },
+]} />
+
+**Do the sample sizes need to match?** A batchmate asked. No. Even 3,000 against 28,000 is fine, as long as the intervals don't overlap. The group receiving something new is almost always small at the start; if unequal sizes disqualified the comparison, we could never evaluate anything new.
+
+**Why is the online interval three times as wide?** The standard deviations are similar. The difference is the sample size under the square root: 27,780 against 3,854. The online group is where the bank knows least, and its interval says so.
+
+<div class="callout trap">
+<p class="callout-title">"Then let us collect more online data"</p>
+
+The reflex answer, and the professor discouraged it. More data is expensive and slow, and often not needed. The data in front of you usually has much more to say if you look at it with a fresh pair of eyes. The next session uses the same 31,634 rows, not one new one, and reaches a conclusion.
+
+</div>
+
+### Good questions from the class
+
+| Question | Short answer |
+|---|---|
+| Mean and SD for a yes/no variable? | No. Use the proportion: 12.2% of customers were online. With many categories, consider the median |
+| Exclude an outlier? | Decide by the question. Suppose Mr Ambani buys a house in your neighbourhood. Estimating the locality's income tax? Keep him in: his tax is real. Deciding whether the locality is rich? Take him out: the other residents aren't |
+| Sample people who fall outside the interval? | Never, to build a sample: collect first, analyse later. Yes, to flag cases: that is anomaly detection. If your card spend usually sits between ₹22,000 and ₹30,000 and this month shows a few lakh, the bank raises a trigger |
+| Collect more data when intervals overlap? | Usually unnecessary. Look harder at what you have |
+
+### The cliffhanger: is age clouding the effect?
+
+Make a grid: online and offline across the top, young and older down the side. Who is more likely to be profitable? The old; think of your own bank balance in college. Who is more likely to be online? The young. So the online group is full of young, low-profit customers and the offline group is full of older, high-profit ones. The professor's numbers were hypothetical, and they make the point brutally.
+
+<Fig title="The professor’s hypothetical grid" caption="Online average: (80 × −30 + 20 × 350) ÷ 100 = $46. Offline average: (20 × −50 + 80 × 300) ÷ 100 = $230.">
+  <Quad cols={['Online', 'Offline']} rows={['Young', 'Older']} cells={[
+    { t: '−$30 each', b: '80 people', tone: 'best' },
+    { t: '−$50 each', b: '20 people' },
+    { t: '+$350 each', b: '20 people', tone: 'best' },
+    { t: '+$300 each', b: '80 people' },
+  ]} />
+</Fig>
+
+<Decide q="Row by row, online is better: by $20 for the young and by $50 for the older. Yet the online average is $46 and the offline average is $230. Which should the bank believe?" options={[
+  { label: 'The averages. Offline customers are $184 more profitable.', why: 'The two groups don’t contain the same kind of customer: 80% of the online group is young and 80% of the offline group is older. The averages are comparing ages, not channels.' },
+  { label: 'The rows. Going online is better for every kind of customer.', good: true, why: 'Compare like with like. Notice too that the young stay loss-making online: the rebate makes them less loss-making, which counts. Statisticians call this reversal Simpson’s paradox; the professor called it age clouding the effect.' },
+]} />
+
+Is it just a story? The real data whispers the same thing.
+
+| Age category | 1 (youngest) | 2 | 3 | 4 | 5 | 6 | 7 (oldest) |
+|---|---|---|---|---|---|---|---|
+| Customers with an age on file | 710 | 3,650 | 5,390 | 5,376 | 3,236 | 2,290 | 2,693 |
+| Share who are online | 19.3% | 21.5% | 15.5% | 13.4% | 9.5% | 5.0% | 3.6% |
+| Average profit | $3.5 | $58.5 | $115.1 | $135.7 | $145.8 | $160.4 | $192.3 |
+
+The average online customer is in age category 3.3; the average offline customer in 4.2. They aren't one population sliced by channel. They are two different populations.
+
+**Before the next session:** build the profitability curve yourself from the raw data; compute the 90%, 95% and 99% intervals for all, online and offline customers and check them against the table above; and think about the grid. What would you compare, and what would you hold constant, to see the real effect of going online?
+
+## The session on a manager's desk
+
+| Idea | Product company | Service company |
+|---|---|---|
+| Profitability skew | A fifth of the items earn most of the margin; slow movers eat shelf space and working capital | A few large contracts fund the operations centre; small contracts with heavy ticket volumes cost more than they pay |
+| Letting go politely | Minimum order quantities and freight-paid thresholds price out tiny orders | Premium customers reach an engineer at once; entry-tier customers go to the portal first |
+| Population and sample | 1,000 units tested from a batch of 200,000 | 400 tickets sampled from 60,000 closed this quarter |
+| Representative sampling | Sample every shift and machine, not only the day shift you visit | Sample across customers, severities and shifts, not only the escalations everyone remembers |
+| Convenience bias | Product reviews come from the delighted and the furious | A satisfaction survey answered by 8% measures the mood of the 8% |
+| Destructive testing | Crash tests, burn-in, tensile tests | A penetration test against a sample of assets |
+| Mean with its SD | Fill weight 500 g with SD 2 g is a controlled line; SD 20 g is a problem hiding in a good average | Time to detect 12 minutes with SD 3 is a process; with SD 40 it covers a few disasters |
+| Confidence interval | "The defect rate is between 1.2% and 1.8% at 95%" | "Analyst utilisation is between 62% and 71% at 95%" |
+| Overlap rule | Two suppliers' defect-rate intervals overlap: no evidence to switch | Two shifts' response-time intervals overlap: no verdict on which is faster |
+| Anomaly detection | Control limits on a machine: a reading beyond them stops the line | A user who logs in 9 to 6 from Bangalore appears at 3 a.m. from elsewhere |
+| The lurking variable | A variant "sells better" only because it is stocked in bigger stores | A team "closes faster" only because it gets the easier tickets |
+
+**A checklist for Monday morning**
+
+1. Draw the curve. Sort what you manage by contribution and plot the cumulative share.
+2. Define the desirable customer: up to where the curve stops rising.
+3. One rule, two effects. Never a rule by name.
+4. Pareto before programmes.
+5. Name the population behind every number.
+6. Ask how the sample was chosen, and who didn't respond.
+7. Never an average without its standard deviation.
+8. State a range and a confidence. Let the cost of being wrong set how sure you need to be.
+9. Check overlap before declaring a winner.
+10. Look for the lurking variable. Compare like with like.

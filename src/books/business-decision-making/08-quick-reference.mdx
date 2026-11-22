@@ -1,0 +1,218 @@
+---
+title: Quick Reference
+kicker: Reference
+order: 8
+source: "Every definition, formula and worked number from the four sessions, on one page"
+description: "Business Decision Making on one page: decision environments, expected value, value of information, decision trees, sampling, confidence intervals, hypothesis tests and regression, with the Thompson Lumber and Pilgrim Bank numbers."
+takeaways:
+  - "The module in four moves: frame the decision, decide under risk, estimate from data, test and decide."
+  - "Every formula, with the worked numbers from Thompson Lumber and Pilgrim Bank."
+---
+import Flow from '../../components/d/Flow.astro';
+
+Every item here is covered in more depth in the chapters before this one.
+
+<Flow items={[
+  { t: 'Frame', s: 'Session 1: actions, states and the environment' },
+  { t: 'Decide under risk', s: 'Session 2: expected value, information, trees' },
+  { t: 'Estimate', s: 'Session 3: samples, averages, intervals' },
+  { t: 'Test and decide', s: 'Session 4: hypotheses and regression', hl: true },
+]} />
+
+## Definitions
+
+| Term | In one line |
+|---|---|
+| **Course of action** | The alternative you choose. Under your control; never has a probability |
+| **State of nature** | What the world does next. Beyond your control; only states have probabilities |
+| **Certainty** | One known outcome per action. Compare or optimise |
+| **Risk** | Several outcomes with known probabilities. Expected value, trees |
+| **Uncertainty** | Several outcomes, no probabilities. Maximax, maximin, minimax regret, Laplace, Hurwicz |
+| **Linear / integer programming** | Optimising under known limits; integer when choices are whole numbers or yes/no |
+| **VRP / TSP** | Routing many capacity-limited vehicles / one vehicle visiting every stop once |
+| **NP-hard** | No known fast exact method; trying every option grows factorially; industry uses heuristics |
+| **Censored sales data** | Sales equal demand only until a stock-out; after it, sales undercount demand. Uncensor before you forecast |
+| **Bass model** | Adoption of a new category = innovators (driven by media) + imitators (word of mouth); the S-curve |
+| **EOQ / safety stock** | The order size that balances ordering and holding cost / the extra stock kept for the uncertainty the formula can't see |
+| **Bullwhip / CPFR** | Small consumer changes amplified up the chain by separate forecasts, batching, promotions and shortage gaming / fixed by one shared forecast on shared data |
+| **Good decision** | Logical, uses all available data and alternatives; judged by process, not outcome |
+| **Six steps** | Define the problem; list all alternatives; identify states of nature; estimate payoffs; select the model; apply and decide. Most time on step 1 |
+| **Payoff table** | Alternatives in rows, states in columns, a payoff in each cell |
+| **EMV** | Probability-weighted average payoff of an alternative |
+| **EOL** | Expected regret; its minimum picks the same alternative as the best EMV; the best alternative's EOL equals EVPI |
+| **Sensitivity analysis** | How far the inputs can move before the best choice changes |
+| **EVPI** | The most that perfect information could be worth |
+| **Decision tree** | Squares are your choices; circles are nature's branches with probabilities; drawn left to right in real-life order, solved right to left; it gives a strategy |
+| **EVSI** | What a survey would be worth if it were free; never more than EVPI; EVSI ÷ EVPI is the survey's efficiency |
+| **Bayes' theorem** | Turns prior belief and a source's track record into updated probabilities |
+| **Profitability skew** | Customers sorted by profit; cumulative share of profit against cumulative share of customers; peaks above 100% when there is a loss-making tail |
+| **Pareto principle** | A small share of causes produces most of the effect |
+| **Population / sample** | Everything you care about / the part you observe |
+| **Representative sample** | Every element had an equal chance of being chosen |
+| **Large sample** | 30 or more, an absolute number, from the central limit theorem: sample averages become bell-shaped |
+| **Point estimate** | A single best guess for an unknown population figure, such as the sample mean |
+| **Parameter / statistic** | A fixed unknown fact about the population / a figure from the sample that varies |
+| **Standard deviation** | Typical distance from the mean, in the data's own units; large only relative to the mean |
+| **Normal distribution** | The bell curve: peak at the mean; 68% within 1 SD, 95% within 2, 99.7% within 3 |
+| **Confidence interval** | Point estimate ± a cushion. Overlap means inconclusive. Too wide if your decision would differ at the two limits |
+| **Null / alternate hypothesis** | Two statements, exclusive and exhaustive; what you want to show goes in the alternate; "equal" sits in the null |
+| **Reject / do not reject** | The only verdicts. Reject H0 = accept H1. Do not reject = inconclusive; you never accept H0 |
+| **Type I / Type II error** | Rejecting a true null / failing to reject a false one. Alpha is the tolerance for the first; a bigger sample shrinks the second |
+| **p-value** | Chance of a sample like yours if the null were true. Below alpha: reject |
+| **Regression** | The line closest to all the points: y = intercept + slope × x |
+| **Reading order** | Significance F (multiple regression), each slope's p-value, R Square, then the coefficients |
+| **R Square** | Share of the variation in y explained by the x's |
+| **Dummy variable** | A 0/1 variable; its slope is the gap between the two groups |
+| **Confounding** | A third variable distorting a comparison between groups with different mixes |
+| **Imputation with a flag** | Fill blanks with a constant and add a 0/1 marker; don't delete rows untested |
+
+## Formulas
+
+| Formula | Statement |
+|---|---|
+| **EMV** | Sum of (payoff × probability) across the states |
+| **EOL** | Regret = best payoff in that state − your payoff; EOL = sum of (regret × probability) |
+| **Switching point** | Write each EMV in terms of P, set two equal, solve for P |
+| **EV with perfect information** | Sum of (best payoff in each state × its probability) |
+| **EVPI** | EV with perfect information − best EMV (equal to the EOL of the best alternative) |
+| **EVSI** | (EMV with the survey + its cost) − best EMV without it; net gain = EVSI − cost |
+| **Bayes** | P(state given evidence) = P(evidence given state) × P(state) ÷ P(evidence) |
+| **Hurwicz** | Optimism × best outcome + (1 − optimism) × worst outcome |
+| **Mean** | Sum of values ÷ n |
+| **Variance, SD** | Sum of squared distances from the mean ÷ (n − 1); SD is its square root |
+| **Normal rule** | 68% within 1 SD, 95% within 2, 99.7% within 3 |
+| **Confidence interval** | Mean ± z × SD ÷ √n, with z = 1.645, 1.96 or 2.576 for 90%, 95% or 99%. In Excel: CONFIDENCE.NORM(0.05, SD, n) |
+| **Cushion and sample size** | The cushion falls with the square root of n: four times the data halves it |
+| **Decision rule** | Reject H0 if the p-value is below alpha |
+| **Regression** | y = intercept + slope₁ × x₁ + slope₂ × x₂ + … |
+
+## The samosa stall and the plant under uncertainty in numbers
+
+| Item | Value |
+|---|---|
+| Samosa stall | Fry 200: 0.7 × 1,000 + 0.3 × (−200) = 640. Fry 100: 0.7 × 500 + 0.3 × 300 = 440. Fry 200 |
+| Plant under uncertainty (₹ lakh) | Large +100 / −40; small +40 / +10 |
+| The criteria | Maximax: large. Maximin: small. Minimax regret: large (worst regret 50 against 60). Laplace: large (30 against 25) |
+| Factorial wall, at a billion routes a second | 10 stops: 3.6 million sequences. 15: 1.3 trillion (22 minutes). 20: 77 years. 25: 490 million years |
+
+## Thompson Lumber in numbers
+
+| Item | Value |
+|---|---|
+| Payoffs (favourable / unfavourable) | Large 200,000 / −180,000 · Small 100,000 / −20,000 · Nothing 0 / 0 |
+| EMV at 50–50 | Large 10,000 · **Small 40,000** · Nothing 0 |
+| EOL | Large 90,000 · **Small 60,000** · Nothing 100,000 |
+| EMV as formulas | Large 380,000 P − 180,000 · Small 120,000 P − 20,000 · Nothing 0 |
+| Switching points | Small plant is best between P = 0.167 and P = 0.615. At 0.5 it is robust (33 and 11.5 points of room) |
+| Perfect information | Worth 100,000 − 40,000 = **60,000**. Decline a 65,000 consultant |
+| Survey | Costs 10,000; says "favourable" 45% of the time |
+| After a favourable survey | P(favourable) = 0.78. Large plant: 106,400 |
+| After an unfavourable survey | P(favourable) = 0.27. Small plant: 2,400 |
+| Other branches | Small plant after a favourable survey: 63,600. Large plant after an unfavourable one: −87,400 |
+| With the survey | 0.45 × 106,400 + 0.55 × 2,400 = **49,200** |
+| Strategy | Survey; large plant if favourable; small plant if unfavourable |
+| EVSI | 59,200 − 40,000 = **19,200**; net gain 9,200; 32% of EVPI |
+| Bayes | Survey says favourable 70% of the time in a favourable market, 20% in an unfavourable one. Joints 0.35 and 0.10 give 0.45, so 0.78 and 0.22. For an unfavourable report: 0.15 and 0.40 give 0.55, so 0.27 and 0.73 |
+
+## Pilgrim Bank in numbers
+
+| Item | Value |
+|---|---|
+| Sample | 31,634 of about 5 million customers (0.63%), for 1999; 3,854 online (12.2%), 27,780 offline |
+| Blanks | 8,289 missing age; 8,261 missing income; 7,728 missing both. Tenure and district complete |
+| Profit | Total $3,527,276; mean $111.50; median $9; SD $272.84. 16,832 profitable (53%) earned $4,288,303; 14,580 loss-making (46%) lost $761,027; 222 at zero |
+| Skew | Top 1% → 14% of profit; top 10% → 69%; top 20% → 97%; peak 121.6% at 53% of customers |
+| Group averages | Offline $110.79 (SD $271.30); online $116.67 (SD $283.66); gap $5.88, or 5.3% |
+| Mean ± 1 SD | −$161 to +$384 for all customers: the sign that the average can't be trusted alone |
+| 95% intervals | Offline $107.60–$113.98; online $107.71–$125.62. They overlap from $107.7 to $114.0, and at 90% and 99% too. All customers: $108.50–$114.51 |
+| Profit on online | 110.79 + 5.88 × Online; p = 0.21. Inconclusive. The slope's 95% interval, −3.31 to 15.07, contains zero |
+| With age (23,345 customers) | 17.08 + 27.19 × Online + 25.86 × Age |
+| Bias check | 72.96 + 52.22 × HasAge: customers with no age on file are $52 less profitable |
+| Final model (all customers) | 70.93 + 19.65 × Online + 25.60 × Age − 51.85 × HasAge |
+| Verdict | Online customers are $19.65 more profitable, like for like. Rebate, up to about $19, not the biased $27 |
+| Income and beyond | Income only: online −4.72, p = 0.31, not significant. Age and income: online +11.87. Tenure: 46.36 + 16.55 × Online + 6.21 × Tenure. Everything measured: online +13.82 |
+| Age pattern | Share online falls from about 20% (youngest) to 3.6% (oldest); average profit rises from $3.5 to $192. The average online customer is in age category 3.3; offline, 4.2 |
+
+## Easy to get wrong
+
+| The tempting mistake | The correction |
+|---|---|
+| Judging a decision by how it turned out | Judge the process, with the information available then |
+| Giving an alternative a probability | You choose alternatives; only states have probabilities |
+| "NP" means non-polynomial | It stands for non-deterministic polynomial. The substance is that trying every option explodes |
+| "The small plant never earns 40,000" | EMV is a long-run average across many decisions |
+| Weighting the informant's two messages 50-50 "because there are two" | They carry your own prior: a 60-40 belief gives a 60-40 informant |
+| Drawing a decision square straight after "conduct the survey" | A circle comes first: you read the survey before you decide |
+| EVSI = 9,200 | That is the net gain. EVSI is 19,200 |
+| Putting a vendor's accuracy straight into a tree | Combine it with your prior through Bayes |
+| "How can profit be 121%?" | The loss-makers pull the running total back to 100% |
+| Representative = same mix as the population | Representative = every element had an equal chance |
+| Large sample = a big percentage | 30 or more, whatever the population size |
+| Reporting an average alone | Always give the spread |
+| "The sample says online wins, so online wins" | A difference in sample averages is evidence, not proof |
+| "Collect more data" as the reflex | Expensive and slow. Look at the same data differently first |
+| "Online's interval reaches $125, so online wins" | Overlapping intervals are inconclusive |
+| "We didn't reject the null, so it's true" | Not rejecting is inconclusive |
+| A hypothesis about the action | Hypotheses are about what is true in the population |
+| "A slope of 1 means perfect correlation" | The slope depends on units; the correlation coefficient lives between −1 and +1 |
+| Reading 8.59E-07 as 8.59 | It is 0.000000859 |
+| Comparing raw averages of groups with different mixes | Put the mix variable in the model |
+| Reading coefficients first | Significance F, p-values, R Square, then coefficients |
+| Deleting rows with blanks | Test for bias first; impute with a flag |
+| Reading HasAge = −51.85 on its own | Read it with the age term: 25.60 × category − 51.85 |
+| Sizing the rebate to $27 | That came from a biased sample. The figure is $19.65, and about $14 with everything held constant |
+
+## How to work each kind of problem
+
+| To do this | Work in this order |
+|---|---|
+| Classify a decision | Objective; courses of action; states of nature and what is known about them. One outcome per action is certainty; known probabilities, risk; unknown, uncertainty |
+| Choose under uncertainty | Build the payoff table; apply maximax, maximin, minimax regret and Laplace; note that they may disagree and which temperament each stands for |
+| Choose under risk | Payoff table; EMV for each alternative; pick the best; confirm with EOL if you like |
+| Do a sensitivity analysis | Write each EMV in terms of P; find where the lines cross; give the range for each alternative; say whether the estimate sits comfortably inside (robust) or near an edge (sensitive: plan a contingency) |
+| Value perfect information | Best payoff in each state × its probability, summed; subtract the best EMV; compare with the price; say whether the information would change the action |
+| Draw and solve a tree | Left to right in real-life order; every payoff on a survey branch net of the survey's cost; solve right to left; read off the strategy |
+| Value a survey | EMV with the survey + its cost − EMV without; net gain; check it is no more than EVPI; efficiency |
+| Revise probabilities | Prior × chance of the evidence in each state; add them up; divide each by the total |
+| Comment on a sample | Population and sample; how it was chosen and what bias that brings; 30 or more; larger means more precise, not more legitimate |
+| Summarise a data set | Mean and SD together; mean ± 1 SD; the median if the data is skewed |
+| Build a confidence interval | Mean, SD, n; z for the level; cushion; lower and upper limits; "with 95% confidence the population average lies between…" |
+| Compare two groups | Build both intervals. Overlap: inconclusive. No overlap: conclude. Sample sizes need not match |
+| Frame a hypothesis | What do you want to establish? That is H1. State what you will do on "reject" and on "do not reject" |
+| Use a p-value | State the null being tested; below alpha, reject and act; otherwise don't act |
+| Read a regression output | Significance F; each slope's p-value; R Square in context; the equation; each slope holding the rest constant |
+| Compare two customers from an equation | Write each one's line; strike out identical terms; say who is higher and by how much, with units |
+| Handle missing data | Don't drop silently; regress the outcome on a "has data" flag; if it matters, fill with a constant, add the flag, re-run on all rows |
+| Recommend for Pilgrim Bank | Averages; overlapping intervals; first regression at p = 0.21; add age; bias check; impute; online +19.65 like for like; rebate up to about $19 |
+
+## Which tool for which question
+
+| If the situation is… | Use |
+|---|---|
+| One known outcome per option | Compare, or optimise with linear or integer programming |
+| Known probabilities, one decision | A payoff table and EMV |
+| Known probabilities, decisions in sequence | A decision tree |
+| "Should we pay for this study?" | EVPI as the ceiling; EVSI for the study itself |
+| No probabilities | A criterion matched to your temperament; then look for ways to get estimates |
+| "What is the average for everyone?" | A sample mean with a confidence interval |
+| "Are these two groups really different?" | A hypothesis test, or a regression with a dummy variable |
+| "Is something else driving the gap?" | Multiple regression with that variable included |
+| Blanks in the data | Test whether they matter; impute with a flag |
+| Routes, parcels, depots, rosters, fixtures | Routing problems and integer programming; heuristics, because exact answers are out of reach |
+| Stock-outs, a new category with no history, a chain of orders | Uncensor the sales data; the Bass model; EOQ and safety stock; the bullwhip and a shared forecast |
+| "Was it a good decision?" after an unlucky result | Process over outcome; the three tests; Alcoa |
+| "The problem keeps coming back" | Symptom or root cause; the calm test; a problem statement with no solution in it |
+| "My gut says otherwise" | Gut feeling is a sample. Find the faulty assumption or the right data; show the successes too |
+| "What if the probability were different?" | Sensitivity analysis: thresholds, robust or sensitive, contingency |
+| "The top 10% of customers…" | The profitability curve; Pareto; one rule with a threshold |
+| "Older customers are offline" or averages that reverse | The clouded effect: hold the mix constant in the model |
+
+## A note to the batch
+
+Four sessions ago most of us thought this module would be about formulas. It turned out to be about honesty: knowing what we know before we choose, grading the process and not the luck, never letting an average travel without its standard deviation, writing the hypothesis the right way round, and passing up the first significant number for the one that survives the bias check. These are the habits of managers who are right often and not just right loudly.
+
+The samosa-wala, Thompson Lumber, the bakery in Calcutta, the baby in gold bangles, the broken helicopter and 31,634 bank customers were all the same lesson in different clothes: decide with every option and all the data you can get, value information before you buy it, know which mistake you would rather make, and then decide, because not deciding is rarely one of the options.
+
+Thank you, EPBM-32, for the questions that made the sessions better, for the shared screens when Excel refused to cooperate, and for the company. Decide well, and may your states of nature be kind.
+
+> Solving the right problem roughly is way better than solving the wrong problem accurately.

@@ -1,0 +1,309 @@
+---
+title: From Estimate to Decision
+kicker: Session 4, part 2
+order: 7
+source: "Session by Prof. Megha Sharma · Business Decision Making · Case: Pilgrim Bank (A)"
+description: "How age clouds the online effect and how multiple regression holds it constant, how to read Significance F, p-values and R Square, why deleting rows with missing values biased the sample, imputation with a flag, the final Pilgrim Bank decision, and the assignment worked. Session 4 of Business Decision Making."
+takeaways:
+  - "When two groups differ in mix, never compare raw averages. Put the mix variable in the model."
+  - "Read the output in order: Significance F, each slope's p-value, R Square, and only then the coefficients."
+  - "Missing data is rarely missing at random. Test what you deleted; then keep every row and add a flag."
+  - "Like for like, online customers are $19.65 more profitable. Offer the rebate, and cap it there."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Steps from '../../components/d/Steps.astro';
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
+import MixCalc from '../../components/d/MixCalc.astro';
+import RegCalc from '../../components/d/RegCalc.astro';
+
+## Is age clouding the effect?
+
+After the break the professor returned to the question left hanging. The data is inconclusive on online versus offline. But what we know about customers says something the averages ignore: the share of online customers is very unlikely to be the same in every age group.
+
+Younger customers are more likely to be online. Older customers are more profitable; think of your own bank balance at twenty. So the online group is crowded with young, low-profit customers and the offline group with older, high-profit ones. The professor "cooked up" numbers to show what that can do.
+
+<Fig title="When the mix hides the truth" caption="At the starting settings, online is $50 better for young customers and $100 better for older ones, yet the offline group's average is $162 higher. Set the two age mixes equal and the distortion disappears.">
+  <MixCalc />
+</Fig>
+
+When an older customer moves online, profit rises from $300 to $400. When a younger one moves online, the loss shrinks from $70 to $20. Within each age, online is better. Average the columns and online gives $64 against offline's $226. The make-up of the two groups is drowning the effect. The professor called it **age clouding out the online effect**. Does it happen in our data? That is what multiple regression checks.
+
+### Why regression, and not seven confidence intervals
+
+One way would be a separate interval for each of the seven age categories: seven pieces of analysis, each on a smaller sample. The other is one equation that holds age constant while it looks at the online effect:
+
+**Profit = intercept + slope₁ × Online + slope₂ × Age**
+
+The professor made a new sheet with profit, online and age, and at once hit the problem raised in the very first session: 8,289 of the age cells are blank. Regression can't take a blank cell.
+
+### First attempt: drop the customers without an age
+
+There are two ways to deal with missing values: let those rows go, or fill them in. The class began with the primitive one. Sort by age so the blanks collect at the bottom and run the regression on the rows above. The good news: 23,345 customers with complete data. The bad news: a quarter of the information thrown away.
+
+| | Coefficient | Standard error | t Stat | P-value | Lower 95% | Upper 95% |
+|---|---|---|---|---|---|---|
+| Intercept | 17.080 | 5.059 | 3.376 | 0.0007 | 7.17 | 27.00 |
+| Online | 27.188 | 5.523 | 4.923 | 8.59E-07 | 16.36 | 38.01 |
+| Age | 25.857 | 1.125 | 22.992 | 1.09E-115 | 23.65 | 28.06 |
+
+R Square 0.0222. Observations 23,345. Significance F 1.67E-114.
+
+**Profit = 17.08 + 27.19 × Online + 25.86 × Age**
+
+**The interpretation drill.** Two customers, both online, one in age category 3 and one in category 4: who is more profitable, and by how much? The intercept is the same for both. The online term is the same for both. Only the age term differs: 25.86 × 3 against 25.86 × 4. So the category-4 customer is ahead by exactly $25.86, the slope of age. Written out: $121.85 against $147.71.
+
+| Coefficient | How to read it | In one sentence |
+|---|---|---|
+| Age: 25.86 | Holding the channel fixed, each step up in age category adds $25.86 | Older customers are more profitable, about $26 per category, online or not |
+| Online: 27.19 | Within the same age category, moving from offline to online adds $27.19 | Like for like, online customers are worth about $27 more. (A batchmate: so every offline older customer is a missed opportunity? Every offline customer of any age is.) |
+| Intercept: 17.08 | The prediction when both variables are zero: an offline customer in an age category that doesn't exist | Don't read it as a kind of customer. It anchors the line |
+
+### The checks: Significance F first
+
+In a simple regression you went straight to the slope's p-value. In a multiple regression you don't. Look first at **Significance F**. It is a p-value too, for a different test, whose null is that *all* the slopes are zero at once: profit unrelated to online and to age alike.
+
+<Steps items={[
+  { title: 'Significance F', body: 'Above your alpha? Stop: the regression makes no sense. Below? Go on. Here it is 1.67E-114, a decimal point, 113 zeros and then 167.' },
+  { title: 'Each slope’s p-value', body: 'Any above alpha? Don’t use that variable as it stands. Here both are far below 0.05. The intercept’s p-value isn’t part of the check.' },
+  { title: 'R Square', body: 'How much of the variation the model explains. Context decides what counts as good. Here about 2%.' },
+  { title: 'Only then the coefficients', body: 'Write the equation. Read each slope holding the others constant.' },
+]} />
+
+<div class="callout trap">
+<p class="callout-title">Reading "8.59E-07" as 8.59</p>
+
+E-07 means "times ten to the power minus seven": 0.000000859. Excel writes tiny p-values this way, and reading the front without the exponent turns a significant result into an apparently hopeless one. When a p-value shows as 0.000, Excel has run out of decimals.
+
+</div>
+
+### Multiple R and R Square
+
+**Multiple R** measures correlation: when two things are measured on the same subjects, do larger values of one go with larger values of the other? Steps walked per day and fitness move together: positive. Hours in a chair and fitness move in opposite directions: negative. The correlation coefficient runs from −1 to +1.
+
+**R Square** is the one that matters. Its formal definition, the percentage of the variation in the dependent variable explained by the independent variables, drew a blank from the class. ("Neither did I," said the professor, and explained it properly.)
+
+Imagine you were the god of house prices. Would area be the only thing you looked at? No: locality, city, builder, the age of the building, direction. You might say area decides 50% of a price and the rest is everything else. That weight is R Square. Here, online and age together explain about 2% of why one customer's profit differs from another's. The other 98% is tenure, income, location and things nobody measured.
+
+| Context | What would count | Why |
+|---|---|---|
+| Verifying Ohm's law in a physics practical | 95% could earn you a B | It is a universal law; the missing 5% is your error |
+| Which music to play in a store to lift purchase intention | 10% would be excellent | Purchase intention depends on dozens of things |
+| Pilgrim: profit on online alone | 0.005% | Being online, by itself, explains nothing about why profits differ |
+| Pilgrim: profit on online and age | 2.2% | Small, and enough for the question, which is the online effect, not "what drives profit" |
+
+A batchmate asked whether 2% means we have the wrong variables. It depends on the question. If it is "what are the main drivers of profitability", then yes. If it is "does the online channel matter, like for like", 2% isn't bad at all, and the p-values say the effect is real.
+
+When two groups differ in mix (age, ticket mix, store size), never compare their raw averages. And judge R Square against the question: a small R Square with tiny p-values is a real but modest lever, not a failed analysis.
+
+## The missing-data trap
+
+Deleting the 8,289 customers without an age was technically fine (the regression ran) and possibly disastrous. Were the customers we removed like the ones we kept?
+
+Think about who doesn't bother to give a bank their age. Perhaps the casual customers: people who keep their main account elsewhere and didn't fill in the form carefully. If those are the less profitable customers, deleting them means deleting loss-makers, and every effect we estimate on the rest is tilted.
+
+<Decide q="A quarter of your survey responses have a blank in one column. Your analyst deletes those rows so the model will run. What should you ask?" options={[
+  { label: 'Nothing. The model ran, so the sample is fine.', why: 'Software will fit a model to whatever rows survive. Whether they still represent the population is your problem, not Excel’s.' },
+  { label: 'Do the deleted rows differ from the kept rows on the outcome we care about?', good: true, why: 'If they don’t, you lose only some precision. If they do, you have quietly changed the population you are studying.' },
+]} />
+
+### The test
+
+The professor asked the class to think like a statistician first: what result would say "bias", and what would say "no bias"? If the missing-age customers were removed at random, their average profit should be about the same as everyone else's.
+
+<Steps items={[
+  { title: 'A clean sheet', body: 'Copy profit and age to a new, named sheet.' },
+  { title: 'Add a column HasAge', body: '1 if the age cell is filled, 0 if it is blank.' },
+  { title: 'Regress profit on HasAge', body: 'All 31,634 rows.' },
+  { title: 'P-value first, then the slope', body: 'Above 0.05 would mean no difference and no bias. A small p-value with a large slope means bias.' },
+]} />
+
+| | Coefficient | Standard error | P-value |
+|---|---|---|---|
+| Intercept | 72.963 | 2.986 | 1.2E-130 |
+| HasAge | 52.225 | 3.476 | 7.7E-51 |
+
+**Profit = 72.96 + 52.22 × HasAge**
+
+A customer without an age: $72.96 on average. With one: $125.19. The difference is real: the customers we deleted are, on average, **$52 less profitable** than the ones we kept. That is a lot of bias. And we can't go back and ask 8,289 people their age.
+
+**What the bias did to the answer.** A batchmate asked why we couldn't have stopped at the $27.19, since online was already significant. Because that number was overstated: by removing loss-making customers we compared a rosier subset. A bank acting on $27 might offer a rebate of up to $27, and pay more than the effect is worth.
+
+Missing data is rarely missing at random. The customers who skip the form, the tickets nobody categorised, the assets that never reported in: they tend to be different.
+
+## Imputation: keep every row, add a flag
+
+If you can't drop the rows and can't recover the values, you fill them in. The professor's method is deliberately simple, and it works because of one extra column.
+
+| Rule | Why |
+|---|---|
+| Fill every missing age with a value of your choice: 0, the average, 5, 100 | The regression needs a number in every cell |
+| Use the same value for every missing cell | So all the "plugged" customers are treated alike |
+| Keep the indicator column HasAge and put it in the regression | This is what makes the fill value irrelevant: the model can tell a real 0 from a plugged 0 |
+| Run the regression on all 31,634 rows | Every customer is back; the bias is gone |
+
+The professor filled the blanks with 0.
+
+| | Coefficient | Standard error | t Stat | P-value | Lower 95% | Upper 95% |
+|---|---|---|---|---|---|---|
+| Intercept | 70.926 | 3.000 | 23.643 | 1.6E-122 | 65.05 | 76.81 |
+| Online | 19.649 | 4.685 | 4.194 | 2.75E-05 | 10.47 | 28.83 |
+| Age (0 where missing) | 25.603 | 1.086 | 23.582 | 6.7E-122 | 23.48 | 27.73 |
+| HasAge | −51.849 | 5.598 | −9.263 | 2.1E-20 | −62.82 | −40.88 |
+
+R Square 0.0243. Observations 31,634. Significance F 4.8E-168.
+
+Checks first: Significance F is as close to zero as it gets; every slope's p-value is far below 0.05.
+
+**Profit = 70.93 + 19.65 × Online + 25.60 × Age − 51.85 × HasAge**
+
+The online slope has fallen from $27.19 to $19.65. The age slope barely moved. For customers with an age on file the model is two parallel lines, $19.65 apart, each rising $25.60 per age category.
+
+<Fig title="The final Pilgrim Bank model" caption="Read the HasAge term together with the age term, not on its own: for a customer with an age on file, the two combine to 25.60 × age category − 51.85.">
+  <RegCalc />
+</Fig>
+
+### The interpretation drill
+
+| The question | The working | The answer |
+|---|---|---|
+| Two customers without age data, one online, one offline | The age and flag terms vanish. Both get 70.93; the online one also gets 19.65 | The online customer, by $19.65: $90.58 against $70.93 |
+| Both online; one in category 7, one without age data | Category 7: 25.60 × 7 − 51.85 = 127.35. No age: 0 | The category-7 customer, by about $127 |
+| Both online; one in category 1, one without age data | Category 1: 25.60 − 51.85 = −26.25 | The customer without age data, by about $26 |
+| So, with age data or without: who is more profitable? | 25.60 × category − 51.85 is −26.25 for category 1, −0.65 for 2, +24.95 for 3 | Category 3 and above: the one with age data. Category 2 and below: the one without |
+| Two offline customers, categories 2 and 5 | Three categories × 25.60 | The category-5 customer, by $76.80 |
+| An online customer in category 4 | 70.93 + 19.65 + 25.60 × 4 − 51.85 | $141.13 |
+
+<div class="callout">
+<p class="callout-title">What does −51.85 mean?</p>
+
+Not "customers who gave their age are $52 less profitable". It works together with the age term. The flag re-anchors the age line so that a plugged 0 isn't read as "a customer of age zero". Read HasAge and Age together, always.
+
+</div>
+
+**Filling with the average.** The case slide shows the same model with blanks filled by the average age (4.05). Re-running it gives an intercept of −32.66 and a flag coefficient of +51.74 (the slide prints a minus sign, which is a slip). A no-age customer must predict the same $70.93 in both versions, and −32.66 + 25.60 × 4.046 = 70.93. The online slope and the age slope are identical in both versions. That is the point: the fill value doesn't matter once the flag is in.
+
+Never delete a record because one field is blank. Fill it with any constant, add a flag, and put the flag in the model. The flag itself often tells you something: here, that customers who don't fill in forms are a different kind of customer.
+
+## The decision
+
+A batchmate asked whether every answer from a regression has to come hedged with conditions. For understanding the output, yes; those were exercises. For the Pilgrim decision, no. Within any comparable group (the same age category, or both without an age on file) **online customers are on average $19.65 more profitable.** That answers the question and sizes it: the rebate can go up to about $19 per online customer, and not beyond.
+
+| If the bank had stopped at | It would have concluded | What was wrong |
+|---|---|---|
+| The two averages | Online is better by $6: rebate | A sample difference with p = 0.21: as likely luck as not |
+| The regression on the 23,345 with an age | Online is better by $27.19: rebate up to $27 | The deleted customers were $52 less profitable, so the effect was overstated |
+| The regression on all 31,634 with a flag | Online is better by $19.65, like for like: rebate up to about $19 | The recommendation |
+
+The two frames now agree. Under Frame A the null is rejected, so the rebate follows. Under Frame B the null isn't rejected, and its fallback is the rebate as well. When the evidence is strong the frame stops mattering. It matters precisely when the evidence is weak.
+
+<Fig title="From deadlock to decision on one unchanged dataset" caption="Not one new customer was surveyed. The answer came from looking at the same data differently.">
+<Steps items={[
+  { title: 'Profit on online', body: 'p = 0.21. Stop. Inconclusive.' },
+  { title: 'Profit on online and age, rows with an age', body: 'Online +27.19, but 8,289 rows lost.' },
+  { title: 'Bias check: profit on HasAge', body: '+52.22, p near zero. Dropping rows biased the sample.' },
+  { title: 'Impute and flag', body: 'Blank ages become 0; HasAge is 1 or 0. All 31,634 rows back.' },
+  { title: 'Profit on online, age and HasAge', body: 'Online +19.65, p near zero.' },
+  { title: 'Decide', body: 'Rebate, up to about $19 per online customer.' },
+]} />
+</Fig>
+
+### What the case itself wants you to learn
+
+Managers design service models around beliefs about customers: that online customers cost less to serve, that they stay longer. Too often those beliefs are treated as facts and left unchallenged for years. The manager's job is to surface the assumptions, turn them into testable hypotheses, test them and update the model. The case calls this **managerial research design**.
+
+| Step | In general | At Pilgrim Bank |
+|---|---|---|
+| Identify the business question | Pose a question that forces a strong opinion, then work back to the assumption behind it | "Fee or rebate?" surfaces the assumption about the online channel and profitability |
+| Refine it into hypotheses | True-or-false statements: "online customers cost less to serve", "online customers stay longer" | Online adoption causes higher customer profitability |
+| Identify the data needed | What would you have to observe? | Profitability, online status, demographics |
+| Perform the analysis | Choose a test that fits your time, resources and data. With only a snapshot, change the hypothesis to what it can test | "Online customers are more profitable than offline": the averages, then the regressions |
+| Interpret and communicate | Update the assumption, and the service model if needed | Online adoption goes with higher profitability, like for like: about $19.65 |
+
+The hypothesis says "causes". The data is a snapshot, so the analysis quietly changes it to "are more profitable". The rebate decision is still sound: it is the best evidence available at a reasonable cost, and not deciding isn't an option.
+
+### The assignment: do it again with income
+
+Repeat the whole route with income in place of age. Then build a fuller model with age, income, tenure and, if possible, the district. Using an AI assistant to run the regressions is fine ("the prompts come from understanding the business and not being scared of it"); what matters is that you can interpret the output. The numbers below are worked from the raw data, to check against and not to copy.
+
+| Model | Rows | Online slope | Other slopes | What it says |
+|---|---|---|---|---|
+| Online and income, rows with income only | 23,373 | −4.91 (p = 0.37) | Income +17.77 | Holding income constant, no significant online effect in this subset |
+| Bias check on HasInc | 31,634 | | HasInc +54.32 | Customers without income data are $54 less profitable. Dropping them biases the sample, as with age |
+| Online, income (0 where missing), HasInc | 31,634 | −4.72 (p = 0.31) | Income +17.77; HasInc −42.53 | Still no significant online effect: a different picture from the age model |
+| Online, age, income, both flags | 31,634 | +11.87 (p = 0.011) | Age +26.89; Income +18.77 | Holding both constant, online customers are about $12 more profitable |
+| Online and tenure | 31,634 | +16.55 (p = 0.0003) | Tenure +6.21 a year | Same tenure, online is worth about $16.55 more |
+| Everything: online, age, income, tenure, district | 31,634 | +13.82 (p = 0.003) | Age +16.67; Income +16.85; Tenure +4.75 | Like for like on everything measured, about $14: the number a careful bank would size the rebate to |
+
+Two things to notice. First, 7,728 customers are missing both age and income, which is why the two bias checks look alike: it is largely the same group of casual customers. Second, the online effect isn't one number. It is $19.65 holding age constant, not significant holding only income constant, $11.87 holding both, $13.82 holding everything measured. That isn't the statistics misbehaving. It is what "like for like" means.
+
+Size the incentive to the effect, not to the enthusiasm. The first significant number you find ($27) isn't the number. And write the assumption you are testing on the wall, "online customers cost less to serve", because the day it stops being true, your service model stops making money.
+
+## Reading any regression output: the drill
+
+The professor's questions don't need Excel. Given an output, they ask things like: two customers, one in this category and one in that, who is more profitable and by how much; who should get the rebate; what should the condition be for upgrading a customer's card. One routine answers them all.
+
+<Steps items={[
+  { title: 'Significance F', body: 'Multiple regression only. Below alpha? If not, stop: all the slopes may be zero.' },
+  { title: 'P-value of each slope', body: 'Not the intercept. Every one below alpha? If not, don’t use the equation as it stands.' },
+  { title: 'R Square', body: 'Reasonable for this kind of question? Low isn’t a failure if the p-values pass and the question is about one lever.' },
+  { title: 'Write the equation', body: 'y = intercept + slope₁ × x₁ + slope₂ × x₂ and so on.' },
+  { title: 'Write each customer’s line', body: 'Strike out the terms that are identical. The difference is what remains.' },
+  { title: 'Say the sentence', body: '“Holding the other variables constant, a one-unit increase in x changes y by the slope.” For a yes/no variable: “compared with the 0 group, the 1 group is higher by the slope.”' },
+]} />
+
+**Drill 1: the tenure model.** Profit = 46.36 + 16.55 × Online + 6.21 × Tenure. Both checks pass.
+
+| Question | Working | Answer |
+|---|---|---|
+| Same tenure, one online and one offline | The tenure terms cancel | The online customer, by $16.55 |
+| Two offline customers, 3 years and 8 years | Five extra years × 6.21 | The 8-year customer, by $31.05 |
+| Online with 10 years against offline with 12 | Online advantage 16.55; tenure disadvantage 2 × 6.21 = 12.42 | The online customer, by $4.13 |
+| Offline, 5 years | 46.36 + 6.21 × 5 | $77.41 |
+| Online, 20 years | 46.36 + 16.55 + 124.20 | $187.11 |
+
+**Drill 2: the final age model, as decisions.**
+
+| Question | Working | Answer |
+|---|---|---|
+| Who should get the rebate? | The online slope is +19.65 and holds in every age category and for customers without an age | Every customer who uses the online channel. Size it up to about $19 |
+| Should the bank push older offline customers online? | Offline category 7 predicts $198.28; online, $217.93 | Yes. Each is about $19.65 of missed opportunity, and they are the most valuable customers to begin with |
+| A card-upgrade rule: who predicts above $150? | Offline needs 25.60 × age above 130.92; online needs it above 111.27 | Offline customers in categories 6 and 7; online customers in 5 to 7. Customers without an age never cross it (their maximum is $90.58) |
+| Both offline; category 4 against no age data | 25.60 × 4 − 51.85 = 50.55 | The category-4 customer, by $50.55 |
+| Online category 2 against offline category 3 | $89.93 against $95.88 | The offline category-3 customer, by $5.95. One age step outweighs the online effect |
+
+<Sort title="Try it: which reading is right?" choices={['Right', 'A trap']} items={[
+  { text: 'The slope is large, so the variable matters, whatever its p-value.', answer: 'A trap', why: 'A slope with p = 0.21 doesn’t exist for decision purposes. Order: Significance F, p-values, then coefficients.' },
+  { text: 'The intercept of 70.93 means the average customer earns $70.93.', answer: 'A trap', why: 'The intercept is the prediction when every x is zero, often a customer who can’t exist.' },
+  { text: 'HasAge of −51.85 must be read together with 25.60 × age category.', answer: 'Right', why: 'On its own it looks like “giving your age costs $52”. Together they re-anchor the age line.' },
+  { text: 'The null wasn’t rejected, so there is no effect.', answer: 'A trap', why: 'It is the absence of a verdict. More data or a better model may still reject.' },
+]} />
+
+## The session on a manager's desk
+
+| Idea | Product company | Service company |
+|---|---|---|
+| The alternate is what you want to prove | New formula: "reduces hair fall". Only rejecting the null lets you advertise | New playbook: "cuts time to respond". Only rejecting the null justifies the rollout |
+| Alpha from the cost of a wrong rejection | A vendor's automation line: 1%, because reversing it means re-hiring and re-tooling | A ticket-routing rule you can switch off tomorrow: 10% is fine |
+| The two errors | Recalling a good batch, or shipping a bad one | Escalating a harmless alert, or missing a real intrusion. A security team tunes against the second and pays in analyst hours |
+| The p-value | "If the new line made no difference, how often would a pilot show this much improvement?" | "If the two shifts were equally fast, how often would 400 tickets show this gap?" |
+| Regression on a yes/no variable | Sales per store on new or old packaging | Resolution time on senior or junior analyst |
+| The clouded effect | New packaging "sells worse" because it was piloted in small stores. Add store size | Night shift "resolves faster" because it gets fewer severe tickets. Add severity |
+| Missing data | Warranty cards returned by 30% of buyers: flag "returned card" | A satisfaction survey answered by 8%: model with a "responded" flag |
+| Imputation with a flag | Blank "age of machine" set to 0, with a flag | Blank "contract size" set to 0, with a flag |
+| R Square in context | Fill weight explained by line speed at 90%: a tight process. Sales by ad spend at 15%: still a useful lever | Resolution time by severity at 40%; by analyst tenure at 5%, small but real if the p-value passes |
+| Update the service model | "Customers want more features": test it yearly | "Online customers cost less to serve": test it, because behaviour changes |
+
+**A checklist for Monday morning**
+
+1. Write the alternate first.
+2. Decide the fallback before the data.
+3. Set alpha from the cost of reversal.
+4. Name both errors out loud. The test guards only one.
+5. p below alpha, act. Above, wait.
+6. Read the output in order. Never the coefficient first.
+7. Never compare raw averages of unlike groups.
+8. Check what you deleted.
+9. Size incentives to the honest effect: $19.65, not $27, and possibly $14.
+10. Keep the verdict provisional. More data can flip it.

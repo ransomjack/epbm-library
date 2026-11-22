@@ -1,0 +1,266 @@
+---
+title: Deciding Under Risk
+kicker: Session 2, part 2
+order: 3
+source: "Session by Prof. Megha Sharma · Business Decision Making"
+description: "The Thompson Lumber decision worked in full: the payoff table, expected monetary value and opportunity loss, sensitivity analysis, the value of perfect information, decision trees, the value of a survey, and Bayes' theorem. Session 2 of Business Decision Making."
+takeaways:
+  - "Expected monetary value is a long-run average: a policy, not a prediction."
+  - "Never present a recommendation without its sensitivity range: is the choice robust or sensitive?"
+  - "Information is worth something only if it changes what you would do, and never more than perfect information."
+  - "Draw a tree left to right in the order life unfolds. Solve it right to left."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Sort from '../../components/d/Sort.astro';
+import Decide from '../../components/d/Decide.astro';
+import LumberCalc from '../../components/d/LumberCalc.astro';
+import Tree from '../../components/d/Tree.astro';
+import BayesCalc from '../../components/d/BayesCalc.astro';
+
+## The Thompson Lumber decision
+
+Every method in this chapter is taught on one deliberately small problem, so that the method, not the arithmetic, stays in focus.
+
+Thompson Lumber Company has been in the business for over forty years. (The professor kept that detail on purpose, so nobody dismisses their gut feeling as a fluke.) Management is deciding whether to make and sell a new product: backyard sheds. They have three courses of action: build a large plant, build a small plant, or do nothing. Whatever they choose, the market will turn out favourable or unfavourable. Every figure is net profit after costs.
+
+| Alternative | Favourable market | Unfavourable market |
+|---|---|---|
+| Large plant | 200,000 | −180,000 |
+| Small plant | 100,000 | −20,000 |
+| Do nothing | 0 | 0 |
+
+This is a **payoff table**: alternatives down the rows, states of nature across the columns. As it stands it is a decision under uncertainty. Forty years of experience turns it into risk: management believes it is 50-50.
+
+### Expected monetary value
+
+EMV sounds technical and isn't: a weighted average of the payoffs, where the weights are the probabilities.
+
+| Alternative | Working | EMV |
+|---|---|---|
+| Large plant | 0.5 × 200,000 + 0.5 × (−180,000) | 10,000 |
+| Small plant | 0.5 × 100,000 + 0.5 × (−20,000) | **40,000** |
+| Do nothing | 0 | 0 |
+
+Pick the best EMV: the largest when larger is better (profit), the smallest when smaller is better (cost). Build the small plant. "Monetary" is just the label; the payoff could be market share.
+
+**"But the small plant never actually earns 40,000!"** The sharpest question of the session. It will make 100,000 or lose 20,000. Nobody will ever bank 40,000.
+
+EMV is a **long-run average**. Think what 50-50 means: if the firm made this launch ten times, five markets would be favourable and five unfavourable. It just doesn't know which five.
+
+| Repeated 10 times | Five favourable | Five unfavourable | Net | Per launch |
+|---|---|---|---|---|
+| Large plant | 1,000,000 | −900,000 | 100,000 | 10,000 |
+| Small plant | 500,000 | −100,000 | 400,000 | 40,000 |
+
+"But this is a one-time decision." True. But you will make many other decisions, each with its own payoffs and probabilities. Choose by EMV across all of them and over a career you come out ahead. It is the casino's logic: the house loses individual hands all night and wins on volume, because it plays the expected value every time.
+
+### Expected opportunity loss
+
+**Opportunity loss**, or regret, is how much you missed by not picking the best alternative for the state that occurred.
+
+| Alternative | Regret if favourable | Regret if unfavourable | Expected opportunity loss |
+|---|---|---|---|
+| Large plant | 0 | 180,000 | 90,000 |
+| Small plant | 100,000 | 20,000 | **60,000** |
+| Do nothing | 200,000 | 0 | 100,000 |
+
+Small plant again, with the lowest expected regret. The two methods always pick the same alternative. Remember the 60,000; it comes back under another name.
+
+EMV is a policy, not a prediction. Choose by the long-run average, not by the best case that excites you or the worst that frightens you.
+
+## Sensitivity analysis
+
+The whole answer rested on 50-50. So what if it weren't?
+
+Make it extreme. If a favourable market were certain, you would build large. If failure were certain, you would build nothing. So somewhere below 0.5 the best choice switches from nothing to small, and somewhere above it from small to large. Let P be the probability of a favourable market.
+
+| Alternative | EMV as a formula |
+|---|---|
+| Large plant | 380,000 P − 180,000 |
+| Small plant | 120,000 P − 20,000 |
+| Do nothing | 0 |
+
+The small plant beats doing nothing when P is at least 20,000 ÷ 120,000 = **0.167**, and beats the large plant until P reaches 160,000 ÷ 260,000 = **0.615**.
+
+<Fig title="Thompson Lumber: how the best choice changes with the odds" caption="The small plant stays best from about 17% to about 62%. At 50% the estimate would have to be off by more than 11 points before the answer changed.">
+  <LumberCalc />
+</Fig>
+
+**Robust or sensitive?** The estimate of 0.5 sits 33 points above the lower threshold and 11.5 below the upper. Even if management's gut is off by a fair margin, the small plant stays best. The decision is **robust**.
+
+Now imagine the upper threshold were 0.515. Can anyone's gut tell 50% from 51%? Then the decision is **sensitive**, and the advice isn't to freeze but to prepare: what if the market is stronger than I think? Identify the suppliers you would call, the plant you would lease. Risk management is never cheap, but it saves a great deal when the risk arrives.
+
+<div class="callout">
+<p class="callout-title">Never present an EMV without its range</p>
+
+Robust: decide and move on. Sensitive: decide, and prepare for being wrong. Both are fine. Not knowing which you are in isn't.
+
+</div>
+
+## The worth of perfect information
+
+Right now the firm builds first and discovers the market afterwards. Suppose someone could tell you the market in advance and guarantee it.
+
+Perfect information changes the order of events: discover, then build. Told "favourable", you build large and make 200,000. Told "unfavourable", you build nothing. Notice what happened to the small plant: it vanished.
+
+<div class="callout">
+<p class="callout-title">When is information worth anything?</p>
+
+Only if it changes what you would do. If you would take the same action with or without it, it is worth nothing to you, however accurate it is.
+
+</div>
+
+| Quantity | Working | Value |
+|---|---|---|
+| Expected value with perfect information | 0.5 × 200,000 + 0.5 × 0 | 100,000 |
+| Best EMV without it | The small plant | 40,000 |
+| **Expected value of perfect information (EVPI)** | 100,000 − 40,000 | **60,000** |
+
+EVPI is the most the firm should ever pay for perfect information. A consultant offering certainty for 65,000 should be declined. And 60,000 is exactly the small plant's expected regret: the regret of your best choice is what perfect information would save you.
+
+Why are the informant's two messages weighted 50-50? Not because there are two messages. Because our estimate of the market was 50-50. An informant who only tells the truth will say "favourable" as often as the market is favourable.
+
+### Where perfect information comes from: the bakery
+
+A former student's family opened a bakery in Calcutta. The reviews were excellent, with one constant complaint: whatever you ask for, they never have it. Why so little stock? Because the selling point was freshness: everything was baked that day, and anything unsold was thrown away. The daughter, running marketing, wanted to stock more. The mother, watching the bins fill every evening, wanted to stock less.
+
+The uncertainty comes from not knowing tomorrow's demand. A forecast can't remove it. **The customer can, by pre-booking.** But why would I tell the bakery today that I want pastries tomorrow? Only for an incentive. EVPI tells the bakery the ceiling on that incentive.
+
+| Where you have seen this | What is really going on |
+|---|---|
+| A newspaper delivered at home costs the cover price; at a traffic signal it once cost several times more | The hawker carries the uncertainty and prices for it. The subscription vendor has certainty |
+| Annual newspaper subscriptions with a gift thrown in | Committed readers turn uncertain volume into certain volume |
+| Early-booking discounts on apartments | A booked flat is demand the builder no longer has to guess |
+| Invite-only phone launches and flash sales | Nothing to do with uncertainty. Scarcity as marketing. Don't confuse the two |
+
+Before paying for any information (a consultant's study, a pilot, a data feed), ask: will it change what I would otherwise do? And is its price below EVPI?
+
+## Decision trees
+
+A payoff table has two dimensions and nothing else. The moment a decision has stages, the table can't hold it. The **decision tree** can, and the professor called it one of the most powerful things in the whole programme, because it takes the clutter out of a problem even when you have no numbers.
+
+| Element | Symbol | What comes out of it | Who controls it |
+|---|---|---|---|
+| Decision node | Square | One branch per course of action | You |
+| Chance node | Circle | One branch per state of nature, each with its probability | Nobody: nature |
+| Payoff | A number at the end of a branch | The result of that whole path | |
+
+Two rules matter more than the symbols. The tree is drawn **left to right**, and **in the order things would happen in real life**. Take a career decision: you apply for a job (your choice); you get it or you don't (not your choice); you accept or decline; they post you somewhere you like or don't. Drawn in that order, the tree never lets you assume information you wouldn't yet have.
+
+Solving runs the other way, **right to left**. At a circle, take the expected value. At a square, choose the best branch and strike out the rest. For the simple problem: 10,000 for large, 40,000 for small, so small plant, exactly as the table said. "Do nothing" ends at once at 0: if you don't launch, you never find out what the market would have been.
+
+**Trees without numbers.** With no payoffs and no probabilities, write the pluses and minuses at the end of each branch. The tree won't solve the problem. It gives you a truer picture, so that when you make the trade-off you know what you are letting go of.
+
+**A life decision, on paper.** An architect in a government department was working on a prestigious project: a good posting, official residence, pension. He also had an admission to a master's programme in Canada, and going meant resigning. Corporate friends said: are you mad? People who had built their own careers said: go. So he drew the tree in his diary. Two things jumped out. He had no dependants. And he had carried the dream of studying abroad for years. None of the pluses on the job branch excited him. He chose Canada. Then COVID arrived, and he spent the programme alone in a room, studying online.
+
+Was it a bad decision? He says no, and by this session's standard he is right: he decided well informed, and COVID wasn't knowable. Because the tree was in his diary, he could look back and see he had let go of what he had chosen to let go of.
+
+**Trees in meetings.** Why do meetings run long? Somebody wrote a casual point on a slide and the room went down that road, or nobody did their homework. In many organisations the meeting owner must arrive with a tree. Then the discussion can only be about three things: is a branch missing? Is a state of nature missing? Are the numbers wrong? (A fishbone diagram is for finding root causes, before the problem is defined. A tree lays out the options after it is.)
+
+## Is the survey worth it?
+
+Perfect information at 65,000 was too dear. The realistic option is a market survey: imperfect, but it may help.
+
+| Fact | Number |
+|---|---|
+| Cost of the survey | 10,000 |
+| Chance it reports a favourable market | 45% |
+| If it says favourable, chance the market really is | 78% |
+| If it says unfavourable, chance the market is favourable anyway | 27% |
+
+Why aren't the two error rates the same? In real life they rarely are. With a home COVID test, a positive result was to be trusted, but a negative result with symptoms meant a second test. The two kinds of error had different rates and very different stakes.
+
+**The mistake everyone makes.** After "conduct the survey", many drew a square with the three plant choices. Wrong. You paid for the survey, so you read it before you decide. The next node is a circle (the survey result), then the square. And every payoff on the survey side is reduced by 10,000, because that money is spent whatever happens.
+
+<Fig title="The survey decision as a tree" caption="Read it left to right. Solve it right to left: average at each chance point, choose the best at each decision.">
+  <Tree node={{ kind: 'decision', label: 'Commission the survey?', children: [
+    { kind: 'chance', label: 'Survey', value: '49,200', best: true, children: [
+      { kind: 'decision', p: '45%', label: 'Survey says favourable', children: [
+        { kind: 'chance', label: 'Large plant: 78% × 190,000 + 22% × (−190,000)', value: '106,400', best: true },
+        { kind: 'chance', label: 'Small plant: 78% × 90,000 + 22% × (−30,000)', value: '63,600' },
+        { kind: 'end', label: 'Do nothing', value: '−10,000' },
+      ] },
+      { kind: 'decision', p: '55%', label: 'Survey says unfavourable', children: [
+        { kind: 'chance', label: 'Large plant: 27% × 190,000 + 73% × (−190,000)', value: '−87,400' },
+        { kind: 'chance', label: 'Small plant: 27% × 90,000 + 73% × (−30,000)', value: '2,400', best: true },
+        { kind: 'end', label: 'Do nothing', value: '−10,000' },
+      ] },
+    ] },
+    { kind: 'decision', label: 'No survey', value: '40,000', children: [
+      { kind: 'chance', label: 'Large plant', value: '10,000' },
+      { kind: 'chance', label: 'Small plant', value: '40,000', best: true },
+      { kind: 'end', label: 'Do nothing', value: '0' },
+    ] },
+  ] }} />
+</Fig>
+
+The tree now reads as a complete strategy, which a table could never give: **conduct the survey; if it is favourable, build the large plant; if unfavourable, build the small one.** On average that makes 49,200, against 40,000 without it.
+
+**So what is the survey worth?** The class offered 9,200, 190,000 and 106,400. The right answer needs one more step: the 49,200 was earned after paying 10,000.
+
+| Quantity | Working | Value |
+|---|---|---|
+| Expected value with the survey, if it were free | 49,200 + 10,000 | 59,200 |
+| Expected value without it | | 40,000 |
+| **Expected value of sample information (EVSI)** | 59,200 − 40,000 | **19,200** |
+| Net gain from surveying | 19,200 − 10,000 | 9,200 |
+
+EVSI can never exceed EVPI. And the ratio, 19,200 ÷ 60,000 = 32%, measures how efficient a survey is: a way to compare two research proposals.
+
+<Decide q="A different research firm offers a more detailed survey for 25,000. Without knowing anything else about it, what can you say?" options={[
+  { label: 'Take it. More detail means a better decision.', why: 'Better information is only worth paying for if its value exceeds its price.' },
+  { label: 'It needs to be worth more than 25,000, and it can never be worth more than 60,000.', good: true, why: 'EVPI caps the value of any information at 60,000. This survey has to beat 25,000, when the first one was worth only 19,200. Ask for evidence that it is that much more accurate.' },
+  { label: 'Refuse. It costs more than the first survey.', why: 'Price alone doesn’t decide it. Compare its expected value with its cost.' },
+]} />
+
+## Bayes' theorem: where the tree's probabilities come from
+
+Where do 45%, 78% and 27% come from? A research firm has a track record: of the times the market was favourable, how often did its survey say so? Using that record directly would be a serious mistake.
+
+Imagine two products. One is almost certain to succeed, say 90-10. The other is a real 50-50. Plug the same survey accuracy into both and they get identical probabilities, which is absurd. The survey's accuracy has to be combined with what you already believe: your **prior**.
+
+| Survey accuracy, from the firm's history | If the market is favourable | If the market is unfavourable |
+|---|---|---|
+| Survey says favourable | 70% | 20% |
+| Survey says unfavourable | 30% | 80% |
+
+With a 50-50 prior: the survey says favourable 0.5 × 0.70 + 0.5 × 0.20 = 45% of the time, and then the market is favourable with probability 0.35 ÷ 0.45 = 78%. It says unfavourable 55% of the time, and then the market is still favourable with probability 0.15 ÷ 0.55 = 27%.
+
+<Fig title="Bayes' theorem" caption="Change your starting belief. With a 90-10 prior, even an unfavourable report leaves a 77% chance of a favourable market. Same survey, very different numbers.">
+  <BayesCalc />
+</Fig>
+
+<div class="callout">
+<p class="callout-title">Bayes in one breath</p>
+
+Prior belief × how often this evidence appears in each world, then re-scaled to add to one. The same logic tells a security analyst how likely an alert is a real incident, and it is why a "95% accurate" tool can still be wrong most of the time when real incidents are rare.
+
+</div>
+
+When a vendor quotes the accuracy of a survey, a test or a detection tool, that number alone isn't the probability you need. Ask how your base rate entered their numbers.
+
+## The session on a manager's desk
+
+| Idea | Product company | Service company |
+|---|---|---|
+| The problem, not the symptom | "Sales are falling in the North" turns out to be distributor stock-outs on the top three items | "Complaints are rising" turns out to be a roster that leaves the 6 a.m. flights short-staffed |
+| Payoff table and EMV | Order 1 lakh, 50,000 or 20,000 units of a new model | Block 200, 100 or 50 rooms for a conference |
+| Sensitivity | At what probability of approval does "build now" beat "wait"? | At what renewal probability does a dedicated team beat a shared pool? |
+| Pay for certainty only up to its worth | Pre-season order commitments from retailers | A paid diagnostic before a large engagement; an annual-plan discount |
+| Tree and survey value | Test-market in one city, then choose | Pilot a fee in one district, then decide |
+| Bayes | The plant's defect rate is the prior; the inspection sample updates it | The base rate of real intrusions is the prior; the tool's hit and false-alarm rates update it |
+| Gut versus evidence | Find the batches that did *not* fail | Check the alerts a rule caught as well as those it missed |
+
+**A checklist for Monday morning**
+
+1. Grade the process, not the outcome. Reward reporting of failures; punish cover-ups.
+2. Fall in love with the problem. Write it with no solution inside.
+3. List every alternative, including the ones you dislike.
+4. Separate what you control from what you don't.
+5. Decide by EMV, then test with sensitivity.
+6. Value information before buying it.
+7. Bring a tree to the meeting.
+8. Respect gut feeling; refuse stubbornness.
+9. Convert uncertainty to risk with proxies: team test, family and friends, beta, pilot city.
+10. Write it down. Two minutes, a few bullets.

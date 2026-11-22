@@ -1,0 +1,230 @@
+---
+title: The Bank and Its Customers
+kicker: Session 3, part 1
+order: 4
+source: "Session by Prof. Megha Sharma · Business Decision Making · Case: Pilgrim Bank (A)"
+description: "The Pilgrim Bank case opens: messy data and two myths, the profitability curve that climbs above 100% and how to build it in Excel, how companies let customers go without saying so, the Pareto principle, and why retail is always on sale while Zara is not. Session 3 of Business Decision Making."
+takeaways:
+  - "Messy, incomplete data is normal. Not deciding is rarely one of the options."
+  - "A small share of customers brings most of the profit, and nearly half lose money."
+  - "You can't refuse a customer by name. You can set one rule for everyone that bites only where you want it to."
+  - "Find the vital few before you launch an improvement drive. And check that every process points at the same promise."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Steps from '../../components/d/Steps.astro';
+import Decide from '../../components/d/Decide.astro';
+import Sort from '../../components/d/Sort.astro';
+import SkewCurve from '../../components/d/SkewCurve.astro';
+
+## Where we are: the case, the data and two myths
+
+Session 2 ended with homework: analyse the Pilgrim Bank data and make up your mind, fee or rebate for online banking. Session 3 opened by asking what the class had found, and the first answer set up the whole evening.
+
+The ideas of the last session travel with us in a new costume. A good decision is still judged by its process, but now the process is statistical: was the sample representative, was the average read with its spread, do the two ranges actually separate? The problem is still not "fee or rebate" but **"are online customers more profitable than offline customers, for the whole bank?"** Fee and rebate are the alternatives. Whether online customers really are more profitable is the state of nature we are trying to read from data.
+
+### "This data isn't concrete enough to decide"
+
+A batchmate went first. His group had looked for a relationship between the columns and found none. The average profit per customer was about $111 but the standard deviation was about $272, so customers ranged from heavily loss-making to very profitable. And the age and income columns had thousands of blanks. His conclusion: the data is too scattered and too incomplete to support a decision. Others agreed; they hadn't decided either.
+
+The professor agreed with the description and disagreed with the conclusion. She had chosen the case precisely because it is rich and messy: an old dataset, but a very real one. Missing values are the normal condition of business data. Run a survey: do you get an answer to every question? Some people make every question mandatory, and then respondents either abandon the survey or type garbage. You want information; the other side isn't obliged to give it. And you still have to decide.
+
+<div class="callout">
+<p class="callout-title">Not deciding is usually not one of the options</p>
+
+Whatever the data looks like, a decision eventually gets taken, and if you postpone it, it often gets taken for you. Options expire. If a competitor starts offering a rebate, "charge a fee" quietly stops being an option, whatever your spreadsheet says. This is even more true in services, where there are no patents to protect a head start. Waiting for clean data is itself a decision, and usually a bad one.
+
+</div>
+
+### Myth 1: "retaining customers is the goal"
+
+The first myth in the homework discussion: a bank should offer the rebate because it retains customers and builds relationships. Retention and relationships are means, not ends. The end comes from the company's vision and mission and, in the medium run, its strategy. For a start-up whose valuation depends on market share, buying customers with giveaways can be a perfectly good idea. Beyond that phase a for-profit company has to bring in profit. Many start-ups that do wonderfully in the growth phase show cracks a couple of years later, often after the founders have exited.
+
+The deeper point is about what loyalty is. Customers seek value. Freebies aren't sustainable, and the customer who came for a freebie will leave for someone else's freebie. Solid loyalty comes from value delivered over a long time. It doesn't come from a rebate.
+
+### Myth 2: "the customer is God"
+
+Growing up, the professor saw signs in shops saying customers are God. They aren't. Customers are the means of the company's success, which is exactly why some are worth keeping, some are worth changing, and some are worth letting go. The curve in the next section makes that uncomfortable idea impossible to avoid.
+
+### The data file, in one breath
+
+| Column | Meaning | Notes |
+|---|---|---|
+| 9Profit | Dollar profit or loss the customer gave the bank in 1999 | From −221 to +2,071 |
+| 9Online | 1 if the customer used online banking, 0 if not | 3,854 ones and 27,780 zeros |
+| 9Age | Age, in seven categories | 8,289 blanks |
+| 9Inc | Income, in nine slabs | 8,261 blanks |
+| 9Tenure | Years with the bank | Complete: it comes from the bank's own records |
+| 9District | One of three areas | Complete |
+
+The 9 in front of each name just means "the year 1999". Age and income came from forms filled in before such details became compulsory, which is why a quarter of the rows are blank.
+
+Why categories and not exact ages and incomes? Think of a survey that insists on your exact income: response rates collapse. Offer slabs (up to 5 lakh, 5 to 10, 10 to 15 and so on) and people answer. The bank traded precision for completeness, and still ended up with a quarter of the rows blank.
+
+## The profitability skew
+
+One exhibit in the case, a single curve, says more about the bank than any table. The professor asked everyone to rebuild it from the raw data before discussing it.
+
+### How to read the curve
+
+Sort the 31,634 customers from the most profitable to the least. Across the bottom put the cumulative percentage of customers: 10% means "the top 10% most profitable customers". Up the side put the cumulative percentage of the year's profit those customers brought in. The curve starts at zero and must end at 100%. What happens in between is the story.
+
+<Fig title="Share of profit against share of customers" caption="Total profit was $3,527,276. The 16,832 profitable customers earned $4,288,303; the 14,580 loss-making customers gave back $761,027 of it.">
+  <SkewCurve />
+</Fig>
+
+| Top share of customers | Cumulative share of 1999 profit | In words |
+|---|---|---|
+| 1% | 14.0% | Three hundred customers bring one dollar in seven |
+| 5% | 45.6% | Fewer than 1,600 people bring almost half the profit |
+| 10% | 69.2% | The professor's "about 70%": one customer in ten pays for most of the bank |
+| 20% | 97.1% | Serve only the top fifth and you keep essentially all the profit |
+| 30% | 112.0% | More profit than the bank actually made. Keep reading |
+| 53% (the peak) | 121.6% | The 16,832 customers with a positive profit. Everyone after this point costs money |
+| 100% | 100.0% | All customers: the real profit |
+
+<Decide q="How can the top half of customers account for 121% of the bank’s profit in the same year?" options={[
+  { label: 'It can’t. There must be an error in the data.', why: 'The figure is correct. Think about what the other half contributes.' },
+  { label: 'The profitable customers earn more than the total; the loss-makers then subtract from it.', good: true, why: 'The curve is cumulative and sorted, so at the peak you have added every profitable customer and none of the loss-makers. The 14,580 who follow drag it back to the real total. A curve above 100% is the signature of a loss-making tail.' },
+  { label: 'Some customers are counted twice.', why: 'Each customer appears once. The curve rises above 100% because part of the total is negative.' },
+]} />
+
+This gives the professor's definition of a **desirable customer**: anyone up to the point where the curve stops rising. While it climbs, serving the next customer adds to profit. Once it dips, the next customer takes profit away, and she would rather not serve that customer than keep them "to build a relationship".
+
+| | Profitable customers (16,832) | Loss-making customers (14,580) |
+|---|---|---|
+| Average profit | $251.45 | −$52.19 |
+| Standard deviation | $306.38 | $44.77 |
+| Extreme | Maximum $2,071 | Minimum −$221 |
+| What it tells you | They vary enormously: a few giants and many modest earners | The losses are small and similar. No single customer sinks the bank; the number of them does |
+
+The same numbers read two ways: the profit from profitable customers alone would be 21% above the actual total; or, about 17% of what the good customers earn is spent on the loss-making ones. And a coincidence worth remembering: the top 20% of customers bring 79.8% of everything the profitable customers earn. The 80/20 rule is sitting right there in the data.
+
+### How to build it in Excel
+
+You need only the profit column. Put it in a new sheet so the raw data stays intact, a habit the professor insisted on.
+
+<Steps items={[
+  { title: 'Copy and sort', body: 'Copy 9Profit into a new sheet and sort it from largest to smallest. The top value is 2,071; the bottom is −221.' },
+  { title: 'Number the rows', body: 'A serial number column: 1 for the most profitable customer, 2 for the next, down to 31,634.' },
+  { title: 'Running total', body: 'A cumulative profit column: the first cell equals the first profit; each cell below is the one above plus that row’s profit.' },
+  { title: 'Get the two totals', body: 'COUNT of the column gives 31,634. SUM gives 3,527,276, the same as the last running total.' },
+  { title: 'Turn both into percentages', body: 'Serial number ÷ total customers, and running total ÷ total profit. Fix the totals with dollar signs so they don’t move when you drag.' },
+  { title: 'Plot', body: 'Select the two percentage columns and insert a scatter chart, markers only. Lines make 31,634 points a mess.' },
+  { title: 'Clean the axes', body: 'Show 20%, 40%, 60%, not 0.2000. A chart is for a reader.' },
+]} />
+
+The last row should read 100% and 100%; if it doesn't, a reference has slipped. The peak sits at about 53% of customers and 121.6% of profit, which the professor summed up as: if the bank could let go of the bottom half of its customers, it would have made about 20% more profit last year. That is never possible bluntly. So the next question is how to do it politely.
+
+Draw this curve for whatever you manage: customers, contracts, products, tickets, alert sources. If it peaks well above 100%, your profitable core is quietly paying for a loss-making tail.
+
+## Letting go of customers without saying so
+
+Can a bank pick and choose which customers to serve? Half the chat said yes, half said no, and both halves were right.
+
+**Explicitly, no. Implicitly, all the time.** A bank can't say "I will not serve you"; refusing a customer would be treated as discrimination and could cost the bank its licence. But banks treat customers differently every day. The class's first examples (more channels, cheaper prices online, surprises for top-tier customers) were all about keeping the good ones. The professor wanted the other half: how do you nudge the loss-makers out? A batchmate got there: charge them more for what they use, and they will either stop using it or leave.
+
+### The credit card: a fee that is really a filter
+
+Around 2014-15 many banks handed out credit cards with no annual fee, and found that many undesirable customers signed up precisely because the card was free. So premium cards acquired a fee of about ₹10,000 a year, waived if you spend above a threshold. The fee isn't there to earn ₹10,000. It keeps the undesirable customers away. The waiver makes sure the profitable customers, who earn the bank far more than the fee, never feel it. One rule for everyone, two very different effects.
+
+### The 27-minute wait
+
+An airline ran a loyalty programme. The professor's husband flew the airline constantly and had a pile of miles; she rarely flew it. One day she booked her child's ticket with his miles, had to reschedule, and called the helpline.
+
+> Your expected wait time is about 27 minutes. You could also reach us by email, WhatsApp or the chatbot.
+
+She hung up, annoyed, and said so. Her husband picked up the phone, dialled the same number, and was talking to an agent in under a minute. Had the whole queue vanished? Obviously not. He was a top-tier member, a desired customer. She was entry-level. The airline was steering her away from its precious call-centre agents to the cheap channels, so the agents stayed free for the customers who mattered. The alternative was to hire many more agents, or let her call degrade his experience. They made the trade-off.
+
+### What the bankers in the class added
+
+| Who | What they described | The mechanism |
+|---|---|---|
+| A banker | Every customer gets a profitability score and a programme tier. If the score isn't maintained, the customer isn't thrown out but moved down a tier, where service costs the bank less | Graduated, not abrupt: the customer is weaned off expensive service |
+| A customer | Basic, priority and prestige accounts. Card applications are judged on the whole relationship (deposits, fixed deposits, everything), not one balance | The bank prices service to the relationship, not the transaction |
+| An insurance customer | Two car-insurance claims in a year, together above ₹1 lakh, and the insurer refused to renew, with no explanation | The explicit version. Legal in insurance, unthinkable for a bank account |
+
+The professor added a caution to the last story. These are practices a well-run organisation would think through. Most aren't that deliberate. It is common, in companies and in people, to believe you are working towards point A while your actions carry you towards point B. The insurer may have had a policy, or just a faulty system.
+
+| Lever | How it reshapes the customer base | Where you have seen it |
+|---|---|---|
+| Fee with a spend waiver | Filters out low-value entrants; profitable customers never pay | Premium credit cards |
+| Minimum balance with a charge below it | Prices the cost of a small, active account back to the customer | Savings accounts |
+| Tiered service queues | Scarce, expensive service goes to those who justify it | Airline call routing; relationship managers |
+| Channel steering | Pushes low-tier customers to email, chat and the app | The phone menu that offers WhatsApp before an agent |
+| Charging for what they use | Heavy users of costly touchpoints change behaviour or leave | Fees for branch transactions, printed statements, cheque books |
+| Downgrade, not exit | Keeps the relationship while cutting the cost of serving it | The tier downgrade |
+| Non-renewal | The explicit exit, only where the law allows | The car insurance |
+
+<Sort title="Try it: keeping the good, or easing out the costly?" choices={['Keeps the profitable', 'Eases out the costly']} items={[
+  { text: 'A dedicated relationship manager above a deposit threshold.', answer: 'Keeps the profitable', why: 'Scarce, expensive service goes to the customers who justify it.' },
+  { text: 'A charge when the balance falls below a minimum.', answer: 'Eases out the costly', why: 'The same rule for everyone, but it bites only the small, active accounts that cost more than they earn.' },
+  { text: 'A long helpline wait for entry-tier members, with the chatbot offered first.', answer: 'Eases out the costly', why: 'Channel steering: the costly channel is kept free for others.' },
+  { text: 'An annual fee waived above a spending level.', answer: 'Eases out the costly', why: 'A filter. The profitable never pay it; the rest either pay for themselves or stay away.' },
+]} />
+
+You can't discriminate between customers by name. You can design rules that apply to everyone and bite only where you want. Decide the trade-off consciously, or your systems will decide it for you, and not in the direction you intended.
+
+## Pareto: customers, defects and inventory
+
+The profitability skew is one case of a pattern that shows up almost everywhere a manager looks: a small fraction of the things accounts for most of whatever you are measuring. It is named after Vilfredo Pareto, an Italian economist who noticed a century ago that about 20% of the people owned about 80% of the land.
+
+The exact split is never 80/20 (in this bank it is closer to 20/97), but the shape is the same and so is the response: don't spread effort evenly. Find the vital few.
+
+| Where it appears | The vital few | The many | What you do |
+|---|---|---|---|
+| Customers and profit | The top fifth bring 97% of Pilgrim's profit | The rest add little; the bottom 47% subtract | Protect and reward the top; steer or shed the tail |
+| Quality | A handful of root causes | The many symptoms, defects and unhappy customers they produce | Fix the few root causes and most defects go with them |
+| Inventory | The 20% of items behind 80% of holding cost | Thousands of items that cost little to hold | Manage the expensive few tightly |
+| A security operations centre | A few detection rules, log sources or assets generate most alerts and most confirmed incidents | Hundreds of rules that fire rarely and matter rarely | Tune the noisy few; don't treat 400 rules as equals |
+| Warranty returns | A few failure modes on a few components | A long list of one-off complaints | Redesign the components behind the few failure modes |
+
+Before you launch an improvement programme, draw the Pareto curve of whatever hurts and work only on the steep part. Spreading effort evenly across a long tail feels thorough and achieves almost nothing.
+
+Inventory is where the professor spent longest, because holding cost is one of the biggest costs in most companies and the biggest by far in fashion retail. To show why, she took a long detour through why your favourite store is always on sale.
+
+## Why retail is always on sale, and what Zara does differently
+
+Think how often you saw a discount sale as a child. The professor's generation saw one a year: an off-season sale for woollens, because India's winter lasts two months and the stock is dead for the other ten.
+
+Now look around. The department store near her home has been on some offer for more than 200 of the last 300 days. The big chains are permanently on sale. One online retailer calls its sale the "End of Reason Sale", which is at least honest. Her grandmother had a theory: there is no real sale, they raise the price and then cut it. Check it and it isn't true: the same pair of jeans really does cost less on sale. So why does a full-price retailer keep giving its margin away?
+
+| Retailer | What the sale is | Example |
+|---|---|---|
+| Discount as the business model | The bargain is the value proposition. The sale is permanent by design | A chain that ran "50% + 40% off". That is 70% off, not 90%: the 40% comes off the remaining half |
+| Full-price retailer on sale | A symptom of poorly managed demand: unsold stock cleared at a price often below cost. A markdown, in Session 1's vocabulary | The department stores and fashion chains |
+
+### Why managing demand got so much harder
+
+Who decides which men's formal shirts a chain will carry next season? The buying team, using past data and future trends. Forecasting is old. What changed over four or five decades is the business around it.
+
+**Retail consolidated.** The owner of a small store knew his customers and bought for them. A corporate buyer, a highly paid fashion-school graduate buying for a value store, isn't the target customer and may not understand them at all. Merchandisers keep a sign on the wall:
+
+> Remember, you are buying to sell, not to wear yourself.
+
+If the customer likes bright yellow and you hate it, buy bright yellow.
+
+**Manufacturing moved offshore.** Apparel once made in the West for the West moved to China, Vietnam, Bangladesh, India and Pakistan because it was far cheaper. You can't order weekly from the other side of the world: logistics cost too much and lead times are long. A batchmate said orders go in at least six months ahead. So you commit early and can't respond when a trend shows up. Your size or shade is out of stock, while racks of what nobody wanted wait for the sale.
+
+### Zara: a business built around the problem
+
+Zara faces the same trends, lead times and uncertainty. Its promise is fast fashion, and everything is built around that. Stores are restocked roughly every 15 days, mostly from centralised European production. Walk into one: it isn't crammed. Few pieces on the floor, a back room, fulfilment centres within the city and larger ones behind those. The spacious floor is deliberate. They want you to browse, because the more you browse the more likely you are to buy. Every piece of the system points the same way. That is what **alignment** looks like, and it is why Zara discounts less than the store next door.
+
+There is an ethical shadow. In the class's telling, its buyers are said to roam boutique districts looking for pieces that sell well; a boutique designer reaches perhaps 12,000 customers, while a chain can put a copy in front of millions within weeks. The supply chain that makes the model work also makes copying pay.
+
+### "Reduce variety": yes and no
+
+A batchmate wrote that the way to cut inventory is to cut variety. The professor: yes and no.
+
+| Situation | Can you cut variety? | Why |
+|---|---|---|
+| Department store | No | Drop the product a customer came for and they go to the store that has it, with everything else they would have bought |
+| Dell computers | Yes, through delayed differentiation | Huge variety (memory, processor, screen), yet low inventory, because it stocked components, not finished laptops. The product is differentiated at the last moment, to order |
+| Paint | Yes, the same trick | Paint used to ship in every colour. Now the store keeps a colourless base and mixes pigment to order. Far fewer items, and what expires is a little pigment, not tins of paint |
+| DMart | Partly | Fewer brands per category, concentrating on what sells, plus a big buyer's bargaining power, so suppliers work on its terms |
+
+### Starting a channel is easy. Aligning it isn't
+
+One supermarket chain launched a quick-delivery service long after the category had been built by others and, in the class's telling, is still struggling even in its home city. Many companies bolted an online channel onto a physical business during and after COVID; some shut it down, some deliver poor service. Starting a new channel isn't the problem. Making every process behind it fit the promise is where most businesses fail.
+
+When your business keeps "going on sale" (discounting, over-delivering, firefighting), it is usually a demand-management and alignment problem, not a pricing one. Ask whether the people making the buying, staffing or capacity decisions actually know the customer, how long your lead times are, and whether every process points at the same promise.
