@@ -1,0 +1,106 @@
+---
+title: Quick Reference and Exam Traps
+kicker: Revision
+order: 4
+source: "Every number, list and framework from the three sessions, on one page"
+description: "Last-minute revision for Global Political Economy: UNCTAD FDI figures, trust, PEST, geopolitics facts and the most common exam traps."
+takeaways:
+  - "Africa had the highest FDI growth rate; developed economies had the highest value. The exam tests the difference."
+  - "Voluntary action signals benevolence, transparency signals integrity. Don't swap them."
+  - "Fifteen traps that catch most students are on this page, each with the wrong and right answer side by side."
+---
+import Fig from '../../components/d/Fig.astro';
+import Bars from '../../components/d/Bars.astro';
+import Traps from '../../components/d/Traps.astro';
+
+Use this page the evening before the exam. Everything here is covered in more depth in Sessions 1 to 3.
+
+## FDI inflows in 2024 (UNCTAD)
+
+<Fig title="FDI inflows 2024, USD billion" caption="Source: UNCTAD 2024 figures as given in the course notes. The groups overlap: developed economies include Europe and North America, and developing Asia, Africa and Latin America are developing regions.">
+  <Bars unit="USD bn" rows={[
+    { label: 'Developed economies', value: 867, note: '0% · largest absolute value', mark: true },
+    { label: 'Developing Asia', value: 605, note: '−3% · largest of the developing regions' },
+    { label: 'North America', value: 343, note: '+23% · strongest absolute growth' },
+    { label: 'Europe', value: 182, note: '−58% · steepest decline' },
+    { label: 'Latin America & Caribbean', value: 164, note: '−12%' },
+    { label: 'Africa', value: 97, note: '+75% · highest growth rate', mark: true },
+    { label: 'Least developed countries', value: 37, note: '+9%' },
+  ]} />
+</Fig>
+
+Returns: developing economies earned about 8–11% a year (2010–2018) against about 6% for developed ones. Higher risk, higher reward.
+
+## Session 1: stakeholders and trust
+
+| Concept | Remember |
+|---|---|
+| Trust | A stakeholder's willingness to be **vulnerable** to a business (Pirson & Malhotra, 2011) |
+| Three core dimensions | **Ability** (can deliver) · **Benevolence** (genuinely cares) · **Integrity** (fair and honest) |
+| Three signals | Voluntary action · Transparency · Responsiveness |
+| Voluntary action signals | **Benevolence** |
+| Transparency signals | **Integrity** |
+| Responsiveness signals | **Ability + Benevolence** |
+| P1 | Action toward **one** stakeholder sends trust cues to **all** |
+| P5 | **Proximity** amplifies the effect |
+| P6 (key) | **Prioritising** stakeholders **lowers** trust |
+| Freeman (1984) | A fix forced by a court or government = **managerial failure** |
+
+## Session 2: investment and PEST
+
+| Concept | Remember |
+|---|---|
+| Four FDI motives | Resources · Markets · Efficiency · Strategic assets |
+| Six country risks | Political · Economic · Transfer · Exchange rate · Location/Neighbourhood · Sovereign |
+| Horizontal vs vertical FDI | Horizontal copies the chain (local risk); vertical splits it (global risk) |
+| PEST golden rule | Direct bearing on the industry **and** likely to change |
+| PESTEL / PESTLE | + Environmental + Legal |
+| STEEPLE | + Ethics (CSR lens) |
+| STEEPLED | + Demographics (most comprehensive) |
+| STEER | + Regulatory |
+| PEST in SWOT | Gives **O and T** only |
+
+## Session 3: geopolitics
+
+| Concept | Remember |
+|---|---|
+| Three events | New nationalism and trade wars · Covid-19 · Regional conflicts |
+| India–China trade deficit | **USD 112.60 billion**, 2025-26 |
+| GSP withdrawn for India | **2019** |
+| WTO problem | US blocking Appellate Body appointments |
+| JIT → JIC | Lean, no buffer → safety stock |
+| Komatsu · Apple · ABB · Murata | Reshoring · Just-in-Case · Supplier digitisation · Near-shoring to Thailand |
+| AUKUS | Australia · United Kingdom · United States |
+| McKinsey Trade & Economics | Trade agreements · Import/export controls · Domestic policies · Tariffs · Industrial policy |
+| McKinsey Security | FDI restrictions · Sanctions · Alliances · Conflict · Tech/IP/cyber controls |
+| Geopolitics | How geography affects politics and relations between states (Caldara & Iacoviello, 2022) |
+| LIO | Liberal International Order: built by the US and allies after WWII on free trade and multilateral institutions |
+| Three phases | Emerging (pre-2008) → Approval (2008–2019) → Expansion (2019 on) |
+| Six levels | Individual → Firm → Sub-national → National → Supra-national → Global |
+| Four views | Inside-In → Inside-Out → Outside-In → **Outside-Out** (goal) |
+| Bouncing with | **Pre-emptive**: the big setback never lands |
+| Fat tails | Not rare, just under-weighted (Russia's invasion) |
+| Turkey analogy | 1,000 safe days, then Thanksgiving |
+| Six resilience dimensions | Reputational · Organisational · Financial · Technological · Operational · Business model |
+
+## Exam traps
+
+Each card shows the tempting wrong answer, crossed out, and the right one.
+
+<Traps items={[
+  { wrong: 'Regulatory agencies are part of Government', right: 'They are a separate stakeholder group' },
+  { wrong: 'ESG: E = Economic', right: 'ESG: E = Environmental' },
+  { wrong: 'PEST: E = Environmental', right: 'PEST: E = Economic', note: 'Environmental only arrives in PESTEL/PESTLE.' },
+  { wrong: 'Prioritising key stakeholders builds trust', right: 'Prioritising lowers trust (Crane P6)', note: 'It hurts ability, benevolence and integrity at once.' },
+  { wrong: 'Voluntary action signals integrity', right: 'Voluntary action signals benevolence', note: 'Transparency is the one that signals integrity.' },
+  { wrong: 'Africa had the highest FDI value', right: 'Africa had the highest growth rate (+75%)', note: 'Highest value: developed economies, USD 867 bn.' },
+  { wrong: 'Cultural risk is a country risk', right: 'The six are Political, Economic, Transfer, Exchange rate, Location, Sovereign' },
+  { wrong: 'Bouncing with is a fast recovery', right: 'Bouncing with is pre-emptive', note: 'Back, above and beyond all assume the hit already happened.' },
+  { wrong: 'Inside-In is good risk practice', right: 'Inside-In = deckchairs on the Titanic', note: 'Perfect operations, blind to the geopolitical iceberg.' },
+  { wrong: 'AUKUS includes Japan or Canada', right: 'AUKUS = Australia, UK, US' },
+  { wrong: 'Amazon is disintermediation', right: 'Amazon is re-intermediation', note: 'Disintermediation removes middlemen; Amazon is a new one.' },
+  { wrong: 'Levels of analysis = resilience dimensions', right: 'Two different lists of six', note: 'Levels: Individual … Global. Dimensions: Reputational … Business model.' },
+  { wrong: 'India–China deficit: USD 80, 90 or 145 bn', right: 'USD 112.60 bn in 2025-26' },
+  { wrong: 'Tax avoidance is an FDI motive', right: 'Resources, Markets, Efficiency, Strategic assets', note: 'Competitive retaliation is another fake fifth option.' },
+  { wrong: 'Born Global firms build at home first', right: 'Born Global firms go international almost from day one', note: 'They internationalise much faster than traditional multinationals.' },
+]} />

@@ -1,0 +1,24 @@
+---
+const g = [
+  { n: 'Customers', c: 'Quality, loyalty, brand trust' },
+  { n: 'Investors / Partners', c: 'Returns, risk, governance' },
+  { n: 'Employees & Families', c: 'Jobs, pay, safety, growth' },
+  { n: 'Suppliers & Distributors', c: 'Contracts, payment terms' },
+  null,
+  { n: 'Government', c: 'Tax, policy, national interest' },
+  { n: 'Regulatory Agencies', c: 'Licences, compliance, standards', miss: true },
+  { n: 'Community', c: 'Social licence, local jobs' },
+  { n: 'Others', c: 'NGOs, media, environmental groups, competitors', miss: true },
+];
+---
+<div class="smap">
+  {g.map((x) => x ? (
+    <div class:list={{ miss: x.miss }}>
+      <span class="n">{x.n}</span>
+      <span class="c">{x.c}</span>
+      {x.miss && <span class="pill">Often missed</span>}
+    </div>
+  ) : (
+    <div class="firm">The firm<small>sends signals to all eight</small></div>
+  ))}
+</div>

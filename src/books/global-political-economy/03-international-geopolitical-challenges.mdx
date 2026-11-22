@@ -1,0 +1,160 @@
+---
+title: International Geopolitical Challenges
+kicker: Session 3
+order: 3
+source: "Session by Prof. Biju Paul Abraham · Reading: Bozonelos & Tsagdis (2023), Geopolitical Resilience in IB"
+description: "The three events raising geopolitical risk, how firms have responded, McKinsey's ten value drivers, and Bozonelos & Tsagdis on geopolitical resilience. Session 3 of Global Political Economy."
+takeaways:
+  - "Three events raised business risk: new nationalism and trade wars, Covid-19, and regional conflicts."
+  - "Firms responded by reshoring, near-shoring, holding buffer stock (Just-in-Case) and digitising suppliers."
+  - "McKinsey's ten value drivers split into five Trade & Economics and five Security drivers."
+  - "Bozonelos & Tsagdis: treat geopolitics as continuous, think outside-out, and aim to 'bounce with' rather than bounce back."
+---
+import Fig from '../../components/d/Fig.astro';
+import Cards from '../../components/d/Cards.astro';
+import Levels from '../../components/d/Levels.astro';
+import FourView from '../../components/d/FourView.astro';
+import Bounce from '../../components/d/Bounce.astro';
+import Timeline from '../../components/d/Timeline.astro';
+
+## Three events that raised business risk
+
+The slides name exactly three. Not the global financial crisis, not Brexit, not climate change on its own.
+
+<Cards min={220} items={[
+  { k: '1', title: 'New nationalism and trade wars', body: 'Governments favour domestic industry, raise barriers and screen foreign investment.', foot: 'Higher tariffs, tighter rules of origin, hurdles for M&A and R&D' },
+  { k: '2', title: 'Covid-19 pandemic', body: 'Lockdowns, closed factories, limits on moving workers.', foot: 'Exposed fragile Just-in-Time chains; volatile demand; faster shift to digital' },
+  { k: '3', title: 'Regional conflicts', body: 'Wars in Ukraine and Gaza, and future flashpoints, disrupt commodities and routes.', foot: 'Volatile input prices, investment uncertainty, higher cost of capital' },
+]} />
+
+## New nationalism and trade wars
+
+The densest part of the slides. Each point is a possible question.
+
+- **Growing nationalism:** governments screen foreign investment, promote domestic investment, stress national resilience, and put hurdles in front of M&A, FDI and R&D.
+- **More trade restrictions:** higher tariffs (US tariffs on Chinese goods), withdrawn concessions (the US ended India's GSP benefits in **2019**), tighter rules of origin.
+- **Uncertain trade with China:** growth slowing from about 10% to about 5%; an India–China trade deficit of **USD 112.60 billion in 2025-26** despite political tension; chip wars, with the US restricting semiconductors to China and Taiwan's TSMC at the centre; technology decoupling; pressure to exclude Huawei from 5G.
+- **A weaker WTO:** the US has blocked appointments to the Appellate Body, so the dispute-settlement "court" can't function, and countries fall back on bilateral or unilateral action.
+
+<div class="callout trap">
+<p class="callout-title">Two numbers to know cold</p>
+
+India–China trade deficit: **USD 112.60 billion** (2025-26). Distractors: USD 80B, 90B, 145B. GSP withdrawal for India: **2019**.
+
+</div>
+
+## How firms have responded
+
+Four company examples are tested most. Match the strategy to the company.
+
+<Cards min={220} items={[
+  { title: 'Reshoring', body: 'Move production out of risky countries, back home or to trusted partners.', foot: 'Komatsu: moved production out of China', pill: 'Tested', pillOk: true },
+  { title: 'Just-in-Case', body: 'Replace lean Just-in-Time stock with safety buffers and spare capacity.', foot: 'Apple: building capacity in India, outside China', pill: 'Tested', pillOk: true },
+  { title: 'Supplier digitisation', body: 'Build redundancy and use digital tools to see deeper into suppliers.', foot: 'ABB: worked with suppliers and digitised their operations', pill: 'Tested', pillOk: true },
+  { title: 'Near-shoring', body: 'Move production closer to home or to nearby trusted countries, not all the way back.', foot: 'Murata: moved production from China to Thailand (ASEAN)', pill: 'Tested', pillOk: true },
+  { title: 'R&D and automation', body: 'Use technology to depend less on any one geography.', foot: 'AI/ML for predictive supply chains' },
+  { title: 'Technology substitution', body: 'Replace hardware-heavy answers with software.', foot: 'Analytics instead of physical inventory buffers' },
+]} />
+
+<div class="callout beyond">
+<p class="callout-title">Beyond the notes: terms you will hear</p>
+
+- **China+1:** keep China, but add at least one other production base. Apple's expansion in India is the standard example.
+- **Friend-shoring:** move supply to politically aligned countries rather than simply nearby ones. The term was popularised by US Treasury Secretary Janet Yellen in 2022.
+
+Use the course's own terms (reshoring, near-shoring, JIC) in the exam.
+
+</div>
+
+## McKinsey's ten value drivers
+
+Five sit under **Trade & Economics**, five under **Security**. Questions test which side a driver belongs to.
+
+| Trade & Economics | Example | Security | Example |
+|---|---|---|---|
+| 1. Trade agreements | USMCA product-content rules | 6. Foreign investment restrictions | EU screening of FDI in sensitive tech |
+| 2. Import/export controls | EU rules on dual-use technology | 7. Sanctions, embargoes, restricted lists | China's Anti-Foreign Sanctions Law |
+| 3. Domestic policies (environment, labour, immigration) | Emissions rules; USMCA wage rules | 8. Multilateral cooperation and alliances | NATO; AUKUS |
+| 4. Tariffs and trade barriers | US tariffs on steel, aluminium, Chinese EVs | 9. Conflict | Russia's invasion of Ukraine; conflict in Ecuador |
+| 5. Domestic industrial policy | Make in India subsidies | 10. Technology, IP and cyber controls | China's Data Security Law; EU GDPR |
+
+<div class="callout trap">
+<p class="callout-title">AUKUS</p>
+
+**Australia, United Kingdom, United States.** Not Japan, Canada or Singapore. A trilateral security and technology pact (nuclear-powered submarines), filed under "multilateral cooperation and alliances" on the Security side.
+
+</div>
+
+## Bozonelos & Tsagdis (2023): geopolitical resilience
+
+**The problem they address:** even after the financial crisis, Covid and Russia–Ukraine, international business research has treated geopolitics in a fragmented way. The word is mostly used as an adjective, with little practical guidance.
+
+<div class="callout">
+<p class="callout-title">Definition</p>
+
+**Geopolitics** (Caldara & Iacoviello, 2022): how geography affects politics and relations between states. It is shaped by geography, natural and man-made resources, demographics and international relations.
+
+</div>
+
+### Three phases of geopolitics in IB research
+
+<Fig>
+  <Timeline items={[
+    { title: 'Emerging', when: 'Before 2008', body: 'Barely discussed. The world matched US hegemony and liberal values.' },
+    { title: 'Approval', when: '2008–2019', body: 'Publications doubled, driven by the financial crisis breaking finance-led capitalism.' },
+    { title: 'Expansion', when: '2019 onward', body: 'Geopolitics becomes part of all IB: trade, supply chains, strategy, FDI.' },
+  ]} />
+</Fig>
+
+### Six levels of analysis
+
+<Fig caption="Each level sits inside the next. Spheres of influence belong to the Global level, not National or Supra-national.">
+  <Levels />
+</Fig>
+
+<div class="callout trap">
+<p class="callout-title">Common trap</p>
+
+Questions list four or five of the six levels and ask which is missing. Learn the order: Individual → Firm → Sub-national → National → Supra-national → Global.
+
+</div>
+
+### Four ways to see geopolitical risk
+
+The framework's most practical tool. It asks where the firm stands (inside or outside itself) and which way it looks (in or out).
+
+<Fig caption="Numbered from narrowest to broadest view. Outside-Out is the goal.">
+  <FourView />
+</Fig>
+
+## Four actionable insights
+
+1. **Treat geopolitics as continuous, not occasional.** It is not a shock that interrupts normal business; like climate change, it is always running in the background.
+2. **Anticipate fat-tail events.** They look unexpected but are not actually rare; conventional risk models just give them too little weight. Russia's invasion of Ukraine had plenty of warning signs, and Western firms in Russia ignored them.
+3. **Move from risk to resilience.** Risk analysis is not enough. Build resilience with scenario planning, contrarian thinking and insurance, across McKinsey's six dimensions: reputational, organisational, financial, technological, operational and business model.
+4. **Analyse at every level at once.** All six levels matter together, and every dimension of resilience plays out across them.
+
+### "Bouncing with": the paper's big idea
+
+<Fig caption="Illustrative shapes, not data. The dashed line is pre-setback performance; the vertical line marks the setback.">
+  <Bounce />
+</Fig>
+
+The first three all assume the setback has already happened. **Bouncing with** means anticipating and managing so that the big hit never lands: continuous, proactive, built in.
+
+<div class="callout">
+<p class="callout-title">The turkey analogy (Taleb, 2010)</p>
+
+A turkey is fed every day for 1,000 days and concludes that it is safe and loved, until Thanksgiving. Most Western firms in Russia were the turkey: years of normal business, months of warning signs ignored, then caught completely off guard by the invasion.
+
+</div>
+
+<div class="callout beyond">
+<p class="callout-title">Beyond the notes: questions a board can ask</p>
+
+- Which critical inputs come from a single country or route?
+- How long could we keep running if that country or route closed tomorrow?
+- Which of our ten McKinsey drivers are moving against us right now?
+- Are we in the Inside-In box, polishing operations while ignoring the map?
+
+</div>

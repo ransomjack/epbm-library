@@ -1,0 +1,15 @@
+---
+// items: [{ k?, title, body?, foot?, pill?, pillOk?, hl? }]
+const { items, min = 200 } = Astro.props;
+---
+<div class="cards" style={`--min:${min}px`}>
+  {items.map((it) => (
+    <div class:list={['card', { hl: it.hl }]}>
+      {it.k && <span class="k">{it.k}</span>}
+      {it.pill && <span class:list={['pill', { ok: it.pillOk }]}>{it.pill}</span>}
+      <span class="t">{it.title}</span>
+      {it.body && <span class="b">{it.body}</span>}
+      {it.foot && <span class="f">{it.foot}</span>}
+    </div>
+  ))}
+</div>

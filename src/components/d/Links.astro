@@ -1,0 +1,14 @@
+---
+// rows: [{ from, fromNote?, to, toNote? }]
+const { rows, left = 'You do this', right = 'Stakeholders infer' } = Astro.props;
+---
+<div class="links">
+  <div class="colhead"><span>{left}</span><span></span><span>{right}</span></div>
+  {rows.map((r) => (
+    <div class="link">
+      <div>{r.from}{r.fromNote && <small>{r.fromNote}</small>}</div>
+      <div class="arr" aria-hidden="true">→</div>
+      <div class="to">{r.to}{r.toNote && <small>{r.toNote}</small>}</div>
+    </div>
+  ))}
+</div>

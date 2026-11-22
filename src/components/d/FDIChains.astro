@@ -1,0 +1,25 @@
+---
+const stages = ['Source', 'Make', 'Sell'];
+---
+<div class="block">
+  <h4>Horizontal FDI: copy the whole value chain</h4>
+  <p>Same product, each country self-contained. Example: McDonald's restaurants in India and elsewhere.</p>
+  <div class="split">
+    {['Home country', 'India'].map((c) => (
+      <div class="country"><span>{c}</span>
+        <div class="chain">{stages.map((s, i) => <>{i > 0 && <span class="sep" aria-hidden="true">→</span>}<span class="chip">{s}</span></>)}</div>
+      </div>
+    ))}
+  </div>
+</div>
+<div class="block">
+  <h4>Vertical FDI: split the chain across countries</h4>
+  <p>Each stage sits where it is cheapest or best. Example: Boeing 787.</p>
+  <div class="chain">
+    <span class="chip"><b>Japan</b>Wings</span><span class="sep" aria-hidden="true">+</span>
+    <span class="chip"><b>Italy</b>Fuselage</span><span class="sep" aria-hidden="true">+</span>
+    <span class="chip"><b>South Korea</b>Tail</span><span class="sep" aria-hidden="true">+</span>
+    <span class="chip"><b>Australia</b>Trailing edges</span><span class="sep" aria-hidden="true">→</span>
+    <span class="chip end"><b>Everett, USA</b>Final assembly</span>
+  </div>
+</div>

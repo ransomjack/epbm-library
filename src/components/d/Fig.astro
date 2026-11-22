@@ -1,0 +1,10 @@
+---
+const { caption, title } = Astro.props;
+---
+<figure class="fig">
+  <div class="fig-body">
+    {title && <p class="fig-title">{title}</p>}
+    <slot />
+  </div>
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>

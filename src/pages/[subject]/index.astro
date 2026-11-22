@@ -7,7 +7,7 @@ export function getStaticPaths() {
 }
 const { s } = Astro.props;
 ---
-<Base title={s.name} pdf={s.pdf}>
+<Base title={s.name} pdf={s.pdf} image={s.og} description={`${s.name}: ${s.blurb}`}>
 <main class="wrap page">
   <nav class="side" aria-label="Subjects">
     <div class="side-title">Subjects</div>
@@ -60,7 +60,7 @@ h1{margin:16px 0 0;font-weight:500;font-size:clamp(32px,4.6vw,46px);line-height:
 .chapters li{border-bottom:1px solid var(--line)}
 .chapters a,.chapters .planned{display:flex;flex-direction:column;gap:2px;padding:16px 0;text-decoration:none}
 .kicker{font-size:13px;font-weight:600;color:var(--muted)}
-.ch-title{font-family:var(--serif);font-weight:500;font-size:22px;color:var(--ink)}
+.ch-title{font-family:var(--display);font-weight:500;font-size:22px;color:var(--ink)}
 .chapters a:hover .ch-title{color:var(--accent)}
 .planned .ch-title{color:var(--muted)}
 </style>

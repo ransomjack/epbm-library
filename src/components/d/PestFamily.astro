@@ -1,0 +1,18 @@
+---
+const rows = [
+  { nm: 'PEST', l: ['P','E','S','T'], n: [], ds: 'The baseline. E here means Economic.' },
+  { nm: 'PESTEL', l: ['P','E','S','T','E','L'], n: [4,5], ds: 'Adds Environmental and Legal. PESTLE is the same thing.' },
+  { nm: 'STEEPLE', l: ['S','T','E','E','P','L','E'], n: [3,5,6], ds: 'Adds Ethics: the CSR lens.' },
+  { nm: 'STEEPLED', l: ['S','T','E','E','P','L','E','D'], n: [3,5,6,7], ds: 'Adds Demographics. The most comprehensive.' },
+  { nm: 'STEER', l: ['S','T','E','E','R'], n: [4], ds: 'Adds Regulatory factors.' },
+];
+---
+<div class="fam">
+  {rows.map((r) => (
+    <div class="fam-row">
+      <span class="nm">{r.nm}</span>
+      <span class="tiles" aria-hidden="true">{r.l.map((x, i) => <span class:list={['tile', { new: r.n.includes(i) }]}>{x}</span>)}</span>
+      <span class="ds">{r.ds}</span>
+    </div>
+  ))}
+</div>

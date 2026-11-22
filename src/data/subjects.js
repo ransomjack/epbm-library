@@ -6,6 +6,7 @@ export const subjects = [
     name: 'Global Political Economy',
     blurb: 'Stakeholders and trust, cross-border investment and PEST, and geopolitical risk, with 96 practice MCQs.',
     pdf: '/pdf/global-political-economy-master-notes.pdf',
+    og: '/og/global-political-economy.png',
   },
   { slug: 'marketing-management', name: 'Marketing Management' },
   { slug: 'business-decision-making', name: 'Business Decision Making' },

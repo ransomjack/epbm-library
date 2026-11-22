@@ -1,0 +1,13 @@
+---
+// items: [{ wrong, right, note? }]
+const { items } = Astro.props;
+---
+<div class="traps">
+  {items.map((t) => (
+    <div class="trapc">
+      <span class="w">{t.wrong}</span>
+      <span class="r">{t.right}</span>
+      {t.note && <span class="nt">{t.note}</span>}
+    </div>
+  ))}
+</div>

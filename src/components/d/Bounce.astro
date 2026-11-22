@@ -1,0 +1,24 @@
+---
+// Conceptual shapes: performance over time around a setback. Not data.
+const base = 40;
+const shapes = [
+  { t: 'Bouncing back', b: 'Recover to where you were.', d: 'M4 40 L60 40 L78 64 L100 58 L125 44 L156 40', v: 'Limited' },
+  { t: 'Bouncing above', b: 'Recover a little stronger.', d: 'M4 40 L60 40 L78 64 L100 54 L125 36 L156 32', v: 'Still reactive' },
+  { t: 'Bouncing beyond', b: 'Transform after the hit.', d: 'M4 40 L60 40 L78 64 L100 48 L125 26 L156 12', v: 'Still takes the hit' },
+  { t: 'Bouncing with', b: 'Anticipate, so the big hit never lands.', d: 'M4 40 L60 38 L78 42 L100 36 L125 30 L156 24', v: 'The paper\'s recommendation', hl: true },
+];
+---
+<div class="bounce">
+  {shapes.map((s) => (
+    <div class:list={['card', { hl: s.hl }]}>
+      <span class="t">{s.t}</span>
+      <svg viewBox="0 0 160 72" role="img" aria-label={`${s.t}: ${s.b}`}>
+        <line x1="4" y1={base} x2="156" y2={base} style="stroke:var(--muted)" stroke-width="1" stroke-dasharray="3 3" />
+        <line x1="60" y1="6" x2="60" y2="70" style="stroke:var(--line)" stroke-width="1" />
+        <path d={s.d} fill="none" style="stroke:var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <span class="b">{s.b}</span>
+      <span class="f">{s.v}</span>
+    </div>
+  ))}
+</div>

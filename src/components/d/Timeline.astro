@@ -1,0 +1,7 @@
+---
+// items: [{ title, when, body }]
+const { items } = Astro.props;
+---
+<div class="tl">
+  {items.map((x) => <div><div class="bar"></div><b>{x.title}</b><em>{x.when}</em><span>{x.body}</span></div>)}
+</div>

@@ -1,12 +1,12 @@
 import { subjects } from '../data/subjects.js';
 
-const mods = import.meta.glob('../books/*/*.md', { eager: true });
+const mods = import.meta.glob('../books/*/*.{md,mdx}', { eager: true });
 const quizzes = import.meta.glob('../data/quiz/*.json', { eager: true, import: 'default' });
 const quizOf = (slug) => quizzes[`../data/quiz/${slug}.json`];
 
 export const chapters = Object.entries(mods)
   .map(([path, m]) => {
-    const [, subject, file] = path.match(/books\/([^/]+)\/([^/]+)\.md$/);
+    const [, subject, file] = path.match(/books\/([^/]+)\/([^/]+)\.mdx?$/);
     return {
       ...m.frontmatter,
       subject,
