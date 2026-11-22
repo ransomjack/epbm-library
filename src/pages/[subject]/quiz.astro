@@ -1,0 +1,129 @@
+---
+import Base from '../../layouts/Base.astro';
+import { library } from '../../lib/books.js';
+
+export function getStaticPaths() {
+  return library.filter((s) => s.quiz).map((s) => ({ params: { subject: s.slug }, props: { s } }));
+}
+const { s } = Astro.props;
+const total = s.quiz.sections.reduce((n, x) => n + x.questions.length, 0);
+---
+<Base title={`Practice MCQs · ${s.name}`} back={{ href: `/${s.slug}/`, label: s.name }}>
+<main class="wrap quiz">
+  <header class="head">
+    <div class="kicker">Practice</div>
+    <h1>{total} practice MCQs</h1>
+    <p class="lede">Pick an answer to see whether it is right and why. Your score is only for you and is not saved.</p>
+  </header>
+
+  <div class="sets" role="group" aria-label="Question set" id="sets"></div>
+
+  <section id="card" class="card" aria-live="polite"></section>
+  <noscript><p>This quiz needs JavaScript. The questions and answers are also in the PDF.</p></noscript>
+</main>
+
+<script type="application/json" id="quiz-data" set:html={JSON.stringify(s.quiz).replace(/</g, '\\u003c')}></script>
+<script is:inline>
+(function () {
+  var data = JSON.parse(document.getElementById('quiz-data').textContent);
+  var sets = [{ name: 'All questions', questions: [].concat.apply([], data.sections.map(function (s) { return s.questions; })) }]
+    .concat(data.sections);
+  var tagText = { PPT: 'From the slides', READING: 'From the reading', NEW: 'Extra question', CROSS: 'Cross-topic' };
+  var setsEl = document.getElementById('sets'), card = document.getElementById('card');
+  var cur, i, score, answered;
+
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+
+  sets.forEach(function (s, k) {
+    var b = el('button', 'set', s.name + ' (' + s.questions.length + ')');
+    b.type = 'button';
+    b.addEventListener('click', function () { start(k); });
+    setsEl.appendChild(b);
+  });
+
+  function start(k) {
+    cur = sets[k]; i = 0; score = 0;
+    Array.prototype.forEach.call(setsEl.children, function (b, j) { b.setAttribute('aria-pressed', String(j === k)); });
+    show();
+  }
+
+  function show() {
+    var q = cur.questions[i]; answered = false;
+    card.textContent = '';
+    var meta = el('div', 'meta');
+    meta.appendChild(el('span', null, 'Question ' + (i + 1) + ' of ' + cur.questions.length));
+    meta.appendChild(el('span', null, tagText[q.tag] || ''));
+    card.appendChild(meta);
+    var bar = el('div', 'bar'); var fill = el('div', 'fill'); fill.style.width = (100 * i / cur.questions.length) + '%'; bar.appendChild(fill); card.appendChild(bar);
+    card.appendChild(el('h2', 'q', q.q));
+    var list = el('div', 'opts');
+    q.options.forEach(function (text, k) {
+      var b = el('button', 'opt'); b.type = 'button';
+      b.appendChild(el('span', 'letter', 'ABCD'[k]));
+      b.appendChild(el('span', 'text', text));
+      b.addEventListener('click', function () { answer(k, list, q); });
+      list.appendChild(b);
+    });
+    card.appendChild(list);
+  }
+
+  function answer(k, list, q) {
+    if (answered) return; answered = true;
+    var right = k === q.answer; if (right) score++;
+    Array.prototype.forEach.call(list.children, function (b, j) {
+      b.disabled = true;
+      if (j === q.answer) { b.classList.add('right'); b.appendChild(el('span', 'mark', 'Correct answer')); }
+      else if (j === k) { b.classList.add('wrong'); b.appendChild(el('span', 'mark', 'Your answer')); }
+    });
+    var why = el('div', 'why ' + (right ? 'ok' : 'no'));
+    why.appendChild(el('p', 'verdict', right ? 'Correct.' : 'Not quite.'));
+    why.appendChild(el('p', null, q.why));
+    card.appendChild(why);
+    var last = i === cur.questions.length - 1;
+    var next = el('button', 'next', last ? 'See your score' : 'Next question'); next.type = 'button';
+    next.addEventListener('click', function () { if (last) done(); else { i++; show(); window.scrollTo({ top: card.offsetTop - 16 }); } });
+    card.appendChild(next); next.focus();
+  }
+
+  function done() {
+    card.textContent = '';
+    card.appendChild(el('div', 'meta', cur.name));
+    card.appendChild(el('h2', 'q', 'You got ' + score + ' of ' + cur.questions.length + ' right.'));
+    var again = el('button', 'next', 'Try this set again'); again.type = 'button';
+    again.addEventListener('click', function () { i = 0; score = 0; show(); });
+    card.appendChild(again);
+  }
+
+  start(0);
+})();
+</script>
+
+<style is:global>
+.quiz{max-width:800px;padding-top:56px}
+.quiz .head .kicker{font-size:14px;font-weight:600;color:var(--accent)}
+.quiz .head h1{margin:8px 0 0;font-weight:500;font-size:clamp(32px,5vw,46px);line-height:1.1}
+.quiz .lede{margin:14px 0 0;font-size:16px;color:var(--muted)}
+.sets{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0}
+.set{min-height:44px;padding:0 16px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--body);font:500 14px var(--sans);cursor:pointer}
+.set[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.card{border-top:1px solid var(--line);padding-top:24px}
+.card .meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:14px;font-weight:500;color:var(--muted)}
+.bar{height:4px;margin:12px 0 28px;background:var(--surface);border-radius:2px}
+.fill{height:4px;background:var(--accent);border-radius:2px}
+.card .q{margin:0 0 24px;font-family:var(--serif);font-weight:500;font-size:clamp(22px,3vw,27px);line-height:1.35}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;width:100%;min-height:56px;padding:14px 18px;border:1px solid var(--line);border-radius:10px;background:transparent;color:var(--ink);font:400 16px/1.45 var(--sans);text-align:left;cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--ink)}
+.opt:disabled{cursor:default;color:var(--muted)}
+.opt .letter{font-weight:600;flex:none}
+.opt .text{flex:1 1 240px}
+.opt .mark{flex:none;font-size:13px;font-weight:600}
+.opt.right{border:2px solid var(--good);color:var(--ink)}.opt.right .mark{color:var(--good)}
+.opt.wrong{border:2px dashed var(--bad);color:var(--ink)}.opt.wrong .mark{color:var(--bad)}
+.why{margin-top:20px;padding:20px 22px;background:var(--surface);border-radius:10px;font-family:var(--serif);font-size:18px;line-height:1.6;color:var(--body)}
+.why p{margin:0}
+.why .verdict{font-family:var(--sans);font-size:14px;font-weight:600;margin-bottom:8px}
+.why.ok .verdict{color:var(--good)}.why.no .verdict{color:var(--bad)}
+.next{margin-top:20px;min-height:48px;padding:0 22px;border:0;border-radius:8px;background:var(--accent);color:var(--on-accent);font:600 15px var(--sans);cursor:pointer}
+</style>
+</Base>

@@ -1,0 +1,1177 @@
+{
+ "title": "Practice MCQs",
+ "sections": [
+  {
+   "name": "Session 1: Stakeholders and Trust",
+   "questions": [
+    {
+     "tag": "PPT",
+     "q": "When Apple buys screens from Samsung — a company that also competes with Apple in phones — what kind of stakeholder is Samsung in this specific relationship?",
+     "options": [
+      "A competitor stakeholder",
+      "An investor stakeholder",
+      "A partner stakeholder",
+      "A foreign firm stakeholder"
+     ],
+     "answer": 2,
+     "why": "In this transaction Samsung is acting as a SUPPLIER — which makes it a partner stakeholder, regardless of the competition in other product lines. Prof. Abraham used this as his own sample question."
+    },
+    {
+     "tag": "PPT",
+     "q": "Why does a firm need to identify its stakeholders?",
+     "options": [
+      "It is legally required by regulators",
+      "Stakeholders can affect firm success or may need to approve its actions",
+      "To ensure shareholders get dividends on time",
+      "To meet ESG reporting requirements"
+     ],
+     "answer": 1,
+     "why": "The PPT definition: stakeholders are those who are AFFECTED by what the firm does OR whose APPROVAL it may need. There is often NO legal requirement to engage them — but ignoring them can be costly."
+    },
+    {
+     "tag": "PPT",
+     "q": "ESG — a key reason stakeholder management now matters at board level — stands for:",
+     "options": [
+      "Economic, Social, and Governance",
+      "Environmental, Strategic, and Growth",
+      "Environmental, Social, and Governance",
+      "Equity, Stakeholder, and Governance"
+     ],
+     "answer": 2,
+     "why": "ESG = Environmental, Social, and Governance. Investors use ESG scores to decide whether to invest in a firm, making stakeholder management a boardroom priority."
+    },
+    {
+     "tag": "PPT",
+     "q": "How many primary stakeholder groups does Prof. Abraham's PPT identify?",
+     "options": [
+      "Four",
+      "Six",
+      "Eight",
+      "Ten"
+     ],
+     "answer": 2,
+     "why": "Exactly 8: Customers, Investors/Partners, Employees & Families, Suppliers & Distributors, Government, Regulatory Agencies, Community, and Others (NGOs, media, environmental groups, competitors)."
+    },
+    {
+     "tag": "PPT",
+     "q": "In Prof. Abraham's PPT, Regulatory Agencies are listed as:",
+     "options": [
+      "Part of the Government stakeholder group",
+      "A sub-category of the Community group",
+      "A SEPARATE stakeholder group from Government",
+      "Part of the Others group"
+     ],
+     "answer": 2,
+     "why": "This is one of the most common exam traps. Regulatory Agencies — both national and international — are their OWN separate group, distinct from Government."
+    },
+    {
+     "tag": "PPT",
+     "q": "Which group appears in the 'Others' stakeholder category in the PPT?",
+     "options": [
+      "Pension funds and sovereign wealth funds",
+      "Local municipal corporations",
+      "NGOs, media, environmental groups, and competitors",
+      "Trade unions and workers federations"
+     ],
+     "answer": 2,
+     "why": "The 'Others' bucket includes NGOs, media, environmental groups, AND competitors. Competitors are stakeholders — they observe your actions and react."
+    },
+    {
+     "tag": "PPT",
+     "q": "Which of the following is NOT one of the five principles of good stakeholder relationships from the PPT?",
+     "options": [
+      "Visibility of action to stakeholders",
+      "Willingness to respond proactively",
+      "Maximising financial returns so you can serve stakeholders better",
+      "Transparency and integrity in everything you do"
+     ],
+     "answer": 2,
+     "why": "The five PPT principles are: (1) Act in stakeholders' best interests, (2) Make actions visible, (3) Explain WHY you are acting, (4) Respond proactively, (5) Transparency and integrity. Maximising financial returns is NOT one of them."
+    },
+    {
+     "tag": "PPT",
+     "q": "Being 'proactive' in stakeholder management means:",
+     "options": [
+      "Responding faster than your competitors",
+      "Acting before regulators or courts force you to act",
+      "Hiring a dedicated stakeholder management team",
+      "Filing regulatory reports before deadlines"
+     ],
+     "answer": 1,
+     "why": "The PPT says proactive = acting WITHOUT waiting for regulatory or judicial intervention. Waiting until a court forces your hand is reactive — and Freeman (1984) calls that a managerial failure."
+    },
+    {
+     "tag": "PPT",
+     "q": "Stakeholder identification and mapping should be:",
+     "options": [
+      "Done once during the business planning phase",
+      "Reviewed every five years",
+      "A continuous and ongoing process",
+      "Delegated to the CSR department"
+     ],
+     "answer": 2,
+     "why": "Direct from the PPT: stakeholder mapping must be CONTINUOUS because stakeholder needs change over time, some become irrelevant, and new ones emerge."
+    },
+    {
+     "tag": "PPT",
+     "q": "The Covid-19 example of alcohol distilleries making hand-sanitisers and vacuum firms making ventilators illustrates:",
+     "options": [
+      "Vertical integration of supply chains",
+      "The dynamic and changing nature of stakeholder relationships",
+      "Corporate social responsibility in times of crisis",
+      "Government-mandated business diversification"
+     ],
+     "answer": 1,
+     "why": "Prof. Abraham uses this example to show how stakeholder needs can transform dramatically and quickly — a firm's entire stakeholder map can change in weeks."
+    },
+    {
+     "tag": "PPT",
+     "q": "If a firm addresses the needs of one stakeholder group, what does the PPT say happens?",
+     "options": [
+      "Nothing — each stakeholder relationship is independent",
+      "It can influence how all other stakeholders view the firm",
+      "It only matters in regulated industries",
+      "It only affects stakeholders in the same industry"
+     ],
+     "answer": 1,
+     "why": "The PPT explicitly warns: addressing one stakeholder's needs can influence how ALL other stakeholders see you — positively or negatively. This connects directly to Crane's connectedness theory."
+    },
+    {
+     "tag": "PPT",
+     "q": "Proper stakeholder identification is described in the PPT as being key to:",
+     "options": [
+      "Meeting SEBI compliance requirements for listed companies",
+      "Building a firm that is both successful and sustainable",
+      "Replacing the need for a formal CSR policy",
+      "Managing crises more effectively"
+     ],
+     "answer": 1,
+     "why": "The PPT states: proper stakeholder identification is key to building a business that is both SUCCESSFUL and SUSTAINABLE — not just a crisis management tool."
+    },
+    {
+     "tag": "READING",
+     "q": "In the information age, Crane (2020) argues that stakeholders are:",
+     "options": [
+      "Becoming less relevant as AI handles relationships",
+      "Increasingly connected — what you do to one stakeholder is visible to all others",
+      "More focused on financial returns than social impact",
+      "Best managed by prioritising the most important ones"
+     ],
+     "answer": 1,
+     "why": "This is Crane's central argument: in the information age, stakeholder actions are VISIBLE. What you do to one group sends signals to everyone else. You can no longer treat each relationship in isolation."
+    },
+    {
+     "tag": "READING",
+     "q": "Stakeholder trust, according to Pirson & Malhotra (2011) as cited in Crane, means:",
+     "options": [
+      "A firm's credit rating from an independent agency",
+      "The formal contract between a firm and its partners",
+      "A stakeholder's willingness to be vulnerable to a business",
+      "The degree to which a firm meets its legal obligations"
+     ],
+     "answer": 2,
+     "why": "Trust = willingness to be VULNERABLE. When you buy from, work for, or invest in a firm, you are taking a risk. Trust is what makes that risk feel acceptable."
+    },
+    {
+     "tag": "READING",
+     "q": "The three CORE dimensions of trust in Crane's framework (Mayer et al., 1995) are:",
+     "options": [
+      "Power, Legitimacy, and Urgency",
+      "Ability, Benevolence, and Integrity",
+      "Voluntary Action, Transparency, and Responsiveness",
+      "Reliability, Fairness, and Commitment"
+     ],
+     "answer": 1,
+     "why": "ABILITY = can deliver. BENEVOLENCE = genuinely cares. INTEGRITY = fair, honest, consistent. The other three (Voluntary Action, Transparency, Responsiveness) are supplementary signals that DEMONSTRATE these core dimensions."
+    },
+    {
+     "tag": "READING",
+     "q": "When a firm acts voluntarily — without being forced — which trust dimension does this mainly signal?",
+     "options": [
+      "Ability — it shows the firm can act without instruction",
+      "Integrity — it proves the firm keeps its word",
+      "Benevolence — voluntary action suggests genuine care, not self-interest",
+      "Responsiveness — voluntary action is always timely"
+     ],
+     "answer": 2,
+     "why": "Crane is explicit: voluntary action is mainly attributed to BENEVOLENCE. If a firm acts only when forced, people assume it is protecting itself. If it acts without being pushed, people assume it genuinely cares."
+    },
+    {
+     "tag": "READING",
+     "q": "Freeman (1984), cited in Crane, said that a stakeholder problem solved by a government agency or court represents:",
+     "options": [
+      "A legitimate enforcement of corporate accountability",
+      "An acceptable outcome in a democratic system",
+      "A managerial failure",
+      "A last-resort mechanism firms should plan for"
+     ],
+     "answer": 2,
+     "why": "Direct from the reading: if a solution has to be IMPOSED by a government or court, it is a MANAGERIAL FAILURE. Good managers solve stakeholder problems before external intervention is needed."
+    },
+    {
+     "tag": "READING",
+     "q": "In Crane's framework, transparency is most closely linked to which trust dimension?",
+     "options": [
+      "Ability — sharing information shows operational competence",
+      "Integrity — openness and honesty are expressions of integrity",
+      "Benevolence — transparency shows care for stakeholders",
+      "Responsiveness — transparent firms respond faster"
+     ],
+     "answer": 1,
+     "why": "Transparency = INTEGRITY. If you openly share information — even uncomfortable truths — people perceive you as someone with nothing to hide. McDonald's Canada's food appearance videos are the classic example."
+    },
+    {
+     "tag": "READING",
+     "q": "Crane's Proposition 1 states:",
+     "options": [
+      "Stakeholder prioritisation always improves firm performance",
+      "Only direct interactions affect trust",
+      "What you do to one stakeholder sends trust signals to all other stakeholders",
+      "Trust can only be built through long-term relationships"
+     ],
+     "answer": 2,
+     "why": "P1 is the foundation of Crane's entire argument: ONE action toward ONE stakeholder provides trust cues to EVERY OTHER stakeholder watching. Nothing happens in isolation anymore."
+    },
+    {
+     "tag": "READING",
+     "q": "Crane's Proposition 6 states that prioritising stakeholders:",
+     "options": [
+      "Is sometimes necessary in resource-constrained environments",
+      "Decreases stakeholder trust in the firm",
+      "Improves efficiency by focusing management attention",
+      "Is fine if you communicate transparently about it"
+     ],
+     "answer": 1,
+     "why": "P6 is Crane's most counter-intuitive insight. By focusing on some stakeholders, you signal to ALL others that they might not get what they need. This damages ABILITY, BENEVOLENCE, and INTEGRITY simultaneously."
+    },
+    {
+     "tag": "READING",
+     "q": "When the Volkswagen emissions scandal broke, which stakeholder groups lost trust in VW?",
+     "options": [
+      "Only customers who bought VW vehicles",
+      "Only environmental groups and government regulators",
+      "Customers, employees, suppliers, investors, and government simultaneously",
+      "Only investors and shareholders"
+     ],
+     "answer": 2,
+     "why": "VW is the textbook stakeholder connectedness example. ONE revealed failure cascaded instantly across the ENTIRE stakeholder ecosystem — every group lost trust at the same time."
+    },
+    {
+     "tag": "READING",
+     "q": "The Nike supply chain example in Crane shows:",
+     "options": [
+      "Firms can protect themselves from consequences by using subcontractors",
+      "Supply chain workers are not really stakeholders of the focal firm",
+      "How a supplier's treatment of its workers can destroy trust in Nike itself",
+      "That activist pressure is a short-term problem firms can outlast"
+     ],
+     "answer": 2,
+     "why": "Nike's factory workers were technically employed by Nike's suppliers. But when working conditions became public, customers, activists, and regulators held NIKE responsible. You cannot hide behind your supply chain."
+    },
+    {
+     "tag": "READING",
+     "q": "Stakeholder proximity (Proposition 5) refers to:",
+     "options": [
+      "The geographic distance between a firm's HQ and its stakeholders",
+      "A feeling of social, psychological, cultural, or physical closeness to affected parties",
+      "The number of times a firm touches a stakeholder",
+      "The legal relationship between a stakeholder and the firm"
+     ],
+     "answer": 1,
+     "why": "Proximity = feeling of NEARNESS — which can be social, psychological, cultural, or physical. Proximity AMPLIFIES trust effects. Flint, Michigan water crisis: EPA's local failure spread national distrust because all Americans who drink tap water feel proximate."
+    },
+    {
+     "tag": "READING",
+     "q": "After the Flint, Michigan water crisis, only 47% of Americans believed their tap water was safe. This illustrates:",
+     "options": [
+      "The federal government's poor communication strategy",
+      "Stakeholder proximity — all Americans share the vulnerability of public water systems",
+      "The limits of crisis management in preventing reputational damage",
+      "How media amplifies corporate failures"
+     ],
+     "answer": 1,
+     "why": "Crane uses Flint as Proposition 5's example. The EPA's failure in one city spread distrust nationwide because all Americans who use public water utilities feel PROXIMATE — they share the same vulnerability."
+    },
+    {
+     "tag": "READING",
+     "q": "Mattel's handling of the lead-paint toy crisis is cited as a positive example because Mattel demonstrated:",
+     "options": [
+      "Industry lobbying that prevented stricter regulation",
+      "How to handle a crisis without going public",
+      "All three trust dimensions — Ability, Benevolence, and Integrity — at the same time",
+      "That financial compensation restores trust most effectively"
+     ],
+     "answer": 2,
+     "why": "Mattel: ABILITY (rapidly recalled 2/3 of affected stock globally and installed supplier controls), BENEVOLENCE (CEO stated nothing matters more than children's safety), INTEGRITY (ran consistent marketing campaign). Result: 75% of Americans approved."
+    },
+    {
+     "tag": "READING",
+     "q": "Wells Fargo's creation of 1.5 million unauthorised accounts is used by Crane to illustrate:",
+     "options": [
+      "Technology fraud that bypassed compliance",
+      "A shareholder-first culture that encouraged unethical behaviour and destroyed integrity",
+      "Regulatory failure to catch warning signs",
+      "Employee misconduct unrelated to management"
+     ],
+     "answer": 1,
+     "why": "Wells Fargo is Crane's example of PRIORITISATION destroying integrity. Shareholder-first culture → impossible growth targets → employees created fake accounts to meet targets → integrity collapsed → 5,300 fired."
+    },
+    {
+     "tag": "READING",
+     "q": "How does Boeing's threat to leave Washington State illustrate trust erosion, per Crane?",
+     "options": [
+      "Boeing was exercising a legitimate business continuity strategy",
+      "Boeing prioritised shareholders over employees, destroying perceived benevolence and creating a zero-sum mentality",
+      "Boeing failed to communicate its financial pressures properly",
+      "Boeing acted transparently, so trust was maintained"
+     ],
+     "answer": 1,
+     "why": "Boeing threatened to relocate unless it got a USD 9 billion tax break AND workers gave up pension rights. Textbook PRIORITISATION destroying BENEVOLENCE. Once stakeholders see zero-sum hardball, trust collapses across all groups."
+    },
+    {
+     "tag": "READING",
+     "q": "Crane's three SUPPLEMENTARY trust signals are:",
+     "options": [
+      "Ability, Benevolence, and Integrity",
+      "Power, Legitimacy, and Urgency",
+      "Voluntary Action, Transparency, and Responsiveness",
+      "CSR, ESG, and Corporate Governance"
+     ],
+     "answer": 2,
+     "why": "The three CORE dimensions (Mayer et al.) are Ability, Benevolence, Integrity. Crane adds three SUPPLEMENTARY signals: Voluntary Action (signals Benevolence), Transparency (signals Integrity), Responsiveness (signals Ability and Benevolence)."
+    },
+    {
+     "tag": "READING",
+     "q": "Trust, according to Crane, functions in business relationships like:",
+     "options": [
+      "A legal construct managed through contracts",
+      "Oil that keeps relationships running smoothly and reduces friction",
+      "A financial metric you can put on a balance sheet",
+      "Something that only matters in B2C relationships"
+     ],
+     "answer": 1,
+     "why": "Crane uses the metaphor of trust as OIL — it reduces friction, lowers transaction costs, enables cooperation. Without trust, every deal requires more verification, more negotiation, more cost."
+    },
+    {
+     "tag": "READING",
+     "q": "Crane argues that PRIORITISING stakeholders erodes perceived ABILITY because:",
+     "options": [
+      "Prioritised stakeholders get better quality service",
+      "Secondary stakeholders become uncertain whether the firm will ever get to them",
+      "Prioritisation increases management workload and reduces capacity",
+      "Financial models that prioritise stakeholders underperform"
+     ],
+     "answer": 1,
+     "why": "If a firm visibly prioritises some stakeholders, those NOT prioritised start to wonder: will the firm's resources ever reach ME? That uncertainty directly damages their perception of the firm's ABILITY to deliver."
+    },
+    {
+     "tag": "READING",
+     "q": "McDonald's Canada's transparency campaign — videos showing why food looks different in ads versus real life — is cited by Crane as:",
+     "options": [
+      "Reactive crisis management after bad reviews",
+      "Proactive voluntary transparency that improved trust and reputation",
+      "How marketing can substitute for operational improvements",
+      "A failed attempt at stakeholder engagement"
+     ],
+     "answer": 1,
+     "why": "McDonald's VOLUNTARILY created these videos without any external pressure. Crane calls this 'unconventional transparency' that actually IMPROVED reputation. Voluntary + transparent = powerful combined trust signal."
+    },
+    {
+     "tag": "READING",
+     "q": "Crane argues that a firm trying to customise different trust messages for each stakeholder group is problematic because:",
+     "options": [
+      "Stakeholders do not actually have different needs",
+      "It requires too much money",
+      "It signals inauthenticity, is inconsistent, and is nearly impossible to execute",
+      "Academic research unanimously rejects it"
+     ],
+     "answer": 2,
+     "why": "In the information age, your actions toward ONE group are VISIBLE to ALL others. If you send different messages to different groups, the inconsistency itself reads as dishonest. And operationally, it is almost impossible to execute perfectly at scale."
+    },
+    {
+     "tag": "READING",
+     "q": "According to Crane, prioritisation creates which psychological dynamic among stakeholders?",
+     "options": [
+      "Gratitude from those prioritised, which offsets resentment from others",
+      "A healthy competitive dynamic that improves overall performance",
+      "A zero-sum, win-lose mentality that leads to mutual distrust",
+      "Long-term loyalty from primary stakeholders that stabilises firm value"
+     ],
+     "answer": 2,
+     "why": "Crane cites Blake & Mouton (1961): prioritisation increases an 'industrial ethic of competition' and a 'win-lose orientation' that creates 'common suspicion and mutual distrust.' Picking winners and losers undermines the whole collaborative ecosystem."
+    }
+   ]
+  },
+  {
+   "name": "Session 2: Regulatory Risk and PEST",
+   "questions": [
+    {
+     "tag": "PPT",
+     "q": "Which of the following is NOT one of the four motivations for firms investing abroad, according to Prof. Abraham's PPT?",
+     "options": [
+      "Seeking resources like energy, commodities, or cheaper labour",
+      "Seeking new markets and diversification",
+      "Avoiding home country taxes through profit shifting",
+      "Seeking efficiency through lower costs and closeness to the market"
+     ],
+     "answer": 2,
+     "why": "The four PPT motivations are: Resources, Markets, Efficiency, and Strategic Assets. Tax avoidance is NOT on the list. Always check against these exact four categories."
+    },
+    {
+     "tag": "PPT",
+     "q": "A firm that replicates its entire production process inside a host country is engaged in:",
+     "options": [
+      "Vertical FDI",
+      "Horizontal FDI",
+      "Portfolio investment",
+      "Technology licensing"
+     ],
+     "answer": 1,
+     "why": "HORIZONTAL FDI = you copy your whole value chain into another country. You still make the same product/service — you just do it locally in the new market. Example: McDonald's opening restaurants in India."
+    },
+    {
+     "tag": "PPT",
+     "q": "The Boeing 787 supply chain — wings from Japan, fuselage from Italy, tail from South Korea, assembled in the USA — is an example of:",
+     "options": [
+      "Horizontal FDI — Boeing replicates assembly in each country",
+      "Vertical FDI — different stages done in different countries for their specific advantages",
+      "Portfolio investment in aerospace",
+      "Domestic manufacturing with international sales"
+     ],
+     "answer": 1,
+     "why": "VERTICAL FDI = splitting different STAGES of production across different countries, with each country contributing the stage it does best. The Boeing 787 is the most vivid example in the PPT."
+    },
+    {
+     "tag": "PPT",
+     "q": "When a regulatory problem disrupts a vertical FDI arrangement, the damage can spread to:",
+     "options": [
+      "Only the host country where the problem occurred",
+      "Only the home country of the parent firm",
+      "Third countries and sometimes global markets — because each stage feeds the next",
+      "Only countries in the same regional trade bloc"
+     ],
+     "answer": 2,
+     "why": "In horizontal FDI, a problem in one country stops only that country's operation. In vertical FDI, disrupting one stage BREAKS the entire global supply chain — that's why vertical FDI carries much greater regulatory risk."
+    },
+    {
+     "tag": "NEW",
+     "q": "The Stolichnaya vodka example — raw alcohol from Russia, water from Latvia, bottles from Poland, caps from Italy — illustrates:",
+     "options": [
+      "Horizontal FDI — the same product is made in multiple countries simultaneously",
+      "Vertical FDI — different production stages in different countries, all feeding into one final product",
+      "Portfolio investment in the drinks industry",
+      "Domestic manufacturing with international branding"
+     ],
+     "answer": 1,
+     "why": "Stolichnaya is a classic vertical FDI example: each component comes from a different country that does that stage best. The labelling change (from 'Russian Vodka' to 'Premium Vodka') shows a real-world downstream consequence."
+    },
+    {
+     "tag": "PPT",
+     "q": "According to UNCTAD 2024 data in the PPT, which region had the HIGHEST FDI growth RATE?",
+     "options": [
+      "North America at +23%",
+      "Developing Asia at -3%",
+      "Africa at +75%",
+      "LDCs at +9%"
+     ],
+     "answer": 2,
+     "why": "Africa grew at +75% — the fastest growth RATE of any region in 2024. Key distinction: the HIGHEST ABSOLUTE value went to Developed Economies (USD 867 BN), but Africa's RATE of growth was unmatched."
+    },
+    {
+     "tag": "PPT",
+     "q": "Which region recorded the STEEPEST FDI DECLINE in 2024 according to UNCTAD data?",
+     "options": [
+      "Latin America & Caribbean at -12%",
+      "Developing Economies overall at -22%",
+      "Europe at -58%",
+      "Africa at -15%"
+     ],
+     "answer": 2,
+     "why": "Europe saw a -58% decline — the steepest of any region in 2024. Three UNCTAD numbers to lock in: Africa = highest growth rate (+75%), Europe = steepest decline (-58%), Developing Asia = largest developing-region destination (USD 605 BN)."
+    },
+    {
+     "tag": "PPT",
+     "q": "Transfer risk in cross-border investment means:",
+     "options": [
+      "Risk of employees taking knowledge to competitors",
+      "Risk of the government blocking technology transfer deals",
+      "A host government restricting your ability to send profits, dividends, or capital back home",
+      "Currency conversion losses on daily transactions"
+     ],
+     "answer": 2,
+     "why": "Transfer risk = the host country government RESTRICTS the flow of money OUT of the country. China's capital controls that limit how much profit foreign multinationals can repatriate is the textbook example."
+    },
+    {
+     "tag": "PPT",
+     "q": "Location or Neighbourhood Risk means:",
+     "options": [
+      "The physical location of the factory within the host country",
+      "Risk from being geographically close to unstable or hostile neighbouring countries, even if your host country is fine",
+      "Whether to choose an urban or rural location for your investment",
+      "Distance between headquarters and overseas subsidiary"
+     ],
+     "answer": 1,
+     "why": "Your host country may be perfectly stable, but instability in a neighbouring country SPILLS OVER. Example: investing in Jordan is affected by instability in Syria and Iraq next door."
+    },
+    {
+     "tag": "PPT",
+     "q": "Which of the following is NOT one of the six country risk categories in Prof. Abraham's PPT?",
+     "options": [
+      "Political Risk",
+      "Sovereign Risk",
+      "Cultural Risk",
+      "Transfer Risk"
+     ],
+     "answer": 2,
+     "why": "The six are: Political, Economic, Transfer, Exchange Rate, Location/Neighbourhood, and Sovereign. 'Cultural Risk' is NOT on Prof. Abraham's list — a very common MCQ trap."
+    },
+    {
+     "tag": "PPT",
+     "q": "'Born Global' firms are characterised by:",
+     "options": [
+      "Spending their first decade only in the home market",
+      "Going international much faster than traditional firms — often from near the very beginning",
+      "Focusing exclusively on developed-country markets",
+      "Achieving lower returns than established multinationals"
+     ],
+     "answer": 1,
+     "why": "The PPT says: newer firms are internationalising at a FASTER rate than traditional firms — they are often Born Global. Unlike old-school multinationals that built domestic strength first, Born Global firms enter international markets very early."
+    },
+    {
+     "tag": "PPT",
+     "q": "Inward FDI returns data (UNCTAD 2010-2018) shows that developing economies earned approximately:",
+     "options": [
+      "3-5% — lower than developed economies due to higher risk",
+      "5-6% — about the same as developed economies",
+      "8-11% — consistently outperforming developed economies at ~6%",
+      "15-20% — far exceeding all other regions"
+     ],
+     "answer": 2,
+     "why": "Developing economies earned ~8-11% returns vs ~6% for developed economies. The higher political and economic risk is compensated by significantly higher returns — the primary driver of FDI into emerging markets."
+    },
+    {
+     "tag": "READING",
+     "q": "PEST stands for:",
+     "options": [
+      "Political, Environmental, Social, Technological",
+      "Political, Economic, Strategic, Technological",
+      "Political, Economic, Social, Technological",
+      "Policy, Economic, Stakeholder, Technological"
+     ],
+     "answer": 2,
+     "why": "PEST = Political, Economic, Social, Technological. A very common trap: 'Environmental' is NOT the E in PEST — it is Economic. Environmental is only added in PESTLE/PESTEL."
+    },
+    {
+     "tag": "READING",
+     "q": "In a SWOT analysis, PEST provides which components?",
+     "options": [
+      "Strengths and Weaknesses — the internal half",
+      "Opportunities and Threats — the external half",
+      "The entire SWOT framework",
+      "Neither — PEST and SWOT are separate frameworks"
+     ],
+     "answer": 1,
+     "why": "PEST gives you the OT (Opportunities and Threats) — the external environment scan. Strengths and Weaknesses come from internal analysis of the firm's own resources and capabilities."
+    },
+    {
+     "tag": "READING",
+     "q": "Which PEST variation explicitly takes a Corporate Social Responsibility (CSR) perspective by adding an ethics dimension?",
+     "options": [
+      "PESTEL",
+      "STEEPLED",
+      "STEEPLE",
+      "STEER"
+     ],
+     "answer": 2,
+     "why": "STEEPLE adds Environmental, Legal, AND Ethics — and the reading specifically says it 'takes on a corporate social responsibility perspective' because of that ethics addition."
+    },
+    {
+     "tag": "READING",
+     "q": "Which PEST variation was specifically created because of increased environmental awareness and adds a regulatory dimension?",
+     "options": [
+      "PESTLE",
+      "STEEPLED",
+      "STEEPLE",
+      "STEER"
+     ],
+     "answer": 3,
+     "why": "The reading is explicit: STEER was created because of increased environmental/ecological awareness and it incorporates regulatory factors. Do not confuse with PESTLE (adds Environmental + Legal) or STEEPLE (adds Ethics)."
+    },
+    {
+     "tag": "READING",
+     "q": "PESTEL/PESTLE adds which two factors to the base PEST framework?",
+     "options": [
+      "Ethics and Demographics",
+      "Regulatory and Social",
+      "Environmental and Legal",
+      "Stakeholder and Ethical"
+     ],
+     "answer": 2,
+     "why": "PESTEL/PESTLE = PEST + Environmental + Legal. PESTLE and PESTEL are the SAME framework — just different letter orders. Both add the same two factors."
+    },
+    {
+     "tag": "READING",
+     "q": "According to the reading, which PEST factor has 'the most obvious impact on profitability and overall attractiveness' of a market?",
+     "options": [
+      "Political factors",
+      "Economic factors",
+      "Social factors",
+      "Technological factors"
+     ],
+     "answer": 1,
+     "why": "Direct quote from Sammut-Bonnici: 'Economic factors have the most obvious impact on the profitability and overall attractiveness of a market or industry.'"
+    },
+    {
+     "tag": "READING",
+     "q": "Industries like jewellery, construction, entertainment, and tourism are described as 'income elastic' because:",
+     "options": [
+      "They are cheap and everyone can afford them regardless of income",
+      "They are government subsidised, so demand stays stable",
+      "Their demand rises and falls strongly with people's income and GDP levels",
+      "They are essential, so people always buy them"
+     ],
+     "answer": 2,
+     "why": "Income-elastic = demand swings dramatically with income/GDP. When people earn more, they spend more on luxury and discretionary items. When a recession hits, these are the first things cut."
+    },
+    {
+     "tag": "READING",
+     "q": "'Disintermediation' in the PEST technological section means:",
+     "options": [
+      "Adding new types of digital intermediaries to the supply chain",
+      "Technology REMOVING existing traditional middlemen from the supply chain",
+      "Government deregulation removing regulatory barriers",
+      "Entering new markets without local distribution partners"
+     ],
+     "answer": 1,
+     "why": "Disintermediation = technology ELIMINATES old middlemen. Classic example: the internet allowed consumers to book their own flights and hotels directly, bypassing traditional travel agents."
+    },
+    {
+     "tag": "READING",
+     "q": "Amazon, eBay, and Expedia are cited in the reading as examples of:",
+     "options": [
+      "Disintermediation — they eliminated traditional retailers",
+      "Re-intermediation — new types of middlemen created by technology",
+      "Vertical FDI — splitting operations across countries",
+      "Horizontal FDI — replicating the same model globally"
+     ],
+     "answer": 1,
+     "why": "These are NOT examples of disintermediation — they are NEW middlemen CREATED BY technology. They are embedded in social networks, provide consumer reviews and trust. This is RE-intermediation."
+    },
+    {
+     "tag": "READING",
+     "q": "Political factors in PEST operate at which three levels?",
+     "options": [
+      "Federal, State, and Local",
+      "Supranational, National, and Subnational",
+      "International, Regional, and Domestic",
+      "Government, Regulatory, and Judicial"
+     ],
+     "answer": 1,
+     "why": "Political factors exist at three levels: SUPRANATIONAL (WTO, EU, ASEAN), NATIONAL (domestic government policy), and SUBNATIONAL (state governments, municipalities). As globalisation deepens, the supranational level becomes increasingly important."
+    },
+    {
+     "tag": "READING",
+     "q": "Google pulling out of China illustrates which PEST factor?",
+     "options": [
+      "Economic — loss of potential revenue from a huge market",
+      "Social — cultural incompatibility with Chinese users",
+      "Political — government censorship restrictions forced the exit",
+      "Technological — Google could not compete with Chinese domestic rivals"
+     ],
+     "answer": 2,
+     "why": "The reading is explicit: 'Google had to pull out of China because of censorship restrictions.' This is a POLITICAL factor — a direct government policy decision that made it impossible for Google to operate according to its own principles."
+    },
+    {
+     "tag": "READING",
+     "q": "Formula One moving operations from Europe to Dubai and Abu Dhabi illustrates which PEST factor?",
+     "options": [
+      "Economic — higher revenues in Gulf markets",
+      "Social — F1 fan base shifting to the Gulf",
+      "Technological — better track infrastructure in the UAE",
+      "Political — EU ban on tobacco advertising devastated F1's main sponsor category"
+     ],
+     "answer": 3,
+     "why": "The reading states: 'The banning of tobacco advertising in the EU had spelt disaster for the Formula One Industry.' Tobacco companies were F1's primary sponsors. A POLITICAL decision destroyed a key revenue stream."
+    },
+    {
+     "tag": "READING",
+     "q": "The correct order of the 5-step PEST process is:",
+     "options": [
+      "Act → Identify → Analyse → Prioritise → Categorise",
+      "Identify → Analyse → Categorise → Prioritise → Act",
+      "Prioritise → Identify → Categorise → Analyse → Act",
+      "Analyse → Prioritise → Identify → Categorise → Act"
+     ],
+     "answer": 1,
+     "why": "Five steps: (1) IDENTIFY all current and future PEST factors, (2) ANALYSE their effect on the firm, (3) CATEGORISE each as Opportunity or Threat, (4) PRIORITISE by extent and duration, (5) ACT — develop corrective or pre-emptive strategy."
+    },
+    {
+     "tag": "READING",
+     "q": "The reading warns that PEST can become 'an endless evaluation' unless you follow which principle?",
+     "options": [
+      "Only include factors that currently affect the firm, not future ones",
+      "Only include factors with a DIRECT bearing on industry attractiveness AND likely to change in the foreseeable future",
+      "Limit yourself to three factors per PEST category",
+      "Do PEST analysis annually, not continuously"
+     ],
+     "answer": 1,
+     "why": "Only include factors that (a) directly affect your industry's attractiveness AND (b) are likely to change soon. Everything else is noise."
+    },
+    {
+     "tag": "READING",
+     "q": "Two technology formats fighting to become the industry standard for wireless charging is an example of:",
+     "options": [
+      "Disintermediation",
+      "A standard war",
+      "Re-intermediation",
+      "Technological lock-in"
+     ],
+     "answer": 1,
+     "why": "When competing technologies fight to become THE dominant norm, PEST calls this a 'standard war.' The winner creates lock-in: once consumers and firms invest in compatible products, switching becomes costly. Think VHS vs Betamax."
+    },
+    {
+     "tag": "READING",
+     "q": "The 2008 global recession, as described in the reading, was primarily caused by:",
+     "options": [
+      "Collapse of European sovereign debt markets",
+      "The US housing bubble bursting and damaging financial institutions worldwide",
+      "Oil price spikes from Middle Eastern instability",
+      "The failure of major US technology firms"
+     ],
+     "answer": 1,
+     "why": "The reading links the 2008 recession explicitly to the US housing bubble bursting — as housing prices plummeted, it damaged financial institutions around the world. A US domestic asset bubble caused a global economic crisis."
+    }
+   ]
+  },
+  {
+   "name": "Session 3: International Geopolitical Challenges",
+   "questions": [
+    {
+     "tag": "PPT",
+     "q": "According to Prof. Abraham's PPT, which THREE geopolitical events have substantially increased business risks?",
+     "options": [
+      "Climate change, digitalisation, and demographic shifts",
+      "New nationalism and trade wars, the Covid-19 pandemic, and increasing regional conflicts",
+      "Brexit, the US-China trade war, and the Global Financial Crisis",
+      "Russia-Ukraine war, US-China chip war, and OPEC oil embargo"
+     ],
+     "answer": 1,
+     "why": "The PPT lists exactly three: (1) Growth of 'new nationalism' and trade wars, (2) The Covid-19 pandemic and its economic consequences, (3) Increasing regional conflicts disrupting supply chains."
+    },
+    {
+     "tag": "PPT",
+     "q": "India's trade deficit with China in 2025-26, as cited in the PPT, was approximately:",
+     "options": [
+      "USD 50 billion",
+      "USD 80 billion",
+      "USD 112.60 billion",
+      "USD 145 billion"
+     ],
+     "answer": 2,
+     "why": "The exact figure from the PPT: USD 112.60 billion in 2025-26. Notable because it shows that economic interdependence persists even when the political relationship between India and China is tense."
+    },
+    {
+     "tag": "PPT",
+     "q": "The US withdrawal of GSP (Generalised System of Preferences) for India in 2019 is an example of:",
+     "options": [
+      "India's own protectionist industrial policy",
+      "Increasing trade restrictions under new nationalism",
+      "WTO dispute settlement failure",
+      "China's anti-dumping duties"
+     ],
+     "answer": 1,
+     "why": "GSP was a trade concession that let certain Indian goods enter the US at reduced or zero tariffs. Its withdrawal in 2019 raised costs for Indian exporters and triggered India's own retaliatory tariffs."
+    },
+    {
+     "tag": "PPT",
+     "q": "The WTO Dispute Settlement Mechanism (DSM) has been severely weakened because:",
+     "options": [
+      "Developing countries withdrew their membership",
+      "The US has been blocking appointments to the Appellate Body, making it non-functional",
+      "China has vetoed all rulings against it",
+      "The WTO lacks legal authority to enforce its decisions"
+     ],
+     "answer": 1,
+     "why": "The US has blocked appointments to the WTO Appellate Body — effectively its 'Supreme Court' for trade disputes. Without judges, the court cannot function. Countries resort to unilateral measures instead."
+    },
+    {
+     "tag": "PPT",
+     "q": "The shift from Just-in-Time (JIT) to Just-in-Case (JIC) supply chains means:",
+     "options": [
+      "Moving from annual to quarterly inventory planning",
+      "Replacing lean zero-buffer inventory with safety stock to absorb disruptions",
+      "Technology platforms replacing manual inventory management",
+      "Shifting from domestic to international suppliers for cost efficiency"
+     ],
+     "answer": 1,
+     "why": "JIT = lean manufacturing — keep almost no buffer stock. Efficient but FRAGILE. JIC = hold safety stock buffers — less efficient but resilient to disruptions. Covid-19 exposed JIT's fragility catastrophically, driving the shift to JIC."
+    },
+    {
+     "tag": "NEW",
+     "q": "'Tighter Rules of Origin' as a trade measure means:",
+     "options": [
+      "Only countries sharing cultural heritage can trade with each other",
+      "Firms must prove WHERE products are genuinely made — closing tariff loopholes",
+      "Only domestic firms can supply to government contracts",
+      "Foreign firms must set up local offices before they can export"
+     ],
+     "answer": 1,
+     "why": "Rules of Origin determine which country a product 'comes from' for tariff purposes. Tightening them closes a loophole where firms routed exports through low-tariff third countries. Now, firms must show genuine local manufacturing."
+    },
+    {
+     "tag": "PPT",
+     "q": "Komatsu's response to geopolitical risk, as cited in the PPT, was:",
+     "options": [
+      "Increasing production in China to reduce costs",
+      "Diversifying production OUT of China to reduce geopolitical exposure",
+      "Partnering with Chinese firms to share technology",
+      "Lobbying the WTO to cut US-China tariffs"
+     ],
+     "answer": 1,
+     "why": "Komatsu (Japanese heavy equipment maker) diversified production AWAY from China — the classic reshoring/diversification strategy to reduce geopolitical exposure."
+    },
+    {
+     "tag": "PPT",
+     "q": "Murata's near-shoring strategy means:",
+     "options": [
+      "Moving production from Japan back to Japan",
+      "Moving production from China to Thailand (near-shoring within ASEAN)",
+      "Acquiring a Thai competitor for market access",
+      "Using Thai distributors instead of direct sales"
+     ],
+     "answer": 1,
+     "why": "Near-shoring = moving production closer to home, but not all the way back. Murata (Japanese electronics) moved production FROM China TO Thailand — staying within Asia but reducing China-specific geopolitical risk."
+    },
+    {
+     "tag": "PPT",
+     "q": "ABB's response to geopolitical supply chain risk involved:",
+     "options": [
+      "Withdrawing FDI from all high-risk markets",
+      "Collaborating with and digitising supplier operations to build resilience",
+      "Acquiring competitors to consolidate supply chains",
+      "Lobbying for WTO reform on industrial policy"
+     ],
+     "answer": 1,
+     "why": "ABB (Swiss-Swedish industrial giant) did not withdraw or reshore — it STAYED in the market but worked WITH its suppliers to digitise their operations. Better digital visibility and coordination = resilience without physical withdrawal."
+    },
+    {
+     "tag": "PPT",
+     "q": "In the McKinsey geopolitical value drivers framework, which of these belongs in the SECURITY dimension?",
+     "options": [
+      "Domestic industrial policies (subsidies, tax breaks)",
+      "Tariffs and other trade barriers",
+      "Multilateral cooperation and alliances like NATO and AUKUS",
+      "Import and export controls"
+     ],
+     "answer": 2,
+     "why": "The five TRADE & ECONOMICS drivers: trade agreements, import/export controls, domestic policies, tariffs, industrial policies. The five SECURITY drivers: FDI restrictions, sanctions, multilateral alliances, conflict, tech/IP controls. NATO and AUKUS are Security."
+    },
+    {
+     "tag": "PPT",
+     "q": "AUKUS is a trilateral security partnership between:",
+     "options": [
+      "Australia, United Kingdom, and Singapore",
+      "Australia, United Kingdom, and United States",
+      "Australia, United States, and Japan",
+      "United Kingdom, United States, and Canada"
+     ],
+     "answer": 1,
+     "why": "AUKUS = Australia, United Kingdom, United States. It is a security and technology partnership — mainly focused on nuclear-powered submarines and advanced defence technology. It sits under 'Multilateral cooperation and alliances' in the McKinsey Security framework."
+    },
+    {
+     "tag": "PPT",
+     "q": "China's Anti-Foreign Sanctions Law, as cited in the PPT's McKinsey framework, falls under which category?",
+     "options": [
+      "Trade agreements",
+      "Import and export controls",
+      "Domestic industrial policies",
+      "Sanctions, embargoes, and restricted lists"
+     ],
+     "answer": 3,
+     "why": "China's Anti-Foreign Sanctions Law allows China to sanction foreign individuals and organisations that participate in sanctions against China. This is a RETALIATORY sanctions mechanism — it belongs under 'Sanctions, embargoes, and restricted lists' in the SECURITY dimension."
+    },
+    {
+     "tag": "READING",
+     "q": "Bozonelos & Tsagdis define geopolitics as:",
+     "options": [
+      "The study of how economic power shapes political decisions",
+      "How geography affects politics and the relations among states",
+      "The management of political risk by multinational firms",
+      "The analysis of government policy impact on international trade"
+     ],
+     "answer": 1,
+     "why": "The definition comes from Caldara & Iacoviello (2022): geopolitics = 'how geography affects politics and the relations among states.' Shaped by a country's geography, resources, demographics, and international relationships."
+    },
+    {
+     "tag": "READING",
+     "q": "The Liberal International Order (LIO) was established:",
+     "options": [
+      "By China and Russia after the Soviet Union collapsed",
+      "By the US and its allies in the aftermath of World War II",
+      "By the WTO, IMF, and World Bank in the 1990s",
+      "By the G7 in response to the 2008 Global Financial Crisis"
+     ],
+     "answer": 1,
+     "why": "The LIO was built by the US and allies after WWII — on free trade, multilateral institutions (WTO, IMF, UN), and liberal democratic values. Both Putin (2022) and Xi (2022) have publicly stated their intent to CHALLENGE this order."
+    },
+    {
+     "tag": "READING",
+     "q": "The reading says the treatment of geopolitics in International Business, even after 2019, has been:",
+     "options": [
+      "Comprehensive and highly actionable for firms",
+      "Fragmented — it appears mostly as an adjective with very limited practical guidance",
+      "Dominated by supply chain analysis",
+      "Mainly focused on country-level political risk assessment"
+     ],
+     "answer": 1,
+     "why": "Direct from the reading: 'even post-2019 the treatment of geopolitics in IB has been rather fragmented, the term appears mostly as an adjective, with limited actionable insights.' Firms know geopolitics is important — but the academic field hasn't given them a clear playbook."
+    },
+    {
+     "tag": "READING",
+     "q": "In which phase did geopolitics in IB publications DOUBLE, according to the reading?",
+     "options": [
+      "Pre-2008 (Emerging phase)",
+      "2008-2019 (Approval phase)",
+      "2019-present (Expansion phase)",
+      "1990-2000 (Post-Soviet phase)"
+     ],
+     "answer": 1,
+     "why": "In the Approval phase (2008-2019), geopolitics in IB literature doubled. The driver: the 2008 Global Financial Crisis shattered the dominance of financial capitalism, and the world saw the rise of nationalism, populism, and protectionism."
+    },
+    {
+     "tag": "NEW",
+     "q": "The six levels of analysis for geopolitics in IB (Figure 2 in the reading) are, in order:",
+     "options": [
+      "Political, Economic, Social, Technological, Environmental, Legal",
+      "Individual, Firm, Sub-national, National, Supra-national, Global",
+      "Inside-in, Inside-out, Outside-in, Outside-out, Supranational, Global",
+      "Reputational, Organisational, Financial, Technological, Operational, Business Model"
+     ],
+     "answer": 1,
+     "why": "The six levels: INDIVIDUAL (strong-man leaders like Putin, Xi), FIRM (MNEs, joint ventures), SUB-NATIONAL (clusters like Silicon Valley), NATIONAL (varieties of capitalism), SUPRA-NATIONAL (trading blocs like EU, ASEAN), GLOBAL (spheres of influence)."
+    },
+    {
+     "tag": "NEW",
+     "q": "Which level of analysis corresponds to 'spheres of influence' — the idea of a US sphere vs a China sphere vs a Russia sphere?",
+     "options": [
+      "National",
+      "Supra-national",
+      "Firm",
+      "Global"
+     ],
+     "answer": 3,
+     "why": "Spheres of influence operate at the GLOBAL level — the highest of the six. This is where great powers divide the world into their zones of dominance and competition. It sits above even supra-national blocs like the EU or ASEAN."
+    },
+    {
+     "tag": "READING",
+     "q": "In the four-view geopolitical resilience framework (Figure 3), the 'inside-in' view:",
+     "options": [
+      "Analyses how external geopolitical forces affect internal operations",
+      "Focuses on enhancing resilience by fixing internal structures, driven from within",
+      "Builds alliances with external stakeholders to buffer geopolitical risk",
+      "Is the most comprehensive and widely practised approach"
+     ],
+     "answer": 1,
+     "why": "Inside-In = you are INSIDE the organisation, looking INWARD. You optimise your own internal processes. It helps with small problems. But it completely misses the big geopolitical iceberg heading your way."
+    },
+    {
+     "tag": "READING",
+     "q": "The reading criticises the inside-in approach by comparing it to:",
+     "options": [
+      "A frog boiling slowly in water",
+      "Rearranging deckchairs on the Titanic",
+      "A turkey expecting to never reach Thanksgiving",
+      "A black swan turning white"
+     ],
+     "answer": 1,
+     "why": "'Being inside and looking-in is as good as rearranging the deckchairs on the Titanic.' Perfect internal optimisation is useless if you are steering toward a massive geopolitical iceberg and cannot see it because you are only looking inward."
+    },
+    {
+     "tag": "READING",
+     "q": "Bozonelos & Tsagdis' first actionable insight for practitioners is to treat geopolitics:",
+     "options": [
+      "As a one-time risk assessment exercise during market entry",
+      "As an endogenous (built-in), continuous process — like global warming, always running in the background",
+      "As primarily a supply chain management challenge",
+      "As something best handled by government relations specialists"
+     ],
+     "answer": 1,
+     "why": "Insight 1: STOP treating geopolitics as a periodic shock or external event that interrupts normal business. START treating it like global warming — it is always happening, always affecting you, and requires continuous attention."
+    },
+    {
+     "tag": "READING",
+     "q": "A 'fat tail' event, as described in the reading, is:",
+     "options": [
+      "An event that is both unexpected AND extremely rare — a true black swan",
+      "An event that is unexpected but NOT actually infrequent — just underweighted by conventional risk models",
+      "An event that is expected and frequent but still damaging",
+      "An event in financial markets at the extreme end of a probability curve"
+     ],
+     "answer": 1,
+     "why": "Fat tail events are NOT actually rare — they just sit in the tail of probability distributions and get ignored by conventional risk models. The Russia-Ukraine invasion had 'ample evidence accumulating over several months' — not truly unforeseeable, just not registered."
+    },
+    {
+     "tag": "READING",
+     "q": "The 'turkey before Thanksgiving' analogy from Taleb (2010), as used in the reading, refers to:",
+     "options": [
+      "Firms rushing into new markets without adequate risk assessment",
+      "Firms that feel safe after years of stable operations but are caught completely off guard by a catastrophic event",
+      "Firms that always overestimate geopolitical risk and under-invest internationally",
+      "Governments that protect domestic firms from foreign competition"
+     ],
+     "answer": 1,
+     "why": "The turkey is fed for 1,000 days and concludes it is safe — then Thanksgiving arrives. Western MNEs in Russia: years of normal business, months of accumulating warning signals ignored, then completely blindsided by the invasion."
+    },
+    {
+     "tag": "READING",
+     "q": "The most important and novel concept introduced in the reading about resilience is 'bouncing-with,' which means:",
+     "options": [
+      "Recovering quickly from a geopolitical setback to return to where you were before",
+      "Emerging stronger than before after experiencing a geopolitical disruption",
+      "Going further forward after a setback by transforming your business model",
+      "Proactively anticipating and managing geopolitics continuously so you never suffer the big setback in the first place"
+     ],
+     "answer": 3,
+     "why": "'Bouncing-with' is the reading's original contribution. All other types (back, above, beyond) assume you ALREADY suffered a setback. Bouncing-with is PRE-EMPTIVE: it is about viability and continuous survival so the catastrophic setback never happens."
+    }
+   ]
+  },
+  {
+   "name": "Cross-topic integration",
+   "questions": [
+    {
+     "tag": "CROSS",
+     "q": "A firm proactively publishes a detailed public report on its environmental impact before any law requires it. Using Crane (2020), which trust-building mechanisms are at work?",
+     "options": [
+      "Ability only — it shows the firm can measure its impact",
+      "Voluntary Action and Transparency — signalling both Benevolence and Integrity at the same time",
+      "Proximity only — it brings the firm closer to environmental stakeholders",
+      "Responsiveness only — it shows the firm can react to environmental concerns"
+     ],
+     "answer": 1,
+     "why": "Publishing BEFORE any regulation requires it = Voluntary Action (signals Benevolence). Publishing the information openly = Transparency (signals Integrity). One action can demonstrate multiple trust dimensions simultaneously. This is Propositions 2 and 3 working together."
+    },
+    {
+     "tag": "CROSS",
+     "q": "Rising nationalism in a key export market is best analysed using which combination of tools?",
+     "options": [
+      "Economic (PEST) and Inside-In view (Geopolitical Resilience)",
+      "Social (PEST) and Outside-Out view (Geopolitical Resilience)",
+      "Technological (PEST) and Bouncing-back approach",
+      "Political (PEST) and Inside-Out view (Geopolitical Resilience)"
+     ],
+     "answer": 1,
+     "why": "Rising nationalism reflects both a SOCIAL PEST factor (public attitudes shifting against globalisation) AND an OUTSIDE-OUT geopolitical perspective (a macro-level structural political force reshaping the entire international environment). You need both lenses."
+    },
+    {
+     "tag": "CROSS",
+     "q": "Which combination of frameworks gives the most COMPLETE picture of a multinational firm's external environment?",
+     "options": [
+      "Stakeholder Connectedness alone",
+      "PEST analysis alone",
+      "PEST (macro-environment) + Stakeholder Connectedness (relational trust) + Geopolitical Resilience (political risk and adaptive capacity)",
+      "Geopolitical Resilience alone — it covers everything"
+     ],
+     "answer": 2,
+     "why": "Each framework addresses a DIFFERENT layer: PEST maps the broad macro-environment. Stakeholder Connectedness addresses relational trust dynamics. Geopolitical Resilience provides the framework for political risk and adaptive strategy. Used together, they cover everything."
+    },
+    {
+     "tag": "CROSS",
+     "q": "A new law forces a firm to improve worker safety. The firm reluctantly complies and publicly announces it is ONLY doing so because the law requires it. How would Crane assess this?",
+     "options": [
+      "Highly trustworthy — the firm is meeting its legal obligations",
+      "Lacking Voluntary Action — compelled compliance signals self-interest rather than Benevolence, destroying trust",
+      "A strong demonstration of Integrity — the firm follows the rules",
+      "Evidence of high Ability — the firm can implement regulatory changes quickly"
+     ],
+     "answer": 1,
+     "why": "Crane's Proposition 2: voluntary action builds trust. Reluctant, forced compliance — especially when you announce that it is forced — signals the OPPOSITE of Benevolence. Per Freeman (1984): being forced by law to fix a stakeholder problem is itself a 'managerial failure.'"
+    },
+    {
+     "tag": "CROSS",
+     "q": "A firm focuses all its geopolitical resilience efforts on improving internal supply chain processes, while completely ignoring global power shifts and great-power competition. This is best described as:",
+     "options": [
+      "Outside-Out view — it ignores internal processes entirely",
+      "Inside-In view — it only addresses internally controllable problems and misses existential geopolitical forces",
+      "Inside-Out view — it over-focuses on supply chain connections",
+      "Outside-In view — it relies too heavily on government intelligence"
+     ],
+     "answer": 1,
+     "why": "Focusing ONLY on internal operations = Inside-In. No amount of perfect internal process optimisation will save you if massive geopolitical forces — trade wars, sanctions, political instability — are building up outside. The reading calls this 'rearranging deckchairs on the Titanic.'"
+    },
+    {
+     "tag": "CROSS",
+     "q": "What is the common strategic thread that runs through all three readings — Crane, Sammut-Bonnici (PEST), and Bozonelos (Geopolitical Resilience)?",
+     "options": [
+      "Firms should always prioritise financial performance above everything else",
+      "Firms must continuously monitor, anticipate, and proactively respond to external forces — reactive strategies are never enough",
+      "Reactive strategies are fine as long as you have strong crisis management",
+      "Internal capabilities are the primary driver of long-term success"
+     ],
+     "answer": 1,
+     "why": "All three readings share the same core imperative: be PROACTIVE and CONTINUOUS. Crane: continuously build and signal trust. PEST: ongoing monitoring, not a one-off exercise. Bozonelos: geopolitics must be treated as endogenous and continuous — bouncing-with, not bouncing-back."
+    },
+    {
+     "tag": "NEW",
+     "q": "'Financial capitalism' — shattered by the 2008 GFC — and 'informational capitalism' — its emerging successor — are discussed by Bozonelos. Which PEST factor does the rise of informational capitalism primarily represent?",
+     "options": [
+      "Political — governments are driving the shift through policy",
+      "Economic — it is primarily about profit and financial returns",
+      "Social — it is driven by changing consumer attitudes toward data",
+      "Technological — it is centred on data, AI, and digital technologies as the new sources of economic power"
+     ],
+     "answer": 3,
+     "why": "Informational capitalism = the next dominant economic system, where DATA and AI-powered technologies are the primary sources of economic value. This is a TECHNOLOGICAL transformation — and also an Outside-Out geopolitical force that firms must build resilience toward."
+    },
+    {
+     "tag": "NEW",
+     "q": "The reading notes that collaboration between International Business (IB) and International Relations (IR) has been 'notable by its absence.' Why does this matter for practitioners?",
+     "options": [
+      "It means firms have no academic support for geopolitical risk management",
+      "IR theories like realism can help firms better anticipate how states will behave — filling the gap left by purely economic IB frameworks",
+      "It proves that geopolitics is too complex to be studied academically",
+      "It means firms should rely solely on consultants rather than academic research"
+     ],
+     "answer": 1,
+     "why": "IR theories — especially realism, which focuses on how states pursue power and security — can give IB practitioners a richer toolkit for predicting state behaviour. The absence of this collaboration means IB has been trying to understand geopolitics with only economic and business lenses."
+    },
+    {
+     "tag": "NEW",
+     "q": "The four types of resilience in the reading, ranked from least to most advanced, are:",
+     "options": [
+      "Bouncing-back → Bouncing-above → Bouncing-beyond → Bouncing-with",
+      "Bouncing-with → Bouncing-above → Bouncing-back → Bouncing-beyond",
+      "Bouncing-beyond → Bouncing-with → Bouncing-back → Bouncing-above",
+      "Bouncing-above → Bouncing-back → Bouncing-beyond → Bouncing-with"
+     ],
+     "answer": 0,
+     "why": "Bouncing-BACK = just returning to the pre-setback position (minimal). Bouncing-ABOVE = emerging stronger than before (better). Bouncing-BEYOND = going further forward after the setback (better still). Bouncing-WITH = the gold standard — anticipate and manage proactively so you never NEED to bounce back from anything."
+    },
+    {
+     "tag": "NEW",
+     "q": "The six dimensions of geopolitical resilience (Grant et al., McKinsey 2022) cited in the reading are:",
+     "options": [
+      "Political, Economic, Social, Technological, Environmental, Legal",
+      "Reputational, Organisational, Financial, Technological, Operational, Business Model",
+      "Inside-in, Inside-out, Outside-in, Outside-out, Supranational, Global",
+      "Individual, Firm, Sub-national, National, Supra-national, Global"
+     ],
+     "answer": 1,
+     "why": "The six McKinsey resilience dimensions are: REPUTATIONAL, ORGANISATIONAL, FINANCIAL, TECHNOLOGICAL, OPERATIONAL, BUSINESS MODEL. These are different from the six LEVELS OF ANALYSIS framework (Individual through Global)."
+    },
+    {
+     "tag": "NEW",
+     "q": "The Philips Healthcare example in the PPT Session 3 is cited specifically to illustrate:",
+     "options": [
+      "How medical firms benefited from pandemic-driven demand",
+      "Supply chain disruption from Covid-19 restrictions on worker movement and transport",
+      "Regulatory barriers to FDI in the healthcare sector",
+      "Technology transfer restrictions affecting medical equipment"
+     ],
+     "answer": 1,
+     "why": "The PPT specifically cites Philips Healthcare under Covid-19's 'disruption to supply chains' — restrictions on worker movement and air/sea transport disrupted production of medical equipment at the very moment demand was highest. This is the 'lack of redundancy' problem in lean supply chains."
+    }
+   ]
+  }
+ ]
+}

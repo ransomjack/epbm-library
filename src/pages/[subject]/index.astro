@@ -30,6 +30,14 @@ const { s } = Astro.props;
           </a>
         </li>
       ))}
+      {s.quiz && (
+        <li>
+          <a href={`/${s.slug}/quiz/`}>
+            <span class="kicker">Practice</span>
+            <span class="ch-title">{s.quiz.sections.reduce((n, x) => n + x.questions.length, 0)} practice MCQs</span>
+          </a>
+        </li>
+      )}
       {(s.planned || []).map((p) => (
         <li class="planned"><span class="ch-title">{p}</span><span class="kicker">Being added</span></li>
       ))}
