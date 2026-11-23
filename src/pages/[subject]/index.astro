@@ -41,7 +41,7 @@ const grouped = groups.some((g) => g.items.length > 1);
         {s.quiz && <a class="sb-alt" href={`/${s.slug}/quiz/`}>Go to practice questions</a>}
       </div>
       <div class="sb-share">
-        <Share label="Share this subject" text={`${s.name}: the EPBM-32 class notes in ${s.chapters.length} chapters${s.quiz ? `, with ${s.questions} practice questions` : ''}. Free to read, no sign-in:`} />
+        <Share label="Share this subject" text={`${s.name}: the EPBM-32 class notes in ${s.chapters.length} chapters${s.quiz ? `, with ${s.questions} practice questions` : ''}:`} />
       </div>
     </div>
   </header>

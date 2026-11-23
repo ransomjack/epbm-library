@@ -24,7 +24,7 @@ def page(title, sub, highlight=None, small=False):
 <div class=l><div class=brand><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#E3A857" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h6a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4z"/><path d="M20 5h-6a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h6z"/></svg>EPBM Library</div>
 <h1 style="{size}">{title}</h1><p>{sub}</p></div><div class=url>library.girder.in</div><div class=base></div><div class=shelf>{sp}</div></body></html>"""
 jobs = [
- ('default', page('Study notes, made readable.', 'Plain-English notes, diagrams and practice quizzes for EPBM-32. Free to read.')),
+ ('default', page('Study notes, made readable.', 'Plain-English notes, diagrams and practice quizzes for EPBM-32.')),
  ('global-political-economy', page('Global Political Economy', 'Stakeholders and trust · FDI and PEST · Geopolitical risk · 96 practice MCQs', 'Global Political Economy', small=True)),
  ('financial-reporting-cost-accounting', page('Financial Reporting &amp; Cost Accounting', 'Statements · Depreciation and cash flow · Break-even · Ratios · 315 practice questions', 'Finance & Accounting', small=True)),
  ('leadership-people-skills', page('Leadership and People Skills', 'Motivation · Groups and teams · Structure · Leading change · 350 practice questions', 'Leadership', small=True)),

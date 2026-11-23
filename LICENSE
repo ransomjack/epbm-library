@@ -26,5 +26,5 @@ Scope: this licence covers the site's source code only (layouts, pages,
 components, styles, scripts and configuration). It does not cover the notes
 content: the chapters in src/books/, the practice questions in src/data/quiz/,
 the PDFs in public/pdf/ and the images in public/img/ and public/og/. That
-content is copyright (c) 2026 Abhinav Roy, all rights reserved. It is free to
-read and to link to, but please ask before copying or republishing it.
+content is copyright (c) 2026 Abhinav Roy, all rights reserved. You are welcome
+to read it and link to it, but please ask before copying or republishing it.

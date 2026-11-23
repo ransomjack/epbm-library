@@ -2,9 +2,9 @@
 
 **Live site: [library.girder.in](https://library.girder.in)**
 
-EPBM Library holds the class notes from the Executive Programme in Business Management at IIM Calcutta (EPBM-32), turned into one free online book per subject. Each class session is a chapter. Every chapter keeps the professor's examples and the class discussion, and adds diagrams and short exercises you can try in the browser. Each subject also has a practice-question set and a downloadable PDF.
+EPBM Library holds the class notes from the Executive Programme in Business Management at IIM Calcutta (EPBM-32), turned into one online book per subject. Each class session is a chapter. Every chapter keeps the professor's examples and the class discussion, and adds diagrams and short exercises you can try in the browser. Each subject also has a practice-question set and a downloadable PDF.
 
-There is no sign-in, no account and no tracking. Anything the site saves (your theme and text size, your reading progress, and the name on your score card) stays in your own browser.
+There is no tracking. Anything the site saves (your theme and text size, your reading progress, and the name on your score card) stays in your own browser.
 
 ---
 
@@ -288,4 +288,4 @@ These are personal class notes, shared to help batchmates and anyone studying th
 
 The **code** (layouts, pages, components, styles, scripts and configuration) is released under the [MIT License](LICENSE), so you're welcome to reuse it for your own notes site.
 
-The **notes content** (the chapters in `src/books/`, the practice questions in `src/data/quiz/`, the PDFs and the images) is © 2026 Abhinav Roy, all rights reserved. It's free to read and to link to, but please ask before copying or republishing it.
+The **notes content** (the chapters in `src/books/`, the practice questions in `src/data/quiz/`, the PDFs and the images) is © 2026 Abhinav Roy, all rights reserved. You're welcome to read it and link to it, but please ask before copying or republishing it.
