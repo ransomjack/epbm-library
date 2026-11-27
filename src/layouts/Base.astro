@@ -118,6 +118,10 @@ html{scroll-padding-top:84px}
 .row .opt2{flex:1;min-height:44px;border:1px solid var(--line);border-radius:8px;background:transparent;color:var(--ink);font:500 14px var(--sans);cursor:pointer}
 .row .opt2[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .panel .note{margin:14px 0 0;font-size:12px;line-height:1.45;color:var(--muted)}
+.navpanel{width:260px;padding:8px;display:flex;flex-direction:column}
+.navpanel a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;padding:0 12px;border-radius:8px;color:var(--ink);text-decoration:none;font-weight:500;font-size:15px}
+.navpanel a:hover{background:var(--surface);color:var(--ink)}
+.navpanel a span{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 
 .foot{border-top:1px solid var(--line);margin-top:80px}
 .foot .wrap{line-height:1.6;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px;padding-top:28px;padding-bottom:36px;font-size:14px;color:var(--muted)}
@@ -156,7 +160,16 @@ html{scroll-padding-top:84px}
       ? <a class="backlink" href={back.href}><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M19 12H5"/><path d="M11 6l-6 6 6 6"/></svg><span>{back.label}</span></a>
       : <a class="brand" href="/"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h6a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4z"/><path d="M20 5h-6a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h6z"/></svg>EPBM Library</a>}
     <div class="tools">
-      {!back && <a class="navlink" href="/editor/">Editor</a>}
+      {!back && (
+        <details class="disp navmenu">
+          <summary class="iconbtn" aria-label="Menu"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg><span class="lbl">Menu</span></summary>
+          <nav class="panel navpanel" aria-label="Site">
+            <a href="/">All subjects</a>
+            <a href="/60-second/">60-Second Management<span>Series</span></a>
+            <a href="/editor/">Editor</a>
+          </nav>
+        </details>
+      )}
       <details class="disp">
         <summary class="iconbtn" aria-label="Reading settings"><span aria-hidden="true" style="font-family:var(--display);font-size:17px;font-weight:600">Aa</span><span class="lbl">Display</span></summary>
         <div class="panel">
@@ -221,9 +234,9 @@ html{scroll-padding-top:84px}
       root.dataset.size = sizes[i]; save('size', sizes[i]);
     });
   });
-  var disp = document.querySelector('.disp');
-  document.addEventListener('click', function (e) { if (disp && disp.open && !disp.contains(e.target)) disp.open = false; });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && disp && disp.open) { disp.open = false; disp.querySelector('summary').focus(); } });
+  var menus = document.querySelectorAll('.disp');
+  document.addEventListener('click', function (e) { menus.forEach(function (m) { if (m.open && !m.contains(e.target)) m.open = false; }); });
+  document.addEventListener('keydown', function (e) { if (e.key !== 'Escape') return; menus.forEach(function (m) { if (m.open) { m.open = false; m.querySelector('summary').focus(); } }); });
   paint();
 })();
 </script>

@@ -86,6 +86,14 @@ const order = Object.fromEntries(live.map((s) => [s.slug, { n: s.name, q: !!s.qu
       ))}
     </div>
   </section>
+
+  <section class="wrap hm-sixty">
+    <a class="hm-sixty-link" href="/60-second/">
+      <span class="hm-sixty-k">A separate series</span>
+      <span class="hm-sixty-t">60-Second Management</span>
+      <span class="hm-sixty-s">One management idea per card, about a minute each. Finance, marketing, leadership, operations and more.</span>
+    </a>
+  </section>
 </main>
 
 <script type="application/json" id="book-order" set:html={JSON.stringify(order)}></script>
@@ -186,6 +194,12 @@ const order = Object.fromEntries(live.map((s) => [s.slug, { n: s.name, q: !!s.qu
 .hm-way h2{margin:10px 0 6px;font-weight:600;font-size:22px}
 .hm-way p{margin:0;font-size:15px;line-height:1.55;color:var(--body)}
 .hm-shelf{padding-top:64px}
+.hm-sixty{padding-top:56px}
+.hm-sixty-link{display:flex;flex-direction:column;gap:4px;padding:24px 28px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--ink);text-decoration:none}
+.hm-sixty-link:hover{border-color:var(--accent);color:var(--ink)}
+.hm-sixty-k{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.hm-sixty-t{font-family:var(--display);font-size:24px;font-weight:600}
+.hm-sixty-s{font-size:15px;line-height:1.5;color:var(--body)}
 .hm-h{margin:0;font-weight:500;font-size:clamp(28px,3.4vw,36px);letter-spacing:-.01em}
 .hm-hint{margin:8px 0 28px;font-size:16px;color:var(--muted);max-width:44em}
 .hm-books{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}

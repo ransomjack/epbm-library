@@ -1,7 +1,7 @@
 import { library } from '../lib/books.js';
 
 export function GET({ site }) {
-  const paths = ['/', '/editor/'];
+  const paths = ['/', '/editor/', '/60-second/'];
   for (const s of library) {
     if (!s.chapters.length) continue;
     paths.push(`/${s.slug}/`, ...s.chapters.map((c) => `/${s.slug}/${c.slug}/`));

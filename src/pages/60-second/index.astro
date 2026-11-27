@@ -1,0 +1,91 @@
+---
+import Base from '../../layouts/Base.astro';
+import Share from '../../components/Share.astro';
+import { sixty } from '../../data/sixty.js';
+
+const tones = ['warm', 'accent', 'ink'];
+const pageUrl = new URL('/60-second/', Astro.site).href;
+const pad = (n) => String(n).padStart(2, '0');
+---
+<Base title="60-Second Management" description="One management idea, one card, about 60 seconds to read. Finance, marketing, leadership, operations, decisions, economics, strategy and digital, in plain English.">
+<main class="wrap sx">
+  <header class="sx-head">
+    <div class="sx-kicker">A separate series</div>
+    <h1>60-Second Management</h1>
+    <p class="sx-lede">One management idea, one card, about a minute to read. Plain English, everyday examples, no jargon you can't use the same day.</p>
+    <nav class="sx-index" aria-label="Cards in this series">
+      {sixty.map((c) => (
+        <a href={`#${c.slug}`}><span>#{pad(c.n)}</span> {c.topic}: {c.title}</a>
+      ))}
+    </nav>
+  </header>
+
+  <div class="sx-list">
+    {sixty.map((c) => (
+      <article class="sx-card" id={c.slug} aria-labelledby={`${c.slug}-t`}>
+        <p class="sx-eyebrow">#{pad(c.n)} · {c.topic}</p>
+        <h2 id={`${c.slug}-t`}>{c.title}</h2>
+        <p class="sx-sub">{c.sub}</p>
+        <div class="sx-rows">
+          {c.rows.map((r, i) => (
+            <div class={`sx-row tone-${r.tone ?? tones[i]}${r.hot ? ' hot' : ''}`}>
+              <div class="sx-left">
+                <span class="sx-label">{r.label}</span>
+                <span class="sx-word">{r.word}</span>
+              </div>
+              <div class="sx-right">
+                <p class="sx-line">{r.line}</p>
+                <p class="sx-eg">{r.eg}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <p class="sx-punch">{c.punch}</p>
+        <div class="sx-foot">
+          <span>60-Second Management · Abhinav Roy</span>
+          <button type="button" class="share-b" data-copy={`${pageUrl}#${c.slug}`}>Copy link to this card</button>
+        </div>
+      </article>
+    ))}
+  </div>
+
+  <Share text="60-Second Management: one management idea per card, about a minute each." label="Share the series" />
+</main>
+</Base>
+
+<style is:global>
+.sx{max-width:860px}
+.sx-head{padding-top:56px;padding-bottom:8px}
+.sx-kicker{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.sx-head h1{margin:10px 0 12px;font-weight:600;font-size:clamp(34px,5vw,48px);line-height:1.1;letter-spacing:-.015em}
+.sx-lede{margin:0;font-size:18px;line-height:1.55;color:var(--body);max-width:40em}
+.sx-index{display:flex;flex-direction:column;gap:2px;margin-top:28px;padding:16px 20px;background:var(--surface);border-radius:12px}
+.sx-index a{display:block;min-height:36px;padding:7px 0;color:var(--ink);text-decoration:none;font-size:15px;line-height:1.4}
+.sx-index a span{display:inline-block;width:40px;color:var(--muted);font-weight:600;font-variant-numeric:tabular-nums}
+.sx-index a:hover{color:var(--accent)}
+.sx-list{display:flex;flex-direction:column;gap:32px;margin-top:40px}
+.sx-card{padding:32px;background:var(--surface);border-radius:16px;scroll-margin-top:96px}
+.sx-eyebrow{margin:0;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.sx-card h2{margin:8px 0 6px;font-weight:600;font-size:clamp(26px,3.6vw,34px);line-height:1.15;letter-spacing:-.01em}
+.sx-sub{margin:0 0 22px;font-size:17px;line-height:1.5;color:var(--body)}
+.sx-rows{display:flex;flex-direction:column;gap:12px}
+.sx-row{display:grid;grid-template-columns:210px minmax(0,1fr);gap:20px;align-items:center;padding:16px 20px;background:var(--bg);border:1px solid var(--line);border-radius:12px}
+.sx-row.hot{border:2px solid var(--trap);padding:15px 19px}
+.sx-left{display:flex;flex-direction:column;gap:2px;min-width:0}
+.sx-label{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.sx-word{font-family:var(--display);font-size:28px;font-weight:700;line-height:1.15;overflow-wrap:anywhere}
+.tone-warm .sx-word{color:var(--trap)}.tone-accent .sx-word{color:var(--accent)}.tone-ink .sx-word{color:var(--ink)}.tone-muted .sx-word{color:var(--muted)}
+.sx-line{margin:0;font-size:17px;line-height:1.4;font-weight:600;color:var(--ink)}
+.sx-eg{margin:4px 0 0;font-size:15px;line-height:1.45;color:var(--muted)}
+.sx-punch{margin:20px 0 0;padding:20px 22px;background:var(--ink);color:var(--bg);border-radius:12px;font-family:var(--display);font-size:20px;line-height:1.4;font-weight:600}
+.sx-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;margin-top:16px;font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.sx-foot .share-b{text-transform:none;letter-spacing:0}
+@media (max-width:640px){
+  .sx-head{padding-top:36px}
+  .sx-card{padding:22px 18px}
+  .sx-row{grid-template-columns:1fr;gap:8px;padding:14px 16px}
+  .sx-row.hot{padding:13px 15px}
+  .sx-word{font-size:24px}
+  .sx-punch{font-size:18px;padding:18px}
+}
+</style>
